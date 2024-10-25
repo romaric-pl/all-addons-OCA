@@ -3,7 +3,7 @@
 
 {
     "name": "Stock Move Priority Management",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "author": "ACSONE SA/NV, Odoo Community Association (OCA)",
     "category": "stock",
     "depends": ["stock"],
