@@ -594,16 +594,16 @@ Date:   Thu Jul 25 06:37:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 9521b1de2823d28228125029e108842645ed0fd8
+commit 4948e30f6a19f53d60b89aeb4af6e52d2339a277
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Sep 2 06:44:16 2024 +0000
+Date:   Thu Oct 24 07:03:32 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 100.0% (544 of 544 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice_geoengine
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_geoengine/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1326,16 +1326,16 @@ Date:   Wed Sep 18 07:08:29 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit c8a6428b87583e14b0df33713a866e135692252c
+commit 75dc82f3b2a95c5db7e9025bac001407b3e98a30
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 17 06:29:24 2024 +0000
+Date:   Wed Oct 23 06:51:50 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (157 of 157 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-quality_control_oca
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-quality_control_oca/it/
+    Translation: manufacture-13.0/manufacture-13.0-mrp_bom_tracking
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_bom_tracking/it/
 
 
 ## manufacture-reporting
