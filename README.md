@@ -206,16 +206,16 @@ Date:   Thu Aug 1 10:18:58 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 231ae9fff6863f6f5b20429e6c1e52ea2f6e54a4
+commit 5887dc1104064c340ea9662a46e0739a0afced1a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 9 08:57:02 2024 +0000
+Date:   Thu Oct 24 14:51:09 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 94.7% (179 of 189 strings)
+    Currently translated at 11.5% (32 of 277 strings)
     
-    Translation: credit-control-12.0/credit-control-12.0-account_invoice_overdue_reminder
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_invoice_overdue_reminder/it/
+    Translation: credit-control-12.0/credit-control-12.0-account_credit_control
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_credit_control/it/
 
 
 ## data-protection
@@ -584,16 +584,16 @@ Date:   Wed Oct 9 08:31:22 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 5af1e651a396b3dfca91cdf89efd05217fa45c07
-Author: Julie LeBrun <julie.lebrun@numigi.com>
-Date:   Tue Sep 24 12:17:13 2024 +0000
+commit 8699185d9d07c780549449a21316f1e453ca2554
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Oct 25 15:59:33 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
     Currently translated at 100.0% (512 of 512 strings)
     
     Translation: field-service-12.0/field-service-12.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/fr/
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -891,16 +891,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 42f3cd7d624fb3eff21236bdd044f23f4c31297b
+commit 1ec8a790f7c6f891a9016bde64f37418564cc043
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Oct 5 15:30:03 2024 +0000
+Date:   Tue Oct 22 07:55:47 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (119 of 119 strings)
+    Currently translated at 100.0% (129 of 129 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-fiscal_epos_print
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-fiscal_epos_print/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_account_balance_report
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_account_balance_report/it/
 
 
 ## l10n-japan
@@ -1206,16 +1206,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit f31ca82ccb7374410ecade735a87e719bf37cc8f
+commit 02f31c6a6cef06a5ccea3d1470efe250739c9175
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 17 06:29:13 2024 +0000
+Date:   Wed Oct 23 06:47:11 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (24 of 24 strings)
+    Currently translated at 100.0% (46 of 46 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-quality_control_stock
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-quality_control_stock/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_subcontracting
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_subcontracting/it/
 
 
 ## manufacture-reporting
