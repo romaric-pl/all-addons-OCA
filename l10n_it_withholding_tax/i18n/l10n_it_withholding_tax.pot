@@ -50,11 +50,6 @@ msgid "Account Receivable"
 msgstr ""
 
 #. module: l10n_it_withholding_tax
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_statement__move_id
-msgid "Account move"
-msgstr ""
-
-#. module: l10n_it_withholding_tax
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax__active
 msgid "Active"
 msgstr ""

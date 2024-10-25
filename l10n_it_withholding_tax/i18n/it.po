@@ -54,11 +54,6 @@ msgid "Account Receivable"
 msgstr "Conto di credito"
 
 #. module: l10n_it_withholding_tax
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_statement__move_id
-msgid "Account move"
-msgstr "Movimento contabile"
-
-#. module: l10n_it_withholding_tax
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax__active
 msgid "Active"
 msgstr "Attivo"
@@ -721,6 +716,9 @@ msgstr "Registro ritenuta d'acconto"
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax__wt_types
 msgid "Withholding tax type"
 msgstr "Tipologia ritenuta d'acconto"
+
+#~ msgid "Account move"
+#~ msgstr "Movimento contabile"
 
 #~ msgid "Withholding Taxes"
 #~ msgstr "Ritenute d'acconto"

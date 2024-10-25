@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-22 08:15+0000\n"
-"PO-Revision-Date: 2024-07-16 17:58+0000\n"
+"PO-Revision-Date: 2024-10-23 12:06+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -58,13 +58,18 @@ msgstr "<strong>Dal:</strong>"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.report_settlement
+msgid "<strong>Global commission amount:</strong>"
+msgstr "<strong>Importo provvigioni documento:</strong>"
+
+#. module: sale_commission
+#: model_terms:ir.ui.view,arch_db:sale_commission.report_settlement
 msgid "<strong>To:</strong>"
 msgstr "<strong>Al:</strong>"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.report_settlement
-msgid "<strong>Total</strong>"
-msgstr "<strong>Totale</strong>"
+msgid "<strong>Total</strong> ("
+msgstr "<strong>Totale</strong> ("
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission__active
@@ -1093,6 +1098,9 @@ msgstr "_Annulla"
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settled_wizard
 msgid "or"
 msgstr "oppure"
+
+#~ msgid "<strong>Total</strong>"
+#~ msgstr "<strong>Totale</strong>"
 
 #~ msgid "Gross Amount"
 #~ msgstr "Importo lordo"
