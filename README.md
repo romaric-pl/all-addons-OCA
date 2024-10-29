@@ -644,16 +644,16 @@ Date:   Wed Apr 24 10:01:32 2024 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 512f8b7cea88f55d2853efb89596ee6693edaac2
+commit 02aa92845f81b2c9beecb13ca16c61e30b13b843
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:31:47 2024 +0000
+Date:   Fri Oct 25 17:48:11 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (93 of 93 strings)
+    Currently translated at 100.0% (2 of 2 strings)
     
-    Translation: timesheet-12.0/timesheet-12.0-hr_utilization_report
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-12-0/timesheet-12-0-hr_utilization_report/it/
+    Translation: timesheet-12.0/timesheet-12.0-sale_timesheet_purchase
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-12-0/timesheet-12-0-sale_timesheet_purchase/it/
 
 
 ## hr
@@ -1000,16 +1000,11 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit d55b49c1a37ebc0eaddfde2f44ff96017cbe7572
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Oct 16 11:21:10 2024 +0000
+commit b5dc29136545a2499260b4514ab7edcfc73174e3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Oct 28 08:51:05 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_aeat_sii
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat_sii/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland

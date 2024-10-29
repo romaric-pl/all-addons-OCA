@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-26 12:45+0000\n"
+"PO-Revision-Date: 2024-10-25 20:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: sale_timesheet_purchase
 #: code:addons/sale_timesheet_purchase/controllers/main.py:26
@@ -26,4 +26,4 @@ msgstr "Ordini di acquisto"
 #: code:addons/sale_timesheet_purchase/controllers/main.py:43
 #, python-format
 msgid "Vendor Bills"
-msgstr "Fatture venditore"
+msgstr "Fatture fornitore"
