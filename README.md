@@ -102,11 +102,16 @@ Date:   Tue Oct 22 19:13:40 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 9f52be992038eacce8d9129f879b555c7daae886
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 30 14:31:01 2024 +0000
+commit c0b253d0d9d62da178c53d6c02b44fe248b0a7ee
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Oct 28 21:09:00 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-invoicing-15.0/account-invoicing-15.0-stock_picking_invoicing
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-stock_picking_invoicing/
 
 
 ## account-fiscal-rule
@@ -174,16 +179,14 @@ Date:   Wed May 1 19:37:21 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit b2b813ef05a59fdb7b8f82a58e06e148e3ea4d29
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 24 14:44:40 2024 +0000
+commit eda53b2b22da501ceadfdc3c47e40af0497ed160
+Merge: b2b813ef 56a968c2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Oct 29 14:16:15 2024 +0000
 
-    Translated using Weblate (Italian)
+    Merge PR #405 into 15.0
     
-    Currently translated at 100.0% (27 of 27 strings)
-    
-    Translation: credit-control-15.0/credit-control-15.0-partner_risk_insurance
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-partner_risk_insurance/it/
+    Signed-off-by Shide
 
 
 ## data-protection
@@ -225,11 +228,16 @@ Date:   Fri May 31 11:02:02 2024 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 5bc125f02ae1ded4932acf2162f74543b344576c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 7 15:06:54 2024 +0000
+commit 0161ec2b20192b697cf666aa14eac4978585f8c7
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Oct 29 11:35:52 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: bank-statement-import-15.0/bank-statement-import-15.0-account_bank_statement_import_move_line
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-15-0/bank-statement-import-15-0-account_bank_statement_import_move_line/
 
 
 ## account-payment
@@ -374,9 +382,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 5a00994cd4689fd89daf69b51c77dde786644be2
+commit 66ea0fefc4814106defede29890080fda2cf93da
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Oct 21 10:40:24 2024 +0000
+Date:   Tue Oct 29 07:30:44 2024 +0000
 
     [BOT] post-merge updates
 
@@ -438,11 +446,11 @@ Date:   Fri May 24 18:19:05 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 40491a3c2b1d86d6a3ab28a7e0997e3f8f907216
+commit 2ef36248bcc42f61544d394450866368953ba447
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 8 10:10:25 2024 +0000
+Date:   Tue Oct 29 17:08:16 2024 +0000
 
-    [UPD] README.rst
+    [BOT] post-merge updates
 
 
 ## event
@@ -516,16 +524,16 @@ Date:   Wed Oct 23 06:38:25 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 1e154e6bdd6dc40bdfdcac74cd13d910981ac162
+commit 4ab3f0eb8ce801a675bc089f1efb3beb66a80e57
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 24 07:03:28 2024 +0000
+Date:   Fri Oct 25 17:48:22 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (140 of 140 strings)
+    Currently translated at 100.0% (43 of 43 strings)
     
-    Translation: field-service-15.0/field-service-15.0-fieldservice_fleet
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_fleet/it/
+    Translation: field-service-15.0/field-service-15.0-fieldservice_isp_account
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_isp_account/it/
 
 
 ## margin-analysis
@@ -1311,16 +1319,16 @@ Date:   Wed May 1 18:54:54 2024 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit ddb908dee4aa1e9dd4d433853c9cb9425479bc24
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Oct 24 07:02:02 2024 +0000
+commit e4789d217630c29ed103e29edfbb99948769af7d
+Author: Alberto Martínez <alberto.martinez@sygel.es>
+Date:   Mon Oct 28 08:50:54 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Spanish)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: project-15.0/project-15.0-project_timeline
-    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_timeline/
+    Translation: project-15.0/project-15.0-project_task_description_template
+    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_task_description_template/es/
 
 
 ## project-agile
@@ -1389,11 +1397,16 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit f99831ada1e93bb7ed61077094d284d8b5676466
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 16 14:36:40 2024 +0000
+commit 9d6e3fa47f040c2062c2bc2a5074b5286c2bf353
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Oct 29 17:39:04 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: social-15.0/social-15.0-mail_show_follower
+    Translate-URL: https://translation.odoo-community.org/projects/social-15-0/social-15-0-mail_show_follower/
 
 
 ## storage

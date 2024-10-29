@@ -46,12 +46,17 @@ msgstr ""
 
 #. module: commission
 #: model_terms:ir.ui.view,arch_db:commission.report_settlement_document
+msgid "<strong>Global commission amount:</strong>"
+msgstr ""
+
+#. module: commission
+#: model_terms:ir.ui.view,arch_db:commission.report_settlement_document
 msgid "<strong>To:</strong>"
 msgstr ""
 
 #. module: commission
 #: model_terms:ir.ui.view,arch_db:commission.report_settlement_document
-msgid "<strong>Total</strong>"
+msgid "<strong>Total</strong> ("
 msgstr ""
 
 #. module: commission

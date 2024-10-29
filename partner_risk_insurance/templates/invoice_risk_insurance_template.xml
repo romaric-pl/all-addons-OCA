@@ -19,7 +19,7 @@
                         </tr>
                         <t
                             t-set="moves"
-                            t-value="docs.sorted(lambda doc: (is_insured_partner(doc), doc.commercial_partner_id.country_code, doc.name))"
+                            t-value="docs.sorted(lambda doc: (is_insured_partner(doc), doc.commercial_partner_id.country_code or '', doc.name))"
                         />
                         <t t-foreach="moves" t-as="move">
                             <t

@@ -3,7 +3,7 @@
 
 {
     "name": "Bank statement import move lines",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "category": "Accounting",
     "summary": "Import journal items into bank statement",
     "author": "Tecnativa, " "Odoo Community Association (OCA)",

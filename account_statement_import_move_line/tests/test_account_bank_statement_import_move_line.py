@@ -37,7 +37,6 @@ class TestAccountBankStatementImportMoveLine(TransactionCase):
                 "partner_id": cls.partner.id,
                 "move_type": "out_invoice",
                 "journal_id": cls.journal.id,
-                "ref": "Test",
                 "invoice_line_ids": [
                     (
                         0,

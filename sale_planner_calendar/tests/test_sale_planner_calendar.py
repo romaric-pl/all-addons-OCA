@@ -1,6 +1,8 @@
 # Copyright 2021 Tecnativa - Sergio Teruel
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+from datetime import date
+
 from freezegun import freeze_time
 
 from odoo.exceptions import AccessError
@@ -234,6 +236,7 @@ class TestSalePlannerCalendar(TransactionCase):
     def test_reassign_wizard(self):
         wiz_form = Form(self.env["sale.planner.calendar.reassign.wiz"])
         wiz_form.user_id = self.commercial_user_1
+        wiz_form.new_start = date.today()
         record = wiz_form.save()
         # Recover all planned event lines for commercial user 1
         record.action_get_lines()
@@ -274,6 +277,7 @@ class TestSalePlannerCalendar(TransactionCase):
 
         wiz_form = Form(self.env["sale.planner.calendar.reassign.wiz"])
         wiz_form.user_id = self.commercial_user_1
+        wiz_form.new_start = date.today()
         record = wiz_form.save()
         # Recover all planned event lines for commercial user 1
         record.action_get_lines()

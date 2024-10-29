@@ -492,7 +492,7 @@ addon | version | maintainers | summary
 [sale_order_type_whole_delivered_invoiceability](sale_order_type_whole_delivered_invoiceability/) | 15.0.1.0.0 |  | Sale Order Type Whole Delivered Invoiceability
 [sale_order_whole_delivered_invoiceability](sale_order_whole_delivered_invoiceability/) | 15.0.1.0.0 |  | Sale Order Whole Delivered Invoiceability
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 15.0.1.0.2 |  | Add timesheet details in invoice line
-[stock_picking_invoicing](stock_picking_invoicing/) | 15.0.1.0.0 |  | Stock Picking Invoicing
+[stock_picking_invoicing](stock_picking_invoicing/) | 15.0.1.1.0 |  | Stock Picking Invoicing
 [stock_picking_invoicing_incoterm](stock_picking_invoicing_incoterm/) | 15.0.1.0.0 |  | Stock Picking Invoicing Incoterm
 [stock_picking_return_refund_option](stock_picking_return_refund_option/) | 15.0.1.0.2 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Update the refund options in pickings
 
@@ -1075,7 +1075,7 @@ addon | version | maintainers | summary
 [account_statement_import_camt](account_statement_import_camt/) | 15.0.1.0.1 |  | CAMT Format Bank Statements Import
 [account_statement_import_camt54](account_statement_import_camt54/) | 15.0.1.0.0 |  | Bank Account Camt54 Import
 [account_statement_import_file_reconciliation_widget](account_statement_import_file_reconciliation_widget/) | 15.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files and Go Direct to Reconciliation
-[account_statement_import_move_line](account_statement_import_move_line/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Import journal items into bank statement
+[account_statement_import_move_line](account_statement_import_move_line/) | 15.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Import journal items into bank statement
 [account_statement_import_ofx](account_statement_import_ofx/) | 15.0.1.0.0 |  | Import OFX Bank Statement
 [account_statement_import_online](account_statement_import_online/) | 15.0.3.2.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
 [account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 15.0.1.1.0 |  | Online Bank Statements: GoCardless
@@ -1881,7 +1881,7 @@ addon | version | maintainers | summary
 [sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.1.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 15.0.1.3.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allow to create invoice payments to commercial users without accounting permissions
-[sale_planner_calendar](sale_planner_calendar/) | 15.0.2.1.1 |  | Sale planner calendar
+[sale_planner_calendar](sale_planner_calendar/) | 15.0.2.1.2 |  | Sale planner calendar
 [sale_procurement_group_by_commitment_date](sale_procurement_group_by_commitment_date/) | 15.0.1.0.0 |  | Groups pickings based on commitment date of order line
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 15.0.1.2.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_category_menu](sale_product_category_menu/) | 15.0.1.0.0 |  | Shows 'Product Categories' menu item in Sales
@@ -2316,8 +2316,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_commission](account_commission/) | 15.0.3.3.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
-[commission](commission/) | 15.0.3.2.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
+[account_commission](account_commission/) | 15.0.3.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
+[commission](commission/) | 15.0.3.3.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
 [commission_formula](commission_formula/) | 15.0.1.0.0 |  | Commissions computed by formulas
 [hr_commission](hr_commission/) | 15.0.1.0.1 |  | HR commissions
 [sale_commission](sale_commission/) | 15.0.2.1.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
@@ -7330,7 +7330,7 @@ addon | version | maintainers | summary
 [mail_quoted_reply](mail_quoted_reply/) | 15.0.1.0.3 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 15.0.1.0.0 |  | Define a domain from which followers can be selected
 [mail_send_copy](mail_send_copy/) | 15.0.1.0.0 |  | Send to you a copy of each mail sent by Odoo
-[mail_show_follower](mail_show_follower/) | 15.0.1.3.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
+[mail_show_follower](mail_show_follower/) | 15.0.1.4.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
 [mail_tracking](mail_tracking/) | 15.0.3.1.0 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 15.0.1.1.1 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 15.0.1.0.0 |  | Improve mass mailing email tracking
