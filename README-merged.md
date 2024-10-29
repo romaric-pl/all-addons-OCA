@@ -281,7 +281,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 17.0.1.3.0 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 17.0.1.3.1 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 17.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [partner_statement](partner_statement/) | 17.0.1.0.0 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
@@ -2209,7 +2209,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[dms](dms/) | 17.0.1.1.1 |  | Document Management System for Odoo
+[dms](dms/) | 17.0.1.2.0 |  | Document Management System for Odoo
 [dms_attachment_link](dms_attachment_link/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Dms Attachment Link
 [dms_storage](dms_storage/) | 17.0.1.0.0 |  | Integrate DMS with external Storages
 
@@ -2312,11 +2312,11 @@ addon | version | maintainers | summary
 [base_business_document_import](base_business_document_import/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides technical tools to import sale orders or supplier invoices
 [base_edi](base_edi/) | 17.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Factur-X/ZUGFeRD
-[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
+[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.2.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 17.0.1.0.0 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 17.0.1.0.1 |  | Base module for connecting with Voxel
-[pdf_helper](pdf_helper/) | 17.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
-[test_base_import_pdf_by_template](test_base_import_pdf_by_template/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Test Base Import Pdf by Template
+[pdf_helper](pdf_helper/) | 17.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
+[test_base_import_pdf_by_template](test_base_import_pdf_by_template/) | 17.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Test Base Import Pdf by Template
 
 [//]: # (end addons)
 
@@ -2389,7 +2389,7 @@ addon | version | maintainers | summary
 [fieldservice_sale_recurring](fieldservice_sale_recurring/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
 [fieldservice_sale_stock](fieldservice_sale_stock/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
 [fieldservice_size](fieldservice_size/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
-[fieldservice_stage_server_action](fieldservice_stage_server_action/) | 17.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
+[fieldservice_stage_server_action](fieldservice_stage_server_action/) | 17.0.1.2.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
 [fieldservice_stage_validation](fieldservice_stage_validation/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Validate input data when reaching a Field Service stage
 [fieldservice_stock](fieldservice_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
 [fieldservice_stock_request](fieldservice_stock_request/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate Stock Requests with Field Service Orders
@@ -2572,6 +2572,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_geoengine](base_geoengine/) | 17.0.1.0.0 |  | Geospatial support for Odoo
 [base_geoengine_demo](base_geoengine_demo/) | 17.0.1.0.0 |  | Geo spatial support Demo
+[geoengine_base_geolocalize](geoengine_base_geolocalize/) | 17.0.1.0.0 |  | Geospatial support for base_geolocalize
 [geoengine_partner](geoengine_partner/) | 17.0.1.0.0 |  | Geospatial support of partners
 
 [//]: # (end addons)
@@ -2731,7 +2732,7 @@ addon | version | maintainers | summary
 [hr_attendance_autoclose](hr_attendance_autoclose/) | 17.0.1.0.0 |  | Close stale Attendances
 [hr_attendance_calendar_view](hr_attendance_calendar_view/) | 17.0.1.0.0 |  | This module adds the calendar view as an option to display attendance
 [hr_attendance_reason](hr_attendance_reason/) | 17.0.1.0.0 |  | HR Attendance Reason
-[hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 17.0.1.0.0 |  | Theoretical vs Attended Time Analysis
+[hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 17.0.1.1.0 |  | Theoretical vs Attended Time Analysis
 
 [//]: # (end addons)
 
@@ -4428,21 +4429,21 @@ addon | version | maintainers | summary
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 17.0.0.4.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
-[l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 17.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
+[l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_stock](l10n_ro_stock/) | 17.0.0.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 17.0.1.10.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 17.0.1.10.1 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 17.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 17.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
-[l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 17.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
-[l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 17.0.0.2.0 | [![nct74](https://github.com/nct74.png?size=30px)](https://github.com/nct74) [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Romania - Stock Accounting Reception In progress
+[l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 17.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
+[l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 17.0.0.3.0 | [![nct74](https://github.com/nct74.png?size=30px)](https://github.com/nct74) [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Romania - Stock Accounting Reception In progress
 [l10n_ro_stock_account_tracking](l10n_ro_stock_account_tracking/) | 17.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 17.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
 [l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 17.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
-[l10n_ro_stock_report](l10n_ro_stock_report/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Report (Fisa Magazie)
+[l10n_ro_stock_report](l10n_ro_stock_report/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Report (Fișă Magazie)
 [l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - VAT on Payment
 
 [//]: # (end addons)
@@ -5260,12 +5261,13 @@ addon | version | maintainers | summary
 [stock_archive_constraint](stock_archive_constraint/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Stock archive constraint
 [stock_change_qty_reason](stock_change_qty_reason/) | 17.0.1.0.0 |  | Stock Quantity Change Reason
 [stock_demand_estimate](stock_demand_estimate/) | 17.0.1.1.0 |  | Allows to create demand estimates.
+[stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 17.0.1.0.0 |  | Allows to create demand estimates.
 [stock_helper](stock_helper/) | 17.0.1.1.0 |  | Add methods shared between various stock modules
 [stock_inventory](stock_inventory/) | 17.0.1.2.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 17.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_location_lockdown](stock_location_lockdown/) | 17.0.1.0.0 |  | Prevent to add stock on locked locations
 [stock_location_zone](stock_location_zone/) | 17.0.1.0.0 |  | Classify locations with zones.
-[stock_mts_mto_rule](stock_mts_mto_rule/) | 17.0.1.0.0 |  | Add a MTS+MTO route
+[stock_mts_mto_rule](stock_mts_mto_rule/) | 17.0.1.0.1 |  | Add a MTS+MTO route
 [stock_packaging_calculator](stock_packaging_calculator/) | 17.0.1.1.0 |  | Compute product quantity to pick by packaging
 [stock_picking_volume](stock_picking_volume/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
 [stock_picking_volume_packaging](stock_picking_volume_packaging/) | 17.0.1.0.0 |  | Use volume information on potential product packaging to compute the volume of a stock.move
@@ -5520,6 +5522,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
 [mrp_bom_tracking](mrp_bom_tracking/) | 17.0.1.0.0 |  | Logs any change to a BoM in the chatter
+[mrp_mass_production_order](mrp_mass_production_order/) | 17.0.1.0.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create multiple manufacturing orders in one step
 [mrp_multi_level](mrp_multi_level/) | 17.0.1.1.5 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_production_note](mrp_production_note/) | 17.0.1.0.0 |  | Notes in production orders
@@ -6000,7 +6003,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_pack](product_pack/) | 17.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to set a product as a Pack
-[sale_product_pack](sale_product_pack/) | 17.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to sell product packs
+[sale_product_pack](sale_product_pack/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | This module allows you to sell product packs
 [website_sale_product_pack](website_sale_product_pack/) | 17.0.1.0.0 |  | Compatibility module of product pack with e-commerce
 
 [//]: # (end addons)
@@ -6432,6 +6435,7 @@ addon | version | maintainers | summary
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 17.0.1.0.0 |  | Improve mass mailing email tracking
 [mass_mailing_partner](mass_mailing_partner/) | 17.0.1.0.0 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
+[mute_notification_user_autosubscribe](mute_notification_user_autosubscribe/) | 17.0.1.0.0 |  | Do not send notifications to users autosubcribed through user_id field
 
 [//]: # (end addons)
 
@@ -6478,14 +6482,14 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [fs_attachment](fs_attachment/) | 17.0.1.0.3 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Store attachments on external object store
-[fs_base_multi_image](fs_base_multi_image/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Mulitple Images from External File System
+[fs_base_multi_image](fs_base_multi_image/) | 17.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Mulitple Images from External File System
 [fs_base_multi_media](fs_base_multi_media/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Give the possibility to store media data in external filesystem from odoo
 [fs_file](fs_file/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Field to store files into filesystem storages
 [fs_file_demo](fs_file_demo/) | 17.0.1.0.0 |  | Demo addon for fs_file and fs_image
 [fs_image](fs_image/) | 17.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Field to store images into filesystem storages
 [fs_image_thumbnail](fs_image_thumbnail/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Generate and store thumbnail for images
 [fs_product_brand_multi_image](fs_product_brand_multi_image/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Link images to product brands
-[fs_product_multi_image](fs_product_multi_image/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage multi images from extenal file system on product
+[fs_product_multi_image](fs_product_multi_image/) | 17.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage multi images from extenal file system on product
 [fs_product_multi_media](fs_product_multi_media/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Link media to products and categories
 [fs_storage](fs_storage/) | 17.0.2.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
 [image_tag](image_tag/) | 17.0.1.0.0 |  | Image tag model

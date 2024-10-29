@@ -36,6 +36,10 @@ class ProductTemplate(models.Model):
         if not company.l10n_ro_accounting:
             return accounts
 
+        if self.type != "product":
+            accounts["stock_input"] = accounts["expense"]
+            return accounts
+
         property_stock_valuation_account_id = (
             self.l10n_ro_property_stock_valuation_account_id
             or self.categ_id.property_stock_valuation_account_id

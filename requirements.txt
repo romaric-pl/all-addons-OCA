@@ -73,6 +73,7 @@ pypdf
 # From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
 # generated from manifests external_dependencies
 geojson
+requests
 shapely
 # From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
 # From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
