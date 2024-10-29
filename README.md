@@ -622,16 +622,16 @@ Date:   Mon Oct 9 20:17:34 2023 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit 48335d2e92130d31763bfe30c08be26b9c47c5d4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 08:50:15 2024 +0000
+commit 4387ee15bc4d2ad56849de330c8fccab11f9a5cd
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Oct 28 20:57:59 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: fleet-13.0/fleet-13.0-fleet_vehicle_stock
-    Translate-URL: https://translation.odoo-community.org/projects/fleet-13-0/fleet-13-0-fleet_vehicle_stock/it/
+    Translation: fleet-13.0/fleet-13.0-fleet_vehicle_inspection
+    Translate-URL: https://translation.odoo-community.org/projects/fleet-13-0/fleet-13-0-fleet_vehicle_inspection/
 
 
 ## infrastructure-dns
@@ -1326,16 +1326,16 @@ Date:   Wed Sep 18 07:08:29 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 75dc82f3b2a95c5db7e9025bac001407b3e98a30
+commit eaa6a2750f5e5f6e2566a646829bbbc36887e87b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 23 06:51:50 2024 +0000
+Date:   Tue Oct 29 10:45:52 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Currently translated at 100.0% (127 of 127 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-mrp_bom_tracking
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_bom_tracking/it/
+    Translation: manufacture-13.0/manufacture-13.0-mrp_production_request
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_production_request/it/
 
 
 ## manufacture-reporting
