@@ -67,8 +67,8 @@ msgid ""
 "Sum columns: summation (+/-) of other columns.\n"
 "Compare to column: compare to other column.\n"
 msgstr ""
-"Dados reais: dados atuais, provenientes de contabilidade e outras consultas."
-"\n"
+"Dados reais: dados atuais, provenientes de contabilidade e outras "
+"consultas.\n"
 "Dados reais (alternativo): dados atuais de uma fonte alternativa (por "
 "exemplo, uma visualização de banco de dados que fornece linhas de "
 "movimentação de conta semelhantes).\n"
@@ -84,6 +84,21 @@ msgstr "Permitir Sobreposição de Itens"
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__amount
 msgid "Amount"
 msgstr "Montante"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__analytic_distribution
+msgid "Analytic"
+msgstr ""
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__analytic_distribution_search
+msgid "Analytic Distribution Search"
+msgstr ""
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__analytic_precision
+msgid "Analytic Precision"
+msgstr ""
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_attachment_count
