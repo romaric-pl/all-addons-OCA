@@ -548,16 +548,16 @@ Date:   Sun Sep 29 15:41:56 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit bff28158187e5f6b96aff171712336e9d8340ce1
+commit 1c7eddcde68988c548907168d5daa9a550cc3999
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 24 07:00:36 2024 +0000
+Date:   Fri Oct 25 17:48:16 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (578 of 578 strings)
+    Currently translated at 100.0% (45 of 45 strings)
     
-    Translation: field-service-14.0/field-service-14.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice/it/
+    Translation: field-service-14.0/field-service-14.0-fieldservice_isp_account
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice_isp_account/it/
 
 
 ## margin-analysis
@@ -603,16 +603,11 @@ Date:   Wed May 1 18:12:53 2024 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit d2c65e695e20a76439ddeb8d72a4c97858e7d9c1
-Author: Víctor Martínez <victor.martinez@tecnativa.com>
-Date:   Thu Sep 19 07:04:25 2024 +0000
+commit 04698638fff969690cbbffcd9380f35fc6591b28
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 28 08:38:30 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (13 of 13 strings)
-    
-    Translation: timesheet-14.0/timesheet-14.0-hr_timesheet_predefined_description
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-14-0/timesheet-14-0-hr_timesheet_predefined_description/es/
+    Added translation using Weblate (Italian)
 
 
 ## hr
@@ -903,16 +898,16 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit f621980bb6e8e141c2f48f520962c95cc25ba4e1
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Oct 25 08:19:07 2024 +0000
+commit 54a39792cd377fa5614cfa4ad1a78065be7cb640
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 28 07:53:30 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (199 of 199 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_withholding_tax
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_withholding_tax/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_intrastat_statement
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_intrastat_statement/it/
 
 
 ## l10n-japan
@@ -1217,16 +1212,11 @@ Date:   Thu Jul 4 11:50:22 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 0b48b752be935d3d1c5e95d297f342f043f3501f
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Oct 5 08:56:57 2024 +0000
+commit a729a2adceb48fb27edbf1bdc7c7b169eea5a4ed
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 28 07:50:45 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: wms-14.0/wms-14.0-shopfloor
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-shopfloor/
+    Added translation using Weblate (Italian)
 
 
 ## manufacture
@@ -1503,9 +1493,9 @@ Date:   Thu Sep 12 07:36:50 2024 +0000
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit e829db4243b211a5c15ca763d7ccfb5c71dfa64e
+commit ef570319a617059afad9abb7ea538f78a940d155
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 26 13:18:11 2024 +0000
+Date:   Tue Oct 29 10:17:17 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1713,11 +1703,11 @@ Date:   Fri Oct 27 21:13:28 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 902d3f8b8624efe489dd3c8c0333a06ec6b72a57
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 24 11:03:35 2024 +0000
+commit 82ba06fce53362f36f8c983150d613e3becf5f88
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Oct 28 16:37:30 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## website
