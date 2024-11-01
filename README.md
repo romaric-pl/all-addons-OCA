@@ -84,9 +84,9 @@ Date:   Tue Oct 15 11:05:08 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit bea0f589895699fb3b109072f2f985eae1ed1c9e
+commit 1475806695012cce1b2c2a1d61af9d53454054a3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 24 09:05:49 2024 +0000
+Date:   Wed Oct 30 10:22:22 2024 +0000
 
     [BOT] post-merge updates
 
@@ -442,16 +442,11 @@ Date:   Wed May 1 19:00:55 2024 +0000
 
 ## sale-promotion
 From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
-commit 8ed8a5c321ab0de653c979460d1105704a4e9b12
+commit 339b922a4a089ec8ed52e5e6a10c2b7647f05655
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jul 18 06:54:32 2024 +0000
+Date:   Wed Oct 30 21:33:37 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (15 of 15 strings)
-    
-    Translation: sale-promotion-14.0/sale-promotion-14.0-sale_coupon_order_line_link
-    Translate-URL: https://translation.odoo-community.org/projects/sale-promotion-14-0/sale-promotion-14-0-sale_coupon_order_line_link/it/
+    Added translation using Weblate (Italian)
 
 
 ## sale-reporting
@@ -548,16 +543,16 @@ Date:   Sun Sep 29 15:41:56 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 1c7eddcde68988c548907168d5daa9a550cc3999
+commit e7261e007f9e809fe11c28cf0a1628a75280da87
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Oct 25 17:48:16 2024 +0000
+Date:   Wed Oct 30 07:41:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (45 of 45 strings)
+    Currently translated at 100.0% (18 of 18 strings)
     
-    Translation: field-service-14.0/field-service-14.0-fieldservice_isp_account
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice_isp_account/it/
+    Translation: field-service-14.0/field-service-14.0-fieldservice_geoengine
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice_geoengine/it/
 
 
 ## margin-analysis
@@ -1025,16 +1020,11 @@ Date:   Wed May 1 18:35:54 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 22bb5b46e5748f87d8dcf6411f71d368b43e661c
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 15 07:06:46 2024 +0000
+commit 39dd0c67fc424ae507a5f304450e8057c17157d8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 1 07:44:47 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-14.0/l10n-spain-14.0-l10n_es_aeat_mod303
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-14-0/l10n-spain-14-0-l10n_es_aeat_mod303/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1212,9 +1202,9 @@ Date:   Thu Jul 4 11:50:22 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit a729a2adceb48fb27edbf1bdc7c7b169eea5a4ed
+commit ab9197cbcf0d9808684186a8b0e7e3c2fe403d7f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 28 07:50:45 2024 +0000
+Date:   Wed Oct 30 15:12:11 2024 +0000
 
     Added translation using Weblate (Italian)
 
@@ -1293,11 +1283,11 @@ Date:   Thu May 2 14:26:18 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit c5c3735d34c652371d2b69ccc102a9057131fa29
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 24 14:49:29 2024 +0000
+commit 17a2df0ab37b04e78f27e1d4cf290a343b06627a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 30 16:21:02 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## product-kitting
@@ -1320,11 +1310,11 @@ Date:   Wed May 1 18:52:54 2024 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit 7ad13f44ba875c624016bf5dd9e31c2f9e298ca0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 5 07:59:52 2024 +0000
+commit 58b1d12df60b7a7f15b347f2c12591a0229e0036
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 30 15:31:18 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## project-reporting
@@ -1525,16 +1515,11 @@ Date:   Wed May 1 19:05:18 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit c2b5a8e56e97ec592bda2620c6280323ccf17e27
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:33:29 2024 +0000
+commit c3b3a6d10d2b6ab289b1d1ed2b32662df88bb582
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Oct 31 09:02:16 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 58.9% (43 of 73 strings)
-    
-    Translation: server-ux-14.0/server-ux-14.0-date_range
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-date_range/it/
+    [BOT] post-merge updates
 
 
 ## community-data-files
@@ -1703,9 +1688,9 @@ Date:   Fri Oct 27 21:13:28 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 82ba06fce53362f36f8c983150d613e3becf5f88
+commit cb58b72fa2a1e5bee5a6e196036031c84bb83c6d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 28 16:37:30 2024 +0000
+Date:   Wed Oct 30 12:46:44 2024 +0000
 
     Added translation using Weblate (Italian)
 
