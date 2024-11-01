@@ -3,12 +3,12 @@
 {
     "name": "Account payment notification",
     "summary": "Notifiy upcoming payments",
-    "version": "15.0.1.0.1",
+    "version": "15.0.1.1.0",
     "development_status": "Beta",
     "category": "Accounting",
     "website": "https://github.com/OCA/account-payment",
     "author": "Moduon, Odoo Community Association (OCA)",
-    "maintainers": ["yajo"],
+    "maintainers": ["yajo", "elp", "rafaelbn"],
     "license": "LGPL-3",
     "installable": True,
     "depends": [

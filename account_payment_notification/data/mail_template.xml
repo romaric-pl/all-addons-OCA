@@ -19,6 +19,9 @@
             </p>
             <p t-else="">
                 Your payment order was processed and sent to the bank.
+                <br />
+                The operation will be carried out from the following bank account:
+                <t t-out="object.journal_id.bank_account_id.display_name" />
             </p>
             <p t-if="object.reconciled_invoices_type == 'invoice'">
                 It includes the following invoices:

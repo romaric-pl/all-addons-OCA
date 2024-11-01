@@ -366,7 +366,8 @@ class AccountEdiXmlCIUSRO(models.Model):
                         partner.name,
                     )
                 if (
-                    partner.country_id.code == "RO"
+                    partner.city
+                    and partner.country_id.code == "RO"
                     and partner.state_id
                     and partner.state_id.code == "B"
                 ):
