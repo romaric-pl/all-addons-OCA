@@ -594,9 +594,9 @@ Date:   Thu Jul 25 06:37:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 4948e30f6a19f53d60b89aeb4af6e52d2339a277
+commit 82198f84dffbcd9d7ee239065a506e598d2d3b5c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 24 07:03:32 2024 +0000
+Date:   Wed Oct 30 07:41:53 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1102,11 +1102,16 @@ Date:   Mon Oct 9 20:14:19 2023 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 5c366f75e069df6e1ce52f1a0e8ebcc211b0ab50
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 9 16:37:53 2024 +0000
+commit da33d6e81b70a1308e39a9f63080d8656c4e1bbc
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 1 07:48:14 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-13.0/l10n-spain-13.0-delivery_gls_asm
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-13-0/l10n-spain-13-0-delivery_gls_asm/
 
 
 ## l10n-switzerland
