@@ -16,6 +16,27 @@ class ShopfloorSchemaDetailAction(Component):
                     "required": True,
                 },
                 "reserved_move_lines": self._schema_list_of(self.move_line()),
+                "products": self._schema_list_of(self.location_product()),
+            }
+        )
+        return schema
+
+    def location_product(self):
+        schema = self.product()
+        schema.update(
+            {
+                "quantity": {"type": "float", "required": True},
+                "lots": self._schema_list_of(self.location_lot()),
+            }
+        )
+        return schema
+
+    def location_lot(self):
+        schema = self.lot()
+        schema.update(
+            {
+                "removal_date": {"type": "string", "nullable": True, "required": False},
+                "quantity": {"type": "float", "required": True},
             }
         )
         return schema
@@ -76,6 +97,22 @@ class ShopfloorSchemaDetailAction(Component):
                 "image": {"type": "string", "nullable": True, "required": False},
                 "manufacturer": self._schema_dict_of(self._simple_record()),
                 "suppliers": self._schema_list_of(self.product_supplierinfo()),
+                "locations": self._schema_list_of(self.product_location()),
+            }
+        )
+        return schema
+
+    def product_location(self):
+        schema = self.location()
+        schema.update(
+            {
+                "complete_name": {
+                    "type": "string",
+                    "nullable": False,
+                    "required": True,
+                },
+                "quantity": {"type": "float", "required": True},
+                "lots": self._schema_list_of(self.location_lot()),
             }
         )
         return schema

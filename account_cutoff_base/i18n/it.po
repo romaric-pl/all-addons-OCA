@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-23 23:20+0000\n"
-"PO-Revision-Date: 2024-10-21 12:06+0000\n"
+"PO-Revision-Date: 2024-10-31 00:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -378,10 +378,22 @@ msgid "Default Account for Accrued Expenses"
 msgstr "Conto predefinito per ratei passivi"
 
 #. module: account_cutoff_base
+#: model:ir.model.fields,field_description:account_cutoff_base.field_res_company__default_accrued_expense_return_account_id
+#: model:ir.model.fields,field_description:account_cutoff_base.field_res_config_settings__dft_accrued_expense_return_account_id
+msgid "Default Account for Accrued Expenses Refunds"
+msgstr "Conto predefinito per i rimborsi ratei passivi"
+
+#. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_res_company__default_accrued_revenue_account_id
 #: model:ir.model.fields,field_description:account_cutoff_base.field_res_config_settings__dft_accrued_revenue_account_id
 msgid "Default Account for Accrued Revenues"
 msgstr "Conto predefinito per ratei attivi"
+
+#. module: account_cutoff_base
+#: model:ir.model.fields,field_description:account_cutoff_base.field_res_company__default_accrued_revenue_return_account_id
+#: model:ir.model.fields,field_description:account_cutoff_base.field_res_config_settings__dft_accrued_revenue_return_account_id
+msgid "Default Account for Accrued Revenues Refunds"
+msgstr "Conto predefinito per i rimborsi ratei attivi"
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_res_company__default_prepaid_expense_account_id

@@ -20,7 +20,7 @@ Vue.component("detail-product", {
             return [
                 // Image TODO
                 {path: "lot.name", label: "Lot"},
-                {path: "expiry_date", label: "Expiry date"},
+                {path: "expiration_date", label: "Expiry date"},
                 {path: "default_code", label: "Internal ref"},
                 {path: "barcode", label: "Barcode"},
                 {path: "product.supplier_code", label: "Supplier ref"},
@@ -38,6 +38,59 @@ Vue.component("detail-product", {
         },
         render_packaging(record, field) {
             return [record.name, "(" + record.code + ")", "= " + record.qty].join(" ");
+        },
+        locations_options() {
+            return {
+                main: false,
+                key_title: "name",
+                fields: this.locations_fields(),
+                card_klass: "loud-labels",
+            };
+        },
+        locations_fields() {
+            return [{path: "quantity", label: "Reserved"}];
+        },
+        available_product_list_options() {
+            return {
+                main: true,
+                key_title: "display_name",
+                klass: "loud-labels",
+                title_action_field: {
+                    action_val_path: "default_code",
+                },
+                fields: this.available_product_list_fields(),
+            };
+        },
+        available_product_list_fields() {
+            return [{path: "qty_available", label: "Qty on hand"}];
+        },
+        lot_detail_options() {
+            return {
+                main: false,
+                key_title: "name",
+                fields: this.lot_detail_fields(),
+                klass: "loud-labels",
+            };
+        },
+        lot_detail_fields() {
+            const self = this;
+            return [
+                {path: "quantity", label: "Qty in stock"},
+                {
+                    path: "expiration_date",
+                    label: "Expiry date",
+                    renderer: function (rec, field) {
+                        return self.utils.display.render_field_date(rec, field);
+                    },
+                },
+                {
+                    path: "removal_date",
+                    label: "Removal date",
+                    renderer: function (rec, field) {
+                        return self.utils.display.render_field_date(rec, field);
+                    },
+                },
+            ];
         },
     },
     template: `
@@ -64,6 +117,38 @@ Vue.component("detail-product", {
             :records="record.packaging"
             :options="{key_title: 'display_name', list_item_fields: packaging_detail_fields()}"
             />
+    </div>
+
+    <div class="locations mb-4" v-if="record.locations">
+        <separator-title>Locations</separator-title>
+        <v-expansion-panels v-if="record.locations.length > 0" flat :color="utils.colors.color_for('detail_main_card')">
+            <v-expansion-panel v-for="(location, index) in record.locations" :key="make_component_key(['location', index])">
+              <v-expansion-panel-header>
+                  <item-detail-card
+                      v-bind="$props"
+                      :record="location"
+                      :key="make_component_key(['location', location.id])"
+                      :options="locations_options()"
+                      :card_color="utils.colors.color_for('detail_main_card')"
+                      >
+                        <template v-slot:subtitle>
+                        {{ location.complete_name }}
+                        </template>
+                    </item-detail-card>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content v-for="(lot, i) in location.lots">
+                <separator-title v-if="location.lots.length > 0">Lots</separator-title>
+                <item-detail-card
+                :record="lot"
+                v-bind="$props"
+                :key="make_component_key(['lot', lot.id])"
+                :options="lot_detail_options()"
+                :card_color="utils.colors.color_for('screen_step_todo')"
+                />
+              </v-expansion-panel-content>
+
+              </v-expansion-panel>
+        </v-expansion-panels>
     </div>
 </div>
 `,

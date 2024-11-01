@@ -22,7 +22,7 @@ Vue.component("detail-lot", {
             const self = this;
             return [
                 {
-                    path: "expire_date",
+                    path: "expiration_date",
                     label: "Expiry date",
                     renderer: function (rec, field) {
                         return self.utils.display.render_field_date(rec, field);

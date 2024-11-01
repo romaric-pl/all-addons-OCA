@@ -1,5 +1,7 @@
 # Copyright 2020 Camptocamp SA (http://www.camptocamp.com)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+from collections import defaultdict
+
 from odoo.tools.float_utils import float_round
 
 from odoo.addons.shopfloor_base.tests.common_misc import ActionsDataTestMixin
@@ -181,6 +183,16 @@ class ActionsDataCaseBase(CommonCase, ActionsDataTestMixin):
         data.update(kw)
         return data
 
+    def _expected_lot(self, record, **kw):
+        data = {
+            "id": record.id,
+            "name": record.name,
+            "ref": record.ref or None,
+            "expiration_date": record.expiration_date or None,
+        }
+        data.update(kw)
+        return data
+
 
 class ActionsDataDetailCaseBase(ActionsDataCaseBase):
     @classmethod
@@ -206,6 +218,16 @@ class ActionsDataDetailCaseBase(ActionsDataCaseBase):
                 "reserved_move_lines": self.data_detail.move_lines(
                     kw.get("move_lines", [])
                 ),
+                "products": self.data_detail._location_content(record),
+            }
+        )
+
+    def _expected_location_lot(self, record, **kw):
+        return dict(
+            **self._expected_lot(record),
+            **{
+                "removal_date": record.removal_date or None,
+                "quantity": sum(record.quant_ids.mapped("quantity")),
             }
         )
 
@@ -215,16 +237,35 @@ class ActionsDataDetailCaseBase(ActionsDataCaseBase):
             record.qty_available - record.free_qty,
             precision_rounding=record.uom_id.rounding,
         )
+        locations = self.data_detail._get_product_locations(record)
         detail = {
             "qty_available": qty_available,
             "qty_reserved": qty_reserved,
         }
+        locations_info = []
+        for location in locations:
+            quants = location.quant_ids.filtered(lambda q: q.product_id == record)
+            loc = self._expected_location(location)
+            loc["complete_name"] = location.complete_name
+            loc["quantity"] = sum(quants.mapped("quantity"))
+            loc["lots"] = []
+            quants_lot_qty = defaultdict(lambda: 0)
+            for quant in quants:
+                quants_lot_qty[quant.lot_id] += quant.quantity
+            for lot, qty in quants_lot_qty.items():
+                if not lot:
+                    continue
+                lot_val = self._expected_location_lot(lot)
+                lot_val["quantity"] = qty
+                loc["lots"].append(lot_val)
+            locations_info.append(loc)
         if kw.get("full"):
             detail.update(
                 {
                     "image": "/web/image/product.product/{}/image_128".format(record.id)
                     if record.image_128
                     else None,
+                    "locations": locations_info,
                     "manufacturer": {
                         "id": record.manufacturer_id.id,
                         "name": record.manufacturer_id.name,

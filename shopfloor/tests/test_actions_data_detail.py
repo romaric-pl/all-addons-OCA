@@ -56,11 +56,12 @@ class TestActionsDataDetailCase(ActionsDataDetailCaseBase):
             "name": lot.name,
             "ref": "#FOO",
             "expiration_date": "2020-05-31T00:00:00",
+            "removal_date": "2020-05-20T00:00:00",
             "product": self._expected_product_detail(self.product_b, full=True),
         }
         # ignore time and TZ, we don't care here
-        self.assertEqual(data.pop("removal_date").split("T")[0], "2020-05-20")
-        self.assertEqual(data.pop("expire_date").split("T")[0], "2020-05-31")
+        self.assertEqual(data.get("removal_date", "").split("T")[0], "2020-05-20")
+        self.assertEqual(data.get("expiration_date", "").split("T")[0], "2020-05-31")
         self.assertDictEqual(data, expected)
 
     def test_data_package(self):
