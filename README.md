@@ -584,16 +584,16 @@ Date:   Wed Oct 9 08:31:22 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 8699185d9d07c780549449a21316f1e453ca2554
+commit 2619fae744f3979a27d31c67e37139a4baded81c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Oct 25 15:59:33 2024 +0000
+Date:   Wed Oct 30 07:41:19 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (512 of 512 strings)
+    Currently translated at 100.0% (44 of 44 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_sale
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_sale/it/
 
 
 ## margin-analysis
