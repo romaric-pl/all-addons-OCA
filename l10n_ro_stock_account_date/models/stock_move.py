@@ -19,7 +19,7 @@ class StockMove(models.Model):
         if not new_date:
             if self.picking_id:
                 if self.picking_id.l10n_ro_accounting_date:
-                    new_date = self.picking_id.l10n_ro_accounting_date
+                    new_date = self.picking_id.l10n_ro_accounting_date.date()
             elif self.is_inventory:
                 new_date = self.date
             elif "raw_material_production_id" in self._fields:
@@ -28,7 +28,7 @@ class StockMove(models.Model):
                 elif self.production_id:
                     new_date = self.production_id.date_planned_start
             if not new_date:
-                new_date = fields.datetime.now()
+                new_date = fields.date.today()
         restrict_date_last_month = (
             self.company_id.l10n_ro_restrict_stock_move_date_last_month
         )
@@ -56,7 +56,7 @@ class StockMove(models.Model):
                 )
             self.check_lock_date(self.date)
         if first_posting_date and last_posting_date:
-            if not (first_posting_date <= new_date.date() <= last_posting_date):
+            if not (first_posting_date <= new_date <= last_posting_date):
                 raise UserError(
                     _(
                         "Cannot validate stock move due to date restriction."

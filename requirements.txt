@@ -5,6 +5,8 @@
 # From [https://github.com/OCA/account-consolidation.git](https://github.com/OCA/account-consolidation.git)
 # From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
 # generated from manifests external_dependencies
+numpy-financial<=1.0.0
+numpy>=1.15
 python-dateutil
 # From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
 # From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)

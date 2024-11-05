@@ -55,5 +55,11 @@ class TestBasePartnerTwoLine(TransactionCase):
         # Partner without a name.
         self.assertEqual(
             self.child_partner_no_name.display_name,
+            "Test Company Name, Invoice Address",
+        )
+        self.assertEqual(
+            self.child_partner_no_name.with_context(
+                _keep_partner_address_type=True
+            ).display_name,
             "Test Company Name\nInvoice Address",
         )

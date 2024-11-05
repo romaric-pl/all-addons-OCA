@@ -41,30 +41,30 @@ Date:   Sat Jul 6 17:16:28 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 2e27f8801c6bb0ecbe25460d69f52ef06ef72dba
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 22 07:08:50 2024 +0000
-
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (41 of 41 strings)
-    
-    Translation: account-financial-tools-17.0/account-financial-tools-17.0-purchase_unreconciled
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-purchase_unreconciled/it/
-
-
-## account-financial-reporting
-From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 0aff92fa43ddf5780d44450ddfe025d3c7af7d71
+commit 2fcdc8682cd3ab165a9b2ea8374e89a826ce82ea
 Author: Weblate <noreply@weblate.org>
-Date:   Wed Oct 30 10:24:18 2024 +0000
+Date:   Mon Nov 4 15:51:13 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-account_financial_report/
+    Translation: account-financial-tools-17.0/account-financial-tools-17.0-account_loan
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-account_loan/
+
+
+## account-financial-reporting
+From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
+commit cc73f29bca1202997be3bc1709918ab5d060cf81
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 4 14:00:04 2024 +0000
+
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (107 of 107 strings)
+    
+    Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-partner_statement/it/
 
 
 ## account-invoice-reporting
@@ -152,11 +152,16 @@ Date:   Thu Oct 17 18:52:05 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit c910a069a510ed2fd50401598537cdfc7bc52a4b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 27 11:53:43 2024 +0000
+commit de8f8ddd4a18067a594ebd8e62b68e86f5e1f53a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 4 13:25:57 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (92 of 92 strings)
+    
+    Translation: credit-control-17.0/credit-control-17.0-account_financial_risk
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-17-0/credit-control-17-0-account_financial_risk/it/
 
 
 ## data-protection
@@ -188,16 +193,16 @@ Date:   Thu Oct 17 19:09:38 2024 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit bf80a2ffc08f588a4f717a4ab54796ae1c37be7f
+commit 619bf137f8df0d963d9b7d3dd49c7b5c81b1f3b5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 1 09:55:58 2024 +0000
+Date:   Tue Nov 5 08:52:39 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (94 of 94 strings)
+    Currently translated at 100.0% (33 of 33 strings)
     
-    Translation: bank-statement-import-17.0/bank-statement-import-17.0-account_statement_import_online
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-17-0/bank-statement-import-17-0-account_statement_import_online/it/
+    Translation: bank-statement-import-17.0/bank-statement-import-17.0-account_statement_import_move_line
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-17-0/bank-statement-import-17-0-account_statement_import_move_line/it/
 
 
 ## account-payment
@@ -370,16 +375,11 @@ Date:   Fri Oct 25 19:09:49 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit f53d6671327f97aa80fe60757c904a3b74b270e9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Oct 25 17:43:39 2024 +0000
+commit d9ec5d0fc23ab41fbd020ce5d69ccc82f76fc6ac
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Nov 3 01:09:30 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (79 of 79 strings)
-    
-    Translation: partner-contact-17.0/partner-contact-17.0-partner_identification
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_identification/it/
+    [BOT] post-merge updates
 
 
 ## sale-financial
@@ -939,9 +939,9 @@ Date:   Sat Jul 6 17:35:13 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit e61f492335bcdbfae70c98345d711f67290fe690
+commit 501ca57e43c7669eacfc7e27962fd952a888678c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 1 14:40:51 2024 +0000
+Date:   Mon Nov 4 10:20:37 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1268,11 +1268,16 @@ Date:   Mon Jul 15 07:28:25 2024 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit 71fa9d2a2a14ba96ff5f1112b7903d4dabfa87e6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 29 12:15:14 2024 +0000
+commit fcc0207633fce8d8655d3332532eef29819097f9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Nov 5 08:24:24 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (21 of 21 strings)
+    
+    Translation: product-pack-17.0/product-pack-17.0-sale_product_pack
+    Translate-URL: https://translation.odoo-community.org/projects/product-pack-17-0/product-pack-17-0-sale_product_pack/it/
 
 
 ## project-reporting
@@ -1642,9 +1647,9 @@ Date:   Wed May 1 17:36:18 2024 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 6b62ffb7440f44021ffa4bc262fa6b8ef60b1092
+commit 990d84e999cea86999c25088756e013ee3d00bab
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 30 17:49:40 2024 +0000
+Date:   Mon Nov 4 16:39:21 2024 +0000
 
     [BOT] post-merge updates
 
