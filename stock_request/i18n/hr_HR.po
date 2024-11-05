@@ -807,12 +807,6 @@ msgid "Route"
 msgstr ""
 
 #. module: stock_request
-#: model:ir.model.fields,field_description:stock_request.field_stock_request__route_ids
-#: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__route_ids
-msgid "Routes"
-msgstr ""
-
-#. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__rule_ids
 msgid "Rules used"
 msgstr ""

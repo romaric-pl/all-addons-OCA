@@ -84,11 +84,16 @@ Date:   Tue Oct 15 11:05:08 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 1475806695012cce1b2c2a1d61af9d53454054a3
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 30 10:22:22 2024 +0000
+commit 0cfa42937152b886b56c04e83a2db36495e2a12a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 4 14:00:02 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (105 of 105 strings)
+    
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-partner_statement/it/
 
 
 ## account-invoice-reporting
@@ -176,16 +181,16 @@ Date:   Fri Aug 30 07:38:30 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 9070fa0475e345ae277acf0e46102305b3eb26cc
+commit 9cb7379c6243e2574273b2df8fe9b58c460f71bf
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 24 14:53:24 2024 +0000
+Date:   Mon Nov 4 13:25:54 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 20.2% (57 of 281 strings)
+    Currently translated at 100.0% (87 of 87 strings)
     
-    Translation: credit-control-14.0/credit-control-14.0-account_credit_control
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-14-0/credit-control-14-0-account_credit_control/it/
+    Translation: credit-control-14.0/credit-control-14.0-account_financial_risk
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-14-0/credit-control-14-0-account_financial_risk/it/
 
 
 ## data-protection
@@ -1151,16 +1156,16 @@ Date:   Wed May 1 19:11:30 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 01aa009dc9f39b3b4b43afcca2cb9ff796ca80eb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 14 15:54:02 2024 +0000
+commit 8b97bdcca1da8566d1ebb6978b59359a26b3ba40
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 4 11:38:51 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (47 of 47 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_reserve_rule
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_reserve_rule/it/
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_request/
 
 
 ## stock-logistics-reporting
@@ -1211,16 +1216,16 @@ Date:   Wed Oct 30 15:12:11 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit cb822644dbc0fba6ee22cd94a0fb0fdcac3ed660
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 23 06:51:48 2024 +0000
+commit 2a303f875ad6f981af924293f37e54264422938d
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 4 09:17:49 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (20 of 20 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: manufacture-14.0/manufacture-14.0-mrp_bom_tracking
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_bom_tracking/it/
+    Translation: manufacture-14.0/manufacture-14.0-mrp_subcontracting_skip_no_negative
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_subcontracting_skip_no_negative/
 
 
 ## manufacture-reporting
@@ -1248,9 +1253,9 @@ Date:   Wed Sep 18 07:14:12 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 0a17bf255d8dd77abb53a2cf18ec9fe7d36469ba
+commit a63f56fd5869e1a4e843d223cd3b40d7e326de00
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 18 11:13:36 2024 +0000
+Date:   Tue Nov 5 12:19:05 2024 +0000
 
     [BOT] post-merge updates
 

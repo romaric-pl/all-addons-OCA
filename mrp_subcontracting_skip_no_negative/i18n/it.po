@@ -17,11 +17,33 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: mrp_subcontracting_skip_no_negative
+#: model:ir.model.fields,field_description:mrp_subcontracting_skip_no_negative.field_stock_move__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mrp_subcontracting_skip_no_negative
+#: model:ir.model.fields,field_description:mrp_subcontracting_skip_no_negative.field_stock_move__id
+msgid "ID"
+msgstr ""
+
+#. module: mrp_subcontracting_skip_no_negative
+#: model:ir.model.fields,field_description:mrp_subcontracting_skip_no_negative.field_stock_move____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: mrp_subcontracting_skip_no_negative
 #: model:ir.model,name:mrp_subcontracting_skip_no_negative.model_stock_move
 msgid "Stock Move"
 msgstr "Movimento di magazzino"
 
 #. module: mrp_subcontracting_skip_no_negative
-#: model:ir.model,name:mrp_subcontracting_skip_no_negative.model_stock_picking
-msgid "Transfer"
-msgstr "Trasferimento"
+#: code:addons/mrp_subcontracting_skip_no_negative/models/stock_move.py:0
+#, python-format
+msgid ""
+"You cannot validate this stock operation because the stock level of the "
+"component product '%s' would become negative (%s) on the stock location '%s' "
+"and negative stock is not allowed for this product and/or location."
+msgstr ""
+
+#~ msgid "Transfer"
+#~ msgstr "Trasferimento"

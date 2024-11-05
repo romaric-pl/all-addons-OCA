@@ -821,12 +821,6 @@ msgid "Route"
 msgstr "Percorso"
 
 #. module: stock_request
-#: model:ir.model.fields,field_description:stock_request.field_stock_request__route_ids
-#: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__route_ids
-msgid "Routes"
-msgstr "Percorsi"
-
-#. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__rule_ids
 msgid "Rules used"
 msgstr "Regole utilizzate"
@@ -1219,6 +1213,9 @@ msgid ""
 "You have to select a product unit of measure in the same category than the "
 "default unit of measure of the product"
 msgstr ""
+
+#~ msgid "Routes"
+#~ msgstr "Percorsi"
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Errore consegna SMS"

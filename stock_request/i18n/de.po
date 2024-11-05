@@ -823,12 +823,6 @@ msgid "Route"
 msgstr "Route"
 
 #. module: stock_request
-#: model:ir.model.fields,field_description:stock_request.field_stock_request__route_ids
-#: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__route_ids
-msgid "Routes"
-msgstr "Routen"
-
-#. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__rule_ids
 msgid "Rules used"
 msgstr ""
@@ -1228,6 +1222,9 @@ msgid ""
 msgstr ""
 "Sie müssen eine Produktmengeneinheit aus der gleichen Kategorie, wie die "
 "Basismengeneinheit des Produkts, verwenden"
+
+#~ msgid "Routes"
+#~ msgstr "Routen"
 
 #, fuzzy
 #~ msgid "SMS Delivery error"

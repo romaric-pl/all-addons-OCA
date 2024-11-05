@@ -823,12 +823,6 @@ msgid "Route"
 msgstr "Ruta"
 
 #. module: stock_request
-#: model:ir.model.fields,field_description:stock_request.field_stock_request__route_ids
-#: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__route_ids
-msgid "Routes"
-msgstr "Rutas"
-
-#. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__rule_ids
 msgid "Rules used"
 msgstr ""
@@ -1240,3 +1234,6 @@ msgid ""
 msgstr ""
 "Debe seleccionada una unidad de medida de producto de la misma categoría que "
 "la unidad de medida por defecto del producto"
+
+#~ msgid "Routes"
+#~ msgstr "Rutas"

@@ -822,12 +822,6 @@ msgid "Route"
 msgstr "Rota"
 
 #. module: stock_request
-#: model:ir.model.fields,field_description:stock_request.field_stock_request__route_ids
-#: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__route_ids
-msgid "Routes"
-msgstr "Rotas"
-
-#. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__rule_ids
 msgid "Rules used"
 msgstr "Regras usadas"
@@ -1238,6 +1232,9 @@ msgid ""
 msgstr ""
 "Você deve selecionar uma unidade de medida de produto na mesma categoria que "
 "a unidade de medida padrão do produto"
+
+#~ msgid "Routes"
+#~ msgstr "Rotas"
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Erro de entrega de SMS"

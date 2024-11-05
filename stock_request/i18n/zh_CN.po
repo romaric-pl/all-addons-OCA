@@ -812,12 +812,6 @@ msgid "Route"
 msgstr "路线"
 
 #. module: stock_request
-#: model:ir.model.fields,field_description:stock_request.field_stock_request__route_ids
-#: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__route_ids
-msgid "Routes"
-msgstr "路线"
-
-#. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__rule_ids
 msgid "Rules used"
 msgstr ""
@@ -1211,6 +1205,9 @@ msgid ""
 "You have to select a product unit of measure in the same category than the "
 "default unit of measure of the product"
 msgstr "您必须选择与产品默认计量单位相同类别的产品计量单位"
+
+#~ msgid "Routes"
+#~ msgstr "路线"
 
 #, fuzzy
 #~ msgid "SMS Delivery error"

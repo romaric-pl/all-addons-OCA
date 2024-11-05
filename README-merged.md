@@ -6361,11 +6361,11 @@ addon | version | maintainers | summary
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 14.0.1.1.1 |  | Allows to see the manufacturing order related to the reserved info of Products
 [stock_quant_view_reservation](stock_quant_view_reservation/) | 14.0.1.0.1 |  | Allows to see details of reservations on a quant
 [stock_removal_location_by_priority](stock_removal_location_by_priority/) | 14.0.1.0.0 |  | Establish a removal priority on stock locations.
-[stock_request](stock_request/) | 14.0.1.7.4 |  | Internal request for stock
+[stock_request](stock_request/) | 14.0.1.8.0 |  | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 14.0.1.1.0 |  | Internal request for stock
 [stock_request_cancel_confirm](stock_request_cancel_confirm/) | 14.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Stock Request Cancel Confirm
 [stock_request_direction](stock_request_direction/) | 14.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | From or to your warehouse?
-[stock_request_kanban](stock_request_kanban/) | 14.0.1.1.3 |  | Adds a stock request order, and takes stock requests as lines
+[stock_request_kanban](stock_request_kanban/) | 14.0.1.2.0 |  | Adds a stock request order, and takes stock requests as lines
 [stock_request_mrp](stock_request_mrp/) | 14.0.1.2.0 |  | Manufacturing request for stock
 [stock_request_partner](stock_request_partner/) | 14.0.1.0.1 |  | Allow to define partner in Stock Request
 [stock_request_picking_type](stock_request_picking_type/) | 14.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add Stock Requests to the Inventory App
@@ -6762,7 +6762,7 @@ addon | version | maintainers | summary
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 14.0.2.1.0 |  | Link Purchase Order Line to Subcontract Productions
 [mrp_subcontracting_purchase_partner_management](mrp_subcontracting_purchase_partner_management/) | 14.0.1.0.1 | [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) | Subcontracting Purchase Partner Management
 [mrp_subcontracting_resupply_link](mrp_subcontracting_resupply_link/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Links between subcontracting PO and resupply picking
-[mrp_subcontracting_skip_no_negative](mrp_subcontracting_skip_no_negative/) | 14.0.1.0.0 |  | MRP Subcontracting Skip No Negative
+[mrp_subcontracting_skip_no_negative](mrp_subcontracting_skip_no_negative/) | 14.0.1.0.1 |  | MRP Subcontracting Skip No Negative
 [mrp_tag](mrp_tag/) | 14.0.1.0.1 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_unbuild_move_link](mrp_unbuild_move_link/) | 14.0.1.0.0 |  | Link the stock moves of manufacturing orders to the respective unbuild orders
 [mrp_unbuild_subcontracting](mrp_unbuild_subcontracting/) | 14.0.1.0.1 |  | Unbuild orders are created automatically when is returned a product subcontracted
@@ -6962,11 +6962,11 @@ addon | version | maintainers | summary
 [account_asset_pms](account_asset_pms/) | 14.0.1.0.0 |  | Add property in assets configuration
 [mis_builder_pms](mis_builder_pms/) | 14.0.1.0.0 |  | Add property in mis builder
 [multi_pms_properties](multi_pms_properties/) | 14.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 14.0.2.47.0 |  | A property management system
+[pms](pms/) | 14.0.2.48.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 14.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_housekeeping](pms_housekeeping/) | 14.0.1.0.1 |  | Housekeeping
 [pms_hr_property](pms_hr_property/) | 14.0.1.1.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 14.0.2.13.0 |  | PMS Spanish Adaptation
+[pms_l10n_es](pms_l10n_es/) | 14.0.2.14.0 |  | PMS Spanish Adaptation
 [pms_l10n_es_sii](pms_l10n_es_sii/) | 14.0.1.1.0 |  | PMS AEAT SII Integration
 [pms_rooming_xls](pms_rooming_xls/) | 14.0.1.0.0 |  | Rooming xlsx Management
 [pos_pms_link](pos_pms_link/) | 14.0.1.0.0 |  | Allows to use PMS reservations on the POS interface
