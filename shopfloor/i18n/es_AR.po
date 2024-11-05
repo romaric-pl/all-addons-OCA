@@ -1773,7 +1773,7 @@ msgstr ""
 #, python-format
 msgid ""
 "The quantity scanned for one or more lines cannot be higher than the maximum "
-"allowed."
+"allowed. (%(product_name)s : %(quantity_done)s > %(quantity_reserved)s)"
 msgstr ""
 
 #. module: shopfloor

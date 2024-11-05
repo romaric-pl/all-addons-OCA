@@ -4,10 +4,15 @@
 {
     "name": "Sale Commission Product Criteria Discount",
     "summary": "Advanced commissions rules with discount",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "author": "Ilyas," "Ooops404," "Odoo Community Association (OCA)",
     "contributors": ["Ilyas"],
-    "maintainers": ["ilyasProgrammer"],
+    "maintainers": [
+        "aleuffre",
+        "ilyasProgrammer",
+        "renda-dev",
+        "PicchiSeba",
+    ],
     "website": "https://github.com/OCA/commission",
     "category": "Sales Management",
     "license": "AGPL-3",
