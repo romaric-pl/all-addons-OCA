@@ -94,16 +94,16 @@ Date:   Sat Sep 28 14:43:14 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 77e22446dab89e0a581770d3ea4f63dc323e0786
+commit 4094dd0bb0db6634e73657610c819295a5a145d4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:33:21 2024 +0000
+Date:   Mon Nov 4 13:59:59 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 84.9% (283 of 333 strings)
+    Currently translated at 91.1% (72 of 79 strings)
     
-    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-account_financial_report/it/
+    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-partner_statement/it/
 
 
 ## account-invoice-reporting
@@ -206,9 +206,9 @@ Date:   Thu Aug 1 10:18:58 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 5887dc1104064c340ea9662a46e0739a0afced1a
+commit a54a9ac03379fc6978c780275a64ff6c8e9676a0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 24 14:51:09 2024 +0000
+Date:   Mon Nov 4 13:44:55 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -891,16 +891,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 1ec8a790f7c6f891a9016bde64f37418564cc043
+commit 42d980c44fb672c5d9ef295f8771f85ddecec9e3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 22 07:55:47 2024 +0000
+Date:   Mon Nov 4 08:49:38 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (129 of 129 strings)
+    Currently translated at 100.0% (173 of 173 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_account_balance_report
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_account_balance_report/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
 
 
 ## l10n-japan
