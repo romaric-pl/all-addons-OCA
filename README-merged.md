@@ -5934,15 +5934,15 @@ addon | version | maintainers | summary
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 15.0.1.2.1 |  | Stock - Manual Quant Assignment
 [stock_quant_reservation_info](stock_quant_reservation_info/) | 15.0.1.0.1 |  | Allows to see the reserved info of Products
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 15.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
-[stock_request](stock_request/) | 15.0.1.8.2 |  | Internal request for stock
-[stock_request_analytic](stock_request_analytic/) | 15.0.1.1.0 |  | Internal request for stock
+[stock_request](stock_request/) | 15.0.1.8.3 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Internal request for stock
+[stock_request_analytic](stock_request_analytic/) | 15.0.1.1.1 | [![AaronHForgeFlow](https://github.com/AaronHForgeFlow.png?size=30px)](https://github.com/AaronHForgeFlow) | Internal request for stock
 [stock_request_bom](stock_request_bom/) | 15.0.1.0.0 |  | Stock Request with BOM Integration
-[stock_request_kanban](stock_request_kanban/) | 15.0.1.1.2 |  | Adds a stock request order, and takes stock requests as lines
-[stock_request_mrp](stock_request_mrp/) | 15.0.1.3.0 |  | Manufacturing request for stock
-[stock_request_purchase](stock_request_purchase/) | 15.0.1.2.2 |  | Internal request for stock
+[stock_request_kanban](stock_request_kanban/) | 15.0.1.1.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds a stock request order, and takes stock requests as lines
+[stock_request_mrp](stock_request_mrp/) | 15.0.1.3.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Manufacturing request for stock
+[stock_request_purchase](stock_request_purchase/) | 15.0.1.2.3 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Internal request for stock
 [stock_request_separate_picking](stock_request_separate_picking/) | 15.0.1.0.0 |  | Separate one picking per one stock request
 [stock_request_submit](stock_request_submit/) | 15.0.1.0.0 |  | Add submit state on Stock Requests
-[stock_request_tier_validation](stock_request_tier_validation/) | 15.0.1.0.0 |  | Extends the functionality of Stock Requests to support a tier validation process.
+[stock_request_tier_validation](stock_request_tier_validation/) | 15.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Extends the functionality of Stock Requests to support a tier validation process.
 [stock_reserve](stock_reserve/) | 15.0.1.2.1 |  | Stock reservations on products
 [stock_reserve_rule](stock_reserve_rule/) | 15.0.1.0.1 |  | Configure reservation rules by location
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 15.0.1.0.0 |  | Allows to search for picking from supplierinfo code
@@ -7309,7 +7309,7 @@ addon | version | maintainers | summary
 [mail_activity_team](mail_activity_team/) | 15.0.2.1.1 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 15.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_autosubscribe](mail_autosubscribe/) | 15.0.1.0.3 |  | Automatically subscribe partners to its company's business documents
-[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.1.1 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
+[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.2.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_debrand](mail_debrand/) | 15.0.1.2.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_drop_target](mail_drop_target/) | 15.0.1.0.1 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_forward](mail_forward/) | 15.0.1.0.1 |  | Forward messages from the chatter of any document to other users.
@@ -7557,7 +7557,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_report_to_printer](base_report_to_printer/) | 15.0.1.1.2 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 15.0.1.2.0 |  | Report to printer
 [base_report_to_printer_mail](base_report_to_printer_mail/) | 15.0.1.0.0 |  | Report to printer - Mail extension
 [printer_zpl2](printer_zpl2/) | 15.0.1.0.0 |  | Add a ZPL II label printing feature
 

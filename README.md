@@ -79,11 +79,16 @@ Date:   Tue Oct 15 11:54:24 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 5efc018afd528c9161c00601fa6d6db17bbe6f2e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 30 10:26:04 2024 +0000
+commit 375e8bf89194230f34254ed3614d5831506feaff
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 4 14:00:03 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 58.8% (63 of 107 strings)
+    
+    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-partner_statement/it/
 
 
 ## account-invoice-reporting
@@ -1128,16 +1133,11 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit dfcd71c084e5e41e06a6e8191c1a55b1462c3501
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 22 10:51:19 2024 +0000
+commit 413f8fe4ea75e02655efd9952e3858fc5ac2248a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Nov 5 09:42:33 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_inventory_verification_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_inventory_verification_request/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1390,16 +1390,11 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 9d6e3fa47f040c2062c2bc2a5074b5286c2bf353
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 29 17:39:04 2024 +0000
+commit 7c072b12291c5280c1fac37439873553841ad342
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Nov 5 13:08:58 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: social-15.0/social-15.0-mail_show_follower
-    Translate-URL: https://translation.odoo-community.org/projects/social-15-0/social-15-0-mail_show_follower/
+    [BOT] post-merge updates
 
 
 ## storage
@@ -1431,11 +1426,16 @@ Date:   Mon Aug 19 12:20:23 2024 +0000
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit 8a02cdf523a101f5fa77378c17291e1c6da01d01
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 25 17:56:05 2024 +0000
+commit c99e28f7fa336e4632fb6a7de69a4a9325d84f74
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 4 11:59:14 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: report-print-send-15.0/report-print-send-15.0-base_report_to_printer
+    Translate-URL: https://translation.odoo-community.org/projects/report-print-send-15-0/report-print-send-15-0-base_report_to_printer/
 
 
 ## webkit-tools
