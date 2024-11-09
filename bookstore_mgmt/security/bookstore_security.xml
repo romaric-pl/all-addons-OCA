@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo noupdate="0">
+        <record model="ir.module.category" id="bookstore_management_accesss">
+            <field name="name">Bookstore Management</field>
+         </record>
+
+        <record id="bookstore_user" model="res.groups">
+            <field name="name">User</field>
+            <field
+            name="category_id"
+            ref="bookstore_mgmt.bookstore_management_accesss"
+        />
+            <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+        </record>
+        <record id="bookstore_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field
+            name="category_id"
+            ref="bookstore_mgmt.bookstore_management_accesss"
+        />
+            <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+        </record>
+</odoo>

@@ -1,10 +1,15 @@
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit bb7def08fd602b5415f83d65ece78eb736c5d82e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 23 10:43:53 2024 +0000
+commit 9c3445abf408b9d063b63a8a35228352b6190007
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Nov 7 15:51:26 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-analytic-17.0/account-analytic-17.0-pos_analytic_by_config
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-17-0/account-analytic-17-0-pos_analytic_by_config/
 
 
 ## account-budgeting
@@ -78,16 +83,16 @@ Date:   Fri Oct 18 14:42:13 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit b0a859c9315ad2cc1652df1ffe0374a730f99378
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 24 07:27:13 2024 +0000
+commit 98f70c4a3f607538172dfa97b57975c56fd5f8c9
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Nov 9 11:50:42 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (18 of 18 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-invoicing-17.0/account-invoicing-17.0-account_invoice_section_sale_order
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-17-0/account-invoicing-17-0-account_invoice_section_sale_order/it/
+    Translation: account-invoicing-17.0/account-invoicing-17.0-account_move_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-17-0/account-invoicing-17-0-account_move_tier_validation/
 
 
 ## account-fiscal-rule
@@ -120,16 +125,16 @@ Date:   Thu Oct 3 06:45:36 2024 +0000
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit f9ce5bee4a6105f66a9badd0300a17148b011a56
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 9 07:52:31 2024 +0000
+commit d0dd5f627af4f9f6d291258d361fb0708b9751c9
+Author: epanisset <emeric.panisset@camptocamp.com>
+Date:   Fri Nov 8 16:45:51 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
     Currently translated at 100.0% (277 of 277 strings)
     
     Translation: intrastat-extrastat-17.0/intrastat-extrastat-17.0-intrastat_product
-    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-17-0/intrastat-extrastat-17-0-intrastat_product/it/
+    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-17-0/intrastat-extrastat-17-0-intrastat_product/fr/
 
 
 ## mis-builder
@@ -499,16 +504,11 @@ Date:   Sat Oct 26 13:16:03 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 574a095733feb9ae84d14e8cd8ac532d8526ce1c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 30 07:41:55 2024 +0000
+commit 694d8b9ed1d16bc14886dc654a549f38f29565ee
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Nov 6 16:49:13 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (586 of 586 strings)
-    
-    Translation: field-service-17.0/field-service-17.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice/it/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -781,16 +781,16 @@ Date:   Thu Jul 18 10:36:18 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 6a994da4c260abcfcca3a6256727c103f9c789b5
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Sep 28 14:42:57 2024 +0000
+commit c976a9fb49130aedea656094b9fd32314107f2c1
+Author: epanisset <emeric.panisset@camptocamp.com>
+Date:   Fri Nov 8 17:08:16 2024 +0000
 
-    Update translation files
+    Translated using Weblate (French)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (63 of 63 strings)
     
     Translation: l10n-france-17.0/l10n-france-17.0-l10n_fr_intrastat_product
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-17-0/l10n-france-17-0-l10n_fr_intrastat_product/
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-17-0/l10n-france-17-0-l10n_fr_intrastat_product/fr/
 
 
 ## l10n-germany
@@ -1079,16 +1079,16 @@ Date:   Mon Jun 17 16:06:36 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 04d984bff8548267c6dfea08ceb1766b35e7cc23
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Oct 30 19:50:39 2024 +0000
+commit 56323acdb3ff191f8e78025aa328b739ba9bf9f1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Nov 8 08:24:51 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: stock-logistics-workflow-17.0/stock-logistics-workflow-17.0-stock_picking_supplier_ref
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-17-0/stock-logistics-workflow-17-0-stock_picking_supplier_ref/
+    Translation: stock-logistics-workflow-17.0/stock-logistics-workflow-17.0-stock_lot_on_hand_first
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-17-0/stock-logistics-workflow-17-0-stock_lot_on_hand_first/it/
 
 
 ## stock-logistics-tracking
@@ -1144,16 +1144,11 @@ Date:   Thu Oct 24 07:25:32 2024 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 937346def5579c5daf6164c854e830671e3c63fd
-Author: Ignacio Buioli <ibuioli@gmail.com>
-Date:   Wed Sep 18 22:57:16 2024 +0000
+commit 05a604369eb957800bdfa4f24bfe11c9febfdbd2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 8 12:16:03 2024 +0000
 
-    Translated using Weblate (Spanish (Argentina))
-    
-    Currently translated at 100.0% (332 of 332 strings)
-    
-    Translation: ddmrp-17.0/ddmrp-17.0-ddmrp
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-17-0/ddmrp-17-0-ddmrp/es_AR/
+    [BOT] post-merge updates
 
 
 ## wms
@@ -1172,11 +1167,16 @@ Date:   Mon Oct 14 15:55:22 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 00aa27cf397b9f2b4a1d2944c8ee45a8269610a9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 30 12:21:31 2024 +0000
+commit 69a3e301c773fa68cc0785e8233bc02043b8eae2
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 8 09:56:02 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: manufacture-17.0/manufacture-17.0-mrp_multi_level
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-17-0/manufacture-17-0-mrp_multi_level/
 
 
 ## manufacture-reporting
@@ -1213,9 +1213,9 @@ Date:   Wed May 1 17:04:04 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 90dd6541e46a19b20fb5451881a9fe30b26ab67e
+commit 123fb73180f87eb190333e8631ce430e9b3a3f8b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 23 13:24:21 2024 +0000
+Date:   Fri Nov 8 14:08:54 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1231,16 +1231,11 @@ Date:   Wed May 1 17:08:45 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 5a79222e1ce32abfe5721f6e80a501f71d780605
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Oct 9 12:00:28 2024 +0000
+commit cb4c3a1e5cb8b2e407ed98e00abd4ec541d566cd
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 8 07:51:57 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: product-attribute-17.0/product-attribute-17.0-product_logistics_uom
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-17-0/product-attribute-17-0-product_logistics_uom/
+    [BOT] post-merge updates
 
 
 ## product-kitting
@@ -1396,11 +1391,11 @@ Date:   Wed May 1 17:18:12 2024 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit f2bf5ed993a2b09b4293a7c8950f88ad679cd561
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 9 15:40:56 2024 +0000
+commit f25baf751adc13f964d05aa06446d5e2bd36eaec
+Author: epanisset <emeric.panisset@camptocamp.com>
+Date:   Fri Nov 8 17:05:38 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (French)
 
 
 ## report-print-send
@@ -1428,9 +1423,9 @@ Date:   Wed May 1 17:38:46 2024 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit ca8152c9bad9b94d7b312d5d22d72596c8e73aca
+commit ef360a882d2d1cb57b1efab64fa32bba0f3011d3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 25 07:07:21 2024 +0000
+Date:   Thu Nov 7 12:56:15 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1487,13 +1482,11 @@ Date:   Fri Oct 25 08:46:21 2024 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit d2d9ca241787a10fbb829dbc12785aeaaf5ea7f0
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Sat Oct 12 13:33:50 2024 +0200
+commit 0435437445087d0b66b3e9c0bfe4217d3eaef036
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 7 14:48:38 2024 +0000
 
-    [OU-FIX] uom_unece: No Environment.manage in 17
-    
-    Fixes #210
+    [BOT] post-merge updates
 
 
 ## webhook
@@ -1507,11 +1500,16 @@ Date:   Wed May 1 17:38:27 2024 +0000
 
 ## interface-github
 From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
-commit 237b9b315eab95b0c248712750d7a0dabb039d77
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Jul 6 17:28:37 2024 +0000
+commit 854b75db89f1dc3426d63f167280eab3ffa26956
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 8 19:16:17 2024 +0000
 
-    [IMP] update dotfiles
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: interface-github-17.0/interface-github-17.0-github_connector
+    Translate-URL: https://translation.odoo-community.org/projects/interface-github-17-0/interface-github-17-0-github_connector/
 
 
 ## iot
@@ -1575,11 +1573,11 @@ Date:   Wed May 1 17:34:43 2024 +0000
 
 ## vertical-edition
 From [https://github.com/OCA/vertical-edition.git](https://github.com/OCA/vertical-edition.git)
-commit 0d243ec952cf91ea59144a50f2c45f39591cbaa3
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 17:33:44 2024 +0000
+commit 8308067ad2444ba91b9d9845d4cf8ef71f464616
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Nov 6 11:09:03 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## vertical-education

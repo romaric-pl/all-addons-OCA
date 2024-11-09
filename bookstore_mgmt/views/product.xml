@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Copyright 2024 Miquel Alzanillas, Antoni Marroig (APSL-Nagarro) <malzanillas@apsl.net> <amarroig@apsl.net>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+    <!-- Form -->
+    <record id="view_product_template_form_inherited" model="ir.ui.view">
+        <field name="name">product.template.form.inherited</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='options']" position="inside">
+                <span class="d-inline-block">
+                    <field name="is_book" />
+                    <label for="is_book" />
+                </span>
+
+            </xpath>
+            <page name="general_information" position="after">
+                <page string="Book Information" invisible="not is_book">
+                    <group>
+                        <field name="author_id" string="Author" />
+                        <field name="editorial_id" string="Editorial" />
+                        <field name="genre_id" string="Genre" />
+                        <field name="year_edition" string="Edition Year" />
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+
+    <!-- Action View -->
+    <record id="action_product_books" model="ir.actions.act_window">
+        <field name="name">Books</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="product.product_template_tree_view" />
+        <field name="search_view_id" ref="product.product_template_search_view" />
+        <field name="domain">[('is_book', '=', True)]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <!-- Search -->
+    <record id="view_product_template_search_books_inherited" model="ir.ui.view">
+        <field name="name">product.template.search.book.inherited</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='consumable']" position="after">
+                <filter string="Books" name="books" domain="[('is_book','=',True)]" />
+            </xpath>
+            <xpath expr="//field[@name='categ_id']" position="after">
+                <separator />
+                <field name="author_id" string="Author" />
+                <field name="editorial_id" string="Editorial" />
+                <field name="genre_id" string="Genre" />
+                <field name="year_edition" string="Year of Edition" />
+            </xpath>
+            <xpath expr="//group[last()]" position="inside">
+                <separator />
+                <filter
+                    name="author_id"
+                    string="Author"
+                    context="{'group_by':'author_id'}"
+                />
+                <filter
+                    name="editorial_id"
+                    string="Editorial"
+                    context="{'group_by':'editorial_id'}"
+                />
+                <filter
+                    name="genre_id"
+                    string="Genre"
+                    context="{'group_by':'genre_id'}"
+                />
+                <filter
+                    name="year_edition"
+                    string="Year of Edition"
+                    context="{'group_by':'year_edition'}"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

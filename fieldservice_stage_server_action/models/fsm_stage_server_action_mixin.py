@@ -11,22 +11,30 @@ class FsmStageServerActionMixin(models.AbstractModel):
     @api.model_create_multi
     def create(self, vals_list):
         records = super().create(vals_list)
-        records._run_stage_server_action()
-        return records
-
-    def write(self, vals):
-        res = super().write(vals)
-        if "stage_id" in vals:
-            self._run_stage_server_action()
-        return res
-
-    def _run_stage_server_action(self):
-        for record in self:
-            action_id = record.stage_id.action_id
-            if not action_id:
+        for record in records:
+            action = record.stage_id.action_id
+            if not action:
                 continue
-            ctx = {
+            context = {
                 "active_model": self._name,
                 "active_id": record.id,
             }
-            action_id.with_context(**ctx).run()
+            action.with_context(**context).run()
+        return records
+
+    def write(self, vals):
+        records = "stage_id" in vals and self.filtered(
+            lambda ticket: ticket.stage_id.id != vals.get("stage_id")
+        )
+        if records:
+            res = super().write(vals)
+            action = self.env["fsm.stage"].browse(vals["stage_id"]).action_id
+            if action:
+                context = {
+                    "active_model": self._name,
+                    "active_ids": records.ids,
+                }
+                action.with_context(**context).run()
+        else:
+            res = super().write(vals)
+        return res

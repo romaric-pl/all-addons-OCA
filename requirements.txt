@@ -240,6 +240,10 @@ pycountry
 schwifty==2024.4.0
 # From [https://github.com/OCA/webhook.git](https://github.com/OCA/webhook.git)
 # From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
+# generated from manifests external_dependencies
+GitPython
+PyGithub
+pathspec
 # From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
 # generated from manifests external_dependencies
 pika

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Copyright 2024 Miquel Alzanillas, Antoni Marroig (APSL-Nagarro) <malzanillas@apsl.net> <amarroig@apsl.net>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+    <menuitem
+        id="menu_library_root"
+        name="Bookstore"
+        groups="bookstore_mgmt.bookstore_user"
+        web_icon="bookstore_mgmt,static/description/icon.png"
+        sequence="145"
+    />
+
+    <menuitem
+        id="menu_product_books"
+        name="Books"
+        groups="bookstore_mgmt.bookstore_user"
+        parent="menu_library_root"
+        action="action_product_books"
+        sequence="10"
+    />
+
+    <!-- Authors -->
+    <record id="view_product_book_author_form" model="ir.ui.view">
+        <field name="name">product.book.author.form</field>
+        <field name="model">product.book.author</field>
+        <field name="arch" type="xml">
+            <form string="Author">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_product_book_author_tree" model="ir.ui.view">
+        <field name="name">product.book.author.tree</field>
+        <field name="model">product.book.author</field>
+        <field name="arch" type="xml">
+            <tree editable="top">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_product_book_authors" model="ir.actions.act_window">
+        <field name="name">Authors</field>
+        <field name="res_model">product.book.author</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_product_book_author_tree" />
+    </record>
+
+    <menuitem
+        id="menu_product_books_authors"
+        name="Authors"
+        groups="bookstore_mgmt.bookstore_user"
+        parent="menu_library_root"
+        action="action_product_book_authors"
+        sequence="11"
+    />
+
+    <!-- Editorials -->
+    <record id="view_product_book_editorial_form" model="ir.ui.view">
+        <field name="name">product.book.editorial.form</field>
+        <field name="model">product.book.editorial</field>
+        <field name="arch" type="xml">
+            <form string="Editorial">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_product_book_editorial_tree" model="ir.ui.view">
+        <field name="name">product.book.editorial.tree</field>
+        <field name="model">product.book.editorial</field>
+        <field name="arch" type="xml">
+            <tree editable="top">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_product_book_editorials" model="ir.actions.act_window">
+        <field name="name">Editorials</field>
+        <field name="res_model">product.book.editorial</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_product_book_editorial_tree" />
+    </record>
+
+    <menuitem
+        id="menu_product_books_editorials"
+        name="Editorials"
+        groups="bookstore_mgmt.bookstore_user"
+        parent="menu_library_root"
+        action="action_product_book_editorials"
+        sequence="12"
+    />
+
+    <!-- Genres -->
+    <record id="view_product_book_genre_form" model="ir.ui.view">
+        <field name="name">product.book.genre.form</field>
+        <field name="model">product.book.genre</field>
+        <field name="arch" type="xml">
+            <form string="Genre">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_product_book_genre_tree" model="ir.ui.view">
+        <field name="name">product.book.genre.tree</field>
+        <field name="model">product.book.genre</field>
+        <field name="arch" type="xml">
+            <tree editable="top">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_product_book_genres" model="ir.actions.act_window">
+        <field name="name">Genres</field>
+        <field name="res_model">product.book.genre</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_product_book_genre_tree" />
+    </record>
+
+    <menuitem
+        id="menu_product_books_genres"
+        name="Genres"
+        groups="bookstore_mgmt.bookstore_user"
+        parent="menu_library_root"
+        action="action_product_book_genres"
+        sequence="13"
+    />
+</odoo>
