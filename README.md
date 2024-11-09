@@ -120,9 +120,9 @@ Date:   Thu Feb 8 08:12:29 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit f95278f876b6304a9ed25cebf600c9e747a541ae
+commit b7ad0cc13537a54f120063ef377ab8e0680200f4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Jul 14 15:34:22 2024 +0000
+Date:   Fri Nov 8 12:04:49 2024 +0000
 
     [BOT] post-merge updates
 
