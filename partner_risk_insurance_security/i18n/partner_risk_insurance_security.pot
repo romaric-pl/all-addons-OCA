@@ -1,0 +1,45 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_risk_insurance_security
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_risk_insurance_security
+#: model:ir.model,name:partner_risk_insurance_security.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: partner_risk_insurance_security
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_partner__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: partner_risk_insurance_security
+#: model:res.groups,name:partner_risk_insurance_security.group_full_access_credit_policy_state
+msgid "Full Access to Credit Insurance Fields"
+msgstr ""
+
+#. module: partner_risk_insurance_security
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: partner_risk_insurance_security
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_partner__is_full_access_user
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_users__is_full_access_user
+msgid "Is Full Access User"
+msgstr ""
+
+#. module: partner_risk_insurance_security
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr ""

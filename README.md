@@ -107,16 +107,16 @@ Date:   Fri Sep 20 14:38:04 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit f2919bcf736d5933f21d037f090618ed515aff10
-Author: beau sebastien <sebastien.beau@akretion.com>
-Date:   Thu Oct 24 20:46:24 2024 +0000
+commit 768ee19456cacf7593a8031661533a5d9d8fa3ee
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Wed Nov 6 15:14:59 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 47.0% (8 of 17 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: account-invoicing-14.0/account-invoicing-14.0-sale_line_refund_to_invoice_qty
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-sale_line_refund_to_invoice_qty/fr/
+    Translation: account-invoicing-14.0/account-invoicing-14.0-account_invoice_force_number
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_invoice_force_number/it/
 
 
 ## account-fiscal-rule
@@ -181,16 +181,11 @@ Date:   Fri Aug 30 07:38:30 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 9cb7379c6243e2574273b2df8fe9b58c460f71bf
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 4 13:25:54 2024 +0000
+commit 2b8623f23d88d17f955aad6357475f54e2e7d676
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 8 12:02:24 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (87 of 87 strings)
-    
-    Translation: credit-control-14.0/credit-control-14.0-account_financial_risk
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-14-0/credit-control-14-0-account_financial_risk/it/
+    [BOT] post-merge updates
 
 
 ## data-protection
@@ -246,16 +241,16 @@ Date:   Thu Aug 29 13:59:03 2024 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit a0b8603618df653afe5a2efe604a3da74e8375b1
-Author: Julie LeBrun <julie.lebrun@numigi.com>
-Date:   Fri Jul 26 20:57:02 2024 +0000
+commit 9d0c6005a16051412a5cafb3d63e8e6c28998a1e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Nov 6 11:22:36 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
     Currently translated at 100.0% (52 of 52 strings)
     
     Translation: account-payment-14.0/account-payment-14.0-account_payment_batch_process
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_payment_batch_process/fr/
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_payment_batch_process/it/
 
 
 ## connector
@@ -1497,13 +1492,13 @@ Date:   Tue Oct 29 10:17:17 2024 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 242c1361d5e373d5f01cc3332126973e513911b9
+commit 317265ac1d53776eba4c39e89ad7678a2729f8c7
 Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue Oct 15 14:39:12 2024 +0000
+Date:   Thu Nov 7 12:13:21 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 30.7% (8 of 26 strings)
+    Currently translated at 88.4% (23 of 26 strings)
     
     Translation: server-backend-14.0/server-backend-14.0-server_action_navigate
     Translate-URL: https://translation.odoo-community.org/projects/server-backend-14-0/server-backend-14-0-server_action_navigate/it/
