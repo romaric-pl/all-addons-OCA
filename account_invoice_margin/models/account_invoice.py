@@ -104,7 +104,7 @@ class AccountMoveLine(models.Model):
         for line in self:
             if line.move_id.move_type in ["out_invoice", "out_refund"]:
                 purchase_price = line._get_purchase_price()
-                if line.product_uom_id != line.product_id.uom_id:
+                if line.product_id and line.product_uom_id != line.product_id.uom_id:
                     purchase_price = line.product_id.uom_id._compute_price(
                         purchase_price, line.product_uom_id
                     )

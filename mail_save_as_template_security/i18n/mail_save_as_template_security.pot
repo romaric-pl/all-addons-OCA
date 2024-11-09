@@ -1,0 +1,27 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mail_save_as_template_security
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mail_save_as_template_security
+#: model:res.groups,comment:mail_save_as_template_security.group_save_as_template
+msgid ""
+"\n"
+"            Only users with this group will be able to save an email as a new template\n"
+"        "
+msgstr ""
+
+#. module: mail_save_as_template_security
+#: model:res.groups,name:mail_save_as_template_security.group_save_as_template
+msgid "Save Email As New Template"
+msgstr ""

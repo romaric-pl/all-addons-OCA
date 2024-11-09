@@ -79,16 +79,11 @@ Date:   Tue Oct 15 11:54:24 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 375e8bf89194230f34254ed3614d5831506feaff
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 4 14:00:03 2024 +0000
+commit 5d7e080476424b4a7f6b2eda2af099af57c95d1e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 7 11:06:20 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 58.8% (63 of 107 strings)
-    
-    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-partner_statement/it/
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -382,16 +377,11 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit a81e59778861e74cee45df873387ee47968b8893
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Oct 30 18:38:32 2024 +0000
+commit ce9c24a8d54f05cddc4c63e124c5efd88a7f51eb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 7 14:55:44 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_planner_calendar
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_planner_calendar/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -541,11 +531,11 @@ Date:   Thu Oct 31 15:57:16 2024 +0000
 
 ## margin-analysis
 From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
-commit 7b3dfba457c6b1168022d61c0354790194d45405
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:44:57 2024 +0000
+commit 76042f8854df5fb259f628d2fbb064d150684477
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Nov 6 21:24:20 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## fleet
@@ -999,9 +989,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 7a979b48adf34a5f1f02dcf9a7dbbf8fc9be281c
+commit 7c0d3224aae94c58b555fe10d7909915942c5d7f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 31 18:54:44 2024 +0000
+Date:   Fri Nov 8 12:34:48 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1110,16 +1100,11 @@ Date:   Fri Sep 27 14:45:39 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 8a238e5950fe49de26752f416c6a05c1e15c3d35
-Author: mde-spring <79934758+mde-spring@users.noreply.github.com>
-Date:   Wed Oct 30 09:28:54 2024 +0000
+commit ba1da80bc618601275b952d204d15f00159f8a0a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 7 17:05:29 2024 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 94.4% (17 of 18 strings)
-    
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_invoice_link
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_invoice_link/fr/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1142,9 +1127,9 @@ Date:   Tue Nov 5 09:42:33 2024 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 81673db3fc6198ca3238e53743869beaf2e0b600
+commit 5d957df7e5a2badcf59449fb51f22e575592152a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 24 06:28:39 2024 +0000
+Date:   Thu Nov 7 10:54:58 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1193,11 +1178,16 @@ Date:   Wed Dec 6 16:10:13 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 05df31e4edd529a1145be4144be30c2dfb4e1a7d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 30 12:02:37 2024 +0000
+commit 0ca8110827c5f31443d243add8b0721a34ab459f
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 8 09:58:07 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: manufacture-15.0/manufacture-15.0-mrp_multi_level
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_multi_level/
 
 
 ## manufacture-reporting
@@ -1390,9 +1380,9 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 7c072b12291c5280c1fac37439873553841ad342
+commit ddb7fd50984ce5e088fe8719bb7a397e4ff7ed5c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 5 13:08:58 2024 +0000
+Date:   Wed Nov 6 15:11:53 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1449,9 +1439,9 @@ Date:   Fri Oct 27 22:55:14 2023 +0200
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 0d24686c056f55a7f298071ad576222a079b79af
+commit 064499f6fa1d95c006bc9627691f720a3a74be36
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 16 21:14:13 2024 +0000
+Date:   Thu Nov 7 14:26:37 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1508,9 +1498,9 @@ Date:   Mon Sep 23 13:08:22 2024 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit 05a95184dcc85a6f11601f6716b07620f3380ddf
+commit 74e40b60df48799f5094ece921a61a38a74a54c5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 9 11:07:07 2024 +0000
+Date:   Thu Nov 7 14:34:52 2024 +0000
 
     [BOT] post-merge updates
 

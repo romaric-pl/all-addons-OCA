@@ -5,7 +5,7 @@
         <field name="inherit_id" ref="stock.view_picking_form" />
         <field name="arch" type="xml">
             <field name="use_create_lots" position="after">
-                <field name="picking_type_force_reservation" />
+                <field name="picking_type_force_reservation" invisible="1" />
             </field>
             <!-- WARNING: The 'attrs' attributes of the 'do_unreserve' button and the
                 'forecast_availability' field are overridden in this view. This change

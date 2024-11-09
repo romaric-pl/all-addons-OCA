@@ -85,6 +85,11 @@ class ProductMRPArea(models.Model):
         ],
         compute="_compute_supply_method",
     )
+    supply_bom_id = fields.Many2one(
+        comodel_name="mrp.bom",
+        string="Supply BoM",
+        compute="_compute_supply_method",
+    )
     qty_available = fields.Float(
         string="Quantity Available", compute="_compute_qty_available"
     )
@@ -205,20 +210,21 @@ class ProductMRPArea(models.Model):
         return rule
 
     def _compute_supply_method(self):
+        boms_by_product = self.env["mrp.bom"]._bom_find(self.mapped("product_id"))
         for rec in self:
             rule = rec._get_rule()
             if not rule:
                 rec.supply_method = "none"
+                rec.supply_bom_id = False
                 continue
             # Determine the supply method based on the final rule.
-            boms = rec.product_id.product_tmpl_id.bom_ids.filtered(
-                lambda x: x.type in ["normal", "phantom"]
-            )
+            bom = boms_by_product.get(rec.product_id, self.env["mrp.bom"])
             rec.supply_method = (
                 "phantom"
-                if rule.action == "manufacture" and boms and boms[0].type == "phantom"
+                if rule.action == "manufacture" and bom.type == "phantom"
                 else rule.action
             )
+            rec.supply_bom_id = bom
 
     @api.depends(
         "mrp_area_id", "supply_method", "product_id.route_ids", "product_id.seller_ids"
@@ -307,7 +313,3 @@ class ProductMRPArea(models.Model):
     def _get_locations(self):
         self.ensure_one()
         return self.mrp_area_id._get_locations()
-
-    def _should_create_planned_order(self):
-        self.ensure_one()
-        return not self.supply_method == "phantom"
