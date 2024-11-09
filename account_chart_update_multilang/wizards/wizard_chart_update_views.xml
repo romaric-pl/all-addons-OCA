@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_update_multi_chart_inherit" model="ir.ui.view">
+        <field name="model">wizard.update.charts.accounts</field>
+        <field name="inherit_id" ref="account_chart_update.view_update_multi_chart" />
+        <field name="arch" type="xml">
+            <field name="lang" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+
+</odoo>

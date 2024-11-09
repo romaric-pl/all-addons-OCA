@@ -45,6 +45,7 @@ msgstr "Assistant de composition de courriel"
 
 #. module: mail_optional_follower_notification
 #: model:ir.model.fields,field_description:mail_optional_follower_notification.field_account_invoice_send__notify_followers
+#: model:ir.model.fields,field_description:mail_optional_follower_notification.field_mail_compose_gateway_message__notify_followers
 #: model:ir.model.fields,field_description:mail_optional_follower_notification.field_mail_compose_message__notify_followers
 msgid "Notify Followers"
 msgstr "Notifier les abonnés"
@@ -58,10 +59,10 @@ msgstr "Notifier les abonnés"
 #~ "directly from the document (if they are allowed to)</span>\n"
 #~ "            </span>"
 #~ msgstr ""
-#~ "<span attrs=\"{'invisible': [('notify_followers', '=', True)]}\" style="
-#~ "\"color: red;\">- Attention : les abonnés ne seront pas notifié mais ils "
-#~ "peuvent avoir accès à la notification directement depuis le document (si "
-#~ "ils sont autorisés à le faire) </span>"
+#~ "<span attrs=\"{'invisible': [('notify_followers', '=', True)]}\" "
+#~ "style=\"color: red;\">- Attention : les abonnés ne seront pas notifié "
+#~ "mais ils peuvent avoir accès à la notification directement depuis le "
+#~ "document (si ils sont autorisés à le faire) </span>"
 
 #~ msgid "Message"
 #~ msgstr "Message"

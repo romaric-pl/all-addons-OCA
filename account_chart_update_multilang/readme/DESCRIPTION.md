@@ -1,0 +1,1 @@
+This module extends the functionality of `account_chart_update` so that if taxes or fiscal position templates have translated fields, they are passed to the final taxes or fiscal positions when applying the chart of accounts.

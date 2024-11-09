@@ -10,19 +10,20 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-28 03:45+0000\n"
-"PO-Revision-Date: 2018-02-28 03:45+0000\n"
-"Last-Translator: Quentin THEURET <odoo@kerpeo.com>, 2018\n"
+"PO-Revision-Date: 2024-11-06 18:06+0000\n"
+"Last-Translator: samibc2c <sami.bouzidi@camptocamp.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: base_partner_sequence
 #: model:ir.model,name:base_partner_sequence.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Sociétés"
 
 #. module: base_partner_sequence
 #: model:ir.model,name:base_partner_sequence.model_res_config_settings
@@ -45,21 +46,21 @@ msgstr "Les valeurs des champs ou un id doivent être fournis."
 #: model:ir.model.fields,help:base_partner_sequence.field_res_company__partner_ref_readonly
 #: model:ir.model.fields,help:base_partner_sequence.field_res_config_settings__partner_ref_readonly
 msgid "If marked, the Reference in partners will not be editable."
-msgstr ""
+msgstr "Si coché, la référence sur les partenaires ne sera pas modifiable."
 
 #. module: base_partner_sequence
 #: model:ir.model.fields,field_description:base_partner_sequence.field_res_company__partner_ref_readonly
 #: model:ir.model.fields,field_description:base_partner_sequence.field_res_config_settings__partner_ref_readonly
 msgid "Partner Reference Readonly"
-msgstr ""
+msgstr "Référence Partenaire Lecture seule"
 
 #. module: base_partner_sequence
 #: model:ir.model.fields,field_description:base_partner_sequence.field_res_partner__ref_readonly
 #: model:ir.model.fields,field_description:base_partner_sequence.field_res_users__ref_readonly
 msgid "Ref Readonly"
-msgstr ""
+msgstr "Ref Lecture seule"
 
 #. module: base_partner_sequence
 #: model_terms:ir.ui.view,arch_db:base_partner_sequence.res_config_settings_view_form
 msgid "Set Partner Reference field as read-only"
-msgstr ""
+msgstr "Défini le champ Référence du partenaire en lecture seule"

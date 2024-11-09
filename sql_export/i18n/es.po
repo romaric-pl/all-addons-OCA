@@ -58,6 +58,11 @@ msgid "Cancel"
 msgstr "Cancelar"
 
 #. module: sql_export
+#: model:ir.model.fields,help:sql_export.field_sql_export__keep_generated_file
+msgid "Check this to keep generated export files as attachments"
+msgstr ""
+
+#. module: sql_export
 #: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
 msgid "Configure Properties"
 msgstr "Configurar Propiedades"
@@ -174,6 +179,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:sql_export.field_sql_export__message_is_follower
 msgid "Is Follower"
 msgstr "es seguidor/a"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__keep_generated_file
+msgid "Keep Generated File"
+msgstr ""
 
 #. module: sql_export
 #: model:ir.model.fields,field_description:sql_export.field_sql_export__last_execution_date

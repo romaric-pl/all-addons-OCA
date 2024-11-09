@@ -309,6 +309,7 @@ msgid "Items"
 msgstr "Artículos"
 
 #. module: mrp_multi_level
+#: model:ir.model.fields.selection,name:mrp_multi_level.selection__mrp_planned_order__mrp_action__phantom
 #: model:ir.model.fields.selection,name:mrp_multi_level.selection__product_mrp_area__supply_method__phantom
 msgid "Kit"
 msgstr "Paquete"
@@ -921,6 +922,11 @@ msgstr "Información de Proveedor"
 #: model:ir.model.fields.selection,name:mrp_multi_level.selection__mrp_move__mrp_type__s
 msgid "Supply"
 msgstr "Suministro"
+
+#. module: mrp_multi_level
+#: model:ir.model.fields,field_description:mrp_multi_level.field_product_mrp_area__supply_bom_id
+msgid "Supply BoM"
+msgstr ""
 
 #. module: mrp_multi_level
 #: model:ir.model.fields,field_description:mrp_multi_level.field_mrp_inventory__supply_method
