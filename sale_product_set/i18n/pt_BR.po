@@ -12,8 +12,8 @@ msgstr ""
 "PO-Revision-Date: 2024-05-20 16:39+0000\n"
 "Last-Translator: Rodrigo Macedo <sottomaiormacedotec@users.noreply."
 "translation.odoo-community.org>\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/teams/"
-"23907/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/"
+"teams/23907/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,6 +49,12 @@ msgid "Add set to sale order"
 msgstr "Adicionar conjunto ao pedido de venda"
 
 #. module: sale_product_set
+#: model_terms:ir.ui.view,arch_db:sale_product_set.res_config_settings_inherit_view
+msgid ""
+"Archive/unarchive product sets related to partners together with partner"
+msgstr ""
+
+#. module: sale_product_set
 #: model_terms:ir.ui.view,arch_db:sale_product_set.view_product_set_form
 #: model_terms:ir.ui.view,arch_db:sale_product_set.view_product_set_search
 msgid "Archived"
@@ -63,6 +69,16 @@ msgstr "Cancelar"
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set__company_id
 msgid "Company"
 msgstr "Empresa"
+
+#. module: sale_product_set
+#: model:ir.model,name:sale_product_set.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: sale_product_set
+#: model:ir.model,name:sale_product_set.model_res_partner
+msgid "Contact"
+msgstr ""
 
 #. module: sale_product_set
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set__create_uid
@@ -92,6 +108,8 @@ msgstr "Desconto (%)"
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set__display_name
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set_add__display_name
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set_line__display_name
+#: model:ir.model.fields,field_description:sale_product_set.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:sale_product_set.field_res_partner__display_name
 msgid "Display Name"
 msgstr "Nome de Exibição"
 
@@ -107,6 +125,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set__id
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set_add__id
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set_line__id
+#: model:ir.model.fields,field_description:sale_product_set.field_res_config_settings__id
+#: model:ir.model.fields,field_description:sale_product_set.field_res_partner__id
 msgid "ID"
 msgstr "ID"
 
@@ -119,6 +139,8 @@ msgstr "Referência Interna"
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set____last_update
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set_add____last_update
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set_line____last_update
+#: model:ir.model.fields,field_description:sale_product_set.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:sale_product_set.field_res_partner____last_update
 msgid "Last Modified on"
 msgstr "Última atualização em"
 
@@ -152,6 +174,11 @@ msgstr "Parceiro"
 #: model_terms:ir.ui.view,arch_db:sale_product_set.view_product_set_line_search
 msgid "Product"
 msgstr "Produto"
+
+#. module: sale_product_set
+#: model_terms:ir.ui.view,arch_db:sale_product_set.res_config_settings_inherit_view
+msgid "Product Sets"
+msgstr ""
 
 #. module: sale_product_set
 #: model:ir.actions.act_window,name:sale_product_set.act_open_product_set_view
@@ -216,6 +243,18 @@ msgstr "Conjunto"
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set_add__skip_existing_products
 msgid "Skip Existing Products"
 msgstr "Ignorar Produtos Existentes"
+
+#. module: sale_product_set
+#: model:ir.model.fields,field_description:sale_product_set.field_res_config_settings__archive_partner_product_sets
+msgid "Sync product sets active state with partner"
+msgstr ""
+
+#. module: sale_product_set
+#: model:ir.model.fields,help:sale_product_set.field_res_config_settings__archive_partner_product_sets
+msgid ""
+"When a partner is archived or un-archived             its product sets are "
+"archived or un-archived as well."
+msgstr ""
 
 #. module: sale_product_set
 #: model:ir.model,name:sale_product_set.model_product_set_add

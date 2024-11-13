@@ -451,6 +451,7 @@ addon | version | maintainers | summary
 [account_billing](account_billing/) | 14.0.1.0.3 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Group invoice as billing before payment
 [account_global_discount](account_global_discount/) | 14.0.1.1.0 |  | Account Global Discount
 [account_invoice_alternate_payer](account_invoice_alternate_payer/) | 14.0.1.0.1 |  | Set a alternate payor/payee in invoices
+[account_invoice_auto_send_by_email](account_invoice_auto_send_by_email/) | 14.0.1.0.0 |  | Invoice with the email transmit method are send automatically.
 [account_invoice_base_invoicing_mode](account_invoice_base_invoicing_mode/) | 14.0.1.2.2 |  | Base module for handling multiple invoicing mode
 [account_invoice_block_payment](account_invoice_block_payment/) | 14.0.1.0.0 |  | Module to block payment of invoices
 [account_invoice_blocking](account_invoice_blocking/) | 14.0.1.0.1 |  | Set a blocking (No Follow-up) flag on invoices
@@ -1887,7 +1888,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 14.0.1.0.0 |  | Portal Sale Personal Data Only
-[pricelist_cache](pricelist_cache/) | 14.0.1.4.2 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
+[pricelist_cache](pricelist_cache/) | 14.0.1.6.0 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
 [pricelist_cache_rest](pricelist_cache_rest/) | 14.0.1.0.0 |  | Provides an endpoint to get product prices for a given customer
 [product_form_sale_link](product_form_sale_link/) | 14.0.1.1.1 |  | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_elaboration](product_supplierinfo_for_customer_elaboration/) | 14.0.1.0.0 |  | Allows to define default elaborations and elaboration notes on product customerinfos
@@ -1974,6 +1975,7 @@ addon | version | maintainers | summary
 [sale_order_report_without_price](sale_order_report_without_price/) | 14.0.1.0.1 |  | Allow you to generate quotation and order reports without price.
 [sale_order_revision](sale_order_revision/) | 14.0.1.1.1 |  | Keep track of revised quotations
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 14.0.1.0.1 |  | Sale product in a secondary unit
+[sale_order_split_strategy](sale_order_split_strategy/) | 14.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Define strategies to split sales orders
 [sale_order_tag](sale_order_tag/) | 14.0.1.0.2 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Adds Tags to Sales Orders.
 [sale_order_type](sale_order_type/) | 14.0.3.2.0 |  | Sale Order Type
 [sale_order_warn_message](sale_order_warn_message/) | 14.0.1.1.0 |  | Add a popup warning on sale to ensure warning is populated
@@ -1993,7 +1995,7 @@ addon | version | maintainers | summary
 [sale_product_multi_add](sale_product_multi_add/) | 14.0.1.1.0 |  | Sale Product Multi Add
 [sale_product_rating_verified](sale_product_rating_verified/) | 14.0.1.0.2 |  | Verify if a user has previously bought a product
 [sale_product_seasonality](sale_product_seasonality/) | 14.0.1.2.0 |  | Integrates rules for products' seasonal availability with sales
-[sale_product_set](sale_product_set/) | 14.0.1.5.5 |  | Sale product set
+[sale_product_set](sale_product_set/) | 14.0.1.6.0 |  | Sale product set
 [sale_product_set_packaging_qty](sale_product_set_packaging_qty/) | 14.0.1.1.0 |  | Manage packaging and quantities on product set lines
 [sale_product_set_sale_by_packaging](sale_product_set_sale_by_packaging/) | 14.0.1.0.2 |  | Glue module between `sale_by_packaging` and `sale_product_set_packaging_qty`.
 [sale_promotion_rule](sale_promotion_rule/) | 14.0.1.0.1 |  | Module to manage promotion rule on sale order
@@ -2418,7 +2420,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[sale_commission](sale_commission/) | 14.0.1.10.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
+[sale_commission](sale_commission/) | 14.0.1.10.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
 [sale_commission_advance](sale_commission_advance/) | 14.0.1.0.0 | [![ilyasprogrammer](https://github.com/ilyasprogrammer.png?size=30px)](https://github.com/ilyasprogrammer) | Down payment invoice commission
 [sale_commission_agent_restrict](sale_commission_agent_restrict/) | 14.0.2.0.2 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | Sales Commissions Agent Restrict
 [sale_commission_check_deposit](sale_commission_check_deposit/) | 14.0.1.0.2 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sales commission check deposit
@@ -3457,6 +3459,7 @@ addon | version | maintainers | summary
 [hr_expense_sequence_option](hr_expense_sequence_option/) | 14.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Manage sequence options for hr.expense.sheet
 [hr_expense_sheet_payment_state](hr_expense_sheet_payment_state/) | 14.0.1.0.1 |  | Backport of the Payment Status (payment_state field) in Expense Report which is introduced in Odoo Community Version 15.0
 [hr_expense_substate](hr_expense_substate/) | 14.0.1.0.1 |  | Expense Report Sub State
+[hr_expense_tax_adjust](hr_expense_tax_adjust/) | 14.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Allow to edit tax amount on expenses
 [hr_expense_tier_validation](hr_expense_tier_validation/) | 14.0.1.2.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Expense Tier Validation
 [hr_expense_widget_o2m](hr_expense_widget_o2m/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | HR Expense one2many widget
 [hr_expense_work_acceptance](hr_expense_work_acceptance/) | 14.0.1.0.0 |  | Expense Work Acceptance
@@ -6723,7 +6726,7 @@ addon | version | maintainers | summary
 [mrp_analytic_cost](mrp_analytic_cost/) | 14.0.1.1.0 |  | Track manufacturing costs in real time, using Analytic Items
 [mrp_attachment_mgmt](mrp_attachment_mgmt/) | 14.0.1.3.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mrp Attachment Mgmt
 [mrp_auto_assign](mrp_auto_assign/) | 14.0.1.0.0 |  | Make MO automatically reserve raw material moves at creation
-[mrp_bom_attribute_match](mrp_bom_attribute_match/) | 14.0.1.2.4 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Dynamic BOM component based on product attribute
+[mrp_bom_attribute_match](mrp_bom_attribute_match/) | 14.0.1.2.5 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Dynamic BOM component based on product attribute
 [mrp_bom_attribute_match_duplicate_kit](mrp_bom_attribute_match_duplicate_kit/) | 14.0.1.1.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | BOM Attribute Match Duplicate Kit
 [mrp_bom_attribute_match_semifinished_product](mrp_bom_attribute_match_semifinished_product/) | 14.0.1.0.1 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | BOM Attribute Match Semifinished Products
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 14.0.1.1.1 |  | MRP BOM Component Menu
@@ -6963,7 +6966,7 @@ addon | version | maintainers | summary
 [account_asset_pms](account_asset_pms/) | 14.0.1.0.0 |  | Add property in assets configuration
 [mis_builder_pms](mis_builder_pms/) | 14.0.1.0.0 |  | Add property in mis builder
 [multi_pms_properties](multi_pms_properties/) | 14.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 14.0.2.48.0 |  | A property management system
+[pms](pms/) | 14.0.2.49.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 14.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_housekeeping](pms_housekeeping/) | 14.0.1.0.1 |  | Housekeeping
 [pms_hr_property](pms_hr_property/) | 14.0.1.1.0 |  | Adds to the employee the property on which he works.
@@ -7030,7 +7033,7 @@ addon | version | maintainers | summary
 [purchase_cancel_remaining_delivery](purchase_cancel_remaining_delivery/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Purchase Cancel Remaining Delivery
 [purchase_commercial_partner](purchase_commercial_partner/) | 14.0.1.0.0 |  | Add stored related field 'Commercial Supplier' on POs
 [purchase_default_terms_conditions](purchase_default_terms_conditions/) | 14.0.1.0.2 |  | This module allows purchase default terms & conditions
-[purchase_delivery_split_date](purchase_delivery_split_date/) | 14.0.1.1.2 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
+[purchase_delivery_split_date](purchase_delivery_split_date/) | 14.0.1.2.0 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 14.0.1.1.2 |  | Option to create deposit from purchase order
 [purchase_discount](purchase_discount/) | 14.0.1.2.1 |  | Purchase order lines with discounts
 [purchase_exception](purchase_exception/) | 14.0.1.0.0 |  | Custom exceptions on purchase order
@@ -7044,7 +7047,7 @@ addon | version | maintainers | summary
 [purchase_isolated_rfq](purchase_isolated_rfq/) | 14.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Purchase Isolated RFQ
 [purchase_last_price_info](purchase_last_price_info/) | 14.0.2.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
 [purchase_line_service_qty_received](purchase_line_service_qty_received/) | 14.0.1.0.0 |  | Changes the Received Quantity (qty_received) of a service purchase.order.lineif one other purchase.order.line is received the qty_received of the service lineis changed to its Quantity (product_uom_qty)
-[purchase_location_by_line](purchase_location_by_line/) | 14.0.1.0.1 |  | Allows to define a specific destination location on each PO line
+[purchase_location_by_line](purchase_location_by_line/) | 14.0.1.1.0 |  | Allows to define a specific destination location on each PO line
 [purchase_lot](purchase_lot/) | 14.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Purchase Lot
 [purchase_manual_currency](purchase_manual_currency/) | 14.0.1.0.0 |  | Allows to manual currency of Purchase
 [purchase_manual_delivery](purchase_manual_delivery/) | 14.0.1.0.1 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
@@ -8430,6 +8433,7 @@ addon | version | maintainers | summary
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 14.0.1.0.1 |  | Makes the user login field case insensitive
 [base_user_empty_password](base_user_empty_password/) | 14.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to empty password of users
 [base_user_show_email](base_user_show_email/) | 14.0.1.0.0 |  | Untangle user login and email
+[impersonate_login](impersonate_login/) | 14.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | tools
 [password_security](password_security/) | 14.0.1.1.0 |  | Allow admin to set password security requirements.
 [user_log_view](user_log_view/) | 14.0.1.0.0 | [![trojikman](https://github.com/trojikman.png?size=30px)](https://github.com/trojikman) | Allow to see user's actions log
 [users_ldap_groups](users_ldap_groups/) | 14.0.1.0.1 |  | Adds user accounts to groups based on rules defined by the administrator.

@@ -320,12 +320,9 @@ msgstr ""
 "El valor mostrado depende de la zona horaria configurada en sus preferencias."
 
 #. module: pricelist_cache
-#: model:base.automation,name:pricelist_cache.automation_update_product_pricelist_cache
-#: model:ir.actions.server,name:pricelist_cache.automation_update_product_pricelist_cache_ir_actions_server
-msgid "Update Product Pricelist Cache"
-msgstr "Actualizar la Caché de la Lista de Precios de Productos"
-
-#. module: pricelist_cache
 #: model:ir.model,name:pricelist_cache.model_product_pricelist_cache_wizard
 msgid "Wizard for pricelist cache"
 msgstr "Asistente para la caché de listas de precios"
+
+#~ msgid "Update Product Pricelist Cache"
+#~ msgstr "Actualizar la Caché de la Lista de Precios de Productos"

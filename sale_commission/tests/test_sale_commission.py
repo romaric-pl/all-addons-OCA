@@ -692,3 +692,19 @@ class TestSaleCommission(SavepointCase):
         )
         self.assertEqual(1, len(settlements))
         self.assertEqual(1, len(settlements.line_ids))
+
+    def test_unlink_settlement_invoice(self):
+        self._create_order_and_invoice_and_settle(
+            self.agent_quaterly,
+            self.env.ref("sale_commission.demo_commission"),
+            1,
+        )
+        settlements = self.settle_model.search([("state", "=", "settled")])
+        invoices = settlements.make_invoices(self.journal, self.commission_product)
+        self.assertTrue(
+            all(state == "invoiced" for state in settlements.mapped("state"))
+        )
+        invoices.unlink()
+        self.assertTrue(
+            all(state == "settled" for state in settlements.mapped("state"))
+        )

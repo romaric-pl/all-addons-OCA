@@ -1,0 +1,48 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_risk_insurance_security
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-11-11 11:06+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: partner_risk_insurance_security
+#: model:ir.model,name:partner_risk_insurance_security.model_res_partner
+msgid "Contact"
+msgstr "Contatto"
+
+#. module: partner_risk_insurance_security
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: partner_risk_insurance_security
+#: model:res.groups,name:partner_risk_insurance_security.group_full_access_credit_policy_state
+msgid "Full Access to Credit Insurance Fields"
+msgstr "Accesso completo ai campi assicurazione del credito"
+
+#. module: partner_risk_insurance_security
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: partner_risk_insurance_security
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_partner__is_full_access_user
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_users__is_full_access_user
+msgid "Is Full Access User"
+msgstr "E' utente accesso completo"
+
+#. module: partner_risk_insurance_security
+#: model:ir.model.fields,field_description:partner_risk_insurance_security.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
