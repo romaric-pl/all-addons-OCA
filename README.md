@@ -78,16 +78,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit ab72db410dc44fb809c3c87e3363effe19c489ff
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Sep 28 14:40:19 2024 +0000
+commit d90e5c385cf3444716692caea803ea0394da7a71
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Nov 12 19:50:52 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 27.4% (73 of 266 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/it/
+    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_move_post_date_user
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_move_post_date_user/
 
 
 ## account-financial-reporting
@@ -1534,11 +1534,16 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit ee419d82824344de39a7f4b8655c8582a08bf8fe
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 22 05:03:14 2024 +0000
+commit 9e59a9b6133e52d52b5ba1bfb7d6f34d07402548
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Nov 13 07:59:18 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 31.6% (37 of 117 strings)
+    
+    Translation: social-13.0/social-13.0-mail_tracking
+    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_tracking/it/
 
 
 ## storage
