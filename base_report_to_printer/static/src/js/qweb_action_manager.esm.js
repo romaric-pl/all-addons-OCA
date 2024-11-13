@@ -1,4 +1,5 @@
 /** @odoo-module */
+import {Markup} from "web.utils";
 import {registry} from "@web/core/registry";
 
 async function cupsReportActionHandler(action, options, env) {
@@ -8,13 +9,12 @@ async function cupsReportActionHandler(action, options, env) {
         const print_action = await orm.call(
             "ir.actions.report",
             "print_action_for_report_name",
-            [action.report_name]
+            [action.report_name],
+            {context: {force_print_to_client: action.context.force_print_to_client}}
         );
-        if (
-            print_action &&
-            print_action.action === "server" &&
-            !print_action.printer_exception
-        ) {
+        var printer_exception = print_action.printer_exception;
+        if (print_action && print_action.action === "server" && !printer_exception) {
+            // The Odoo CUPS backend is ok. We try to print into the printer
             const result = await orm.call(
                 "ir.actions.report",
                 "print_document_client_action",
@@ -24,20 +24,58 @@ async function cupsReportActionHandler(action, options, env) {
                 env.services.notification.add(env._t("Successfully sent to printer!"), {
                     type: "success",
                 });
-            } else {
-                env.services.notification.add(env._t("Could not sent to printer!"), {
-                    type: "danger",
-                });
+                return true;
+                // In case of exception during the job, we won't get any response. So we
+                // should flag the exception and notify the user
             }
-            return true;
+            env.services.notification.add(env._t("Could not sent to printer!"), {
+                type: "danger",
+            });
+            printer_exception = true;
         }
-        if (print_action.printer_exception) {
-            env.services.notification.add(
-                env._t("The printer couldn't be reached. Downloading document instead"),
+        if (print_action && print_action.action === "server" && printer_exception) {
+            // Just so the translation engine detects them as it doesn't do it inside
+            // template strings
+            const terms = {
+                the_report: env._t("The report"),
+                couldnt_be_printed: env._t(
+                    "couldn't be printed. Click on the button below to download it"
+                ),
+                issue_on: env._t("Issue on"),
+            };
+            const notificationRemove = env.services.notification.add(
+                Markup(
+                    `<p>${terms.the_report} <strong>${action.name}</strong> ${terms.couldnt_be_printed}</p>`
+                ),
                 {
+                    title: `${terms.issue_on} ${print_action.printer_name}`,
                     type: "warning",
+                    sticky: true,
+                    messageIsHtml: true,
+                    buttons: [
+                        {
+                            name: env._t("Print"),
+                            primary: true,
+                            icon: "fa-print",
+                            onClick: async () => {
+                                const context = {
+                                    force_print_to_client: true,
+                                    must_skip_send_to_printer: true,
+                                };
+                                env.services.user.updateContext(context);
+                                await env.services.action.doAction(
+                                    {type: "ir.actions.report", ...action},
+                                    {
+                                        additionalContext: context,
+                                    }
+                                );
+                                notificationRemove();
+                            },
+                        },
+                    ],
                 }
             );
+            return true;
         }
     }
 }

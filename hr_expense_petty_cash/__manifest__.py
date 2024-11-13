@@ -3,7 +3,7 @@
 
 {
     "name": "Petty Cash",
-    "version": "15.0.1.2.0",
+    "version": "15.0.2.0.0",
     "category": "Human Resources",
     "author": "Ecosoft, Odoo Community Association (OCA)",
     "license": "AGPL-3",
@@ -11,6 +11,7 @@
     "depends": ["hr_expense"],
     "data": [
         "security/ir.model.access.csv",
+        "security/petty_cash_security.xml",
         "views/account_move_views.xml",
         "views/hr_expense_sheet_views.xml",
         "views/hr_expense_views.xml",

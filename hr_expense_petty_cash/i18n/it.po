@@ -46,6 +46,12 @@ msgid "Balance"
 msgstr "Saldo"
 
 #. module: hr_expense_petty_cash
+#: model:ir.model.fields,field_description:hr_expense_petty_cash.field_petty_cash__company_id
+#: model_terms:ir.ui.view,arch_db:hr_expense_petty_cash.view_petty_cash_search
+msgid "Company"
+msgstr ""
+
+#. module: hr_expense_petty_cash
 #: model_terms:ir.actions.act_window,help:hr_expense_petty_cash.action_petty_cash
 msgid "Create a new petty cash holder"
 msgstr "Crea un nuovo titolare piccola cassa"

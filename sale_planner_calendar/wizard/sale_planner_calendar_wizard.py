@@ -29,7 +29,8 @@ class SalePlannerCalendarWizard(models.TransientModel):
         ],
         string="Weekday",
     )
-    calendar_event_ids = fields.Many2many(
+    # Special hack One2many field to manage and save records directly
+    calendar_event_ids = fields.One2many(
         comodel_name="calendar.event",
         compute="_compute_calendar_event_ids",
         readonly=False,

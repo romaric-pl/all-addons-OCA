@@ -300,7 +300,9 @@ msgstr ""
 
 #. module: l10n_es_facturae
 #: model:ir.model.fields,field_description:l10n_es_facturae.field_res_partner__facturae
+#: model:ir.model.fields,field_description:l10n_es_facturae.field_res_partner__parent_facturae
 #: model:ir.model.fields,field_description:l10n_es_facturae.field_res_users__facturae
+#: model:ir.model.fields,field_description:l10n_es_facturae.field_res_users__parent_facturae
 msgid "Factura electrónica"
 msgstr "Factura electrònica"
 

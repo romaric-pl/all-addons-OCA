@@ -5,10 +5,10 @@
     "name": "Pasarela de pago Redsys",
     "category": "Payment Acquirer",
     "summary": "Payment Acquirer: Redsys Implementation",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-spain",
-    "depends": ["payment", "website_sale"],
+    "depends": ["payment"],
     "external_dependencies": {"python": ["pycryptodome"]},
     "data": [
         "views/payment_acquirer.xml",

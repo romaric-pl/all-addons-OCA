@@ -758,7 +758,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 15.0.4.1.5 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 15.0.4.1.6 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 15.0.4.0.2 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 15.0.3.1.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Demo addon for MIS Builder
 
@@ -1852,7 +1852,7 @@ addon | version | maintainers | summary
 [sale_order_invoice_amount](sale_order_invoice_amount/) | 15.0.1.0.1 |  | Display the invoiced and uninvoiced total in the sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 15.0.1.0.2 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_line_chained_move](sale_order_line_chained_move/) | 15.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | This module adds a field on sale order line to get all related move lines
-[sale_order_line_date](sale_order_line_date/) | 15.0.1.1.0 |  | Adds a commitment date to each sale order line.
+[sale_order_line_date](sale_order_line_date/) | 15.0.1.1.1 |  | Adds a commitment date to each sale order line.
 [sale_order_line_delivery_state](sale_order_line_delivery_state/) | 15.0.1.0.1 |  | Show the delivery state on the sale order line
 [sale_order_line_description](sale_order_line_description/) | 15.0.1.0.0 |  | Sale order line description
 [sale_order_line_input](sale_order_line_input/) | 15.0.1.1.0 |  | Search, create or modify directly sale order lines
@@ -1874,15 +1874,15 @@ addon | version | maintainers | summary
 [sale_order_report_without_price](sale_order_report_without_price/) | 15.0.1.0.0 |  | Allow you to generate quotation and order reports without price.
 [sale_order_restrict_cancel_existing_invoice](sale_order_restrict_cancel_existing_invoice/) | 15.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to restrict sale order cancelling if an invoice exists
 [sale_order_revision](sale_order_revision/) | 15.0.1.0.1 |  | Keep track of revised quotations
-[sale_order_secondary_unit](sale_order_secondary_unit/) | 15.0.2.2.0 |  | Sale product in a secondary unit
+[sale_order_secondary_unit](sale_order_secondary_unit/) | 15.0.2.2.1 |  | Sale product in a secondary unit
 [sale_order_type](sale_order_type/) | 15.0.2.1.4 |  | Sale Order Type
 [sale_order_type_quotation_number](sale_order_type_quotation_number/) | 15.0.1.2.0 |  | Use quotation sequence depending on sale type
 [sale_order_warn_message](sale_order_warn_message/) | 15.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
 [sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.1.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 15.0.1.3.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allow to create invoice payments to commercial users without accounting permissions
-[sale_planner_calendar](sale_planner_calendar/) | 15.0.2.2.0 |  | Sale planner calendar
-[sale_pricelist_global_rule](sale_pricelist_global_rule/) | 15.0.1.0.1 |  | Apply a global rule to all sale order
+[sale_planner_calendar](sale_planner_calendar/) | 15.0.2.3.0 |  | Sale planner calendar
+[sale_pricelist_global_rule](sale_pricelist_global_rule/) | 15.0.1.0.3 |  | Apply a global rule to all sale order
 [sale_procurement_group_by_commitment_date](sale_procurement_group_by_commitment_date/) | 15.0.1.0.0 |  | Groups pickings based on commitment date of order line
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 15.0.1.2.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_category_menu](sale_product_category_menu/) | 15.0.1.0.0 |  | Shows 'Product Categories' menu item in Sales
@@ -3240,7 +3240,7 @@ addon | version | maintainers | summary
 [hr_expense_pay_to_vendor](hr_expense_pay_to_vendor/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | HR Expense - Pay To Vendor
 [hr_expense_payment](hr_expense_payment/) | 15.0.1.0.1 |  | HR Expense Payment
 [hr_expense_payment_widget_amount](hr_expense_payment_widget_amount/) | 15.0.1.0.1 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | HR Expense Payment Widget Amount
-[hr_expense_petty_cash](hr_expense_petty_cash/) | 15.0.1.2.0 |  | Petty Cash
+[hr_expense_petty_cash](hr_expense_petty_cash/) | 15.0.2.0.0 |  | Petty Cash
 [hr_expense_portal](hr_expense_portal/) | 15.0.1.0.0 |  | Show current expense in a website.
 [hr_expense_sequence](hr_expense_sequence/) | 15.0.1.0.0 |  | HR expense sequence
 [hr_expense_sequence_option](hr_expense_sequence_option/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Manage sequence options for hr.expense.sheet
@@ -5114,7 +5114,7 @@ addon | version | maintainers | summary
 [l10n_es_dua](l10n_es_dua/) | 15.0.1.1.0 |  | Importaciones con DUA
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 15.0.1.1.0 |  | Suministro Inmediato de Información de importaciones con DUA
 [l10n_es_dua_ticketbai_batuz](l10n_es_dua_ticketbai_batuz/) | 15.0.1.1.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz con DUA
-[l10n_es_facturae](l10n_es_facturae/) | 15.0.1.11.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
+[l10n_es_facturae](l10n_es_facturae/) | 15.0.1.12.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 15.0.2.5.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 15.0.2.1.0 |  | Spanish Intrastat Product Declaration
 [l10n_es_irnr](l10n_es_irnr/) | 15.0.1.1.0 |  | Retenciones IRNR (No residentes)
@@ -5137,7 +5137,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book](l10n_es_vat_book/) | 15.0.2.8.1 |  | Libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 15.0.1.0.1 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 15.0.1.1.0 |  | Prorrata de IVA para la localización española
-[payment_redsys](payment_redsys/) | 15.0.1.0.0 |  | Payment Acquirer: Redsys Implementation
+[payment_redsys](payment_redsys/) | 15.0.1.0.1 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
 
@@ -5294,7 +5294,7 @@ addon | version | maintainers | summary
 [l10n_th_gov_purchase_request](l10n_th_gov_purchase_request/) | 15.0.2.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Government Purchase Request
 [l10n_th_gov_work_acceptance](l10n_th_gov_work_acceptance/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Government Work Acceptance
 [l10n_th_mis_report](l10n_th_mis_report/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - MIS Report
-[l10n_th_multicurrency_revaluation](l10n_th_multicurrency_revaluation/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Manage revaluation for multicurrency environment for Thai
+[l10n_th_multicurrency_revaluation](l10n_th_multicurrency_revaluation/) | 15.0.1.0.2 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Manage revaluation for multicurrency environment for Thai
 [l10n_th_multicurrency_revaluation_operating_unit](l10n_th_multicurrency_revaluation_operating_unit/) | 15.0.1.0.0 | [![AnutToc](https://github.com/AnutToc.png?size=30px)](https://github.com/AnutToc) [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Add Operating Unit to Currency Revaluation
 [l10n_th_partner](l10n_th_partner/) | 15.0.1.1.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Partner
 [l10n_th_promptpay](l10n_th_promptpay/) | 15.0.1.0.0 |  | Use PromptPay QR code with transfer acquirer.
@@ -5948,7 +5948,7 @@ addon | version | maintainers | summary
 [stock_reserve](stock_reserve/) | 15.0.1.2.1 |  | Stock reservations on products
 [stock_reserve_rule](stock_reserve_rule/) | 15.0.1.0.1 |  | Configure reservation rules by location
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 15.0.1.0.0 |  | Allows to search for picking from supplierinfo code
-[stock_secondary_unit](stock_secondary_unit/) | 15.0.2.2.0 |  | Get product quantities in a secondary unit
+[stock_secondary_unit](stock_secondary_unit/) | 15.0.2.3.0 |  | Get product quantities in a secondary unit
 [stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 15.0.1.0.0 |  | Stock Valuation Layer Accounting Date
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 15.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
 
@@ -6226,7 +6226,7 @@ addon | version | maintainers | summary
 [mrp_finished_backorder_product](mrp_finished_backorder_product/) | 15.0.1.0.0 |  | Be able to see the summary of the finished manufactured orders
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 15.0.0.3.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a serial number from a component to a finished product
 [mrp_lot_on_hand_first](mrp_lot_on_hand_first/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
-[mrp_multi_level](mrp_multi_level/) | 15.0.1.12.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 15.0.1.12.3 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 15.0.1.1.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 15.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_component_availability_search](mrp_production_component_availability_search/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Filter manufacturing orders by their components availability state
@@ -6251,6 +6251,7 @@ addon | version | maintainers | summary
 [mrp_workorder_lock_planning](mrp_workorder_lock_planning/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Lock the planning of a MRP workorder to avoid rescheduling
 [mrp_workorder_lot_display](mrp_workorder_lot_display/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Display lot number on workorders kanban
 [mrp_workorder_sequence](mrp_workorder_sequence/) | 15.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | adds sequence to production work orders.
+[purchase_mrp_distribution](purchase_mrp_distribution/) | 15.0.1.0.0 |  | Purchase MRP Distribution
 [quality_control_oca](quality_control_oca/) | 15.0.1.0.0 |  | Generic infrastructure for quality tests.
 [quality_control_stock_oca](quality_control_stock_oca/) | 15.0.1.0.0 |  | Quality control - Stock (OCA)
 [stock_picking_product_kit_helper](stock_picking_product_kit_helper/) | 15.0.0.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Set quanity in picking line based on product kit quantity
@@ -6514,7 +6515,7 @@ addon | version | maintainers | summary
 [purchase_order_product_recommendation_xlsx](purchase_order_product_recommendation_xlsx/) | 15.0.1.0.1 |  | Add a way to print recommended products for supplier
 [purchase_order_qty_by_product_category](purchase_order_qty_by_product_category/) | 15.0.1.0.0 |  | Purchase - Order Qty By Product Category
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
-[purchase_order_secondary_unit](purchase_order_secondary_unit/) | 15.0.1.4.0 |  | Purchase product in a secondary unit
+[purchase_order_secondary_unit](purchase_order_secondary_unit/) | 15.0.1.4.1 |  | Purchase product in a secondary unit
 [purchase_order_supplierinfo_update](purchase_order_supplierinfo_update/) | 15.0.1.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Update product supplierinfo with the last purchase price
 [purchase_order_type](purchase_order_type/) | 15.0.1.0.2 |  | Purchase Order Type
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 15.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Purchase Order Type Dashboard
@@ -7334,7 +7335,7 @@ addon | version | maintainers | summary
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 15.0.1.0.0 |  | Define a domain from which followers can be selected
 [mail_save_as_template_security](mail_save_as_template_security/) | 15.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Restrict save as new template button from the send email wizard
 [mail_send_copy](mail_send_copy/) | 15.0.1.0.0 |  | Send to you a copy of each mail sent by Odoo
-[mail_show_follower](mail_show_follower/) | 15.0.1.4.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
+[mail_show_follower](mail_show_follower/) | 15.0.1.4.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
 [mail_tracking](mail_tracking/) | 15.0.3.1.0 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 15.0.1.1.1 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 15.0.1.0.0 |  | Improve mass mailing email tracking
@@ -7561,7 +7562,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_report_to_printer](base_report_to_printer/) | 15.0.1.2.0 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 15.0.1.2.1 |  | Report to printer
 [base_report_to_printer_mail](base_report_to_printer_mail/) | 15.0.1.0.0 |  | Report to printer - Mail extension
 [printer_zpl2](printer_zpl2/) | 15.0.1.0.0 |  | Add a ZPL II label printing feature
 
@@ -7676,7 +7677,7 @@ addon | version | maintainers | summary
 [database_cleanup](database_cleanup/) | 15.0.1.2.2 |  | Database cleanup
 [datetime_formatter](datetime_formatter/) | 15.0.1.0.0 |  | Helper functions to give correct format to date[time] fields
 [dbfilter_from_header](dbfilter_from_header/) | 15.0.1.0.0 |  | Filter databases with HTTP headers
-[excel_import_export](excel_import_export/) | 15.0.1.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base module for developing Excel import/export/report
+[excel_import_export](excel_import_export/) | 15.0.1.2.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base module for developing Excel import/export/report
 [excel_import_export_demo](excel_import_export_demo/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Excel Import/Export/Report Demo
 [fetchmail_incoming_log](fetchmail_incoming_log/) | 15.0.1.0.0 |  | Log all messages received, before they start to be processed.
 [fetchmail_incoming_log_test](fetchmail_incoming_log_test/) | 15.0.1.0.0 |  | Tests for 'fetchmail_incoming_log' module.
