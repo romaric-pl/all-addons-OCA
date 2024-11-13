@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Copyright 2024 Miquel Alzanillas, Antoni Marroig (APSL-Nagarro) <malzanillas@apsl.net> <amarroig@apsl.net>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+    <!-- Form -->
+    <record id="import_book_template_form_inherited" model="ir.ui.view">
+        <field name="name">product.template.form.inherited</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_open_label_layout']" position="after">
+                <button
+                    name="action_import_from_isbn"
+                    type="object"
+                    string="Import book data"
+                    invisible="not is_book"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="import_books_data_tree_inherited" model="ir.ui.view">
+        <field name="name">product.template.tree.inherited</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_open_label_layout']" position="after">
+                <button
+                    name="action_import_from_isbn"
+                    type="object"
+                    string="Import book data"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

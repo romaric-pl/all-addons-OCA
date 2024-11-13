@@ -1,3 +1,10 @@
+## 17.0.1.0.2 (2024-11-11)
+
+### Features
+
+- Add support for branch companies. ([#648](https://github.com/OCA/mis-builder/issues/648))
+
+
 ## 16.0.5.1.9 (2024-02-09)
 
 **Bugfixes**

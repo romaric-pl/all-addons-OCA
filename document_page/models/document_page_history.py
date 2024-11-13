@@ -66,11 +66,7 @@ class DocumentPageHistory(models.Model):
                 context=True,
             )
 
-    # TODO: Replace for _compute_display_name
-    def name_get(self):
-        return [(rec.id, "%s #%i" % (rec.page_id.name, rec.id)) for rec in self]
-
-    @api.depends("page_id")
+    @api.depends("page_id", "page_id.name")
     def _compute_display_name(self):
         for rec in self:
-            rec.display_name = rec.id, "%s #%i" % (rec.page_id.name, rec.id)
+            rec.display_name = f"{rec.page_id.name} #{rec.id}"

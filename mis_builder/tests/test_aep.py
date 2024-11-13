@@ -90,6 +90,7 @@ class TestAEP(common.TransactionCase):
         self.aep.parse_expr("bali[700IN]")
         self.aep.parse_expr("bale[700IN]")
         self.aep.parse_expr("balp[700IN]")
+        self.aep.parse_expr("balp[700NA]")  # account that does not exist
         self.aep.parse_expr("bali[400AR]")
         self.aep.parse_expr("bale[400AR]")
         self.aep.parse_expr("balp[400AR]")
@@ -200,6 +201,8 @@ class TestAEP(common.TransactionCase):
         # check ending balance
         self.assertEqual(self._eval("bale[400AR]"), 400)
         self.assertEqual(self._eval("bale[700IN]"), -300)
+        # check result for non existing account
+        self.assertIs(self._eval("bale[700NA]"), AccountingNone)
 
         # let's query for March
         self._do_queries(
@@ -234,8 +237,13 @@ class TestAEP(common.TransactionCase):
 
         # unallocated p&l from previous year
         self.assertEqual(self._eval("balu[]"), -100)
-
         # TODO allocate profits, and then...
+
+        # let's query for December where there is no data
+        self._do_queries(
+            datetime.date(self.curr_year, 12, 1), datetime.date(self.curr_year, 12, 31)
+        )
+        self.assertIs(self._eval("balp[700IN]"), AccountingNone)
 
     def test_aep_by_account(self):
         self.aep.done_parsing()
@@ -410,3 +418,40 @@ class TestAEP(common.TransactionCase):
                 datetime.date(self.prev_year, 12, 1),
             )
         assert "Error while querying move line source" in str(cm.exception)
+
+    def test_aep_branch(self):
+        # create branch
+        self.branch = self.res_company.create(
+            {
+                "name": "AEP Branch",
+                "parent_id": self.company.id,
+            }
+        )
+        # create branch move in March this year
+        branch_move = self._create_move(
+            date=datetime.date(self.curr_year, 3, 1),
+            amount=50,
+            debit_acc=self.account_ar,
+            credit_acc=self.account_in,
+        )
+        branch_move.company_id = self.branch
+        self.aep = AEP(self.company | self.branch)
+        self.aep.parse_expr("balp[]")
+        self.aep.parse_expr("bale[]")
+        self.aep.parse_expr("bali[]")
+        self.aep.done_parsing()
+        # test variation and ending balance
+        self._do_queries(
+            datetime.date(self.curr_year, 3, 1), datetime.date(self.curr_year, 3, 31)
+        )
+        variation = self._eval_by_account_id("balp[]")
+        self.assertEqual(variation, {self.account_ar.id: 550, self.account_in.id: -550})
+        ending = self._eval_by_account_id("bale[]")
+        self.assertEqual(ending, {self.account_ar.id: 950, self.account_in.id: -850})
+        # initial balance at beginning of the next period is the ending balance
+        # of previous period
+        self._do_queries(
+            datetime.date(self.curr_year, 4, 1), datetime.date(self.curr_year, 4, 30)
+        )
+        initial = self._eval_by_account_id("bali[]")
+        self.assertEqual(initial, {self.account_ar.id: 950, self.account_in.id: -850})

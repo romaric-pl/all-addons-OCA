@@ -1,0 +1,1 @@
+This module add the possibility to import book information from Google Books via API calls

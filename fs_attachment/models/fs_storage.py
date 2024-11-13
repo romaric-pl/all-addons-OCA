@@ -440,6 +440,13 @@ class FsStorage(models.Model):
         ):
             fs_filename = fs_filename.replace(fs_storage.directory_path, "")
         parts = [base_url, fs_filename]
+        if attachment.fs_storage_id:
+            if (
+                fs_storage.optimizes_directory_path
+                and not fs_storage.use_filename_obfuscation
+            ):
+                checksum = attachment.checksum
+                parts = [base_url, checksum[:2], checksum[2:4], fs_filename]
         return self._normalize_url("/".join(parts))
 
     @api.model

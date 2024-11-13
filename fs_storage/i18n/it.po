@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-08 09:06+0000\n"
+"PO-Revision-Date: 2024-11-11 13:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -201,7 +201,13 @@ msgid "Resolve env vars"
 msgstr "Risole variabili ambiente"
 
 #. module: fs_storage
+#: model:ir.model.fields,field_description:fs_storage.field_fs_storage__x_eval_options_from_env_env_default
+msgid "Resolve env vars Env Default"
+msgstr "Risolvi le variabili ambiente predefinito"
+
+#. module: fs_storage
 #: model:ir.model.fields,help:fs_storage.field_fs_storage__eval_options_from_env
+#: model:ir.model.fields,help:fs_storage.field_fs_storage__x_eval_options_from_env_env_default
 msgid ""
 "Resolve options values starting with $ from environment variables. e.g\n"
 "            {\n"
@@ -339,6 +345,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__x_directory_path_env_is_editable
 msgid "X Directory Path Env Is Editable"
 msgstr "Il percorso ambiente cartella X è modificabile"
+
+#. module: fs_storage
+#: model:ir.model.fields,field_description:fs_storage.field_fs_storage__x_eval_options_from_env_env_is_editable
+msgid "X Eval Options From Env Env Is Editable"
+msgstr "Le opzioni di valutazione X da ambiente sono modificabili"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__x_options_env_is_editable

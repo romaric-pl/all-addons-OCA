@@ -1,5 +1,6 @@
 # Copyright 2023 ACSONE SA/NV (http://acsone.eu).
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+import base64
 import io
 import os
 import shutil
@@ -150,3 +151,44 @@ class TestStream(HttpCase):
             },
         )
         self.assertEqual(Image.open(io.BytesIO(res.content)).size, (64, 64))
+
+    def test_response_csp_header(self):
+        self.authenticate("admin", "admin")
+        url = f"/web/content/{self.attachment_binary.id}"
+        self.assertDownload(
+            url,
+            headers={},
+            assert_status_code=200,
+            assert_headers={
+                "X-Content-Type-Options": "nosniff",
+                "Content-Security-Policy": "default-src 'none'",
+            },
+        )
+
+    def test_serving_field_image(self):
+        self.authenticate("admin", "admin")
+        demo_partner = self.env.ref("base.partner_demo")
+        demo_partner.with_context(
+            storage_location=self.temp_backend.code,
+        ).write({"image_128": base64.encodebytes(self._create_image(128, 128))})
+        url = f"/web/image/{demo_partner._name}/{demo_partner.id}/image_128"
+        res = self.assertDownload(
+            url,
+            headers={},
+            assert_status_code=200,
+            assert_headers={
+                "Content-Type": "image/png",
+            },
+        )
+        self.assertEqual(Image.open(io.BytesIO(res.content)).size, (128, 128))
+
+        url = f"/web/image/{demo_partner._name}/{demo_partner.id}/avatar_128"
+        avatar_res = self.assertDownload(
+            url,
+            headers={},
+            assert_status_code=200,
+            assert_headers={
+                "Content-Type": "image/png",
+            },
+        )
+        self.assertEqual(Image.open(io.BytesIO(avatar_res.content)).size, (128, 128))

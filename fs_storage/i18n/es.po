@@ -201,7 +201,13 @@ msgid "Resolve env vars"
 msgstr "Resolver las variables de entorno"
 
 #. module: fs_storage
+#: model:ir.model.fields,field_description:fs_storage.field_fs_storage__x_eval_options_from_env_env_default
+msgid "Resolve env vars Env Default"
+msgstr ""
+
+#. module: fs_storage
 #: model:ir.model.fields,help:fs_storage.field_fs_storage__eval_options_from_env
+#: model:ir.model.fields,help:fs_storage.field_fs_storage__x_eval_options_from_env_env_default
 msgid ""
 "Resolve options values starting with $ from environment variables. e.g\n"
 "            {\n"
@@ -335,6 +341,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__x_directory_path_env_is_editable
 msgid "X Directory Path Env Is Editable"
 msgstr "X La Ruta de Directorio Env Es Editable"
+
+#. module: fs_storage
+#: model:ir.model.fields,field_description:fs_storage.field_fs_storage__x_eval_options_from_env_env_is_editable
+msgid "X Eval Options From Env Env Is Editable"
+msgstr ""
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__x_options_env_is_editable

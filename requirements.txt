@@ -229,6 +229,8 @@ lxml
 pysaml2
 python-jose
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
+# generated from manifests external_dependencies
+cryptography
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
 # generated from manifests external_dependencies
 sqlalchemy
@@ -264,6 +266,9 @@ ujson
 # From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
 # From [https://github.com/OCA/vertical-isp.git](https://github.com/OCA/vertical-isp.git)
 # From [https://github.com/OCA/vertical-edition.git](https://github.com/OCA/vertical-edition.git)
+# generated from manifests external_dependencies
+Unidecode
+google-books-api-wrapper
 # From [https://github.com/OCA/vertical-education.git](https://github.com/OCA/vertical-education.git)
 # From [https://github.com/OCA/vertical-medical.git](https://github.com/OCA/vertical-medical.git)
 # From [https://github.com/OCA/vertical-ngo.git](https://github.com/OCA/vertical-ngo.git)

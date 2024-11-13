@@ -8,7 +8,7 @@
     "website": "https://github.com/OCA/vertical-edition",
     "category": "Product",
     "license": "AGPL-3",
-    "maintainers": ["peluko00"],
+    "maintainers": ["peluko00", "miquelalzanillas"],
     "version": "17.0.1.0.0",
     "depends": ["product"],
     "data": [

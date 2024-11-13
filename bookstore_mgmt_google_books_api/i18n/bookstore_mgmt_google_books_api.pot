@@ -1,0 +1,63 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bookstore_mgmt_google_books_api
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bookstore_mgmt_google_books_api
+#. odoo-python
+#: code:addons/bookstore_mgmt_google_books_api/models/product_product.py:0
+#: code:addons/bookstore_mgmt_google_books_api/models/product_template.py:0
+#, python-format
+msgid "Book data updated from Google Books API"
+msgstr ""
+
+#. module: bookstore_mgmt_google_books_api
+#. odoo-python
+#: code:addons/bookstore_mgmt_google_books_api/models/product_product.py:0
+#: code:addons/bookstore_mgmt_google_books_api/models/product_template.py:0
+#, python-format
+msgid "ISBN code is mandatory. Please, provide one."
+msgstr ""
+
+#. module: bookstore_mgmt_google_books_api
+#: model_terms:ir.ui.view,arch_db:bookstore_mgmt_google_books_api.import_book_template_form_inherited
+#: model_terms:ir.ui.view,arch_db:bookstore_mgmt_google_books_api.import_books_data_tree_inherited
+msgid "Import book data"
+msgstr ""
+
+#. module: bookstore_mgmt_google_books_api
+#. odoo-python
+#: code:addons/bookstore_mgmt_google_books_api/models/product_product.py:0
+#: code:addons/bookstore_mgmt_google_books_api/models/product_template.py:0
+#, python-format
+msgid "Not book found with this data"
+msgstr ""
+
+#. module: bookstore_mgmt_google_books_api
+#: model:ir.model,name:bookstore_mgmt_google_books_api.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: bookstore_mgmt_google_books_api
+#: model:ir.model,name:bookstore_mgmt_google_books_api.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: bookstore_mgmt_google_books_api
+#. odoo-python
+#: code:addons/bookstore_mgmt_google_books_api/models/product_product.py:0
+#: code:addons/bookstore_mgmt_google_books_api/models/product_template.py:0
+#: code:addons/bookstore_mgmt_google_books_api/tests/test_google_books_api.py:0
+#, python-format
+msgid "Warning"
+msgstr ""

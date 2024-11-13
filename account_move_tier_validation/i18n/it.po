@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-09-23 15:06+0000\n"
+"PO-Revision-Date: 2024-11-11 14:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -43,12 +43,13 @@ msgstr "Ha commenti"
 #. module: account_move_tier_validation
 #: model:ir.model.fields,field_description:account_move_tier_validation.field_account_move__hide_reviews
 msgid "Hide Reviews"
-msgstr ""
+msgstr "Nascondi revisioni"
 
 #. module: account_move_tier_validation
 #: model:ir.model.fields,help:account_move_tier_validation.field_account_move__has_comment
 msgid "If set, Allow the reviewer to leave a comment on the review."
 msgstr ""
+"Se attivata, consente al revisore di lasciare un commento nella revisione."
 
 #. module: account_move_tier_validation
 #. odoo-python
