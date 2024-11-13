@@ -1,5 +1,6 @@
 # Copyright 2023 ACSONE SA/NV (http://acsone.eu).
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+import base64
 import os
 
 from odoo.exceptions import ValidationError
@@ -372,3 +373,42 @@ class TestFsStorage(TestFSAttachmentCommon):
         """
         )
         self.assertEqual(self.env.cr.dictfetchall()[0].get("count"), 2)
+
+    def test_url_for_image_dir_optimized_and_not_obfuscated(self):
+        # Create a base64 encoded mock image (1x1 pixel transparent PNG)
+        image_data = base64.b64encode(
+            b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08"
+            b"\x06\x00\x00\x00\x1f\x15\xc4\x89\x00\x00\x00\nIDAT\x08\xd7c\xf8\x0f\x00"
+            b"\x01\x01\x01\x00\xd1\x8d\xcd\xbf\x00\x00\x00\x00IEND\xaeB`\x82"
+        )
+
+        # Create a mock image filestore
+        fs_storage = self.env["fs.storage"].create(
+            {
+                "name": "FS Product Image Backend",
+                "code": "file",
+                "base_url": "https://localhost/images",
+                "optimizes_directory_path": True,
+                "use_filename_obfuscation": False,
+            }
+        )
+
+        # Create a mock image attachment
+        attachment = self.env["ir.attachment"].create(
+            {"name": "test_image.png", "datas": image_data, "mimetype": "image/png"}
+        )
+
+        # Get the url from the model
+        fs_url_1 = fs_storage._get_url_for_attachment(attachment)
+
+        # Generate the url that should be accessed
+        base_url = fs_storage.base_url_for_files
+        fs_filename = attachment.fs_filename
+        checksum = attachment.checksum
+        parts = [base_url, checksum[:2], checksum[2:4], fs_filename]
+        fs_url_2 = fs_storage._normalize_url("/".join(parts))
+
+        # Make some checks and asset if the two urls are equal
+        self.assertTrue(parts)
+        self.assertTrue(checksum)
+        self.assertEqual(fs_url_1, fs_url_2)

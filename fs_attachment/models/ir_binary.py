@@ -17,16 +17,14 @@ class IrBinary(models.AbstractModel):
 
     _inherit = "ir.binary"
 
-    def _record_to_stream(self, record, field_name):
-        # Extend base implementation to support attachment stored into a
-        # filesystem storage
-        fs_attachment = None
+    def _get_fs_attachment_for_field(self, record, field_name):
         if record._name == "ir.attachment" and record.fs_filename:
-            fs_attachment = record
+            return record
+
         record.check_field_access_rights("read", [field_name])
         field_def = record._fields[field_name]
-        if field_def.attachment and not field_def.compute and not field_def.related:
-            field_attachment = (
+        if field_def.attachment and field_def.store:
+            fs_attachment = (
                 self.env["ir.attachment"]
                 .sudo()
                 .search(
@@ -38,8 +36,14 @@ class IrBinary(models.AbstractModel):
                     limit=1,
                 )
             )
-            if field_attachment.fs_filename:
-                fs_attachment = field_attachment
+            if fs_attachment and fs_attachment.fs_filename:
+                return fs_attachment
+        return None
+
+    def _record_to_stream(self, record, field_name):
+        # Extend base implementation to support attachment stored into a
+        # filesystem storage
+        fs_attachment = self._get_fs_attachment_for_field(record, field_name)
         if fs_attachment:
             return FsStream.from_fs_attachment(fs_attachment)
         return super()._record_to_stream(record, field_name)
@@ -100,6 +104,11 @@ class IrBinary(models.AbstractModel):
                 value = record[field_name]
                 if value:
                     record = value.attachment
+                    field_name = "raw"
+            elif field_def.type in ("binary"):
+                fs_attachment = self._get_fs_attachment_for_field(record, field_name)
+                if fs_attachment:
+                    record = fs_attachment
                     field_name = "raw"
         stream = super()._get_image_stream_from(
             record,

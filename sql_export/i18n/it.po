@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-06 02:51+0000\n"
-"PO-Revision-Date: 2024-06-24 14:38+0000\n"
+"PO-Revision-Date: 2024-11-11 14:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: sql_export
 #: model:ir.model.fields,field_description:sql_export.field_sql_export__message_needaction
@@ -59,6 +59,8 @@ msgstr "Annulla"
 #: model:ir.model.fields,help:sql_export.field_sql_export__keep_generated_file
 msgid "Check this to keep generated export files as attachments"
 msgstr ""
+"Selezionare questa opzione per mantenere i file di esportazione generati "
+"come allegati"
 
 #. module: sql_export
 #: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
@@ -181,7 +183,7 @@ msgstr "Segue"
 #. module: sql_export
 #: model:ir.model.fields,field_description:sql_export.field_sql_export__keep_generated_file
 msgid "Keep Generated File"
-msgstr ""
+msgstr "Mantieni file generati"
 
 #. module: sql_export
 #: model:ir.model.fields,field_description:sql_export.field_sql_export__last_execution_date

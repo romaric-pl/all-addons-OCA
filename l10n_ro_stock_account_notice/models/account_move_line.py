@@ -41,7 +41,7 @@ class AccountMoveLine(models.Model):
                     # Control bills based on received quantities
                     if any(
                         [
-                            p.l10n_ro_notice or p._is_dropshipped()
+                            p.l10n_ro_notice and not p._is_dropshipped()
                             for p in purchase.picking_ids
                         ]
                     ):

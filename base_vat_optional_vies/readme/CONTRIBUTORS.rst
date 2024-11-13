@@ -7,3 +7,4 @@
 * Harald Panten <harald.panten@sygel.es>
 * Eduardo de Miguel <edu@moduon.team>
 * Emilio Pascual <emilio@moduon.team>
+* Jairo Llopis (`Moduon <https://www.moduon.team/>`__)

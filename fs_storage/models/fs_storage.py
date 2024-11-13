@@ -176,7 +176,12 @@ class FSStorage(models.Model):
 
     @property
     def _server_env_fields(self):
-        return {"protocol": {}, "options": {}, "directory_path": {}}
+        return {
+            "protocol": {},
+            "options": {},
+            "directory_path": {},
+            "eval_options_from_env": {},
+        }
 
     def write(self, vals):
         self.__fs = None

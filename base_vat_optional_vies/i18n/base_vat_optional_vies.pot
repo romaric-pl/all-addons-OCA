@@ -29,15 +29,6 @@ msgid "Contact"
 msgstr ""
 
 #. module: base_vat_optional_vies
-#. odoo-python
-#: code:addons/base_vat_optional_vies/models/res_partner.py:0
-#, python-format
-msgid ""
-"The VAT number [%(wrong_vat)s] for %(record_label)s does not seem to be valid. \n"
-"Note: the expected format is %(expected_format)s"
-msgstr ""
-
-#. module: base_vat_optional_vies
 #: model_terms:ir.ui.view,arch_db:base_vat_optional_vies.res_config_settings_view_form
 msgid ""
 "This process can take a long time. Are you sure you want to start the "
@@ -54,5 +45,6 @@ msgstr ""
 #. odoo-python
 #: code:addons/base_vat_optional_vies/models/res_config_settings.py:0
 #, python-format
-msgid "Vies passed calculated in %s partners"
+msgid ""
+"Vies passed calculated in %(partners)d partners (%(failures)d failures)"
 msgstr ""

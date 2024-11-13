@@ -83,6 +83,7 @@ class TestAEP(common.TransactionCase):
         self.aep.parse_expr("bali[700IN]")
         self.aep.parse_expr("bale[700IN]")
         self.aep.parse_expr("balp[700IN]")
+        self.aep.parse_expr("balp[700NA]")  # account that does not exist
         self.aep.parse_expr("bali[400AR]")
         self.aep.parse_expr("bale[400AR]")
         self.aep.parse_expr("balp[400AR]")
@@ -193,6 +194,8 @@ class TestAEP(common.TransactionCase):
         # check ending balance
         self.assertEqual(self._eval("bale[400AR]"), 400)
         self.assertEqual(self._eval("bale[700IN]"), -300)
+        # check result for non existing account
+        self.assertIs(self._eval("bale[700NA]"), AccountingNone)
 
         # let's query for March
         self._do_queries(
@@ -227,8 +230,13 @@ class TestAEP(common.TransactionCase):
 
         # unallocated p&l from previous year
         self.assertEqual(self._eval("balu[]"), -100)
-
         # TODO allocate profits, and then...
+
+        # let's query for December where there is no data
+        self._do_queries(
+            datetime.date(self.curr_year, 12, 1), datetime.date(self.curr_year, 12, 31)
+        )
+        self.assertIs(self._eval("balp[700IN]"), AccountingNone)
 
     def test_aep_by_account(self):
         self.aep.done_parsing()

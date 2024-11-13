@@ -8,7 +8,7 @@
 {
     "name": "Optional validation of VAT via VIES",
     "category": "Accounting",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.1.1",
     "depends": ["base_vat"],
     "data": [
         "views/res_partner_view.xml",
@@ -17,5 +17,6 @@
     "author": "Tecnativa," "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-financial-tools",
     "license": "AGPL-3",
+    "maintainers": ["yajo", "rafaelbn"],
     "installable": True,
 }

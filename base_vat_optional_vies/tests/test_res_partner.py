@@ -8,6 +8,7 @@ from unittest.mock import patch
 
 from odoo.exceptions import ValidationError
 from odoo.tests import common
+from odoo.tools import mute_logger
 
 
 class TestResPartner(common.TransactionCase):
@@ -26,6 +27,7 @@ class TestResPartner(common.TransactionCase):
 
         cls._vies_check_func = check_vies
 
+    @mute_logger("odoo.addons.base_vat.models.res_partner")
     def test_validate_vat_vies(self):
         with patch(self.vatnumber_path, type(self)._vies_check_func):
             values = {"vat": "ESB87530432", "country_id": self.env.ref("base.be").id}
@@ -40,6 +42,7 @@ class TestResPartner(common.TransactionCase):
             self.partner.write(values)
             self.assertEqual(self.partner.vies_passed, True)
 
+    @mute_logger("odoo.addons.base_vat.models.res_partner")
     def test_exception_vat_vies(self):
         with patch(self.vatnumber_path, side_effect=Exception()):
             values = {"vat": "87530432", "country_id": self.env.ref("base.es").id}
@@ -69,6 +72,7 @@ class TestResPartner(common.TransactionCase):
             self.partner.country_id = self.env.ref("base.mx")
             self.assertEqual(self.partner.vies_passed, False)
 
+    @mute_logger("odoo.addons.base_vat.models.res_partner")
     def test_validate_vies_passed_false_when_vat_set_to_false(self):
         with patch(self.vatnumber_path) as mock_vatnumber:
             mock_vatnumber.check_vies.return_value = True
