@@ -1400,16 +1400,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit f55c9eb2a8e3b839ef3e6bd080e64d734e61662c
+commit a658cad097a0fd39c04b11a10787ef033e57d760
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 13 13:21:26 2024 +0000
+Date:   Tue Nov 12 17:43:53 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 50.0% (2 of 4 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: social-12.0/social-12.0-mail_restrict_follower_selection
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_restrict_follower_selection/it/
+    Translation: social-12.0/social-12.0-mail_attach_existing_attachment
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_attach_existing_attachment/it/
 
 
 ## storage
