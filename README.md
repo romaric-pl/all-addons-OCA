@@ -891,16 +891,11 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 42d980c44fb672c5d9ef295f8771f85ddecec9e3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 4 08:49:38 2024 +0000
+commit 2c095a9a30f46f3cc8788ae4e43e172a2224e842
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 14 11:47:28 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (173 of 173 strings)
-    
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
