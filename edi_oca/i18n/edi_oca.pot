@@ -208,6 +208,11 @@ msgid "All"
 msgstr ""
 
 #. module: edi_oca
+#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__allow_empty_files_on_receive
+msgid "Allow Empty Files"
+msgstr ""
+
+#. module: edi_oca
 #: code:addons/edi_oca/models/edi_exchange_record.py:0
 #, python-format
 msgid "An error happened while sending. Please check exchange record info."
@@ -299,9 +304,16 @@ msgid "Cancel"
 msgstr ""
 
 #. module: edi_oca
+#: model:ir.model.fields,field_description:edi_oca.field_edi_backend__backend_type_code
 #: model:ir.model.fields,field_description:edi_oca.field_edi_backend_type__code
 #: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__code
 msgid "Code"
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields,field_description:edi_oca.field_edi_backend__company_id
+#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_record__company_id
+msgid "Company"
 msgstr ""
 
 #. module: edi_oca
@@ -360,6 +372,11 @@ msgid "DEPRECATED Model rules"
 msgstr ""
 
 #. module: edi_oca
+#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__encoding_in_error_handler
+msgid "Decoding Error Handler"
+msgstr ""
+
+#. module: edi_oca
 #: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__deprecated_rule_fields_still_used
 msgid "Deprecated Rule Fields Still Used"
 msgstr ""
@@ -390,6 +407,11 @@ msgstr ""
 #. module: edi_oca
 #: model_terms:ir.ui.view,arch_db:edi_oca.edi_exchange_type_rule_view_form
 msgid "Domain"
+msgstr ""
+
+#. module: edi_oca
+#: model_terms:ir.ui.view,arch_db:edi_oca.view_partner_form
+msgid "EDI"
 msgstr ""
 
 #. module: edi_oca
@@ -496,6 +518,12 @@ msgid "Edi Has Form Config"
 msgstr ""
 
 #. module: edi_oca
+#: code:addons/edi_oca/models/edi_backend.py:0
+#, python-format
+msgid "Empty files are not allowed for exchange type %(name)s (%(code)s)"
+msgstr ""
+
+#. module: edi_oca
 #: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__enable_domain
 msgid "Enable Domain"
 msgstr ""
@@ -518,6 +546,23 @@ msgstr ""
 #. module: edi_oca
 #: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__partner_ids
 msgid "Enabled for partners"
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__encoding
+msgid "Encoding"
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__encoding_out_error_handler
+msgid "Encoding Error Handler"
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields,help:edi_oca.field_edi_exchange_type__encoding
+msgid ""
+"Encoding to be applied to generate/process the exchanged file.\n"
+"Example: UTF-8, Windows-1252, ASCII...(default is always 'UTF-8')"
 msgstr ""
 
 #. module: edi_oca
@@ -568,6 +613,11 @@ msgstr ""
 #. module: edi_oca
 #: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__exchange_filename_pattern
 msgid "Exchange Filename Pattern"
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_type__exchange_filename_sequence_id
+msgid "Exchange Filename Sequence"
 msgstr ""
 
 #. module: edi_oca
@@ -803,6 +853,18 @@ msgid "Group By"
 msgstr ""
 
 #. module: edi_oca
+#: model:ir.model.fields,help:edi_oca.field_edi_exchange_type__encoding_in_error_handler
+msgid ""
+"Handling of decoding errors on process (default is always 'Raise Error')."
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields,help:edi_oca.field_edi_exchange_type__encoding_out_error_handler
+msgid ""
+"Handling of encoding errors on generate (default is always 'Raise Error')."
+msgstr ""
+
+#. module: edi_oca
 #: model:ir.model.fields,help:edi_oca.field_edi_exchange_type_rule__form_btn_tooltip
 msgid "Help message visible as tooltip on button h-over"
 msgstr ""
@@ -840,6 +902,19 @@ msgstr ""
 #. module: edi_oca
 #: model:ir.model.fields,help:edi_oca.field_edi_exchange_record__message_has_error
 msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields,help:edi_oca.field_edi_exchange_type__exchange_filename_sequence_id
+msgid ""
+"If the `Exchange Filename Pattern` has `{seq}`, you should define a sequence"
+" in this field to show the sequence in your filename"
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_in_error_handler__ignore
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_out_error_handler__ignore
+msgid "Ignore"
 msgstr ""
 
 #. module: edi_oca
@@ -1034,6 +1109,12 @@ msgid "Quick execution"
 msgstr ""
 
 #. module: edi_oca
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_in_error_handler__strict
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_out_error_handler__strict
+msgid "Raise Error"
+msgstr ""
+
+#. module: edi_oca
 #: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_record__edi_exchange_state__input_received
 msgid "Received"
 msgstr ""
@@ -1079,6 +1160,11 @@ msgid "Record ID=%d is not meant to be sent!"
 msgstr ""
 
 #. module: edi_oca
+#: model_terms:ir.ui.view,arch_db:edi_oca.edi_exchange_record_view_form
+msgid "Regenerate"
+msgstr ""
+
+#. module: edi_oca
 #: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_record__related_name
 msgid "Related Name"
 msgstr ""
@@ -1104,11 +1190,35 @@ msgid "Related records"
 msgstr ""
 
 #. module: edi_oca
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_in_error_handler__surrogateescape
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_out_error_handler__surrogateescape
+msgid "Replace Byte with Individual Surrogate Code"
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_in_error_handler__backslashreplace
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_out_error_handler__backslashreplace
+msgid "Replace with Backslashed Escape Sequences"
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_in_error_handler__replace
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_out_error_handler__replace
+msgid "Replace with Replacement Marker"
+msgstr ""
+
+#. module: edi_oca
+#: model:ir.model.fields.selection,name:edi_oca.selection__edi_exchange_type__encoding_out_error_handler__xmlcharrefreplace
+msgid "Replace with XML/HTML Numeric Character Reference"
+msgstr ""
+
+#. module: edi_oca
 #: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_record_create_wiz__res_id
 msgid "Res"
 msgstr ""
 
 #. module: edi_oca
+#: model:ir.actions.server,name:edi_oca.action_retry_edi_exchange_record
 #: model_terms:ir.ui.view,arch_db:edi_oca.edi_exchange_record_view_form
 msgid "Retry"
 msgstr ""
@@ -1250,16 +1360,6 @@ msgid ""
 "                              removing a model from here will cause deletion\n"
 "                              of any existing rule for the model.\n"
 "                              You can use the button \"Wipe\" to clean them properly."
-msgstr ""
-
-#. module: edi_oca
-#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_record__website_message_ids
-msgid "Website Messages"
-msgstr ""
-
-#. module: edi_oca
-#: model:ir.model.fields,help:edi_oca.field_edi_exchange_record__website_message_ids
-msgid "Website communication history"
 msgstr ""
 
 #. module: edi_oca

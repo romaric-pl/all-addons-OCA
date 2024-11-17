@@ -31,20 +31,14 @@ msgstr "<strong>Orden:</strong>"
 msgid "<strong>Previous record:</strong>"
 msgstr "<strong>Registro anterior:</strong>"
 
-#. module: edi_sale_order_import
-#: code:addons/edi_sale_order_import/components/process.py:0
 #, python-format
-msgid "Sales order %s created"
-msgstr "Pedido de venta %s creado"
+#~ msgid "Sales order %s created"
+#~ msgstr "Pedido de venta %s creado"
 
-#. module: edi_sale_order_import
-#: code:addons/edi_sale_order_import/components/process.py:0
 #, python-format
-msgid "Sales order has already been imported before"
-msgstr "El pedido de cliente ya se ha importado anteriormente"
+#~ msgid "Sales order has already been imported before"
+#~ msgstr "El pedido de cliente ya se ha importado anteriormente"
 
-#. module: edi_sale_order_import
-#: code:addons/edi_sale_order_import/components/process.py:0
 #, python-format
-msgid "Something went wrong with the importing wizard."
-msgstr "Algo ha fallado en el asistente de importación."
+#~ msgid "Something went wrong with the importing wizard."
+#~ msgstr "Algo ha fallado en el asistente de importación."

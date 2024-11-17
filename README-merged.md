@@ -2428,7 +2428,7 @@ addon | version | maintainers | summary
 [sale_commission_formula](sale_commission_formula/) | 14.0.1.0.0 |  | Sale commissions computed by formulas
 [sale_commission_geo_assign](sale_commission_geo_assign/) | 14.0.1.1.3 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Assign agents to partners according to their location
 [sale_commission_geo_assign_product_domain](sale_commission_geo_assign_product_domain/) | 14.0.1.3.2 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between sale_commission_product_criteria_domain and sale_commission_geo_assign
-[sale_commission_partial_settlement](sale_commission_partial_settlement/) | 14.0.1.0.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sales commissions based on paid amount
+[sale_commission_partial_settlement](sale_commission_partial_settlement/) | 14.0.1.1.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sales commissions based on paid amount
 [sale_commission_pricelist](sale_commission_pricelist/) | 14.0.1.0.0 |  | Sales commissions by pricelist
 [sale_commission_product_criteria](sale_commission_product_criteria/) | 14.0.1.1.6 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Advanced commissions rules
 [sale_commission_product_criteria_discount](sale_commission_product_criteria_discount/) | 14.0.1.0.3 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Advanced commissions rules with discount
@@ -2815,19 +2815,21 @@ addon | version | maintainers | summary
 [base_ubl](base_ubl/) | 14.0.1.8.2 |  | Base module for Universal Business Language (UBL)
 [base_ubl_payment](base_ubl_payment/) | 14.0.1.0.0 |  | Payment-related code for Universal Business Language (UBL)
 [edi_account_invoice_import](edi_account_invoice_import/) | 14.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Plug account_invoice_import into EDI machinery.
-[edi_account_oca](edi_account_oca/) | 14.0.1.1.1 |  | Define EDI Configuration for Account Moves
+[edi_account_oca](edi_account_oca/) | 14.0.1.2.0 |  | Define EDI Configuration for Account Moves
 [edi_backend_partner_oca](edi_backend_partner_oca/) | 14.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | add the a partner field in EDI backend
 [edi_endpoint_oca](edi_endpoint_oca/) | 14.0.1.5.1 |  | Base module allowing configuration of custom endpoints for EDI framework.
 [edi_exchange_template_oca](edi_exchange_template_oca/) | 14.0.1.5.2 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allows definition of exchanges via templates.
 [edi_exchange_template_party_data](edi_exchange_template_party_data/) | 14.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Glue module betweeb edi_exchange_template and edi_party_data
-[edi_oca](edi_oca/) | 14.0.1.22.4 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_oca](edi_oca/) | 14.0.1.23.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [edi_party_data_oca](edi_party_data_oca/) | 14.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allow to configure and retrieve party information for EDI exchanges.
 [edi_pdf2data_oca](edi_pdf2data_oca/) | 14.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Module that allows to import data from a pdf
 [edi_purchase_oca](edi_purchase_oca/) | 14.0.1.0.0 |  | Define EDI Configuration for Purchase Orders
-[edi_sale_order_import](edi_sale_order_import/) | 14.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Plug sale_order_import into EDI machinery.
+[edi_sale_endpoint](edi_sale_endpoint/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Glue module between edi_sale_oca and edi_endpoint_oca.
+[edi_sale_oca](edi_sale_oca/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Configuration and special behaviors for EDI on sales.
+[edi_sale_order_import](edi_sale_order_import/) | 14.0.2.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | MODULE DEPRECATED: use `edi_sale_oca`. Plug sale_order_import into EDI machinery.
 [edi_sale_order_import_ubl](edi_sale_order_import_ubl/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Plug sale_order_import_ubl into EDI machinery.
 [edi_sale_order_import_ubl_endpoint](edi_sale_order_import_ubl_endpoint/) | 14.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Provide a default endpoint to import SO in UBL format.
-[edi_stock_oca](edi_stock_oca/) | 14.0.1.0.0 |  | Define EDI Configuration for Stock
+[edi_stock_oca](edi_stock_oca/) | 14.0.1.1.0 |  | Define EDI Configuration for Stock
 [edi_storage_oca](edi_storage_oca/) | 14.0.1.8.1 |  | Base module to allow exchanging files via storage backend (eg: SFTP).
 [edi_ubl_oca](edi_ubl_oca/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Define EDI backend type for UBL.
 [edi_voxel_oca](edi_voxel_oca/) | 14.0.1.0.0 |  | Base module for connecting with Voxel
@@ -5514,6 +5516,7 @@ addon | version | maintainers | summary
 [ebill_paynet_customer_free_ref](ebill_paynet_customer_free_ref/) | 14.0.1.0.2 |  | Glue module: ebill_paynet and sale_order_customer_free_ref
 [ebill_postfinance](ebill_postfinance/) | 14.0.1.1.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Postfinance eBill integration
 [ebill_postfinance_customer_free_ref](ebill_postfinance_customer_free_ref/) | 14.0.1.0.0 |  | Glue module: ebill_postfinance and sale_order_customer_free_ref
+[ebill_postfinance_financial_discount](ebill_postfinance_financial_discount/) | 14.0.1.0.0 |  | Integrate the discount from account_financial_discount into ebill_postfinance
 [ebill_postfinance_server_env](ebill_postfinance_server_env/) | 14.0.1.0.0 |  | Server environment for eBill Postfinance
 [ebill_postfinance_stock](ebill_postfinance_stock/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add stock integration to Postfinance eBill
 [l10n_ch_account_tags](l10n_ch_account_tags/) | 14.0.1.0.0 |  | Switzerland Account Tags
@@ -6365,11 +6368,11 @@ addon | version | maintainers | summary
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 14.0.1.1.1 |  | Allows to see the manufacturing order related to the reserved info of Products
 [stock_quant_view_reservation](stock_quant_view_reservation/) | 14.0.1.0.1 |  | Allows to see details of reservations on a quant
 [stock_removal_location_by_priority](stock_removal_location_by_priority/) | 14.0.1.0.0 |  | Establish a removal priority on stock locations.
-[stock_request](stock_request/) | 14.0.1.8.0 |  | Internal request for stock
+[stock_request](stock_request/) | 14.0.1.9.0 |  | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 14.0.1.1.0 |  | Internal request for stock
 [stock_request_cancel_confirm](stock_request_cancel_confirm/) | 14.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Stock Request Cancel Confirm
 [stock_request_direction](stock_request_direction/) | 14.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | From or to your warehouse?
-[stock_request_kanban](stock_request_kanban/) | 14.0.1.2.0 |  | Adds a stock request order, and takes stock requests as lines
+[stock_request_kanban](stock_request_kanban/) | 14.0.1.3.0 |  | Adds a stock request order, and takes stock requests as lines
 [stock_request_mrp](stock_request_mrp/) | 14.0.1.2.0 |  | Manufacturing request for stock
 [stock_request_partner](stock_request_partner/) | 14.0.1.0.1 |  | Allow to define partner in Stock Request
 [stock_request_picking_type](stock_request_picking_type/) | 14.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add Stock Requests to the Inventory App
@@ -6611,7 +6614,7 @@ addon | version | maintainers | summary
 [sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 14.0.1.2.0 |  | Integration between Sales and Available to Promise Release
 [sale_stock_available_to_promise_release_cutoff](sale_stock_available_to_promise_release_cutoff/) | 14.0.1.1.1 |  | Cutoff management with respect to stock availability
 [sale_stock_available_to_promise_release_dropshipping](sale_stock_available_to_promise_release_dropshipping/) | 14.0.1.0.0 |  | Glue module between sale_stock_available_to_promise_release and stock_dropshipping
-[shopfloor](shopfloor/) | 14.0.4.15.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
+[shopfloor](shopfloor/) | 14.0.4.15.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
 [shopfloor_base](shopfloor_base/) | 14.0.2.11.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Core module for creating mobile apps
 [shopfloor_base_multicompany](shopfloor_base_multicompany/) | 14.0.1.0.0 |  | Provide multi-company support and validation to Shopfloor applications.
 [shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 14.0.1.2.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Create batch transfers for Cluster Picking
@@ -6739,6 +6742,7 @@ addon | version | maintainers | summary
 [mrp_bom_tracking](mrp_bom_tracking/) | 14.0.1.1.0 |  | Logs any change to a BoM in the chatter
 [mrp_component_operation](mrp_component_operation/) | 14.0.1.2.0 |  | Allows to operate the components from a MO
 [mrp_component_operation_scrap_reason](mrp_component_operation_scrap_reason/) | 14.0.1.1.0 |  | Allows to pass a reason to scrap with MRP component operation
+[mrp_lot_number_propagation](mrp_lot_number_propagation/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a serial number from a component to a finished product
 [mrp_lot_on_hand_first](mrp_lot_on_hand_first/) | 14.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
 [mrp_lot_production_date](mrp_lot_production_date/) | 14.0.1.0.0 |  | MRP Lot Production Date
 [mrp_multi_level](mrp_multi_level/) | 14.0.1.15.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler

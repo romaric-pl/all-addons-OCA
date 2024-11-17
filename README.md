@@ -455,11 +455,16 @@ Date:   Fri May 17 08:15:21 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 05114596fa793eefb2ba705b583634d29256717a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 12 17:00:55 2024 +0000
+commit 7c20d6c7e70eefd599c91feb48faa808fb8794cd
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 15 16:12:46 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: commission-14.0/commission-14.0-sale_commission_partial_settlement
+    Translate-URL: https://translation.odoo-community.org/projects/commission-14-0/commission-14-0-sale_commission_partial_settlement/
 
 
 ## event
@@ -524,11 +529,16 @@ Date:   Fri Aug 16 00:50:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 94addaf1df233ce418a6cb8c2001d705e341c558
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 29 15:41:56 2024 +0000
+commit 6d9b74da074da1e675d936d5764e847096c23e23
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 15 16:22:41 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: edi-14.0/edi-14.0-edi_oca
+    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-edi_oca/
 
 
 ## field-service
@@ -878,16 +888,16 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 54a39792cd377fa5614cfa4ad1a78065be7cb640
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 28 07:53:30 2024 +0000
+commit 492b3051bdcdcdf12b723d1a4ec112aefa1f7f17
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Thu Nov 14 14:28:33 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (199 of 199 strings)
+    Currently translated at 100.0% (75 of 75 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_intrastat_statement
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_intrastat_statement/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_financial_statements_report
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_financial_statements_report/it/
 
 
 ## l10n-japan
@@ -1014,11 +1024,11 @@ Date:   Fri Nov 1 07:44:47 2024 +0000
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit 82c8edf4d01e0d7f2a7d7555a868ee745d28b252
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 12 06:13:32 2024 +0000
+commit b53f851145f63c2c936a4b3a9020836684f9fa38
+Author: oca-ci <oca-ci@odoo-community.org>
+Date:   Fri Nov 15 13:52:20 2024 +0000
 
-    [BOT] post-merge updates
+    [UPD] Update ebill_postfinance_financial_discount.pot
 
 
 ## l10n-taiwan
@@ -1136,9 +1146,9 @@ Date:   Wed May 1 19:11:30 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 8b97bdcca1da8566d1ebb6978b59359a26b3ba40
+commit 67729c8d1f0138cb9d31aad4ed21e4acbc5abf00
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Nov 4 11:38:51 2024 +0000
+Date:   Fri Nov 15 12:11:02 2024 +0000
 
     Update translation files
     
@@ -1187,18 +1197,18 @@ Date:   Thu Jul 4 11:50:22 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit ab9197cbcf0d9808684186a8b0e7e3c2fe403d7f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 30 15:12:11 2024 +0000
+commit 9acf58b7d4c860710180f9ff19ad916a5ce9eb07
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 15 08:49:15 2024 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit ec64468691a59a6f440f2d89b28d8e0388fad2a1
+commit ddb4e88a76f6dcdc658364cc5d56c301e507e1fb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 12 12:15:03 2024 +0000
+Date:   Fri Nov 15 13:31:20 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1459,11 +1469,16 @@ Date:   Wed Oct 16 21:12:48 2024 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit cf67a5be5d1f4c3b5528e4602a0df6123e549026
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 13 12:58:47 2024 +0000
+commit a01245944ae714fd06360c06af301e77a301738c
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Nov 14 13:18:47 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (28 of 28 strings)
+    
+    Translation: server-auth-14.0/server-auth-14.0-impersonate_login
+    Translate-URL: https://translation.odoo-community.org/projects/server-auth-14-0/server-auth-14-0-impersonate_login/it/
 
 
 ## server-env

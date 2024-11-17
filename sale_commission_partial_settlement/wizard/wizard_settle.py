@@ -32,14 +32,9 @@ class SaleCommissionMakeSettle(models.TransientModel):
         for agent in agents:
             date_to_agent = self._get_period_start(agent, date_to)
             main_agent_line = self.get_partial_agent_lines(agent, date_to_agent)
-            (
-                partial_agent_lines,
-                agent_lines_to_update,
-            ) = main_agent_line._partial_commissions(self.date_payment_to)
-            for line_id in agent_lines_to_update:
-                self.env["account.invoice.line.agent"].browse(line_id).update(
-                    agent_lines_to_update[line_id]
-                )
+            partial_agent_lines = main_agent_line._partial_commissions(
+                self.date_payment_to
+            )
             for company in partial_agent_lines.mapped(
                 "invoice_line_agent_id.company_id"
             ):

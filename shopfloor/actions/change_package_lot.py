@@ -167,6 +167,9 @@ class ChangePackageLot(Component):
         # Find other available goods for the lines which were using the
         # lot before...
         to_assign_moves._action_assign()
+        self._change_pack_lot_change_lot__after_assign(
+            previous_lot, lot, to_assign_moves
+        )
 
         message = self.msg_store.lot_replaced_by_lot(previous_lot, lot)
         if message_parts:
@@ -176,7 +179,12 @@ class ChangePackageLot(Component):
     def _change_pack_lot_change_lot__before_assign(
         self, previous_lot, lot, to_assign_moves
     ):
-        pass
+        """Hook to override."""
+
+    def _change_pack_lot_change_lot__after_assign(
+        self, previous_lot, lot, to_assign_moves
+    ):
+        """Hook to override."""
 
     def _package_content_replacement_allowed(self, package, move_line):
         # we can't replace by a package which doesn't contain the product...

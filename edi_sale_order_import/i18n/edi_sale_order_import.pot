@@ -27,21 +27,3 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:edi_sale_order_import.message_already_imported
 msgid "<strong>Previous record:</strong>"
 msgstr ""
-
-#. module: edi_sale_order_import
-#: code:addons/edi_sale_order_import/components/process.py:0
-#, python-format
-msgid "Sales order %s created"
-msgstr ""
-
-#. module: edi_sale_order_import
-#: code:addons/edi_sale_order_import/components/process.py:0
-#, python-format
-msgid "Sales order has already been imported before"
-msgstr ""
-
-#. module: edi_sale_order_import
-#: code:addons/edi_sale_order_import/components/process.py:0
-#, python-format
-msgid "Something went wrong with the importing wizard."
-msgstr ""

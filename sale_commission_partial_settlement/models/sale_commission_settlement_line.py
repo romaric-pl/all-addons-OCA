@@ -24,3 +24,7 @@ class SettlementLine(models.Model):
                 rec.settled_amount = rec.agent_line_partial_ids[:1].amount
             else:
                 rec.settled_amount = rec.agent_line[:1].amount
+
+    def unlink(self):
+        self.mapped("agent_line_partial_ids").unlink()
+        return super().unlink()

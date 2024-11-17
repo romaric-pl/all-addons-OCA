@@ -1,7 +1,25 @@
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class AccountPartialReconcile(models.Model):
     _inherit = "account.partial.reconcile"
 
-    partial_commission_settled = fields.Boolean()
+    # Logically a One2one
+    account_invoice_line_agent_partial_ids = fields.One2many(
+        "account.invoice.line.agent.partial", "account_partial_reconcile_id"
+    )
+    partial_commission_settled = fields.Boolean(
+        compute="_compute_partial_commission_settled", store=True
+    )
+
+    @api.depends(
+        "account_invoice_line_agent_partial_ids",
+        "account_invoice_line_agent_partial_ids.agent_line.settlement_id.state",
+    )
+    def _compute_partial_commission_settled(self):
+        for rec in self:
+            rec.partial_commission_settled = bool(
+                rec.account_invoice_line_agent_partial_ids.filtered(
+                    lambda x: x.mapped("agent_line.settlement_id")[:1].state != "cancel"
+                )
+            )
