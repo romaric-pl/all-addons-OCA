@@ -78,16 +78,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit d90e5c385cf3444716692caea803ea0394da7a71
+commit 57aecfe590a4ff65fcbeff9a6ed5606a9c5a08ae
 Author: Weblate <noreply@weblate.org>
-Date:   Tue Nov 12 19:50:52 2024 +0000
+Date:   Thu Nov 14 11:50:57 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_move_post_date_user
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_move_post_date_user/
+    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_journal_restrict_mode
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_journal_restrict_mode/
 
 
 ## account-financial-reporting
