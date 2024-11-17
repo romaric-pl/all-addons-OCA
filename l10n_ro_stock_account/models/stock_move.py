@@ -5,7 +5,8 @@
 
 import logging
 
-from odoo import api, models
+from odoo import _, api, models
+from odoo.exceptions import UserError
 
 _logger = logging.getLogger(__name__)
 
@@ -646,10 +647,37 @@ class StockMove(models.Model):
             acc_valuation_rec = self.env["account.account"].browse(acc_valuation)
             if acc_valuation_rec and acc_valuation_rec.l10n_ro_stock_consume_account_id:
                 acc_valuation = acc_valuation_rec.l10n_ro_stock_consume_account_id.id
+
         # if valued_type == "internal_transit_out":
         #     acc_dest = location_to_account.id or acc_dest
         #     acc_valuation = location_to_account.id or acc_dest
+
+        journal_id = self._l10n_ro_get_journal_id(
+            location_from, location_to, journal_id
+        )
+
         return journal_id, acc_src, acc_dest, acc_valuation
+
+    def _l10n_ro_get_journal_id(self, location_from, location_to, journal_id):
+        journal_to_id = False
+        journal_from_id = False
+        if location_to.usage == "internal":
+            journal_to_id = (
+                location_to.warehouse_id.l10n_ro_property_stock_journal_id.id
+            )
+        if location_from.usage == "internal":
+            journal_from_id = (
+                location_from.warehouse_id.l10n_ro_property_stock_journal_id.id
+            )
+
+        if journal_from_id and journal_to_id and journal_from_id != journal_to_id:
+            raise UserError(
+                _("Transfer between locations with different journals is not allowed!")
+            )
+        else:
+            journal_id = journal_from_id or journal_to_id or journal_id
+
+        return journal_id
 
     def _l10n_ro_filter_svl_on_move_line(self, domain):
         origin_svls = self.env["stock.valuation.layer"].search(domain)

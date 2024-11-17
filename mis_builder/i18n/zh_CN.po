@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-08-27 12:06+0000\n"
+"PO-Revision-Date: 2024-11-15 10:06+0000\n"
 "Last-Translator: xtanuiha <feihu.zhang@live.com>\n"
 "Language-Team: none\n"
 "Language: zh_CN\n"
@@ -95,7 +95,7 @@ msgid ""
 "                                        positive balance, negative balance."
 msgstr ""
 "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>pbal</code>, "
-"<code>nbal</code> : 余额，借方，贷方，正余额，负余额。"
+"<code>nbal</code> : 余额，贷方，借方，正余额，负余额。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
