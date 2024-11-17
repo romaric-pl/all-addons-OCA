@@ -12,9 +12,7 @@ class AccountMove(models.Model):
         "account.banking.mandate",
         string="Direct Debit Mandate",
         ondelete="restrict",
-        readonly=True,
         check_company=True,
-        states={"draft": [("readonly", False)]},
     )
     mandate_required = fields.Boolean(
         related="payment_mode_id.payment_method_id.mandate_required", readonly=True

@@ -34,6 +34,11 @@ class StockMove(models.Model):
         vals = super()._prepare_extra_move_vals(qty)
         if self.secondary_uom_id:
             vals["secondary_uom_id"] = self.secondary_uom_id.id
+            # Get difference between demand secondary qty and done secondary qty
+            vals["secondary_uom_qty"] = (
+                sum(self.move_line_ids.mapped("secondary_uom_qty"))
+                - self.secondary_uom_qty
+            )
         return vals
 
     def _merge_moves_fields(self):

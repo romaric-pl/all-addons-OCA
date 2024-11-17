@@ -438,7 +438,7 @@ addon | version | maintainers | summary
 [account_invoice_force_number](account_invoice_force_number/) | 15.0.1.0.0 |  | Allows to force invoice numbering on specific invoices
 [account_invoice_line_description](account_invoice_line_description/) | 15.0.1.0.1 |  | Account invoice line description
 [account_invoice_line_sequence](account_invoice_line_sequence/) | 15.0.1.0.0 |  | Adds sequence field on invoice lines to manage its order.
-[account_invoice_mass_sending](account_invoice_mass_sending/) | 15.0.1.0.1 | [![jguenat](https://github.com/jguenat.png?size=30px)](https://github.com/jguenat) | This addon adds a mass sending feature on invoices.
+[account_invoice_mass_sending](account_invoice_mass_sending/) | 15.0.1.0.2 | [![jguenat](https://github.com/jguenat.png?size=30px)](https://github.com/jguenat) | This addon adds a mass sending feature on invoices.
 [account_invoice_merge](account_invoice_merge/) | 15.0.1.0.0 |  | Merge invoices in draft
 [account_invoice_payment_retention](account_invoice_payment_retention/) | 15.0.1.0.0 |  | Account Invoice Payment Retention
 [account_invoice_payment_term_date_due](account_invoice_payment_term_date_due/) | 15.0.1.1.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Display invoices date due when using payment terms
@@ -953,7 +953,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_banking_mandate](account_banking_mandate/) | 15.0.2.1.4 |  | Banking mandates
+[account_banking_mandate](account_banking_mandate/) | 15.0.2.2.0 |  | Banking mandates
 [account_banking_mandate_contact](account_banking_mandate_contact/) | 15.0.1.0.2 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 15.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds mandates on sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 15.0.2.0.2 |  | Base module for PAIN file generation
@@ -5274,7 +5274,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Assets Management
-[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.2.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
 [l10n_th_account_tax_expense_operating_unit](l10n_th_account_tax_expense_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Expense Tax Operating Unit
 [l10n_th_account_tax_multi](l10n_th_account_tax_multi/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Tax with Payment Multi Deduction
@@ -5735,7 +5735,7 @@ addon | version | maintainers | summary
 [sale_line_returned_qty](sale_line_returned_qty/) | 15.0.1.0.0 |  | Track returned quantity of sale order lines.
 [sale_line_returned_qty_mrp](sale_line_returned_qty_mrp/) | 15.0.1.0.1 |  | Track returned quantity of sale order lines for BoM products.
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 15.0.1.0.0 |  | Add the possibility to choose one warehouse path for an order
-[stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 15.0.1.0.1 |  | Add more flexibility in the run fifo method.
+[stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 15.0.1.0.2 |  | Add more flexibility in the run fifo method.
 [stock_auto_move](stock_auto_move/) | 15.0.1.0.0 |  | Automatic Move Processing
 [stock_delivery_note](stock_delivery_note/) | 15.0.1.0.0 |  | This module allows to fill in a delivery note that will be displayed on delivery report
 [stock_force_assign_by_type](stock_force_assign_by_type/) | 15.0.1.0.1 |  | Force stock allocation based on the picking operation type in Odoo
@@ -5948,7 +5948,7 @@ addon | version | maintainers | summary
 [stock_reserve](stock_reserve/) | 15.0.1.2.1 |  | Stock reservations on products
 [stock_reserve_rule](stock_reserve_rule/) | 15.0.1.0.1 |  | Configure reservation rules by location
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 15.0.1.0.0 |  | Allows to search for picking from supplierinfo code
-[stock_secondary_unit](stock_secondary_unit/) | 15.0.2.3.0 |  | Get product quantities in a secondary unit
+[stock_secondary_unit](stock_secondary_unit/) | 15.0.2.3.1 |  | Get product quantities in a secondary unit
 [stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 15.0.1.0.0 |  | Stock Valuation Layer Accounting Date
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 15.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
 

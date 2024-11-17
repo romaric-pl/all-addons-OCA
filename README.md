@@ -97,9 +97,9 @@ Date:   Tue Oct 22 19:13:40 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit cca455649dc2495d901c2e076ba0dfc569a9eeda
+commit de51f2fff79d2a1e71cca200dc7f41155b2db407
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 1 15:09:16 2024 +0000
+Date:   Thu Nov 14 19:25:20 2024 +0000
 
     [BOT] post-merge updates
 
@@ -190,9 +190,9 @@ Date:   Thu Oct 3 08:18:19 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 4449d96278d7ce53629100446c08bf532e4e99d9
+commit 8c8b82d410867a8afa78c0ec7f7fec3a6eb259ec
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 20 06:10:07 2024 +0000
+Date:   Wed Nov 13 22:33:26 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1019,9 +1019,9 @@ Date:   Wed May 1 18:38:24 2024 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 1a59b3078fdab629bc95d557d7620d7d46cb3b36
+commit 4c32881d4892c361ff494eb00f7359c3a6e71b68
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 13 07:44:41 2024 +0000
+Date:   Thu Nov 14 11:13:00 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1100,9 +1100,9 @@ Date:   Fri Sep 27 14:45:39 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit ba1da80bc618601275b952d204d15f00159f8a0a
+commit ace020e1afba97ebb959125b0901c0dbbdf6b187
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 7 17:05:29 2024 +0000
+Date:   Fri Nov 15 10:33:32 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1118,16 +1118,11 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 1045f895418feeae8bcc7726bd3bfae0dbf1fcfa
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Nov 12 16:00:45 2024 +0000
+commit bd590e1bf351f2feb62410afb2ae45ff0dcd1c80
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 14 18:59:01 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_secondary_unit
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_secondary_unit/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
