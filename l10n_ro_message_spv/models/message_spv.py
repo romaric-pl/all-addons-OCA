@@ -278,8 +278,11 @@ class MessageSPV(models.Model):
 
             if not invoice:
                 invoice = invoices.filtered(
-                    lambda i: message.name in i.l10n_ro_edi_previous_transaction
-                    or message.request_id in i.l10n_ro_edi_previous_transaction
+                    lambda i: i.l10n_ro_edi_previous_transaction
+                ).filtered(
+                    lambda i, name=message.name or "n/a", request_id=message.request_id: name
+                    in i.l10n_ro_edi_previous_transaction
+                    or request_id in i.l10n_ro_edi_previous_transaction
                 )
             if len(invoice) > 1:
                 _logger.warning(

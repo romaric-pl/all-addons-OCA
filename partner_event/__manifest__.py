@@ -10,7 +10,7 @@
 
 {
     "name": "Link partner to events",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.0.2",
     "category": "Marketing",
     "author": "Tecnativa," "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/event",
@@ -24,6 +24,7 @@
         "views/event_registration_view.xml",
         "wizard/res_partner_register_event_view.xml",
     ],
+    "maintainers": ["yajo", "rafaelbn"],
     "post_init_hook": "post_init_hook",
     "installable": True,
 }

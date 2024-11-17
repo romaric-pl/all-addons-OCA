@@ -16,8 +16,6 @@ def post_load_hook():
         if not hasattr(self, "_run_fifo_prepare_candidate_update"):
             return self._run_fifo_original(quantity, company)
 
-        self.ensure_one()
-
         # Find back incoming stock valuation layers (called candidates here)
         # to value `quantity`.
         qty_to_take_on_candidates = quantity

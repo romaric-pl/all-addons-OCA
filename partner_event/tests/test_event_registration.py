@@ -10,7 +10,8 @@ from datetime import datetime, timedelta
 from psycopg2 import IntegrityError
 
 from odoo import fields
-from odoo.tests import common
+from odoo.tests import Form, common
+from odoo.tools import mute_logger
 
 
 class TestEventRegistration(common.TransactionCase):
@@ -95,6 +96,7 @@ class TestEventRegistration(common.TransactionCase):
         self.partner_01.write({"email": "new@test.com"})
         self.assertEqual(event_2.registration_ids.email, "new@test.com")
 
+    @mute_logger("odoo.sql_db")
     def test_delete_registered_partner(self):
         # We can't delete a partner with registrations
         with self.assertRaises(IntegrityError), self.cr.savepoint():
@@ -104,3 +106,17 @@ class TestEventRegistration(common.TransactionCase):
         partner3 = self.env["res.partner"].create({"name": "unregistered partner"})
         partner3.unlink()
         self.assertFalse(partner3.exists())
+
+    def test_attendee_partner_is_not_contact(self):
+        # Create a partner that belongs to a company but is saved as "other address"
+        self.partner_01.type = "other"
+        self.partner_01.parent_id = self.env["res.partner"].create(
+            {"name": "Company", "is_company": True}
+        )
+        # The partner gets registered
+        with Form(self.registration_01) as reg_f:
+            reg_f.attendee_partner_id = self.partner_01
+        # Partner data inherited in registration
+        self.assertEqual(self.registration_01.name, self.partner_01.name)
+        self.assertEqual(self.registration_01.email, self.partner_01.email)
+        self.assertEqual(self.registration_01.phone, self.partner_01.phone)

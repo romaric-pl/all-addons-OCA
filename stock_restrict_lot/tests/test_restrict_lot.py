@@ -294,11 +294,11 @@ class TestRestrictLot(TransactionCase):
 
         product = move.product_id
         self.assertEqual(product.outgoing_qty, 2)
-        product.invalidate_cache()
+        product.env.invalidate_all()
         product = product.with_context(lot_id=self.lot.id)
         self.assertEqual(product.outgoing_qty, 1)
 
-        product.invalidate_cache()
+        product.env.invalidate_all()
         product = product.with_context(lot_id=lot2.id)
         self.assertEqual(product.outgoing_qty, 1)
 

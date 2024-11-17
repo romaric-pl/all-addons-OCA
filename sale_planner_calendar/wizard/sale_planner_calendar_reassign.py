@@ -22,13 +22,13 @@ class SalePlannerCalendarReassignWiz(models.TransientModel):
     )
     week_list = fields.Selection(
         [
-            ("MO", "Monday"),
-            ("TU", "Tuesday"),
-            ("WE", "Wednesday"),
-            ("TH", "Thursday"),
-            ("FR", "Friday"),
-            ("SA", "Saturday"),
-            ("SU", "Sunday"),
+            ("mon", "Monday"),
+            ("tue", "Tuesday"),
+            ("wed", "Wednesday"),
+            ("thu", "Thursday"),
+            ("fri", "Friday"),
+            ("sat", "Saturday"),
+            ("sun", "Sunday"),
         ],
         string="Weekday",
     )
@@ -42,7 +42,7 @@ class SalePlannerCalendarReassignWiz(models.TransientModel):
         string="New salesperson",
         domain="[('share','=',False)]",
     )
-    new_start = fields.Date(default=fields.Date.today, required=True)
+    new_start = fields.Date()
     new_end = fields.Date()
     assign_new_salesperson_to_partner = fields.Boolean()
     unsuscribe_old_salesperson = fields.Boolean()
@@ -62,6 +62,7 @@ class SalePlannerCalendarReassignWiz(models.TransientModel):
             ("recurrency", "=", True),
             ("recurrence_id.until", ">", self.new_start or fields.Date.today()),
             ("is_base_recurrent_event", "=", True),
+            ("target_partner_id", "!=", False),
         ]
         if self.user_id:
             domain.append(("user_id", "=", self.user_id.id))
@@ -72,7 +73,7 @@ class SalePlannerCalendarReassignWiz(models.TransientModel):
         if self.event_type_id:
             domain.append(("categ_ids", "in", self.event_type_id.ids))
         if self.week_list:
-            domain.append((self.week_list.lower(), "=", True))
+            domain.append((self.week_list, "=", True))
         calendar_events = self.env["calendar.event"].search(domain)
         self.line_ids = False
         for calendar_event in calendar_events:
@@ -80,6 +81,7 @@ class SalePlannerCalendarReassignWiz(models.TransientModel):
                 {
                     "reassign_wiz_id": self.id,
                     "calendar_event_id": calendar_event.id,
+                    # "event_categ_ids": [(6, 0, calendar_event.categ_ids.ids)],
                     "event_user_id": calendar_event.user_id.id,
                     "partner_id": calendar_event.target_partner_id.id,
                     "event_start": calendar_event.start,
@@ -105,6 +107,13 @@ class SalePlannerCalendarReassignWiz(models.TransientModel):
             self = self.with_context(no_mail_to_attendees=True, dont_notify=True)
         for line in self.line_ids:
             if not line.new_user_id:
+                continue
+            if self.assign_new_salesperson_to_partner:
+                line.partner_id.with_context(
+                    skip_sale_planner_check=True
+                ).user_id = line.new_user_id
+            # If new_start is empty only update partner user_id
+            if not self.new_start:
                 continue
             old_event = line.calendar_event_id
             recurrence_events = old_event.recurrence_id.calendar_event_ids
@@ -158,10 +167,6 @@ class SalePlannerCalendarReassignWiz(models.TransientModel):
             if self.unsuscribe_old_salesperson and not self.new_end:
                 old_event_vals["unsubscribe_date"] = self.new_start
             old_event.write(old_event_vals)
-            if self.assign_new_salesperson_to_partner:
-                line.partner_id.with_context(
-                    skip_sale_planner_check=True
-                ).user_id = line.new_user_id
             line.update_subscriptions()
         self.action_get_lines()
 
@@ -204,6 +209,9 @@ class SalePlannerCalendarReassignLineWiz(models.TransientModel):
     reassign_wiz_id = fields.Many2one(comodel_name="sale.planner.calendar.reassign.wiz")
     selected = fields.Boolean()
     calendar_event_id = fields.Many2one(comodel_name="calendar.event", readonly=True)
+    event_categ_ids = fields.Many2many(
+        comodel_name="calendar.event.type", related="calendar_event_id.categ_ids"
+    )
     partner_id = fields.Many2one(comodel_name="res.partner", readonly=True)
     partner_user_id = fields.Many2one(
         string="Partner salesperson",

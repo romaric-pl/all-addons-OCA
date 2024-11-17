@@ -42,5 +42,5 @@ class ResPartner(models.Model):
     def address_get(self, adr_pref=None):
         attendee_partner = self.env.context.get("get_attendee_partner_address", False)
         if attendee_partner:
-            return super(ResPartner, attendee_partner).address_get(adr_pref)
+            return {adr_pref: attendee_partner}
         return super(ResPartner, self).address_get(adr_pref)
