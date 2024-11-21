@@ -159,6 +159,11 @@ msgid "Completed with some warnings"
 msgstr ""
 
 #. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_completed
+msgid "Completion Date"
+msgstr ""
+
+#. module: base_report_to_printer
 #: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_job__job_state_reason__unsupported-compression
 msgid "Compressed using an unknown algorithm"
 msgstr ""
@@ -202,6 +207,11 @@ msgid "Created on"
 msgstr "Aangemaakt op"
 
 #. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_creation
+msgid "Creation Date"
+msgstr ""
+
+#. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__job_state
 msgid "Current state of the job."
 msgstr ""
@@ -233,7 +243,7 @@ msgstr ""
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__time_at_creation
-msgid "Date and time of creation for this job."
+msgid "Date and time of creation of this job."
 msgstr ""
 
 #. module: base_report_to_printer
@@ -388,6 +398,13 @@ msgid "If checked, this server is useable."
 msgstr ""
 
 #. module: base_report_to_printer
+#. odoo-javascript
+#: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
+msgid "Issue on"
+msgstr ""
+
+#. module: base_report_to_printer
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__job_id_cups
 msgid "Job ID"
 msgstr "Opdracht ID"
@@ -453,6 +470,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_printer__model
 msgid "Model"
 msgstr "Model"
+
+#. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_printer__multi_thread
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_server__multi_thread
+msgid "Multi Thread"
+msgstr ""
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_action__name
@@ -537,8 +560,11 @@ msgid "Port of the server."
 msgstr "Poort van de server."
 
 #. module: base_report_to_printer
+#. odoo-javascript
+#: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.act_report_xml_view
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.wizard_print_attachment_form
+#, python-format
 msgid "Print"
 msgstr "Afdrukken"
 
@@ -664,6 +690,11 @@ msgstr ""
 #. module: base_report_to_printer
 #: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_job__job_state__processing
 msgid "Processing"
+msgstr ""
+
+#. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_processing
+msgid "Processing Date"
 msgstr ""
 
 #. module: base_report_to_printer
@@ -799,6 +830,13 @@ msgid "The id of the job must be unique per server !"
 msgstr ""
 
 #. module: base_report_to_printer
+#. odoo-javascript
+#: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
+msgid "The report"
+msgstr ""
+
+#. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_ir_actions_report__printing_action_ids
 msgid "This field allows configuring action and printer on a per user basis"
 msgstr ""
@@ -814,21 +852,6 @@ msgstr ""
 #: code:addons/base_report_to_printer/models/ir_actions_report.py:0
 #, python-format
 msgid "This report type (%s) is not supported by direct printing!"
-msgstr ""
-
-#. module: base_report_to_printer
-#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_completed
-msgid "Time At Completed"
-msgstr ""
-
-#. module: base_report_to_printer
-#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_creation
-msgid "Time At Creation"
-msgstr ""
-
-#. module: base_report_to_printer
-#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_processing
-msgid "Time At Processing"
 msgstr ""
 
 #. module: base_report_to_printer
@@ -853,7 +876,7 @@ msgstr ""
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__active
-msgid "Unchecked if the job is purged from cups."
+msgid "Unchecked if the job is purged from CUPS."
 msgstr ""
 
 #. module: base_report_to_printer
@@ -909,6 +932,13 @@ msgstr ""
 #. module: base_report_to_printer
 #: model:ir.model.fields,field_description:base_report_to_printer.field_wizard_print_attachment_line__wizard_id
 msgid "Wizard"
+msgstr ""
+
+#. module: base_report_to_printer
+#. odoo-javascript
+#: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
+msgid "couldn't be printed. Click on the button below to download it"
 msgstr ""
 
 #. module: base_report_to_printer

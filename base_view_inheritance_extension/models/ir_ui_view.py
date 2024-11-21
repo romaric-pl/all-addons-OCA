@@ -3,11 +3,16 @@
 # Copyright 2021 Camptocamp SA (https://www.camptocamp.com).
 # Copyright 2023 Tecnativa - Carlos Dauden
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
-
 import ast
+import logging
 import re
 
-import astor
+try:
+    import astor
+except ImportError as err:  # pragma: no cover
+    _logger = logging.getLogger(__name__)
+    _logger.debug(err)
+
 from lxml import etree
 
 from odoo import api, models
@@ -176,6 +181,7 @@ class IrUiView(models.Model):
                 else:
                     new_value = str(expression.AND([old_domain, new_domain]))
                 new_value = self.str2var_domain_text(new_value)
+                old_value = "".join(old_value.splitlines())
             else:
                 # We must ensure that the domain definition has not line breaks because
                 # in update mode the domain cause an invalid syntax error

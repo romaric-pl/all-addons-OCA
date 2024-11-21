@@ -15,7 +15,7 @@
                 <field name="company_id" invisible="1" />
                 <field name="currency_id" invisible="1" />
                 <field name="country_code" invisible="1" />
-                <field5c1485a3 name="state" invisible="1" />
+                <field name="state" invisible="1" />
                 <field name="suitable_journal_ids" invisible="1" />
                 <field name="date" />
                 <field name="payment_ref" required="1" />

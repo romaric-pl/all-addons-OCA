@@ -156,6 +156,11 @@ msgid "Completed with some warnings"
 msgstr "Slutförde med några varningar"
 
 #. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_completed
+msgid "Completion Date"
+msgstr ""
+
+#. module: base_report_to_printer
 #: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_job__job_state_reason__unsupported-compression
 msgid "Compressed using an unknown algorithm"
 msgstr "Komprimerad med en okänd algoritm"
@@ -199,6 +204,11 @@ msgid "Created on"
 msgstr "Skapad den"
 
 #. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_creation
+msgid "Creation Date"
+msgstr ""
+
+#. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__job_state
 msgid "Current state of the job."
 msgstr "Jobbets nuvarande status."
@@ -230,8 +240,8 @@ msgstr "Datum och tid för slutförandet av det här jobbet."
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__time_at_creation
-msgid "Date and time of creation for this job."
-msgstr "Datum och tid då det här jobbet skapades."
+msgid "Date and time of creation of this job."
+msgstr ""
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__time_at_processing
@@ -390,6 +400,13 @@ msgid "If checked, this server is useable."
 msgstr "Om rutan är ikryssad är servern användbar."
 
 #. module: base_report_to_printer
+#. odoo-javascript
+#: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
+msgid "Issue on"
+msgstr ""
+
+#. module: base_report_to_printer
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__job_id_cups
 msgid "Job ID"
 msgstr "Jobb-ID"
@@ -455,6 +472,12 @@ msgstr "Medieframsteg"
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_printer__model
 msgid "Model"
 msgstr "Modell"
+
+#. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_printer__multi_thread
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_server__multi_thread
+msgid "Multi Thread"
+msgstr ""
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,field_description:base_report_to_printer.field_printing_action__name
@@ -539,8 +562,11 @@ msgid "Port of the server."
 msgstr "Serverns port."
 
 #. module: base_report_to_printer
+#. odoo-javascript
+#: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.act_report_xml_view
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.wizard_print_attachment_form
+#, python-format
 msgid "Print"
 msgstr "Skriv ut"
 
@@ -667,6 +693,11 @@ msgstr "Utskriftsserver"
 #: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_job__job_state__processing
 msgid "Processing"
 msgstr "Bearbetar"
+
+#. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_processing
+msgid "Processing Date"
+msgstr ""
 
 #. module: base_report_to_printer
 #: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_job__job_state__processing_stopped
@@ -800,6 +831,13 @@ msgid "The id of the job must be unique per server !"
 msgstr "Jobbets ID måste vara unikt per server !"
 
 #. module: base_report_to_printer
+#. odoo-javascript
+#: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
+msgid "The report"
+msgstr ""
+
+#. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_ir_actions_report__printing_action_ids
 msgid "This field allows configuring action and printer on a per user basis"
 msgstr ""
@@ -820,21 +858,6 @@ msgstr ""
 #, python-format
 msgid "This report type (%s) is not supported by direct printing!"
 msgstr "Den här rapporttypen (%s) stöds inte av direktutskrift!"
-
-#. module: base_report_to_printer
-#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_completed
-msgid "Time At Completed"
-msgstr "Tid vid slutförd"
-
-#. module: base_report_to_printer
-#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_creation
-msgid "Time At Creation"
-msgstr "Tid vid skapad"
-
-#. module: base_report_to_printer
-#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_processing
-msgid "Time At Processing"
-msgstr "Tid vid bearbetar"
 
 #. module: base_report_to_printer
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.printing_printer_view_form
@@ -858,8 +881,8 @@ msgstr "Ej tillgänglig"
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__active
-msgid "Unchecked if the job is purged from cups."
-msgstr "Ej ikryssad om jobbet har rensas från cups."
+msgid "Unchecked if the job is purged from CUPS."
+msgstr ""
 
 #. module: base_report_to_printer
 #: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_job__job_state__unknown
@@ -917,11 +940,33 @@ msgid "Wizard"
 msgstr "Guide"
 
 #. module: base_report_to_printer
+#. odoo-javascript
+#: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
+msgid "couldn't be printed. Click on the button below to download it"
+msgstr ""
+
+#. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/wizards/print_attachment_report.py:0
 #, python-format
 msgid "{name} ({copies} copies)"
-msgstr "{namn} ({kopior} kopior)"
+msgstr "{name} ({copies} kopior)"
+
+#~ msgid "Date and time of creation for this job."
+#~ msgstr "Datum och tid då det här jobbet skapades."
+
+#~ msgid "Time At Completed"
+#~ msgstr "Tid vid slutförd"
+
+#~ msgid "Time At Creation"
+#~ msgstr "Tid vid skapad"
+
+#~ msgid "Time At Processing"
+#~ msgstr "Tid vid bearbetar"
+
+#~ msgid "Unchecked if the job is purged from cups."
+#~ msgstr "Ej ikryssad om jobbet har rensas från cups."
 
 #~ msgid "Job"
 #~ msgstr "Jobb"
