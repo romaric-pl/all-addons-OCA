@@ -729,9 +729,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 5728022c736a1285b4cdfd5f35343a975986027b
+commit f6357387974dae036b4b085cea520a02421e66c2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 23 21:00:20 2024 +0000
+Date:   Thu Nov 21 11:20:12 2024 +0000
 
     [BOT] post-merge updates
 
