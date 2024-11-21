@@ -205,6 +205,7 @@ addon | version | maintainers | summary
 [account_move_line_partner_country](account_move_line_partner_country/) | 12.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Show Partner's Country on Account Move Line.
 [account_move_line_purchase_info](account_move_line_purchase_info/) | 12.0.2.0.0 |  | Introduces the purchase order line to the journal items
 [account_move_line_tax_editable](account_move_line_tax_editable/) | 12.0.1.1.0 |  | Allows to edit taxes on non-posted account move lines
+[account_move_post_date_user](account_move_post_date_user/) | 12.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Trace journal entry posting date and user.
 [account_move_template](account_move_template/) | 12.0.1.1.0 |  | Templates for recurring Journal Entries
 [account_netting](account_netting/) | 12.0.1.0.0 |  | Compensate AR/AP accounts from the same partner
 [account_partner_required](account_partner_required/) | 12.0.1.0.0 |  | Adds an option 'partner policy' on account types
@@ -1322,7 +1323,7 @@ addon | version | maintainers | summary
 [sale_delivery_split_date](sale_delivery_split_date/) | 12.0.1.0.1 |  | Sale Deliveries split by date
 [sale_delivery_state](sale_delivery_state/) | 12.0.1.0.0 |  | Show the delivery state on the sale order
 [sale_disable_inventory_check](sale_disable_inventory_check/) | 12.0.1.0.0 |  | Disable warning 'Not enough inventory' when there isn't enough product stock
-[sale_discount_display_amount](sale_discount_display_amount/) | 12.0.1.1.0 | [![GSLabIt](https://github.com/GSLabIt.png?size=30px)](https://github.com/GSLabIt) | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
+[sale_discount_display_amount](sale_discount_display_amount/) | 12.0.1.2.0 | [![GSLabIt](https://github.com/GSLabIt.png?size=30px)](https://github.com/GSLabIt) | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_double_validation](sale_double_validation/) | 12.0.1.0.1 |  | Double validation for Sales
 [sale_elaboration](sale_elaboration/) | 12.0.1.0.1 |  | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 12.0.1.1.1 |  | Custom exceptions on sale order
@@ -2523,7 +2524,7 @@ addon | version | maintainers | summary
 [product_multi_company](product_multi_company/) | 12.0.1.0.0 |  | Select individually the product template visibility on each company
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 12.0.1.0.1 |  | Product Tax Multi Company Default
 [project_multi_company](project_multi_company/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | This module adds support for multi company on Project Module.
-[purchase_sale_inter_company](purchase_sale_inter_company/) | 12.0.1.3.1 |  | Intercompany PO/SO rules
+[purchase_sale_inter_company](purchase_sale_inter_company/) | 12.0.1.3.2 |  | Intercompany PO/SO rules
 [res_company_active](res_company_active/) | 12.0.1.0.0 |  | Add the 'active' feature on company model
 [res_company_category](res_company_category/) | 12.0.1.0.0 |  | Company Categories
 [res_company_code](res_company_code/) | 12.0.1.0.0 |  | Add 'code' field on company model

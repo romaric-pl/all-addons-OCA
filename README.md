@@ -80,16 +80,11 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 2c2eafd89dc9e8fa05ed5971ab0165bc4e1ecce9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Sep 28 14:43:14 2024 +0000
+commit 344452fc1c4f50fcded48e5384290a294a2e152c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Nov 18 19:29:05 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 29.9% (82 of 274 strings)
-    
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -426,11 +421,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit eec73a21aad9fd76a781a4aae8287c33f4f75d1a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 16 08:41:53 2024 +0000
+commit 2983c696cede1d4d3090fdb890e56229a2e78a75
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 18 13:43:07 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_discount_display_amount
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_discount_display_amount/
 
 
 ## crm
@@ -681,11 +681,16 @@ Date:   Tue Nov 19 20:54:23 2019 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit b1b391d08a4b430ed3eca8c3bc61f9a43a5a92bc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Oct 20 08:48:07 2024 +0000
+commit 15e111d2f7212d7966de6eca903c8247e66b19b4
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Nov 21 12:05:10 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: multi-company-12.0/multi-company-12.0-purchase_sale_inter_company
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-12-0/multi-company-12-0-purchase_sale_inter_company/
 
 
 ## l10n-argentina

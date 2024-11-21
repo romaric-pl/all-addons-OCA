@@ -99,6 +99,7 @@ class PurchaseOrder(models.Model):
         # Validation of sale order
         if dest_company.sale_auto_validation:
             sale_order.sudo(intercompany_user.id).action_confirm()
+        return sale_order
 
     @api.multi
     def _prepare_sale_order_data(self, name, partner, dest_company,

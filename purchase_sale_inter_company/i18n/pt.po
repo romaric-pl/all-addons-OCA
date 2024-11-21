@@ -320,7 +320,7 @@ msgstr ""
 "empresa, esta será automaticamente validada."
 
 #. module: purchase_sale_inter_company
-#: code:addons/purchase_sale_inter_company/models/purchase_order.py:171
+#: code:addons/purchase_sale_inter_company/models/purchase_order.py:172
 #: code:addons/purchase_sale_inter_company/models/sale_order.py:274
 #, python-format
 msgid "You can't cancel an order that is %s"
