@@ -87,7 +87,7 @@ class MultiCompanyAbstract(models.AbstractModel):
         if args is None:
             args = []
         for arg in args:
-            if type(arg) == list and arg[:2] == ["company_id", "in"]:
+            if type(arg) in {list, tuple} and list(arg[:2]) == ["company_id", "in"]:
                 fix = []
                 for _i in range(len(arg[2]) - 1):
                     fix.append("|")
@@ -115,3 +115,10 @@ class MultiCompanyAbstract(models.AbstractModel):
     def search_read(self, domain=None, fields=None, offset=0, limit=None, order=None):
         new_domain = self._patch_company_domain(domain)
         return super().search_read(new_domain, fields, offset, limit, order)
+
+    @api.model
+    def search(self, args, offset=0, limit=None, order=None, count=False):
+        args = self._patch_company_domain(args)
+        return super().search(
+            args, offset=offset, limit=limit, order=order, count=count
+        )

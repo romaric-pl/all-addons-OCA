@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-28 10:26+0000\n"
-"PO-Revision-Date: 2024-10-05 17:06+0000\n"
+"PO-Revision-Date: 2024-11-18 10:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -204,7 +204,7 @@ msgstr "Conto bancario usato per l'emissione RiBa."
 #: model:ir.model.fields,help:l10n_it_riba.field_res_partner__property_riba_supplier_company_bank_id
 #: model:ir.model.fields,help:l10n_it_riba.field_res_users__property_riba_supplier_company_bank_id
 msgid "Bank account used for the RiBa of this supplier."
-msgstr ""
+msgstr "Conto bancario utilizzato per le RiBa di questo fornitore."
 
 #. module: l10n_it_riba
 #: model:ir.model.fields,help:l10n_it_riba.field_account_bank_statement_line__riba_supplier_company_bank_id
@@ -212,6 +212,7 @@ msgstr ""
 #: model:ir.model.fields,help:l10n_it_riba.field_account_payment__riba_supplier_company_bank_id
 msgid "Bank account used for the RiBa of this vendor bill."
 msgstr ""
+"Conco bancario utilizzato per le RiBa delle fatture di questo fornitore."
 
 #. module: l10n_it_riba
 #. odoo-python
@@ -319,7 +320,7 @@ msgstr "Azienda"
 #. module: l10n_it_riba
 #: model_terms:ir.ui.view,arch_db:l10n_it_riba.view_partner_form_riba
 msgid "Company Bank Account"
-msgstr ""
+msgstr "Conto bancario aziendale"
 
 #. module: l10n_it_riba
 #: model:ir.model.fields,field_description:l10n_it_riba.field_account_bank_statement_line__riba_supplier_company_bank_id
@@ -328,7 +329,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_riba.field_res_partner__property_riba_supplier_company_bank_id
 #: model:ir.model.fields,field_description:l10n_it_riba.field_res_users__property_riba_supplier_company_bank_id
 msgid "Company Bank Account for Supplier"
-msgstr ""
+msgstr "Conto bancario aziendale per fornitore"
 
 #. module: l10n_it_riba
 #: model:ir.model,name:l10n_it_riba.model_res_config_settings

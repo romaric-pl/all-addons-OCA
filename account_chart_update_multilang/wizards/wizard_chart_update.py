@@ -16,7 +16,7 @@ class WizardUpdateChartsAccount(models.TransientModel):
 
     def _get_lang_selection_options(self):
         """Only can translate in base language by default."""
-        en = self.env["res.lang"]._lang_get("en_US")
+        en = self.env.ref("base.lang_en")
         return [(en.code, en.name)]
 
     def _update_other_langs(self, templates):

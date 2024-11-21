@@ -115,7 +115,7 @@ class TestProductPackagingContainerDepositMixin(
         # With the "update_order_container_deposit_quantity" context
         # We can update order container deposit quantity on PO and locked SO also
         purchase.with_context(
-            skip_update_container_deposit=False
+            skip_update_container_deposit=False, allow_update_locked_sales=True
         ).update_order_container_deposit_quantity()
         # PO product packaging container deposit quantities
         po_pallet_line = purchase.order_line.filtered(

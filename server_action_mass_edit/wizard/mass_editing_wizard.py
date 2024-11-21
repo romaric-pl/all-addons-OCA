@@ -3,10 +3,19 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import json
+import logging
 
 from lxml import etree
+from psycopg2 import IntegrityError
 
 from odoo import _, api, fields, models
+from odoo.exceptions import (
+    AccessDenied,
+    AccessError,
+    MissingError,
+    UserError,
+    ValidationError,
+)
 
 from odoo.addons.base.models.ir_ui_view import (
     transfer_modifiers_to_node,
@@ -24,6 +33,12 @@ class MassEditingWizard(models.TransientModel):
     operation_description_warning = fields.Text(readonly=True)
     operation_description_danger = fields.Text(readonly=True)
     message = fields.Text(readonly=True)
+    write_record_by_record = fields.Boolean(
+        help="This option will write the records one by one, instead of all at once.\n"
+        "This is useful when you are editing a lot of records and one of the "
+        "records raises an error. \n  With this option, the error message will be "
+        "more specific to facillitate the undertanding of the error."
+    )
 
     @api.model
     def default_get(self, fields, active_ids=None):
@@ -196,6 +211,9 @@ class MassEditingWizard(models.TransientModel):
         server_action = self.env["ir.actions.server"].sudo().browse(server_action_id)
         if not server_action:
             return super().get_view(view_id, view_type, **options)
+        # Clean form_view_ref to avoid use that instead of this model view
+        if self.env.context.get("form_view_ref"):
+            self = self.with_context(form_view_ref=None)
         result = super().get_view(view_id, view_type, **options)
         arch = etree.fromstring(result["arch"])
         main_xml_group = arch.find('.//group[@name="group_field_list"]')
@@ -243,12 +261,15 @@ class MassEditingWizard(models.TransientModel):
         return field_info
 
     @api.model_create_multi
-    def create(self, vals_list):
+    def create(self, vals_list):  # noqa: C901
         server_action_id = self.env.context.get("server_action_id")
         server_action = self.env["ir.actions.server"].sudo().browse(server_action_id)
         active_ids = self.env.context.get("active_ids", [])
         if server_action and active_ids:
+            TargetModel = self.env[server_action.model_id.model]
             for vals in vals_list:
+                write_record_by_record = vals.pop("write_record_by_record", False)
+                logging.warning("write_record_by_record: %s", write_record_by_record)
                 values = {}
                 for key, val in vals.items():
                     if key.startswith("selection_"):
@@ -280,10 +301,44 @@ class MassEditingWizard(models.TransientModel):
                                 m2m_list.append((4, m2m_id))
                             values.update({split_key: m2m_list})
 
-                if values:
-                    self.env[server_action.model_id.model].browse(
-                        active_ids
-                    ).with_context(mass_edit=True,).write(values)
+                if not values:
+                    continue
+                target_records = TargetModel.browse(active_ids)
+                if write_record_by_record:
+                    for target_record in target_records:
+                        try:
+                            target_record.with_context(mass_edit=True).write(values)
+                        except (
+                            AccessDenied,
+                            AccessError,
+                            MissingError,
+                            UserError,
+                            ValidationError,
+                            IntegrityError,
+                        ) as oe:
+                            if isinstance(oe, IntegrityError):
+                                sql_error_msg_dict = models.convert_pgerror_constraint(
+                                    self.env[TargetModel._name],
+                                    False,
+                                    False,
+                                    oe,
+                                )
+                                sql_error_message = sql_error_msg_dict.get(
+                                    "message", ""
+                                )
+                                oe = Exception(sql_error_message)
+                            raise UserError(
+                                _(
+                                    'Failed to process the %(model_name)s  "%(name)s" '
+                                    "[id: %(id)s]:\n\n%(ue)s",
+                                    model_name=server_action.model_id.name,
+                                    name=target_record.display_name,
+                                    id=target_record.id,
+                                    ue=str(oe),
+                                )
+                            ) from oe
+                else:
+                    target_records.with_context(mass_edit=True).write(values)
         return super().create([{}])
 
     def _prepare_create_values(self, vals_list):

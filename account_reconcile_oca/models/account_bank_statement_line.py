@@ -519,6 +519,8 @@ class AccountBankStatementLine(models.Model):
                 new_line["partner_id"] = (
                     self.env["res.partner"].browse(line["partner_id"]).name_get()[0]
                 )
+            elif self.partner_id:
+                new_line["partner_id"] = self.partner_id.name_get()[0]
             new_data.append(new_line)
         return new_data, reconcile_auxiliary_id
 

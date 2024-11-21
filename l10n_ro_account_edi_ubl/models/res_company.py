@@ -117,6 +117,13 @@ class ResCompany(models.Model):
                     doc.get("mesaje") or [],
                 )
             )
+        else:
+            _logger.warning(
+                "Error getting e-invoice messages for company %s: %s",
+                self.name,
+                content.decode("utf-8"),
+            )
+            doc = {}
         messages += company_messages
         numar_total_pagini = doc.get("numar_total_pagini", 0)
 

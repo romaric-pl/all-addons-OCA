@@ -10,7 +10,11 @@ from odoo.tests import Form
 from odoo.addons.mail.models.mail_mail import MailMail as upstream
 from odoo.addons.mail.tests.test_mail_composer import TestMailComposer
 
-VALID_HASHES = ["d52cb36b88b33abc9556f7be6718d93f", "461467cd5b356072fc054468c75f6e26"]
+VALID_HASHES = [
+    "d52cb36b88b33abc9556f7be6718d93f",
+    "461467cd5b356072fc054468c75f6e26",
+    "5d1ab352416f5074e131f35f20098d5b",
+]
 
 
 class TestMailCcBcc(TestMailComposer):

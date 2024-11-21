@@ -98,6 +98,16 @@ msgid "Don't touch"
 msgstr ""
 
 #. module: server_action_mass_edit
+#. odoo-python
+#: code:addons/server_action_mass_edit/wizard/mass_editing_wizard.py:0
+#, python-format
+msgid ""
+"Failed to process the %(model_name)s  \"%(name)s\" [id: %(id)s]:\n"
+"\n"
+"%(ue)s"
+msgstr ""
+
+#. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__field_id
 msgid "Field"
 msgstr ""
@@ -138,6 +148,7 @@ msgid "Last Updated on"
 msgstr "Naposled upraveno"
 
 #. module: server_action_mass_edit
+#: model:ir.actions.server,name:server_action_mass_edit.mass_editing_partner
 #: model:ir.actions.server,name:server_action_mass_edit.mass_editing_partner_title
 #: model:ir.actions.server,name:server_action_mass_edit.mass_editing_user
 msgid "Mass Edit"
@@ -249,6 +260,16 @@ msgid "The treatment will be processed on the %(amount)d selected record(s)."
 msgstr ""
 
 #. module: server_action_mass_edit
+#: model:ir.model.fields,help:server_action_mass_edit.field_mass_editing_wizard__write_record_by_record
+msgid ""
+"This option will write the records one by one, instead of all at once.\n"
+"This is useful when you are editing a lot of records and one of the records "
+"raises an error. \n"
+"  With this option, the error message will be more specific to facillitate "
+"the undertanding of the error."
+msgstr ""
+
+#. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server__state
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_cron__state
 msgid ""
@@ -272,6 +293,11 @@ msgstr ""
 #. module: server_action_mass_edit
 #: model:ir.model,name:server_action_mass_edit.model_mass_editing_wizard
 msgid "Wizard for mass edition"
+msgstr ""
+
+#. module: server_action_mass_edit
+#: model:ir.model.fields,field_description:server_action_mass_edit.field_mass_editing_wizard__write_record_by_record
+msgid "Write Record By Record"
 msgstr ""
 
 #. module: server_action_mass_edit

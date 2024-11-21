@@ -126,3 +126,13 @@ class TestReleaseChannel(ReleaseChannelCase):
         self.env.company.recompute_channel_on_pickings_at_release = True
         move.release_available_to_promise()
         self.assertEqual(move.picking_id.release_channel_id, channel)
+
+    def test_open_picking(self):
+        self.assertFalse(self.default_channel.open_picking_ids)
+        move = self._create_single_move(self.product1, 10)
+        move.picking_id.assign_release_channel()
+        self.assertEqual(move.picking_id.release_channel_id.id, self.default_channel.id)
+        self.assertEqual(self.default_channel.open_picking_ids, move.picking_id)
+        move.quantity_done = move.product_uom_qty
+        move.picking_id._action_done()
+        self.assertFalse(self.default_channel.open_picking_ids)

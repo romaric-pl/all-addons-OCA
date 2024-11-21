@@ -48,8 +48,8 @@ class MailMail(models.Model):
         success_pids = []
         failure_type = None
         # ===== Same with native Odoo =====
-        # https://github.com/odoo/odoo/blob/d492bbde35d2b52e975ca252588f5529f07027aa
-        # /addons/mail/models/mail_mail.py#L461
+        # https://github.com/odoo/odoo/blob/1098b033b4e1811d6ff4b8c3b90aa6b9e697cb93
+        # /addons/mail/models/mail_mail.py#L465
         try:
             if mail.state != "outgoing":
                 if mail.state != "exception" and mail.auto_delete:
@@ -153,7 +153,10 @@ class MailMail(models.Model):
                 headers=email_headers,
             )
             try:
-                res = IrMailServer.send_email(
+                email_to_normalized = email.pop("email_to_normalized", [])
+                res = IrMailServer.with_context(
+                    send_validated_to=email_to_normalized
+                ).send_email(
                     msg,
                     mail_server_id=mail.mail_server_id.id,
                     smtp_session=smtp_session,
@@ -250,8 +253,8 @@ class MailMail(models.Model):
         email_from = email.get("email_from")
         IrMailServer = env["ir.mail_server"]
         # ===== Same with native Odoo =====
-        # https://github.com/odoo/odoo/blob/d492bbde35d2b52e975ca252588f5529f07027aa
-        # /addons/mail/models/mail_mail.py#L543
+        # https://github.com/odoo/odoo/blob/1098b033b4e1811d6ff4b8c3b90aa6b9e697cb93
+        # /addons/mail/models/mail_mail.py#L550
         msg = IrMailServer.build_email(
             email_from=email_from,
             email_to=email.get("email_to"),

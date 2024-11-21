@@ -104,7 +104,8 @@ class StockReleaseChannel(models.Model):
     )
     open_picking_ids = fields.One2many(
         string="Open Transfers",
-        related="picking_ids",
+        comodel_name="stock.picking",
+        inverse_name="release_channel_id",
         readonly=True,
         domain=[("state", "not in", ("done", "cancel"))],
     )

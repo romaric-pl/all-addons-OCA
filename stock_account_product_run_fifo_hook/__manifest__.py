@@ -5,7 +5,7 @@
     "name": "Stock Account Product Run FIFO Hook",
     "summary": "Add more flexibility in the run fifo method.",
     "author": "ForgeFlow, Odoo Community Association (OCA)",
-    "version": "16.0.2.1.1",
+    "version": "16.0.2.1.2",
     "category": "Warehouse Management",
     "website": "https://github.com/OCA/stock-logistics-workflow",
     "license": "LGPL-3",

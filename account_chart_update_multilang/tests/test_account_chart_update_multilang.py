@@ -32,7 +32,7 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
             ]
         )
         self.assertEqual(
-            new_tax.with_context(lang="en_EN").description, "tax description eng"
+            new_tax.with_context(lang="en_US").description, "tax description eng"
         )
         self.assertEqual(new_tax.with_context(lang="es_ES").name, "tax name es")
         self.assertEqual(
@@ -42,3 +42,15 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
         self.assertEqual(
             new_tax.with_context(lang="fr_FR").description, "tax description fr"
         )
+
+    def test_update_taxes_with_english_deactivate(self):
+        # When English is not active the chart update should work also
+        self.env["res.partner"].with_context(active_test=False).search([]).write(
+            {"lang": "es_ES"}
+        )
+        self.env["res.users"].with_context(active_test=False).search([]).write(
+            {"lang": "es_ES"}
+        )
+        lang_model = self.env["res.lang"]
+        lang_model.search([("code", "=", "en_US")]).write({"active": False})
+        self.test_update_taxes()
