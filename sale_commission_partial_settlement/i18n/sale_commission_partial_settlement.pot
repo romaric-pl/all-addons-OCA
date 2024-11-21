@@ -14,6 +14,13 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: sale_commission_partial_settlement
+#: model_terms:ir.ui.view,arch_db:sale_commission_partial_settlement.res_config_settings_view_form
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+
+#. module: sale_commission_partial_settlement
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_partial_reconcile__account_invoice_line_agent_partial_ids
 msgid "Account Invoice Line Agent Partial"
 msgstr ""
@@ -49,6 +56,16 @@ msgid "Commission in sales"
 msgstr ""
 
 #. module: sale_commission_partial_settlement
+#: model:ir.model,name:sale_commission_partial_settlement.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: sale_commission_partial_settlement
+#: model:ir.model,name:sale_commission_partial_settlement.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: sale_commission_partial_settlement
 #: code:addons/sale_commission_partial_settlement/wizard/wizard_settle.py:0
 #, python-format
 msgid "Created Settlements"
@@ -73,6 +90,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent__display_name
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent_partial__display_name
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_partial_reconcile__display_name
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_res_company__display_name
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission__display_name
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_make_settle__display_name
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_settlement__display_name
@@ -89,6 +108,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent__id
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent_partial__id
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_partial_reconcile__id
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_res_company__id
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_res_config_settings__id
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission__id
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_make_settle__id
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_settlement__id
@@ -107,6 +128,11 @@ msgid "Invoice Line Agent Partial"
 msgstr ""
 
 #. module: sale_commission_partial_settlement
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_settlement__settlement_date_to
+msgid "Invoice date up to"
+msgstr ""
+
+#. module: sale_commission_partial_settlement
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent__is_fully_settled
 msgid "Is Fully Settled"
 msgstr ""
@@ -115,6 +141,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent____last_update
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent_partial____last_update
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_partial_reconcile____last_update
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_res_company____last_update
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_res_config_settings____last_update
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission____last_update
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_make_settle____last_update
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_settlement____last_update
@@ -168,6 +196,11 @@ msgid "Payment amount type"
 msgstr ""
 
 #. module: sale_commission_partial_settlement
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_settlement__settlement_date_payment_to
+msgid "Payment date up to"
+msgstr ""
+
+#. module: sale_commission_partial_settlement
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_settlement_line__settled_amount
 msgid "Settled Amount"
 msgstr ""
@@ -175,6 +208,28 @@ msgstr ""
 #. module: sale_commission_partial_settlement
 #: model:ir.model,name:sale_commission_partial_settlement.model_sale_commission_settlement
 msgid "Settlement"
+msgstr ""
+
+#. module: sale_commission_partial_settlement
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_res_company__commission_show_settlement_dates
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_res_config_settings__commission_show_settlement_dates
+#: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_sale_commission_settlement__show_settlement_dates
+msgid "Show invoice and payment dates in settlements"
+msgstr ""
+
+#. module: sale_commission_partial_settlement
+#: model_terms:ir.ui.view,arch_db:sale_commission_partial_settlement.res_config_settings_view_form
+msgid "Shows the dates used to create the settlement itself"
+msgstr ""
+
+#. module: sale_commission_partial_settlement
+#: model:ir.model.fields,help:sale_commission_partial_settlement.field_sale_commission_settlement__settlement_date_to
+msgid "The invoice date used to create the settlement"
+msgstr ""
+
+#. module: sale_commission_partial_settlement
+#: model:ir.model.fields,help:sale_commission_partial_settlement.field_sale_commission_settlement__settlement_date_payment_to
+msgid "The payment date used to create the settlement"
 msgstr ""
 
 #. module: sale_commission_partial_settlement

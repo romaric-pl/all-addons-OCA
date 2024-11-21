@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_settlement_form" model="ir.ui.view">
+        <field name="name">Settlements</field>
+        <field name="model">sale.commission.settlement</field>
+        <field name="inherit_id" ref="sale_commission.view_settlement_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[field[@name='date_to']]" position="after">
+                <group attrs="{'invisible': [('show_settlement_dates', '=', False)]}">
+                    <field name="show_settlement_dates" invisible="1" />
+                    <field name="settlement_date_to" />
+                    <field name="settlement_date_payment_to" />
+                    <field name="create_date" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

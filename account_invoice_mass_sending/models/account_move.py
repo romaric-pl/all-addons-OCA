@@ -43,6 +43,7 @@ class AccountInvoice(models.Model):
             {
                 "active_model": self._name,
                 "active_ids": self.ids,
+                "account_invoice_mass_sending": True,
             }
         )
         wiz = self.env["account.invoice.send"].with_context(**wiz_ctx).create({})

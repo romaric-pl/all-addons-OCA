@@ -64924,6 +64924,12 @@ msgstr ""
 #. module: l10n_it_intrastat
 #: model_terms:ir.ui.view,arch_db:l10n_it_intrastat.view_tree_invoice_intrastat_form
 #: model_terms:ir.ui.view,arch_db:l10n_it_intrastat.view_tree_invoice_intrastat_report_tree
+msgid "Tot Weight"
+msgstr ""
+
+#. module: l10n_it_intrastat
+#: model_terms:ir.ui.view,arch_db:l10n_it_intrastat.view_tree_invoice_intrastat_form
+#: model_terms:ir.ui.view,arch_db:l10n_it_intrastat.view_tree_invoice_intrastat_report_tree
 msgid "Total"
 msgstr ""
 

@@ -10,6 +10,16 @@ from odoo import _, models
 class SaleCommissionMakeSettle(models.TransientModel):
     _inherit = "sale.commission.make.settle"
 
+    def _prepare_settlement_vals(self, agent, company, sett_from, sett_to):
+        vals = super()._prepare_settlement_vals(agent, company, sett_from, sett_to)
+        vals.update(
+            {
+                "settlement_date_to": self.date_to,
+                "settlement_date_payment_to": self.date_payment_to,
+            }
+        )
+        return vals
+
     def action_settle(self):
         partial_res = self.action_settle_partial()
         res = super().action_settle()
