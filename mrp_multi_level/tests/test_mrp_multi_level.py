@@ -4,10 +4,12 @@
 from datetime import date, datetime, timedelta
 
 from odoo import fields
+from odoo.tests import tagged
 
 from .common import TestMrpMultiLevelCommon
 
 
+@tagged("post_install", "-at_install")
 class TestMrpMultiLevel(TestMrpMultiLevelCommon):
     def test_01_mrp_levels(self):
         """Tests computation of MRP levels."""

@@ -372,9 +372,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 120bca967d1d8436a0cf20fc3bce9b6967d02544
+commit a897942ba58d84ec14bcb87678fd3d4d1479e9da
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 12 07:17:46 2024 +0000
+Date:   Wed Nov 20 09:54:43 2024 +0000
 
     [BOT] post-merge updates
 
@@ -595,16 +595,11 @@ Date:   Mon Sep 23 14:43:08 2024 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 70ded8a54fad6b9c1f7a889f9b4a937d3359d6a5
-Author: Víctor Martínez <victor.martinez@tecnativa.com>
-Date:   Fri Oct 25 09:54:14 2024 +0000
+commit f380a816a3f068b9cc9bcd847e6ff943c3199390
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Nov 20 18:28:54 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (55 of 55 strings)
-    
-    Translation: hr-attendance-15.0/hr-attendance-15.0-hr_attendance_report_theoretical_time
-    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-15-0/hr-attendance-15-0-hr_attendance_report_theoretical_time/es/
+    [BOT] post-merge updates
 
 
 ## hr-expense
@@ -650,16 +645,11 @@ Date:   Wed May 1 17:59:43 2024 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 8ecf727a25f4f60155505f74544a4062b0603505
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jul 23 06:51:52 2024 +0000
+commit 52ccc51de63bda601cdd812add0c8efd86b0c440
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 21 11:55:57 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: multi-company-15.0/multi-company-15.0-partner_multi_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-15-0/multi-company-15-0-partner_multi_company/
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -984,16 +974,11 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 0b06d9b19dd5a02987231220753529c03cf61702
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Nov 13 17:28:25 2024 +0000
+commit 02bf70174c7aa10106a9828fa8c88ed9de0b6cde
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 21 18:06:18 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_facturae
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_facturae/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1019,9 +1004,9 @@ Date:   Wed May 1 18:38:24 2024 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 4c32881d4892c361ff494eb00f7359c3a6e71b68
+commit bfdfb30b0d7dcbbfad0d3231f34f168cefbb8b02
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 14 11:13:00 2024 +0000
+Date:   Thu Nov 21 07:14:42 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1100,11 +1085,16 @@ Date:   Fri Sep 27 14:45:39 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit ace020e1afba97ebb959125b0901c0dbbdf6b187
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 15 10:33:32 2024 +0000
+commit 1376f0f882f1500f86e1bdb62c9ff44c61223412
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 18 07:59:46 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_account_product_run_fifo_hook
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_account_product_run_fifo_hook/
 
 
 ## stock-logistics-tracking
@@ -1178,9 +1168,9 @@ Date:   Wed Dec 6 16:10:13 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 9939b7917b0e1d09b884605551895b47680a4872
+commit b423d5be0793898effc9277bb785950fc18b6395
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 12 13:07:12 2024 +0000
+Date:   Tue Nov 19 08:09:14 2024 +0000
 
     [BOT] post-merge updates
 
