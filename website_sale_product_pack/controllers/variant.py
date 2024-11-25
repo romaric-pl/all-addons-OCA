@@ -1,9 +1,10 @@
-from odoo.http import request
+from odoo.http import request, route
 
 from odoo.addons.website_sale.controllers.variant import WebsiteSaleVariantController
 
 
 class WebsiteSaleVariantController(WebsiteSaleVariantController):
+    @route()
     def get_combination_info_website(
         self,
         product_template_id,

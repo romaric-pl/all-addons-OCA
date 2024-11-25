@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-11-11 11:50+0000\n"
+"PO-Revision-Date: 2024-11-25 11:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -159,7 +159,7 @@ msgstr "Prodotto"
 #. module: bookstore_mgmt
 #: model:ir.model,name:bookstore_mgmt.model_product_product
 msgid "Product Variant"
-msgstr ""
+msgstr "Variante prodotto"
 
 #. module: bookstore_mgmt
 #: model:res.groups,name:bookstore_mgmt.bookstore_user

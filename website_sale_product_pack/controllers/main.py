@@ -1,9 +1,10 @@
-from odoo.http import request
+from odoo.http import request, route
 
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
 
 class WebsiteSale(WebsiteSale):
+    @route()
     def shop(
         self,
         page=0,
