@@ -1276,11 +1276,16 @@ Date:   Sun Sep 3 17:10:24 2023 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit d71ebd417dccfe5708c7abad10c3ca03b28cf1c0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 20 06:56:56 2024 +0000
+commit c07439f74657759990371b974e205f05691425a4
+Author: Wesley Oliveira <wesleygabrieldeoliveira@gmail.com>
+Date:   Mon Nov 25 18:45:42 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 23.0% (3 of 13 strings)
+    
+    Translation: stock-logistics-warehouse-13.0/stock-logistics-warehouse-13.0-stock_available_unreserved
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-13-0/stock-logistics-warehouse-13-0-stock_available_unreserved/pt_BR/
 
 
 ## stock-logistics-reporting
