@@ -29,8 +29,8 @@ msgstr "Catégorie mère"
 
 #. module: product_category_inter_company
 #: model:ir.model,name:product_category_inter_company.model_product_category
-msgid "Product Category"
-msgstr "Catégorie d'article"
+msgid "Product Category (Multi-Company)"
+msgstr ""
 
 #. module: product_category_inter_company
 #: code:addons/product_category_inter_company/models/product_category.py:0
@@ -55,6 +55,9 @@ msgid ""
 msgstr ""
 "La catégorie parent et votre catégorie %s doivent appartenir à la même "
 "société."
+
+#~ msgid "Product Category"
+#~ msgstr "Catégorie d'article"
 
 #~ msgid "Display Name"
 #~ msgstr "Nom affiché"

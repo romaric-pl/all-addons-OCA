@@ -1,0 +1,76 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_category_multi_company
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_category_multi_company
+#: model:ir.model.fields,field_description:product_category_multi_company.field_product_category__company_ids
+msgid "Companies"
+msgstr ""
+
+#. module: product_category_multi_company
+#: model:ir.model.fields,field_description:product_category_multi_company.field_product_category__company_id
+msgid "Company"
+msgstr ""
+
+#. module: product_category_multi_company
+#: model:ir.model.fields,field_description:product_category_multi_company.field_product_category__no_company_ids
+msgid "No Companies"
+msgstr ""
+
+#. module: product_category_multi_company
+#: model:ir.model,name:product_category_multi_company.model_product_category
+msgid "Product Category (Multi-Company)"
+msgstr ""
+
+#. module: product_category_multi_company
+#: model:ir.model,name:product_category_multi_company.model_product_template
+msgid "Product Template (Multi-Company)"
+msgstr ""
+
+#. module: product_category_multi_company
+#: code:addons/product_category_multi_company/models/product_category.py:0
+#, python-format
+msgid ""
+"The category %(parent)s must be shared as the child %(child)s belongs to "
+"companies %(companies)s."
+msgstr ""
+
+#. module: product_category_multi_company
+#: code:addons/product_category_multi_company/models/product_category.py:0
+#, python-format
+msgid ""
+"The category %(parent)s must be shared as the child %(child)s is shared."
+msgstr ""
+
+#. module: product_category_multi_company
+#: code:addons/product_category_multi_company/models/product_category.py:0
+#, python-format
+msgid ""
+"The category's companies cannot be changed because some products have "
+"companies not in the new set of category companies."
+msgstr ""
+
+#. module: product_category_multi_company
+#: code:addons/product_category_multi_company/models/product_category.py:0
+#, python-format
+msgid ""
+"The parent category %(parent)s and your category %(child)s must share the "
+"same companies."
+msgstr ""
+
+#. module: product_category_multi_company
+#: code:addons/product_category_multi_company/models/product_template.py:0
+#, python-format
+msgid "The product's companies must be a subset of the category's companies."
+msgstr ""

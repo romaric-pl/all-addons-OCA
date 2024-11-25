@@ -190,9 +190,9 @@ Date:   Thu Oct 3 08:18:19 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 8c8b82d410867a8afa78c0ec7f7fec3a6eb259ec
+commit 87a23080c6c464dfec17a95bb76bc33d18d157ef
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 13 22:33:26 2024 +0000
+Date:   Mon Nov 25 07:40:27 2024 +0000
 
     [BOT] post-merge updates
 
@@ -645,11 +645,16 @@ Date:   Wed May 1 17:59:43 2024 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 52ccc51de63bda601cdd812add0c8efd86b0c440
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 21 11:55:57 2024 +0000
+commit 4a6993131ec3af2f8b1a60e486542117513b376e
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 25 09:09:07 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: multi-company-15.0/multi-company-15.0-multicompany_configuration
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-15-0/multi-company-15-0-multicompany_configuration/
 
 
 ## l10n-argentina
@@ -974,9 +979,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 02bf70174c7aa10106a9828fa8c88ed9de0b6cde
+commit 30c60e7c33370eea3de555f60774c9d0f158d184
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 21 18:06:18 2024 +0000
+Date:   Sat Nov 23 11:18:38 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1108,11 +1113,16 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit bd590e1bf351f2feb62410afb2ae45ff0dcd1c80
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 14 18:59:01 2024 +0000
+commit 146f45f931c8a909d89f4c7dfe22c5c6856df839
+Author: Wesley Oliveira <wesleygabrieldeoliveira@gmail.com>
+Date:   Mon Nov 25 18:47:01 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 21.4% (3 of 14 strings)
+    
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_available_unreserved
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_available_unreserved/pt_BR/
 
 
 ## stock-logistics-reporting
@@ -1214,9 +1224,9 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 741176fb3646746bb1063c8426cf6294adb148e5
+commit 79bfc442e2717feba9cc40627306fdf7bdc0ec47
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 12 07:15:35 2024 +0000
+Date:   Fri Nov 22 21:50:45 2024 +0000
 
     [BOT] post-merge updates
 

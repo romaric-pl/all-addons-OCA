@@ -41,8 +41,8 @@ msgstr ""
 
 #. module: product_multi_company
 #: model:ir.model,name:product_multi_company.model_product_category
-msgid "Product Category"
-msgstr "Categoría de producto"
+msgid "Product Category (Multi-Company)"
+msgstr ""
 
 #. module: product_multi_company
 #: model:ir.model,name:product_multi_company.model_product_template
@@ -58,3 +58,6 @@ msgstr "Rutas"
 #: model:ir.model.fields,field_description:product_multi_company.field_product_category__total_route_ids
 msgid "Total routes"
 msgstr "Total de rutas"
+
+#~ msgid "Product Category"
+#~ msgstr "Categoría de producto"
