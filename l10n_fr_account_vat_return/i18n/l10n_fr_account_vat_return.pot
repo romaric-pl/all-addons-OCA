@@ -1603,7 +1603,7 @@ msgstr ""
 #, python-format
 msgid ""
 "The balance of account '%(account)s' is %(balance)s. It should always be "
-"positive."
+"positive or null."
 msgstr ""
 
 #. module: l10n_fr_account_vat_return

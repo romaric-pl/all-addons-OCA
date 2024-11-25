@@ -1,4 +1,5 @@
 # Copyright 2020 Camptocamp SA (http://www.camptocamp.com)
+# Copyright 2024 Michael Tietz (MT Software) <mtietz@mt-software.de>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 from .test_cluster_picking_base import ClusterPickingCommonCase
@@ -76,15 +77,16 @@ class ClusterPickingScanDestinationPackPrefillQtyCase(ClusterPickingCommonCase):
         )
         # Ensure the qty has not changed.
         self.assertEqual(line.qty_done, previous_qty_done)
-
+        new_move_line = self.env["stock.move.line"].search(
+            [("move_id", "=", line.move_id.id), ("id", ">", line.id)]
+        )
+        self.assertFalse(new_move_line)
         expected_qty_done = qty_done
         self.assert_response(
             response,
             next_state="scan_destination",
             data=self._line_data(line, qty_done=expected_qty_done),
-            message=self.service.msg_store.bin_not_found_for_barcode(
-                self.product_b.barcode
-            ),
+            message=self.service.msg_store.wrong_record(self.product_b),
         )
 
     def test_scan_destination_pack_increment_with_packaging(self):

@@ -3393,7 +3393,7 @@ addon | version | maintainers | summary
 [hr_attendance_geolocation](hr_attendance_geolocation/) | 14.0.2.0.0 |  | With this module the geolocation of the user is tracked at the check-in/check-out step
 [hr_attendance_hour_type_report](hr_attendance_hour_type_report/) | 14.0.1.0.0 |  | HR Attendance hours report
 [hr_attendance_modification_tracking](hr_attendance_modification_tracking/) | 14.0.1.0.5 |  | Attendance changes will now be registered in the chatter.
-[hr_attendance_overtime](hr_attendance_overtime/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Mark Attendances as overtime.
+[hr_attendance_overtime](hr_attendance_overtime/) | 14.0.1.0.1 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Mark Attendances as overtime.
 [hr_attendance_reason](hr_attendance_reason/) | 14.0.1.1.4 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 14.0.1.0.5 |  | Theoretical vs Attended Time Analysis
 [hr_attendance_rfid](hr_attendance_rfid/) | 14.0.1.1.3 |  | HR Attendance RFID
@@ -4383,7 +4383,7 @@ addon | version | maintainers | summary
 [l10n_fr_account_invoice_import_facturx](l10n_fr_account_invoice_import_facturx/) | 14.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | France-specific module to import Factur-X invoices
 [l10n_fr_account_invoice_import_simple_pdf](l10n_fr_account_invoice_import_simple_pdf/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Invoice import simple PDF: match partners using SIREN
 [l10n_fr_account_tax_unece](l10n_fr_account_tax_unece/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Auto-configure UNECE params on French taxes
-[l10n_fr_account_vat_return](l10n_fr_account_vat_return/) | 14.0.7.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | VAT return for France: CA3, 3310-A, 3519
+[l10n_fr_account_vat_return](l10n_fr_account_vat_return/) | 14.0.7.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | VAT return for France: CA3, 3310-A, 3519
 [l10n_fr_account_vat_return_selenium](l10n_fr_account_vat_return_selenium/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Autofill CA3 on impots.gouv.fr via Selenium IDE
 [l10n_fr_account_vat_return_teledec](l10n_fr_account_vat_return_teledec/) | 14.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Teletransmit CA3 via Teledec.fr (subscription required)
 [l10n_fr_business_document_import](l10n_fr_business_document_import/) | 14.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adapt the module base_business_document_import for France
@@ -4768,7 +4768,7 @@ addon | version | maintainers | summary
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 14.0.1.0.3 |  | ITA - Codice fiscale
 [l10n_it_fiscalcode_sale](l10n_it_fiscalcode_sale/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Mostra il codice fiscale del cliente nella stampa del preventivo
 [l10n_it_intrastat](l10n_it_intrastat/) | 14.0.1.5.0 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
-[l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 14.0.1.3.7 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
+[l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 14.0.1.4.0 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
 [l10n_it_invoices_data_communication](l10n_it_invoices_data_communication/) | 14.0.1.0.2 |  | Comunicazione dati fatture (c.d. "nuovo spesometro" o "esterometro")
 [l10n_it_invoices_data_communication_fatturapa](l10n_it_invoices_data_communication_fatturapa/) | 14.0.1.0.0 |  | Integrazione fatturazione elettronica e comunicazione dati fatture (c.d. "nuovo spesometro")
 [l10n_it_ipa](l10n_it_ipa/) | 14.0.1.0.2 |  | ITA - Codice IPA
@@ -6615,7 +6615,7 @@ addon | version | maintainers | summary
 [sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 14.0.1.2.0 |  | Integration between Sales and Available to Promise Release
 [sale_stock_available_to_promise_release_cutoff](sale_stock_available_to_promise_release_cutoff/) | 14.0.1.1.1 |  | Cutoff management with respect to stock availability
 [sale_stock_available_to_promise_release_dropshipping](sale_stock_available_to_promise_release_dropshipping/) | 14.0.1.0.0 |  | Glue module between sale_stock_available_to_promise_release and stock_dropshipping
-[shopfloor](shopfloor/) | 14.0.4.15.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
+[shopfloor](shopfloor/) | 14.0.4.15.2 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
 [shopfloor_base](shopfloor_base/) | 14.0.2.11.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Core module for creating mobile apps
 [shopfloor_base_multicompany](shopfloor_base_multicompany/) | 14.0.1.0.0 |  | Provide multi-company support and validation to Shopfloor applications.
 [shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 14.0.1.2.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Create batch transfers for Cluster Picking

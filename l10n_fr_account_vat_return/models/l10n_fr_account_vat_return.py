@@ -283,6 +283,17 @@ class L10nFrAccountVatReturn(models.Model):
                     )
                     self.start_date = fy_date_from
 
+    @api.depends("name", "vat_periodicity")
+    def name_get(self):
+        res = []
+        for rec in self:
+            if rec.vat_periodicity == "12":
+                name = f"CA12 {rec.name}"
+            else:
+                name = f"CA3 {rec.name}"
+            res.append((rec.id, name))
+        return res
+
     def _prepare_speedy(self):
         # Generate a speed-dict called speedy that is used in several methods
         # or for some domains that we may need to inherit
@@ -952,7 +963,7 @@ class L10nFrAccountVatReturn(models.Model):
             raise UserError(
                 _(
                     "The balance of account '%(account)s' is %(balance)s. "
-                    "It should always be positive.",
+                    "It should always be positive or null.",
                     account=account.display_name,
                     balance=format_amount(self.env, balance, speedy["currency"]),
                 )
@@ -1972,8 +1983,11 @@ class L10nFrAccountVatReturn(models.Model):
                 lvals["debit"] = -amount
                 lvals_list.append(lvals)
             logger.debug("VAT move account %s: %s", account.code, lvals)
-        # Adjustment should be only caused by rounding, so not more than a few euros
-        if speedy["currency"].compare_amounts(abs(total), 1) > 0:
+        # On 1 due VAT or deductible VAT cell, the rounding effect can cause a gap of 0.50 €
+        # between due/deduc VAT account and VAT to pay (or VAT credit)
+        # We have 2 deduc VAT cells (immo and 5 regular) and 10 due VAT cells
+        # (5 VAT rates x 2 for regular and import)
+        if speedy["currency"].compare_amounts(abs(total), 0.5 * 12) > 0:
             raise UserError(
                 _(
                     "Error in the generation of the journal entry: the adjustment amount "
@@ -2011,7 +2025,7 @@ class L10nFrAccountVatReturn(models.Model):
         vals = {
             "date": self.end_date,
             "journal_id": self.company_id.fr_vat_journal_id.id,
-            "ref": "CA3 %s" % self.display_name,
+            "ref": self.display_name,
             "company_id": speedy["company_id"],
             "line_ids": [(0, 0, x) for x in lvals_list],
         }
@@ -2027,6 +2041,19 @@ class L10nFrAccountVatReturn(models.Model):
             ["origin_move_id"],
         )
         excluded_line_ids = [x["origin_move_id"][0] for x in excluded_lines]
+        # to allow reconciliation of 445670, we need to exclude the debit line
+        # from the reconciliation to have a balance at 0
+        credit_vat_account = self._get_box_account(
+            speedy["meaning_id2box"]["credit_deferment"]
+        )
+        credit_vat_debit_mline = speedy["aml_obj"].search(
+            [
+                ("move_id", "=", move.id),
+                ("account_id", "=", credit_vat_account.id),
+                ("debit", ">", 0.9),
+            ],
+            limit=1,
+        )
         for line in move.line_ids.filtered(lambda x: x.account_id.reconcile):
             account = line.account_id
             domain = speedy["base_domain_end"] + [
@@ -2034,6 +2061,8 @@ class L10nFrAccountVatReturn(models.Model):
                 ("full_reconcile_id", "=", False),
                 ("move_id", "not in", excluded_line_ids),
             ]
+            if account == credit_vat_account and credit_vat_debit_mline:
+                domain.append(("id", "!=", credit_vat_debit_mline.id))
             rg_res = speedy["aml_obj"].read_group(domain, ["balance"], [])
             # or 0 is need to avoid a crash: rg_res[0]["balance"] = None
             # when the moves are already reconciled
@@ -2041,6 +2070,9 @@ class L10nFrAccountVatReturn(models.Model):
                 moves_to_reconcile = speedy["aml_obj"].search(domain)
                 moves_to_reconcile.remove_move_reconcile()
                 moves_to_reconcile.reconcile()
+                logger.info(
+                    "Successful reconciliation in account %s", account.display_name
+                )
 
     def _create_draft_account_move(self, speedy):
         self.ensure_one()
@@ -2132,7 +2164,7 @@ class L10nFrAccountVatReturn(models.Model):
         if not self.ca3_attachment_id:
             self.generate_ca3_attachment()
         action = {
-            "name": "FEC",
+            "name": "CA3",
             "type": "ir.actions.act_url",
             "url": "web/content/?model=%s&id=%d&filename_field=ca3_attachment_name&"
             "field=ca3_attachment_datas&download=true&filename=%s"
@@ -2262,28 +2294,30 @@ class L10nFrAccountVatReturn(models.Model):
         watermark_pdf_reader_p2 = PdfReader(packet2)
         watermark_pdf_reader_p3 = PdfReader(packet3)
         # read your existing PDF
-        ca3_original_fd = tools.file_open(
+        with tools.file_open(
             "l10n_fr_account_vat_return/report/CA3_cerfa.pdf", "rb"
-        )
-        ca3_original_reader = PdfReader(ca3_original_fd)
-        ca3_writer = PdfWriter()
-        # add the "watermark" (which is the new pdf) on the existing page
-        page1 = ca3_original_reader.pages[0]
-        page2 = ca3_original_reader.pages[1]
-        page3 = ca3_original_reader.pages[2]
-        page1.merge_page(watermark_pdf_reader_p1.pages[0])
-        page2.merge_page(watermark_pdf_reader_p2.pages[0])
-        page3.merge_page(watermark_pdf_reader_p3.pages[0])
-        ca3_writer.add_page(page1)
-        ca3_writer.add_page(page2)
-        ca3_writer.add_page(page3)
-        # finally, write "output" to a real file
-        out_ca3_io = io.BytesIO()
-        ca3_writer.write(out_ca3_io)
-        out_ca3_bytes = out_ca3_io.getvalue()
-        ca3_original_fd.close()
+        ) as ca3_original_fd:
+            ca3_original_reader = PdfReader(ca3_original_fd)
+            ca3_writer = PdfWriter()
+            # add the "watermark" (which is the new pdf) on the existing page
+            page1 = ca3_original_reader.pages[0]
+            page2 = ca3_original_reader.pages[1]
+            page3 = ca3_original_reader.pages[2]
+            page1.merge_page(watermark_pdf_reader_p1.pages[0])
+            page2.merge_page(watermark_pdf_reader_p2.pages[0])
+            page3.merge_page(watermark_pdf_reader_p3.pages[0])
+            ca3_writer.add_page(page1)
+            ca3_writer.add_page(page2)
+            ca3_writer.add_page(page3)
+            ca3_writer.pages[0].compress_content_streams()
+            ca3_writer.pages[1].compress_content_streams()
+            ca3_writer.pages[2].compress_content_streams()
+            # finally, write "output" to a real file
+            out_ca3_io = io.BytesIO()
+            ca3_writer.write(out_ca3_io)
+            out_ca3_bytes = out_ca3_io.getvalue()
 
-        filename = "CA3_%s.pdf" % self.display_name
+        filename = "CA3_%s.pdf" % self.name
         attach = self.env["ir.attachment"].create(
             {
                 "name": filename,

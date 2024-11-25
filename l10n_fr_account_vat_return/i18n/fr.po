@@ -1693,10 +1693,8 @@ msgstr ""
 #, python-format
 msgid ""
 "The balance of account '%(account)s' is %(balance)s. It should always be "
-"positive."
+"positive or null."
 msgstr ""
-"Le solde du compte \"%(account)s\" est %(balance)s. Il doit toujours être "
-"positif."
 
 #. module: l10n_fr_account_vat_return
 #: code:addons/l10n_fr_account_vat_return/models/l10n_fr_account_vat_box.py:0
@@ -2226,6 +2224,14 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_fr_account_vat_return.l10n_fr_vat_draft_move_option_form
 msgid "ignore it/them and continue to process the VAT return."
 msgstr ""
+
+#, python-format
+#~ msgid ""
+#~ "The balance of account '%(account)s' is %(balance)s. It should always be "
+#~ "positive."
+#~ msgstr ""
+#~ "Le solde du compte \"%(account)s\" est %(balance)s. Il doit toujours être "
+#~ "positif."
 
 #, python-format
 #~ msgid ""

@@ -621,16 +621,16 @@ Date:   Fri Oct 4 19:15:59 2024 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit f55a376ba4c15210ec8b048c185150f03ce86bdf
+commit 536712ad066fbb208221530f2291b0c5479d81fb
 Author: Weblate <noreply@weblate.org>
-Date:   Tue Aug 13 15:35:48 2024 +0000
+Date:   Mon Nov 25 09:57:31 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: hr-attendance-14.0/hr-attendance-14.0-hr_attendance_validation
-    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-14-0/hr-attendance-14-0-hr_attendance_validation/
+    Translation: hr-attendance-14.0/hr-attendance-14.0-hr_attendance_overtime
+    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-14-0/hr-attendance-14-0-hr_attendance_overtime/
 
 
 ## hr-expense
@@ -825,11 +825,16 @@ Date:   Wed May 1 18:24:37 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit c154195b42d38888e2bbe7c7c5589bb443cfe8a6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 30 09:07:49 2024 +0000
+commit 18e524c703790bc6a003d6ea88efae2da89b924a
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 22 17:02:07 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-france-14.0/l10n-france-14.0-l10n_fr_account_vat_return
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-14-0/l10n-france-14-0-l10n_fr_account_vat_return/
 
 
 ## l10n-germany
@@ -888,16 +893,16 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 8354682d1f20a4dff113affee9b7471b3e22d445
+commit ce388d4495ca5ea4a7158d0f46187113ec4f2749
 Author: Weblate <noreply@weblate.org>
-Date:   Wed Nov 20 16:45:01 2024 +0000
+Date:   Fri Nov 22 14:47:35 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_intrastat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_intrastat/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_intrastat_statement
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_intrastat_statement/
 
 
 ## l10n-japan
@@ -1119,11 +1124,11 @@ Date:   Fri Oct 11 08:38:10 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit d70b822b4109ed516cdd24faaee847e79187f38d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 19 21:50:02 2024 +0000
+commit c175d32328946b2f67c213905ce668028d8fafa6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Nov 22 14:23:46 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## stock-logistics-workflow
@@ -1146,18 +1151,23 @@ Date:   Thu Nov 21 15:45:26 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit fcb9562c3600054c0345800a16b0e5c9c9603488
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 21 13:15:55 2024 +0000
+commit 46c9883b15d3f322f2ffbee9d68977bb5cd6ba0c
+Author: Wesley Oliveira <wesleygabrieldeoliveira@gmail.com>
+Date:   Mon Nov 25 18:46:23 2024 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 17.6% (3 of 17 strings)
+    
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_available_unreserved
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_available_unreserved/pt_BR/
 
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit f644d68c49af6b2348e0a8739c4ea34cdfbdcda1
+commit cb9588d02f477fd658093ac5019bb173e8ba462e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 21 16:21:46 2024 +0000
+Date:   Fri Nov 22 10:53:23 2024 +0000
 
     Added translation using Weblate (Italian)
 
@@ -1192,9 +1202,9 @@ Date:   Thu Jul 4 11:50:22 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 495f840dea3f8714436b9295f9fe6a9f2e3cb277
+commit 314e7bfeb0f7b2ab963a34d0b23d73aef9e67903
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 19 14:52:47 2024 +0000
+Date:   Mon Nov 25 09:32:22 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1406,16 +1416,11 @@ Date:   Wed May 1 17:57:53 2024 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 18e9c5093041f7e49a43685ad6e7b342bfe60e90
+commit 2712c33a3d2cd494dfc83891b6318fd6e131345e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 13 07:59:30 2024 +0000
+Date:   Mon Nov 25 16:01:27 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 32.4% (38 of 117 strings)
-    
-    Translation: social-14.0/social-14.0-mail_tracking
-    Translate-URL: https://translation.odoo-community.org/projects/social-14-0/social-14-0-mail_tracking/it/
+    Added translation using Weblate (Italian)
 
 
 ## storage

@@ -696,16 +696,32 @@ class ClusterPicking(Component):
         if not product:
             packaging = search.packaging_from_scan(barcode)
             product = packaging.product_id
-        if product and move_line.product_id == product:
-            quantity += packaging.qty or 1.0
-            response = self._response_for_scan_destination(move_line, qty_done=quantity)
-            return response
+        if product:
+            if move_line.product_id == product:
+                quantity += packaging.qty or 1.0
+                response = self._response_for_scan_destination(
+                    move_line, qty_done=quantity
+                )
+                return response
+            return self._response_for_scan_destination(
+                move_line,
+                message=self.msg_store.wrong_record(product),
+                qty_done=quantity,
+            )
         # Handle barcode of a lot
         lot = search.lot_from_scan(barcode)
-        if lot and move_line.lot_id == lot:
-            quantity += 1.0
-            response = self._response_for_scan_destination(move_line, qty_done=quantity)
-            return response
+        if lot:
+            if move_line.lot_id == lot:
+                quantity += 1.0
+                response = self._response_for_scan_destination(
+                    move_line, qty_done=quantity
+                )
+                return response
+            return self._response_for_scan_destination(
+                move_line,
+                message=self.msg_store.wrong_record(lot),
+                qty_done=quantity,
+            )
         return response
 
     def scan_destination_pack(self, picking_batch_id, move_line_id, barcode, quantity):
