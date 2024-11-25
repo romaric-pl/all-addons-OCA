@@ -1136,16 +1136,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 7c021f369a484fbef02551a679dd17446020b71c
-Author: Julie LeBrun <julie.lebrun@numigi.com>
-Date:   Mon Sep 23 21:31:46 2024 +0000
+commit 80231abc7eded4412e932b45b0364b7b9542cdb3
+Author: Wesley Oliveira <wesleygabrieldeoliveira@gmail.com>
+Date:   Mon Nov 25 18:44:55 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Portuguese (Brazil))
     
-    Currently translated at 100.0% (166 of 166 strings)
+    Currently translated at 100.0% (14 of 14 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_request/fr/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_available_unreserved
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_available_unreserved/pt_BR/
 
 
 ## stock-logistics-reporting
