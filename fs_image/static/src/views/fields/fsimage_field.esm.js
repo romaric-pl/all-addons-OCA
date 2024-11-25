@@ -11,6 +11,7 @@ import {
 import {onWillUpdateProps, useState} from "@odoo/owl";
 
 import {AltTextDialog} from "../dialogs/alttext_dialog.esm";
+import {download, downloadFile} from "@web/core/network/download";
 import {registry} from "@web/core/registry";
 import {url} from "@web/core/utils/urls";
 import {useService} from "@web/core/utils/hooks";
@@ -88,6 +89,27 @@ export class FSImageField extends ImageField {
             },
         };
         this.dialogService.add(AltTextDialog, dialogProps);
+    }
+    async onFileDownload() {
+        if (this.props.value.content) {
+            const magic = fileTypeMagicWordMap[this.props.value.content[0]] || "png";
+            await downloadFile(
+                `data:image/${magic};base64,${this.props.value.content}`,
+                this.state.filename,
+                `image/${magic}`
+            );
+        } else {
+            await download({
+                data: {
+                    model: this.props.record.resModel,
+                    id: this.props.record.resId,
+                    field: this.props.name,
+                    filename: this.state.filename || "download",
+                    download: true,
+                },
+                url: "/web/image",
+            });
+        }
     }
 }
 

@@ -90,6 +90,14 @@ class CalendarEvent(models.Model):
     sanitized_partner_mobile = fields.Char(compute="_compute_sanitized_partner_mobile")
     location_url = fields.Char(compute="_compute_location_url")
     categ_icons = fields.Char(compute="_compute_categ_icons")
+    # Adding code \uFE0E to force monochrome emoji. Not supported with 🙁 and 🙂 emojis
+    sale_planner_rating = fields.Selection(
+        [
+            ("1", "😞\uFE0E"),
+            ("3", "😐\uFE0E"),
+            ("5", "😊\uFE0E"),
+        ],
+    )
 
     @api.depends("recurrence_id", "recurrence_id.calendar_event_ids")
     def _compute_is_base_recurrent_event(self):
@@ -353,6 +361,7 @@ class CalendarEvent(models.Model):
             {
                 "sale_planner_state": "pending",
                 "comment": False,
+                "sale_planner_rating": False,
             }
         )
 
@@ -365,6 +374,16 @@ class CalendarEvent(models.Model):
 
     def action_apply_issue(self):
         pass
+
+    def action_open_rating(self):
+        action = self.env["ir.actions.act_window"]._for_xml_id(
+            "sale_planner_calendar.action_sale_planner_calendar_rating"
+        )
+        action["res_id"] = self.id
+        return action
+
+    def action_set_sale_planner_rating(self):
+        self.action_done()
 
     def _get_hour_tz_offset(self):
         timezone = self._context.get("tz") or self.env.user.partner_id.tz or "UTC"

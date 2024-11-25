@@ -17,7 +17,7 @@ def pre_init_hook(cr):
     cr.execute(
         """
         ALTER TABLE uom_category
-        ADD column measure_type character varying;
+        ADD column IF NOT EXISTS measure_type character varying;
         """
     )
 
@@ -50,7 +50,7 @@ def pre_init_hook(cr):
     cr.execute(
         """
         ALTER TABLE uom_uom
-        ADD column measure_type character varying;
+        ADD column IF NOT EXISTS measure_type character varying;
         """
     )
 
@@ -67,7 +67,7 @@ def pre_init_hook(cr):
     cr.execute(
         """
         ALTER TABLE product_template
-        ADD column uom_measure_type character varying;
+        ADD column IF NOT EXISTS uom_measure_type character varying;
         """
     )
 

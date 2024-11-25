@@ -83,6 +83,12 @@
                         domain="[]"
                         context="{'group_by':'start:day'}"
                     />
+                    <filter
+                        string="Rating"
+                        name="group_by_planner_rating"
+                        domain="[]"
+                        context="{'group_by': 'sale_planner_rating'}"
+                    />
                 </group>
             </search>
         </field>
@@ -106,6 +112,7 @@
                 />
                 <field name="sale_order_subtotal" optional="show" />
                 <field name="sale_planner_state" optional="show" />
+                <field name="sale_planner_rating" optional="hide" />
                 <field name="sale_planner_currency_id" invisible="1" />
             </tree>
         </field>
@@ -195,6 +202,12 @@
                             />
                             <field name="calendar_issue_type_id" widget="selection" />
                             <field name="comment" />
+                            <div class="display-5" colspan="2">
+                                <field
+                                    name="sale_planner_rating"
+                                    widget="selection_badge"
+                                />
+                            </div>
                         </group>
                     </group>
                 </sheet>
@@ -277,6 +290,47 @@
           }</field>
     </record>
 
+    <record id="view_sale_planner_calendar_rating_form" model="ir.ui.view">
+        <field name="name">sale.planner.calendar.rating.form</field>
+        <field name="model">calendar.event</field>
+        <field name="priority" eval="999" />
+        <field name="arch" type="xml">
+            <form string="Sale planner calendar event">
+                <group>
+                    <field name="sale_planner_rating" invisible="1" />
+                    <field name="target_partner_id" readonly="1" />
+                </group>
+                <group colspan="4">
+                    <label for="comment" />
+                    <field colspan="2" name="comment" class="border" nolabel="1" />
+                </group>
+                <div class="display-1 text-center" colspan="2">
+                    <field name="sale_planner_rating" widget="selection_badge" />
+                </div>
+                <footer>
+                    <!-- TODO: Remove this button when click in badge closes wizard -->
+                    <button
+                        string="Accept"
+                        name="action_set_sale_planner_rating"
+                        type="object"
+                        class="oe_highlight"
+                    />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sale_planner_calendar_rating" model="ir.actions.act_window">
+        <field name="name">Sale planner calendar rating</field>
+        <field name="res_model">calendar.event</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">
+            {'form_view_ref': 'sale_planner_calendar.view_sale_planner_calendar_rating_form'}
+        </field>
+    </record>
+
     <record id="view_sale_planner_calendar_kanban" model="ir.ui.view">
         <field name="name">sale.planner.calendar.event.kanban</field>
         <field name="model">calendar.event</field>
@@ -304,6 +358,7 @@
                 <field name="calendar_issue_type_id" />
                 <field name="sale_planner_currency_id" />
                 <field name="comment" />
+                <field name="sale_planner_rating" />
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_card w-100 oe_kanban_global_click">
@@ -328,8 +383,26 @@
                                             <field
                                                 name="sale_planner_state"
                                                 widget="label_selection"
-                                                options="{'classes': {'pending': 'info', 'cancel': 'danger', 'done': 'success'}}"
+                                                class="btn btn-danger btn-lg p-0 pb-1"
+                                                attrs="{'invisible': [('sale_planner_state', '!=', 'cancel')]}"
+                                                options="{'classes': {'cancel': 'danger'}}"
                                             />
+                                            <button
+                                                name="action_open_rating"
+                                                type="object"
+                                                attrs="{'invisible': [('sale_planner_state', '=', 'cancel')]}"
+                                                title="Change calendar event status by adding a previous rating"
+                                                t-att-class="'btn p-0 px-1 btn-lg text-capitalize ' + (record.sale_planner_state.raw_value == 'done' and 'btn-success' or 'btn-info')"
+                                            >
+                                                <span
+                                                    class="badge pb-2"
+                                                    t-esc="record.sale_planner_state.raw_value"
+                                                />
+                                                <span
+                                                    class="h3"
+                                                    t-esc="record.sale_planner_rating.value"
+                                                />
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -344,6 +417,15 @@
                                         <div class="col">
                                             <field name="partner_ref" />  <field
                                                 name="partner_name"
+                                            />
+                                        </div>
+                                        <div
+                                            class="col-2"
+                                            t-if="record.partner_user_id and record.partner_user_id.raw_value != record.user_id.raw_value"
+                                        >
+                                            <field
+                                                name="partner_user_id"
+                                                widget="many2one_avatar_user"
                                             />
                                         </div>
                                     </div>
