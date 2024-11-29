@@ -803,6 +803,8 @@ class AccountMove(models.Model):
     @api.depends(
         "company_id",
         "company_id.sii_enabled",
+        "journal_id",
+        "journal_id.sii_enabled",
         "move_type",
         "fiscal_position_id",
         "fiscal_position_id.sii_active",
@@ -810,7 +812,11 @@ class AccountMove(models.Model):
     def _compute_sii_enabled(self):
         """Compute if the invoice is enabled for the SII"""
         for invoice in self:
-            if invoice.company_id.sii_enabled and invoice.is_invoice():
+            if (
+                invoice.company_id.sii_enabled
+                and invoice.journal_id.sii_enabled
+                and invoice.is_invoice()
+            ):
                 invoice.sii_enabled = (
                     invoice.fiscal_position_id and invoice.fiscal_position_id.sii_active
                 ) or not invoice.fiscal_position_id
