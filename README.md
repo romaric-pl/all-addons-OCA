@@ -92,9 +92,9 @@ Date:   Thu Nov 14 11:50:57 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 38033341d8b748bb03db0020526b409e831437f2
+commit cf34e8422ea9231ba40a4ebc2d13964bd92f6404
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 4 14:00:02 2024 +0000
+Date:   Thu Nov 28 20:36:40 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -729,9 +729,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit f6357387974dae036b4b085cea520a02421e66c2
+commit c48386e2793faea0a938f911398aa9bb08ab798b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 21 11:20:12 2024 +0000
+Date:   Thu Nov 28 11:41:11 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1253,16 +1253,16 @@ Date:   Fri Jan 26 08:17:17 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit c4c364791f9e717cf1e765d1c03fd4af1a49b3ef
+commit 1a4dfae33d55c3551ea58c3be88433ccb3b72ce6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 08:51:33 2024 +0000
+Date:   Thu Nov 28 20:26:06 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 56.6% (30 of 53 strings)
+    Currently translated at 100.0% (62 of 62 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_group_by_partner_by_carrier
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_group_by_partner_by_carrier/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_package_preparation
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_package_preparation/it/
 
 
 ## stock-logistics-tracking
@@ -1313,11 +1313,16 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit f5b9277f0d0d637d784a3aad69d22159d8c64871
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 1 09:22:02 2024 +0000
+commit d81fc735cfa793e9cffb6653bace2f908060c4a6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Nov 26 17:38:09 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 98.2% (332 of 338 strings)
+    
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp/it/
 
 
 ## wms
@@ -1378,16 +1383,11 @@ Date:   Fri Jun 14 14:57:17 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 3f7f394300f5b1097ccef6b25cb7c0ef7281d07a
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Sep 16 14:42:58 2024 +0000
+commit 3df01a46dbf5323ad2a2c484e4d22789d4726931
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 29 13:01:52 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_packaging
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_packaging/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1661,16 +1661,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 654de10be05eaba6e3036ebe65442509dd403fcf
+commit cd8486f2235a588fad685223dd4461c740b4c1f7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:33:24 2024 +0000
+Date:   Tue Nov 26 17:17:48 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (48 of 48 strings)
+    Currently translated at 72.5% (74 of 102 strings)
     
-    Translation: server-ux-13.0/server-ux-13.0-date_range
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-date_range/it/
+    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation/it/
 
 
 ## community-data-files

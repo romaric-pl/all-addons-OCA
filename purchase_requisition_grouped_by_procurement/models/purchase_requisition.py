@@ -41,13 +41,12 @@ class PurchaseRequisition(models.Model):
         the same values to add the line instead of creating a new record.
         """
         if self.env.context.get("grouped_by_procurement") and vals.get("group_id"):
-            domain = []
-            for key in vals:
-                if key == "line_ids":
-                    continue
-                domain.append((key, "=", vals.get(key)))
-            purchase = self.search(domain)
-            if purchase:
-                purchase.write({"line_ids": vals.get("line_ids")})
-                return purchase
+            domain = self._prepare_purchase_requisition_grouped_domain(vals)
+            purchase_requisition = self.search(domain)
+            if purchase_requisition:
+                purchase_requisition.write({"line_ids": vals.get("line_ids")})
+                return purchase_requisition
         return super().create(vals)
+
+    def _prepare_purchase_requisition_grouped_domain(self, vals):
+        return [("group_id", "=", vals.get("group_id")), ("state", "=", "draft")]
