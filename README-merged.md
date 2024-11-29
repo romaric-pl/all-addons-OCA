@@ -3210,6 +3210,7 @@ addon | version | maintainers | summary
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 12.0.1.0.1 |  | ITA - Bolle doganali
 [l10n_it_causali_pagamento](l10n_it_causali_pagamento/) | 12.0.2.0.0 |  | Aggiunge la tabella delle causali di pagamento da usare ad esempio nelle ritenute d'acconto
 [l10n_it_central_journal](l10n_it_central_journal/) | 12.0.1.1.4 |  | ITA - Libro giornale
+[l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 12.0.1.0.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
 [l10n_it_codici_carica](l10n_it_codici_carica/) | 12.0.1.0.2 |  | Aggiunge la tabella dei codici carica da usare nelle dichiarazioni fiscali italiane
 [l10n_it_corrispettivi](l10n_it_corrispettivi/) | 12.0.1.1.8 |  | Italian Localization - Ricevute
 [l10n_it_corrispettivi_fatturapa_out](l10n_it_corrispettivi_fatturapa_out/) | 12.0.1.0.1 |  | Modulo per integrare ricevute e fatturazione elettronica
@@ -5509,6 +5510,7 @@ addon | version | maintainers | summary
 [nsca_client](nsca_client/) | 12.0.1.0.0 |  | Send passive alerts to monitor your Odoo application.
 [onchange_helper](onchange_helper/) | 12.0.1.1.0 |  | Technical module that ease execution of onchange in Python code
 [profiler](profiler/) | 12.0.1.0.1 | [![thomaspaulb](https://github.com/thomaspaulb.png?size=30px)](https://github.com/thomaspaulb) | profiler
+[rpc_helper](rpc_helper/) | 12.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
 [scheduler_error_mailer](scheduler_error_mailer/) | 12.0.1.2.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 12.0.2.0.3 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [slow_statement_logger](slow_statement_logger/) | 12.0.1.0.2 |  | Log slow SQL statements

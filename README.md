@@ -89,9 +89,9 @@ Date:   Mon Nov 18 19:29:05 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 4094dd0bb0db6634e73657610c819295a5a145d4
+commit 1504b8bc0d7e9f8fe499a67c1e698f75b5db76dc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 4 13:59:59 2024 +0000
+Date:   Thu Nov 28 20:36:33 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -159,9 +159,9 @@ Date:   Thu Oct 3 06:45:43 2024 +0000
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit 1da51097d292286bb12c04bafe7184616c5dba39
+commit bbcc6c34c1778dce49edf1d7c859a73a85bffcaa
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 8 07:58:15 2024 +0000
+Date:   Tue Nov 26 17:09:58 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -896,9 +896,9 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 2c095a9a30f46f3cc8788ae4e43e172a2224e842
+commit 269c4131111fe193445902b346be5bc9fabaf9e1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 14 11:47:28 2024 +0000
+Date:   Tue Nov 26 14:15:47 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1104,9 +1104,9 @@ Date:   Thu Aug 22 07:26:23 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 86e8883ffe3fafae62ad72d65a34a3a919681eb7
+commit 6cd99f888b4af3da2377d97d754fb5b9fe06b627
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 18 07:26:59 2024 +0000
+Date:   Thu Nov 28 20:07:57 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1118,11 +1118,16 @@ Date:   Wed Sep 18 07:26:59 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 56a65221fc874c721727ae1f3fe1a654295578ce
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 9 23:16:12 2024 +0000
+commit e6822efa1521c5ab6f4dd4e7255803c7386420c7
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Nov 28 20:26:00 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (62 of 62 strings)
+    
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_package_preparation
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_package_preparation/it/
 
 
 ## stock-logistics-tracking
@@ -1469,9 +1474,9 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit d65729743ae54a2e46d5b3953aa7f0cdc88aba23
+commit 28af44f017a3214cade7c1bf624f9f42f428ac63
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 16 21:20:06 2024 +0000
+Date:   Wed Nov 27 14:29:38 2024 +0000
 
     [BOT] post-merge updates
 
