@@ -264,6 +264,7 @@ class AccountMove(models.Model):
         dest_invoice_data.journal_id = dest_journal
         dest_invoice_data.partner_id = self.company_id.partner_id
         dest_invoice_data.ref = self.name
+        dest_invoice_data.payment_reference = self.payment_reference
         dest_invoice_data.invoice_date = self.invoice_date
         dest_invoice_data.narration = self.narration
         dest_invoice_data.currency_id = self.currency_id

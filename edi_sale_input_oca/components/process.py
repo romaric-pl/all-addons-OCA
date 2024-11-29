@@ -61,19 +61,5 @@ class EDIExchangeSOInput(Component):
         return order
 
     def _handle_existing_order(self, order, message):
-        prev_record = self._get_previous_record(order)
-        self.exchange_record.message_post_with_view(
-            "edi_sale_oca.message_already_imported",
-            values={
-                "order": order,
-                "prev_record": prev_record,
-                "message": message,
-                "level": "info",
-            },
-            subtype_id=self.env.ref("mail.mt_note").id,
-        )
-
-    def _get_previous_record(self, order):
-        return self.env["edi.exchange.record"].search(
-            [("model", "=", "sale.order"), ("res_id", "=", order.id)], limit=1
-        )
+        # Hook
+        pass

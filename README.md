@@ -204,16 +204,16 @@ Date:   Thu Oct 3 08:17:19 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 8d397ab9d6fb6965c12f7603e28c132746e33b0c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 22 07:22:32 2024 +0000
+commit 0373fb35039aca29a849f4d8391dfdefb23c62c1
+Author: Douglas Custódio <douglascstd@yahoo.com>
+Date:   Thu Nov 28 18:41:59 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Portuguese (Brazil))
     
-    Currently translated at 96.2% (206 of 214 strings)
+    Currently translated at 100.0% (21 of 21 strings)
     
-    Translation: bank-payment-14.0/bank-payment-14.0-account_payment_order
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_payment_order/it/
+    Translation: bank-payment-14.0/bank-payment-14.0-account_payment_order_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_payment_order_tier_validation/pt_BR/
 
 
 ## account-reconcile
@@ -455,16 +455,11 @@ Date:   Fri May 17 08:15:21 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit e787296088025d1f204850e2887d736cd36a7404
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Nov 20 10:17:03 2024 +0000
+commit 51d64893838543a5d96cfc1489d0555333381e51
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Nov 26 14:59:00 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (39 of 39 strings)
-    
-    Translation: commission-14.0/commission-14.0-sale_commission_partial_settlement
-    Translate-URL: https://translation.odoo-community.org/projects/commission-14-0/commission-14-0-sale_commission_partial_settlement/it/
+    [BOT] post-merge updates
 
 
 ## event
@@ -529,16 +524,16 @@ Date:   Fri Aug 16 00:50:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 56e83cf0dc1348d51f1ad1f62904bbd6db628281
+commit 64a5e8d6dcc3ba2cb3b740884c9fb4cba49875ef
 Author: Weblate <noreply@weblate.org>
-Date:   Wed Nov 20 16:24:26 2024 +0000
+Date:   Fri Nov 29 10:42:08 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: edi-14.0/edi-14.0-edi_oca
-    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-edi_oca/
+    Translation: edi-14.0/edi-14.0-edi_sale_oca
+    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-edi_sale_oca/
 
 
 ## field-service
@@ -676,9 +671,9 @@ Date:   Wed May 1 17:59:33 2024 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit b40b46c140deca1da41bb1a9ed739f48c79aa8fe
+commit ea642946ac6d2b42ca7fde561d94cab66cb26f10
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 21 11:57:42 2024 +0000
+Date:   Thu Nov 28 11:42:35 2024 +0000
 
     [BOT] post-merge updates
 
@@ -893,16 +888,11 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit ce388d4495ca5ea4a7158d0f46187113ec4f2749
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Nov 22 14:47:35 2024 +0000
+commit f49d23c6491517ef75b9b9b983533c6567c0f423
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 28 09:07:43 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_intrastat_statement
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_intrastat_statement/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1188,16 +1178,16 @@ Date:   Mon Sep 23 13:07:05 2024 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 8fce5a689adae66e60880433247345caee836d22
+commit 4eb6d7108b1e01a672b8f462d9e2402e8e45d37b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jul 4 11:50:22 2024 +0000
+Date:   Tue Nov 26 17:35:29 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (57 of 57 strings)
+    Currently translated at 97.9% (337 of 344 strings)
     
-    Translation: ddmrp-14.0/ddmrp-14.0-ddmrp_chatter
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-14-0/ddmrp-14-0-ddmrp_chatter/it/
+    Translation: ddmrp-14.0/ddmrp-14.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-14-0/ddmrp-14-0-ddmrp/it/
 
 
 ## wms
@@ -1416,9 +1406,9 @@ Date:   Wed May 1 17:57:53 2024 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 2712c33a3d2cd494dfc83891b6318fd6e131345e
+commit 67d531538252fcb1b1dd9c29a557ec349aea5ba8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 25 16:01:27 2024 +0000
+Date:   Fri Nov 29 16:06:29 2024 +0000
 
     Added translation using Weblate (Italian)
 
@@ -1525,11 +1515,11 @@ Date:   Wed May 1 19:05:18 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit c3b3a6d10d2b6ab289b1d1ed2b32662df88bb582
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 31 09:02:16 2024 +0000
+commit 3b72ddfe2461e33cbd908e5ab704985413df9f7b
+Author: Douglas Custódio <douglascstd@yahoo.com>
+Date:   Fri Nov 29 19:00:12 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Portuguese (Brazil))
 
 
 ## community-data-files
@@ -1688,9 +1678,9 @@ Date:   Fri Oct 27 21:13:28 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 414a61e8173f0d4ef38f320af057a2df9179c192
+commit 2a6673740546b8fbeb04ea4d47d41b1b2348dd9a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 18 08:18:08 2024 +0000
+Date:   Fri Nov 29 10:22:11 2024 +0000
 
     Added translation using Weblate (Italian)
 

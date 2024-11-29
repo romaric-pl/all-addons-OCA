@@ -7,7 +7,7 @@ _logger = logging.getLogger(__name__)
 
 
 def deprecate():
-    _logger.warning("`edi_sale_order_import` is deprecated. Use `edi_sale_oca`")
+    _logger.warning("`edi_sale_order_import` is deprecated. Use `edi_sale_input_oca`")
 
 
 def post_load_hook():

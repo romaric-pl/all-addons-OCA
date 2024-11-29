@@ -20,12 +20,16 @@ class TestOrder(SavepointCase, EDIBackendTestMixin, OrderMixin):
         cls.exc_record_in = cls.backend.create_record(
             cls.exchange_type_in.code, {"edi_exchange_state": "input_received"}
         )
-        cls._setup_order(
+        cls.order = cls._setup_order(
             origin_exchange_record_id=cls.exc_record_in.id,
         )
 
+    @classmethod
+    def _get_backend(cls):
+        return cls.env.ref("edi_sale_oca.demo_edi_backend")
+
     def test_line_origin(self):
-        order = self.sale
+        order = self.order
         self.assertEqual(order.origin_exchange_record_id, self.exc_record_in)
         lines = order.order_line
         self.env["sale.order.line"].create(

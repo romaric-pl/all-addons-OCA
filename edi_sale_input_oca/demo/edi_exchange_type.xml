@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="demo_edi_exc_type_order_in" model="edi.exchange.type">
+        <field name="backend_type_id" ref="edi_sale_oca.demo_edi_backend_type_sale" />
+        <field name="backend_id" ref="edi_sale_oca.demo_edi_backend" />
+        <field name="name">Demo Sale Order</field>
+        <field name="code">demo_SaleOrder_in</field>
+        <field name="direction">input</field>
+        <field name="exchange_file_ext">xml</field>
+        <field name="advanced_settings_edit">
+components:
+    process:
+        usage: input.process.sale.order
+        env_ctx:
+            default_price_source: 'pricelist'
+            default_import_type: 'xml'
+            random_key: custom
+        </field>
+    </record>
+
+</odoo>

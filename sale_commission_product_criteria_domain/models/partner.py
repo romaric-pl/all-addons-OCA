@@ -39,19 +39,24 @@ class ResPartner(models.Model):
     @api.onchange("agent_ids")
     def _onchange_agent_ids(self):
         for rec in self:
-            exiting_agents = rec.commission_item_agent_ids.mapped("agent_id")
+            # ._origin avoids an issue with NewId
+            # res.partner(<NewId origin=1>,) != res.partner(1,)
+            # but we also need to preserve virtual records (which ._origin discards)
+            current_agents = tuple(x._origin or x for x in rec.agent_ids)
+            existing_commission_agents = rec.commission_item_agent_ids.mapped(
+                "agent_id"
+            )
             to_create = [
                 {
                     "agent_id": x.id,
                     "group_ids": [(6, 0, x.allowed_commission_group_ids.ids)],
                 }
-                for x in rec.agent_ids.filtered(
-                    lambda x: x.commission_id.commission_type == "product_restricted"
-                )
-                if x not in exiting_agents
+                for x in current_agents
+                if (x not in existing_commission_agents)
+                and (x.commission_id.commission_type == "product_restricted")
             ]
             to_delete = rec.commission_item_agent_ids.filtered(
-                lambda x: x.agent_id in (exiting_agents - rec.agent_ids)
+                lambda x: x.agent_id not in current_agents
             )
             if to_delete:
                 rec.update(

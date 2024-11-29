@@ -13,3 +13,6 @@
 * `Aion Tech <https://aiontech.company/>`_:
 
   * Simone Rubino <simone.rubino@aion-tech.it>
+
+* `Stesi Consulting <https://www.stesi.consulting/>`_:
+  * Michele Di Croce <dicroce.m@stesi.consulting>

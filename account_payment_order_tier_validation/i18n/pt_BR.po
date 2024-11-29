@@ -6,16 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-05-20 19:38+0000\n"
-"Last-Translator: Rodrigo Macedo <sottomaiormacedotec@users.noreply."
-"translation.odoo-community.org>\n"
+"PO-Revision-Date: 2024-11-28 20:46+0000\n"
+"Last-Translator: Douglas Custódio <douglascstd@yahoo.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__can_review
@@ -93,12 +92,12 @@ msgstr "Revisores"
 #. module: account_payment_order_tier_validation
 #: model:ir.model,name:account_payment_order_tier_validation.model_tier_definition
 msgid "Tier Definition"
-msgstr "Definição de nível"
+msgstr "Definição de Camada"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__tier_validation_before_write
 msgid "Tier Validation Before Write"
-msgstr "Validação de nível antes da gravação"
+msgstr "Validação de camada antes da gravação"
 
 #. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__to_validate_message

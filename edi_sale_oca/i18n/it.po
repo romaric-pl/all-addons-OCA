@@ -20,21 +20,6 @@ msgid "<span class=\"o_stat_text\">EDI</span>"
 msgstr ""
 
 #. module: edi_sale_oca
-#: model_terms:ir.ui.view,arch_db:edi_sale_oca.message_already_imported
-msgid "<strong>Message:</strong>"
-msgstr ""
-
-#. module: edi_sale_oca
-#: model_terms:ir.ui.view,arch_db:edi_sale_oca.message_already_imported
-msgid "<strong>Order:</strong>"
-msgstr ""
-
-#. module: edi_sale_oca
-#: model_terms:ir.ui.view,arch_db:edi_sale_oca.message_already_imported
-msgid "<strong>Previous record:</strong>"
-msgstr ""
-
-#. module: edi_sale_oca
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order__disable_edi_auto
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_line__disable_edi_auto
 msgid "Disable auto"
@@ -47,7 +32,6 @@ msgstr ""
 
 #. module: edi_sale_oca
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order__display_name
-#: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_import__display_name
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_line__display_name
 msgid "Display Name"
 msgstr ""
@@ -134,7 +118,6 @@ msgstr ""
 
 #. module: edi_sale_oca
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order__id
-#: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_import__id
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_line__id
 msgid "ID"
 msgstr ""
@@ -146,7 +129,6 @@ msgstr ""
 
 #. module: edi_sale_oca
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order____last_update
-#: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_import____last_update
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_line____last_update
 msgid "Last Modified on"
 msgstr ""
@@ -163,11 +145,6 @@ msgid "Sale Order Exchange Records"
 msgstr ""
 
 #. module: edi_sale_oca
-#: model:ir.model,name:edi_sale_oca.model_sale_order_import
-msgid "Sale Order Import from Files"
-msgstr ""
-
-#. module: edi_sale_oca
 #: model:ir.model,name:edi_sale_oca.model_sale_order
 msgid "Sales Order"
 msgstr ""
@@ -175,18 +152,6 @@ msgstr ""
 #. module: edi_sale_oca
 #: model:ir.model,name:edi_sale_oca.model_sale_order_line
 msgid "Sales Order Line"
-msgstr ""
-
-#. module: edi_sale_oca
-#: code:addons/edi_sale_oca/components/process.py:0
-#, python-format
-msgid "Sales order %s created"
-msgstr ""
-
-#. module: edi_sale_oca
-#: code:addons/edi_sale_oca/components/process.py:0
-#, python-format
-msgid "Sales order has already been imported before"
 msgstr ""
 
 #. module: edi_sale_oca

@@ -3,7 +3,6 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
 import base64
-import textwrap
 from unittest import mock
 
 from odoo.addons.component.tests.common import SavepointComponentCase
@@ -16,31 +15,16 @@ class TestProcessComponent(SavepointComponentCase, EDIBackendTestMixin):
         super().setUpClass()
         cls._setup_env()
         cls.backend = cls._get_backend()
-        cls.exc_type = cls._create_exchange_type(
-            name="Test SO import",
-            code="test_so_import",
-            direction="input",
-            exchange_file_ext="xml",
-            exchange_filename_pattern="{record.identifier}-{type.code}-{dt}",
-            backend_id=cls.backend.id,
-            # Bypass required fields with default_import_type = 'xml' in sale_order_import
-            advanced_settings_edit=textwrap.dedent(
-                """
-            components:
-                process:
-                    usage: input.process.sale.order
-                    env_ctx:
-                        default_price_source: 'pricelist'
-                        default_import_type: 'xml'
-                        random_key: custom
-            """
-            ),
-        )
+        cls.exc_type = cls.env.ref("edi_sale_input_oca.demo_edi_exc_type_order_in")
         cls.record = cls.backend.create_record(
-            "test_so_import", {"edi_exchange_state": "input_received"}
+            cls.exc_type.code, {"edi_exchange_state": "input_received"}
         )
         cls.record._set_file_content(b"<fake><order></order></fake>")
         cls.wiz_model = cls.env["sale.order.import"]
+
+    @classmethod
+    def _get_backend(cls):
+        return cls.env.ref("edi_sale_oca.demo_edi_backend")
 
     def test_lookup(self):
         comp = self.backend._get_component(self.record, "process")
