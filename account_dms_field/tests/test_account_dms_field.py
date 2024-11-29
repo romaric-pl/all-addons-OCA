@@ -1,19 +1,21 @@
-from odoo.addons.base.tests.common import TransactionCase
+from odoo.addons.base.tests.common import BaseCommon
 
 
-class TestAccountDmsField(TransactionCase):
-    def setUp(self):
-        super(TestAccountDmsField, self).setUp()
-        self.template = self.env.ref("account_dms_field.field_template_account")
-        self.storage = self.template.storage_id
-        self.access_group = self.template.group_ids
-        self.account_model = self.env["account.move"]
-        self.partner = self.env.ref("base.res_partner_12")
-        self.test_directory = self.env["dms.directory"].create(
+class TestAccountDmsField(BaseCommon):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.env = cls.env(context=dict(cls.env.context, test_dms_field=True))
+        cls.template = cls.env.ref("account_dms_field.field_template_account")
+        cls.storage = cls.template.storage_id
+        cls.access_group = cls.template.group_ids
+        cls.account_model = cls.env["account.move"]
+        cls.partner = cls.env.ref("base.res_partner_12")
+        cls.test_directory = cls.env["dms.directory"].create(
             {
                 "name": "Test Directory",
-                "parent_id": self.template.dms_directory_ids[0].id,
-                "storage_id": self.template.storage_id.id,
+                "parent_id": cls.template.dms_directory_ids[0].id,
+                "storage_id": cls.template.storage_id.id,
             }
         )
 

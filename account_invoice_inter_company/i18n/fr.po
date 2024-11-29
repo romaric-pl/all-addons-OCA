@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-27 07:37+0000\n"
-"PO-Revision-Date: 2024-11-06 17:06+0000\n"
+"PO-Revision-Date: 2024-11-26 14:39+0000\n"
 "Last-Translator: samibc2c <sami.bouzidi@camptocamp.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
@@ -25,14 +25,14 @@ msgstr ""
 #: code:addons/account_invoice_inter_company/models/account_move.py:0
 #, python-format
 msgid "%(company_name)s - Canceled Invoice: %(invoice_name)s"
-msgstr ""
+msgstr "%(company_name)s - Facture Annulée : %(invoice_name)s"
 
 #. module: account_invoice_inter_company
 #. odoo-python
 #: code:addons/account_invoice_inter_company/models/account_move.py:0
 #, python-format
 msgid "%(company_name)s - Invoice: %(invoice_name)s"
-msgstr ""
+msgstr "%(company_name)s - Facture : %(invoice_name)s"
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_bank_statement_line__auto_generated
@@ -44,7 +44,7 @@ msgstr "Document auto-généré"
 #. module: account_invoice_inter_company
 #: model_terms:ir.ui.view,arch_db:account_invoice_inter_company.res_config_settings_view_form
 msgid "Common Product Catalog"
-msgstr ""
+msgstr "Catalogue de produit commun"
 
 #. module: account_invoice_inter_company
 #: model:ir.model,name:account_invoice_inter_company.model_res_company
@@ -65,6 +65,11 @@ msgid ""
 " * Generate a Vendor Bill when an invoice with this company as a customer is "
 "created."
 msgstr ""
+"Activer la facturation inter société : \n"
+" * Générer une facture client lorsqu'une facture fournisseur de cette "
+"société est créée.\n"
+" * Générer une facture fournisseur quand une facture ayant cette société "
+"comme partenaire est créée."
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,help:account_invoice_inter_company.field_res_company__intercompany_invoicing
@@ -74,24 +79,28 @@ msgid ""
 "* Generate a Vendor Bill when an invoice with this company as a customer is "
 "created."
 msgstr ""
+"Activer la facturation inter société : \n"
+" * Générer une facture client lorsqu'une facture fournisseur de cette "
+"société est créée.\n"
+" * Générer une facture fournisseur quand une facture ayant cette société "
+"comme partenaire est créée."
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_company__intercompany_invoicing
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_config_settings__intercompany_invoicing
 msgid "Generate Inter company Invoices"
-msgstr ""
+msgstr "Générer des factures inter société"
 
 #. module: account_invoice_inter_company
 #: model_terms:ir.ui.view,arch_db:account_invoice_inter_company.res_config_settings_view_form
 msgid "Generate Intercompany Invoices"
-msgstr ""
+msgstr "Générer des factures inter société"
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_company__intercompany_invoice_user_id
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_config_settings__intercompany_invoice_user_id
-#, fuzzy
 msgid "Inter Company Invoice User"
-msgstr "Facturation inter-sociétés"
+msgstr "Utilisateur Facturation inter-sociétés"
 
 #. module: account_invoice_inter_company
 #: model_terms:ir.ui.view,arch_db:account_invoice_inter_company.res_config_settings_view_form
@@ -120,9 +129,8 @@ msgstr "Auto Validation des factures"
 
 #. module: account_invoice_inter_company
 #: model_terms:ir.ui.view,arch_db:account_invoice_inter_company.res_config_settings_view_form
-#, fuzzy
 msgid "Invoicing"
-msgstr "Ligne de facture"
+msgstr "Facturation"
 
 #. module: account_invoice_inter_company
 #: model:ir.model,name:account_invoice_inter_company.model_account_move
@@ -139,7 +147,7 @@ msgstr "Ecriture comptable"
 #: code:addons/account_invoice_inter_company/tests/test_inter_company_invoice.py:0
 #, python-format
 msgid "No Chart of Account Template has been defined !"
-msgstr "Aucun modèle de plan de comptes n'a été défini !"
+msgstr "Aucun plan comptable n'a été défini !"
 
 #. module: account_invoice_inter_company
 #. odoo-python
@@ -149,12 +157,16 @@ msgid ""
 "Please define %(dest_journal_type)s journal for this company: "
 "\"%(dest_company_name)s\" (id:%(dest_company_id)d)."
 msgstr ""
+"Veuillez définir %(dest_journal_type)s journal pour cette société : \""
+"%(dest_company_name)s\" (id :%(dest_company_id)d)."
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,help:account_invoice_inter_company.field_res_company__intercompany_invoice_user_id
 msgid ""
 "Responsible user for creation of invoices triggered by intercompany rules."
 msgstr ""
+"Utilisateur responsable de la création des factures déclenchées par les "
+"règles inter société."
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,help:account_invoice_inter_company.field_res_config_settings__intercompany_invoice_user_id
@@ -162,6 +174,9 @@ msgid ""
 "Responsible user for creation of invoices triggered by intercompany rules. "
 "If not set the user initiating thetransaction will be used"
 msgstr ""
+"Utilisateur responsable de la création des factures déclenchées par les "
+"règles interentreprises. Si pas paramétré, l'utilisateur à l'origine de la "
+"transaction sera utilisé"
 
 #. module: account_invoice_inter_company
 #: model:product.template,name:account_invoice_inter_company.product_consultant_multi_company_product_template
@@ -172,7 +187,7 @@ msgstr "Service Multi Société"
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_company__company_share_product
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_config_settings__company_share_product
 msgid "Share product to all companies"
-msgstr ""
+msgstr "Partager l'article avec toutes les sociétés"
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,help:account_invoice_inter_company.field_res_company__company_share_product
@@ -184,6 +199,12 @@ msgid ""
 " * Unchecked : Each company can see only its product (product where company "
 "is defined). Product not related to a company are visible for all companies."
 msgstr ""
+"Partagez votre produit avec toutes les sociétés.\n"
+" * Coché : Les produits sont visibles pour toutes les sociétés, même si une "
+"société est définie sur le partenaire..\n"
+" * Décoché : Chaque société ne peut voir que son produit (produit pour "
+"lequel la société est définie). Les produits qui ne sont pas liés à une "
+"société sont visibles pour toutes les entreprises."
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_bank_statement_line__auto_invoice_id
@@ -205,6 +226,8 @@ msgid ""
 "The invoice line '%(line_name)s' doesn't have a product. All invoice lines "
 "should have a product for inter-company invoices."
 msgstr ""
+"La ligne de facture '%(line_name)s' n'a pas de produit. Toutes les lignes de "
+"facture doivent avoir un produit pour les factures inter-sociétés."
 
 #. module: account_invoice_inter_company
 #. odoo-python
@@ -214,6 +237,8 @@ msgid ""
 "This is an autogenerated multi company invoice and you're trying to modify "
 "the amount, which will differ from the source one (%s)"
 msgstr ""
+"Il s'agit d'une facture multisociétés autogénérée et vous essayez de "
+"modifier le montant, qui sera différent de celui de la facture source (%s)"
 
 #. module: account_invoice_inter_company
 #. odoo-python
@@ -225,6 +250,10 @@ msgid ""
 "of the invoice %(invoice_name)s in the company %(company_name)s is "
 "%(amount_total)s"
 msgstr ""
+"ATTENTION !!!!! Échec dans le processus de création de la facture inter-"
+"sociétés : le montant total de cette facture est %(dest_amount_total)s mais "
+"le montant total de la facture %(invoice_name)s dans la société "
+"%(company_name)s est %(amount_total)s"
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,help:account_invoice_inter_company.field_res_company__invoice_auto_validation
@@ -253,6 +282,9 @@ msgid ""
 "posted state.\n"
 "Invoice %(invoice_name)s to %(partner_name)s"
 msgstr ""
+"Vous ne pouvez pas modifier cette facture car elle comporte une facture "
+"inter-société qui est en cours d'enregistrement.\n"
+"Facture %(invoice_name)s à %(partner_name)s"
 
 #. module: account_invoice_inter_company
 #. odoo-python
@@ -262,6 +294,8 @@ msgid ""
 "You cannot create invoice in company '%(dest_company_name)s' with product "
 "'%(product_name)s' because it is not multicompany"
 msgstr ""
+"Vous ne pouvez pas créer de facture dans la société '%(dest_company_name)s' "
+"avec le produit '%(product_name)s' car il ne s'agit pas d'une smulti société"
 
 #, python-format
 #~ msgid "%s - Canceled Invoice: %s"

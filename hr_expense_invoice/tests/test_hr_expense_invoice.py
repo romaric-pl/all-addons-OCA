@@ -35,22 +35,6 @@ class TestHrExpenseInvoice(TestExpenseCommon):
                 "invoice_date": fields.Date.today(),
             }
         )
-        cls.expense_employee.address_home_id.write(
-            {
-                "bank_ids": [
-                    (
-                        0,
-                        0,
-                        {
-                            "acc_number": "FR20 1242 1242 1242 1242 1242 124",
-                        },
-                    )
-                ],
-            }
-        )
-        cls.expense_employee.bank_account_id = (
-            cls.expense_employee.address_home_id.bank_ids
-        )
         cls.expense = cls.env["hr.expense"].create(
             {
                 "name": "Expense test",

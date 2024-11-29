@@ -1,76 +1,52 @@
 # Copyright 2019 Tecnativa - Ernesto Tejeda
+# Copyright 2024 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo.exceptions import UserError
-from odoo.tests.common import Form, TransactionCase
+from odoo.tests.common import Form, tagged
+
+from odoo.addons.hr_expense.tests.common import TestExpenseCommon
 
 
-class TestHrExpenseCancel(TransactionCase):
-    def setUp(self):
-        super().setUp()
-        self.partner = self.env["res.partner"].create({"name": "Test partner"})
-        self.payment_obj = self.env["account.payment"]
-        self.account_payment_register = self.env["account.payment.register"]
-        self.payment_journal = self.env["account.journal"].search(
-            [("type", "in", ["cash", "bank"])], limit=1
+@tagged("-at_install", "post_install")
+class TestHrExpenseCancel(TestExpenseCommon):
+    @classmethod
+    def setUpClass(cls, chart_template_ref=None):
+        super().setUpClass(chart_template_ref=chart_template_ref)
+        # Create expense + sheet + approve
+        expense_form = Form(
+            cls.env["hr.expense"].with_context(
+                default_product_id=cls.product_a.id,
+                default_employee_id=cls.expense_employee.id,
+            )
         )
+        expense_form.name = "Test expense"
+        cls.expense = expense_form.save()
+        res = cls.expense.action_submit_expenses()
+        sheet_form = Form(cls.env[res["res_model"]].with_context(**res["context"]))
+        cls.expense_sheet = sheet_form.save()
+        cls.expense_sheet.approve_expense_sheets()
 
-        self.main_company = company = self.env.ref("base.main_company")
-        self.expense_journal = self.env["account.journal"].create(
-            {
-                "name": "Purchase Journal - Test",
-                "code": "HRTPJ",
-                "type": "purchase",
-                "company_id": company.id,
-            }
-        )
-
-        self.expense_sheet = self.env["hr.expense.sheet"].create(
-            {
-                "employee_id": self.ref("hr.employee_admin"),
-                "name": "Expense test",
-                "journal_id": self.expense_journal.id,
-            }
-        )
-        self.expense_sheet.approve_expense_sheets()
-
-        self.expense = self.env["hr.expense"].create(
-            {
-                "name": "Expense test",
-                "employee_id": self.ref("hr.employee_admin"),
-                "product_id": self.ref(
-                    "hr_expense.expense_product_travel_accommodation"
-                ),
-                "total_amount": 10,
-                "sheet_id": self.expense_sheet.id,
-            }
-        )
-
-    def _get_payment_wizard(self, expense_sheet):
-        action = expense_sheet.action_register_payment()
-        ctx = action.get("context")
-        with Form(
-            self.account_payment_register.with_context(**ctx),
-            view="account.view_account_payment_register_form",
-        ) as f:
-            f.journal_id = self.payment_journal
-            f.amount = expense_sheet.total_amount
-        register_payment = f.save()
-        return register_payment
+    def _get_payment_wizard(self):
+        res = self.expense_sheet.action_register_payment()
+        register_form = Form(self.env[res["res_model"]].with_context(**res["context"]))
+        register_form.journal_id = self.company_data["default_journal_bank"]
+        register_form.amount = self.expense_sheet.total_amount
+        return register_form.save()
 
     def test_action_cancel_posted(self):
         self.expense_sheet.action_sheet_move_create()
-
         self.assertFalse(len(self.expense_sheet.payment_ids), 1)
         self.assertTrue(self.expense_sheet.account_move_id)
-
         self.expense_sheet.action_cancel()
-
         self.assertFalse(self.expense_sheet.payment_ids)
         self.assertFalse(self.expense_sheet.account_move_id)
 
     def test_action_cancel_no_update_posted(self):
-        journals = self.payment_journal | self.expense_journal
+        journals = (
+            self.company_data["default_journal_bank"]
+            | self.company_data["default_journal_purchase"]
+        )
         journals.write({"restrict_mode_hash_table": True})
         self.test_action_cancel_company_account()
         with self.assertRaises(UserError):
@@ -85,11 +61,8 @@ class TestHrExpenseCancel(TransactionCase):
 
     def test_action_cancel_own_account(self):
         self.expense_sheet.action_sheet_move_create()
-
-        payment_wizard = self._get_payment_wizard(self.expense_sheet)
+        payment_wizard = self._get_payment_wizard()
         payment_wizard.action_create_payments()
-
         self.assertTrue(self.expense_sheet.payment_ids)
-
         self.expense_sheet.action_cancel()  # assertFalse(payment.exist)
         self.assertFalse(self.expense_sheet.payment_ids.state != "cancel")

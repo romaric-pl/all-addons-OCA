@@ -1,6 +1,7 @@
 # Copyright 2022 Tecnativa - David Vidal
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from odoo import fields, models
+from odoo.tools import config
 
 
 class ProductTemplate(models.Model):
@@ -58,3 +59,14 @@ class ProductTemplate(models.Model):
                     }
                 )
         return results_data
+
+    def _website_show_quick_add(self):
+        show_price = (
+            self.env["website"].get_current_website().website_show_price
+            and not self.website_hide_price
+        )
+        if config["test_enable"] and not self.env.context.get(
+            "website_sale_hide_price_test"
+        ):
+            return show_price
+        return show_price and super()._website_show_quick_add()

@@ -64,8 +64,13 @@
                             />
                         </group>
                         <group>
+                            <field name="skip_empty_lines" />
                             <field name="header_lines_skip_count" />
                             <field name="footer_lines_skip_count" />
+                            <field
+                                name="offset_column"
+                                attrs="{'invisible': [('no_header', '=', True)]}"
+                            />
                         </group>
                     </group>
                     <group string="Columns">

@@ -6,21 +6,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-05-28 12:19+0000\n"
-"Last-Translator: Yann Papouin <y.papouin@dec-industrie.com>\n"
+"PO-Revision-Date: 2024-11-26 15:10+0000\n"
+"Last-Translator: samibc2c <sami.bouzidi@camptocamp.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: stock_product_pack
 #: model:ir.model.fields,field_description:stock_product_pack.field_product_product__dont_create_move
 #: model:ir.model.fields,field_description:stock_product_pack.field_product_template__dont_create_move
 msgid "Don't create move"
-msgstr ""
+msgstr "Ne pas créer de mouvement"
 
 #. module: stock_product_pack
 #: model:ir.model,name:stock_product_pack.model_procurement_group
@@ -35,7 +35,7 @@ msgstr "Article"
 #. module: stock_product_pack
 #: model:ir.model,name:stock_product_pack.model_product_product
 msgid "Product Variant"
-msgstr ""
+msgstr "Variante d'article"
 
 #. module: stock_product_pack
 #: model:ir.model.fields,help:stock_product_pack.field_product_product__dont_create_move
@@ -46,3 +46,7 @@ msgid ""
 "availability (type = 'product') but without actually having stock and moves "
 "of it."
 msgstr ""
+"Avec cette option, le pack ne créera pas de stock.move et sera considéré "
+"comme livré lors de la confirmation de la vente. Cette option est utile pour "
+"obtenir la disponibilité du stock d'un pack (type = 'product') sans pour "
+"autant avoir de stock et de mouvement."

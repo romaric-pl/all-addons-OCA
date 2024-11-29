@@ -29,17 +29,17 @@ class Account(models.Model):
         return account_id
 
     def internal_to_external(self):
+        if self.code and not self.code.isdigit():
+            return self.code
         if not self.code or len(self.code) < 4:
             return self.code
         cont = self.code[:4]
         while cont and cont[-1] == "0":
             cont = cont[:-1]
-        try:
-            analitic = int(self.code[4:])
-        except Exception:
-            analitic = self.code[4:]
-        if analitic:
-            cont += "." + str(analitic)
+
+        analytic = int(self.code[4:])
+        if analytic:
+            cont += "." + str(analytic)
         return cont
 
     def name_get(self):

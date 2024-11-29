@@ -14,6 +14,7 @@ class TestDmsFieldAutoClassification(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env = cls.env(context=dict(cls.env.context, test_dms_field=True))
         cls.template = cls.env.ref(
             "dms_field_auto_classification.dms_classification_template_partners"
         )
@@ -22,6 +23,7 @@ class TestDmsFieldAutoClassification(BaseCommon):
         )
         access_group = cls.env.ref("dms.access_group_01_demo")
         access_group.explicit_user_ids = [(4, cls.user.id)]
+        cls.env.ref("dms_field.field_template_partner").unlink()
         file_template = cls.env["dms.field.template"].create(
             {
                 "name": "Test partner template",

@@ -1,6 +1,6 @@
 {
     "name": "Add dms field for account",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Accounting/Accounting",
     "website": "https://github.com/OCA/dms",
     "author": "Agent ERP GmbH, Odoo Community Association (OCA)",

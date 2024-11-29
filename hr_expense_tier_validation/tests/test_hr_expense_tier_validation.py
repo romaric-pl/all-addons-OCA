@@ -1,38 +1,27 @@
 # Copyright 2019 Ecosoft Co., Ltd. (http://ecosoft.co.th)
+# Copyright 2024 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo.exceptions import ValidationError
-from odoo.tests.common import Form, TransactionCase
+from odoo.tests.common import Form, tagged
+
+from odoo.addons.hr_expense.tests.common import TestExpenseCommon
 
 
-class TestHrExpenseTierValidation(TransactionCase):
-    def setUp(self):
-        super().setUp()
-        self.tier_def_obj = self.env["tier.definition"]
-        self.expense_sheet_model = self.env["hr.expense.sheet"]
-        self.partner = self.env.ref("base.res_partner_2")
-        # Create users:
-        group_ids = self.env.ref("base.group_system").ids
-        self.test_user_1 = self.env["res.users"].create(
-            {"name": "John", "login": "test1", "groups_id": [(6, 0, group_ids)]}
-        )
+@tagged("-at_install", "post_install")
+class TestHrExpenseTierValidation(TestExpenseCommon):
+    @classmethod
+    def setUpClass(cls, chart_template_ref=None):
+        super().setUpClass(chart_template_ref=chart_template_ref)
+        cls.tier_def_obj = cls.env["tier.definition"]
         # Create tier validation
-        self.tier_def_obj.create(
+        cls.tier_def_obj.create(
             {
-                "model_id": self.env["ir.model"]
-                .search([("model", "=", "hr.expense.sheet")])
-                .id,
+                "model_id": cls.env.ref("hr_expense.model_hr_expense_sheet").id,
                 "review_type": "individual",
-                "reviewer_id": self.test_user_1.id,
+                "reviewer_id": cls.expense_user_manager.id,
             }
         )
-        employee_home = self.env["res.partner"].create(
-            {"name": "Employee Home Address"}
-        )
-        self.employee = self.env["hr.employee"].create(
-            {"name": "Employee A", "address_home_id": employee_home.id}
-        )
-        self.product_1 = self.env.ref("product.product_product_1")
 
     def _create_expense(
         self,
@@ -56,14 +45,14 @@ class TestHrExpenseTierValidation(TransactionCase):
     def test_edit_value_expense(self):
         expense = self._create_expense(
             "Test - Expense",
-            self.employee,
-            self.product_1,
+            self.expense_employee,
+            self.product_a,
         )
         sheet_dict = expense.action_submit_expenses()
         sheet_dict = sheet_dict["context"]
         with Form(self.env["hr.expense.sheet"]) as sheet:
             sheet.name = (sheet_dict["default_name"],)
-            sheet.employee_id = self.employee
+            sheet.employee_id = self.expense_employee
         sheet = sheet.save()
         sheet.expense_line_ids = [(6, 0, expense.id)]
         self.assertEqual(sheet.state, "draft")
@@ -75,17 +64,16 @@ class TestHrExpenseTierValidation(TransactionCase):
         sheet.request_validation()
         self.assertTrue(sheet)
         sheet.invalidate_model()
-
         # tier validation but state still submit
         self.assertEqual(sheet.state, "submit")
         # not allow edit expense when under validation
         with self.assertRaises(ValidationError):
-            sheet.review_ids = [(6, 0, self.test_user_1.ids)]
+            sheet.review_ids = [(6, 0, self.expense_user_manager.ids)]
             with Form(sheet) as s:
                 s.name = "New name"
         with self.assertRaises(ValidationError):
             with Form(expense) as exp:
                 exp.name = "Change name"
         # Test change message follower
-        message = expense.write({"message_follower_ids": self.partner.ids})
-        self.assertEqual(message, True)
+        message = expense._message_subscribe(self.partner_a.ids)
+        self.assertTrue(message, True)

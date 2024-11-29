@@ -62,27 +62,7 @@ class Report(models.Model):
             )
         return True
 
-    @api.model
-    def _run_wkhtmltopdf(
-        self,
-        bodies,
-        report_ref=False,
-        header=None,
-        footer=None,
-        landscape=False,
-        specific_paperformat_args=None,
-        set_viewport_size=False,
-    ):
-        result = super(Report, self)._run_wkhtmltopdf(
-            bodies,
-            report_ref=report_ref,
-            header=header,
-            footer=footer,
-            landscape=landscape,
-            specific_paperformat_args=specific_paperformat_args,
-            set_viewport_size=set_viewport_size,
-        )
-
+    def _get_watermark(self, report_ref):
         docids = self.env.context.get("res_ids", False)
         report_sudo = self._get_report(report_ref)
         watermark = None
@@ -104,6 +84,30 @@ class Report(models.Model):
             )
             if watermark:
                 watermark = b64decode(watermark)
+
+        return watermark
+
+    @api.model
+    def _run_wkhtmltopdf(
+        self,
+        bodies,
+        report_ref=False,
+        header=None,
+        footer=None,
+        landscape=False,
+        specific_paperformat_args=None,
+        set_viewport_size=False,
+    ):
+        result = super(Report, self)._run_wkhtmltopdf(
+            bodies,
+            report_ref=report_ref,
+            header=header,
+            footer=footer,
+            landscape=landscape,
+            specific_paperformat_args=specific_paperformat_args,
+            set_viewport_size=set_viewport_size,
+        )
+        watermark = self._get_watermark(report_ref)
 
         if not watermark:
             return result
