@@ -444,11 +444,31 @@ class TestMrpMultiLevel(TestMrpMultiLevelCommon):
         self.fp_4.route_ids = [(4, self.env.ref("mrp.route_warehouse0_manufacture").id)]
         product_mrp_area._compute_supply_method()
         self.assertEqual(product_mrp_area.supply_method, "manufacture")
+        # because of the issue discussed here https://github.com/odoo/odoo/pull/188846
+        # we need to apply routes explicitly in the proper order (by sequence)
         self.fp_4.route_ids = [
-            (4, self.env.ref("purchase_stock.route_warehouse0_buy").id)
+            (
+                6,
+                0,
+                (
+                    self.env.ref("stock.route_warehouse0_mto")
+                    + self.env.ref("purchase_stock.route_warehouse0_buy")
+                    + self.env.ref("mrp.route_warehouse0_manufacture")
+                ).ids,
+            )
         ]
         product_mrp_area._compute_supply_method()
         self.assertEqual(product_mrp_area.supply_method, "buy")
+        kit_bom = self.mrp_bom_obj.create(
+            {
+                "product_tmpl_id": self.fp_4.product_tmpl_id.id,
+                "product_id": self.fp_4.id,
+                "type": "phantom",
+            }
+        )
+        product_mrp_area._compute_supply_method()
+        self.assertEqual(product_mrp_area.supply_method, "phantom")
+        self.assertEqual(product_mrp_area.supply_bom_id, kit_bom)
 
     def test_18_priorize_safety_stock(self):
         now = datetime.now()

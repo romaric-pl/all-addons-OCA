@@ -128,19 +128,25 @@ class TierValidation(models.AbstractModel):
     def _search_validated(self, operator, value):
         assert operator in ("=", "!="), "Invalid domain operator"
         assert value in (True, False), "Invalid domain value"
-        pos = self.search(
-            [(self._state_field, "in", self._state_from), ("review_ids", "!=", False)]
-        ).filtered(lambda r: r.validated == value)
-        return [("id", "in", pos.ids)]
+        pos = self.search([(self._state_field, "in", self._state_from)]).filtered(
+            lambda r: r.validated
+        )
+        if value:
+            return [("id", "in", pos.ids)]
+        else:
+            return [("id", "not in", pos.ids)]
 
     @api.model
     def _search_rejected(self, operator, value):
         assert operator in ("=", "!="), "Invalid domain operator"
         assert value in (True, False), "Invalid domain value"
-        pos = self.search(
-            [(self._state_field, "in", self._state_from), ("review_ids", "!=", False)]
-        ).filtered(lambda r: r.rejected == value)
-        return [("id", "in", pos.ids)]
+        pos = self.search([(self._state_field, "in", self._state_from)]).filtered(
+            lambda r: r.rejected
+        )
+        if value:
+            return [("id", "in", pos.ids)]
+        else:
+            return [("id", "not in", pos.ids)]
 
     @api.model
     def _search_reviewer_ids(self, operator, value):
@@ -304,7 +310,13 @@ class TierValidation(models.AbstractModel):
 
     def _check_allow_write_under_validation(self, vals):
         """Allow to add exceptions for fields that are allowed to be written
-        even when the record is under validation."""
+        or for reviewers for all fields, even when the record is under
+        validation."""
+        if (
+            all(self.review_ids.mapped("definition_id.allow_write_for_reviewer"))
+            and self.env.user in self.reviewer_ids
+        ):
+            return True
         exceptions = self._get_under_validation_exceptions()
         for val in vals:
             if val not in exceptions:
@@ -340,6 +352,15 @@ class TierValidation(models.AbstractModel):
             else:
                 allowed_field_names.append(fld_data["string"])
         return allowed_field_names, not_allowed_field_names
+
+    def _check_tier_state_transition(self, vals):
+        """
+        Check we are in origin state and not destination state
+        """
+        self.ensure_one()
+        return getattr(self, self._state_field) in self._state_from and vals.get(
+            self._state_field
+        ) not in (self._state_to + [self._cancel_state])
 
     def write(self, vals):
         self._tier_validation_check_state_on_write(vals)
@@ -382,11 +403,16 @@ class TierValidation(models.AbstractModel):
                     reviews = rec.request_validation()
                     rec._validate_tier(reviews)
                     if not self._calc_reviews_validated(reviews):
+                        pending_reviews = reviews.filtered(
+                            lambda r: r.status == "pending"
+                        ).mapped("name")
                         raise ValidationError(
                             _(
                                 "This action needs to be validated for at least "
-                                "one record. \nPlease request a validation."
+                                "one record. Reviews pending:\n - %s "
+                                "\nPlease request a validation."
                             )
+                            % "\n - ".join(pending_reviews)
                         )
                 if rec.review_ids and not rec.validated:
                     raise ValidationError(
@@ -401,9 +427,7 @@ class TierValidation(models.AbstractModel):
             # Write under validation
             if (
                 rec.review_ids
-                and getattr(rec, self._state_field) in self._state_from
-                and vals.get(self._state_field)
-                not in (self._state_to + [self._cancel_state])
+                and rec._check_tier_state_transition(vals)
                 and not rec._check_allow_write_under_validation(vals)
                 and not rec._context.get("skip_validation_check")
             ):
