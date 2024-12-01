@@ -1219,16 +1219,11 @@ Date:   Wed May 1 17:08:45 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit f2cfde1a686cd980d7351c52314166f5510966c3
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Nov 25 11:52:30 2024 +0000
+commit dc0e27259cb90bb4e7dcbd884d6d0a0d469a13eb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Nov 30 15:19:51 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: product-attribute-17.0/product-attribute-17.0-product_manufacturer
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-17-0/product-attribute-17-0-product_manufacturer/
+    [BOT] post-merge updates
 
 
 ## product-kitting
@@ -1274,16 +1269,16 @@ Date:   Wed May 1 17:08:24 2024 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit ec30707e33b8a184869c53e00fcdc0f9332af5c8
+commit 97691635b952ce34ae2730c4774a5343ff1f8300
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 25 08:18:11 2024 +0000
+Date:   Sat Nov 30 09:34:33 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (22 of 22 strings)
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: project-17.0/project-17.0-sale_project_task_recurrency
-    Translate-URL: https://translation.odoo-community.org/projects/project-17-0/project-17-0-sale_project_task_recurrency/it/
+    Translation: project-17.0/project-17.0-project_parent
+    Translate-URL: https://translation.odoo-community.org/projects/project-17-0/project-17-0-project_parent/it/
 
 
 ## project-agile
@@ -1379,16 +1374,16 @@ Date:   Wed May 1 17:18:12 2024 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit f193f8d481b771e10a9bf675bb948fe237ebdcc0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 27 09:52:37 2024 +0000
+commit 23e76215a30cdc5b0a4659e8ac9fbf61b61402ff
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Nov 30 19:51:05 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: reporting-engine-17.0/reporting-engine-17.0-report_qweb_pdf_watermark
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-17-0/reporting-engine-17-0-report_qweb_pdf_watermark/it/
+    Translation: reporting-engine-17.0/reporting-engine-17.0-kpi
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-17-0/reporting-engine-17-0-kpi/
 
 
 ## report-print-send
