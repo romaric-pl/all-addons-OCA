@@ -24,9 +24,9 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit ff5a9c29940c4fab7d26c717882f33be965e1bdf
+commit 60ffda5bd62f673c3e37e48ba944dfe5361bfbc7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 28 08:05:00 2024 +0000
+Date:   Sun Dec 1 17:43:29 2024 +0000
 
     [BOT] post-merge updates
 
@@ -111,16 +111,11 @@ Date:   Tue Nov 26 17:49:29 2024 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 1b72345380e5c750575fbb58a0843067100efe3c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 17 13:10:38 2024 +0000
+commit 641d471cd13f6384f43b189b6d72f13aa213cd2f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Nov 30 16:13:32 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (184 of 184 strings)
-    
-    Translation: account-fiscal-rule-16.0/account-fiscal-rule-16.0-account_avatax_oca
-    Translate-URL: https://translation.odoo-community.org/projects/account-fiscal-rule-16-0/account-fiscal-rule-16-0-account_avatax_oca/it/
+    [BOT] post-merge updates
 
 
 ## operating-unit
@@ -218,16 +213,11 @@ Date:   Tue Nov 19 17:22:00 2024 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit 80dfdc71b490e3c36f51f1bce044769c5c3b67bd
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Nov 29 07:18:22 2024 +0000
+commit 1f9dda215a7af406645629b1d8198751a687513e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Dec 1 17:11:51 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: account-reconcile-16.0/account-reconcile-16.0-account_reconcile_analytic_tag
-    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-16-0/account-reconcile-16-0-account_reconcile_analytic_tag/
+    [BOT] post-merge updates
 
 
 ## bank-statement-import
@@ -1292,11 +1282,16 @@ Date:   Wed Jun 12 09:57:44 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 30eec9281e4f07c95169320c463e32ef03d42bcf
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 22 11:02:20 2024 +0000
+commit 4d7970a24d9d2f0abb590c390e5041c1e0acc4b7
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Nov 30 15:51:15 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: product-attribute-16.0/product-attribute-16.0-product_main_supplierinfo
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-16-0/product-attribute-16-0-product_main_supplierinfo/
 
 
 ## product-kitting
@@ -1352,16 +1347,16 @@ Date:   Tue Jul 30 06:39:46 2024 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit acd78123007fe08ac7f43ac90b0787cd4d57e78b
+commit 541d2e8f6ced51e785264f1a806c07ecf7d63e0f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 28 20:36:54 2024 +0000
+Date:   Sat Nov 30 09:34:19 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (80 of 80 strings)
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: project-16.0/project-16.0-project_scrum
-    Translate-URL: https://translation.odoo-community.org/projects/project-16-0/project-16-0-project_scrum/it/
+    Translation: project-16.0/project-16.0-project_parent
+    Translate-URL: https://translation.odoo-community.org/projects/project-16-0/project-16-0-project_parent/it/
 
 
 ## project-agile

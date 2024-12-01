@@ -12,6 +12,7 @@ class TestProductSetWizard(TransactionCase, FakeModelLoader):
         super().setUpClass()
         cls.loader = FakeModelLoader(cls.env, cls.__module__)
         cls.loader.backup_registry()
+        cls.addClassCleanup(cls.loader.restore_registry)
         from .models import FakeProductSetWizard
 
         cls.loader.update_registry((FakeProductSetWizard,))
@@ -25,11 +26,6 @@ class TestProductSetWizard(TransactionCase, FakeModelLoader):
                 "quantity": 1,
             }
         )
-
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        return super().tearDownClass()
 
     def test_product_set_wizard_compute_lines(self):
         # Check if the wizard lines are updated when the product set changes

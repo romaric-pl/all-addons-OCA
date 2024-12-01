@@ -11,6 +11,7 @@ class TestProductSecondaryUnitMixin(TransactionCase, FakeModelLoader):
         super().setUpClass()
         cls.loader = FakeModelLoader(cls.env, cls.__module__)
         cls.loader.backup_registry()
+        cls.addClassCleanup(cls.loader.restore_registry)
         from .models import SecondaryUnitFake
 
         cls.loader.update_registry((SecondaryUnitFake,))
@@ -56,11 +57,6 @@ class TestProductSecondaryUnitMixin(TransactionCase, FakeModelLoader):
                 "product_uom_id": cls.product_uom_unit.id,
             }
         )
-
-    @classmethod
-    def tearDownClass(cls):
-        cls.loader.restore_registry()
-        return super(TestProductSecondaryUnitMixin, cls).tearDownClass()
 
     def test_product_secondary_unit_mixin(self):
         fake_model = self.secondary_unit_fake

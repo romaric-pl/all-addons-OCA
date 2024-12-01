@@ -43,6 +43,7 @@ addon | version | maintainers | summary
 [pos_analytic_by_config](pos_analytic_by_config/) | 16.0.1.0.0 |  | Use analytic account defined on POS configuration for POS orders
 [product_analytic](product_analytic/) | 16.0.1.0.1 |  | Add analytic account on products and product categories
 [product_analytic_purchase](product_analytic_purchase/) | 16.0.1.0.0 |  | Glue module between purchase and product_analytic
+[product_analytic_sale](product_analytic_sale/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Glue module between sale and product_analytic
 [purchase_analytic](purchase_analytic/) | 16.0.2.1.0 |  | Purchase Analytic
 [purchase_analytic_tag](purchase_analytic_tag/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Purchase Analytic Tag
 [purchase_stock_analytic](purchase_stock_analytic/) | 16.0.1.0.1 |  | Copies the analytic distribution of the purchase order item to the stock move
@@ -550,8 +551,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_avatax_exemption_base](account_avatax_exemption_base/) | 16.0.1.0.0 |  | This application allows you to add exemptions base to Avatax
-[account_avatax_oca](account_avatax_oca/) | 16.0.1.4.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
-[account_avatax_sale_oca](account_avatax_sale_oca/) | 16.0.1.2.1 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Sales Orders with automatic Tax application using Avatax
+[account_avatax_oca](account_avatax_oca/) | 16.0.1.5.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
+[account_avatax_sale_oca](account_avatax_sale_oca/) | 16.0.1.3.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Sales Orders with automatic Tax application using Avatax
 [account_avatax_website_sale](account_avatax_website_sale/) | 16.0.1.0.0 | [![cybernexus](https://github.com/cybernexus.png?size=30px)](https://github.com/cybernexus) | Ecommerce Sales Orders require tax recalculation prior to payment.
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Fiscal Position Autodetect optional VIES
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 16.0.1.0.1 |  | Account Fiscal Position Partner Type
@@ -1012,7 +1013,7 @@ addon | version | maintainers | summary
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 16.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Analytic tags in account reconciliation
 [account_reconcile_oca](account_reconcile_oca/) | 16.0.2.0.11 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
-[account_statement_base](account_statement_base/) | 16.0.1.13.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
+[account_statement_base](account_statement_base/) | 16.0.1.13.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
 
 [//]: # (end addons)
@@ -6857,8 +6858,10 @@ addon | version | maintainers | summary
 [product_english_name](product_english_name/) | 16.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Display the product name in English besides the product name in the users language.
 [product_expiry_configurable](product_expiry_configurable/) | 16.0.1.0.0 |  | This model allows setting expiry times on category and to use the 'end_of_life' date for the computation of lot dates
 [product_get_price_helper](product_get_price_helper/) | 16.0.1.0.0 |  | This module provides a helper function to compute product prices.
+[product_internal_reference_generator](product_internal_reference_generator/) | 16.0.1.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Product template and variant reference based on sequence
 [product_logistics_uom](product_logistics_uom/) | 16.0.3.1.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Configure product weights and volume UoM
 [product_lot_sequence](product_lot_sequence/) | 16.0.1.0.2 |  | Adds ability to define a lot sequence from the product
+[product_main_supplierinfo](product_main_supplierinfo/) | 16.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Display the main vendor of a product.
 [product_manufacturer](product_manufacturer/) | 16.0.1.0.1 |  | Adds manufacturers and attributes on the product view.
 [product_multi_category](product_multi_category/) | 16.0.1.0.0 |  | Product - Many Categories
 [product_net_weight](product_net_weight/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add 'Net Weight' on product models

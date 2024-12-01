@@ -42,3 +42,12 @@ class AccountBankStatement(models.Model):
                 ("statement_id", "=", self.id),
             ],
         }
+
+    def _compute_balance_end(self):
+        # Consider new lines amount in the balance
+        # Remove if merged: https://github.com/odoo/odoo/pull/188675
+        res = super()._compute_balance_end()
+        for stmt in self:
+            lines = stmt.line_ids.filtered(lambda x: not x._origin)
+            stmt.balance_end += sum(lines.mapped("amount"))
+        return res
