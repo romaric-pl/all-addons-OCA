@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-11-28 20:06+0000\n"
+"PO-Revision-Date: 2024-11-29 21:06+0000\n"
 "Last-Translator: Douglas Custódio <douglascstd@yahoo.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
@@ -41,6 +41,8 @@ msgid ""
 "Error evaluating tier validation conditions.\n"
 " %s"
 msgstr ""
+"Erro no cálculo da condição da validação de nível.\n"
+" %s"
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields.selection,name:base_tier_validation_formula.selection__tier_definition__definition_type__formula
@@ -100,12 +102,12 @@ msgstr "Revisão de nível"
 #. module: base_tier_validation_formula
 #: model:ir.model,name:base_tier_validation_formula.model_tier_validation
 msgid "Tier Validation (abstract)"
-msgstr ""
+msgstr "Validação de Nível (abstrato)"
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_definition__review_type
 msgid "Validated by"
-msgstr ""
+msgstr "Validado por"
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields,help:base_tier_validation_formula.field_tier_definition__reviewer_expression
@@ -113,6 +115,8 @@ msgid ""
 "Write Python code that defines the reviewer. The result of executing the "
 "expression must be a res.users recordset."
 msgstr ""
+"Escreva código Python the define o revisor. O resultado da execução da "
+"expressão deve ser um registro res.users."
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields,help:base_tier_validation_formula.field_tier_definition__python_code
@@ -120,3 +124,5 @@ msgid ""
 "Write Python code that defines when this tier confirmation will be needed. "
 "The result of executing the expresion must be a boolean."
 msgstr ""
+"Escreva código Python the define quando esta confirmação de nível será "
+"necessária. O resultado da execução da expressão deve ser um boleano."

@@ -116,9 +116,9 @@ Date:   Mon Nov 18 09:32:53 2024 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 6ec2933d4f68401a934b5a33cf1efdb954f01efe
+commit 65dc270e3f5380d777e9a5c1962a58f7bb542ace
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 13 10:48:24 2024 +0000
+Date:   Sat Nov 30 16:13:04 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1515,11 +1515,16 @@ Date:   Wed May 1 19:05:18 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 3b72ddfe2461e33cbd908e5ab704985413df9f7b
+commit b3a43b0fe84bbd8530b42dbff2b9b18a0ffc7b3f
 Author: Douglas Custódio <douglascstd@yahoo.com>
-Date:   Fri Nov 29 19:00:12 2024 +0000
+Date:   Fri Nov 29 19:00:25 2024 +0000
 
-    Added translation using Weblate (Portuguese (Brazil))
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 8.3% (1 of 12 strings)
+    
+    Translation: server-ux-14.0/server-ux-14.0-base_recurrence
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-base_recurrence/pt_BR/
 
 
 ## community-data-files
