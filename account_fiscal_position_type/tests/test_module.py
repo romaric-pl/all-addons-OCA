@@ -16,7 +16,7 @@ class Tests(TransactionCase):
         self.AccountFiscalPosition = self.env['account.fiscal.position']
         self.company = self.env.ref('base.main_company')
         self.chart_template = self.env.ref(
-            'l10n_generic_coa.configurable_chart_template')
+            'account_fiscal_position_type.chart_template')
         self.fiscal_position_template_purchase = self.env.ref(
             'account_fiscal_position_type.fiscal_position_template_purchase')
         self.fiscal_position_purchase = self.env.ref(

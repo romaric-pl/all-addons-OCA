@@ -131,16 +131,11 @@ Date:   Mon Sep 23 13:15:01 2024 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 2119a28a7a66cff3a4c22fa40307a30b2c2be917
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 26 12:16:05 2024 +0000
+commit 73c83d70c04a3220d9bcef323358fc4ea6b69626
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Nov 30 16:11:26 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 74.2% (26 of 35 strings)
-    
-    Translation: account-fiscal-rule-12.0/account-fiscal-rule-12.0-l10n_eu_oss
-    Translate-URL: https://translation.odoo-community.org/projects/account-fiscal-rule-12-0/account-fiscal-rule-12-0-l10n_eu_oss/it/
+    [BOT] post-merge updates
 
 
 ## operating-unit
