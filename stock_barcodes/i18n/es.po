@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-06 20:07+0000\n"
-"PO-Revision-Date: 2023-10-30 21:36+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"POT-Creation-Date: 2024-07-19 08:31+0000\n"
+"PO-Revision-Date: 2024-07-19 10:32+0200\n"
+"Last-Translator: Sergio Teruel <sergio.teruel@tecnativa.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. module: stock_barcodes
 #: model:ir.model.fields,help:stock_barcodes.field_wiz_candidate_picking__state
@@ -152,11 +152,11 @@ msgstr "<i class=\"fa fa-trash-o\" title=\"Limpiar valores\"/>"
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_picking_form
 msgid ""
-"<i class=\"fa fa-upload\" title=\"Fill from pencil\" style=\"font-size:1.5em"
-"\"/>"
+"<i class=\"fa fa-upload\" title=\"Fill from pencil\" style=\"font-"
+"size:1.5em\"/>"
 msgstr ""
-"<i class=\"fa fa-upload\" title=\"Fill from pencil\" style=\"font-size:1.5em"
-"\"/>"
+"<i class=\"fa fa-upload\" title=\"Fill from pencil\" style=\"font-"
+"size:1.5em\"/>"
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_form
@@ -329,6 +329,11 @@ msgstr "Poner en paquete automáticamente antes de la validación del albarán"
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_form
 msgid "Back"
 msgstr "Atrás"
+
+#. module: stock_barcodes
+#: model:ir.model.fields,field_description:stock_barcodes.field_stock_move__barcode_backorder_action
+msgid "Backorder action"
+msgstr "Acción entrega parcial"
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read__barcode
@@ -514,6 +519,12 @@ msgstr "movimientos confirmados"
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_action__context
 msgid "Context"
 msgstr "Contexto"
+
+#. module: stock_barcodes
+#: model:ir.model.fields.selection,name:stock_barcodes.selection__stock_move__barcode_backorder_action__create_backorder
+#: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_todo_kanban
+msgid "Create Backorder"
+msgstr "Crear entrega parcial"
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_option_group__create_lot
@@ -702,6 +713,11 @@ msgstr "Auto rellenado"
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_option__forced
 msgid "Forced"
 msgstr "Forzado"
+
+#. module: stock_barcodes
+#: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_picking__forced_todo_key
+msgid "Forced Todo Key"
+msgstr ""
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_option_group__auto_lot
@@ -901,6 +917,12 @@ msgid "Inventory quants"
 msgstr "Cantds de Inventario"
 
 #. module: stock_barcodes
+#: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_picking__todo_line_is_extra_line
+#: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_todo__is_extra_line
+msgid "Is Extra Line"
+msgstr ""
+
+#. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_option_group__is_manual_confirm
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read__is_manual_confirm
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_inventory__is_manual_confirm
@@ -920,6 +942,11 @@ msgstr "Cantidad manual"
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_candidate_picking__is_pending
 msgid "Is Pending"
 msgstr "Pendiente"
+
+#. module: stock_barcodes
+#: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_todo__is_stock_move_line_origin
+msgid "Is Stock Move Line Origin"
+msgstr ""
 
 #. module: stock_barcodes
 #: model:ir.model.fields,help:stock_barcodes.field_stock_barcodes_option_group__confirmed_moves
@@ -1160,6 +1187,11 @@ msgid "Move Line"
 msgstr "Línea de Movimiento"
 
 #. module: stock_barcodes
+#: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_todo_kanban
+msgid "NOT AVAILABLE"
+msgstr ""
+
+#. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_action__name
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_option__name
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_option_group__name
@@ -1182,6 +1214,12 @@ msgstr "Nuevo movimiento:"
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_picking_type__new_picking_barcode_option_group_id
 msgid "New Picking Barcode Option Group"
 msgstr "Nuevo Grupo de Opciones de Código de Barras de Albarán"
+
+#. module: stock_barcodes
+#: model:ir.model.fields.selection,name:stock_barcodes.selection__stock_move__barcode_backorder_action__skip_backorder
+#: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_todo_kanban
+msgid "No Backorder"
+msgstr "No crear entrega parcial"
 
 #. module: stock_barcodes
 #: model:ir.model.fields.selection,name:stock_barcodes.selection__wiz_stock_barcodes_read__message_type__not_found
@@ -1212,6 +1250,11 @@ msgstr "Notas"
 #, python-format
 msgid "OK"
 msgstr "Aceptar"
+
+#. module: stock_barcodes
+#: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_todo_kanban
+msgid "Odoo will not create a backorder for this move. Are you sure?"
+msgstr "Odoo no creará una entrega parcial para este movimiento. ¿Está seguro?"
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_picking_form
@@ -1306,6 +1349,7 @@ msgid "Partner"
 msgstr "Empresa"
 
 #. module: stock_barcodes
+#: model:ir.model.fields.selection,name:stock_barcodes.selection__stock_move__barcode_backorder_action__pending
 #: model:ir.model.fields.selection,name:stock_barcodes.selection__stock_move_line__barcode_scan_state__pending
 #: model:ir.model.fields.selection,name:stock_barcodes.selection__wiz_stock_barcodes_read_todo__state__pending
 msgid "Pending"
@@ -1421,7 +1465,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_inventory__product_uom_id
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_picking__product_uom_id
 msgid "Product Uom"
-msgstr "Udm del Producto"
+msgstr ""
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_picking_form
@@ -1429,8 +1473,6 @@ msgid "Put in pack"
 msgstr "Poner en paquete"
 
 #. module: stock_barcodes
-#: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read__qty_available
-#: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_inventory__qty_available
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_picking__qty_available
 msgid "Qty Available"
 msgstr "Cant. Disponible"
@@ -1505,6 +1547,11 @@ msgstr "Modelo"
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_todo__product_qty_reserved
 msgid "Reserved"
 msgstr "Reservado"
+
+#. module: stock_barcodes
+#: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_todo_kanban
+msgid "Restore to pending"
+msgstr ""
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read__result_package_id
@@ -1655,6 +1702,7 @@ msgid "Steps to scan"
 msgstr "Pasos a escanear"
 
 #. module: stock_barcodes
+#: model:ir.model,name:stock_barcodes.model_stock_move
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_todo__stock_move_ids
 msgid "Stock Move"
 msgstr "Movimiento de Existencias"
@@ -1690,6 +1738,11 @@ msgstr ""
 "Este grupo de opciones de código de barras se seleccionará al pulsar el "
 "botón \"Nuevo\" en un tipo de operación. Se utilizará para crear un albarán "
 "no planificado."
+
+#. module: stock_barcodes
+#: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_todo_kanban
+msgid "This move will be set to pending. Are you sure?"
+msgstr ""
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_picking__todo_line_ids
@@ -1832,7 +1885,6 @@ msgstr "Asistente para leer códigos de barras desde el inventario"
 #: model:ir.model,name:stock_barcodes.model_wiz_stock_barcodes_read_picking
 msgid "Wizard to read barcode on picking batch"
 msgstr ""
-"Asistente para leer códigos de barras desde las agrupaciones de albaranes"
 
 #. module: stock_barcodes
 #: model:ir.model,name:stock_barcodes.model_wiz_stock_barcodes_read_todo
@@ -1921,117 +1973,5 @@ msgstr "desbloquear el albarán"
 msgid "{name} is required"
 msgstr ""
 
-#~ msgid "<span>Apply inventory</span>"
-#~ msgstr "<span>Aplicar inventario</span>"
-
-#~ msgid "<span>Total Qty</span>"
-#~ msgstr "<span>Cdad. total</span>"
-
-#~ msgid "<i class=\"fa fa-upload fa-2x\" title=\"Fill from pencil\"/>"
-#~ msgstr "<i class=\"fa fa-upload fa-2x\" title=\"Rellenar desde lápiz\"/>"
-
 #~ msgid "Wizard to read barcode on picking"
 #~ msgstr "Asistente para leer códigos de barras desde los albaranes"
-
-#~ msgid "List view of lines"
-#~ msgstr "Vista lista de líneas"
-
-#, python-format
-#~ msgid "There is no lots to assign quantities"
-#~ msgstr "No hay lotes para asignar la cantidad"
-
-#~ msgid "<span>New lot</span>"
-#~ msgstr "<span>Nuevo lote</span>"
-
-#~ msgid "Barcode not found"
-#~ msgstr "Código de barras no encontrado"
-
-#~ msgid "Barcode: %s (%s)"
-#~ msgstr "Cód. Barras: %s (%s)"
-
-#~ msgid "Clean lot"
-#~ msgstr "Borrar lote"
-
-#~ msgid "Companies"
-#~ msgstr "Compañías"
-
-#~ msgid "Confirmed moves allowed"
-#~ msgstr "Permitir movimientos confirmados"
-
-#~ msgid "Demand:"
-#~ msgstr "Demanda:"
-
-#~ msgid "Done:"
-#~ msgstr "Hecho:"
-
-#~ msgid "Get lots automatically for inventories"
-#~ msgstr "Obtener lotes automáticamente para inventarios"
-
-#~ msgid ""
-#~ "If checked the lot will be set automatically with the same removal "
-#~ "strategy"
-#~ msgstr ""
-#~ "Si esta marcado el lote se establecerá automáticamente según la "
-#~ "estrategia de retirada"
-
-#~ msgid ""
-#~ "If checked, after a product barcode is read, the quantities will be "
-#~ "distributed\n"
-#~ "                                among all existing lots by removal "
-#~ "strategy order."
-#~ msgstr ""
-#~ "Si está marcado, después de escanear un código de barras de producto, las "
-#~ "cantidades se distribuirán entre todos los lotes existentes por orden "
-#~ "según la estrategia de retirada"
-
-#~ msgid ""
-#~ "If user input more quantities than existing it, the exceeded quantities "
-#~ "will be assigned to last lot"
-#~ msgstr ""
-#~ "Si el usuario introduce más cantidades de las existentes, las cantidades "
-#~ "sobrantes se asignarán al último lote"
-
-#~ msgid "Manual entry data"
-#~ msgstr "Entrada manual de datos"
-
-#~ msgid "New lot"
-#~ msgstr "Nuevo lote"
-
-#~ msgid "OCA Stock Barcodes reader"
-#~ msgstr "Lector de códigos de barras (OCA)"
-
-#~ msgid "Reserved:"
-#~ msgstr "Reservado:"
-
-#~ msgid "Set a default value for scanner."
-#~ msgstr "Establece un valor por defecto para el lector."
-
-#~ msgid "There are no stock moves to assign this operation"
-#~ msgstr "No hay movimientos de stock para realizar esta operación"
-
-#~ msgid "Waiting for input lot"
-#~ msgstr "A la espera de leer lote"
-
-#~ msgid "Procurement purchase grouping settings"
-#~ msgstr "Agrupación de la compra abastecida"
-
-#, fuzzy
-#~| msgid "Picking"
-#~ msgid "Stock Picking"
-#~ msgstr "Albarán"
-
-#~ msgid "The operation type determines the picking view"
-#~ msgstr "El tipo de albarán determina la vista de albarán"
-
-#~ msgid "barcode"
-#~ msgstr "código de barras"
-
-#~ msgid "This product has not prepare to receipt"
-#~ msgstr "Este producto no está listo para ser recibido"
-
-#~ msgid "# Scan log"
-#~ msgstr "Lecturas"
-
-#, fuzzy
-#~ msgid "Barcode read successfully"
-#~ msgstr "Leer más"

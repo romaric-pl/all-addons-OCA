@@ -75,7 +75,7 @@ python-stdnum
 # From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
 # From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
 # generated from manifests external_dependencies
-factur-x
+factur-x<=3.1
 pypdf
 PyPDF2
 PyYAML

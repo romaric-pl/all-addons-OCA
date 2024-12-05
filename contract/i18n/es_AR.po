@@ -31,22 +31,22 @@ msgid ""
 "                <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;"
 "\">\n"
 "                    &amp;nbsp;&amp;nbsp;<strong>REFERENCES</strong><br/>\n"
-"                    &amp;nbsp;&amp;nbsp;Contract: <strong t-out=\"object.name"
-"\"/><br/>\n"
+"                    &amp;nbsp;&amp;nbsp;Contract: <strong t-out=\"object."
+"name\"/><br/>\n"
 "                    <t t-if=\"object.date_start\">\n"
-"                        &amp;nbsp;&amp;nbsp;Contract Date Start: <t t-out="
-"\"object.date_start or ''\"/><br/>\n"
+"                        &amp;nbsp;&amp;nbsp;Contract Date Start: <t t-"
+"out=\"object.date_start or ''\"/><br/>\n"
 "                    </t>\n"
 "\n"
 "                    <t t-if=\"object.user_id\">\n"
 "                        <t t-if=\"object.user_id.email\">\n"
-"                            &amp;nbsp;&amp;nbsp;Your Contact: <a t-att-href="
-"\"'mailto:%s?subject=Contract %s' % (object.user_id.email, object.name)\" t-"
-"out=\"object.user_id.name\"/>\n"
+"                            &amp;nbsp;&amp;nbsp;Your Contact: <a t-att-"
+"href=\"'mailto:%s?subject=Contract %s' % (object.user_id.email, object."
+"name)\" t-out=\"object.user_id.name\"/>\n"
 "                        </t>\n"
 "                        <t t-else=\"\">\n"
-"                            &amp;nbsp;&amp;nbsp;Your Contact: <t t-out="
-"\"object.user_id.name\"/>\n"
+"                            &amp;nbsp;&amp;nbsp;Your Contact: <t t-"
+"out=\"object.user_id.name\"/>\n"
 "                        </t>\n"
 "                    </t>\n"
 "                </p>\n"
@@ -63,8 +63,8 @@ msgid ""
 "radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
 "                    <h3 style=\"margin: 0px; padding: 2px 14px; font-size: "
 "12px; color: #DDD;\">\n"
-"                        <strong style=\"text-transform:uppercase;\" t-out="
-"\"object.company_id.name\"/></h3>\n"
+"                        <strong style=\"text-transform:uppercase;\" t-"
+"out=\"object.company_id.name\"/></h3>\n"
 "                </div>\n"
 "                <div style=\"width: 347px; margin: 0px; padding: 5px 14px; "
 "line-height: 16px; background-color: #F2F2F2;\">\n"
@@ -106,8 +106,8 @@ msgstr ""
 "                <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;"
 "\">\n"
 "                    &amp;nbsp;&amp;nbsp;<strong>REFERENCIAS</strong><br/>\n"
-"                    &amp;nbsp;&amp;nbsp;Contrato: <strong t-out=\"object.name"
-"\"/><br/>\n"
+"                    &amp;nbsp;&amp;nbsp;Contrato: <strong t-out=\"object."
+"name\"/><br/>\n"
 "                    <t t-if=\"object.date_start\">\n"
 "                        &amp;nbsp;&amp;nbsp;Fecha de Inicio del Contrato: <t "
 "t-out=\"object.date_start or ''\"/><br/>\n"
@@ -115,13 +115,13 @@ msgstr ""
 "\n"
 "                    <t t-if=\"object.user_id\">\n"
 "                        <t t-if=\"object.user_id.email\">\n"
-"                            &amp;nbsp;&amp;nbsp;Tu Contrato: <a t-att-href="
-"\"'mailto:%s?subject=Contract %s' % (object.user_id.email, object.name)\" t-"
-"out=\"object.user_id.name\"/>\n"
+"                            &amp;nbsp;&amp;nbsp;Tu Contrato: <a t-att-"
+"href=\"'mailto:%s?subject=Contract %s' % (object.user_id.email, object."
+"name)\" t-out=\"object.user_id.name\"/>\n"
 "                        </t>\n"
 "                        <t t-else=\"\">\n"
-"                            &amp;nbsp;&amp;nbsp;Tu Contrato:  <t t-out="
-"\"object.user_id.name\"/>\n"
+"                            &amp;nbsp;&amp;nbsp;Tu Contrato:  <t t-"
+"out=\"object.user_id.name\"/>\n"
 "                        </t>\n"
 "                    </t>\n"
 "                </p>\n"
@@ -137,8 +137,8 @@ msgstr ""
 "radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
 "                    <h3 style=\"margin: 0px; padding: 2px 14px; font-size: "
 "12px; color: #DDD;\">\n"
-"                        <strong style=\"text-transform:uppercase;\" t-out="
-"\"object.company_id.name\"/></h3>\n"
+"                        <strong style=\"text-transform:uppercase;\" t-"
+"out=\"object.company_id.name\"/></h3>\n"
 "                </div>\n"
 "                <div style=\"width: 347px; margin: 0px; padding: 5px 14px; "
 "line-height: 16px; background-color: #F2F2F2;\">\n"
@@ -229,6 +229,23 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "<strong>#END#</strong>: End date of the invoiced period"
 msgstr "<strong>#FIN#</strong>: Fecha final del período facturado"
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>\n"
+"                                    : Invoice month name\n"
+"                                    of\n"
+"                                    the\n"
+"                                    invoiced period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
+msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>: Invoice month name of the invoiced "
+"period"
+msgstr ""
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
@@ -440,6 +457,12 @@ msgid "Analytic account"
 msgstr "Cuenta analítica"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "April"
+msgstr ""
+
+#. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Archived"
@@ -470,6 +493,12 @@ msgstr "Socio Asociado"
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_attachment_count
 msgid "Attachment Count"
 msgstr "Cuenta de Adjunto"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "August"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__is_auto_renew
@@ -860,11 +889,11 @@ msgstr "Líneas de contrato (corregidas)"
 #: code:addons/contract/models/contract.py:0
 #, python-format
 msgid ""
-"Contract manually invoiced: <a    href=\"#\" data-oe-model=\"%(model_name)s"
-"\"     data-oe-id=\"%(rec_id)s\">Invoice</a>"
+"Contract manually invoiced: <a    href=\"#\" data-oe-"
+"model=\"%(model_name)s\"     data-oe-id=\"%(rec_id)s\">Invoice</a>"
 msgstr ""
-"Factura manual del Contrato: <a    href=\"#\" data-oe-model=\"%(model_name)s"
-"\"     data-oe-id=\"%(rec_id)s\">Factura</a>"
+"Factura manual del Contrato: <a    href=\"#\" data-oe-"
+"model=\"%(model_name)s\"     data-oe-id=\"%(rec_id)s\">Factura</a>"
 
 #. module: contract
 #: model:mail.message.subtype,name:contract.mail_message_subtype_contract_modification
@@ -1069,6 +1098,12 @@ msgid "Day(s)"
 msgstr "Día(s)"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "December"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_template_line__note_invoicing_mode
@@ -1155,6 +1190,12 @@ msgid ""
 msgstr ""
 "Fallo al procesar el contrato %(name)s [id: %(id)s]:\n"
 "%(ue)s"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "February"
+msgstr ""
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
@@ -1387,6 +1428,12 @@ msgid "Is suspension without end date"
 msgstr "Es una suspención sin fecha de finalización"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "January"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_template__journal_id
@@ -1403,6 +1450,18 @@ msgstr "Apunte Contable"
 #: model:ir.model,name:contract.model_account_move_line
 msgid "Journal Item"
 msgstr "Asiento Contable"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "July"
+msgstr ""
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "June"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__last_date_invoiced
@@ -1492,6 +1551,12 @@ msgid "Manually Invoice Sale Contracts"
 msgstr "Facturar Manualmente Contratos de Venta"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "March"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_template__line_recurrence
@@ -1501,6 +1566,12 @@ msgid ""
 msgstr ""
 "Marque esta casilla si desea controlar la recurrencia a nivel de línea en "
 "lugar de todo junto para todo el contrato."
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "May"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_error
@@ -1625,6 +1696,12 @@ msgid "Notes"
 msgstr "Notas"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "November"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction_counter
 msgid "Number of Actions"
 msgstr "Número de Acciones"
@@ -1664,6 +1741,12 @@ msgstr "Número de mensajes con errores de entrega"
 #: model:ir.model.fields,help:contract.field_contract_contract__message_unread_counter
 msgid "Number of unread messages"
 msgstr "Número de mensajes sin leer"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "October"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_account_bank_statement_line__old_contract_id
@@ -1934,6 +2017,12 @@ msgstr "Enviar por Correo Electrónico"
 #: model:ir.model.fields,field_description:contract.field_contract_modification__sent
 msgid "Sent"
 msgstr "Expedido"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "September"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__sequence
@@ -2482,10 +2571,10 @@ msgstr ""
 #~ "    </div>\n"
 #~ "    <p></p>\n"
 #~ "    <a href=\"${object.get_base_url()}/my/contracts/${object.id}?"
-#~ "access_token=${object.access_token}\" target=\"_blank\" style="
-#~ "\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-decoration: "
-#~ "none; color: #fff; border-radius: 5px; font-size:13px;\">View contract</"
-#~ "a>\n"
+#~ "access_token=${object.access_token}\" target=\"_blank\" "
+#~ "style=\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-"
+#~ "decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">View "
+#~ "contract</a>\n"
 #~ "</div>\n"
 #~ "        "
 #~ msgstr ""
@@ -2552,10 +2641,10 @@ msgstr ""
 #~ "    </div>\n"
 #~ "    <p></p>\n"
 #~ "    <a href=\"${object.get_base_url()}/my/contracts/${object.id}?"
-#~ "access_token=${object.access_token}\" target=\"_blank\" style="
-#~ "\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-decoration: "
-#~ "none; color: #fff; border-radius: 5px; font-size:13px;\">View contract</"
-#~ "a>\n"
+#~ "access_token=${object.access_token}\" target=\"_blank\" "
+#~ "style=\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-"
+#~ "decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">View "
+#~ "contract</a>\n"
 #~ "</div>\n"
 #~ "        "
 
@@ -2635,8 +2724,8 @@ msgstr ""
 #~ "                "
 
 #~ msgid ""
-#~ "Contract manually invoiced: <a href=\"#\" data-oe-model=\"%s\" data-oe-id="
-#~ "\"%s\">Invoice</a>"
+#~ "Contract manually invoiced: <a href=\"#\" data-oe-model=\"%s\" data-oe-"
+#~ "id=\"%s\">Invoice</a>"
 #~ msgstr ""
 #~ "Contrato facturado manualmente: <a href=\"#\" data-oe-model=\"%s\" data-"
 #~ "oe-id=\"%s\">Factura</a>"
@@ -2794,8 +2883,8 @@ msgstr ""
 #~ "        % endif\n"
 #~ "        % if object.company_id.website:\n"
 #~ "            <div>\n"
-#~ "                Sitio Web: <a href=\"${object.company_id.website}\">"
-#~ "${object.company_id.website}</a>\n"
+#~ "                Sitio Web: <a href=\"${object.company_id."
+#~ "website}\">${object.company_id.website}</a>\n"
 #~ "            </div>\n"
 #~ "        %endif\n"
 #~ "        <p></p>\n"

@@ -323,7 +323,7 @@ class EDIExchangeType(models.Model):
                         "Rule for %s btn updated from deprecated `model_manual_btn`",
                         model.model,
                     )
-                    rule.kind = "form_btn" if self.model_manual_btn else "custom"
+                    rule.kind = "form_btn" if rec.model_manual_btn else "custom"
 
     def _get_rule_by_model(self, model):
         return self.rule_ids.filtered(lambda x: x.model_id == model)
