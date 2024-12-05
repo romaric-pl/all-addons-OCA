@@ -79,7 +79,7 @@ class SqlFileWizard(models.TransientModel):
                 sql_export.id,
             ),
         )
-        self._get_field_attachment().write(
+        self._get_field_attachment().sudo().write(
             {
                 "name": self.file_name,
                 "mimetype": guess_type(self.file_name)[0],

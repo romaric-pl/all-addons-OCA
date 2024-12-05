@@ -13,6 +13,7 @@ class TestStockMoveLineLockQtyDone(TransactionCase):
             [("state", "=", "assigned")], limit=1
         )
         cls.move_line = cls.assigned_picking.move_line_ids[0]
+        cls.env.company.sudo().lock_qty_done = True
 
     def test_0(self):
         self.assertEqual(self.assigned_picking.state, "assigned")

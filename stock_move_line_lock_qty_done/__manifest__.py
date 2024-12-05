@@ -4,11 +4,13 @@
 {
     "name": "Lock Done Quantity Changes in Stock Moves",
     "summary": """Restrict modifications to the done quantity in validated stock moves""",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-workflow",
     "depends": ["stock"],
-    "data": ["security/res_groups.xml"],
-    "demo": [],
+    "data": [
+        "security/res_groups.xml",
+        "views/res_config_settings_views.xml",
+    ],
 }

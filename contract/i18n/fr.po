@@ -31,22 +31,22 @@ msgid ""
 "                <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;"
 "\">\n"
 "                    &amp;nbsp;&amp;nbsp;<strong>REFERENCES</strong><br>\n"
-"                    &amp;nbsp;&amp;nbsp;Contract: <strong t-out=\"object.name"
-"\"></strong><br>\n"
+"                    &amp;nbsp;&amp;nbsp;Contract: <strong t-out=\"object."
+"name\"></strong><br>\n"
 "                    <t t-if=\"object.date_start\">\n"
-"                        &amp;nbsp;&amp;nbsp;Contract Date Start: <t t-out="
-"\"object.date_start or ''\"></t><br>\n"
+"                        &amp;nbsp;&amp;nbsp;Contract Date Start: <t t-"
+"out=\"object.date_start or ''\"></t><br>\n"
 "                    </t>\n"
 "\n"
 "                    <t t-if=\"object.user_id\">\n"
 "                        <t t-if=\"object.user_id.email\">\n"
-"                            &amp;nbsp;&amp;nbsp;Your Contact: <a t-att-href="
-"\"'mailto:%s?subject=Contract %s' % (object.user_id.email, object.name)\" t-"
-"out=\"object.user_id.name\"></a>\n"
+"                            &amp;nbsp;&amp;nbsp;Your Contact: <a t-att-"
+"href=\"'mailto:%s?subject=Contract %s' % (object.user_id.email, object."
+"name)\" t-out=\"object.user_id.name\"></a>\n"
 "                        </t>\n"
 "                        <t t-else=\"\">\n"
-"                            &amp;nbsp;&amp;nbsp;Your Contact: <t t-out="
-"\"object.user_id.name\"></t>\n"
+"                            &amp;nbsp;&amp;nbsp;Your Contact: <t t-"
+"out=\"object.user_id.name\"></t>\n"
 "                        </t>\n"
 "                    </t>\n"
 "                </p>\n"
@@ -63,8 +63,8 @@ msgid ""
 "radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
 "                    <h3 style=\"margin: 0px; padding: 2px 14px; font-size: "
 "12px; color: #DDD;\">\n"
-"                        <strong style=\"text-transform:uppercase;\" t-out="
-"\"object.company_id.name\"></strong></h3>\n"
+"                        <strong style=\"text-transform:uppercase;\" t-"
+"out=\"object.company_id.name\"></strong></h3>\n"
 "                </div>\n"
 "                <div style=\"width: 347px; margin: 0px; padding: 5px 14px; "
 "line-height: 16px; background-color: #F2F2F2;\">\n"
@@ -122,8 +122,8 @@ msgstr ""
 "name)\" t-out=\"object.user_id.name\"></a>\n"
 "                        </t>\n"
 "                        <t t-else=\"\">\n"
-"                            &amp ;nbsp ;&amp ;nbsp ;Votre contact : <t t-out="
-"\"object.user_id.name\"></t>\n"
+"                            &amp ;nbsp ;&amp ;nbsp ;Votre contact : <t t-"
+"out=\"object.user_id.name\"></t>\n"
 "                        </t>\n"
 "                    </t>\n"
 "                </p>\n"
@@ -140,8 +140,8 @@ msgstr ""
 "right-radius : 5px 5px ; background-repeat : repeat no-repeat ;\">\n"
 "                    <h3 style=\"margin : 0px ; padding : 2px 14px ; font-"
 "size : 12px ; color : #DDD ;\">\n"
-"                        <strong style=\"text-transform :uppercase ;\" t-out="
-"\"object.company_id.name\"></strong></h3>\n"
+"                        <strong style=\"text-transform :uppercase ;\" t-"
+"out=\"object.company_id.name\"></strong></h3>\n"
 "                </div>\n"
 "                <div style=\"width : 347px ; margin : 0px ; padding : 5px "
 "14px ; line-height : 16px ; background-color : #F2F2F2 ;\">\n"
@@ -155,8 +155,8 @@ msgstr ""
 "                        <div style=\"margin-top : 0px ; margin-right : 0px ; "
 "margin-bottom : 0px ; margin-left : 0px ; padding-top : 0px ; padding-"
 "right : 0px ; padding-bottom : 0px ; padding-left : 0px ; \">\n"
-"                            Téléphone : <t t-out=\"object.company_id.phone"
-"\"></t>\n"
+"                            Téléphone : <t t-out=\"object.company_id."
+"phone\"></t>\n"
 "                        </div>\n"
 "                    </t>\n"
 "                    <t t-if=\"object.company_id.website\">\n"
@@ -231,6 +231,23 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
 msgid "<strong>#END#</strong>: End date of the invoiced period"
 msgstr "<strong>#END# :</strong> Date de fin de la période de facturation"
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>\n"
+"                                    : Invoice month name\n"
+"                                    of\n"
+"                                    the\n"
+"                                    invoiced period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
+msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>: Invoice month name of the invoiced "
+"period"
+msgstr ""
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
@@ -448,6 +465,13 @@ msgid "Analytic Precision"
 msgstr "Précision analytique"
 
 #. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "April"
+msgstr ""
+
+#. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Archived"
@@ -478,6 +502,13 @@ msgstr "Partenaire associé"
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_attachment_count
 msgid "Attachment Count"
 msgstr "Nombre de pièces jointes"
+
+#. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "August"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__is_auto_renew
@@ -879,11 +910,11 @@ msgstr "Lignes de contrat (fixe)"
 #: code:addons/contract/models/contract.py:0
 #, python-format
 msgid ""
-"Contract manually invoiced: <a    href=\"#\" data-oe-model=\"%(model_name)s"
-"\"     data-oe-id=\"%(rec_id)s\">Invoice</a>"
+"Contract manually invoiced: <a    href=\"#\" data-oe-"
+"model=\"%(model_name)s\"     data-oe-id=\"%(rec_id)s\">Invoice</a>"
 msgstr ""
-"Contract facturé manuellement : <a    href=\"#\" data-oe-model="
-"\"%(model_name)s\"     data-oe-id=\"%(rec_id)s\">Facture</a>"
+"Contract facturé manuellement : <a    href=\"#\" data-oe-"
+"model=\"%(model_name)s\"     data-oe-id=\"%(rec_id)s\">Facture</a>"
 
 #. module: contract
 #: model:mail.message.subtype,name:contract.mail_message_subtype_contract_modification
@@ -1094,6 +1125,13 @@ msgid "Day(s)"
 msgstr "Jour(s)"
 
 #. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "December"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_template_line__note_invoicing_mode
@@ -1182,6 +1220,13 @@ msgid ""
 msgstr ""
 "Erreur dans le traitement du contrat %(name)s [id : %(id)s] :\n"
 "%(ue)s"
+
+#. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "February"
+msgstr ""
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
@@ -1421,6 +1466,13 @@ msgid "Is suspension without end date"
 msgstr "Supsension sans date de fin"
 
 #. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "January"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_template__journal_id
@@ -1437,6 +1489,20 @@ msgstr "Pièce comptable"
 #: model:ir.model,name:contract.model_account_move_line
 msgid "Journal Item"
 msgstr "Écriture comptable"
+
+#. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "July"
+msgstr ""
+
+#. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "June"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__last_date_invoiced
@@ -1525,6 +1591,13 @@ msgid "Manually Invoice Sale Contracts"
 msgstr "Facturer les contrats de vente manuellement"
 
 #. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "March"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_template__line_recurrence
@@ -1534,6 +1607,13 @@ msgid ""
 msgstr ""
 "Cochez cette case si vous souhaitez contrôler la récurrence au niveau de la "
 "ligne plutôt que pour l'ensemble du contrat."
+
+#. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "May"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_error
@@ -1659,6 +1739,13 @@ msgid "Notes"
 msgstr "Commentaires"
 
 #. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "November"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction_counter
 msgid "Number of Actions"
 msgstr "Nombre d'actions"
@@ -1693,6 +1780,13 @@ msgstr "Nombre de messages nécessitant une action"
 #: model:ir.model.fields,help:contract.field_contract_contract__message_has_error_counter
 msgid "Number of messages with delivery error"
 msgstr "Nombre de messages en échec d'envoi"
+
+#. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "October"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_account_bank_statement_line__old_contract_id
@@ -1966,6 +2060,13 @@ msgstr "Envoyer par email"
 #: model:ir.model.fields,field_description:contract.field_contract_modification__sent
 msgid "Sent"
 msgstr "Envoyé"
+
+#. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "September"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__sequence
@@ -2459,8 +2560,8 @@ msgstr ""
 #~ "                    &amp;nbsp;&amp;nbsp;Contract: <strong t-out=\"object."
 #~ "name\"/><br/>\n"
 #~ "                    <t t-if=\"object.date_start\">\n"
-#~ "                        &amp;nbsp;&amp;nbsp;Contract Date Start: <t t-out="
-#~ "\"object.date_start or ''\"/><br/>\n"
+#~ "                        &amp;nbsp;&amp;nbsp;Contract Date Start: <t t-"
+#~ "out=\"object.date_start or ''\"/><br/>\n"
 #~ "                    </t>\n"
 #~ "\n"
 #~ "                    <t t-if=\"object.user_id\">\n"
@@ -2470,8 +2571,8 @@ msgstr ""
 #~ "name)\" t-out=\"object.user_id.name\"/>\n"
 #~ "                        </t>\n"
 #~ "                        <t t-else=\"\">\n"
-#~ "                            &amp;nbsp;&amp;nbsp;Your Contact: <t t-out="
-#~ "\"object.user_id.name\"/>\n"
+#~ "                            &amp;nbsp;&amp;nbsp;Your Contact: <t t-"
+#~ "out=\"object.user_id.name\"/>\n"
 #~ "                        </t>\n"
 #~ "                    </t>\n"
 #~ "                </p>\n"
@@ -2488,8 +2589,8 @@ msgstr ""
 #~ "right-radius: 5px 5px; background-repeat: repeat no-repeat;\">\n"
 #~ "                    <h3 style=\"margin: 0px; padding: 2px 14px; font-"
 #~ "size: 12px; color: #DDD;\">\n"
-#~ "                        <strong style=\"text-transform:uppercase;\" t-out="
-#~ "\"object.company_id.name\"/></h3>\n"
+#~ "                        <strong style=\"text-transform:uppercase;\" t-"
+#~ "out=\"object.company_id.name\"/></h3>\n"
 #~ "                </div>\n"
 #~ "                <div style=\"width: 347px; margin: 0px; padding: 5px "
 #~ "14px; line-height: 16px; background-color: #F2F2F2;\">\n"
@@ -2510,17 +2611,17 @@ msgstr ""
 #~ "                    </t>\n"
 #~ "                    <t t-if=\"object.company_id.website\">\n"
 #~ "                        <div>\n"
-#~ "                            Web: <a t-att-href=\"object.company_id.website"
-#~ "\" t-out=\"object.company_id.website\"/>\n"
+#~ "                            Web: <a t-att-href=\"object.company_id."
+#~ "website\" t-out=\"object.company_id.website\"/>\n"
 #~ "                        </div>\n"
 #~ "                    </t>\n"
 #~ "                </div>\n"
 #~ "                <br/>\n"
 #~ "                <a t-att-href=\"'%s/my/contracts/%s?access_token=%s' % "
-#~ "(object.get_base_url(), object.id, object.access_token)\" target=\"_blank"
-#~ "\" style=\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-"
-#~ "decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">View "
-#~ "contract</a>\n"
+#~ "(object.get_base_url(), object.id, object.access_token)\" "
+#~ "target=\"_blank\" style=\"background-color:#875A7B;padding: 8px 16px 8px "
+#~ "16px; text-decoration: none; color: #fff; border-radius: 5px; font-"
+#~ "size:13px;\">View contract</a>\n"
 #~ "            </div>\n"
 #~ "        "
 #~ msgstr ""
@@ -2537,8 +2638,8 @@ msgstr ""
 #~ "                    &amp;nbsp;&amp;nbsp;Contrat : <strong t-out=\"object."
 #~ "name\"/><br/>\n"
 #~ "                    <t t-if=\"object.date_start\">\n"
-#~ "                        &amp;nbsp;&amp;nbsp;Date de début : <t t-out="
-#~ "\"object.date_start or ''\"/><br/>\n"
+#~ "                        &amp;nbsp;&amp;nbsp;Date de début : <t t-"
+#~ "out=\"object.date_start or ''\"/><br/>\n"
 #~ "                    </t>\n"
 #~ "\n"
 #~ "                    <t t-if=\"object.user_id\">\n"
@@ -2548,8 +2649,8 @@ msgstr ""
 #~ "name)\" t-out=\"object.user_id.name\"/>\n"
 #~ "                        </t>\n"
 #~ "                        <t t-else=\"\">\n"
-#~ "                            &amp;nbsp;&amp;nbsp;Votre contact : <t t-out="
-#~ "\"object.user_id.name\"/>\n"
+#~ "                            &amp;nbsp;&amp;nbsp;Votre contact : <t t-"
+#~ "out=\"object.user_id.name\"/>\n"
 #~ "                        </t>\n"
 #~ "                    </t>\n"
 #~ "                </p>\n"
@@ -2568,8 +2669,8 @@ msgstr ""
 #~ "\n"
 #~ "                    <h3 style=\"margin: 0px; padding: 2px 14px; font-"
 #~ "size: 12px; color: #DDD;\">\n"
-#~ "                        <strong style=\"text-transform:uppercase;\" t-out="
-#~ "\"object.company_id.name\"/></h3>\n"
+#~ "                        <strong style=\"text-transform:uppercase;\" t-"
+#~ "out=\"object.company_id.name\"/></h3>\n"
 #~ "                </div>\n"
 #~ "                <div style=\"width: 347px; margin: 0px; padding: 5px "
 #~ "14px; line-height: 16px; background-color: #F2F2F2;\">\n"
@@ -2588,8 +2689,8 @@ msgstr ""
 #~ "margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: "
 #~ "0px; padding-left: 0px; \">\n"
 #~ "\n"
-#~ "                            Téléphone : <t t-out=\"object.company_id.phone"
-#~ "\"/>\n"
+#~ "                            Téléphone : <t t-out=\"object.company_id."
+#~ "phone\"/>\n"
 #~ "                        </div>\n"
 #~ "                    </t>\n"
 #~ "                    <t t-if=\"object.company_id.website\">\n"
@@ -2602,10 +2703,10 @@ msgstr ""
 #~ "                <br/>\n"
 #~ "\n"
 #~ " <a t-att-href=\"'%s/my/contracts/%s?access_token=%s' % (object."
-#~ "get_base_url(), object.id, object.access_token)\" target=\"_blank\" style="
-#~ "\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-decoration: "
-#~ "none; color: #fff; border-radius: 5px; font-size:13px;\">View contract</"
-#~ "a>\n"
+#~ "get_base_url(), object.id, object.access_token)\" target=\"_blank\" "
+#~ "style=\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-"
+#~ "decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">View "
+#~ "contract</a>\n"
 #~ "            </div>\n"
 #~ "        "
 
@@ -2697,10 +2798,10 @@ msgstr ""
 #~ "    </div>\n"
 #~ "    <p></p>\n"
 #~ "    <a href=\"${object.get_base_url()}/my/contracts/${object.id}?"
-#~ "access_token=${object.access_token}\" target=\"_blank\" style="
-#~ "\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-decoration: "
-#~ "none; color: #fff; border-radius: 5px; font-size:13px;\">View contract</"
-#~ "a>\n"
+#~ "access_token=${object.access_token}\" target=\"_blank\" "
+#~ "style=\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-"
+#~ "decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">View "
+#~ "contract</a>\n"
 #~ "</div>\n"
 #~ "        "
 #~ msgstr ""
@@ -2767,10 +2868,10 @@ msgstr ""
 #~ "    </div>\n"
 #~ "    <p></p>\n"
 #~ "    <a href=\"${object.get_base_url()}/my/contracts/${object.id}?"
-#~ "access_token=${object.access_token}\" target=\"_blank\" style="
-#~ "\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-decoration: "
-#~ "none; color: #fff; border-radius: 5px; font-size:13px;\">View contract</"
-#~ "a>\n"
+#~ "access_token=${object.access_token}\" target=\"_blank\" "
+#~ "style=\"background-color:#875A7B;padding: 8px 16px 8px 16px; text-"
+#~ "decoration: none; color: #fff; border-radius: 5px; font-size:13px;\">View "
+#~ "contract</a>\n"
 #~ "</div>\n"
 #~ "        "
 
@@ -2850,8 +2951,8 @@ msgstr ""
 #~ "                "
 
 #~ msgid ""
-#~ "Contract manually invoiced: <a href=\"#\" data-oe-model=\"%s\" data-oe-id="
-#~ "\"%s\">Invoice</a>"
+#~ "Contract manually invoiced: <a href=\"#\" data-oe-model=\"%s\" data-oe-"
+#~ "id=\"%s\">Invoice</a>"
 #~ msgstr ""
 #~ "Contrat facturé manuellement : <a href=\"#\" data-oe-model=\"%s\" data-oe-"
 #~ "id=\"%s\">Invoice</a>"
@@ -3010,8 +3111,8 @@ msgstr ""
 #~ "        % endif\n"
 #~ "        % if object.company_id.website:\n"
 #~ "            <div>\n"
-#~ "                Site web: <a href=\"${object.company_id.website}\">"
-#~ "${object.company_id.website}</a>\n"
+#~ "                Site web: <a href=\"${object.company_id."
+#~ "website}\">${object.company_id.website}</a>\n"
 #~ "            </div>\n"
 #~ "        %endif\n"
 #~ "        <p></p>\n"

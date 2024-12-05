@@ -13,31 +13,41 @@ class ProductProduct(models.Model):
     def _compute_quantities_dict(
         self, lot_id, owner_id, package_id, from_date=False, to_date=False
     ):
-        res = super()._compute_quantities_dict(
+        packs = self.filtered("pack_ok")
+        subproducts = packs.pack_line_ids.filtered(
+            lambda p: p.product_id.detailed_type == "product"
+        ).mapped("product_id")
+        res = super(ProductProduct, self | subproducts)._compute_quantities_dict(
             lot_id, owner_id, package_id, from_date=from_date, to_date=to_date
         )
-        packs = self.filtered("pack_ok")
-        for product in packs.with_context(prefetch_fields=False):
+        for pack in packs.with_context(prefetch_fields=False):
             pack_qty_available = []
             pack_virtual_available = []
             pack_free_qty = []
-            subproducts = product.pack_line_ids.filtered(
+
+            for line in pack.pack_line_ids.filtered(
                 lambda p: p.product_id.detailed_type == "product"
-            )
-            for subproduct in subproducts:
-                subproduct_stock = subproduct.product_id
-                sub_qty = subproduct.quantity
+            ):
+                sub_qty = line.quantity
                 if sub_qty:
                     pack_qty_available.append(
-                        math.floor(subproduct_stock.qty_available / sub_qty)
+                        math.floor(
+                            (
+                                res[line.product_id.id]["qty_available"]
+                                - res[line.product_id.id]["outgoing_qty"]
+                            )
+                            / sub_qty
+                        )
                     )
                     pack_virtual_available.append(
-                        math.floor(subproduct_stock.virtual_available / sub_qty)
+                        math.floor(
+                            res[line.product_id.id]["virtual_available"] / sub_qty
+                        )
                     )
                     pack_free_qty.append(
-                        math.floor(subproduct_stock.free_qty / sub_qty)
+                        math.floor(res[line.product_id.id]["free_qty"] / sub_qty)
                     )
-            res[product.id] = {
+            res[pack.id] = {
                 "qty_available": (pack_qty_available and min(pack_qty_available) or 0),
                 "free_qty": (pack_free_qty and min(pack_free_qty) or 0),
                 "incoming_qty": 0,

@@ -466,3 +466,33 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
         self.assertTrue(list(self.fp.get_external_id().values())[0])
         self.assertEqual(fp_rec.get_external_id().get(fp_id), expected_xmlid)
         wizard.unlink()
+
+    def test_01_archived_fiscal_position(self):
+        # Test wizard won't duplicate existing fiscal positions when archived
+        self.fp_template.tax_ids.tax_dest_id = self.tax_template.id
+        self.fp_template.tax_ids.tax_src_id = self.tax_template.id
+        fiscal_position = self.env["account.fiscal.position"].search(
+            [("name", "=", self.fp_template.name), ("company_id", "=", self.company.id)]
+        )
+        wizard = self.wizard_obj.create(self.wizard_vals)
+        wizard.action_find_records()
+        wizard.action_update_records()
+        wizard.unlink()
+        fiscal_position.active = False
+        self.assertEqual(
+            fiscal_position.tax_ids.tax_src_id.name, self.tax_template.name
+        )
+        self.assertEqual(
+            fiscal_position.tax_ids.tax_dest_id.name, self.tax_template.name
+        )
+        wizard = self.wizard_obj.create(self.wizard_vals)
+        wizard.action_find_records()
+        wizard.action_update_records()
+        wizard.unlink()
+        self.assertTrue(fiscal_position.exists())
+        self.assertEqual(
+            fiscal_position.tax_ids.tax_src_id.name, self.tax_template.name
+        )
+        self.assertEqual(
+            fiscal_position.tax_ids.tax_dest_id.name, self.tax_template.name
+        )

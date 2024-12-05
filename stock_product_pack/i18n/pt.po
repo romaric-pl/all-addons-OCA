@@ -6,36 +6,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2019-12-12 22:05+0000\n"
-"Last-Translator: Pedro Castro Silva <pedrocs@exo.pt>\n"
+"PO-Revision-Date: 2024-12-03 18:21+0000\n"
+"Last-Translator: Peter Romão <peterromao@yahoo.co.uk>\n"
 "Language-Team: none\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: stock_product_pack
 #: model:ir.model.fields,field_description:stock_product_pack.field_product_product__dont_create_move
 #: model:ir.model.fields,field_description:stock_product_pack.field_product_template__dont_create_move
 msgid "Don't create move"
-msgstr ""
+msgstr "Não lançar movimento"
 
 #. module: stock_product_pack
 #: model:ir.model,name:stock_product_pack.model_procurement_group
 msgid "Procurement Group"
-msgstr ""
+msgstr "Grupo das Compras"
 
 #. module: stock_product_pack
 #: model:ir.model,name:stock_product_pack.model_product_template
 msgid "Product"
-msgstr "Produto"
+msgstr "Artigo"
 
 #. module: stock_product_pack
 #: model:ir.model,name:stock_product_pack.model_product_product
 msgid "Product Variant"
-msgstr ""
+msgstr "Variante de Artigo"
 
 #. module: stock_product_pack
 #: model:ir.model.fields,help:stock_product_pack.field_product_product__dont_create_move
@@ -46,3 +46,7 @@ msgid ""
 "availability (type = 'product') but without actually having stock and moves "
 "of it."
 msgstr ""
+"Com esta opção, a composição não irá criar um movimento de armazém e fica "
+"definido como entregue aquando da confirmação da venda. Isto é útil para "
+"obter a disponibilidade de existências da composição (type = 'artigo'), mas "
+"sem ter existências nem movimentos para o mesmo."

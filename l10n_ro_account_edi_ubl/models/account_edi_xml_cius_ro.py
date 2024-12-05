@@ -169,9 +169,14 @@ class AccountEdiXmlCIUSRO(models.Model):
         vals_list[
             "TaxTotalType_template"
         ] = "l10n_ro_account_edi_ubl.ubl_20_TaxTotalType"
-        vals_list["vals"][
-            "customization_id"
-        ] = "urn:cen.eu:en16931:2017#compliant#urn:efactura.mfinante.ro:CIUS-RO:1.0.1"
+
+        vals_list["vals"].update(
+            {
+                "customization_id": "urn:cen.eu:en16931:2017#compliant#urn:efactura.mfinante.ro:CIUS-RO:1.0.1",  # noqa
+                "tax_currency_code": "RON",
+            }
+        )
+
         index = 1
         for val in vals_list["vals"]["invoice_line_vals"]:
             val["id"] = index

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-23 09:06+0000\n"
+"PO-Revision-Date: 2024-12-04 12:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -22,6 +22,34 @@ msgid "Can edit done quantity for done stock moves"
 msgstr ""
 "È possibile modificare quantità movimentata per movimenti di magazzino "
 "eseguiti"
+
+#. module: stock_move_line_lock_qty_done
+#: model:ir.model,name:stock_move_line_lock_qty_done.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: stock_move_line_lock_qty_done
+#: model:ir.model,name:stock_move_line_lock_qty_done.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni configurazione"
+
+#. module: stock_move_line_lock_qty_done
+#: model:ir.model.fields,field_description:stock_move_line_lock_qty_done.field_res_company__lock_qty_done
+#: model:ir.model.fields,field_description:stock_move_line_lock_qty_done.field_res_config_settings__lock_qty_done
+msgid "Limit Updates to Done Quantity After Validation"
+msgstr "Limita gli aggiornamenti alla quantità completata dopo la validazione"
+
+#. module: stock_move_line_lock_qty_done
+#: model:ir.model.fields,help:stock_move_line_lock_qty_done.field_res_company__lock_qty_done
+#: model:ir.model.fields,help:stock_move_line_lock_qty_done.field_res_config_settings__lock_qty_done
+#: model_terms:ir.ui.view,arch_db:stock_move_line_lock_qty_done.view_stock_config_settings
+msgid ""
+"Only users in the 'Can Edit Done Quantity for Done Stock Moves' group are "
+"allowed to edit the 'done' quantity for validated transfer."
+msgstr ""
+"Solo gli utenti nel gruppo 'Può modificare la quantità completata per i "
+"movimenti di magazzino eseguiti' sono abilitati per modificare la quantità "
+"'completata' per i trasferimenti validati."
 
 #. module: stock_move_line_lock_qty_done
 #: model:ir.model,name:stock_move_line_lock_qty_done.model_stock_move_line

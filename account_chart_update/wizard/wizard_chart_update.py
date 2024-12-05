@@ -433,8 +433,9 @@ class WizardUpdateChartsAccounts(models.TransientModel):
                 self._update_taxes_pending_for_accounts(todo_dict)
             if self.update_fiscal_position and perform_rest:
                 self._update_fiscal_positions()
-            # Store new chart in the company
-            self.company_id.chart_template_id = self.chart_template_id
+            # Store new chart in the company if has been changed
+            if self.company_id.chart_template_id != self.chart_template_id:
+                self.company_id.chart_template_id = self.chart_template_id
             _logger.removeHandler(handler)
             self.log = log_output.getvalue()
         # Check if errors where detected and wether we should stop.
@@ -680,7 +681,7 @@ class WizardUpdateChartsAccounts(models.TransientModel):
                     continue
                 criteria = (field_name, "in", field_values)
 
-            result = fp_model.search(
+            result = fp_model.with_context(active_test=False).search(
                 [criteria, ("company_id", "=", self.company_id.id)], limit=1
             )
             if result:

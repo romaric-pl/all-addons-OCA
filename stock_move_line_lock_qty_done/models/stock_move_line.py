@@ -16,7 +16,7 @@ class StockMoveLine(models.Model):
             "stock_move_line_lock_qty_done.group_stock_move_can_edit_done_qty"
         )
         for rec in self:
-            if rec.state != "done":
+            if rec.state != "done" or not rec.company_id.lock_qty_done:
                 continue
             if rec.is_locked:
                 raise UserError(
