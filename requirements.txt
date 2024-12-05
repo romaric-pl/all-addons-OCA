@@ -90,6 +90,7 @@ python-stdnum
 # generated from manifests external_dependencies
 dateparser
 factur-x
+factur-x<=3.1
 invoice2data
 ovh
 phonenumbers

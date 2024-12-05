@@ -4,7 +4,7 @@
 
 {
     "name": "Account Invoice Import Factur-X",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.0.2",
     "category": "Invoicing Management",
     "license": "AGPL-3",
     "summary": "Import Factur-X/ZUGFeRD supplier invoices/refunds",
@@ -12,7 +12,7 @@
     "maintainers": ["alexis-via"],
     "website": "https://github.com/OCA/edi",
     "depends": ["account_invoice_import", "base_facturx"],
-    "external_dependencies": {"python": ["factur-x"]},
+    "external_dependencies": {"python": ["factur-x<=3.1"]},
     "data": ["wizard/account_invoice_import_view.xml"],
     "demo": ["demo/demo_data.xml"],
     "installable": True,

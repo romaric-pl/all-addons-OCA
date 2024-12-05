@@ -20,6 +20,11 @@ msgid "<span class=\"o_stat_text\">EDI</span>"
 msgstr ""
 
 #. module: edi_sale_oca
+#: model:ir.model,name:edi_sale_oca.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: edi_sale_oca
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order__disable_edi_auto
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_line__disable_edi_auto
 msgid "Disable auto"
@@ -31,6 +36,7 @@ msgid "Disable automated actions"
 msgstr ""
 
 #. module: edi_sale_oca
+#: model:ir.model.fields,field_description:edi_sale_oca.field_res_partner__display_name
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order__display_name
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_line__display_name
 msgid "Display Name"
@@ -39,7 +45,6 @@ msgstr ""
 #. module: edi_sale_oca
 #: model:ir.ui.menu,name:edi_sale_oca.menu_sale_edi_root
 #: model_terms:ir.ui.view,arch_db:edi_sale_oca.view_order_form
-#: model_terms:ir.ui.view,arch_db:edi_sale_oca.view_partner_form
 msgid "EDI"
 msgstr ""
 
@@ -83,6 +88,12 @@ msgid "EDI record that originated this document."
 msgstr ""
 
 #. module: edi_sale_oca
+#: model:ir.model.fields,field_description:edi_sale_oca.field_res_partner__edi_sale_conf_ids
+#: model:ir.model.fields,field_description:edi_sale_oca.field_res_users__edi_sale_conf_ids
+msgid "EDI sale configuration"
+msgstr ""
+
+#. module: edi_sale_oca
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order__edi_config
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_line__edi_config
 msgid "Edi Config"
@@ -117,6 +128,7 @@ msgid "Exchanges"
 msgstr ""
 
 #. module: edi_sale_oca
+#: model:ir.model.fields,field_description:edi_sale_oca.field_res_partner__id
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order__id
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_line__id
 msgid "ID"
@@ -128,6 +140,7 @@ msgid "Internal or external identifier for records."
 msgstr ""
 
 #. module: edi_sale_oca
+#: model:ir.model.fields,field_description:edi_sale_oca.field_res_partner____last_update
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order____last_update
 #: model:ir.model.fields,field_description:edi_sale_oca.field_sale_order_line____last_update
 msgid "Last Modified on"
@@ -137,6 +150,11 @@ msgstr ""
 #: model:ir.model.fields,help:edi_sale_oca.field_sale_order__origin_edi_endpoint_id
 #: model:ir.model.fields,help:edi_sale_oca.field_sale_order_line__origin_edi_endpoint_id
 msgid "Record generated via this endpoint"
+msgstr ""
+
+#. module: edi_sale_oca
+#: model_terms:ir.ui.view,arch_db:edi_sale_oca.view_partner_form
+msgid "Sale"
 msgstr ""
 
 #. module: edi_sale_oca

@@ -6,7 +6,7 @@
     "summary": """
         Configuration and special behaviors for EDI on sales.
     """,
-    "version": "14.0.2.0.0",
+    "version": "14.0.2.1.0",
     "development_status": "Alpha",
     "license": "AGPL-3",
     "author": "Camptocamp,Odoo Community Association (OCA)",
@@ -18,12 +18,15 @@
         "sale",
     ],
     "data": [
+        "data/edi_configuration.xml",
         "views/res_partner.xml",
         "views/sale_order.xml",
+        "views/res_partner.xml",
         "views/edi_exchange_record.xml",
     ],
     "demo": [
         "demo/edi_backend.xml",
         "demo/edi_exchange_type.xml",
+        "demo/edi_configuration.xml",
     ],
 }

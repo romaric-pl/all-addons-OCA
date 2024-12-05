@@ -68,35 +68,8 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         # Collection fees line has been unlink
         self.assertEqual(len(self.invoice.invoice_line_ids), 1)
 
-    def test_riba_flow(self):
-        self.partner.property_account_receivable_id = self.account_rec1_id.id
-        recent_date = (
-            self.env["account.move"]
-            .search([("invoice_date", "!=", False)], order="invoice_date desc", limit=1)
-            .invoice_date
-        )
-        invoice = self.env["account.move"].create(
-            {
-                "invoice_date": recent_date,
-                "move_type": "out_invoice",
-                "journal_id": self.sale_journal.id,
-                "partner_id": self.partner.id,
-                "invoice_payment_term_id": self.account_payment_term_riba.id,
-                "invoice_line_ids": [
-                    (
-                        0,
-                        0,
-                        {
-                            "name": "product1",
-                            "product_id": self.product1.id,
-                            "quantity": 1.0,
-                            "price_unit": 450.00,
-                            "account_id": self.sale_account.id,
-                        },
-                    )
-                ],
-            }
-        )
+    def riba_sbf_common(self, configuration_id):
+        invoice = self._create_sbf_invoice()
         invoice._onchange_riba_partner_bank_id()
         invoice.action_post()
         riba_move_line_id = False
@@ -121,7 +94,7 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
 
         # issue wizard
         wizard_riba_issue = self.env["riba.issue"].create(
-            {"configuration_id": self.riba_config.id}
+            {"configuration_id": configuration_id}
         )
         action = wizard_riba_issue.with_context(
             {"active_ids": [riba_move_line_id]}
@@ -137,7 +110,7 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         self.assertEqual(len(riba_list.acceptance_move_ids), 1)
         self.assertEqual(len(riba_list.payment_ids), 0)
 
-        # I print the C/O slip report
+        # I print the C/O distinta report
         docargs = {
             "doc_ids": riba_list.ids,
             "doc_model": "riba.distinta",
@@ -169,6 +142,10 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         )
         wiz_accreditation.create_move()
         self.assertEqual(riba_list.state, "accredited")
+        return invoice, riba_list
+
+    def test_riba_sbf_maturation_flow(self):
+        invoice, riba_list = self.riba_sbf_common(self.riba_config_sbf_maturation.id)
 
         bank_accreditation_line = False
         for accr_line in riba_list.accreditation_move_id.line_ids:
@@ -241,6 +218,59 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         self.assertEqual(riba_list.state, "accredited")
         self.assertEqual(riba_list.line_ids[0].state, "accredited")
 
+    def test_riba_sbf_immediate_flow(self):
+        invoice, riba_list = self.riba_sbf_common(self.riba_config_sbf_immediate.id)
+
+        # past due wizard
+        unsolved_wizard = (
+            self.env["riba.unsolved"]
+            .with_context(
+                active_model="riba.distinta.line",
+                active_ids=[riba_list.line_ids[0].id],
+                active_id=riba_list.line_ids[0].id,
+            )
+            .create(
+                {
+                    "bank_amount": 455,
+                    "expense_amount": 5,
+                }
+            )
+        )
+        unsolved_wizard.create_move()
+        self.assertEqual(riba_list.state, "unsolved")
+        self.assertEqual(len(riba_list.line_ids), 1)
+        self.assertEqual(riba_list.line_ids[0].state, "unsolved")
+        self.assertTrue(invoice.unsolved_move_line_ids)
+
+        # Verifica storno registrazioni di presentazione della RiBa
+        unsolved_line_ids = riba_list.line_ids.unsolved_move_id.line_ids
+        unsolved_line_id_bills = unsolved_line_ids.filtered(
+            lambda line: line.name == "Bills"
+        )
+        self.assertEqual(len(unsolved_line_id_bills), 1)
+        self.assertEqual(
+            unsolved_line_id_bills.account_id, unsolved_wizard.effects_account_id
+        )
+        self.assertEqual(unsolved_line_id_bills.credit, unsolved_wizard.effects_amount)
+        unsolved_line_id_riba = unsolved_line_ids.filtered(
+            lambda line: line.name == "C/O"
+        )
+        self.assertEqual(len(unsolved_line_id_riba), 1)
+        self.assertEqual(
+            unsolved_line_id_riba.account_id, unsolved_wizard.riba_bank_account_id
+        )
+        self.assertEqual(unsolved_line_id_riba.debit, unsolved_wizard.riba_bank_amount)
+
+        # Se la compute non viene invocata il test fallisce
+        riba_list._compute_unsolved_move_ids()
+        self.assertEqual(len(riba_list.unsolved_move_ids), 1)
+        bank_unsolved_line = False
+        for unsolved_line in riba_list.unsolved_move_ids[0].line_ids:
+            if unsolved_line.account_id.id == self.bank_account.id:
+                bank_unsolved_line = unsolved_line
+                break
+        self.assertTrue(bank_unsolved_line)
+
     def test_unsolved_riba(self):
         # create another invoice to test past due C/O
         self.partner.property_account_receivable_id = self.account_rec1_id.id
@@ -278,7 +308,7 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
                 riba_move_line_id = move_line.id
         # issue wizard
         wizard_riba_issue = self.env["riba.issue"].create(
-            {"configuration_id": self.riba_config.id}
+            {"configuration_id": self.riba_config_sbf_maturation.id}
         )
         action = wizard_riba_issue.with_context(
             {"active_ids": [riba_move_line_id]}
@@ -356,11 +386,6 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         # self.assertTrue(
         #     bank_unsolved_line.id in [l.id for l in move_lines_for_rec])
 
-        riba_list.line_ids[0].unsolved_move_id.line_ids.remove_move_reconcile()
-        self.assertEqual(riba_list.state, "accredited")
-        self.assertEqual(len(riba_list.line_ids), 1)
-        self.assertEqual(riba_list.line_ids[0].state, "accredited")
-
     def test_riba_fatturapa(self):
         self.partner.property_account_receivable_id = self.account_rec1_id.id
         recent_date = (
@@ -409,7 +434,7 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
             lambda x: x.account_id == self.account_rec1_id
         )
         wizard_riba_issue = self.env["riba.issue"].create(
-            {"configuration_id": self.riba_config.id}
+            {"configuration_id": self.riba_config_sbf_maturation.id}
         )
         action = wizard_riba_issue.with_context(
             {"active_ids": [riba_move_line_id.id]}
@@ -512,7 +537,7 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
             lambda x: x.account_id == self.account_rec1_id
         )
         wizard_riba_issue = self.env["riba.issue"].create(
-            {"configuration_id": self.riba_config.id}
+            {"configuration_id": self.riba_config_sbf_maturation.id}
         )
         action = wizard_riba_issue.with_context(
             {"active_ids": [riba_move_line_id.id, riba_move_line1_id.id]}

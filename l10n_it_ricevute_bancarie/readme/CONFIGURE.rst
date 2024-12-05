@@ -14,6 +14,10 @@ Nella configurazione delle Ri.Ba. è possibile specificare se si tratti di
 utilizzare al momento dell'accettazione della distinta da parte della banca.
 Tale conto deve essere di tipo 'Crediti' (ad esempio "Ri.Ba. all'incasso",
 eventualmente da creare).
+Selezionando 'Salvo buon fine' è necessario impostare il tipo di
+incasso, immediato o a maturazione valuta: questo influisce sulla gestione
+degli insoluti perchè solo nel caso di incasso immediato vengono stornate
+le registrazioni di presentazione della RiBa.
 
 La configurazione relativa alla fase di accredito, verrà usata nel momento in
 cui la banca accredita l'importo della distinta.

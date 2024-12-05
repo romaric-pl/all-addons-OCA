@@ -3,7 +3,7 @@
 
 {
     "name": "Product UBL Import",
-    "version": "14.0.1.1.1",
+    "version": "14.0.1.2.0",
     "development_status": "Alpha",
     "license": "AGPL-3",
     "summary": "Import UBL XML catalogue files",

@@ -6,12 +6,13 @@
         <field name="name">C/O 30 Days End of Month</field>
         <field name="note">C/O 30 Days End of Month</field>
         <field name="riba" eval="True" />
+        <field name="line_ids" eval="[(5, 0, 0)]" />
     </record>
 
     <record id="account_payment_term_line" model="account.payment.term.line">
         <field name="value">balance</field>
-        <field name="option">day_following_month</field>
-        <field name="days">1</field>
+        <field name="option">after_invoice_month</field>
+        <field name="days">30</field>
         <field ref="account_payment_term_riba" name="payment_id" />
     </record>
 

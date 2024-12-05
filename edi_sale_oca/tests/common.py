@@ -15,7 +15,11 @@ class OrderMixin(object):
         model = cls.env["sale.order"]
         vals = dict(commitment_date=fields.Date.today())
         vals.update(kw)
-        so_vals = model.play_onchanges(vals, [])
+        # Loose dependency on onchange_helper
+        if hasattr(model, "play_onchanges"):
+            so_vals = model.play_onchanges(vals, [])
+        else:
+            so_vals = vals.copy()
         if "order_line" in so_vals:
             so_vals["order_line"] = [(0, 0, x) for x in vals["order_line"]]
         return model.create(so_vals)

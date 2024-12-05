@@ -6,7 +6,6 @@
 # Copyright (C) 2012-2017 Lorenzo Battistini - Agile Business Group
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from datetime import date
 
 from odoo import _, api, fields, models
 from odoo.exceptions import Warning as UserError
@@ -33,6 +32,12 @@ class RibaList(models.Model):
             for line in riba.line_ids:
                 move_lines |= line.payment_ids
             riba.payment_ids = move_lines
+
+    def _compute_total_amount(self):
+        for riba in self:
+            riba.total_amount = 0.0
+            for line in riba.line_ids:
+                riba.total_amount += line.amount
 
     _name = "riba.distinta"
     _description = "C/O Slip"
@@ -127,6 +132,11 @@ class RibaList(models.Model):
         help="Keep empty to use the current date.",
     )
 
+    total_amount = fields.Float(
+        string="Amount",
+        compute="_compute_total_amount",
+    )
+
     def action_riba_export(self):
         return {
             "type": "ir.actions.act_window",
@@ -215,6 +225,11 @@ class RibaList(models.Model):
             riba_list.state = "draft"
             for line in riba_list.line_ids:
                 line.state = "draft"
+
+    def action_open_lines(self):
+        action = self.env.ref("l10n_it_ricevute_bancarie.detail_riba_action").read()[0]
+        action["domain"] = [("slip_id", "=", self.id)]
+        return action
 
 
 class RibaListLine(models.Model):
@@ -388,7 +403,7 @@ class RibaListLine(models.Model):
                         line.invoice_number, line.distinta_id.name, line.sequence
                     ),
                     "journal_id": journal.id,
-                    "date": line.distinta_id.registration_date,
+                    "date": line.due_date,
                 }
             )
             to_be_reconciled = self.env["account.move.line"]
@@ -494,7 +509,7 @@ class RibaListLine(models.Model):
                     "journal_id": (
                         riba_line.distinta_id.config_id.settlement_journal_id.id
                     ),
-                    "date": date.today().strftime("%Y-%m-%d"),
+                    "date": riba_line.due_date.strftime("%Y-%m-%d"),
                     "ref": move_ref,
                 }
             )
@@ -529,6 +544,11 @@ class RibaListLine(models.Model):
             to_be_settled |= settlement_move_line
 
             to_be_settled.reconcile()
+
+    def settle_riba_line(self):
+        for line in self:
+            if line.state == "credited":
+                line.riba_line_settlement()
 
 
 class RibaListMoveLine(models.Model):

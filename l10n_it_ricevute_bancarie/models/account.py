@@ -4,6 +4,7 @@
 # Copyright (C) 2012 Associazione OpenERP Italia
 # (<http://www.odoo-italia.org>).
 # Copyright (C) 2012-2018 Lorenzo Battistini - Agile Business Group
+# Copyright 2024 Nextev Srl
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import _, api, fields, models
@@ -57,9 +58,30 @@ class AccountMove(models.Model):
             if len(invoice.unsolved_move_line_ids) != reconciled_unsolved:
                 invoice.is_unsolved = True
 
+    def _compute_open_amount(self):
+        today = fields.Date.today()
+        for invoice in self:
+            if invoice.is_riba_payment:
+                open_amount_line_ids = invoice.line_ids.filtered(
+                    lambda line, today=today: line.riba
+                    and line.account_id.internal_type in ["receivable", "payable"]
+                    and line.date_maturity > today
+                )
+                invoice.open_amount = sum(open_amount_line_ids.mapped("balance"))
+            else:
+                invoice.open_amount = 0.0
+
     riba_accredited_ids = fields.One2many(
         "riba.distinta", "accreditation_move_id", "Credited C/O Slips", readonly=True
     )
+
+    open_amount = fields.Float(
+        digits="Account",
+        compute="_compute_open_amount",
+        default=0.0,
+        help="Amount currently only supposed to be paid, but has actually not happened",
+    )
+
     riba_unsolved_ids = fields.One2many(
         "riba.distinta.line", "unsolved_move_id", "Past Due C/O Slips", readonly=True
     )
@@ -264,6 +286,16 @@ class AccountMove(models.Model):
 
     def get_due_cost_line_ids(self):
         return self.invoice_line_ids.filtered(lambda l: l.due_cost_line).ids
+
+    def action_riba_payment_date(self):
+        return {
+            "type": "ir.actions.act_window",
+            "name": "RiBa Payment Date",
+            "res_model": "riba.payment.date",
+            "view_mode": "form",
+            "target": "new",
+            "context": self.env.context,
+        }
 
 
 # se distinta_line_ids == None allora non è stata emessa
