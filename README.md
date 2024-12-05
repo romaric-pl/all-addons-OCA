@@ -154,9 +154,9 @@ Date:   Thu Oct 3 06:45:43 2024 +0000
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit bbcc6c34c1778dce49edf1d7c859a73a85bffcaa
+commit 7939687c1da2d97295a1b561f8e1c967e56d903e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 26 17:09:58 2024 +0000
+Date:   Thu Dec 5 08:41:33 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -523,16 +523,16 @@ Date:   Sun Oct 29 09:56:21 2023 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 8b427c9b97653cc9e06f2bb986775b42c91ed367
+commit ec9d66e01907a4e153fd1a27bb6eedb58dc18725
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 09:34:31 2024 +0000
+Date:   Wed Dec 4 08:46:18 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (103 of 103 strings)
+    Currently translated at 100.0% (14 of 14 strings)
     
-    Translation: knowledge-12.0/knowledge-12.0-document_page
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-12-0/knowledge-12-0-document_page/it/
+    Translation: knowledge-12.0/knowledge-12.0-document_page_portal
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-12-0/knowledge-12-0-document_page_portal/it/
 
 
 ## dms
