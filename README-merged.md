@@ -126,7 +126,7 @@ addon | version | maintainers | summary
 [account_cutoff_base](account_cutoff_base/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Account Cut-offs
 [account_cutoff_picking](account_cutoff_picking/) | 17.0.1.1.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Accrued and prepaid expense/revenue from pickings
 [account_cutoff_start_end_dates](account_cutoff_start_end_dates/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Cutoffs based on start/end dates
-[account_invoice_start_end_dates](account_invoice_start_end_dates/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
+[account_invoice_start_end_dates](account_invoice_start_end_dates/) | 17.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
 
 [//]: # (end addons)
 
@@ -283,7 +283,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 17.0.1.5.0 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 17.0.1.6.1 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 17.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 17.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet MIS templates
@@ -511,6 +511,7 @@ addon | version | maintainers | summary
 [product_operating_unit](product_operating_unit/) | 17.0.1.0.0 |  | Adds the concept of operating unit (OU) in products
 [project_operating_unit](project_operating_unit/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module adds operating unit information to projects and tasks.
 [purchase_operating_unit](purchase_operating_unit/) | 17.0.1.0.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
+[report_qweb_operating_unit](report_qweb_operating_unit/) | 17.0.1.0.0 |  | Qweb Report With Operating Unit
 [res_partner_operating_unit](res_partner_operating_unit/) | 17.0.1.1.0 |  | Introduces Operating Unit fields in Partner
 [sale_operating_unit](sale_operating_unit/) | 17.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
 [sale_stock_operating_unit](sale_stock_operating_unit/) | 17.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
@@ -563,7 +564,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [intrastat_base](intrastat_base/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Intrastat reporting
-[intrastat_product](intrastat_product/) | 17.0.1.1.0 |  | Base module for Intrastat Product
+[intrastat_product](intrastat_product/) | 17.0.1.1.1 |  | Base module for Intrastat Product
 [intrastat_product_generic](intrastat_product_generic/) | 17.0.1.0.0 |  | Generic Intrastat Product Declaration
 [intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 17.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
 [product_harmonized_system](product_harmonized_system/) | 17.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Product Import/Export reports
@@ -838,7 +839,7 @@ addon | version | maintainers | summary
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 17.0.1.0.3 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 17.0.1.2.2 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 17.0.1.0.2 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 17.0.1.6.1 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 17.0.1.7.0 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 17.0.1.0.0 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_notification](account_payment_order_notification/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
 [account_payment_partner](account_payment_partner/) | 17.0.1.0.5 |  | Adds payment mode on partners and invoices
@@ -947,7 +948,7 @@ addon | version | maintainers | summary
 [account_statement_import_move_line](account_statement_import_move_line/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Import journal items into bank statement
 [account_statement_import_online](account_statement_import_online/) | 17.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 17.0.1.1.1 |  | Online Bank Statements: MyPonto.com
-[account_statement_import_sheet_file](account_statement_import_sheet_file/) | 17.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
+[account_statement_import_sheet_file](account_statement_import_sheet_file/) | 17.0.1.1.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
 
 [//]: # (end addons)
 
@@ -2332,13 +2333,13 @@ addon | version | maintainers | summary
 [account_einvoice_generate](account_einvoice_generate/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Technical module to generate PDF invoices with embedded XML file
 [account_invoice_facturx](account_invoice_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Factur-X/ZUGFeRD customer invoices
 [base_business_document_import](base_business_document_import/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides technical tools to import sale orders or supplier invoices
-[base_edi](base_edi/) | 17.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
+[base_edi](base_edi/) | 17.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Factur-X/ZUGFeRD
 [base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.2.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 17.0.1.0.0 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 17.0.1.0.1 |  | Base module for connecting with Voxel
 [pdf_helper](pdf_helper/) | 17.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
-[test_base_import_pdf_by_template](test_base_import_pdf_by_template/) | 17.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Test Base Import Pdf by Template
+[test_base_import_pdf_by_template](test_base_import_pdf_by_template/) | 17.0.1.1.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Test Base Import Pdf by Template
 
 [//]: # (end addons)
 
@@ -2397,19 +2398,20 @@ addon | version | maintainers | summary
 [fieldservice](fieldservice/) | 17.0.1.3.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 17.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
 [fieldservice_account_analytic](fieldservice_account_analytic/) | 17.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
-[fieldservice_activity](fieldservice_activity/) | 17.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
+[fieldservice_activity](fieldservice_activity/) | 17.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
 [fieldservice_agreement](fieldservice_agreement/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Manage Field Service agreements and contracts
 [fieldservice_calendar](fieldservice_calendar/) | 17.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
 [fieldservice_crm](fieldservice_crm/) | 17.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
 [fieldservice_geoengine](fieldservice_geoengine/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
 [fieldservice_isp_flow](fieldservice_isp_flow/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service workflow for Internet Service Providers
+[fieldservice_portal](fieldservice_portal/) | 17.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between fieldservice and portal.
 [fieldservice_project](fieldservice_project/) | 17.0.1.0.0 |  | Create field service orders from a project or project task
-[fieldservice_recurring](fieldservice_recurring/) | 17.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
+[fieldservice_recurring](fieldservice_recurring/) | 17.0.1.2.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
 [fieldservice_repair](fieldservice_repair/) | 17.0.1.0.0 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Integrate Field Service orders with MRP repair orders
 [fieldservice_route](fieldservice_route/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
 [fieldservice_sale](fieldservice_sale/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
-[fieldservice_sale_recurring](fieldservice_sale_recurring/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
+[fieldservice_sale_recurring](fieldservice_sale_recurring/) | 17.0.1.0.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
 [fieldservice_sale_stock](fieldservice_sale_stock/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
 [fieldservice_size](fieldservice_size/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
 [fieldservice_stage_server_action](fieldservice_stage_server_action/) | 17.0.1.3.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
@@ -4262,6 +4264,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[l10n_nl_partner_name](l10n_nl_partner_name/) | 17.0.1.0.0 |  | Adapt parter names to Dutch conventions (support infix)
 [l10n_nl_xaf_auditfile_export](l10n_nl_xaf_auditfile_export/) | 17.0.1.0.0 |  | Export XAF auditfiles for Dutch tax authorities
 
 [//]: # (end addons)
@@ -4460,8 +4463,8 @@ addon | version | maintainers | summary
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_stock](l10n_ro_stock/) | 17.0.0.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 17.0.1.13.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
-[l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 17.0.1.10.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 17.0.1.14.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
+[l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 17.0.1.11.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 17.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
 [l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 17.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
@@ -5453,7 +5456,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.0.4 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 17.0.1.1.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 17.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 17.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -5558,7 +5561,7 @@ addon | version | maintainers | summary
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
 [mrp_bom_tracking](mrp_bom_tracking/) | 17.0.1.0.0 |  | Logs any change to a BoM in the chatter
 [mrp_mass_production_order](mrp_mass_production_order/) | 17.0.1.0.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create multiple manufacturing orders in one step
-[mrp_multi_level](mrp_multi_level/) | 17.0.1.2.4 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 17.0.1.2.5 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_production_note](mrp_production_note/) | 17.0.1.0.0 |  | Notes in production orders
 [mrp_repair_order](mrp_repair_order/) | 17.0.1.0.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create repair order from manufacturing order
@@ -5674,6 +5677,7 @@ addon | version | maintainers | summary
 [mgmtsystem_audit](mgmtsystem_audit/) | 17.0.1.0.0 |  | Management System - Audit
 [mgmtsystem_hazard](mgmtsystem_hazard/) | 17.0.1.0.0 |  | Hazard
 [mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 17.0.1.0.0 |  | Hazard Risk
+[mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 17.0.1.0.0 |  | Information Security Management System Manual
 [mgmtsystem_manual](mgmtsystem_manual/) | 17.0.1.0.0 |  | Management System - Manual
 [mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 17.0.1.0.0 |  | Management System - Nonconformity
 [mgmtsystem_review](mgmtsystem_review/) | 17.0.1.0.0 |  | Management System - Review
@@ -5766,7 +5770,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 17.0.1.0.0 |  | Procurement Purchase No Grouping
-[purchase_advance_payment](purchase_advance_payment/) | 17.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to add advance payments on purchase orders
+[purchase_advance_payment](purchase_advance_payment/) | 17.0.1.3.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to add advance payments on purchase orders
 [purchase_all_shipments](purchase_all_shipments/) | 17.0.1.0.0 |  | Purchase All Shipments
 [purchase_blanket_order](purchase_blanket_order/) | 17.0.1.0.0 |  | Purchase Blanket Orders
 [purchase_cancel_reason](purchase_cancel_reason/) | 17.0.1.0.0 |  | Purchase Cancel Reason
@@ -6234,7 +6238,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[contract](contract/) | 17.0.1.1.1 |  | Recurring - Contracts Management
+[contract](contract/) | 17.0.1.2.0 |  | Recurring - Contracts Management
 [contract_payment_mode](contract_payment_mode/) | 17.0.1.0.0 |  | Payment mode in contracts and their invoices
 [contract_price_revision](contract_price_revision/) | 17.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Easy revision of contract prices
 [contract_sale](contract_sale/) | 17.0.1.0.0 |  | Contract from Sale
@@ -6778,6 +6782,7 @@ addon | version | maintainers | summary
 [base_exception](base_exception/) | 17.0.1.0.1 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
 [base_m2m_custom_field](base_m2m_custom_field/) | 17.0.1.0.0 |  | Customizations of Many2many
 [base_partition](base_partition/) | 17.0.1.0.0 |  | Base module that provide the partition method on all models
+[base_sparse_field_list_support](base_sparse_field_list_support/) | 17.0.1.0.0 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 17.0.1.0.0 |  | Add a technical user parameter on the company
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 17.0.1.0.2 |  | Adds more operators for view inheritance
 [database_cleanup](database_cleanup/) | 17.0.1.2.1 |  | Database cleanup
@@ -6788,6 +6793,7 @@ addon | version | maintainers | summary
 [module_auto_update](module_auto_update/) | 17.0.1.0.0 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 17.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
 [onchange_helper](onchange_helper/) | 17.0.1.0.1 |  | Technical module that ease execution of onchange in Python code
+[rpc_helper](rpc_helper/) | 17.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
 [scheduler_error_mailer](scheduler_error_mailer/) | 17.0.1.0.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 17.0.1.0.0 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [server_action_logging](server_action_logging/) | 17.0.1.0.0 |  | Module that provides a logging mechanism for server actions
@@ -7060,7 +7066,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add custom filters for fields via UI
 [base_substate](base_substate/) | 17.0.1.0.0 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 17.0.1.0.1 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 17.0.2.3.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 17.0.2.3.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 17.0.1.0.0 |  | Formulas for Base tier validation
 [base_tier_validation_forward](base_tier_validation_forward/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
 [date_range](date_range/) | 17.0.1.2.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range

@@ -20,21 +20,24 @@ class SaleOrderLine(models.Model):
         self.ensure_one()
         template = self.product_id.fsm_recurring_template_id
         product = self.product_id
+        order_template = product.fsm_order_template_id or template.fsm_order_template_id
         note = self.name
         if template.description:
             note += "\n " + template.description
-        return {
+        vals = {
             "location_id": self.order_id.fsm_location_id.id,
             "start_date": self.order_id.expected_date,
             "fsm_recurring_template_id": template.id,
             "description": note,
             "max_orders": template.max_orders,
             "fsm_frequency_set_id": template.fsm_frequency_set_id.id,
-            "fsm_order_template_id": product.fsm_order_template_id.id
-            or template.fsm_order_template_id.id,
+            "fsm_order_template_id": order_template.id,
             "sale_line_id": self.id,
             "company_id": self.company_id.id,
         }
+        if order_template.team_id:
+            vals["team_id"] = order_template.team_id.id
+        return vals
 
     def _field_create_fsm_recurring(self):
         """Generate fsm_recurring for the given so line, and link it.

@@ -102,6 +102,15 @@ msgid "ID"
 msgstr "ID (identificación)"
 
 #. module: fieldservice_activity
+#. odoo-python
+#: code:addons/fieldservice_activity/models/fsm_activity.py:0
+#, python-format
+msgid ""
+"It is forbidden to modify the following fields in a %(state)r Activity:\n"
+"%(fields)s"
+msgstr ""
+
+#. module: fieldservice_activity
 #: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__write_uid
 msgid "Last Updated by"
 msgstr "actualizado por última vez por"

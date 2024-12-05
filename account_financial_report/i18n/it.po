@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-03 12:07+0000\n"
-"PO-Revision-Date: 2024-10-22 10:06+0000\n"
+"PO-Revision-Date: 2024-12-04 11:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -52,6 +52,18 @@ msgstr "91 - 120 g."
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
 msgid "<b>Taxes summary</b>"
 msgstr "<b>Riepilogo imposte</b>"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
+msgid ""
+"<i class=\"fa fa-exclamation-triangle mr-3\"/>\n"
+"                    Duplicate amounts may be shown because more than one "
+"analytical account may be defined in the journal items."
+msgstr ""
+"<i class=\"fa fa-exclamation-triangle mr-3\"/>\n"
+"                    Si possono visualizzare valori duplicati perché può "
+"essere stato definito più di un conto analitico nelle registrazioni "
+"contabili."
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.res_config_settings_view_form
@@ -344,6 +356,7 @@ msgstr "Importo val."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_account_move_line__analytic_account_ids
+#: model:ir.model.fields.selection,name:account_financial_report.selection__trial_balance_report_wizard__grouped_by__analytic_account
 msgid "Analytic Account"
 msgstr "Conto analitico"
 
@@ -959,6 +972,7 @@ msgstr "Raggruppa registrazioni per"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__grouped_by
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__grouped_by
 msgid "Grouped By"
 msgstr "Raggruppato per"
 
@@ -1605,6 +1619,14 @@ msgid "Starting account in a range"
 msgstr "Inizio conto in un intervallo"
 
 #. module: account_financial_report
+#. odoo-python
+#: code:addons/account_financial_report/report/trial_balance.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#, python-format
+msgid "TOTAL"
+msgstr "TOTALE"
+
+#. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
 msgid "Tags"
 msgstr "Etichette"
@@ -1772,7 +1794,10 @@ msgid "To:"
 msgstr "A:"
 
 #. module: account_financial_report
+#. odoo-python
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_account_ending_cumul
+#, python-format
 msgid "Total"
 msgstr "Totale"
 
@@ -1913,6 +1938,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__with_account_name
 msgid "With Account Name"
 msgstr "Con nome conto"
+
+#. module: account_financial_report
+#. odoo-python
+#: code:addons/account_financial_report/report/trial_balance.py:0
+#, python-format
+msgid "Without analytic account"
+msgstr "Senza conto analitico"
 
 #. module: account_financial_report
 #. odoo-python

@@ -107,7 +107,7 @@ class FSMRecurringOrder(models.Model):
     def populate_from_template(self, template=False):
         if not template:
             template = self.fsm_recurring_template_id
-        return {
+        vals = {
             "fsm_frequency_set_id": template.fsm_frequency_set_id,
             "max_orders": template.max_orders,
             "description": template.description,
@@ -115,6 +115,9 @@ class FSMRecurringOrder(models.Model):
             "scheduled_duration": template.fsm_order_template_id.duration,
             "company_id": template.company_id,
         }
+        if template.fsm_order_template_id.team_id:
+            vals["team_id"] = template.fsm_order_template_id.team_id.id
+        return vals
 
     @api.model_create_multi
     def create(self, vals_list):

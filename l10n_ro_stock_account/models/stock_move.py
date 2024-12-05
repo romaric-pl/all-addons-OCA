@@ -33,7 +33,7 @@ class StockMove(models.Model):
                 "internal_transfer",  # transfer intern
                 "usage_giving",
                 "usage_giving_return",
-                "internal_transit_out",  # stock moves trasit to internal
+                "internal_transit_out",  # stock moves transit to internal
                 "internal_transit_in",  # stock moves internal to transit
             ]
         return valued_types
@@ -234,15 +234,31 @@ class StockMove(models.Model):
         - Se creaza SVL prin metoda _create_out_svl, dar pastram remaining
         - SVL vor fi inregistrare cu - pe contul de gestiune de origine.
         """
-        move = self.with_context(standard=True, valued_type="internal_transit_in")
-        svls = move._create_out_svl(forced_quantity)
-        for svl in svls:
-            svl.write(
-                {
-                    "remaining_qty": abs(svl.quantity),
-                    "remaining_value": abs(svl.value),
-                }
-            )
+        svls = self.env["stock.valuation.layer"].sudo()
+        # company_id = self.env.context.get("force_company", self.env.company.id)
+        # company = self.env["res.company"].browse(company_id)
+        # currency = company.currency_id
+        moves = self.with_context(standard=True, valued_type="internal_transit_in")
+        for move in moves:
+            svls |= move._create_out_svl(forced_quantity)
+            for svl in svls:
+                svl.write(
+                    {
+                        "remaining_qty": abs(svl.quantity),
+                        "remaining_value": abs(svl.value),
+                    }
+                )
+            # vls_vals = move._prepare_common_svl_vals()
+            # quantity = forced_quantity or move.quantity
+            # product = move.product_id
+            # vls_vals.update({
+            #     'product_id': product.id,
+            #     'value': currency.round(-1*quantity * product.standard_price),
+            #     'unit_cost': product.standard_price,
+            #     'quantity': -1*quantity,
+            #     'l10n_ro_valued_type': 'internal_transit_in',
+            # })
+            # svls |= self.env["stock.valuation.layer"].create(vls_vals)
         return svls
 
     def _is_internal_transit_out(self):
@@ -260,18 +276,32 @@ class StockMove(models.Model):
         - SVL vor fi inregistrare cu + pe contul de gestiune de destinatie.
         """
         svls = self.env["stock.valuation.layer"].sudo()
+        # company_id = self.env.context.get("force_company", self.env.company.id)
+        # company = self.env["res.company"].browse(company_id)
+        # currency = company.currency_id
         moves = self.with_context(standard=True, valued_type="internal_transit_out")
         for move in moves:
             svls |= move._create_out_svl(forced_quantity)
-            for _svl in svls:
-                _svl.write(
+            for svl in svls:
+                svl.write(
                     {
-                        "quantity": abs(_svl.quantity),
-                        "value": abs(_svl.value),
-                        "remaining_qty": abs(_svl.quantity),
-                        "remaining_value": abs(_svl.value),
+                        "quantity": abs(svl.quantity),
+                        "value": abs(svl.value),
+                        "remaining_qty": abs(svl.quantity),
+                        "remaining_value": abs(svl.value),
                     }
                 )
+            # vls_vals = move._prepare_common_svl_vals()
+            # quantity = forced_quantity or move.quantity
+            # product = move.product_id
+            # vls_vals.update({
+            #     'product_id': product.id,
+            #     'value': currency.round(quantity * product.standard_price),
+            #     'unit_cost': product.standard_price,
+            #     'quantity': quantity,
+            #     'l10n_ro_valued_type': 'internal_transit_out',
+            # })
+            # svls |= self.env["stock.valuation.layer"].create(vls_vals)
         return svls
 
     def _is_internal_transfer(self):
@@ -380,6 +410,11 @@ class StockMove(models.Model):
                 qty, description, svl_id, cost
             )
 
+        if svl.l10n_ro_valued_type == "internal_transit_in":
+            am_vals = self._account_entry_move_internal_transit_in(
+                qty, description, svl_id, cost
+            )
+
         if svl.l10n_ro_valued_type == "internal_transit_out":
             am_vals = self._account_entry_move_internal_transit_out(
                 qty, description, svl_id, cost
@@ -414,6 +449,19 @@ class StockMove(models.Model):
                 am_vals.append(anglosaxon_am_vals)
 
         return am_vals
+
+    def _account_entry_move_internal_transit_in(self, qty, description, svl_id, cost):
+        move = self.with_context(valued_type="internal_transit_in")
+        (
+            journal_id,
+            acc_src,
+            acc_dest,
+            acc_valuation,
+        ) = move._get_accounting_data_for_valuation()
+        am_vals = move._prepare_account_move_vals(
+            acc_src, acc_dest, journal_id, qty, description, svl_id, -1 * cost
+        )
+        return [am_vals]
 
     def _account_entry_move_internal_transit_out(self, qty, description, svl_id, cost):
         move = self.with_context(valued_type="internal_transit_out")
@@ -682,3 +730,55 @@ class StockMove(models.Model):
     def _l10n_ro_filter_svl_on_move_line(self, domain):
         origin_svls = self.env["stock.valuation.layer"].search(domain)
         return origin_svls
+
+    def _get_price_unit(self):
+        price_unit = super()._get_price_unit()
+        if not self.is_l10n_ro_record:
+            return price_unit
+        if self.origin_returned_move_id:
+            return price_unit
+        if self.product_id.cost_method != "average":
+            return price_unit
+        if not self._is_out():
+            return price_unit
+
+        account = (
+            self.product_id.l10n_ro_property_stock_valuation_account_id
+            or self.product_id.categ_id.property_stock_valuation_account_id
+        )
+        if self.location_id.l10n_ro_property_stock_valuation_account_id:
+            account = self.location_id.l10n_ro_property_stock_valuation_account_id
+
+        domain = [
+            ("product_id", "=", self.product_id.id),
+            ("l10n_ro_account_id", "=", account.id),
+            ("id", "not in", self.stock_valuation_layer_ids.ids),
+        ]
+        valuations = self.env["stock.valuation.layer"].read_group(
+            domain,
+            ["value:sum", "quantity:sum"],
+            ["product_id"],
+        )
+        for valuation in valuations:
+            val = round(valuation["value"], 2)
+            quantity = round(valuation["quantity"], 2)
+            if quantity:
+                price_unit = val / quantity
+        return price_unit
+
+    def _get_out_svl_vals(self, forced_quantity):
+        svl_values = super()._get_out_svl_vals(forced_quantity)
+        for svl_value in svl_values:
+            if svl_value["quantity"] >= 0:
+                continue
+            stock_move_id = svl_value["stock_move_id"]
+            for move in self:
+                if (
+                    move.id == stock_move_id
+                    and move.product_id.cost_method == "average"
+                ):
+                    svl_value["unit_cost"] = move._get_price_unit()
+                    svl_value["value"] = svl_value["quantity"] * svl_value["unit_cost"]
+                    _logger.debug(svl_value)
+
+        return svl_values
