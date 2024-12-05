@@ -543,16 +543,16 @@ Date:   Thu Jun 6 07:55:56 2024 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 11f485598669756fc356d6ab74bddcc26da23f2e
+commit 7fc0f90c0a7bf7a551e904add119966848c893bb
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 09:34:33 2024 +0000
+Date:   Wed Dec 4 08:46:19 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (97 of 97 strings)
+    Currently translated at 100.0% (14 of 14 strings)
     
-    Translation: knowledge-13.0/knowledge-13.0-document_page
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-13-0/knowledge-13-0-document_page/it/
+    Translation: knowledge-13.0/knowledge-13.0-document_page_portal
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-13-0/knowledge-13-0-document_page_portal/it/
 
 
 ## dms
