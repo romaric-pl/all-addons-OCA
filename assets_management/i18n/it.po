@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-23 08:16+0000\n"
-"PO-Revision-Date: 2024-09-28 17:06+0000\n"
+"PO-Revision-Date: 2024-12-09 17:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -1876,7 +1876,7 @@ msgstr "Dati azienda incoerenti."
 #: code:addons/assets_management/models/asset_accounting_info.py:0
 #, python-format
 msgid "Incoherent move data."
-msgstr "Dati registrazione incoerenti"
+msgstr "Dati registrazione incoerenti."
 
 #. module: assets_management
 #: code:addons/assets_management/report/asset_journal_xlsx.py:0

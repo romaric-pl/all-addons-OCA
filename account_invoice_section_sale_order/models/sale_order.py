@@ -18,7 +18,7 @@ class SaleOrder(models.Model):
         """
         invoices = super()._create_invoices(grouped=grouped, final=final, date=date)
         for invoice in invoices.sudo():
-            if (
+            if invoice.line_ids and (
                 len(invoice.line_ids.mapped(invoice.line_ids._get_section_grouping()))
                 == 1
             ):
@@ -57,7 +57,9 @@ class SaleOrder(models.Model):
                         )
                     )
                     sequence += 10
-                for move_line in self.env["account.move.line"].browse(move_line_ids):
+                for move_line in (
+                    self.env["account.move.line"].sudo().browse(move_line_ids)
+                ):
                     # Because invoices are already created, this would require
                     # an extra write access in order to read order fields.
                     move_line.sequence = sequence

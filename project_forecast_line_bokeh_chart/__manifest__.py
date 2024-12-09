@@ -3,8 +3,8 @@
 {
     "name": "Project Forecast Lines Bokeh Chart",
     "summary": "Project Forecast Lines Bokeh Chart",
-    "version": "14.0.1.0.1",
-    "author": "Camptocamp SA, Odoo Community Association (OCA)",
+    "version": "14.0.1.0.2",
+    "author": "Camptocamp, Odoo Community Association (OCA)",
     "maintainers": ["ntsirintanis"],
     "license": "AGPL-3",
     "category": "Project",

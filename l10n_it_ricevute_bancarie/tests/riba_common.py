@@ -106,6 +106,7 @@ class TestRibaCommon(common.TransactionCase):
         )
         self.riba_config_sbf_maturation = self.create_config("maturation")
         self.riba_config_sbf_immediate = self.create_config("immediate")
+        self.riba_config_incasso = self.create_config_incasso()
         self.company_bank.codice_sia = "AA555"
 
     def _create_service_due_cost(self):
@@ -237,6 +238,17 @@ class TestRibaCommon(common.TransactionCase):
                         },
                     )
                 ],
+            }
+        )
+
+    def create_config_incasso(self):
+        return self.env["riba.configuration"].create(
+            {
+                "name": "After Collection",
+                "type": "incasso",
+                "bank_id": self.company_bank.id,
+                "acceptance_journal_id": self.bank_journal.id,
+                "acceptance_account_id": self.sbf_effects.id,
             }
         )
 

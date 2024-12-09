@@ -14,4 +14,7 @@
   * Giovanni Serra <giovanni@gslab.it>
   * Eduard Brahas <eduard@ooops404.com>
 
+- `TAKOBI <https://takobi.online>`_:
+  - Simone Rubino <sir@takobi.online>
+
 * Nextev Srl <odoo@nextev.it>

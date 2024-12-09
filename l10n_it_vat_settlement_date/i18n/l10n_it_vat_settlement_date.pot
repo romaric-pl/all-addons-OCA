@@ -23,6 +23,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_account_move_line__display_name
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_account_tax__display_name
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_account_vat_period_end_statement__display_name
+#: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_comunicazione_liquidazione_vp__display_name
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_report_account_vat_period_end_statement_vat_statement__display_name
 msgid "Display Name"
 msgstr ""
@@ -32,6 +33,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_account_move_line__id
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_account_tax__id
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_account_vat_period_end_statement__id
+#: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_comunicazione_liquidazione_vp__id
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_report_account_vat_period_end_statement_vat_statement__id
 msgid "ID"
 msgstr ""
@@ -51,6 +53,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_account_move_line____last_update
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_account_tax____last_update
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_account_vat_period_end_statement____last_update
+#: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_comunicazione_liquidazione_vp____last_update
 #: model:ir.model.fields,field_description:l10n_it_vat_settlement_date.field_report_account_vat_period_end_statement_vat_statement____last_update
 msgid "Last Modified on"
 msgstr ""
@@ -76,4 +79,9 @@ msgstr ""
 #. module: l10n_it_vat_settlement_date
 #: model:ir.model,name:l10n_it_vat_settlement_date.model_account_vat_period_end_statement
 msgid "VAT period end statement"
+msgstr ""
+
+#. module: l10n_it_vat_settlement_date
+#: model:ir.model,name:l10n_it_vat_settlement_date.model_comunicazione_liquidazione_vp
+msgid "VAT statement communication - VP table"
 msgstr ""

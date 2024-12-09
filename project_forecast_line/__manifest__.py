@@ -3,8 +3,8 @@
 {
     "name": "Project Forecast Lines",
     "summary": "Project Forecast Lines",
-    "version": "14.0.1.0.4",
-    "author": "Camptocamp SA, Odoo Community Association (OCA)",
+    "version": "14.0.1.0.5",
+    "author": "Camptocamp, Odoo Community Association (OCA)",
     "maintainers": ["ntsirintanis"],
     "license": "AGPL-3",
     "category": "Project",
