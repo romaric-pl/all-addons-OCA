@@ -16,6 +16,11 @@
                 />
                 <field name="team_id" groups="fieldservice.group_fsm_team" />
                 <field name="company_id" groups="base.group_multi_company" />
+                <field
+                    name="company_id"
+                    column_invisible="1"
+                    groups="!base.group_multi_company"
+                />
             </tree>
         </field>
     </record>
@@ -36,6 +41,11 @@
                                 name="company_id"
                                 options="{'no_create': True}"
                                 groups="base.group_multi_company"
+                            />
+                            <field
+                                name="company_id"
+                                invisible="1"
+                                groups="!base.group_multi_company"
                             />
                         </group>
                         <group>

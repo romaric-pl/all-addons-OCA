@@ -8,6 +8,7 @@ class FSMTeam(models.Model):
     _name = "fsm.team"
     _description = "Field Service Team"
     _inherit = ["mail.thread", "mail.activity.mixin"]
+    _check_company_auto = True
 
     def _default_stages(self):
         return self.env["fsm.stage"].search([("is_default", "=", True)])
@@ -60,12 +61,14 @@ class FSMTeam(models.Model):
         "stage_id",
         string="Stages",
         default=_default_stages,
+        check_company=True,
     )
     order_ids = fields.One2many(
         "fsm.order",
         "team_id",
         string="Orders",
         domain=[("stage_id.is_closed", "=", False)],
+        check_company=True,
     )
     order_count = fields.Integer(compute="_compute_order_count", string="Orders Count")
     order_need_assign_count = fields.Integer(

@@ -11,6 +11,7 @@ class FSMStage(models.Model):
     _name = "fsm.stage"
     _description = "Field Service Stage"
     _order = "sequence, name, id"
+    _check_company_auto = True
 
     def _default_team_ids(self):
         default_team_id = self.env.context.get("default_team_id")
@@ -63,6 +64,7 @@ class FSMStage(models.Model):
         "team_id",
         string="Teams",
         default=lambda self: self._default_team_ids(),
+        check_company=True,
     )
 
     def get_color_information(self):

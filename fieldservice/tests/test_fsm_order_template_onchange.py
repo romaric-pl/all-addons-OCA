@@ -29,6 +29,7 @@ class TestTemplateOnchange(test_fsm_order.TestFSMOrder):
                 "category_ids": [(6, 0, categories)],
                 "duration": 2.25,
                 "type_id": self.fsm_type_a.id,
+                "company_id": self.env.company.id,
             }
         )
         self.fsm_template_2 = self.env["fsm.template"].create(
@@ -38,6 +39,7 @@ class TestTemplateOnchange(test_fsm_order.TestFSMOrder):
                 "category_ids": [(6, 0, categories)],
                 "duration": 2.25,
                 "team_id": self.fsm_team_a.id,
+                "company_id": self.env.company.id,
             }
         )
         self.fso = self.Order.create(

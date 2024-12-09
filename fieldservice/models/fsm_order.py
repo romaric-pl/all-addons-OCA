@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
+from odoo.tools import format_date
 
 from . import fsm_stage
 
@@ -13,6 +14,7 @@ class FSMOrder(models.Model):
     _name = "fsm.order"
     _description = "Field Service Order"
     _inherit = ["mail.thread", "mail.activity.mixin"]
+    _check_company_auto = True
 
     def _default_stage_id(self):
         stage = self.env["fsm.stage"].search(
@@ -49,11 +51,6 @@ class FSMOrder(models.Model):
                 duration = delta.total_seconds() / 3600
             rec.duration = duration
 
-    @api.depends("stage_id")
-    def _get_stage_color(self):
-        """Get stage color"""
-        self.custom_color = self.stage_id.custom_color or "#FFFFFF"
-
     def _track_subtype(self, init_values):
         self.ensure_one()
         if "stage_id" in init_values:
@@ -71,6 +68,7 @@ class FSMOrder(models.Model):
         tracking=True,
         index=True,
         copy=False,
+        check_company=True,
         group_expand="_read_group_stage_ids",
         default=lambda self: self._default_stage_id(),
     )
@@ -90,6 +88,7 @@ class FSMOrder(models.Model):
         "tag_id",
         string="Tags",
         help="Classify and analyze your orders",
+        check_company=True,
     )
     color = fields.Integer("Color Index", default=0)
     team_id = fields.Many2one(
@@ -99,6 +98,7 @@ class FSMOrder(models.Model):
         index=True,
         required=True,
         tracking=True,
+        check_company=True,
     )
 
     # Request
@@ -153,7 +153,11 @@ class FSMOrder(models.Model):
     request_late = fields.Datetime(string="Latest Request Date")
     description = fields.Text()
 
-    person_ids = fields.Many2many("fsm.person", string="Field Service Workers")
+    person_ids = fields.Many2many(
+        "fsm.person",
+        string="Field Service Workers",
+        check_company=True,
+    )
 
     @api.onchange("location_id")
     def _onchange_location_id_customer(self):
@@ -405,19 +409,24 @@ class FSMOrder(models.Model):
         return s
 
     @api.constrains("scheduled_date_start")
-    def check_day(self):
+    def _check_scheduled_date_calendar_leaves(self):
         for rec in self:
             if not rec.scheduled_date_start:
                 continue
-
             holidays = self.env["resource.calendar.leaves"].search(
                 [
                     ("date_from", ">=", rec.scheduled_date_start),
                     ("date_to", "<=", rec.scheduled_date_end),
-                ]
+                ],
             )
             if holidays:
-                msg = "{} is a holiday {}".format(
-                    rec.scheduled_date_start.date(), holidays[0].name
+                raise ValidationError(
+                    _(
+                        "%(date)s is a holiday: %(holidays)s",
+                        date=format_date(
+                            self.env,
+                            fields.Date.context_today(self, rec.scheduled_date_start),
+                        ),
+                        holidays=", ".join(map(str, holidays.mapped("name"))),
+                    )
                 )
-                raise ValidationError(_(msg))

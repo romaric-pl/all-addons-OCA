@@ -86,6 +86,11 @@
                                 options="{'no_create': True}"
                                 groups="base.group_multi_company"
                             />
+                            <field
+                                name="company_id"
+                                invisible="1"
+                                groups="!base.group_multi_company"
+                            />
                         </group>
                     </group>
                     <group string="Description" name="description_grp">
@@ -223,6 +228,11 @@
                 <field name="person_id" />
                 <field name="stage_id" string="Stage" />
                 <field name="company_id" groups="base.group_multi_company" />
+                <field
+                    name="company_id"
+                    column_invisible="1"
+                    groups="!base.group_multi_company"
+                />
             </tree>
         </field>
     </record>

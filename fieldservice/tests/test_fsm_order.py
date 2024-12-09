@@ -137,7 +137,6 @@ class TestFSMOrder(TransactionCase):
             f.date_end = f.date_start + timedelta(hours=80)
             f.request_early = fields.Datetime.today()
         order2 = f.save()
-        order._get_stage_color()
         view_id = "fieldservice.fsm_equipment_form_view"
         with Form(self.env["fsm.equipment"], view=view_id) as f:
             f.name = "Equipment 1"
