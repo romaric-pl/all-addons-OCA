@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_bom_produce_delay
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-12-09 10:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: mrp_bom_produce_delay
+#: model:ir.model.fields,help:mrp_bom_produce_delay.field_mrp_bom__produce_delay
+msgid ""
+"Average lead time in days to manufacture this Bill Of Material. Changes here"
+" will affect Product Produce Delay."
+msgstr ""
+"Tempo medio di consegna in giorni per la produzione di questa distinta base. "
+"Le modifiche qui influiranno sul ritardo di produzione del prodotto."
+
+#. module: mrp_bom_produce_delay
+#: model:ir.model,name:mrp_bom_produce_delay.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Distinta base"
+
+#. module: mrp_bom_produce_delay
+#: model_terms:ir.ui.view,arch_db:mrp_bom_produce_delay.view_mrp_bom_form_produce_delay
+msgid "Lead Time"
+msgstr "Tempo di attesa"
+
+#. module: mrp_bom_produce_delay
+#: model:ir.model.fields,field_description:mrp_bom_produce_delay.field_mrp_bom__produce_delay
+msgid "Produce Delay"
+msgstr "Genera ritardo"
+
+#. module: mrp_bom_produce_delay
+#: model_terms:ir.ui.view,arch_db:mrp_bom_produce_delay.view_mrp_bom_form_produce_delay
+msgid "days"
+msgstr "giorni"

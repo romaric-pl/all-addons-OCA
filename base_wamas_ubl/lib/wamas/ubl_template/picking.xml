@@ -139,18 +139,12 @@
 		</cac:Shipment>
 		<cbc:ID><t t-raw="line.IvAusp_HostPosNr" /></cbc:ID>
 		<cbc:DeliveredQuantity
-            t-if="line.Mngs_Mng"
             t-att-unitCode="line.IvArt_Bestand_Einheit"
             unitCodeListAgencyName="WAMAS"
         >
-		<t t-raw="line.Mngs_Mng" />
-		</cbc:DeliveredQuantity>
-		<cbc:DeliveredQuantity
-            t-if="line.IvAusp_LiefMngsWamas_Mng"
-            t-att-unitCode="line.IvArt_Bestand_Einheit"
-            unitCodeListAgencyName="WAMAS"
-        >
-		<t t-raw="line.IvAusp_LiefMngsWamas_Mng" />
+		<t
+                t-raw="hasattr(line,'Mngs_Mng') and line.Mngs_Mng or (hasattr(line, 'IvAusp_LiefMngsWamas_Mng') and line.IvAusp_LiefMngsWamas_Mng) or 0.0"
+            />
 		</cbc:DeliveredQuantity>
 		<cac:OrderLineReference>
 			<cbc:LineID />

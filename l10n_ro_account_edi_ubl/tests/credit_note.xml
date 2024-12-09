@@ -9,6 +9,7 @@
     <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
     <cbc:ID>FBRAO2093</cbc:ID>
     <cbc:IssueDate>2022-09-01</cbc:IssueDate>
+    <cbc:TaxCurrencyCode>RON</cbc:TaxCurrencyCode>
     <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
     <cbc:DocumentCurrencyCode>RON</cbc:DocumentCurrencyCode>
     <cbc:BuyerReference>SCOALA GIMNAZIALA COMUNA FOENI</cbc:BuyerReference>
@@ -81,7 +82,7 @@
         </cac:Party>
     </cac:AccountingCustomerParty>
     <cac:PaymentMeans>
-        <cbc:PaymentMeansCode name="credit transfer">30</cbc:PaymentMeansCode>
+        <cbc:PaymentMeansCode name="standing agreement">57</cbc:PaymentMeansCode>
         <cbc:PaymentID>FBRAO2093</cbc:PaymentID>
           <cac:PayeeFinancialAccount>
           <cbc:ID>RO75TREZ0615069XXX001573</cbc:ID>

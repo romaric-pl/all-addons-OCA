@@ -10,6 +10,7 @@
     <cbc:ID>FBRAO2094</cbc:ID>
     <cbc:IssueDate>2022-09-01</cbc:IssueDate>
     <cbc:DueDate>2022-09-01</cbc:DueDate>
+    <cbc:TaxCurrencyCode>RON</cbc:TaxCurrencyCode>
     <cbc:InvoiceTypeCode>389</cbc:InvoiceTypeCode>
     <cbc:DocumentCurrencyCode>RON</cbc:DocumentCurrencyCode>
     <cbc:BuyerReference>SCOALA GIMNAZIALA COMUNA FOENI</cbc:BuyerReference>
@@ -82,7 +83,7 @@
         </cac:Party>
     </cac:AccountingCustomerParty>
     <cac:PaymentMeans>
-        <cbc:PaymentMeansCode name="credit transfer">30</cbc:PaymentMeansCode>
+        <cbc:PaymentMeansCode name="standing agreement">57</cbc:PaymentMeansCode>
 
         <cbc:PaymentID>FBRAO2094</cbc:PaymentID>
           <cac:PayeeFinancialAccount>
