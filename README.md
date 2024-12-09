@@ -1150,16 +1150,11 @@ Date:   Mon Nov 25 18:44:55 2024 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 4d3a3ca88dd1c7e8189777526982d945d2ca33d9
+commit 4b5eb936ed7c327dcfecfcc3440f22106474290f
 Author: Luis Felipe Miléo <mileo@kmee.com.br>
-Date:   Fri Sep 6 12:22:47 2024 +0000
+Date:   Fri Dec 6 16:47:50 2024 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
-    
-    Currently translated at 100.0% (27 of 27 strings)
-    
-    Translation: stock-logistics-reporting-12.0/stock-logistics-reporting-12.0-stock_inventory_turnover_report
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-12-0/stock-logistics-reporting-12-0-stock_inventory_turnover_report/pt_BR/
+    Added translation using Weblate (Portuguese)
 
 
 ## rma
