@@ -434,9 +434,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 7b9f061278e8b2e09dbce7ba0a6a8b9b8910f478
+commit a787f709b192fa93d7d63e9d31c52394195b6517
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 18 14:36:43 2024 +0000
+Date:   Fri Dec 6 15:58:13 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1341,16 +1341,16 @@ Date:   Wed Sep 18 07:08:29 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit eaa6a2750f5e5f6e2566a646829bbbc36887e87b
+commit 702c19ef4b027334930d02509e6a814a206766d1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 29 10:45:52 2024 +0000
+Date:   Mon Dec 9 07:42:09 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (127 of 127 strings)
+    Currently translated at 100.0% (168 of 168 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_production_request/it/
+    Translation: manufacture-13.0/manufacture-13.0-mrp_multi_level
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_multi_level/it/
 
 
 ## manufacture-reporting
