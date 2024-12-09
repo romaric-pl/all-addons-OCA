@@ -478,8 +478,9 @@ class AccountEdiXmlCIUSRO(models.Model):
             invoice, name, phone, mail, vat, country_code
         )
         if not invoice.partner_id.is_company and name and vat:
-            invoice.partner_id.is_company = True
-            invoice.partner_id.ro_vat_change()
+            if not invoice.partner_id.parent_id:
+                invoice.partner_id.is_company = True
+                invoice.partner_id.ro_vat_change()
         return res
 
     def _import_fill_invoice_form(self, journal, tree, invoice_form, qty_factor):
