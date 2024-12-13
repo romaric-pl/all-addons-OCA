@@ -12,7 +12,7 @@
         <field name="standard_deviation_exclude_factor">3</field>
         <field name="safety_factor">0.3</field>
         <field name="number_days_qty_in_stock">2</field>
-        <field name="exclude_weekends">1</field>
+        <field name="exclude_weekends">0</field>
         <field name="warehouse_id" ref="stock.warehouse0" />
         <field name="company_id" ref="base.main_company" />
     </record>
@@ -26,7 +26,7 @@
         <field name="standard_deviation_exclude_factor">3</field>
         <field name="safety_factor">0.3</field>
         <field name="number_days_qty_in_stock">2</field>
-        <field name="exclude_weekends">1</field>
+        <field name="exclude_weekends">0</field>
         <field name="warehouse_id" ref="stock.warehouse0" />
         <field name="company_id" ref="base.main_company" />
     </record>
@@ -40,7 +40,7 @@
         <field name="standard_deviation_exclude_factor">3</field>
         <field name="safety_factor">0.3</field>
         <field name="number_days_qty_in_stock">2</field>
-        <field name="exclude_weekends">1</field>
+        <field name="exclude_weekends">0</field>
         <field name="warehouse_id" ref="stock.warehouse0" />
         <field name="company_id" ref="base.main_company" />
     </record>

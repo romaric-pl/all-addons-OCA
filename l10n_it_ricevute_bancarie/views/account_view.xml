@@ -150,6 +150,10 @@
                         domain="[('partner_id','=', commercial_partner_id)]"
                     />
                 </div>
+
+            </xpath>
+
+            <xpath expr="//label[@for='invoice_payment_term_id']" position="before">
                 <field
                     name="is_unsolved"
                     string="Past Due"

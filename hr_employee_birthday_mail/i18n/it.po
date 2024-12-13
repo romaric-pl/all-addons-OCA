@@ -150,8 +150,8 @@ msgid ""
 "            "
 msgstr ""
 "<div style=\"background-color:#f2f3f5; padding:20px;\">\n"
-"                    <h2 style=\"color:#4267b2; text-align:center;\">🎂 Salve, "
-"${object.name}! È il tuo giorno speciale! 🎂</h2>\n"
+"                    <h2 style=\"color:#4267b2; text-align:center;\">🎂 "
+"Salve, ${object.name}! È il tuo giorno speciale! 🎂</h2>\n"
 "                    <p style=\"font-size:16px; text-align:center;\">\n"
 "                        Il compleanno è il modo che ha la natura per dirci "
 "ti mangiare più torte e gelati. E, visto che è il tuo compleanno, sentiamo "
@@ -191,14 +191,14 @@ msgid ""
 "because it's <b>${ctx['birthday_employee']}</b>'s birthday! 🎂</p>\n"
 "                    <p style=\"font-size:16px; text-align:center;\">So, "
 "let's crank up the joy and celebration in the office today. Don't forget to "
-"wish them a happy birthday and make this day even more special for them! 🎈🎁</"
-"p>\n"
+"wish them a happy birthday and make this day even more special for them! 🎈🎁"
+"</p>\n"
 "                </div>\n"
 "            "
 msgstr ""
 "<div style=\"background-color:#f2f3f5; padding:20px;\">\n"
-"                    <h2 style=\"color:#4267b2; text-align:center;\">🎉 Avviso "
-"compleanno 🎉</h2>\n"
+"                    <h2 style=\"color:#4267b2; text-align:center;\">🎉 "
+"Avviso compleanno 🎉</h2>\n"
 "                    <p style=\"font-size:16px; text-align:center;\">Salve "
 "${object.name},</p>\n"
 "                    <p style=\"font-size:16px; text-align:center;\">Oggi c'è "
@@ -242,8 +242,9 @@ msgid ""
 "            "
 msgstr ""
 "<div style=\"background-color:#f2f3f5; padding:20px;\">\n"
-"                    <h2 style=\"color:#4267b2; text-align:center;\">🎉 Avviso "
-"compleanno: ${ctx['birthday_employee']} è un anno più saggio! 🎉</h2>\n"
+"                    <h2 style=\"color:#4267b2; text-align:center;\">🎉 "
+"Avviso compleanno: ${ctx['birthday_employee']} è un anno più saggio! 🎉</"
+"h2>\n"
 "                    <p style=\"font-size:16px; text-align:center;\">Salve, "
 "${object.name},</p>\n"
 "                    <p style=\"font-size:16px; text-align:center;\">\n"
@@ -324,6 +325,7 @@ msgstr ""
 
 #. module: hr_employee_birthday_mail
 #: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_hr_employee__allow_birthday_wishes
+#: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_res_users__allow_birthday_wishes
 msgid "Allow Birthday Wishes"
 msgstr "Attiva gli auguri di compleanno"
 
@@ -341,6 +343,7 @@ msgstr "Controlla compleanni dipendenti"
 
 #. module: hr_employee_birthday_mail
 #: model:ir.model.fields,help:hr_employee_birthday_mail.field_hr_employee__allow_birthday_wishes
+#: model:ir.model.fields,help:hr_employee_birthday_mail.field_res_users__allow_birthday_wishes
 msgid ""
 "Check this box if you want to allow birthday wishes from our company and "
 "allow the others to be notified of your birthday."
@@ -350,6 +353,7 @@ msgstr ""
 
 #. module: hr_employee_birthday_mail
 #: model:ir.model.fields,help:hr_employee_birthday_mail.field_hr_employee__notify_others_birthday
+#: model:ir.model.fields,help:hr_employee_birthday_mail.field_res_users__notify_others_birthday
 msgid ""
 "Check this box if you want to be notified about other coworkers' birthdays."
 msgstr ""
@@ -358,6 +362,7 @@ msgstr ""
 
 #. module: hr_employee_birthday_mail
 #: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_res_users__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -368,18 +373,26 @@ msgstr "Dipendente"
 
 #. module: hr_employee_birthday_mail
 #: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_hr_employee__id
+#: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_res_users__id
 msgid "ID"
 msgstr "ID"
 
 #. module: hr_employee_birthday_mail
 #: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_res_users____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
 
 #. module: hr_employee_birthday_mail
 #: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_hr_employee__notify_others_birthday
+#: model:ir.model.fields,field_description:hr_employee_birthday_mail.field_res_users__notify_others_birthday
 msgid "Notify Others Birthday"
 msgstr "Notifica altri compleanni"
+
+#. module: hr_employee_birthday_mail
+#: model:ir.model,name:hr_employee_birthday_mail.model_res_users
+msgid "Users"
+msgstr ""
 
 #. module: hr_employee_birthday_mail
 #: model:mail.template,subject:hr_employee_birthday_mail.email_template_birthday_3

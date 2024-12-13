@@ -282,6 +282,7 @@ class AccountMove(models.Model):
                     {"invoice_line_ids": [(2, id, 0) for id in due_cost_line_ids]}
                 )
                 invoice._recompute_tax_lines()
+            invoice.is_unsolved = False
         return invoice
 
     def get_due_cost_line_ids(self):
