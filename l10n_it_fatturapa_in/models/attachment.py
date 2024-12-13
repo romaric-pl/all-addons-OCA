@@ -77,6 +77,24 @@ class FatturaPAAttachmentIn(models.Model):
         compute="_compute_linked_invoice_id_xml",
         store=True,
     )
+    price_decimal_digits = fields.Integer(
+        string="Prices decimal digits",
+        help="Value used during import of this e-invoice "
+        'to override "Product Price" precision.',
+        readonly=True,
+    )
+    quantity_decimal_digits = fields.Integer(
+        string="Quantities decimal digits",
+        help="Value used during import of this e-invoice "
+        'to override "Product Unit of Measure" precision.',
+        readonly=True,
+    )
+    discount_decimal_digits = fields.Integer(
+        string="Discounts decimal digits",
+        help="Value used during import of this e-invoice "
+        'to override "Discount" precision.',
+        readonly=True,
+    )
 
     _sql_constraints = [
         (

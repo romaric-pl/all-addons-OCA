@@ -11,7 +11,7 @@
 
 {
     "name": "Account Payment Returns",
-    "version": "16.0.1.2.0",
+    "version": "16.0.1.2.1",
     "summary": "Manage the return of your payments",
     "license": "AGPL-3",
     "depends": ["mail", "account"],

@@ -64,11 +64,11 @@ def _min(*args):
     >>> min()
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?
-    TypeError: min expected 1 arguments, got 0
+    TypeError: min expected at least 1 argument, got 0
     >>> _min()
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?
-    TypeError: min expected 1 arguments, got 0
+    TypeError: min expected at least 1 argument, got 0
     >>> min([])
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?
@@ -107,11 +107,11 @@ def _max(*args):
     >>> max()
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?
-    TypeError: max expected 1 arguments, got 0
+    TypeError: max expected at least 1 argument, got 0
     >>> _max()
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?
-    TypeError: max expected 1 arguments, got 0
+    TypeError: max expected at least 1 argument, got 0
     >>> max([])
     Traceback (most recent call last):
       File "<stdin>", line 1, in ?

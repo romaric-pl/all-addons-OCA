@@ -26,9 +26,28 @@ msgid "Apply"
 msgstr "Applica"
 
 #. module: stock_inventory_discrepancy
+#: model:ir.model.fields,help:stock_inventory_discrepancy.field_res_company__inventory_discrepancy_enable
+#: model:ir.model.fields,help:stock_inventory_discrepancy.field_res_config_settings__inventory_discrepancy_enable
+#: model_terms:ir.ui.view,arch_db:stock_inventory_discrepancy.view_stock_config_settings
+msgid ""
+"Block validation of the inventory adjustment if discrepancy exceeds the "
+"threshold."
+msgstr ""
+
+#. module: stock_inventory_discrepancy
 #: model_terms:ir.ui.view,arch_db:stock_inventory_discrepancy.confirm_discrepancy_wizard
 msgid "Cancel"
 msgstr "Annulla"
+
+#. module: stock_inventory_discrepancy
+#: model:ir.model,name:stock_inventory_discrepancy.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: stock_inventory_discrepancy
+#: model:ir.model,name:stock_inventory_discrepancy.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
 
 #. module: stock_inventory_discrepancy
 #: model:ir.model,name:stock_inventory_discrepancy.model_confirm_discrepancy_wiz
@@ -79,6 +98,12 @@ msgstr "Ha una discrepanza eccessiva"
 #: model:ir.model.fields,field_description:stock_inventory_discrepancy.field_confirm_discrepancy_wiz__id
 msgid "ID"
 msgstr "ID"
+
+#. module: stock_inventory_discrepancy
+#: model:ir.model.fields,field_description:stock_inventory_discrepancy.field_res_company__inventory_discrepancy_enable
+#: model:ir.model.fields,field_description:stock_inventory_discrepancy.field_res_config_settings__inventory_discrepancy_enable
+msgid "Inventory Discrepancy Control"
+msgstr ""
 
 #. module: stock_inventory_discrepancy
 #: model:ir.model,name:stock_inventory_discrepancy.model_stock_location

@@ -45,6 +45,7 @@ class MailThread(models.AbstractModel):
         del message_dict["bounced_partner"]
         del message_dict["bounced_msg_id"]
         del message_dict["bounced_message"]
+        del message_dict["x_odoo_message_id"]
 
     @api.model
     def message_route(

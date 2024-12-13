@@ -1,4 +1,5 @@
-from odoo import fields, models
+from odoo import api, fields, models
+from odoo.tools import frozendict
 
 
 class AccountMoveLine(models.Model):
@@ -8,6 +9,29 @@ class AccountMoveLine(models.Model):
         comodel_name="account.analytic.tag",
         string="Analytic Tags",
     )
+
+    @api.depends("analytic_tag_ids")
+    def _compute_all_tax(self):
+        # Include the analytic tags in the tax move line when applicable
+        res = None
+        for line in self:
+            res = super(AccountMoveLine, line)._compute_all_tax()
+            new_compute_all_tax = {}
+            for tax_key, tax_vals in line.compute_all_tax.items():
+                tax = (
+                    self.env["account.tax.repartition.line"]
+                    .browse(tax_key.get("tax_repartition_line_id", False))
+                    .tax_id
+                )
+                if tax.analytic:
+                    new_key = tax_key.copy()
+                    new_key["analytic_tag_ids"] = [
+                        (6, 0, [x.id for x in line.analytic_tag_ids])
+                    ]
+                    tax_key = frozendict(new_key)
+                new_compute_all_tax[tax_key] = tax_vals
+            line.compute_all_tax = new_compute_all_tax
+        return res
 
     def _prepare_analytic_lines(self):
         """Set tags to the records that have the same or no analytical account."""

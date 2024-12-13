@@ -170,19 +170,24 @@
                                 <p
                                 > The following special elements are recognized in the expressions
                                     to compute accounting data: <code
-                                    >{bal|crd|deb|pbal|nbal}{pieu}[account
+                                    >{bal|crd|deb|pbal|nbal|fld}{pieu}(.fieldname)[account
                                     selector][journal items domain]</code>. </p>
                                 <ul>
                                     <li>
                                         <code>bal</code>, <code>crd</code>, <code
                                         >deb</code>, <code>
-                                        pbal</code>, <code
-                                        >nbal</code> : balance, debit, credit,
-                                        positive balance, negative balance. </li>
+                                        pbal</code>, <code>nbal</code>, <code
+                                        >fld</code> : balance, debit, credit,
+                                        positive balance, negative balance,
+                                        other numerical field. </li>
                                     <li>
                                         <code>p</code>, <code>i</code>, <code
                                         >e</code> : respectively variation over the period,
                                         initial balance, ending balance </li>
+                                    <li>when <code
+                                        >fld</code> is used : a field name specifier
+                                        must be provided (e.g. <code
+                                        >fldp.quantity</code></li>
                                     <li> The <b
                                         >account selector</b> is a like expression on the
                                         account code (eg <code

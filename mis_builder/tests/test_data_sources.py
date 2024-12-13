@@ -35,6 +35,14 @@ class TestMisReportInstanceDataSources(common.TransactionCase):
         move._post()
         return move
 
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        # Perform the tests with a brand new company to avoid intrusive data from other
+        # modules added to the default company
+        cls.company = cls.env["res.company"].create({"name": "Company Test"})
+        cls.env.user.company_id = cls.company
+
     def setUp(self):
         super().setUp()
         self.account_model = self.env["account.account"]

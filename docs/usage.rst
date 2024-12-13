@@ -169,15 +169,19 @@ Building your KPI
 Expressions can be any valid python expressions.
 
 The following special elements are recognized in the expressions to compute accounting
-data: {bal|crd|deb}{pieu}[account selector][journal items domain].
+data: ``{bal|crd|deb|pbal|nbal|fld}{pieu}(.fieldname)?[account selector][journal items domain]``.
 
-* bal, crd, deb: balance, debit, credit.
-* p, i, e: respectively variation over the period, initial balance, ending balance
-* The account selector is a like expression on the account code (eg 70%, etc).
+* ``bal``, ``crd``, ``deb``: balance, debit, credit.
+* ``pbal``, ``nbal``: positive and negative balances only
+* ``fld``: custom numerical field
+* ``p``, ``i``, ``e``: respectively variation over the period, initial balance, ending balance
+* .fieldname: when ``fld`` is used, the field name to use (eg ``fldp.quantity``).
+* The account selector is a like expression on the account code (eg ``[70%]``, etc),
+  or a domain over accounts (eg ``[("tag_ids.name", "=", "mytag")]``).
 * The journal items domain is an Odoo domain filter on journal items.
-* balu[]: (u for unallocated) is a special expression that shows the unallocated
+* ``balu[]``: (u for unallocated) is a special expression that shows the unallocated
   profit/loss of previous fiscal years.
-* Expression can also involve other KPI and query results by name (eg kpi1 + kpi2).
+* Expression can also involve other KPI and query results by name (eg ``kpi1 + kpi2``).
 
 Additionally following variables are available in the evaluation context:
 
@@ -188,16 +192,18 @@ Additionally following variables are available in the evaluation context:
 
 Examples
 ********
-* bal[70]: variation of the balance of account 70 over the period (it is the same as balp[70].
-* bali[70,60]: initial balance of accounts 70 and 60.
-* bale[1%]: balance of accounts starting with 1 at end of period.
-* crdp[40%]: sum of all credits on accounts starting with 40 during the period.
-* debp[55%][('journal_id.code', '=', 'BNK1')]: sum of all debits on accounts 55 and
+* ``bal[70]``: variation of the balance of account 70 over the period (it is the same as balp[70].
+* ``bali[70,60]``: initial balance of accounts 70 and 60.
+* ``bale[1%]``: balance of accounts starting with 1 at end of period.
+* ``crdp[40%]``: sum of all credits on accounts starting with 40 during the period.
+* ``debp[55%][('journal_id.code', '=', 'BNK1')]``: sum of all debits on accounts 55 and
   journal BNK1 during the period.
-* balp[('user_type_id', '=', ref('account.data_account_type_receivable').id)][]:
+* ``balp[('user_type_id', '=', ref('account.data_account_type_receivable').id)][]``:
   variation of the balance of all receivable accounts over the period.
-* balp[][('tax_line_id.tag_ids', '=', ref('l10n_be.tax_tag_56').id)]: balance of move
+* ``balp[][('tax_line_id.tag_ids', '=', ref('l10n_be.tax_tag_56').id)]``: balance of move
   lines related to tax grid 56.
+* ``fldp.quantity[60%]``: sum of the quantity field of all move lines on accounts starting
+  with 60.
 
 Expansion of Account Detail
 ---------------------------

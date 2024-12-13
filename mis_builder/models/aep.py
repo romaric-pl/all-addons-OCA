@@ -12,7 +12,6 @@ from odoo.tools.float_utils import float_is_zero
 from odoo.tools.safe_eval import datetime, dateutil, safe_eval, time
 
 from .accounting_none import AccountingNone
-from .simple_array import SimpleArray
 
 _logger = logging.getLogger(__name__)
 
@@ -24,15 +23,65 @@ def _is_domain(s):
     return _DOMAIN_START_RE.match(s)
 
 
+class Accumulator:
+    """A simple class to accumulate debit, credit and custom field values.
+
+    >>> acc1 = Accumulator(["f1", "f2"])
+    >>> acc1.debit
+    AccountingNone
+    >>> acc1.credit
+    AccountingNone
+    >>> acc1.custom_fields
+    {'f1': AccountingNone, 'f2': AccountingNone}
+    >>> acc1.add_debit_credit(10, 20)
+    >>> acc1.debit, acc1.credit
+    (10, 20)
+    >>> acc1.add_custom_field("f1", 10)
+    >>> acc1.custom_fields
+    {'f1': 10, 'f2': AccountingNone}
+    >>> acc2 = Accumulator(["f1", "f2"])
+    >>> acc2.add_debit_credit(21, 31)
+    >>> acc2.add_custom_field("f2", 41)
+    >>> acc1 += acc2
+    >>> acc1.debit, acc1.credit
+    (31, 51)
+    >>> acc1.custom_fields
+    {'f1': 10, 'f2': 41}
+    """
+
+    def __init__(self, custom_field_names=()):
+        self.debit = AccountingNone
+        self.credit = AccountingNone
+        self.custom_fields = {
+            custom_field: AccountingNone for custom_field in custom_field_names
+        }
+
+    def add_debit_credit(self, debit, credit):
+        self.debit += debit
+        self.credit += credit
+
+    def add_custom_field(self, field, value):
+        self.custom_fields[field] += value
+
+    def __iadd__(self, other):
+        self.debit += other.debit
+        self.credit += other.credit
+        for field in self.custom_fields:
+            self.custom_fields[field] += other.custom_fields[field]
+        return self
+
+
 class AccountingExpressionProcessor:
     """Processor for accounting expressions.
 
-    Expressions of the form <field><mode>[accounts][optional move line domain]
+    Expressions of the form
+    <field><mode>(.fieldname)?[accounts][optional move line domain]
     are supported, where:
         * field is bal, crd, deb, pbal (positive balances only),
-          nbal (negative balance only)
+          nbal (negative balance only), fld (custom field)
         * mode is i (initial balance), e (ending balance),
           p (moves over period)
+        * .fieldname is used only with fldp and specifies the field name to sum
         * there is also a special u mode (unallocated P&L) which computes
           the sum from the beginning until the beginning of the fiscal year
           of the period; it is only meaningful for P&L accounts
@@ -46,6 +95,7 @@ class AccountingExpressionProcessor:
           over the period (it is the same as balp[70]);
         * bali[70,60]: balance of accounts 70 and 60 at the start of period;
         * bale[1%]: balance of accounts starting with 1 at end of period.
+        * fldp.quantity[60%]: sum of the quantity field of moves on accounts 60
 
     How to use:
         * repeatedly invoke parse_expr() for each expression containing
@@ -77,8 +127,9 @@ class AccountingExpressionProcessor:
     MODE_UNALLOCATED = "u"
 
     _ACC_RE = re.compile(
-        r"(?P<field>\bbal|\bpbal|\bnbal|\bcrd|\bdeb)"
+        r"(?P<field>\bbal|\bpbal|\bnbal|\bcrd|\bdeb|\bfld)"
         r"(?P<mode>[piseu])?"
+        r"(?P<fld_name>\.[a-zA-Z0-9_]+)?"
         r"\s*"
         r"(?P<account_sel>_[a-zA-Z0-9]+|\[.*?\])"
         r"\s*"
@@ -110,6 +161,8 @@ class AccountingExpressionProcessor:
         # a first query to get the initial balance and another
         # to get the variation, so it's a bit slower
         self.smart_end = True
+        # custom field to query and sum
+        self._custom_fields = set()
         # Account model
         self._account_model = self.env[account_model].with_context(active_test=False)
 
@@ -129,7 +182,7 @@ class AccountingExpressionProcessor:
     def _parse_match_object(self, mo):
         """Split a match object corresponding to an accounting variable
 
-        Returns field, mode, account domain, move line domain.
+        Returns field, mode, fld_name, account domain, move line domain.
         """
         domain_eval_context = {
             "ref": self.env.ref,
@@ -138,12 +191,16 @@ class AccountingExpressionProcessor:
             "datetime": datetime,
             "dateutil": dateutil,
         }
-        field, mode, account_sel, ml_domain = mo.groups()
+        field, mode, fld_name, account_sel, ml_domain = mo.groups()
         # handle some legacy modes
         if not mode:
             mode = self.MODE_VARIATION
         elif mode == "s":
             mode = self.MODE_END
+        # custom fields
+        if fld_name:
+            assert fld_name[0] == "."
+            fld_name = fld_name[1:]  # strip leading dot
         # convert account selector to account domain
         if account_sel.startswith("_"):
             # legacy bal_NNN%
@@ -166,7 +223,7 @@ class AccountingExpressionProcessor:
             ml_domain = tuple(safe_eval(ml_domain, domain_eval_context))
         else:
             ml_domain = tuple()
-        return field, mode, acc_domain, ml_domain
+        return field, mode, fld_name, acc_domain, ml_domain
 
     def parse_expr(self, expr):
         """Parse an expression, extracting accounting variables.
@@ -177,7 +234,7 @@ class AccountingExpressionProcessor:
         and mode.
         """
         for mo in self._ACC_RE.finditer(expr):
-            _, mode, acc_domain, ml_domain = self._parse_match_object(mo)
+            field, mode, fld_name, acc_domain, ml_domain = self._parse_match_object(mo)
             if mode == self.MODE_END and self.smart_end:
                 modes = (self.MODE_INITIAL, self.MODE_VARIATION, self.MODE_END)
             else:
@@ -185,6 +242,30 @@ class AccountingExpressionProcessor:
             for mode in modes:
                 key = (ml_domain, mode)
                 self._map_account_ids[key].add(acc_domain)
+            if field == "fld":
+                if mode != self.MODE_VARIATION:
+                    raise UserError(
+                        _(
+                            "`fld` can only be used with mode `p` (variation) "
+                            "in expression %s",
+                            expr,
+                        )
+                    )
+                if not fld_name:
+                    raise UserError(
+                        _("`fld` must have a field name in exression %s", expr)
+                    )
+                self._custom_fields.add(fld_name)
+            else:
+                if fld_name:
+                    raise UserError(
+                        _(
+                            "`%(field)s` cannot have a field name "
+                            "in expression %(expr)s",
+                            field=field,
+                            expr=expr,
+                        )
+                    )
 
     def done_parsing(self):
         """Replace account domains by account ids in map"""
@@ -211,7 +292,7 @@ class AccountingExpressionProcessor:
         """
         account_ids = set()
         for mo in self._ACC_RE.finditer(expr):
-            field, mode, acc_domain, ml_domain = self._parse_match_object(mo)
+            _, _, _, acc_domain, _ = self._parse_match_object(mo)
             account_ids.update(self._account_ids_by_acc_domain[acc_domain])
         return account_ids
 
@@ -225,7 +306,7 @@ class AccountingExpressionProcessor:
         aml_domains = []
         date_domain_by_mode = {}
         for mo in self._ACC_RE.finditer(expr):
-            field, mode, acc_domain, ml_domain = self._parse_match_object(mo)
+            field, mode, fld_name, acc_domain, ml_domain = self._parse_match_object(mo)
             aml_domain = list(ml_domain)
             account_ids = set()
             account_ids.update(self._account_ids_by_acc_domain[acc_domain])
@@ -241,6 +322,8 @@ class AccountingExpressionProcessor:
                 aml_domain.append(("credit", "<>", 0.0))
             elif field == "deb":
                 aml_domain.append(("debit", "<>", 0.0))
+            elif fld_name:
+                aml_domain.append((fld_name, "!=", False))
             aml_domains.append(expression.normalize_domain(aml_domain))
             if mode not in date_domain_by_mode:
                 date_domain_by_mode[mode] = self.get_aml_domain_for_dates(
@@ -316,10 +399,10 @@ class AccountingExpressionProcessor:
             aml_model = self.env[aml_model]
         aml_model = aml_model.with_context(active_test=False)
         company_rates = self._get_company_rates(date_to)
-        # {(domain, mode): {account_id: (debit, credit)}}
+        # {(domain, mode): {account_id: Accumulator}}
         self._data = defaultdict(
             lambda: defaultdict(
-                lambda: SimpleArray((AccountingNone, AccountingNone)),
+                lambda: Accumulator(self._custom_fields),
             )
         )
         domain_by_mode = {}
@@ -343,7 +426,13 @@ class AccountingExpressionProcessor:
             try:
                 accs = aml_model.read_group(
                     domain,
-                    ["debit", "credit", "account_id", "company_id"],
+                    [
+                        "debit",
+                        "credit",
+                        "account_id",
+                        "company_id",
+                        *self._custom_fields,
+                    ],
                     ["account_id", "company_id"],
                     lazy=False,
                 )
@@ -369,9 +458,15 @@ class AccountingExpressionProcessor:
                 ):
                     # in initial mode, ignore accounts with 0 balance
                     continue
-                # due to branches, it's possible to have multiple acc
-                # with the same account_id
-                self._data[key][acc["account_id"][0]] += (debit * rate, credit * rate)
+                # due to branches, it's possible to have multiple groups
+                # with the same account_id, because multiple companies can
+                # use the same account
+                account_data = self._data[key][acc["account_id"][0]]
+                account_data.add_debit_credit(debit * rate, credit * rate)
+                for field_name in self._custom_fields:
+                    account_data.add_custom_field(
+                        field_name, acc[field_name] or AccountingNone
+                    )
         # compute ending balances by summing initial and variation
         for key in ends:
             domain, mode = key
@@ -379,11 +474,8 @@ class AccountingExpressionProcessor:
             variation_data = self._data[(domain, self.MODE_VARIATION)]
             account_ids = set(initial_data.keys()) | set(variation_data.keys())
             for account_id in account_ids:
-                di, ci = initial_data.get(account_id, (AccountingNone, AccountingNone))
-                dv, cv = variation_data.get(
-                    account_id, (AccountingNone, AccountingNone)
-                )
-                self._data[key][account_id] = (di + dv, ci + cv)
+                self._data[key][account_id] += initial_data[account_id]
+                self._data[key][account_id] += variation_data[account_id]
 
     def replace_expr(self, expr):
         """Replace accounting variables in an expression by their amount.
@@ -394,25 +486,30 @@ class AccountingExpressionProcessor:
         """
 
         def f(mo):
-            field, mode, acc_domain, ml_domain = self._parse_match_object(mo)
+            field, mode, fld_name, acc_domain, ml_domain = self._parse_match_object(mo)
             key = (ml_domain, mode)
             account_ids_data = self._data[key]
             v = AccountingNone
             account_ids = self._account_ids_by_acc_domain[acc_domain]
             for account_id in account_ids:
-                debit, credit = account_ids_data.get(
-                    account_id, (AccountingNone, AccountingNone)
-                )
+                entry = account_ids_data[account_id]
+                debit = entry.debit
+                credit = entry.credit
                 if field == "bal":
                     v += debit - credit
-                elif field == "pbal" and debit >= credit:
-                    v += debit - credit
-                elif field == "nbal" and debit < credit:
-                    v += debit - credit
+                elif field == "pbal":
+                    if debit >= credit:
+                        v += debit - credit
+                elif field == "nbal":
+                    if debit < credit:
+                        v += debit - credit
                 elif field == "deb":
                     v += debit
                 elif field == "crd":
                     v += credit
+                else:
+                    assert field == "fld"
+                    v += entry.custom_fields[fld_name]
             # in initial balance mode, assume 0 is None
             # as it does not make sense to distinguish 0 from "no data"
             if (
@@ -435,7 +532,7 @@ class AccountingExpressionProcessor:
         """
 
         def f(mo):
-            field, mode, acc_domain, ml_domain = self._parse_match_object(mo)
+            field, mode, fld_name, acc_domain, ml_domain = self._parse_match_object(mo)
             key = (ml_domain, mode)
             # first check if account_id is involved in
             # the current expression part
@@ -443,9 +540,9 @@ class AccountingExpressionProcessor:
                 return "(AccountingNone)"
             # here we know account_id is involved in acc_domain
             account_ids_data = self._data[key]
-            debit, credit = account_ids_data.get(
-                account_id, (AccountingNone, AccountingNone)
-            )
+            entry = account_ids_data[account_id]
+            debit = entry.debit
+            credit = entry.credit
             if field == "bal":
                 v = debit - credit
             elif field == "pbal":
@@ -462,6 +559,9 @@ class AccountingExpressionProcessor:
                 v = debit
             elif field == "crd":
                 v = credit
+            else:
+                assert field == "fld"
+                v = entry.custom_fields[fld_name]
             # in initial balance mode, assume 0 is None
             # as it does not make sense to distinguish 0 from "no data"
             if (
@@ -475,7 +575,7 @@ class AccountingExpressionProcessor:
         account_ids = set()
         for expr in exprs:
             for mo in self._ACC_RE.finditer(expr):
-                field, mode, acc_domain, ml_domain = self._parse_match_object(mo)
+                _, mode, _, acc_domain, ml_domain = self._parse_match_object(mo)
                 key = (ml_domain, mode)
                 account_ids_data = self._data[key]
                 for account_id in self._account_ids_by_acc_domain[acc_domain]:
@@ -495,7 +595,7 @@ class AccountingExpressionProcessor:
         aep.parse_expr(expr)
         aep.done_parsing()
         aep.do_queries(date_from, date_to)
-        return aep._data[((), mode)]
+        return {k: (v.debit, v.credit) for k, v in aep._data[((), mode)].items()}
 
     @classmethod
     def get_balances_initial(cls, companies, date):

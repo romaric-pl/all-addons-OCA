@@ -15,3 +15,4 @@ class MisBudget(models.Model):
     item_ids = fields.One2many(
         comodel_name="mis.budget.item", inverse_name="budget_id", copy=True
     )
+    active = fields.Boolean(default=True, copy=False)
