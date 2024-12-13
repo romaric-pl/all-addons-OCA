@@ -416,16 +416,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 2983c696cede1d4d3090fdb890e56229a2e78a75
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Nov 18 13:43:07 2024 +0000
+commit 62baf80fb18deba07cfb6b47a17164be4c106da3
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 10 15:26:18 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (66 of 66 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_discount_display_amount
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_discount_display_amount/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_invoice_plan
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_invoice_plan/it/
 
 
 ## crm
@@ -579,16 +579,16 @@ Date:   Wed Oct 9 08:31:22 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 2619fae744f3979a27d31c67e37139a4baded81c
+commit 42c495b2c10c18245a7449ec071bc7c6bbc92fac
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 30 07:41:19 2024 +0000
+Date:   Wed Dec 11 08:07:01 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (44 of 44 strings)
+    Currently translated at 100.0% (36 of 36 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_sale
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_sale/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_isp_account
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_isp_account/it/
 
 
 ## margin-analysis
@@ -891,11 +891,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 269c4131111fe193445902b346be5bc9fabaf9e1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 26 14:15:47 2024 +0000
+commit 0636b6da40192c4c6f955039a791cad8578b4d0e
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Thu Dec 12 19:30:47 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (58 of 58 strings)
+    
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_central_journal_reportlab
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_central_journal_reportlab/it/
 
 
 ## l10n-japan
