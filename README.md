@@ -274,9 +274,9 @@ Date:   Wed May 1 17:56:32 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 7c51fcb2e31279aa1887641f2d3d47fdd5d98387
+commit ad84eae35e1b0c11c6dd43164164a3a643233b88
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 29 22:41:01 2024 +0000
+Date:   Wed Dec 11 12:44:37 2024 +0000
 
     [BOT] post-merge updates
 
@@ -469,16 +469,11 @@ Date:   Tue Aug 13 14:33:14 2024 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 03c47fd301cb6f7211782e4b042a1beed8772821
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Oct 31 19:29:57 2024 +0000
+commit a02bfe54d7ad0c2772c38cd6c664c409d305e69d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 13 07:19:36 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: survey-15.0/survey-15.0-survey_sale_generation
-    Translate-URL: https://translation.odoo-community.org/projects/survey-15-0/survey-15-0-survey_sale_generation/
+    [BOT] post-merge updates
 
 
 ## knowledge
@@ -524,14 +519,16 @@ Date:   Thu Dec 5 15:05:18 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 83ef6dce0e6dd72161d274c517a4a7c6d80f5d0e
-Merge: 3dfe32c1 5cf29221
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 31 15:57:16 2024 +0000
+commit 7db31fe971b631ec7a74b7214543df329aa2e3de
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Dec 10 21:28:27 2024 +0000
 
-    Merge PR #1254 into 15.0
+    Update translation files
     
-    Signed-off-by max3903
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: field-service-15.0/field-service-15.0-fieldservice_stock
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_stock/
 
 
 ## margin-analysis
@@ -984,9 +981,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 32324dba05453d72306a2347903e21bd939ad7da
+commit 0e9bc5e6b9a0a27e6cbee5001359b10580506153
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Dec 8 14:55:47 2024 +0000
+Date:   Fri Dec 13 08:31:15 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1100,16 +1097,16 @@ Date:   Wed Dec 4 07:30:25 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 1376f0f882f1500f86e1bdb62c9ff44c61223412
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Nov 18 07:59:46 2024 +0000
+commit d3f5af338be07b66f5aab856ca542274bf249341
+Author: Carlos Dauden <carlos.dauden@tecnativa.com>
+Date:   Tue Dec 10 09:19:23 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Spanish)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 97.3% (73 of 75 strings)
     
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_account_product_run_fifo_hook
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_account_product_run_fifo_hook/
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_batch_extended
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_batch_extended/es/
 
 
 ## stock-logistics-tracking
@@ -1137,11 +1134,16 @@ Date:   Tue Dec 3 09:13:23 2024 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 5d957df7e5a2badcf59449fb51f22e575592152a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 7 10:54:58 2024 +0000
+commit 5fd25a3fd808ed071115a70ca7ba94d3bcc68748
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Dec 12 12:29:26 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-reporting-15.0/stock-logistics-reporting-15.0-stock_picking_report_custom_description
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-15-0/stock-logistics-reporting-15-0-stock_picking_report_custom_description/
 
 
 ## rma
@@ -1571,9 +1573,9 @@ Date:   Thu Oct 17 18:51:50 2024 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 033e7eb946b6b467faa484c4a957e371ebbfd498
+commit 4b84ed5b2de09dbfef9d6814072d4714a0b396be
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 9 07:42:13 2024 +0000
+Date:   Tue Dec 10 15:27:02 2024 +0000
 
     Translated using Weblate (Italian)
     

@@ -21,15 +21,16 @@ class SaleOrderLine(models.Model):
 
     @api.depends("product_id.type")
     def _compute_product_updatable(self):
+        res = super()._compute_product_updatable()
+
         for line in self:
             if line.product_id.type == "service" and line.state == "sale":
                 line.product_updatable = False
-            else:
-                return super(SaleOrderLine, line)._compute_product_updatable()
+        return res
 
     @api.depends("product_id")
     def _compute_qty_delivered_method(self):
-        res = super(SaleOrderLine, self)._compute_qty_delivered_method()
+        res = super()._compute_qty_delivered_method()
         for line in self:
             if not line.is_expense and line.product_id.field_service_tracking == "line":
                 line.qty_delivered_method = "field_service"
@@ -37,7 +38,7 @@ class SaleOrderLine(models.Model):
 
     @api.depends("fsm_order_id.stage_id")
     def _compute_qty_delivered(self):
-        res = super(SaleOrderLine, self)._compute_qty_delivered()
+        res = super()._compute_qty_delivered()
         lines_by_fsm = self.filtered(
             lambda sol: sol.qty_delivered_method == "field_service"
         )
@@ -51,7 +52,7 @@ class SaleOrderLine(models.Model):
 
     @api.model_create_multi
     def create(self, vals_list):
-        lines = super(SaleOrderLine, self).create(vals_list)
+        lines = super().create(vals_list)
         for line in lines:
             if line.state == "sale":
                 line.order_id._field_service_generation()

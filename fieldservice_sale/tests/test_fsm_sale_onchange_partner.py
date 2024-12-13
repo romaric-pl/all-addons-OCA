@@ -13,7 +13,7 @@ class FSMSale(TransactionCase):
         the SO's onchange_partner_id and check if the fsm_location_id
         is the expected one.
         """
-        super(FSMSale, self).setUp()
+        super().setUp()
         # create a parent company
         self.commercial_partner = self.env["res.partner"].create(
             {

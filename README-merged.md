@@ -1290,7 +1290,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 15.0.1.0.1 |  | Asynchronous export with job queue
-[queue_job](queue_job/) | 15.0.2.3.10 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 15.0.2.3.11 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_cron](queue_job_cron/) | 15.0.1.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 15.0.2.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 15.0.1.0.0 |  | Control which users are subscribed to queue job notifications
@@ -2439,7 +2439,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[partner_survey](partner_survey/) | 15.0.1.0.0 |  | Link partners with their survey results
+[partner_survey](partner_survey/) | 15.0.1.1.0 |  | Link partners with their survey results
 [survey_contact_generation](survey_contact_generation/) | 15.0.1.1.2 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Generate new contacts from surveys
 [survey_crm_generation](survey_crm_generation/) | 15.0.1.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Generate CRM leads/opportunities from surveys
 [survey_crm_sale_generation](survey_crm_sale_generation/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Link CRM leads to sale orders generated from surveys
@@ -2781,14 +2781,14 @@ addon | version | maintainers | summary
 [fieldservice_recurring](fieldservice_recurring/) | 15.0.2.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
 [fieldservice_repair](fieldservice_repair/) | 15.0.1.0.0 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Integrate Field Service orders with MRP repair orders
 [fieldservice_route](fieldservice_route/) | 15.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
-[fieldservice_sale](fieldservice_sale/) | 15.0.2.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
+[fieldservice_sale](fieldservice_sale/) | 15.0.2.2.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
 [fieldservice_sale_recurring](fieldservice_sale_recurring/) | 15.0.3.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
-[fieldservice_sale_stock](fieldservice_sale_stock/) | 15.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
+[fieldservice_sale_stock](fieldservice_sale_stock/) | 15.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
 [fieldservice_size](fieldservice_size/) | 15.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
 [fieldservice_skill](fieldservice_skill/) | 15.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage your Field Service workers skills
 [fieldservice_stage_server_action](fieldservice_stage_server_action/) | 15.0.1.0.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
 [fieldservice_stage_validation](fieldservice_stage_validation/) | 15.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Validate input data when reaching a Field Service stage
-[fieldservice_stock](fieldservice_stock/) | 15.0.1.0.2 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
+[fieldservice_stock](fieldservice_stock/) | 15.0.1.1.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
 [fieldservice_substatus](fieldservice_substatus/) | 15.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Add sub-statuses to Field Service orders
 [fieldservice_vehicle](fieldservice_vehicle/) | 15.0.1.0.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service vehicles and assign drivers
 
@@ -5101,7 +5101,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 15.0.2.0.1 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 15.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.7.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.9.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.11.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
@@ -5137,7 +5137,7 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 15.0.1.0.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - OSS
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 15.0.1.0.6 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 15.0.1.0.1 |  | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 15.0.2.8.1 |  | Libro de IVA
+[l10n_es_vat_book](l10n_es_vat_book/) | 15.0.2.9.0 |  | Libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 15.0.1.0.1 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 15.0.1.1.0 |  | Prorrata de IVA para la localización española
 [payment_redsys](payment_redsys/) | 15.0.1.0.1 |  | Payment Acquirer: Redsys Implementation
@@ -6006,7 +6006,7 @@ addon | version | maintainers | summary
 [stock_card_report](stock_card_report/) | 15.0.1.0.0 |  | Add stock card report on Inventory Reporting.
 [stock_move_value_report](stock_move_value_report/) | 15.0.1.0.0 |  | Stock Move Cost Value Report
 [stock_picking_auto_print](stock_picking_auto_print/) | 15.0.1.0.0 |  | Print picking delivery slip automatically after validation
-[stock_picking_report_custom_description](stock_picking_report_custom_description/) | 15.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Show moves description in picking reports
+[stock_picking_report_custom_description](stock_picking_report_custom_description/) | 15.0.1.1.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Show moves description in picking reports
 [stock_picking_report_external_note](stock_picking_report_external_note/) | 15.0.0.1.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Adds a note in Stock Picking shown on external reports like Delivery Slip
 [stock_picking_report_internal_delivery_address](stock_picking_report_internal_delivery_address/) | 15.0.1.0.0 |  | Show delivery address when picking type is internal
 [stock_picking_report_product_sticker](stock_picking_report_product_sticker/) | 15.0.1.0.2 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Stock Picking Report - Product Sticker

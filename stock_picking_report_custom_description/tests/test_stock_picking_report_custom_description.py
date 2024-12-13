@@ -22,3 +22,8 @@ class TestStockPickingReportCustomDescription(common.TransactionCase):
     def test_so_custom_description_transfer_to_picking(self):
         self.order.action_confirm()
         self.assertEqual(self.order.order_line.move_ids.name, "Custom description")
+        self.order.order_line.name = "Custom description 2"
+        self.assertEqual(
+            self.order.order_line.move_ids.name,
+            "Custom description 2",
+        )

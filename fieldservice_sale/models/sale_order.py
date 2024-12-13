@@ -40,7 +40,7 @@ class SaleOrder(models.Model):
         the partner_shipping_id or the partner_id.commercial_partner_id if
         they are FS locations.
         """
-        res = super(SaleOrder, self).onchange_partner_id()
+        res = super().onchange_partner_id()
         domain = [
             "|",
             "|",
@@ -103,7 +103,11 @@ class SaleOrder(models.Model):
 
         if new_fsm_sol:
             fsm_by_sale = self.env["fsm.order"].search(
-                [("sale_id", "=", self.id), ("sale_line_id", "=", False)]
+                [
+                    ("sale_id", "=", self.id),
+                    ("sale_line_id", "=", False),
+                    ("is_closed", "=", False),
+                ]
             )
             if not fsm_by_sale:
                 templates = new_fsm_sol.product_id.fsm_order_template_id
@@ -145,14 +149,14 @@ class SaleOrder(models.Model):
         # Process lines set to FSM Sale
         new_fsm_sale_sol = self.order_line.filtered(
             lambda l: l.product_id.field_service_tracking == "sale"
-            and not l.fsm_order_id
+            and (not l.fsm_order_id or l.fsm_order_id.is_closed)
         )
         new_fsm_orders |= self._field_service_generate_sale_fsm_orders(new_fsm_sale_sol)
 
         # Create new FSM Order for lines set to FSM Line
         new_fsm_line_sol = self.order_line.filtered(
             lambda l: l.product_id.field_service_tracking == "line"
-            and not l.fsm_order_id
+            and (not l.fsm_order_id or l.fsm_order_id.is_closed)
         )
 
         new_fsm_orders |= self._field_service_generate_line_fsm_orders(new_fsm_line_sol)
@@ -200,7 +204,7 @@ class SaleOrder(models.Model):
 
     def _action_confirm(self):
         """On SO confirmation, some lines generate field service orders."""
-        result = super(SaleOrder, self)._action_confirm()
+        result = super()._action_confirm()
         if any(
             sol.product_id.field_service_tracking != "no"
             for sol in self.order_line.filtered(
@@ -225,3 +229,10 @@ class SaleOrder(models.Model):
         else:
             action = {"type": "ir.actions.act_window_close"}
         return action
+
+    def _action_cancel(self):
+        res = super()._action_cancel()
+
+        [fsm_order.action_cancel() for fsm_order in self.mapped("fsm_order_ids")]
+
+        return res

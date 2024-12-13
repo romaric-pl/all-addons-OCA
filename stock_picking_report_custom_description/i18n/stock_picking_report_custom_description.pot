@@ -24,6 +24,11 @@ msgid "Picking Operations (Description)"
 msgstr ""
 
 #. module: stock_picking_report_custom_description
+#: model:ir.model,name:stock_picking_report_custom_description.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: stock_picking_report_custom_description
 #: model:ir.model,name:stock_picking_report_custom_description.model_stock_rule
 msgid "Stock Rule"
 msgstr ""
