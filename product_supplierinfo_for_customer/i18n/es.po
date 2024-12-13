@@ -188,6 +188,11 @@ msgid "Import Template for Customer Pricelists"
 msgstr "Importar plantilla para tarifas de clientes"
 
 #. module: product_supplierinfo_for_customer
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__last_purchase_date
+msgid "Last Purchase"
+msgstr "Última Compra"
+
+#. module: product_supplierinfo_for_customer
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__write_uid
 msgid "Last Updated by"
 msgstr "Última actualización por"
@@ -272,6 +277,11 @@ msgstr "Margen de venta"
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__sequence
 msgid "Sequence"
 msgstr "Secuencia"
+
+#. module: product_supplierinfo_for_customer
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__show_set_supplier_button
+msgid "Show Set Supplier Button"
+msgstr "Mostrar Botón Establecer Proveedor"
 
 #. module: product_supplierinfo_for_customer
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__date_start
@@ -368,12 +378,6 @@ msgstr "para"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Última modificación el"
-
-#~ msgid "Last Purchase"
-#~ msgstr "Última Compra"
-
-#~ msgid "Show Set Supplier Button"
-#~ msgstr "Mostrar Botón Establecer Proveedor"
 
 #~ msgid "This comes from the product form."
 #~ msgstr "Esto proviene del formulario del producto."

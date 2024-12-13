@@ -190,6 +190,11 @@ msgid "Import Template for Customer Pricelists"
 msgstr "Modello importazione listino clienti"
 
 #. module: product_supplierinfo_for_customer
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__last_purchase_date
+msgid "Last Purchase"
+msgstr "Ultimo acquisto"
+
+#. module: product_supplierinfo_for_customer
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__write_uid
 msgid "Last Updated by"
 msgstr "Ultimo aggiornamento di"
@@ -274,6 +279,11 @@ msgstr "Margine di vendita"
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__sequence
 msgid "Sequence"
 msgstr "Sequenza"
+
+#. module: product_supplierinfo_for_customer
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__show_set_supplier_button
+msgid "Show Set Supplier Button"
+msgstr "Visualizza pulsante imposta fornitore"
 
 #. module: product_supplierinfo_for_customer
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__date_start
@@ -371,9 +381,3 @@ msgstr "a"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"
-
-#~ msgid "Last Purchase"
-#~ msgstr "Ultimo acquisto"
-
-#~ msgid "Show Set Supplier Button"
-#~ msgstr "Visualizza pulsante imposta fornitore"

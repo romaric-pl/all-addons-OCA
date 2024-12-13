@@ -37,4 +37,18 @@ class TestStockLocationSoruceFromRoute(StockHelperCommonCase):
         source_location = location._get_source_location_from_route(
             route, "make_to_stock"
         )
-        self.assertEqual(source_location, self.supplier_loc)
+        # Since this change in v17
+        # https://github.com/odoo/odoo/commit/439ca89a68fe957adbe0f7a6147047593155aa9f
+        # _get_rule fallbacks to location's warehouse to check for routes.
+        # This makes that the receipt route is found by _get_source_location_from_route.
+        # However, this is the case only with `stock` module installed, because
+        # as soon as `mrp` or `purchase` is installed that first step of the receipt
+        # route get removed in favor of manufacture or purchase routes. See
+        # https://github.com/odoo/odoo/commit/d25d320e0e870980971de945719f7b7d5deadd3c
+        if hasattr(self.wh, "manufacture_to_resupply") or hasattr(
+            self.wh, "buy_to_resupply"
+        ):
+            expected_location = False
+        else:  # only `stock` installed.
+            expected_location = self.supplier_loc
+        self.assertEqual(source_location, expected_location)
