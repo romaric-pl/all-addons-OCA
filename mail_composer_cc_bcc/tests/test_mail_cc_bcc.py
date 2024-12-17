@@ -14,6 +14,8 @@ VALID_HASHES = [
     "d52cb36b88b33abc9556f7be6718d93f",
     "461467cd5b356072fc054468c75f6e26",
     "5d1ab352416f5074e131f35f20098d5b",
+    "46172c91183f2cb50b22a6b3b5e3869b",
+    "8f26c4084cc7fc300e64d19ccdc944fe",
 ]
 
 
@@ -46,7 +48,12 @@ class TestMailCcBcc(TestMailComposer):
         """Test that copied upstream function hasn't received fixes"""
         func = inspect.getsource(upstream._send).encode()
         func_hash = hashlib.md5(func).hexdigest()
-        self.assertIn(func_hash, VALID_HASHES)
+        self.assertIn(
+            func_hash,
+            VALID_HASHES,
+            "mail.mail#_send has changed in upstream, "
+            "please adapt the override and add the new hash above",
+        )
 
     def test_email_cc_bcc(self):
         form = self.open_mail_composer_form()

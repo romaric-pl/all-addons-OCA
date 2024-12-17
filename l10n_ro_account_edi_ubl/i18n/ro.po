@@ -125,21 +125,6 @@ msgid "Created on"
 msgstr "Creat in"
 
 #. module: l10n_ro_account_edi_ubl
-#: model_terms:ir.ui.view,arch_db:l10n_ro_account_edi_ubl.res_config_settings_view_form
-msgid "Credit Note on e-Invoice."
-msgstr "Notă de credit pe factura electronică."
-
-#. module: l10n_ro_account_edi_ubl
-#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_company__l10n_ro_credit_note_einvoice
-msgid "Credit Note on e-invoice"
-msgstr "Notă de credit pe factura electronică"
-
-#. module: l10n_ro_account_edi_ubl
-#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_config_settings__l10n_ro_credit_note_einvoice
-msgid "Credit Note on e-invoice."
-msgstr "Notă de credit pe factura electronică."
-
-#. module: l10n_ro_account_edi_ubl
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_company__l10n_ro_default_cius_pdf_report
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_config_settings__l10n_ro_default_cius_pdf_report
 msgid "Default PDF Report"
@@ -618,3 +603,12 @@ msgstr ""
 "electronic a fost deja trimis către ANAF. Pentru a edita această intrare, "
 "trebuie să creați o notă de credit pentru factură și să creați o nouă "
 "factură."
+
+#~ msgid "Credit Note on e-Invoice."
+#~ msgstr "Notă de credit pe factura electronică."
+
+#~ msgid "Credit Note on e-invoice"
+#~ msgstr "Notă de credit pe factura electronică"
+
+#~ msgid "Credit Note on e-invoice."
+#~ msgstr "Notă de credit pe factura electronică."

@@ -111,7 +111,10 @@ msgid "Import Statement"
 msgstr "Importar extracte"
 
 #. module: account_statement_import_file
+#. odoo-javascript
+#: code:addons/account_statement_import_file/static/src/account_statement_import_file/account_statement_import_file.xml:0
 #: model_terms:ir.ui.view,arch_db:account_statement_import_file.journal_dashboard_view_inherit
+#, python-format
 msgid "Import Statement (OCA)"
 msgstr "Importar extracte bancari (OCA)"
 
@@ -174,7 +177,8 @@ msgstr "Formats suportats:"
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
 #, python-format
 msgid "The Bank Accounting Account is not set on the journal '%s'."
-msgstr "El compte comptable del compte bancari no està establert al diari '%s'."
+msgstr ""
+"El compte comptable del compte bancari no està establert al diari '%s'."
 
 #. module: account_statement_import_file
 #. odoo-python

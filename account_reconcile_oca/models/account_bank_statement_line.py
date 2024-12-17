@@ -294,6 +294,7 @@ class AccountBankStatementLine(models.Model):
                 self.manual_partner_id and self.manual_partner_id.name_get()[0] or False
             )
             != line.get("partner_id")
+            or self.analytic_distribution != line.get("analytic_distribution", False)
         )
 
     def _get_manual_delete_vals(self):

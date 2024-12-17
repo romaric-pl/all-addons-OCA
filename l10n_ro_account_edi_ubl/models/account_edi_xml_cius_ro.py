@@ -67,34 +67,6 @@ class AccountEdiXmlCIUSRO(models.Model):
 
         return vals_list
 
-    def _get_invoice_tax_totals_vals_list(self, invoice, taxes_vals):
-        balance_sign = 1
-        if (
-            invoice.move_type in ["out_refund", "in_refund"]
-            and invoice.company_id.l10n_ro_credit_note_einvoice
-        ):
-            balance_sign = -balance_sign
-
-        return [
-            {
-                "currency": invoice.currency_id,
-                "currency_dp": invoice.currency_id.decimal_places,
-                "tax_amount": balance_sign * taxes_vals["tax_amount_currency"],
-                "tax_subtotal_vals": [
-                    {
-                        "currency": invoice.currency_id,
-                        "currency_dp": invoice.currency_id.decimal_places,
-                        "taxable_amount": balance_sign * vals["base_amount_currency"],
-                        "tax_amount": balance_sign * vals["tax_amount_currency"],
-                        "percent": vals["_tax_category_vals_"]["percent"],
-                        "tax_category_vals": vals["_tax_category_vals_"],
-                        "tax_id": vals["group_tax_details"][0]["id"],
-                    }
-                    for vals in taxes_vals["tax_details"].values()
-                ],
-            }
-        ]
-
     def _get_delivery_vals_list(self, invoice):
         res = super()._get_delivery_vals_list(invoice)
 
@@ -117,24 +89,6 @@ class AccountEdiXmlCIUSRO(models.Model):
                     },
                 }
             ]
-        return res
-
-    def _get_invoice_line_vals(self, line, taxes_vals):
-        res = super()._get_invoice_line_vals(line, taxes_vals)
-        if (
-            line.move_id.move_type in ["out_refund", "in_refund"]
-            and line.company_id.l10n_ro_credit_note_einvoice
-        ):
-            if res.get("invoiced_quantity", 0):
-                res["invoiced_quantity"] = (-1) * res["invoiced_quantity"]
-            if res.get("line_extension_amount", 0):
-                res["line_extension_amount"] = (-1) * res["line_extension_amount"]
-            if res.get("tax_total_vals"):
-                for tax in res["tax_total_vals"]:
-                    if tax["tax_amount"]:
-                        tax["tax_amount"] = (-1) * tax["tax_amount"]
-                    if tax["taxable_amount"]:
-                        tax["taxable_amount"] = (-1) * tax["taxable_amount"]
         return res
 
     def _get_invoice_line_item_vals(self, line, taxes_vals):
@@ -183,27 +137,6 @@ class AccountEdiXmlCIUSRO(models.Model):
             val["id"] = index
             index += 1
         if (
-            invoice.move_type in ["out_refund", "in_refund"]
-            and invoice.company_id.l10n_ro_credit_note_einvoice
-        ):
-            if vals_list["vals"].get("legal_monetary_total_vals"):
-                vals_list["vals"]["legal_monetary_total_vals"][
-                    "tax_exclusive_amount"
-                ] = (-1) * vals_list["vals"]["legal_monetary_total_vals"][
-                    "tax_exclusive_amount"
-                ]
-                vals_list["vals"]["legal_monetary_total_vals"][
-                    "tax_inclusive_amount"
-                ] = (-1) * vals_list["vals"]["legal_monetary_total_vals"][
-                    "tax_inclusive_amount"
-                ]
-                vals_list["vals"]["legal_monetary_total_vals"]["prepaid_amount"] = (
-                    -1
-                ) * vals_list["vals"]["legal_monetary_total_vals"]["prepaid_amount"]
-                vals_list["vals"]["legal_monetary_total_vals"]["payable_amount"] = (
-                    -1
-                ) * vals_list["vals"]["legal_monetary_total_vals"]["payable_amount"]
-        if (
             invoice.journal_id.l10n_ro_sequence_type == "autoinv2"
             and invoice.journal_id.l10n_ro_partner_id
         ):
@@ -217,11 +150,12 @@ class AccountEdiXmlCIUSRO(models.Model):
                 "accounting_supplier_party_vals"
             ]
             vals_list["vals"]["accounting_supplier_party_vals"] = customer_vals
-
-        vals_list["main_template"] = "account_edi_ubl_cii.ubl_20_Invoice"
-        vals_list["vals"]["invoice_type_code"] = 380
-        if vals_list["vals"].get("credit_note_type_code"):
-            vals_list["vals"].pop("credit_note_type_code")
+        if invoice.move_type in ("out_invoice", "in_invoice"):
+            vals_list["main_template"] = "account_edi_ubl_cii.ubl_20_Invoice"
+            vals_list["vals"]["invoice_type_code"] = 380
+        else:
+            vals_list["main_template"] = "account_edi_ubl_cii.ubl_20_CreditNote"
+            vals_list["vals"]["credit_note_type_code"] = 381
         if (
             invoice.move_type in ("in_invoice", "in_refund")
             and invoice.journal_id.l10n_ro_sequence_type == "autoinv2"
@@ -230,6 +164,7 @@ class AccountEdiXmlCIUSRO(models.Model):
             and invoice.journal_id.l10n_ro_sequence_type == "autoinv1"
         ):
             vals_list["vals"]["invoice_type_code"] = 389
+            vals_list["vals"]["credit_note_type_code"] = 389
         point_of_sale = (
             self.env["ir.module.module"]
             .sudo()

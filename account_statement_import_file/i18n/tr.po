@@ -119,7 +119,10 @@ msgid "Import Statement"
 msgstr "Ekstre İçe Aktar"
 
 #. module: account_statement_import_file
+#. odoo-javascript
+#: code:addons/account_statement_import_file/static/src/account_statement_import_file/account_statement_import_file.xml:0
 #: model_terms:ir.ui.view,arch_db:account_statement_import_file.journal_dashboard_view_inherit
+#, python-format
 msgid "Import Statement (OCA)"
 msgstr "Hesap Ektresi İçeri Aktarma"
 
@@ -216,8 +219,9 @@ msgid ""
 "The currency of the bank statement (%(currency_name)s) is not the same as "
 "the currency of the journal '%(journal_name)s' (%(journal_currency_name)s)."
 msgstr ""
-"Banka ekstresinin para birimi (%(currency_name)s), '%(journal_name)s' "
-"(%(journal_currency_name)s) yevmiyenin para birimiyle aynı değil."
+"Banka ekstresinin para birimi (%(currency_name)s), "
+"'%(journal_name)s' (%(journal_currency_name)s) yevmiyenin para birimiyle "
+"aynı değil."
 
 #. module: account_statement_import_file
 #. odoo-python

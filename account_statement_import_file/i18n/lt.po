@@ -114,7 +114,10 @@ msgid "Import Statement"
 msgstr "Importuoti išrašą"
 
 #. module: account_statement_import_file
+#. odoo-javascript
+#: code:addons/account_statement_import_file/static/src/account_statement_import_file/account_statement_import_file.xml:0
 #: model_terms:ir.ui.view,arch_db:account_statement_import_file.journal_dashboard_view_inherit
+#, python-format
 msgid "Import Statement (OCA)"
 msgstr ""
 

@@ -84,7 +84,6 @@ class MisReportKpiStyle(models.Model):
     }
 
     # style name
-    # TODO enforce uniqueness
     name = fields.Char(string="Style name", required=True)
 
     # color
@@ -132,6 +131,10 @@ class MisReportKpiStyle(models.Model):
     hide_empty = fields.Boolean(default=False)
     hide_always_inherit = fields.Boolean(default=True)
     hide_always = fields.Boolean(default=False)
+
+    _sql_constraints = [
+        ("style_name_uniq", "unique(name)", "Style name should be unique")
+    ]
 
     @api.model
     def merge(self, styles):

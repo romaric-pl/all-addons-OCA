@@ -11,6 +11,7 @@ class StockQuantPackage(models.Model):
         comodel_name="stock.quant.package.reference",
         inverse_name="stock_quant_package_id",
         string="References",
+        auto_join=True,
     )
     name = fields.Char(
         string="Package Reference",
@@ -61,11 +62,8 @@ class StockQuantPackage(models.Model):
     def _get_reference_domain(self, sub_domain, domain):
         reference_operator = sub_domain[1]
         reference_value = sub_domain[2]
-        references = self.env["stock.quant.package.reference"].search(
-            [("name", reference_operator, reference_value)]
-        )
         domain = [
-            ("reference_ids", "in", references.ids)
+            ("reference_ids.name", reference_operator, reference_value)
             if x[0] == "name" and x[2] == reference_value
             else x
             for x in domain

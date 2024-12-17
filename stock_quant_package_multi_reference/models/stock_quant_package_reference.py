@@ -13,6 +13,7 @@ class StockQuantPackageReference(models.Model):
     name = fields.Char(
         string="Reference",
         required=True,
+        index="trigram",
     )
     sequence = fields.Integer(
         default=0,

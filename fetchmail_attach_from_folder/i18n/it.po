@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: server-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-29 11:14+0000\n"
-"PO-Revision-Date: 2024-09-06 15:06+0000\n"
+"PO-Revision-Date: 2024-12-15 14:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-server-tools-8-0/"
 "language/it/)\n"
@@ -550,7 +550,7 @@ msgstr "Numero di modifiche di questo record in attesa"
 #: model:ir.model.fields,help:fetchmail_attach_from_folder.field_fetchmail_server__count_pending_changesets
 #: model:ir.model.fields,help:fetchmail_attach_from_folder.field_fetchmail_server_folder__count_pending_changesets
 msgid "The number of pending changesets of this record"
-msgstr "Numero di insieme di modifiche di questo record in attesa"
+msgstr "Numero di insiemi di modifiche in attesa di questo record"
 
 #. module: fetchmail_attach_from_folder
 #: model:ir.model.fields,help:fetchmail_attach_from_folder.field_fetchmail_attach_mail_manually__count_changesets

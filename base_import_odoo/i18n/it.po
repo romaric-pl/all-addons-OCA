@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-26 03:03+0000\n"
-"PO-Revision-Date: 2024-06-18 18:37+0000\n"
+"PO-Revision-Date: 2024-12-15 14:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_form
@@ -26,21 +26,23 @@ msgid ""
 "# `vals` is the dictionary to be passed to create/write, and you have access "
 "to `env`, `_id`, `remote`"
 msgstr ""
+"# `vals` è il dizionario da passare per creare/scrivere, e si ha accesso a "
+"`env`, `_id`, `remote`"
 
 #. module: base_import_odoo
 #: model:ir.model,name:base_import_odoo.model_import_odoo_database_field
 msgid "A field mapping for records in the remote database"
-msgstr ""
+msgstr "Una mappatura dei campi per i record nel database remoto"
 
 #. module: base_import_odoo
 #: model:ir.model,name:base_import_odoo.model_import_odoo_database_model
 msgid "A model to import from a remote database"
-msgstr ""
+msgstr "Un modello da importare da un database remoto"
 
 #. module: base_import_odoo
 #: model:ir.model,name:base_import_odoo.model_import_odoo_database
 msgid "An Odoo database to import"
-msgstr ""
+msgstr "Un database Odoo da importare"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__assigned_attachment_ids
@@ -48,22 +50,22 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__assigned_attachment_ids
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__assigned_attachment_ids
 msgid "Assigned Attachments"
-msgstr ""
+msgstr "Allegati assegnati"
 
 #. module: base_import_odoo
 #: model:ir.model.fields.selection,name:base_import_odoo.selection__import_odoo_database_field__mapping_type__by_field
 msgid "Based on equal fields"
-msgstr ""
+msgstr "Basato su campi uguali"
 
 #. module: base_import_odoo
 #: model:ir.model.fields.selection,name:base_import_odoo.selection__import_odoo_database_field__mapping_type__by_reference
 msgid "By reference"
-msgstr ""
+msgstr "Per riferimento"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database__ssl_bypass
 msgid "Bypass SSL certificate check"
-msgstr ""
+msgstr "Baipassa controllo certificato SSL"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__changeset_change_ids
@@ -71,7 +73,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__changeset_change_ids
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__changeset_change_ids
 msgid "Changeset Changes"
-msgstr ""
+msgstr "Modifiche dell'insieme di modifiche"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__changeset_ids
@@ -79,12 +81,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__changeset_ids
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__changeset_ids
 msgid "Changesets"
-msgstr ""
+msgstr "Insieme di modifiche"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_model__extra_fields
 msgid "Comma-separated list of extra fields to query for"
-msgstr ""
+msgstr "Elenco separato da vircola di campi extra da estrarre"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__count_changesets
@@ -92,7 +94,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__count_changesets
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__count_changesets
 msgid "Count Changesets"
-msgstr ""
+msgstr "Conta insiemi di modifiche"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__count_pending_changeset_changes
@@ -100,7 +102,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__count_pending_changeset_changes
 msgid "Count Pending Changeset Changes"
-msgstr ""
+msgstr "Conteggio modifiche dell'insieme di modifiche in attesa"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__count_pending_changesets
@@ -108,7 +110,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__count_pending_changesets
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__count_pending_changesets
 msgid "Count Pending Changesets"
-msgstr ""
+msgstr "Conta insiemi di modifiche in attesa"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__create_uid
@@ -127,7 +129,7 @@ msgstr "Creato il"
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__cronjob_running
 msgid "Cronjob Running"
-msgstr ""
+msgstr "Lavori cron in esecuzione"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__database
@@ -139,7 +141,7 @@ msgstr "Database"
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__defaults
 msgid "Defaults"
-msgstr ""
+msgstr "Predefiniti"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__display_name
@@ -156,12 +158,12 @@ msgstr "Dominio"
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__duplicates
 msgid "Duplicate handling"
-msgstr ""
+msgstr "Gestione duplicata"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__extra_fields
 msgid "Extra Fields"
-msgstr ""
+msgstr "Campi extra"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__field_ids
@@ -171,17 +173,17 @@ msgstr "Campo"
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__import_field_mappings
 msgid "Field mappings"
-msgstr ""
+msgstr "Mappatura campo"
 
 #. module: base_import_odoo
 #: model:ir.model.fields.selection,name:base_import_odoo.selection__import_odoo_database_field__mapping_type__fixed
 msgid "Fixed"
-msgstr ""
+msgstr "Fissato"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__import_database_id
 msgid "From remote database"
-msgstr ""
+msgstr "Da database remoto"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__id
@@ -193,12 +195,12 @@ msgstr "ID"
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__id_field_id
 msgid "ID field"
-msgstr ""
+msgstr "Campo ID"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_field__field_ids
 msgid "If set, the mapping is only effective when setting said field"
-msgstr ""
+msgstr "Se impostata, la mappatura è efficace solo quando si imposta tale campo"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_field__local_id
@@ -206,6 +208,8 @@ msgid ""
 "If you leave this empty, a new record will be created in the local database "
 "when this field is set on the remote database"
 msgstr ""
+"Se lo si lascia vuoto, verrà creato un nuovo record nel database locale "
+"quando questo campo è impostato nel database remoto"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_field__remote_id
@@ -213,32 +217,34 @@ msgid ""
 "If you leave this empty, every (set) field value will be mapped to the local "
 "ID"
 msgstr ""
+"Se lo si lascia vuoto, ogni (impostazione) valore campo verrà mappato "
+"nell'ID locale"
 
 #. module: base_import_odoo
 #: model:ir.actions.act_window,name:base_import_odoo.action_import_odoo_database
 #: model:ir.ui.menu,name:base_import_odoo.menu_import_odoo_database
 msgid "Import configurations"
-msgstr ""
+msgstr "Importa configurazioni"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__cronjob_id
 msgid "Import job"
-msgstr ""
+msgstr "Importa lavoro"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__import_line_ids
 msgid "Import models"
-msgstr ""
+msgstr "Importa modelli"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_qweb
 msgid "Import progress"
-msgstr ""
+msgstr "Importa avanzamento"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_qweb
 msgid "Import results"
-msgstr ""
+msgstr "Importa risultati"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database____last_update
@@ -264,7 +270,7 @@ msgstr "Ultimo aggiornamento il"
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__local_id
 msgid "Local ID"
-msgstr ""
+msgstr "ID locale"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__model_id
@@ -275,32 +281,32 @@ msgstr "Modello"
 #. module: base_import_odoo
 #: model:ir.model,name:base_import_odoo.model_ir_model_data
 msgid "Model Data"
-msgstr ""
+msgstr "Dati modello"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__model_field_id
 msgid "Model field"
-msgstr ""
+msgstr "Campo modello"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__model
 msgid "Model name"
-msgstr ""
+msgstr "Nome modello"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__null_password
 msgid "Null Password"
-msgstr ""
+msgstr "Passuord nulla"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_model__defaults
 msgid "Optional defaults dict to avoid empty values"
-msgstr ""
+msgstr "Dizionario predefinito opzionale per evitare valori vuoti"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_model__domain
 msgid "Optional filter to import only a subset"
-msgstr ""
+msgstr "Filtro opzionale per importare solo un sottoinsieme"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_model__postprocess
@@ -308,16 +314,18 @@ msgid ""
 "Optional python code for postprocessing. Your code has access to `vals` "
 "which is the dictionary passed to create/write, and `env`."
 msgstr ""
+"Codice Python facoltativo per la post-elaborazione. Il codice ha accesso a "
+"`vals` che è il dizionario passato a create/write, e `env`."
 
 #. module: base_import_odoo
 #: model:ir.model.fields.selection,name:base_import_odoo.selection__import_odoo_database__duplicates__overwrite_empty
 msgid "Overwrite empty fields"
-msgstr ""
+msgstr "Sovrascrivi campi vuoti"
 
 #. module: base_import_odoo
 #: model:ir.model.fields.selection,name:base_import_odoo.selection__import_odoo_database__duplicates__overwrite
 msgid "Overwrite existing"
-msgstr ""
+msgstr "Sovrascrivi esistenti"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__password
@@ -329,17 +337,17 @@ msgstr "Password"
 #: code:addons/base_import_odoo/models/import_odoo_database.py:0
 #, python-format
 msgid "Please install the \"odoorpc\" libary in your environment"
-msgstr ""
+msgstr "Installare la libreria \"odoorpc\" nell'ambiente"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__postprocess
 msgid "Postprocess"
-msgstr ""
+msgstr "Postelaborazione"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_form
 msgid "Refresh"
-msgstr ""
+msgstr "Aggiorna"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__remote_id
@@ -349,17 +357,17 @@ msgstr "ID Remoto"
 #. module: base_import_odoo
 #: model:ir.ui.menu,name:base_import_odoo.menu_main
 msgid "Remote Odoo import"
-msgstr ""
+msgstr "Importa Odoo remoto"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__import_database_record_id
 msgid "Remote database ID"
-msgstr ""
+msgstr "ID database remoto"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_form
 msgid "Run import"
-msgstr ""
+msgstr "Esegui importazione"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_field_form
@@ -367,6 +375,8 @@ msgid ""
 "Select fields for which to generate unique values during import. You'll need "
 "this for res.users#login for example."
 msgstr ""
+"Selezionare i campi per i quali generare valori univoci durante "
+"l'importazione. Se ne avrà bisogno per res.users#login, ad esempio."
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_field_form
@@ -374,6 +384,8 @@ msgid ""
 "Select fields which must be equal to treat a pair of remote and local "
 "records of this model as being equal."
 msgstr ""
+"Selezionare i campi che devono essere uguali per trattare una coppia di "
+"record remoti e locali di questo modello come se fossero uguali."
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_field_form
@@ -382,6 +394,9 @@ msgid ""
 "linked ID. The IDs for previously imported records will be mapped to the "
 "local ID, for unknown models or IDs, the fields are set to NULL."
 msgstr ""
+"Seleziona il campo che memorizza il nome del modello e quello che memorizza "
+"l'ID collegato. Gli ID per i record importati in precedenza saranno mappati "
+"all'ID locale, per modelli o ID sconosciuti, i campi sono impostati su NULL."
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__sequence
@@ -392,7 +407,7 @@ msgstr "Sequenza"
 #. module: base_import_odoo
 #: model:ir.model.fields.selection,name:base_import_odoo.selection__import_odoo_database__duplicates__skip
 msgid "Skip existing"
-msgstr ""
+msgstr "Salta esistenti"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__smart_search
@@ -400,17 +415,17 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__smart_search
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__smart_search
 msgid "Smart Search"
-msgstr ""
+msgstr "Ricerca intelligente"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__ssl
 msgid "Ssl"
-msgstr ""
+msgstr "SSL"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__ssl_bypass
 msgid "Ssl Bypass"
-msgstr ""
+msgstr "Baipassa SSL"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__status_data
@@ -420,7 +435,7 @@ msgstr "Stato"
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__status_html
 msgid "Status Html"
-msgstr ""
+msgstr "Stato HTML"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_qweb
@@ -428,6 +443,8 @@ msgid ""
 "The following remote ids don't have a mapping but have to be imported "
 "anyways due to not null constraints."
 msgstr ""
+"I seguenti ID remoti non hanno una mappatura ma devono essere importati "
+"comunque a causa dei vincoli not null."
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database__count_pending_changeset_changes
@@ -435,7 +452,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_model__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_import_odoo.field_ir_model_data__count_pending_changeset_changes
 msgid "The number of pending changes of this record"
-msgstr ""
+msgstr "Numero di modifiche di questo record in attesa"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database__count_pending_changesets
@@ -443,7 +460,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_model__count_pending_changesets
 #: model:ir.model.fields,help:base_import_odoo.field_ir_model_data__count_pending_changesets
 msgid "The number of pending changesets of this record"
-msgstr ""
+msgstr "Numero di insiemi di modifiche in attesa di questo record"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database__count_changesets
@@ -451,7 +468,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database_model__count_changesets
 #: model:ir.model.fields,help:base_import_odoo.field_ir_model_data__count_changesets
 msgid "The overall number of changesets of this record"
-msgstr ""
+msgstr "Numero totale di insiemi di modifiche di questo record"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_qweb
@@ -460,6 +477,10 @@ msgid ""
 "feasible, map the whole model. You might also have a too specific domain on "
 "your import model definition."
 msgstr ""
+"Per risolvere questo problema, crea delle mappature per gli ID remoti "
+"elencati o, se ciò non è fattibile, mappa l'intero modello. Si potrebbe "
+"anche avere un dominio troppo specifico nella definizione del modello di "
+"importazione."
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_field__mapping_type
@@ -471,19 +492,19 @@ msgstr "Tipo"
 #: code:addons/base_import_odoo/models/import_odoo_database.py:0
 #, python-format
 msgid "Unhandled field type %s"
-msgstr ""
+msgstr "Tipo campo %s non gestito"
 
 #. module: base_import_odoo
 #: model:ir.model.fields.selection,name:base_import_odoo.selection__import_odoo_database_field__mapping_type__unique
 msgid "Unique"
-msgstr ""
+msgstr "Unico"
 
 #. module: base_import_odoo
 #. odoo-python
 #: code:addons/base_import_odoo/models/import_odoo_database.py:0
 #, python-format
 msgid "Unknown mapping"
-msgstr ""
+msgstr "Mappatura sconosciuta"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__url
@@ -493,7 +514,7 @@ msgstr "URL"
 #. module: base_import_odoo
 #: model:ir.model.fields,help:base_import_odoo.field_import_odoo_database__ssl
 msgid "Use HTTPS"
-msgstr ""
+msgstr "Usa HTTPS"
 
 #. module: base_import_odoo
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database__user
@@ -506,7 +527,7 @@ msgstr "Utente"
 #: model:ir.model.fields,field_description:base_import_odoo.field_import_odoo_database_model__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_import_odoo.field_ir_model_data__user_can_see_changeset
 msgid "User Can See Changeset"
-msgstr ""
+msgstr "L'utente può vedere l'insieme delle modifiche"
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_field_form
@@ -516,8 +537,12 @@ msgid ""
 "replacement is only effective when setting the specified field and/or when "
 "the remote value is the specified record."
 msgstr ""
+"Quando un record di questo modello viene importato, verrà sostituito con il "
+"record che selezioni come ID locale. Se si seleziona un campo e/o un ID "
+"remoto, questa sostituzione è efficace solo quando si imposta il campo "
+"specificato e/o quando il valore remoto è il record specificato."
 
 #. module: base_import_odoo
 #: model_terms:ir.ui.view,arch_db:base_import_odoo.view_import_odoo_database_qweb
 msgid "done"
-msgstr ""
+msgstr "evaso"

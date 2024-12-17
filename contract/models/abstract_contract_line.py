@@ -193,7 +193,11 @@ class ContractAbstractContractLine(models.AbstractModel):
         from the pricelist otherwise.
         """
         for line in self:
-            if line.automatic_price and line.product_id:
+            if (
+                line.automatic_price
+                and line.product_id
+                and (line.contract_id.pricelist_id or line.contract_id.partner_id)
+            ):
                 pricelist = (
                     line.contract_id.pricelist_id
                     or line.contract_id.partner_id.with_company(

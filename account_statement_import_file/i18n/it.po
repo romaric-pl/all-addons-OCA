@@ -91,7 +91,8 @@ msgstr "Nome visualizzato"
 #. module: account_statement_import_file
 #: model:ir.model.fields,help:account_statement_import_file.field_account_statement_import__statement_file
 msgid "Download bank statement files from your bank and upload them here."
-msgstr "Scaricare il file l'estratto conto dalla propria banca e caricarlo qui."
+msgstr ""
+"Scaricare il file l'estratto conto dalla propria banca e caricarlo qui."
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__id
@@ -121,7 +122,10 @@ msgid "Import Statement"
 msgstr "Importa estratto conto"
 
 #. module: account_statement_import_file
+#. odoo-javascript
+#: code:addons/account_statement_import_file/static/src/account_statement_import_file/account_statement_import_file.xml:0
 #: model_terms:ir.ui.view,arch_db:account_statement_import_file.journal_dashboard_view_inherit
+#, python-format
 msgid "Import Statement (OCA)"
 msgstr "Imposta estratto conto (OCA)"
 

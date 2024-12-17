@@ -24,7 +24,6 @@ class TestCiusRoXmlGeneration(CiusRoTestSetup):
         invoice_xml = self.invoice.attach_ubl_xml_file_button()
         att = self.env["ir.attachment"].browse(invoice_xml["res_id"])
         xml_content = base64.b64decode(att.with_context(bin_size=False).datas)
-
         current_etree = self.get_xml_tree_from_string(xml_content)
         expected_etree = self.get_xml_tree_from_string(self.get_file("invoice.xml"))
         self.assertXmlTreeEqual(current_etree, expected_etree)
@@ -36,24 +35,8 @@ class TestCiusRoXmlGeneration(CiusRoTestSetup):
         invoice_xml = self.credit_note.attach_ubl_xml_file_button()
         att = self.env["ir.attachment"].browse(invoice_xml["res_id"])
         xml_content = base64.b64decode(att.with_context(bin_size=False).datas)
-
         current_etree = self.get_xml_tree_from_string(xml_content)
         expected_etree = self.get_xml_tree_from_string(self.get_file("credit_note.xml"))
-        self.assertXmlTreeEqual(current_etree, expected_etree)
-
-    # credit_note with option -> move_type = "out_refund"
-    @freezegun.freeze_time("2022-09-01")
-    def test_account_credit_note_with_option_edi_ubl(self):
-        self.credit_note.action_post()
-        self.env.company.l10n_ro_credit_note_einvoice = True
-        invoice_xml = self.credit_note.attach_ubl_xml_file_button()
-        att = self.env["ir.attachment"].browse(invoice_xml["res_id"])
-        xml_content = base64.b64decode(att.with_context(bin_size=False).datas)
-
-        current_etree = self.get_xml_tree_from_string(xml_content)
-        expected_etree = self.get_xml_tree_from_string(
-            self.get_file("credit_note_option.xml")
-        )
         self.assertXmlTreeEqual(current_etree, expected_etree)
 
     # invoice -> move_type = "in_invoice"
@@ -63,7 +46,6 @@ class TestCiusRoXmlGeneration(CiusRoTestSetup):
         invoice_xml = self.invoice_in.attach_ubl_xml_file_button()
         att = self.env["ir.attachment"].browse(invoice_xml["res_id"])
         xml_content = base64.b64decode(att.with_context(bin_size=False).datas)
-
         current_etree = self.get_xml_tree_from_string(xml_content)
         expected_etree = self.get_xml_tree_from_string(self.get_file("invoice_in.xml"))
         self.assertXmlTreeEqual(current_etree, expected_etree)
@@ -75,24 +57,8 @@ class TestCiusRoXmlGeneration(CiusRoTestSetup):
         invoice_xml = self.credit_note_in.attach_ubl_xml_file_button()
         att = self.env["ir.attachment"].browse(invoice_xml["res_id"])
         xml_content = base64.b64decode(att.with_context(bin_size=False).datas)
-
         current_etree = self.get_xml_tree_from_string(xml_content)
         expected_etree = self.get_xml_tree_from_string(
             self.get_file("credit_note_in.xml")
-        )
-        self.assertXmlTreeEqual(current_etree, expected_etree)
-
-    # credit_note with option -> move_type = "in_refund"
-    @freezegun.freeze_time("2022-09-01")
-    def test_account_credit_note_in_with_option_edi_ubl(self):
-        self.credit_note_in.action_post()
-        self.env.company.l10n_ro_credit_note_einvoice = True
-        invoice_xml = self.credit_note_in.attach_ubl_xml_file_button()
-        att = self.env["ir.attachment"].browse(invoice_xml["res_id"])
-        xml_content = base64.b64decode(att.with_context(bin_size=False).datas)
-
-        current_etree = self.get_xml_tree_from_string(xml_content)
-        expected_etree = self.get_xml_tree_from_string(
-            self.get_file("credit_note_in_option.xml")
         )
         self.assertXmlTreeEqual(current_etree, expected_etree)

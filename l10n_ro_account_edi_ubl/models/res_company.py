@@ -39,9 +39,6 @@ class ResCompany(models.Model):
     l10n_ro_store_einvoices = fields.Boolean(
         string="Store E-Invoice signed by Anaf.", default=False
     )
-    l10n_ro_credit_note_einvoice = fields.Boolean(
-        string="Credit Note on e-invoice", default=False
-    )
     l10n_ro_render_anaf_pdf = fields.Boolean(string="Render Anaf PDF", default=False)
     l10n_ro_edi_error_notify_users = fields.Many2many(
         "res.users",

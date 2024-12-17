@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-12-11 10:06+0000\n"
+"PO-Revision-Date: 2024-12-14 11:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__budget_company_id
 msgid "#Technical field: Budget Company"
-msgstr ""
+msgstr "#Campo tecnico: azienda budget"
 
 #. module: mis_builder_budget
 #. odoo-python
