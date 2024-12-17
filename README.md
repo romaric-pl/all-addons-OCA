@@ -981,11 +981,16 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 0e9bc5e6b9a0a27e6cbee5001359b10580506153
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 13 08:31:15 2024 +0000
+commit 4da2f26d578bcd4dada5475f4839883193b04f01
+Author: mtbochaca <mtbochaca@gmail.com>
+Date:   Mon Dec 16 10:59:30 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 100.0% (149 of 149 strings)
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod111
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod111/ca/
 
 
 ## l10n-switzerland
@@ -1097,16 +1102,16 @@ Date:   Wed Dec 4 07:30:25 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit d3f5af338be07b66f5aab856ca542274bf249341
-Author: Carlos Dauden <carlos.dauden@tecnativa.com>
-Date:   Tue Dec 10 09:19:23 2024 +0000
+commit 56a321f5b453367a5cd83ea13ce5f1a00a8c35a1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 17 12:43:12 2024 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 97.3% (73 of 75 strings)
+    Currently translated at 100.0% (75 of 75 strings)
     
     Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_batch_extended
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_batch_extended/es/
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_batch_extended/it/
 
 
 ## stock-logistics-tracking
