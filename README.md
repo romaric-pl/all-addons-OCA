@@ -729,11 +729,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit c48386e2793faea0a938f911398aa9bb08ab798b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 28 11:41:11 2024 +0000
+commit f5b2f20fb92f1c98973aa48436efa546a5fa24b8
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Dec 17 14:55:35 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: multi-company-13.0/multi-company-13.0-purchase_sale_stock_inter_company
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-13-0/multi-company-13-0-purchase_sale_stock_inter_company/
 
 
 ## l10n-argentina

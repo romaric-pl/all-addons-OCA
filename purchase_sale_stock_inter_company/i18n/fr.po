@@ -51,12 +51,9 @@ msgstr ""
 msgid "Intercompany Picking"
 msgstr ""
 
-#. module: purchase_sale_inter_company
-#: code:addons/purchase_sale_inter_company/models/stock_picking.py:0
-#, python-format
-msgid ""
-"Mismatch between move lines with the corresponding  PO %s for assigning "
-"quantities and lots from %s for product %s"
+#. module: purchase_sale_stock_inter_company
+#: model:ir.model,name:purchase_sale_stock_inter_company.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
 msgstr ""
 
 #. module: purchase_sale_stock_inter_company
