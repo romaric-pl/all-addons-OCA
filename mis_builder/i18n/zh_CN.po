@@ -30,9 +30,11 @@ msgid ""
 "<code>\n"
 "                                            balp[('user_type_id', '=',\n"
 "                                            ref('account.\n"
-"                                            data_account_type_receivable').id)][]\n"
+"                                            data_account_type_receivable')."
+"id)][]\n"
 "                                        </code>\n"
-"                                        : variation of the balance of all receivable accounts over\n"
+"                                        : variation of the balance of all "
+"receivable accounts over\n"
 "                                        the period."
 msgstr ""
 "<code>\n"
@@ -47,9 +49,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>\n"
-"                                            balp[][('tax_line_id.tag_ids', '=', ref('l10n_be.tax_tag_56').id)]\n"
+"                                            balp[][('tax_line_id.tag_ids', "
+"'=', ref('l10n_be.tax_tag_56').id)]\n"
 "                                        </code>\n"
-"                                        : balance of move lines related to tax grid 56."
+"                                        : balance of move lines related to "
+"tax grid 56."
 msgstr ""
 "<code>\n"
 "                                            balp[][('tax_line_id.tag_ids', "
@@ -61,10 +65,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>\n"
-"                                            debp[55%][('journal_id.code', '=',\n"
+"                                            debp[55%][('journal_id.code', "
+"'=',\n"
 "                                            'BNK1')]\n"
 "                                        </code>\n"
-"                                        : sum of all debits on accounts 55 and journal BNK1 during\n"
+"                                        : sum of all debits on accounts 55 "
+"and journal BNK1 during\n"
 "                                        the period."
 msgstr ""
 "<code>\n"
@@ -77,8 +83,8 @@ msgstr ""
 "'=',\n"
 "                                            'BNK1')]\n"
 "                                        </code>\n"
-"                                        : "
-"期间对科目55和日记BNK1的所有借方的总和。"
+"                                        : 期间对科目55和日记BNK1的所有借方的"
+"总和。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -91,19 +97,21 @@ msgstr "<code>AccountingNone</code> : 在算术运算中表现为0的空值。"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>\n"
-"                                        pbal</code>, <code>nbal</code> : balance, debit, credit,\n"
-"                                        positive balance, negative balance."
+"                                        pbal</code>, <code>nbal</code>, "
+"<code>fld</code> : balance, debit, credit,\n"
+"                                        positive balance, negative balance,\n"
+"                                        other numerical field."
 msgstr ""
-"<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>pbal</code>, "
-"<code>nbal</code> : 余额，贷方，借方，正余额，负余额。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>bal[70]</code> : variation of the balance of account 70 over\n"
-"                                        the period (it is the same as <code>balp[70]</code>."
-msgstr "<code>bal[70]</code> : "
-"科目70余额在该期间的变化（与<code>balp[70]</code>相同）。"
+"                                        the period (it is the same as "
+"<code>balp[70]</code>."
+msgstr ""
+"<code>bal[70]</code> : 科目70余额在该期间的变化（与<code>balp[70]</code>相"
+"同）。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -120,11 +128,14 @@ msgstr "<code>bali[70,60]</code> : 科目70和60的期初余额。"
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>balu[]</code> : (<code>u</code> for unallocated) is a special expression\n"
-"                                        that shows the unallocated profit/loss of previous fiscal\n"
+"<code>balu[]</code> : (<code>u</code> for unallocated) is a special "
+"expression\n"
+"                                        that shows the unallocated profit/"
+"loss of previous fiscal\n"
 "                                        years."
-msgstr "<code>balu[]</code> : "
-"（<code>u</code>代表未分配）是一个特殊表达式，显示以前财政年度的未分配盈亏。"
+msgstr ""
+"<code>balu[]</code> : （<code>u</code>代表未分配）是一个特殊表达式，显示以前"
+"财政年度的未分配盈亏。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -136,9 +147,11 @@ msgstr "<code>crdp[40%]</code> : 在期间内，所有以40开头的科目的贷
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>date_from</code>, <code>date_to</code> : beginning and end date of the\n"
+"<code>date_from</code>, <code>date_to</code> : beginning and end date of "
+"the\n"
 "                                        period."
-msgstr "<code>date_from</code>, <code>date_to</code> : 期间的开始日期和结束日期。"
+msgstr ""
+"<code>date_from</code>, <code>date_to</code> : 期间的开始日期和结束日期。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -146,35 +159,39 @@ msgid ""
 "<code>datetime</code>, <code>datetime</code>, <code>dateutil</code> : the "
 "python modules."
 msgstr ""
-"<code>datetime</code>, <code>datetime</code>, <code>dateutil</code> : "
-"Python模块：datetime, datetime, dateutil。"
+"<code>datetime</code>, <code>datetime</code>, <code>dateutil</code> : Python"
+"模块：datetime, datetime, dateutil。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>p</code>, <code>i</code>, <code>e</code> : respectively variation over the period,\n"
+"<code>p</code>, <code>i</code>, <code>e</code> : respectively variation over "
+"the period,\n"
 "                                        initial balance, ending balance"
-msgstr "<code>p</code>, <code>i</code>, <code>e</code> : "
-"分别表示期间的变化、期初余额、期末余额"
+msgstr ""
+"<code>p</code>, <code>i</code>, <code>e</code> : 分别表示期间的变化、期初余"
+"额、期末余额"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>pbale[55%]</code> : sum of all ending balances of accounts\n"
-"                                        starting with 55 whose ending balance is positive."
-msgstr "<code>pbale[55%]</code> : 所有以55开头且期末余额为正的科目的期末余额总和。"
+"                                        starting with 55 whose ending "
+"balance is positive."
+msgstr ""
+"<code>pbale[55%]</code> : 所有以55开头且期末余额为正的科目的期末余额总和。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>sum</code>, <code>min</code>,\n"
 "                                        <code>max</code>, <code>len</code>,\n"
-"                                        <code>avg</code> : behave as expected, very\n"
+"                                        <code>avg</code> : behave as "
+"expected, very\n"
 "                                        similar to the python builtins."
 msgstr ""
-"<code>sum</code>, <code>min</code>,<code>max</code>, "
-"<code>len</code>,<code>avg</code> : "
-"函数的行为符合预期，与Python内置函数非常相似。"
+"<code>sum</code>, <code>min</code>,<code>max</code>, <code>len</code>,"
+"<code>avg</code> : 函数的行为符合预期，与Python内置函数非常相似。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.report_mis_report_instance
@@ -184,17 +201,19 @@ msgstr "<span>-</span>"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__source_aml_model_id
 msgid ""
-"A 'move line like' model, ie having at least debit, credit, date, account_id"
-" and company_id fields."
-msgstr "一个类似于“会计分录”的模型，即至少包含借方、贷方、日期、科目ID和公司ID字段。"
+"A 'move line like' model, ie having at least debit, credit, date, account_id "
+"and company_id fields."
+msgstr ""
+"一个类似于“会计分录”的模型，即至少包含借方、贷方、日期、科目ID和公司ID字段。"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report__move_lines_source
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__source_aml_model_id
 msgid ""
-"A 'move line like' model, ie having at least debit, credit, date, account_id"
-" and company_id fields. This model is the data source for column Actuals."
-msgstr "一个类似于“会计分录”的模型，即至少包含借方、贷方、日期、科目ID和公司ID字段。"
+"A 'move line like' model, ie having at least debit, credit, date, account_id "
+"and company_id fields. This model is the data source for column Actuals."
+msgstr ""
+"一个类似于“会计分录”的模型，即至少包含借方、贷方、日期、科目ID和公司ID字段。"
 "这个模型是实际值列的数据来源。"
 
 #. module: mis_builder
@@ -235,10 +254,10 @@ msgstr "累积方法"
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 #, python-format
 msgid ""
-"Actual (alternative) models used in columns must have the same account model"
-" in the Account field and must be the same defined in the report template: "
-"%s"
-msgstr "在列中使用的实际情况（替代）模型必须在科目字段中具有相同的科目模型，并且必须"
+"Actual (alternative) models used in columns must have the same account model "
+"in the Account field and must be the same defined in the report template: %s"
+msgstr ""
+"在列中使用的实际情况（替代）模型必须在科目字段中具有相同的科目模型，并且必须"
 "与报告模板中定义的相同：%s"
 
 #. module: mis_builder
@@ -255,13 +274,14 @@ msgstr "实际数据（替代）"
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__source
 msgid ""
 "Actuals: current data, from accounting and other queries.\n"
-"Actuals (alternative): current data from an alternative source (eg a database view providing look-alike account move lines).\n"
+"Actuals (alternative): current data from an alternative source (eg a "
+"database view providing look-alike account move lines).\n"
 "Sum columns: summation (+/-) of other columns.\n"
 "Compare to column: compare to other column.\n"
 msgstr ""
 "实际数据：当前数据，来自会计和其他查询。\n"
-"实际数据（替代）：来自替代来源的当前数据（例如，提供类似会计分录的数据库视图"
-"）。\n"
+"实际数据（替代）：来自替代来源的当前数据（例如，提供类似会计分录的数据库视"
+"图）。\n"
 "求和列：其他列的总和（+/-）。\n"
 "比较列：与其他列进行比较\n"
 
@@ -327,8 +347,8 @@ msgstr "金额"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_kpi__style_expression
 msgid ""
-"An expression that returns a style depending on the KPI value. Such style is"
-" applied on top of the row style."
+"An expression that returns a style depending on the KPI value. Such style is "
+"applied on top of the row style."
 msgstr "根据关键绩效指标（KPI）值返回样式的表达式。此类样式应用于行样式之上。"
 
 #. module: mis_builder
@@ -344,7 +364,6 @@ msgstr "自动展开"
 
 #. module: mis_builder
 #. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__avg
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__avg
@@ -385,8 +404,7 @@ msgstr "取消"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__multi_company
-msgid ""
-"Check if you wish to specify several companies to be searched for data."
+msgid "Check if you wish to specify several companies to be searched for data."
 msgstr "如果您希望指定多个公司进行数据搜索，请勾选。"
 
 #. module: mis_builder
@@ -566,8 +584,12 @@ msgstr "描述"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_kpi__accumulation_method
 msgid ""
-"Determines how values of this kpi spanning over a time period are transformed to match the reporting period. Sum: values of shorter period are added, values of longest or partially overlapping periods are adjusted pro-rata temporis.\n"
-"Average: values of included period are averaged with a pro-rata temporis weight."
+"Determines how values of this kpi spanning over a time period are "
+"transformed to match the reporting period. Sum: values of shorter period are "
+"added, values of longest or partially overlapping periods are adjusted pro-"
+"rata temporis.\n"
+"Average: values of included period are averaged with a pro-rata temporis "
+"weight."
 msgstr ""
 "确定如何将此关键绩效指标在时间段内的值转换为与报告期相匹配。求和：较短时期的"
 "值被加总，最长或部分重叠时期的值按比例调整。\n"
@@ -657,14 +679,14 @@ msgstr "在此输入表达式，例如 balp[70%]。另请参阅帮助标签。"
 #: code:addons/mis_builder/models/aep.py:0
 #, python-format
 msgid ""
-"Error while querying move line source \"%(model_name)s\". This is likely due to a filter or expression referencing a field that does not exist in the model.\n"
+"Error while querying move line source \"%(model_name)s\". This is likely due "
+"to a filter or expression referencing a field that does not exist in the "
+"model.\n"
 "\n"
 "The technical error message is: %(exception)s. "
 msgstr ""
-"查询会计分录源 \\\"%(model_name)s\\\" "
-"时出错。这很可能是因为过滤器或表达式引用了模型中不存在的字段。\\n"
-"\\n"
-"技术错误信息是：%(exception)s。 "
+"查询会计分录源 \\\"%(model_name)s\\\" 时出错。这很可能是因为过滤器或表达式引"
+"用了模型中不存在的字段。\\n\\n技术错误信息是：%(exception)s。 "
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -703,11 +725,13 @@ msgstr "表达式可以是任何有效的Python表达式。"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "Expressions can involve other KPI, sub KPI and\n"
-"                                    query results by name (eg <code>kpi1 + kpi2</code>,\n"
-"                                    <code>kpi2.subkpi1</code>, <code>query1.field1</code>)."
+"                                    query results by name (eg <code>kpi1 + "
+"kpi2</code>,\n"
+"                                    <code>kpi2.subkpi1</code>, <code>query1."
+"field1</code>)."
 msgstr ""
-"表达式可以涉及其他KPI、子KPI以及按名称查询结果（例如 <code>kpi1 + "
-"kpi2</code>，<code>kpi2.subkpi1</code>，<code>query1.field1</code>）。"
+"表达式可以涉及其他KPI、子KPI以及按名称查询结果（例如 <code>kpi1 + kpi2</"
+"code>，<code>kpi2.subkpi1</code>，<code>query1.field1</code>）。"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__normalize_factor
@@ -857,8 +881,8 @@ msgstr "ID"
 msgid ""
 "If currency_id is not provided, all companies must have the same currency."
 msgstr ""
-"If currency_id is not provided, all companies must have the same currency.\""
-", \"zh_CN\": \"如果未提供currency_id，则所有公司必须使用相同的货币。"
+"If currency_id is not provided, all companies must have the same currency."
+"\", \"zh_CN\": \"如果未提供currency_id，则所有公司必须使用相同的货币。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
@@ -902,7 +926,8 @@ msgid ""
 "This can be fixed by either:\n"
 "\t- Changing the KPI value to a tuple of length %(length)s\n"
 "or\n"
-"\t- Changing the KPI to `multi` mode and giving an explicit value for each sub-KPI."
+"\t- Changing the KPI to `multi` mode and giving an explicit value for each "
+"sub-KPI."
 msgstr ""
 "关键绩效指标\\\"%(kpi)s\\\"的类型为%(type)s，但预期应为元组。\n"
 "可以通过以下方式进行修复：\n"
@@ -918,8 +943,8 @@ msgid ""
 "KPI \"%(kpi)s\" is valued as a tuple of length %(length)s while a tuple of "
 "length%(expected_length)s is expected."
 msgstr ""
-"关键绩效指标\\\"%(kpi)s\\\"的值为长度为"
-"%(length)s的元组，但预期应为长度为%(expected_length)s的元组。"
+"关键绩效指标\\\"%(kpi)s\\\"的值为长度为%(length)s的元组，但预期应为长度"
+"为%(expected_length)s的元组。"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__seq1
@@ -1202,7 +1227,6 @@ msgstr "此源在列%s中不允许使用日期筛选。"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__none
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__none
 #, python-format
@@ -1251,7 +1275,6 @@ msgstr "父列"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__pct
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__pct
 #, python-format
@@ -1290,8 +1313,7 @@ msgstr "请在%s中提供要比较的两列。"
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 #, python-format
 msgid ""
-"Please select a report template and/or save the report before adding "
-"columns."
+"Please select a report template and/or save the report before adding columns."
 msgstr "在添加列之前，请选择报告模板和/或保存报告。"
 
 #. module: mis_builder
@@ -1498,6 +1520,11 @@ msgid "Style name"
 msgstr "样式名称"
 
 #. module: mis_builder
+#: model:ir.model.constraint,message:mis_builder.constraint_mis_report_style_style_name_uniq
+msgid "Style name should be unique"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__subkpi_ids
 msgid "Sub KPI"
 msgstr "子KPI"
@@ -1581,7 +1608,6 @@ msgstr "继承后缀"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__sum
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__sum
 #, python-format
@@ -1637,11 +1663,13 @@ msgstr "文本颜色使用有效的RGB代码（从#000000到#FFFFFF）"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "The <b>account selector</b> is a like expression on the\n"
-"                                        account code (eg <code>70%</code>, etc), or a domain over accounts\n"
-"                                        (eg <code>[('code', 'like', '60%')]</code>)."
+"                                        account code (eg <code>70%</code>, "
+"etc), or a domain over accounts\n"
+"                                        (eg <code>[('code', 'like', '60%')]</"
+"code>)."
 msgstr ""
-"<b>科目选择器</b>是对科目代码的类似表达式（例如 <code>70%</code> "
-"等），或对科目的域（例如 <code>[('code', 'like', '60%')]</code>）"
+"<b>科目选择器</b>是对科目代码的类似表达式（例如 <code>70%</code> 等），或对科"
+"目的域（例如 <code>[('code', 'like', '60%')]</code>）"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -1654,11 +1682,10 @@ msgstr "<b>日记项目域</b>是Odoo对日记项目的域过滤器。"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "The following special elements are recognized in the expressions\n"
-"                                    to compute accounting data: <code>{bal|crd|deb|pbal|nbal}{pieu}[account\n"
+"                                    to compute accounting data: <code>{bal|"
+"crd|deb|pbal|nbal|fld}{pieu}(.fieldname)[account\n"
 "                                    selector][journal items domain]</code>."
 msgstr ""
-"在计算会计数据的表达式中，以下特殊元素被识别：<code>{bal|crd|deb|pbal|nbal}{p"
-"ieu}[科目选择器][日记项目域]</code>。"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__date_to
@@ -1758,6 +1785,27 @@ msgstr "您不能将周期%s与其自身相加。"
 
 #. module: mis_builder
 #. odoo-python
+#: code:addons/mis_builder/models/aep.py:0
+#, python-format
+msgid "`%(field)s` cannot have a field name in expression %(expr)s"
+msgstr ""
+
+#. module: mis_builder
+#. odoo-python
+#: code:addons/mis_builder/models/aep.py:0
+#, python-format
+msgid "`fld` can only be used with mode `p` (variation) in expression %s"
+msgstr ""
+
+#. module: mis_builder
+#. odoo-python
+#: code:addons/mis_builder/models/aep.py:0
+#, python-format
+msgid "`fld` must have a field name in exression %s"
+msgstr ""
+
+#. module: mis_builder
+#. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 #, python-format
 msgid "from %(date_from)s to %(date_to)s"
@@ -1797,6 +1845,14 @@ msgid "versus"
 msgstr "对抗"
 
 #. module: mis_builder
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
+msgid ""
+"when <code>fld</code> is used : a field name specifier\n"
+"                                        must be provided (e.g. <code>fldp."
+"quantity</code>"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__x-large
 msgid "x-large"
 msgstr "特大号"
@@ -1815,3 +1871,23 @@ msgstr "超大号"
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__xx-small
 msgid "xx-small"
 msgstr "超小号"
+
+#~ msgid ""
+#~ "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>\n"
+#~ "                                        pbal</code>, <code>nbal</code> : "
+#~ "balance, debit, credit,\n"
+#~ "                                        positive balance, negative "
+#~ "balance."
+#~ msgstr ""
+#~ "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>pbal</code>, "
+#~ "<code>nbal</code> : 余额，贷方，借方，正余额，负余额。"
+
+#~ msgid ""
+#~ "The following special elements are recognized in the expressions\n"
+#~ "                                    to compute accounting data: "
+#~ "<code>{bal|crd|deb|pbal|nbal}{pieu}[account\n"
+#~ "                                    selector][journal items domain]</"
+#~ "code>."
+#~ msgstr ""
+#~ "在计算会计数据的表达式中，以下特殊元素被识别：<code>{bal|crd|deb|pbal|"
+#~ "nbal}{pieu}[科目选择器][日记项目域]</code>。"

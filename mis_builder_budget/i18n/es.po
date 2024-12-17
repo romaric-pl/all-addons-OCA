@@ -20,6 +20,11 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__budget_company_id
+msgid "#Technical field: Budget Company"
+msgstr ""
+
+#. module: mis_builder_budget
 #. odoo-python
 #: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
 #, python-format
@@ -64,6 +69,12 @@ msgid "Action Needed"
 msgstr "Acción Necesaria"
 
 #. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__active
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__active
+msgid "Active"
+msgstr ""
+
+#. module: mis_builder_budget
 #: model:ir.model.fields,help:mis_builder_budget.field_mis_report_instance_period__source
 msgid ""
 "Actuals: current data, from accounting and other queries.\n"
@@ -102,6 +113,14 @@ msgstr ""
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__analytic_precision
 msgid "Analytic Precision"
+msgstr ""
+
+#. module: mis_builder_budget
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_by_account_form_view
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_by_account_search_view
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_form_view
+#: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_search_view
+msgid "Archived"
 msgstr ""
 
 #. module: mis_builder_budget
@@ -176,6 +195,7 @@ msgstr "Cancelado"
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_abstract__company_id
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__company_id
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__company_id
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__company_id
 msgid "Company"
 msgstr "Compañía"
 

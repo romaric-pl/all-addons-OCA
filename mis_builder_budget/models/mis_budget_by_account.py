@@ -16,3 +16,4 @@ class MisBudgetByAccount(models.Model):
     allow_items_overlap = fields.Boolean(
         help="If checked, overlap between budget items is allowed"
     )
+    active = fields.Boolean(default=True, copy=False)

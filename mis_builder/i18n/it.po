@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-07-30 08:58+0000\n"
+"PO-Revision-Date: 2024-12-17 13:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -98,14 +98,16 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>\n"
-"                                        pbal</code>, <code>nbal</code> : "
-"balance, debit, credit,\n"
-"                                        positive balance, negative balance."
+"                                        pbal</code>, <code>nbal</code>, "
+"<code>fld</code> : balance, debit, credit,\n"
+"                                        positive balance, negative balance,\n"
+"                                        other numerical field."
 msgstr ""
 "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>\n"
-"                                        pbal</code>, <code>nbal</code> : "
-"bilancio, debito, credito,\n"
-"                                        bilancio positivo, bilancio negativo."
+"                                        pbal</code>, <code>nbal</code>, "
+"<code>fld</code> : saldo, debito, credito,\n"
+"                                        saldo positivo, saldo negativo,\n"
+"                                        altro campo numerico."
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -1576,6 +1578,11 @@ msgid "Style name"
 msgstr "Nome stile"
 
 #. module: mis_builder
+#: model:ir.model.constraint,message:mis_builder.constraint_mis_report_style_style_name_uniq
+msgid "Style name should be unique"
+msgstr "Il nome stile deve essere univoco"
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__subkpi_ids
 msgid "Sub KPI"
 msgstr "Sotto KPI"
@@ -1741,14 +1748,14 @@ msgstr ""
 msgid ""
 "The following special elements are recognized in the expressions\n"
 "                                    to compute accounting data: <code>{bal|"
-"crd|deb|pbal|nbal}{pieu}[account\n"
+"crd|deb|pbal|nbal|fld}{pieu}(.fieldname)[account\n"
 "                                    selector][journal items domain]</code>."
 msgstr ""
 "I seguenti elementi speciali sono riconosciuti nelle espressioni\n"
-"                                    per calcolare dati di contabilità: "
-"<code>{bal|crd|deb|pbal|nbal}{pieu}[selettore\n"
-"                                    conto][dominio registrazioni contabili]</"
-"code>."
+"                                    per calcolare i dati contabili: "
+"<code>{bal|crd|deb|pbal|nbal|fld}{pieu}(.fieldname)\n"
+"                                    [account selector][journal items "
+"domain]</code>."
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__date_to
@@ -1848,6 +1855,29 @@ msgstr "Non puoi sommare il periodo %s con se stesso."
 
 #. module: mis_builder
 #. odoo-python
+#: code:addons/mis_builder/models/aep.py:0
+#, python-format
+msgid "`%(field)s` cannot have a field name in expression %(expr)s"
+msgstr "`%(field)s` non può avere un campo name nell'espressione %(expr)s"
+
+#. module: mis_builder
+#. odoo-python
+#: code:addons/mis_builder/models/aep.py:0
+#, python-format
+msgid "`fld` can only be used with mode `p` (variation) in expression %s"
+msgstr ""
+"`fld` può essere utilizzato solo con la modalità `p` (variazione) "
+"nell'espressione %s"
+
+#. module: mis_builder
+#. odoo-python
+#: code:addons/mis_builder/models/aep.py:0
+#, python-format
+msgid "`fld` must have a field name in exression %s"
+msgstr "`fld` deve avere un campo name nell'espressione %s"
+
+#. module: mis_builder
+#. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
 #, python-format
 msgid "from %(date_from)s to %(date_to)s"
@@ -1887,6 +1917,17 @@ msgid "versus"
 msgstr "contro"
 
 #. module: mis_builder
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
+msgid ""
+"when <code>fld</code> is used : a field name specifier\n"
+"                                        must be provided (e.g. <code>fldp."
+"quantity</code>"
+msgstr ""
+"quando viene utilizzato <code>fld</code>: deve essere fornito \n"
+"                                        uno descrittore del nome del campo ("
+"ad esempio <code>fldp.quantity</code>"
+
+#. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__x-large
 msgid "x-large"
 msgstr "x-large"
@@ -1905,6 +1946,32 @@ msgstr "xx-large"
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__xx-small
 msgid "xx-small"
 msgstr "xx-small"
+
+#~ msgid ""
+#~ "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>\n"
+#~ "                                        pbal</code>, <code>nbal</code> : "
+#~ "balance, debit, credit,\n"
+#~ "                                        positive balance, negative "
+#~ "balance."
+#~ msgstr ""
+#~ "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>\n"
+#~ "                                        pbal</code>, <code>nbal</code> : "
+#~ "bilancio, debito, credito,\n"
+#~ "                                        bilancio positivo, bilancio "
+#~ "negativo."
+
+#~ msgid ""
+#~ "The following special elements are recognized in the expressions\n"
+#~ "                                    to compute accounting data: "
+#~ "<code>{bal|crd|deb|pbal|nbal}{pieu}[account\n"
+#~ "                                    selector][journal items domain]</"
+#~ "code>."
+#~ msgstr ""
+#~ "I seguenti elementi speciali sono riconosciuti nelle espressioni\n"
+#~ "                                    per calcolare dati di contabilità: "
+#~ "<code>{bal|crd|deb|pbal|nbal}{pieu}[selettore\n"
+#~ "                                    conto][dominio registrazioni "
+#~ "contabili]</code>."
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"
