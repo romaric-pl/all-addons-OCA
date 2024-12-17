@@ -80,11 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 344452fc1c4f50fcded48e5384290a294a2e152c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 18 19:29:05 2024 +0000
+commit e466b10ca4a11b537ae968ce8144f511b2cc8289
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 17 12:40:34 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_menu
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_menu/it/
 
 
 ## account-financial-reporting
@@ -1243,16 +1248,16 @@ Date:   Fri Jun 14 14:57:09 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit d4ee5bb04eb9f3cac6ab01d065f95252af9bbadc
+commit 27af07b538ddf10c567bce20d3e27c8830345288
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 23 13:59:38 2024 +0000
+Date:   Tue Dec 17 12:58:47 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 92.0% (207 of 225 strings)
+    Currently translated at 79.3% (23 of 29 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_order_approved
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_order_approved/it/
 
 
 ## purchase-reporting
