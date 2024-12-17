@@ -127,7 +127,10 @@ odoo.define("web_m2x_options.web_m2x_options", function (require) {
                 self.field_color = self.nodeOptions.field_color;
                 self.colors = self.nodeOptions.colors;
 
-                var context = self.record.getContext(self.recordParams);
+                const context = Object.assign(
+                    self.record.getContext(self.recordParams),
+                    self.additionalContext
+                );
                 var domain = self.record.getDomain(self.recordParams);
 
                 var blacklisted_ids = self._getSearchBlacklist();

@@ -65,11 +65,16 @@ Date:   Tue Dec 10 12:41:45 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 27b62b3f137fad2d57ec195925e2a1ab8326ed3a
+commit a651a68cd9300fb5da493733d21aea50844f54f1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 12 14:15:20 2024 +0000
+Date:   Tue Dec 17 12:40:31 2024 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (28 of 28 strings)
+    
+    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_menu
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_menu/it/
 
 
 ## account-financial-reporting
@@ -366,11 +371,11 @@ Date:   Wed May 1 18:02:11 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 77a360edb61410af13276beaac9b0af89b2ce6f4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 9 16:25:47 2024 +0000
+commit 0eda44d6663c726b9b5d3469ab8e1866d9f1c327
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 17 16:05:31 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## crm
@@ -389,16 +394,11 @@ Date:   Tue Jul 16 14:42:10 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit b0fffb9268956da89ce981b18462f45ca8a0d157
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Sep 23 15:55:46 2024 +0000
+commit c443c1e1d520f6103af8dd56947c24a5d7bf693b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 15 18:45:57 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: partner-contact-14.0/partner-contact-14.0-partner_helper
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-partner_helper/
+    Added translation using Weblate (Italian)
 
 
 ## sale-financial
@@ -1188,16 +1188,11 @@ Date:   Wed Sep 18 07:14:12 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit f54b8a67632cfe573c2cf90d94b6f8b095ad6e4f
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Dec 5 19:11:43 2024 +0000
+commit 5d1e2a5335ccf4dbc5d57dc0ddda86db063a8871
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 17 19:14:11 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: pms-14.0/pms-14.0-pms_l10n_es
-    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms_l10n_es/
+    [BOT] post-merge updates
 
 
 ## purchase-workflow
@@ -1216,25 +1211,20 @@ Date:   Mon Nov 18 15:30:32 2024 +0000
 
 ## purchase-reporting
 From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
-commit 4e6e1c597900bb20e76d1832430199e5b893d99a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 9 12:32:34 2024 +0000
+commit 2fe2ec5b5bd420679c7bfe3b6fe81d70cda20bf1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 15 16:26:19 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit a96482e691b2c4644fa720a804435751feac7c99
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Dec 12 15:51:22 2024 +0000
+commit 49401a0d78f7e1504a0b55cc1066ba1465125421
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 15 16:26:24 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: product-attribute-14.0/product-attribute-14.0-product_readonly_security
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_readonly_security/
+    Added translation using Weblate (Italian)
 
 
 ## product-kitting
@@ -1384,9 +1374,9 @@ Date:   Mon Aug 19 06:37:41 2024 +0000
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit 5800d8e833b6c2d0194d197fd9170bfbbb12e37a
+commit 100ee6eb765310fa9ecc49dc02e9fcd00a3b7c8e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Aug 26 06:44:55 2024 +0000
+Date:   Tue Dec 17 09:09:27 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1615,11 +1605,11 @@ Date:   Fri Oct 27 21:13:28 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 2a6673740546b8fbeb04ea4d47d41b1b2348dd9a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 29 10:22:11 2024 +0000
+commit de7a73871388364a58be08a101ad22f3783f5826
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 16 10:25:15 2024 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## website

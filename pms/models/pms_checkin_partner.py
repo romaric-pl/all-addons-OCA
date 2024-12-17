@@ -452,6 +452,7 @@ class PmsCheckinPartner(models.Model):
                     for field in record._checkin_mandatory_fields(
                         residence_country=record.residence_country_id,
                         document_type=record.document_type,
+                        birthdate_date=record.birthdate_date,
                     )
                 ):
                     record.state = "draft"
@@ -782,7 +783,9 @@ class PmsCheckinPartner(models.Model):
         dummy_checkins = reservation.checkin_partner_ids.filtered(
             lambda c: c.state == "dummy"
         )
-        if len(reservation.checkin_partner_ids) < reservation.adults:
+        if len(reservation.checkin_partner_ids) < (
+            reservation.adults + reservation.children
+        ):
             return super(PmsCheckinPartner, self).create(vals)
         if len(dummy_checkins) > 0:
             dummy_checkins[0].write(vals)
@@ -790,6 +793,12 @@ class PmsCheckinPartner(models.Model):
         raise ValidationError(
             _("Is not possible to create the proposed check-in in this reservation")
         )
+
+    def write(self, vals):
+        res = super().write(vals)
+        for record in self:
+            record.reservation_id._update_tourist_tax_service()
+        return res
 
     def unlink(self):
         reservations = self.mapped("reservation_id")
@@ -819,6 +828,8 @@ class PmsCheckinPartner(models.Model):
             "residence_city",
             "residence_country_id",
             "residence_state_id",
+            "document_country_id",
+            "document_type",
         ]
         return manual_fields
 
@@ -829,10 +840,10 @@ class PmsCheckinPartner(models.Model):
         return manual_fields
 
     @api.model
-    def _checkin_mandatory_fields(self, residence_country=False, document_type=False):
-        mandatory_fields = [
-            "name",
-        ]
+    def _checkin_mandatory_fields(
+        self, residence_country=False, document_type=False, birthdate_date=False
+    ):
+        mandatory_fields = []
         return mandatory_fields
 
     @api.model

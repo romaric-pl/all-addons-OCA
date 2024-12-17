@@ -1,5 +1,7 @@
 import logging
 
+from dateutil.relativedelta import relativedelta
+
 from odoo import api, fields, models
 
 from ..wizards.traveller_report import CREATE_OPERATION_CODE
@@ -65,7 +67,9 @@ class PmsCheckinPartner(models.Model):
                     record.support_number = False
 
     @api.model
-    def _checkin_mandatory_fields(self, residence_country=False, document_type=False):
+    def _checkin_mandatory_fields(
+        self, residence_country=False, document_type=False, birthdate_date=False
+    ):
         mandatory_fields = super(PmsCheckinPartner, self)._checkin_mandatory_fields(
             residence_country, document_type
         )
@@ -73,9 +77,6 @@ class PmsCheckinPartner(models.Model):
             [
                 "birthdate_date",
                 "gender",
-                "document_number",
-                "document_type",
-                "document_expedition_date",
                 "nationality_id",
                 "residence_street",
                 "residence_city",
@@ -83,6 +84,27 @@ class PmsCheckinPartner(models.Model):
                 "residence_zip",
             ]
         )
+
+        if birthdate_date:
+            # Checkins with age greater than 14 must have an identity document
+            if birthdate_date <= fields.Date.today() - relativedelta(years=14):
+                mandatory_fields.extend(
+                    [
+                        "document_number",
+                        "document_type",
+                        "document_expedition_date",
+                        "document_country_id",
+                    ]
+                )
+            # Checkins with age lower than 18 must have a relationship with
+            # another checkin partner
+            if birthdate_date > fields.Date.today() - relativedelta(years=18):
+                mandatory_fields.extend(
+                    [
+                        "ses_partners_relationship",
+                        "ses_related_checkin_partner_id",
+                    ]
+                )
 
         if residence_country and residence_country.code == CODE_SPAIN:
             mandatory_fields.extend(
@@ -107,7 +129,13 @@ class PmsCheckinPartner(models.Model):
     @api.model
     def _checkin_manual_fields(self, country=False):
         manual_fields = super(PmsCheckinPartner, self)._checkin_manual_fields()
-        manual_fields.extend(["support_number"])
+        manual_fields.extend(
+            [
+                "support_number",
+                "ses_partners_relationship",
+                "ses_related_checkin_partner_id",
+            ]
+        )
         return manual_fields
 
     def get_document_vals(self):

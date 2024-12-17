@@ -6974,11 +6974,11 @@ addon | version | maintainers | summary
 [account_asset_pms](account_asset_pms/) | 14.0.1.0.0 |  | Add property in assets configuration
 [mis_builder_pms](mis_builder_pms/) | 14.0.1.0.0 |  | Add property in mis builder
 [multi_pms_properties](multi_pms_properties/) | 14.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 14.0.2.49.0 |  | A property management system
+[pms](pms/) | 14.0.2.51.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 14.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_housekeeping](pms_housekeeping/) | 14.0.1.0.1 |  | Housekeeping
 [pms_hr_property](pms_hr_property/) | 14.0.1.1.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 14.0.3.1.0 |  | PMS Spanish Adaptation
+[pms_l10n_es](pms_l10n_es/) | 14.0.3.2.0 |  | PMS Spanish Adaptation
 [pms_l10n_es_sii](pms_l10n_es_sii/) | 14.0.1.1.0 |  | PMS AEAT SII Integration
 [pms_rooming_xls](pms_rooming_xls/) | 14.0.1.0.0 |  | Rooming xlsx Management
 [pos_pms_link](pos_pms_link/) | 14.0.1.0.0 |  | Allows to use PMS reservations on the POS interface
@@ -8214,6 +8214,8 @@ addon | version | maintainers | summary
 [base_report_to_printer](base_report_to_printer/) | 14.0.2.0.1 |  | Report to printer
 [base_report_to_printer_mail](base_report_to_printer_mail/) | 14.0.1.0.0 |  | Report to printer - Mail extension
 [printer_zpl2](printer_zpl2/) | 14.0.2.1.0 |  | Add a ZPL II label printing feature
+[printing_auto_base](printing_auto_base/) | 14.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Printing Auto Base
+[printing_auto_label_printer](printing_auto_label_printer/) | 14.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Printing Auto Label Printer
 [remote_report_to_printer](remote_report_to_printer/) | 14.0.1.1.0 |  | Report to printer on remotes
 [server_env_printing_server](server_env_printing_server/) | 14.0.1.0.1 |  | Server Environment for Printing Server
 
@@ -9524,7 +9526,7 @@ addon | version | maintainers | summary
 [web_ir_actions_act_view_reload](web_ir_actions_act_view_reload/) | 14.0.1.0.2 |  | Enables reload of the current view via ActionManager
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 14.0.1.0.1 |  | Show a message box to users
 [web_listview_range_select](web_listview_range_select/) | 14.0.1.0.0 |  | Enables selecting a range of records using the shift key
-[web_m2x_options](web_m2x_options/) | 14.0.1.1.1 |  | web_m2x_options
+[web_m2x_options](web_m2x_options/) | 14.0.1.1.2 |  | web_m2x_options
 [web_m2x_options_manager](web_m2x_options_manager/) | 14.0.1.2.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 14.0.1.1.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 14.0.1.1.0 |  | Send notification messages to user

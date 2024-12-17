@@ -7,6 +7,7 @@ import time
 
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
+from odoo.tools.safe_eval import safe_eval
 
 _logger = logging.getLogger(__name__)
 
@@ -924,9 +925,11 @@ class PmsReservation(models.Model):
                     room_type_id=False,  # Allows to choose any available room
                     current_lines=reservation.reservation_line_ids.ids,
                     pricelist_id=reservation.pricelist_id.id,
-                    class_id=reservation.room_type_id.class_id.id
-                    if reservation.room_type_id
-                    else False,
+                    class_id=(
+                        reservation.room_type_id.class_id.id
+                        if reservation.room_type_id
+                        else False
+                    ),
                     real_avail=True,
                 )
                 reservation.allowed_room_ids = pms_property.free_room_ids
@@ -1093,10 +1096,14 @@ class PmsReservation(models.Model):
             else:
                 reservation.show_update_pricelist = False
 
-    @api.depends("adults")
+    @api.depends("adults", "children")
     def _compute_checkin_partner_ids(self):
         for reservation in self:
-            adults = reservation.adults if reservation.reservation_type != "out" else 0
+            occupancy = (
+                reservation.adults + reservation.children
+                if reservation.reservation_type != "out"
+                else 0
+            )
             assigned_checkins = reservation.checkin_partner_ids.filtered(
                 lambda c: c.state in ("precheckin", "onboard", "done")
             )
@@ -1104,18 +1111,18 @@ class PmsReservation(models.Model):
                 lambda c: c.state in ("dummy", "draft")
             )
             leftover_unassigneds_count = (
-                len(assigned_checkins) + len(unassigned_checkins) - adults
+                len(assigned_checkins) + len(unassigned_checkins) - occupancy
             )
-            if len(assigned_checkins) > adults:
+            if len(assigned_checkins) > occupancy:
                 raise UserError(
                     _("Remove some of the leftover assigned checkins first")
                 )
             elif leftover_unassigneds_count > 0:
                 for i in range(0, leftover_unassigneds_count):
                     reservation.checkin_partner_ids = [(2, unassigned_checkins[i].id)]
-            elif adults > len(reservation.checkin_partner_ids):
+            elif occupancy > len(reservation.checkin_partner_ids):
                 checkins_lst = []
-                count_new_checkins = adults - len(reservation.checkin_partner_ids)
+                count_new_checkins = occupancy - len(reservation.checkin_partner_ids)
                 for _i in range(0, count_new_checkins):
                     checkins_lst.append(
                         (
@@ -1127,7 +1134,7 @@ class PmsReservation(models.Model):
                         )
                     )
                 reservation.checkin_partner_ids = checkins_lst
-            elif adults == 0:
+            elif occupancy == 0:
                 reservation.checkin_partner_ids = False
 
     @api.depends("checkin_partner_ids", "checkin_partner_ids.state")
@@ -1142,11 +1149,10 @@ class PmsReservation(models.Model):
     @api.depends("count_pending_arrival")
     def _compute_checkins_ratio(self):
         self.checkins_ratio = 0
-        for reservation in self.filtered(lambda r: r.adults > 0):
+        for reservation in self.filtered(lambda r: (r.adults + r.children) > 0):
+            occupancy = reservation.adults + reservation.children
             reservation.checkins_ratio = (
-                (reservation.adults - reservation.count_pending_arrival)
-                * 100
-                / reservation.adults
+                (occupancy - reservation.count_pending_arrival) * 100 / occupancy
             )
 
     @api.depends("checkin_partner_ids", "checkin_partner_ids.state")
@@ -1162,12 +1168,11 @@ class PmsReservation(models.Model):
     def _compute_ratio_checkin_data(self):
         self.ratio_checkin_data = 0
         for reservation in self.filtered(
-            lambda r: r.adults > 0 and r.state != "cancel"
+            lambda r: (r.adults + r.children) > 0 and r.state != "cancel"
         ):
+            occupancy = reservation.adults + reservation.children
             reservation.ratio_checkin_data = (
-                (reservation.adults - reservation.pending_checkin_data)
-                * 100
-                / reservation.adults
+                (occupancy - reservation.pending_checkin_data) * 100 / occupancy
             )
 
     def _compute_allowed_checkin(self):
@@ -1547,8 +1552,9 @@ class PmsReservation(models.Model):
     def _compute_checkin_partner_count(self):
         for record in self:
             if record.reservation_type != "out" and record.overnight_room:
+                occupancy = record.adults + record.children
                 record.checkin_partner_count = len(record.checkin_partner_ids)
-                record.checkin_partner_pending_count = record.adults - len(
+                record.checkin_partner_pending_count = occupancy - len(
                     record.checkin_partner_ids
                 )
             else:
@@ -1736,7 +1742,9 @@ class PmsReservation(models.Model):
         return [
             ("state", "in", ("draft", "confirm", "arrival_delayed")),
             ("checkin", "<=", today),
+            "|",
             ("adults", ">", 0),
+            ("children", ">", 0),
         ]
 
     def _search_allowed_checkout(self, operator, value):
@@ -1754,7 +1762,9 @@ class PmsReservation(models.Model):
         return [
             ("state", "in", ("onboard", "departure_delayed")),
             ("checkout", ">=", today),
+            "|",
             ("adults", ">", 0),
+            ("children", ">", 0),
         ]
 
     def _search_allowed_cancel(self, operator, value):
@@ -2152,6 +2162,7 @@ class PmsReservation(models.Model):
             record.action_cancel()
 
         record._check_services(vals)
+        record._add_tourist_tax_service()
         return record
 
     def write(self, vals):
@@ -2221,6 +2232,8 @@ class PmsReservation(models.Model):
         # that not take access to possible extra beds service in vals
         if "adults" in vals:
             self._check_capacity()
+        if "checkin" in vals or "checkout" in vals or "reservation_line_ids" in vals:
+            self._update_tourist_tax_service()
         return res
 
     def _get_folio_vals(self, reservation_vals):
@@ -2575,3 +2588,139 @@ class PmsReservation(models.Model):
             "target": "self",
             "url": self.get_portal_url(),
         }
+
+    def _add_tourist_tax_service(self):
+        for record in self:
+            tourist_tax_products = self.env["product.product"].search(
+                [("is_tourist_tax", "=", True)]
+            )
+            for product in tourist_tax_products:
+                if product.touristic_calculation == "occupancy":
+                    checkins = record.checkin_partner_ids.filtered_domain(
+                        safe_eval(product.occupancy_domain)
+                    )
+                    quantity = len(checkins)
+                elif product.touristic_calculation == "nights":
+                    if not record.filtered_domain(safe_eval(product.nights_domain)):
+                        continue
+                    quantity = (record.checkout - record.checkin).days
+                elif product.touristic_calculation == "occupancyandnights":
+                    checkins = record.checkin_partner_ids.filtered_domain(
+                        safe_eval(product.occupancy_domain)
+                    )
+                    if not record.filtered_domain(safe_eval(product.nights_domain)):
+                        continue
+                    quantity = len(checkins) * (record.checkout - record.checkin).days
+                else:
+                    quantity = 1
+
+                if quantity == 0:
+                    continue
+
+                product = product.with_context(
+                    lang=record.partner_id.lang,
+                    partner=record.partner_id.id,
+                    quantity=quantity,
+                    date=record.date_order,
+                    consumption_date=record.checkin,
+                    pricelist=record.pricelist_id.id,
+                    uom=product.uom_id.id,
+                    property=record.pms_property_id.id,
+                )
+                price = self.env["account.tax"]._fix_tax_included_price_company(
+                    product.price,
+                    product.taxes_id,
+                    record.tax_ids,
+                    record.pms_property_id.company_id,
+                )
+
+                self.env["pms.service"].create(
+                    {
+                        "reservation_id": record.id,
+                        "folio_id": record.folio_id.id,
+                        "product_id": product.id,
+                        "name": product.name,
+                        "service_line_ids": [
+                            (
+                                0,
+                                0,
+                                {
+                                    "product_id": product.id,
+                                    "day_qty": quantity,
+                                    "price_unit": price,
+                                    "date": record.checkin,
+                                },
+                            )
+                        ],
+                    }
+                )
+
+    def _update_tourist_tax_service(self):
+        for record in self:
+            services = self.env["pms.service"].search(
+                [
+                    ("reservation_id", "=", record.id),
+                    ("product_id.is_tourist_tax", "=", True),
+                ]
+            )
+            for service in services:
+                product = service.product_id
+                if product.touristic_calculation == "occupancy":
+                    checkins = record.checkin_partner_ids.filtered_domain(
+                        safe_eval(product.occupancy_domain)
+                    )
+                    quantity = len(checkins)
+                elif product.touristic_calculation == "nights":
+                    if not record.filtered_domain(safe_eval(product.nights_domain)):
+                        service.unlink()
+                        continue
+                    quantity = (record.checkout - record.checkin).days
+                elif product.touristic_calculation == "occupancyandnights":
+                    checkins = record.checkin_partner_ids.filtered_domain(
+                        safe_eval(product.occupancy_domain)
+                    )
+                    if not record.filtered_domain(safe_eval(product.nights_domain)):
+                        service.unlink()
+                        continue
+                    quantity = len(checkins) * (record.checkout - record.checkin).days
+                else:
+                    quantity = 1
+
+                if quantity == 0:
+                    service.unlink()
+                    continue
+
+                product = product.with_context(
+                    lang=record.partner_id.lang,
+                    partner=record.partner_id.id,
+                    quantity=quantity,
+                    date=record.date_order,
+                    consumption_date=record.checkin,
+                    pricelist=record.pricelist_id.id,
+                    uom=product.uom_id.id,
+                    property=record.pms_property_id.id,
+                )
+                price = self.env["account.tax"]._fix_tax_included_price_company(
+                    product.price,
+                    product.taxes_id,
+                    record.tax_ids,
+                    record.pms_property_id.company_id,
+                )
+
+                service.write(
+                    {
+                        "service_line_ids": [
+                            (5, 0, 0),
+                            (
+                                0,
+                                0,
+                                {
+                                    "product_id": product.id,
+                                    "day_qty": quantity,
+                                    "price_unit": price,
+                                    "date": record.checkin,
+                                },
+                            ),
+                        ]
+                    }
+                )

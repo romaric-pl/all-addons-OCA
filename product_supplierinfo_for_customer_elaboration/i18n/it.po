@@ -1,0 +1,58 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_supplierinfo_for_customer_elaboration
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: product_supplierinfo_for_customer_elaboration
+#: model:ir.model,name:product_supplierinfo_for_customer_elaboration.model_product_customerinfo
+msgid "Customer Pricelist"
+msgstr ""
+
+#. module: product_supplierinfo_for_customer_elaboration
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_elaboration.field_product_customerinfo__display_name
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_elaboration.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: product_supplierinfo_for_customer_elaboration
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_elaboration.field_product_customerinfo__elaboration_id
+msgid "Elaboration"
+msgstr ""
+
+#. module: product_supplierinfo_for_customer_elaboration
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_elaboration.field_product_customerinfo__elaboration_note
+msgid "Elaboration Note"
+msgstr ""
+
+#. module: product_supplierinfo_for_customer_elaboration
+#: model_terms:ir.ui.view,arch_db:product_supplierinfo_for_customer_elaboration.product_customerinfo_form_view
+msgid "Elaborations"
+msgstr ""
+
+#. module: product_supplierinfo_for_customer_elaboration
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_elaboration.field_product_customerinfo__id
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_elaboration.field_sale_order_line__id
+msgid "ID"
+msgstr ""
+
+#. module: product_supplierinfo_for_customer_elaboration
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_elaboration.field_product_customerinfo____last_update
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_elaboration.field_sale_order_line____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: product_supplierinfo_for_customer_elaboration
+#: model:ir.model,name:product_supplierinfo_for_customer_elaboration.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
