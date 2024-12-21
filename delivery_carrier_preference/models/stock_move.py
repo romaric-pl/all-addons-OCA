@@ -18,10 +18,13 @@ class StockMove(models.Model):
     )
 
     @api.depends(
+        # NOTE: do not list 'product_id.weight' and 'product_id.packaging_ids'
+        # on purpose to not trigger heavy computation when triggering onchange
+        # on packaging subform from products.
+        # As this field is not stored, having only "product_id" to trigger the
+        # computation from a move form is enough (weight and packagings can be
+        # considered stable data and should not be edited from move).
         "product_id",
-        "product_id.packaging_ids",
-        "product_id.packaging_ids.max_weight",
-        "product_id.weight",
         "ordered_available_to_promise_uom_qty",
     )
     def _compute_estimated_shipping_weight(self):

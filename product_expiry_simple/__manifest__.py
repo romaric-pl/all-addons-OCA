@@ -5,7 +5,7 @@
 
 {
     "name": "Product Expiry Simple",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.1.0",
     "category": "Product",
     "license": "AGPL-3",
     "summary": "Simpler and better alternative to the official product_expiry module",

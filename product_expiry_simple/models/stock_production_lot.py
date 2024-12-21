@@ -3,14 +3,14 @@
 # @author: Alexis de Lattre <alexis.delattre@akretion.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import _, api, fields, models
+from odoo import api, fields, models
 from odoo.tools.misc import format_date
 
 
 class StockProductionLot(models.Model):
     _inherit = "stock.production.lot"
 
-    expiry_date = fields.Date(string="Expiry Date")
+    expiry_date = fields.Date(string="Expiry Date", tracking=True)
     expired = fields.Boolean(compute="_compute_expired")
 
     def _compute_expired(self):
@@ -30,7 +30,7 @@ class StockProductionLot(models.Model):
             if lot.expiry_date:
                 expiry_date_print = format_date(self.env, lot.expiry_date)
                 if lot.expiry_date < today:
-                    dname = _("[%s Expired] %s") % (expiry_date_print, dname)
+                    dname = f"[{expiry_date_print} ⚠] {dname}"
                 else:
                     dname = "[%s] %s" % (expiry_date_print, dname)
             res.append((lot.id, dname))

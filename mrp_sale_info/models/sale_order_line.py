@@ -14,4 +14,5 @@ class SaleOrderLine(models.Model):
         column1="line_id",
         column2="production_id",
         string="Manufacturing orders",
+        copy=False,
     )

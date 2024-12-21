@@ -97,9 +97,3 @@ msgstr ""
 #: model:ir.model,name:product_expiry_simple.model_stock_picking
 msgid "Transfer"
 msgstr ""
-
-#. module: product_expiry_simple
-#: code:addons/product_expiry_simple/models/stock_production_lot.py:0
-#, python-format
-msgid "[%s Expired] %s"
-msgstr ""

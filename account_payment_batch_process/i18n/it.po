@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-11-06 14:06+0000\n"
+"PO-Revision-Date: 2024-12-19 13:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -59,7 +59,7 @@ msgstr "Importo saldo"
 #: code:addons/account_payment_batch_process/wizard/invoice_payment_line.py:0
 #, python-format
 msgid "Balance is unchangeable!"
-msgstr "Non puoi modificare il saldo!"
+msgstr "Non si può modificare il saldo!"
 
 #. module: account_payment_batch_process
 #: model:ir.model.fields,field_description:account_payment_batch_process.field_account_payment_register__cheque_amount
@@ -151,7 +151,7 @@ msgstr "Non puoi modificare la fattura!"
 #. module: account_payment_batch_process
 #: model:ir.model.fields,field_description:account_payment_batch_process.field_account_payment_register__is_customer
 msgid "Is Customer?"
-msgstr "E' un cliente?"
+msgstr "È un cliente?"
 
 #. module: account_payment_batch_process
 #: model:ir.model.fields.selection,name:account_payment_batch_process.selection__invoice_payment_line__payment_difference_handling__open
@@ -196,7 +196,7 @@ msgstr "Note"
 #: code:addons/account_payment_batch_process/wizard/invoice_payment_line.py:0
 #, python-format
 msgid "Partner is unchangeable!"
-msgstr "Non puoi modificare il partner!"
+msgstr "Il partner non è modificabile!"
 
 #. module: account_payment_batch_process
 #: model:ir.model,name:account_payment_batch_process.model_payment_adjustment_reason
@@ -300,18 +300,19 @@ msgid ""
 "You can only register a batch payment for invoices with the same payment "
 "mode."
 msgstr ""
-"Puoi registrare un pagamento raggruppato solo per fatture con lo stesso modo "
-"di pagamento."
+"Si può registrare un pagamento raggruppato solo per fatture con lo stesso "
+"modo di pagamento."
 
 #. module: account_payment_batch_process
 #: code:addons/account_payment_batch_process/wizard/account_payment_register.py:0
 #, python-format
 msgid "You can only register payments for open invoices."
-msgstr "Puoi registrare pagamenti solo per fatture aperte."
+msgstr "Si possono registrare pagamenti solo per fatture aperte."
 
 #. module: account_payment_batch_process
 #: code:addons/account_payment_batch_process/wizard/account_payment_register.py:0
 #, python-format
 msgid "You cannot mix customer invoices and vendor bills in a single payment."
 msgstr ""
-"Non puoi inserire sia fatture cliente che fornitore in un singolo pagamento."
+"Non si può inserire sia fatture cliente che fornitore in un singolo "
+"pagamento."

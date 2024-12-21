@@ -8,34 +8,35 @@ msgstr ""
 "Project-Id-Version: reporting-engine (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-03 04:09+0000\n"
-"PO-Revision-Date: 2016-03-21 15:33+0000\n"
-"Last-Translator: <>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/oca/OCA-"
-"reporting-engine-8-0/language/pt_BR/)\n"
+"PO-Revision-Date: 2024-12-18 17:06+0000\n"
+"Last-Translator: Douglas Custódio <douglascstd@yahoo.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/oca/"
+"OCA-reporting-engine-8-0/language/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: bi_view_editor
 #: code:addons/bi_view_editor/models/bve_view.py:0
 #, python-format
 msgid "%s (copy)"
-msgstr ""
+msgstr "%s (cópia)"
 
 #. module: bi_view_editor
 #. openerp-web
 #: code:addons/bi_view_editor/static/src/xml/bi_view_editor.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "(join left)"
-msgstr ""
+msgstr "(join left)"
 
 #. module: bi_view_editor
 #: code:addons/bi_view_editor/models/bve_view.py:0
 #, python-format
 msgid "Abstract models not supported."
-msgstr ""
+msgstr "Modelos Abstrados não é suportado."
 
 #. module: bi_view_editor
 #: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__action_id
@@ -51,7 +52,7 @@ msgstr ""
 #. module: bi_view_editor
 #: model:ir.model.fields.selection,name:bi_view_editor.selection__bve_view_line__list_attr__avg
 msgid "Average"
-msgstr ""
+msgstr "Média"
 
 #. module: bi_view_editor
 #: code:addons/bi_view_editor/models/bve_view.py:0
@@ -84,14 +85,14 @@ msgstr ""
 #: code:addons/bi_view_editor/static/src/js/bi_view_editor.JoinNodeDialog.js:0
 #, python-format
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #. module: bi_view_editor
 #. openerp-web
 #: code:addons/bi_view_editor/static/src/xml/bi_view_editor.xml:0
 #, python-format
 msgid "Clear"
-msgstr ""
+msgstr "Limpar"
 
 #. module: bi_view_editor
 #: model_terms:ir.actions.act_window,help:bi_view_editor.action_bi_view_editor_view_form
@@ -164,7 +165,7 @@ msgstr ""
 #. module: bi_view_editor
 #: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__data
 msgid "Data"
-msgstr ""
+msgstr "Dado"
 
 #. module: bi_view_editor
 #: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__description
@@ -230,7 +231,7 @@ msgstr "Nome para Mostrar"
 #. module: bi_view_editor
 #: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__field_ids
 msgid "Fields"
-msgstr ""
+msgstr "Campos"
 
 #. module: bi_view_editor
 #: code:addons/bi_view_editor/models/bve_view.py:0
@@ -262,7 +263,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:bi_view_editor.field_ir_model__id
 #: model:ir.model.fields,field_description:bi_view_editor.field_wizard_ir_model_menu_create__id
 msgid "ID"
-msgstr "Identificação"
+msgstr "ID"
 
 #. module: bi_view_editor
 #: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__in_list
@@ -278,9 +279,9 @@ msgstr ""
 #. module: bi_view_editor
 #. openerp-web
 #: code:addons/bi_view_editor/static/src/xml/bi_view_editor.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "Join Left"
-msgstr ""
+msgstr "Join Left"
 
 #. module: bi_view_editor
 #: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__join_model_id
