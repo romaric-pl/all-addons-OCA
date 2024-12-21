@@ -340,12 +340,14 @@ class AccountInvoice(models.Model):
 
     def process_negative_lines(self):
         self.ensure_one()
-        for line in self.invoice_line_ids:
-            if line.price_unit >= 0:
-                return
-        # if every line is negative, change them all
-        for line in self.invoice_line_ids:
-            line.price_unit = -line.price_unit
+        if not self.invoice_line_ids:
+            return
+        # if total is negative, change lines sign, and change move type
+        if self.amount_total < 0:
+            if self.fiscal_document_type_id.code == "TD01":
+                self.type = "in_refund"
+            for line in self.invoice_line_ids:
+                line.price_unit = -line.price_unit
         self.compute_taxes()
 
 

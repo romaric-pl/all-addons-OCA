@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-06-28 09:09+0000\n"
+"PO-Revision-Date: 2024-12-19 14:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: hr_expense_payment_difference
 #: model:ir.model.fields,help:hr_expense_payment_difference.field_hr_expense_sheet_register_payment_wizard__writeoff_label
@@ -65,7 +65,7 @@ msgstr "Etichetta"
 #. module: hr_expense_payment_difference
 #: selection:hr.expense.sheet.register.payment.wizard,payment_difference_handling:0
 msgid "Mark invoice as fully paid"
-msgstr "Segna fattura come completamente pagata"
+msgstr "Segna la fattura come interamente pagata"
 
 #. module: hr_expense_payment_difference
 #: model:ir.model.fields,field_description:hr_expense_payment_difference.field_hr_expense_sheet_register_payment_wizard__payment_difference
@@ -85,4 +85,4 @@ msgstr "Pagamenti"
 #. module: hr_expense_payment_difference
 #: model_terms:ir.ui.view,arch_db:hr_expense_payment_difference.hr_expense_sheet_register_payment_view_form
 msgid "Post Difference In"
-msgstr "Carica differenza in"
+msgstr "Registra differenza in"

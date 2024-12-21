@@ -94,16 +94,16 @@ Date:   Tue Dec 17 12:40:34 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 1504b8bc0d7e9f8fe499a67c1e698f75b5db76dc
+commit 3753d37d3832d0174f4280f1b732fd65db59f70c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 28 20:36:33 2024 +0000
+Date:   Thu Dec 19 11:30:20 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 91.1% (72 of 79 strings)
+    Currently translated at 84.9% (283 of 333 strings)
     
-    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-partner_statement/it/
+    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
@@ -658,16 +658,16 @@ Date:   Fri Oct 25 17:48:11 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit e1b512aa5978a0a1d26a64ab2e2595325d8b3cca
-Author: uvid-gordana <gordana@uvid.hr>
-Date:   Wed Oct 2 08:38:01 2024 +0000
+commit 59b65b53952184041577ef090b11e2ece67f2f4f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Dec 19 11:10:31 2024 +0000
 
-    Translated using Weblate (Croatian)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (14 of 14 strings)
     
-    Translation: hr-12.0/hr-12.0-hr_holidays_leave_auto_approve
-    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_holidays_leave_auto_approve/hr/
+    Translation: hr-12.0/hr-12.0-hr_expense_payment_difference
+    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_expense_payment_difference/it/
 
 
 ## connector-odoo2odoo
@@ -896,16 +896,11 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 0636b6da40192c4c6f955039a791cad8578b4d0e
-Author: Sergio Zanchetta <primes2h@gmail.com>
-Date:   Thu Dec 12 19:30:47 2024 +0000
+commit 6e0d383dc9a2d08954453459f47f954e07569a8f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 20 08:58:57 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (58 of 58 strings)
-    
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_central_journal_reportlab
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_central_journal_reportlab/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
