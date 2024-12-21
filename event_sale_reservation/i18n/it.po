@@ -74,14 +74,14 @@ msgid "Event Registration Count"
 msgstr "Conteggio iscrizione evento"
 
 #. module: event_sale_reservation
+#: model:ir.model.fields.selection,name:event_sale_reservation.selection__product_template__detailed_type__event_reservation
+msgid "Event Reservation"
+msgstr "Prenotazione evento"
+
+#. module: event_sale_reservation
 #: model_terms:ir.ui.view,arch_db:event_sale_reservation.view_order_product_search
 msgid "Event Reservation Type"
 msgstr "Tipo prenotazione evento"
-
-#. module: event_sale_reservation
-#: model:ir.model.fields.selection,name:event_sale_reservation.selection__product_template__detailed_type__event_reservation
-msgid "Event Resevation"
-msgstr "Prenotazione evento"
 
 #. module: event_sale_reservation
 #: model:ir.model,name:event_sale_reservation.model_event_type

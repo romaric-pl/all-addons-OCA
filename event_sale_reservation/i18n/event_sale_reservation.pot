@@ -64,13 +64,13 @@ msgid "Event Registration Count"
 msgstr ""
 
 #. module: event_sale_reservation
-#: model_terms:ir.ui.view,arch_db:event_sale_reservation.view_order_product_search
-msgid "Event Reservation Type"
+#: model:ir.model.fields.selection,name:event_sale_reservation.selection__product_template__detailed_type__event_reservation
+msgid "Event Reservation"
 msgstr ""
 
 #. module: event_sale_reservation
-#: model:ir.model.fields.selection,name:event_sale_reservation.selection__product_template__detailed_type__event_reservation
-msgid "Event Resevation"
+#: model_terms:ir.ui.view,arch_db:event_sale_reservation.view_order_product_search
+msgid "Event Reservation Type"
 msgstr ""
 
 #. module: event_sale_reservation

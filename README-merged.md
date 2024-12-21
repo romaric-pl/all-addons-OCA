@@ -491,6 +491,7 @@ addon | version | maintainers | summary
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing by percentage of the quantity
 [sale_order_type_whole_delivered_invoiceability](sale_order_type_whole_delivered_invoiceability/) | 15.0.1.0.0 |  | Sale Order Type Whole Delivered Invoiceability
 [sale_order_whole_delivered_invoiceability](sale_order_whole_delivered_invoiceability/) | 15.0.1.0.0 |  | Sale Order Whole Delivered Invoiceability
+[sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 15.0.1.0.0 | [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Sales Stock Picking Invocing
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 15.0.1.0.2 |  | Add timesheet details in invoice line
 [stock_picking_invoicing](stock_picking_invoicing/) | 15.0.1.1.0 |  | Stock Picking Invoicing
 [stock_picking_invoicing_incoterm](stock_picking_invoicing_incoterm/) | 15.0.1.0.0 |  | Stock Picking Invoicing Incoterm
@@ -1290,7 +1291,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 15.0.1.0.1 |  | Asynchronous export with job queue
-[queue_job](queue_job/) | 15.0.2.3.11 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 15.0.2.3.12 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_cron](queue_job_cron/) | 15.0.1.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 15.0.2.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 15.0.1.0.0 |  | Control which users are subscribed to queue job notifications
@@ -2378,7 +2379,7 @@ addon | version | maintainers | summary
 [event_registration_mail_compose](event_registration_mail_compose/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Compose and send mails to event attendees
 [event_registration_partner_unique](event_registration_partner_unique/) | 15.0.1.0.1 |  | Enforces 1 registration per partner and event
 [event_registration_qr_code](event_registration_qr_code/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Automatically generate unique QR Codes for each registration
-[event_sale_reservation](event_sale_reservation/) | 15.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Allow selling event registrations before the event exists
+[event_sale_reservation](event_sale_reservation/) | 15.0.1.0.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Allow selling event registrations before the event exists
 [event_sale_session](event_sale_session/) | 15.0.1.0.0 |  | Sell Event Sessions
 [event_session](event_session/) | 15.0.1.1.0 |  | Sessions in events
 [event_stage_cancelled](event_stage_cancelled/) | 15.0.1.0.0 |  | Event cancellation workflows
@@ -2759,7 +2760,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_territory](base_territory/) | 15.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 15.0.1.5.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
+[fieldservice](fieldservice/) | 15.0.1.6.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 15.0.2.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
 [fieldservice_account_analytic](fieldservice_account_analytic/) | 15.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
 [fieldservice_account_payment](fieldservice_account_payment/) | 15.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Allow workers to collect payments from the order.
@@ -5102,8 +5103,9 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 15.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.9.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
-[l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.1.0 |  | AEAT modelo 303 - OSS
+[l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.2.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.11.0 |  | AEAT modelo 347
+[l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 15.0.1.0.0 | [![nicolasramos](https://github.com/nicolasramos.png?size=30px)](https://github.com/nicolasramos) | AEAT modelo 347 IGIC
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
@@ -6554,7 +6556,7 @@ addon | version | maintainers | summary
 [purchase_stock_return_request](purchase_stock_return_request/) | 15.0.1.0.1 |  | Purchase Stock Return Request
 [purchase_stock_secondary_unit](purchase_stock_secondary_unit/) | 15.0.1.1.1 |  | Get product quantities in a secondary unit
 [purchase_stock_tier_validation](purchase_stock_tier_validation/) | 15.0.1.0.0 | [![bosd](https://github.com/bosd.png?size=30px)](https://github.com/bosd) | Exclude RFQs pending to validate when procuring
-[purchase_substate](purchase_substate/) | 15.0.1.0.0 |  | Purchase Sub State
+[purchase_substate](purchase_substate/) | 15.0.1.1.0 |  | Purchase Sub State
 [purchase_tag](purchase_tag/) | 15.0.1.1.0 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 15.0.1.1.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_total_ordered_qty](purchase_total_ordered_qty/) | 15.0.1.0.0 |  | Purchase - Total Ordered Qty
@@ -7071,7 +7073,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [agreement_rebate_partner_company_group](agreement_rebate_partner_company_group/) | 15.0.1.0.0 |  | Rebate agreements applied to all company group members
-[contract](contract/) | 15.0.1.12.0 |  | Recurring - Contracts Management
+[contract](contract/) | 15.0.1.12.1 |  | Recurring - Contracts Management
 [contract_payment_mode](contract_payment_mode/) | 15.0.1.1.1 |  | Payment mode in contracts and their invoices
 [contract_price_revision](contract_price_revision/) | 15.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Easy revision of contract prices
 [contract_sale](contract_sale/) | 15.0.1.1.0 |  | Contract from Sale
@@ -7079,7 +7081,7 @@ addon | version | maintainers | summary
 [contract_sale_invoicing](contract_sale_invoicing/) | 15.0.1.0.0 |  | Include sales to invoice in contract invoice creation
 [contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 15.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add formula to invoice
 [contract_variable_quantity](contract_variable_quantity/) | 15.0.1.0.0 |  | Variable quantity in contract recurrent invoicing
-[product_contract](product_contract/) | 15.0.1.1.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
+[product_contract](product_contract/) | 15.0.1.1.1 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
 [subscription_oca](subscription_oca/) | 15.0.1.1.1 |  | Generate recurring invoices.
 
 [//]: # (end addons)
@@ -7318,7 +7320,7 @@ addon | version | maintainers | summary
 [mail_activity_team](mail_activity_team/) | 15.0.2.1.1 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 15.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_autosubscribe](mail_autosubscribe/) | 15.0.1.0.3 |  | Automatically subscribe partners to its company's business documents
-[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.2.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
+[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.2.0 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_debrand](mail_debrand/) | 15.0.1.2.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_drop_target](mail_drop_target/) | 15.0.1.0.1 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_forward](mail_forward/) | 15.0.1.0.1 |  | Forward messages from the chatter of any document to other users.
