@@ -27,15 +27,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2023-11-06 13:36+0000\n"
-"Last-Translator: Rémi <remi@le-filament.com>\n"
+"PO-Revision-Date: 2024-12-19 10:06+0000\n"
+"Last-Translator: ahmedtrigui <trigui43@gmail.com>\n"
 "Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: hr_timesheet_sheet
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.res_config_settings_view_form
@@ -378,7 +378,7 @@ msgstr "Grouper par"
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "A un message"
 
 #. module: hr_timesheet_sheet
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
@@ -529,7 +529,7 @@ msgstr "Mes feuilles de temps"
 #. module: hr_timesheet_sheet
 #: model:ir.ui.menu,name:hr_timesheet_sheet.menu_hr_my_timesheets
 msgid "My Timesheets"
-msgstr ""
+msgstr "Mes feuilles de temps"
 
 #. module: hr_timesheet_sheet
 #: model:ir.actions.act_window,name:hr_timesheet_sheet.act_hr_timesheet_line_to_submit_my
@@ -565,7 +565,7 @@ msgstr "Nouvelle feuille de temps."
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr ""
+msgstr "Prochaine activité du calendrier d'événement"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet__activity_date_deadline
@@ -600,7 +600,7 @@ msgstr "Nombre d’erreurs"
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Nombre de messages nécessitant une action"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet__message_has_error_counter
@@ -1042,7 +1042,7 @@ msgstr "Semaine"
 #: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
 #, python-format
 msgid "Week %(end)s"
-msgstr ""
+msgstr "Fin de semaine"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_config_settings__timesheet_week_start
@@ -1059,7 +1059,7 @@ msgstr "Jour de début de la semaine"
 #: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
 #, python-format
 msgid "Weeks %(start)s - %(end)s"
-msgstr ""
+msgstr "Début-Fin semaine"
 
 #. module: hr_timesheet_sheet
 #. odoo-python
@@ -1071,6 +1071,8 @@ msgid ""
 "You cannot change the company, as this %(rec_name)s (%(rec_display_name)s) "
 "is assigned to %(current_name)s (%(current_display_name)s)."
 msgstr ""
+"Vous ne pouvez pas modifier la compagnie tant que %(rec_name) "
+"(%(rec_display_name) est assigné à %(current_name) (%(current_display_name)"
 
 #. module: hr_timesheet_sheet
 #. odoo-python
@@ -1082,6 +1084,10 @@ msgid ""
 " - %(sheet_name)s of %(sheet_company)s\n"
 " - %(name)s of %(company)s"
 msgstr ""
+"Vous ne pouvez pas créer une feuille de temps d'une compagnie  différente à "
+"celle de la feuille de temps :\n"
+"-(sheet_name)s of %(sheet_company)\n"
+" - %(name)s of %(company)"
 
 #. module: hr_timesheet_sheet
 #. odoo-python
@@ -1111,6 +1117,10 @@ msgid ""
 "Conflicting sheets:\n"
 " - %(names)s"
 msgstr ""
+"Vous ne pouvez pas avoir 2 feuilles ou plus qui se chevauchent !\n"
+"Veuillez utiliser le menu « Feuille de temps » pour éviter ce problème.\n"
+"Feuilles contradictoires :\n"
+"-  %(names)"
 
 #. module: hr_timesheet_sheet
 #. odoo-python
@@ -1118,6 +1128,8 @@ msgstr ""
 #, python-format
 msgid "You cannot modify an entry in a confirmed timesheet sheet: %(names)s"
 msgstr ""
+"Vous ne pouvez pas modifier une entrée dans une feuille de temps confirmée: "
+"%(names)"
 
 #. module: hr_timesheet_sheet
 #: model_terms:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_line_to_submit_my

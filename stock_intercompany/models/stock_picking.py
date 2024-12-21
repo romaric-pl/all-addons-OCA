@@ -62,7 +62,7 @@ class StockPicking(models.Model):
                     dict(common_vals, counterpart_of_move_id=sm.id)
                 )[0],
             )
-            for sm in self.move_ids
+            for sm in self.move_ids.sudo()
         ]
         move_line_ids = [
             (
@@ -72,7 +72,7 @@ class StockPicking(models.Model):
                     dict(common_vals, move_id=False, counterpart_of_line_id=ln.id)
                 )[0],
             )
-            for ln in self.move_line_ids
+            for ln in self.move_line_ids.sudo()
         ]
         return move_ids, move_line_ids
 

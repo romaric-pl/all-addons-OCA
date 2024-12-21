@@ -4,7 +4,7 @@ import base64
 from unittest import TestCase
 
 from odoo.exceptions import AccessError
-from odoo.tests import HttpCase, SavepointCase, new_test_user
+from odoo.tests import HttpCase, TransactionCase, new_test_user
 
 
 class TestAttachmentZippedDownloadBase(TestCase):
@@ -49,7 +49,7 @@ class TestAttachmentZippedDownload(HttpCase, TestAttachmentZippedDownloadBase):
         self.assertEqual(response.status_code, 200)
 
 
-class TestAttachmentZipped(SavepointCase, TestAttachmentZippedDownloadBase):
+class TestAttachmentZipped(TransactionCase, TestAttachmentZippedDownloadBase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()

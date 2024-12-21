@@ -8,7 +8,7 @@
     "category": "Social",
     "website": "https://github.com/OCA/social",
     "author": "Camptocamp, Odoo Community Association (OCA)",
-    "maintainers": ["hailangvn2023"],
+    "maintainers": ["trisdoan"],
     "license": "AGPL-3",
     "application": False,
     "installable": True,

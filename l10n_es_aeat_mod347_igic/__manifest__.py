@@ -2,7 +2,7 @@
 
 {
     "name": "AEAT modelo 347 IGIC",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "author": "Binhex System Solutions," "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-spain",
     "category": "Accounting",
@@ -14,6 +14,6 @@
     "data": [
         "data/tax_code_map_mod347_igic_data.xml",
     ],
-    "maintainers": ["nicolasramos"],
+    "maintainers": ["Christian-RB"],
     "installable": True,
 }

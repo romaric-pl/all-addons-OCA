@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-12-17 11:06+0000\n"
+"PO-Revision-Date: 2024-12-18 13:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -1595,7 +1595,7 @@ msgstr "Nome stile"
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_style_style_name_uniq
 msgid "Style name should be unique"
-msgstr ""
+msgstr "Il nome stile deve essere univoco"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__subkpi_ids

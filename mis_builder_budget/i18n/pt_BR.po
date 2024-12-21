@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-11-13 19:06+0000\n"
+"PO-Revision-Date: 2024-12-19 17:06+0000\n"
 "Last-Translator: Rodrigo Sottomaior Macedo "
 "<sottomaiormacedotec@sottomaiormacedo.tech>\n"
 "Language-Team: none\n"
@@ -20,7 +20,7 @@ msgstr ""
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__budget_company_id
 msgid "#Technical field: Budget Company"
-msgstr ""
+msgstr "#Campo técnico: Orçamento da Empresa"
 
 #. module: mis_builder_budget
 #. odoo-python
@@ -68,7 +68,7 @@ msgstr "Ação Necessária"
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__active
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account__active
 msgid "Active"
-msgstr ""
+msgstr "Ativo"
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,help:mis_builder_budget.field_mis_report_instance_period__source
@@ -118,7 +118,7 @@ msgstr "Precisão Analítica"
 #: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_form_view
 #: model_terms:ir.ui.view,arch_db:mis_builder_budget.mis_budget_search_view
 msgid "Archived"
-msgstr ""
+msgstr "Arquivado"
 
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget__message_attachment_count

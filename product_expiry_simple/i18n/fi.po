@@ -1,0 +1,140 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_expiry_simple
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-12-19 16:06+0000\n"
+"Last-Translator: Ossi Mantylahti <ossi.mantylahti@terracolligo.com>\n"
+"Language-Team: none\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: product_expiry_simple
+#: model_terms:ir.ui.view,arch_db:product_expiry_simple.view_stock_quant_form_editable
+msgid ""
+"<span class=\"badge badge-danger\" attrs=\"{'invisible': [('expired', '=', "
+"False)]}\">Expired</span>"
+msgstr ""
+"<span class=\"badge badge-danger\" attrs=\"{'invisible': [('expired', '=', "
+"False)]}\">Vanhentunut</span>"
+
+#. module: product_expiry_simple
+#: model_terms:ir.ui.view,arch_db:product_expiry_simple.view_production_lot_form
+msgid ""
+"<span class=\"badge text-bg-danger\" attrs=\"{'invisible': [('expired', '=',"
+" False)]}\">Expired</span>"
+msgstr ""
+"<span class=\"badge text-bg-danger\" attrs=\"{'invisible': [('expired', '=', "
+"False)]}\">Vanhentunut</span>"
+
+#. module: product_expiry_simple
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_lot__expired
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_quant__expired
+#: model_terms:ir.ui.view,arch_db:product_expiry_simple.quant_search_view
+#: model_terms:ir.ui.view,arch_db:product_expiry_simple.search_product_lot_filter
+msgid "Expired"
+msgstr "Päättynyt"
+
+#. module: product_expiry_simple
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_lot__expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move_line__expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_quant__expiry_date
+#: model_terms:ir.ui.view,arch_db:product_expiry_simple.quant_search_view
+#: model_terms:ir.ui.view,arch_db:product_expiry_simple.search_product_lot_filter
+msgid "Expiry Date"
+msgstr "Päättymispäivä"
+
+#. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_lot
+msgid "Lot/Serial"
+msgstr "Erä- tai sarjanumero"
+
+#. module: product_expiry_simple
+#: model_terms:ir.ui.view,arch_db:product_expiry_simple.quant_search_view
+#: model_terms:ir.ui.view,arch_db:product_expiry_simple.search_product_lot_filter
+msgid "Not Expired"
+msgstr "Ei vanhentunut"
+
+#. module: product_expiry_simple
+#: model_terms:ir.ui.view,arch_db:product_expiry_simple.view_picking_form
+msgid "One or several products have <b>expired</b> lots"
+msgstr "Yhden tai useamman tuotteen erät ovat <b>vanhentuneet</b>"
+
+#. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_product_template
+msgid "Product"
+msgstr "Tuote"
+
+#. module: product_expiry_simple
+#. odoo-python
+#: code:addons/product_expiry_simple/models/stock_lot.py:0
+#, python-format
+msgid ""
+"Product %(product)s doesn't use expiry dates, but an expiry date is set on "
+"lot %(lot)s."
+msgstr ""
+"Tuotteessa %(product)s ei käytetä viimeinen käyttöpäivä, mutta erälle %(lot)"
+"s on asetettu viimeinen käyttöpäivä."
+
+#. module: product_expiry_simple
+#. odoo-python
+#: code:addons/product_expiry_simple/models/stock_lot.py:0
+#, python-format
+msgid ""
+"Product %(product)s uses expiry dates, but expiry date is missing on lot "
+"%(lot)s."
+msgstr ""
+"Tuotteessa %(product)s käytetään viimeinen käyttöpäivä, mutta erästä %(lot)s "
+"puuttuu viimeinen käyttöpäivä."
+
+#. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Tuotteiden siirrot (Varaston siirtorivi)"
+
+#. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_quant
+msgid "Quants"
+msgstr "Varaston määrän muutoskirjaukset"
+
+#. module: product_expiry_simple
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_picking__show_expiry_warning
+msgid "Show Expiry Warning"
+msgstr "Näytä vanhentumisvaroitus"
+
+#. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_picking
+msgid "Transfer"
+msgstr "Siirto"
+
+#. module: product_expiry_simple
+#: model:ir.model.fields,field_description:product_expiry_simple.field_product_product__use_expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_product_template__use_expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_lot__use_expiry_date
+msgid "Use Expiry Date"
+msgstr "Käytä vanhentumispäivää"
+
+#. module: product_expiry_simple
+#. odoo-python
+#: code:addons/product_expiry_simple/models/product_template.py:0
+#, python-format
+msgid ""
+"You cannot set 'Use Expiry Date' on product '%s' because it is not tracked "
+"by lot nor by serial number."
+msgstr ""
+"Tuotteelle \"%s\" ei voi asettaa \"Käytä vanhentumispäivää\", koska sitä ei "
+"seurata erän eikä sarjanumeron mukaan."
+
+#. module: product_expiry_simple
+#. odoo-python
+#: code:addons/product_expiry_simple/models/stock_lot.py:0
+#, python-format
+msgid "[%(date)s ⚠] %(lot)s"
+msgstr "[%(date)s ⚠] %(lot)s"
