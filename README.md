@@ -689,16 +689,16 @@ Date:   Mon Feb 26 08:59:04 2024 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 9433313373023f1e0c247d7e9716c7166df6bc14
+commit d104199b0d21b699c4c013058db2b160cfd86fff
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 23 09:06:17 2024 +0000
+Date:   Thu Dec 19 11:12:31 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 100.0% (14 of 14 strings)
     
-    Translation: hr-expense-13.0/hr-expense-13.0-hr_expense_invoice
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-13-0/hr-expense-13-0-hr_expense_invoice/it/
+    Translation: hr-expense-13.0/hr-expense-13.0-hr_expense_payment_difference
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-13-0/hr-expense-13-0-hr_expense_payment_difference/it/
 
 
 ## hr-holidays
