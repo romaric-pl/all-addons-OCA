@@ -19,4 +19,14 @@
             </xpath>
         </field>
     </record>
+    <record id="view_res_partner_filter_birthdate" model="ir.ui.view">
+        <field name="name">res.partner.select.birthdate</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="birthdate_date" />
+            </field>
+        </field>
+    </record>
 </odoo>

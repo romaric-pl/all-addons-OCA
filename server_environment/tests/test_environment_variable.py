@@ -24,7 +24,8 @@ class TestEnvironmentVariables(ServerEnvironmentCase):
         secret = "[section]\n" "bar=foo\n" "alice=bob\n"
         with self.set_config_dir(None), self.set_env_variables(public, secret):
             parser = server_env._load_config()
-            self.assertEqual(list(parser.keys()), ["DEFAULT", "section"])
+            self.assertIn("DEFAULT", list(parser.keys()))
+            self.assertIn("section", list(parser.keys()))
             self.assertDictEqual(
                 dict(parser["section"].items()),
                 {"alice": "bob", "bar": "foo", "foo": "bar"},

@@ -895,7 +895,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.1 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.5.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1140,7 +1140,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[queue_job](queue_job/) | 17.0.1.1.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 17.0.1.1.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_cron](queue_job_cron/) | 17.0.1.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 17.0.1.0.0 |  | Control which users are subscribed to queue job notifications
@@ -1671,6 +1671,7 @@ addon | version | maintainers | summary
 [sale_force_whole_invoiceability](sale_force_whole_invoiceability/) | 17.0.1.0.0 |  | Sale Force Whole Invoiceability
 [sale_invoice_policy](sale_invoice_policy/) | 17.0.1.0.0 |  | Sales Management: let the user choose the invoice policy on the order
 [sale_manual_delivery](sale_manual_delivery/) | 17.0.1.0.0 |  | Create manually your deliveries
+[sale_multi_template_application](sale_multi_template_application/) | 17.0.1.0.0 |  | Sale multi template application
 [sale_order_archive](sale_order_archive/) | 17.0.1.0.0 |  | Archive Sale Orders
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 17.0.1.0.0 |  | Auto assign delivery carrier on sale order confirmation
 [sale_order_general_discount](sale_order_general_discount/) | 17.0.1.0.0 |  | General discount per sale order
@@ -1687,6 +1688,7 @@ addon | version | maintainers | summary
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
 [sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
 [sale_order_type](sale_order_type/) | 17.0.1.0.2 |  | Sale Order Type
+[sale_order_type_confirm_message](sale_order_type_confirm_message/) | 17.0.1.0.0 |  | Confirmation requirement when validating sale
 [sale_partner_incoterm](sale_partner_incoterm/) | 17.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 17.0.1.0.0 |  | Base module for multiple procurement group by Sale order
@@ -1824,7 +1826,7 @@ addon | version | maintainers | summary
 [partner_company_group](partner_company_group/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds the possibility to add a company group to a company
 [partner_company_type](partner_company_type/) | 17.0.1.0.0 |  | Adds a company type to partner that are companies
 [partner_contact_access_link](partner_contact_access_link/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Allow to visit the full contact form from a company
-[partner_contact_birthdate](partner_contact_birthdate/) | 17.0.1.0.0 | [![Daemo00](https://github.com/Daemo00.png?size=30px)](https://github.com/Daemo00) | Contact's birthdate
+[partner_contact_birthdate](partner_contact_birthdate/) | 17.0.1.1.0 | [![Daemo00](https://github.com/Daemo00.png?size=30px)](https://github.com/Daemo00) | Contact's birthdate
 [partner_contact_birthplace](partner_contact_birthplace/) | 17.0.1.0.0 |  | This module allows to define a birthplace for partners.
 [partner_contact_department](partner_contact_department/) | 17.0.1.0.0 |  | Assign contacts to departments
 [partner_contact_gender](partner_contact_gender/) | 17.0.1.0.1 |  | Add gender field to contacts
@@ -2089,6 +2091,7 @@ addon | version | maintainers | summary
 [event_min_seat](event_min_seat/) | 17.0.1.0.0 |  | Minimum seats in events
 [event_registration_cancel_reason](event_registration_cancel_reason/) | 17.0.1.0.0 |  | Reasons for event registrations cancellations
 [event_registration_partner_unique](event_registration_partner_unique/) | 17.0.1.0.0 |  | Enforces 1 registration per partner and event
+[event_sale_reservation](event_sale_reservation/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Allow selling event registrations before the event exists
 [event_stage_cancelled](event_stage_cancelled/) | 17.0.1.0.0 |  | Event cancellation workflows
 [partner_event](partner_event/) | 17.0.1.0.0 |  | Link partner to events
 [website_event_filter_city](website_event_filter_city/) | 17.0.1.1.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Add a customizable top area to filter events with city
@@ -2516,7 +2519,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[fleet_vehicle_usage](fleet_vehicle_usage/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Fleet Vehicle Usage
 
 [//]: # (end addons)
 
@@ -2718,9 +2725,11 @@ addon | version | maintainers | summary
 [hr_employee_ppe](hr_employee_ppe/) | 17.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![eduaparicio](https://github.com/eduaparicio.png?size=30px)](https://github.com/eduaparicio) | Personal Protective Equipment (PPE) Management
 [hr_employee_relative](hr_employee_relative/) | 17.0.1.0.0 |  | Allows storing information about employee's family
 [hr_employee_second_lastname](hr_employee_second_lastname/) | 17.0.1.0.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Split Name in First Name, Father's Last Name and Mother's Last Name
-[hr_holidays_settings](hr_holidays_settings/) | 17.0.1.0.0 |  | Enables Settings Form for HR Holidays.
+[hr_employee_ssn](hr_employee_ssn/) | 17.0.1.0.0 |  | View/edit employee's SIN field
+[hr_holidays_settings](hr_holidays_settings/) | 17.0.1.0.1 |  | Enables Settings Form for HR Holidays.
 [hr_job_category](hr_job_category/) | 17.0.1.0.1 |  | Adds tags to employee through contract and job position
 [hr_personal_equipment_request](hr_personal_equipment_request/) | 17.0.1.0.0 |  | This addon allows to manage employee personal equipment
+[hr_professional_category](hr_professional_category/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Professional Category
 [hr_study](hr_study/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Structured study field for employees
 [hr_work_entry_profile](hr_work_entry_profile/) | 17.0.1.0.0 |  | User can access their work entries from the profile view.
 
@@ -2867,7 +2876,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
-[hr_holidays_public](hr_holidays_public/) | 17.0.1.0.4 |  | Manage Public Holidays
+[hr_holidays_public](hr_holidays_public/) | 17.0.1.0.6 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
 [hr_leave_custom_hour_interval](hr_leave_custom_hour_interval/) | 17.0.1.0.0 |  | Edit start and end of leaves using time intervals
 
@@ -4449,7 +4458,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 17.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Currency Rate Update National Bank of Romania service
-[l10n_ro_account](l10n_ro_account/) | 17.0.1.8.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
+[l10n_ro_account](l10n_ro_account/) | 17.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
 [l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 17.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
 [l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
@@ -4468,24 +4477,24 @@ addon | version | maintainers | summary
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 17.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
 [l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.12.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 17.0.0.4.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
-[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
+[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
 [l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_stock](l10n_ro_stock/) | 17.0.0.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 17.0.1.17.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 17.0.1.18.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 17.0.1.11.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 17.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
-[l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 17.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
+[l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 17.0.1.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
 [l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 17.0.0.4.0 | [![nct74](https://github.com/nct74.png?size=30px)](https://github.com/nct74) [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Romania - Stock Accounting Reception In progress
 [l10n_ro_stock_account_tracking](l10n_ro_stock_account_tracking/) | 17.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 17.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
 [l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 17.0.0.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
 [l10n_ro_stock_report](l10n_ro_stock_report/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Report (Fișă Magazie)
-[l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 17.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - VAT on Payment
+[l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 17.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - VAT on Payment
 
 [//]: # (end addons)
 
@@ -5473,7 +5482,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.1.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 17.0.1.1.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 17.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 17.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -5581,6 +5590,7 @@ addon | version | maintainers | summary
 [mrp_mass_production_order](mrp_mass_production_order/) | 17.0.1.0.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create multiple manufacturing orders in one step
 [mrp_multi_level](mrp_multi_level/) | 17.0.1.2.5 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
+[mrp_production_back_to_draft](mrp_production_back_to_draft/) | 17.0.1.0.0 |  | Allows to return to draft a confirmed or cancelled MO.
 [mrp_production_note](mrp_production_note/) | 17.0.1.0.0 |  | Notes in production orders
 [mrp_repair_order](mrp_repair_order/) | 17.0.1.0.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create repair order from manufacturing order
 [mrp_sale_info](mrp_sale_info/) | 17.0.1.1.0 |  | Adds sale information to Manufacturing models
@@ -5806,6 +5816,7 @@ addon | version | maintainers | summary
 [purchase_order_archive](purchase_order_archive/) | 17.0.1.0.0 |  | Archive Purchase Orders
 [purchase_order_line_menu](purchase_order_line_menu/) | 17.0.1.0.0 |  | Adds Purchase Order Lines Menu
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
+[purchase_order_secondary_unit](purchase_order_secondary_unit/) | 17.0.1.0.0 |  | Purchase product in a secondary unit
 [purchase_order_type](purchase_order_type/) | 17.0.1.0.2 |  | Purchase Order Type
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 17.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Purchase Order Type Dashboard
 [purchase_partner_incoterm](purchase_partner_incoterm/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add a an incoterm field for supplier and use it on purchase order
@@ -5906,10 +5917,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[product_category_active](product_category_active/) | 17.0.1.0.0 |  | Add option to archive product categories
 [product_category_code](product_category_code/) | 17.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a code on product categories
 [product_code_mandatory](product_code_mandatory/) | 17.0.1.0.0 |  | Set Product Internal Reference as a required field
 [product_code_unique](product_code_unique/) | 17.0.1.0.0 |  | Set Product Internal Reference as Unique
 [product_dimension](product_dimension/) | 17.0.1.0.0 |  | Product Dimension
+[product_document_domain](product_document_domain/) | 17.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | More user friendly domain and new filters for product documents
 [product_logistics_uom](product_logistics_uom/) | 17.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Configure product weights and volume UoM
 [product_main_supplierinfo](product_main_supplierinfo/) | 17.0.1.0.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Display the main vendor of a product.
 [product_manufacturer](product_manufacturer/) | 17.0.1.0.0 |  | Adds manufacturers and attributes on the product view.
@@ -6170,7 +6183,7 @@ addon | version | maintainers | summary
 [project_timeline](project_timeline/) | 17.0.1.1.1 |  | Timeline view for projects
 [project_timesheet_time_control](project_timesheet_time_control/) | 17.0.1.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
 [project_type](project_type/) | 17.0.1.0.2 |  | Project Types
-[sale_project_task_recurrency](sale_project_task_recurrency/) | 17.0.1.1.0 |  | Configuring Task Recurrence from the Product Form.
+[sale_project_task_recurrency](sale_project_task_recurrency/) | 17.0.1.2.0 |  | Configuring Task Recurrence from the Product Form.
 
 [//]: # (end addons)
 
@@ -6491,7 +6504,7 @@ addon | version | maintainers | summary
 [mail_composer_cc_bcc_account](mail_composer_cc_bcc_account/) | 17.0.1.0.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners for invoices.
 [mail_debrand](mail_debrand/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_layout_preview](mail_layout_preview/) | 17.0.1.0.0 |  | Preview email templates in the browser
-[mail_notification_custom_subject](mail_notification_custom_subject/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
+[mail_notification_custom_subject](mail_notification_custom_subject/) | 17.0.1.1.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
 [mail_optional_autofollow](mail_optional_autofollow/) | 17.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 17.0.1.0.0 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 17.0.1.0.1 |  | Allows you to configure the from header for a mail server.
@@ -6932,7 +6945,7 @@ addon | version | maintainers | summary
 [data_encryption](data_encryption/) | 17.0.1.0.0 |  | Store accounts and credentials encrypted by environment
 [mail_environment](mail_environment/) | 17.0.1.0.0 |  | Configure mail servers with server_environment_files
 [mail_environment_office365](mail_environment_office365/) | 17.0.1.0.0 |  | Configure Office365 parameters with environment variables via server_environment
-[server_environment](server_environment/) | 17.0.1.1.0 |  | move some configurations out of the database
+[server_environment](server_environment/) | 17.0.1.1.1 |  | move some configurations out of the database
 [server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 17.0.1.0.0 |  | Override System Parameters from server environment file
 
 [//]: # (end addons)
