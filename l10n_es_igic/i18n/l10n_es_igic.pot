@@ -24,6 +24,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/l10n_es_igic/models/template_es_canary.py:0
 #, python-format
+msgid "Común (2008) - Islas Canarias"
+msgstr ""
+
+#. module: l10n_es_igic
+#. odoo-python
+#: code:addons/l10n_es_igic/models/template_es_canary.py:0
+#, python-format
 msgid "Entidades sin ánimo de lucro (2008) - Islas Canarias"
 msgstr ""
 

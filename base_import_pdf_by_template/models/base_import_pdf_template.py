@@ -1,5 +1,6 @@
 # Copyright 2024 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+import json
 import re
 from datetime import datetime
 
@@ -238,12 +239,18 @@ class BaseImportPdfTemplateLine(models.Model):
         selection=[
             ("*Y-*d-*m", _("YY-dd-MM")),
             ("*m-*d-*Y", _("MM-dd-YY")),
+            ("*d-*m-*Y", _("dd-MM-YY")),
             ("*Y/*d/*m", _("YY/dd/MM")),
             ("*m/*d/*Y", _("MM/dd/YY")),
             ("*d.*m.*Y", _("dd.MM.YY")),
+            ("*d.*m.*y-short", _("dd.MM.yy")),
             ("*d/*m/*Y", _("dd/MM/YY")),
             ("*d/*m/*y-short", _("dd/MM/yy")),
-            ("*B *d, *Y", _("B d, YY")),
+            ("*B *d, *Y", _("B dd, YY")),
+            ("*b-short *d, *Y", _("b dd, YY")),
+            ("*d *b-short *Y", _("dd b YY")),
+            ("*d *B *Y", _("dd B YY")),
+            ("*d-*b-*y", _("dd-b-yy")),
         ],
     )
     time_format = fields.Selection(
@@ -338,6 +345,7 @@ class BaseImportPdfTemplateLine(models.Model):
             "integer": "fixed_value_integer",
             "selection": "fixed_value_selection",
             "text": "fixed_value_text",
+            "json": "fixed_value_text",
             "many2one": "fixed_value",
         }
 
@@ -347,6 +355,8 @@ class BaseImportPdfTemplateLine(models.Model):
         f_value = self[f_name]
         if self.field_ttype == "selection":
             f_value = f_value.value
+        elif self.field_ttype == "json":
+            f_value = json.loads(f_value)
         return f_value
 
     def _replace_text(self, text, letters, prefix):

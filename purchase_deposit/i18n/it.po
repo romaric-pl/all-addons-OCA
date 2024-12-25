@@ -22,8 +22,8 @@ msgid ""
 "<span invisible=\"advance_payment_method != 'percentage'\" "
 "class=\"oe_inline\">%</span>"
 msgstr ""
-"<span invisible=\"advance_payment_method != 'percentage'\" class=\"oe_inline"
-"\">%</span>"
+"<span invisible=\"advance_payment_method != 'percentage'\" "
+"class=\"oe_inline\">%</span>"
 
 #. module: purchase_deposit
 #: model:ir.model.fields,help:purchase_deposit.field_purchase_advance_payment_inv__deposit_account_id
@@ -188,6 +188,13 @@ msgstr "Fattura di acquisto con pagamento anticipato"
 #: model:ir.model.fields,field_description:purchase_deposit.field_res_config_settings__purchase_deposit_product_id
 msgid "Purchase Deposit Product"
 msgstr "Prodotto cauzione acquisto"
+
+#. module: purchase_deposit
+#. odoo-python
+#: code:addons/purchase_deposit/wizard/purchase_make_invoice_advance.py:0
+#, python-format
+msgid "Purchase Deposits"
+msgstr ""
 
 #. module: purchase_deposit
 #: model:ir.model,name:purchase_deposit.model_purchase_order

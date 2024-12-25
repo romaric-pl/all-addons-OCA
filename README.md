@@ -216,9 +216,9 @@ Date:   Fri Dec 6 23:07:59 2024 +0000
 
 ## connector
 From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
-commit d966e0a5153f6acbce333389a1704f2dd9a890a7
+commit 1e40269bb635f68d400cbdccb4d51cc63c919afb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Jul 28 09:56:32 2024 +0000
+Date:   Tue Dec 24 21:59:27 2024 +0000
 
     [BOT] post-merge updates
 
@@ -342,16 +342,16 @@ Date:   Sat Jul 6 17:23:31 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 2dd2294e8ba7165ca6d7b78f490422aaca1f0414
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 20 15:41:43 2024 +0000
+commit 2fa67fe1928408dbc306944c9a5c015bdd2221bf
+Author: Ömer KÜLAK <omer.kulak@kitayazilim.com>
+Date:   Tue Dec 24 09:55:38 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (16 of 16 strings)
+    Currently translated at 100.0% (18 of 18 strings)
     
-    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_order_type_confirm_message
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_order_type_confirm_message/it/
+    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_order_line_input
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_order_line_input/tr/
 
 
 ## crm
@@ -365,9 +365,9 @@ Date:   Tue Dec 10 07:48:54 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 686c17298e404c04d63af4eec2c70d7084ce07e1
+commit 6ec7e9192a9665ce8457744b2ab369a209fc1849
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 19 17:46:30 2024 +0000
+Date:   Mon Dec 23 09:44:54 2024 +0000
 
     [BOT] post-merge updates
 
@@ -480,16 +480,16 @@ Date:   Fri Nov 29 11:51:53 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 47b3296ca6f31842a32a465dfe57f6892d1bbf42
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 4 08:52:28 2024 +0000
+commit 43177a0f0c204c3464cd47856b357b3270780552
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Dec 24 11:20:56 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: edi-17.0/edi-17.0-base_edi
-    Translate-URL: https://translation.odoo-community.org/projects/edi-17-0/edi-17-0-base_edi/it/
+    Translation: edi-17.0/edi-17.0-base_import_pdf_by_template
+    Translate-URL: https://translation.odoo-community.org/projects/edi-17-0/edi-17-0-base_import_pdf_by_template/
 
 
 ## field-service
@@ -668,11 +668,11 @@ Date:   Sat Jul 6 17:29:37 2024 +0000
 
 ## l10n-belgium
 From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
-commit 8256ad7792bdf8abf865fccd4e0d0d2eacb03c71
-Author: Stéphane Bidoul <stephane.bidoul@acsone.eu>
-Date:   Thu Nov 28 12:04:39 2024 +0100
+commit 4059d6fd3903becc5f132f5aaf374f7780092635
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 24 09:26:30 2024 +0000
 
-    [FIX] remove pandoc deb
+    [BOT] post-merge updates
 
 
 ## l10n-cambodia
@@ -944,16 +944,16 @@ Date:   Sat Jul 6 17:35:13 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit d399bfa10d268476d2b991449d8eda82cb64a62c
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Dec 18 06:48:22 2024 +0000
+commit d264d1b9ea384c5185b459a828b74c8cd5f7fba1
+Author: Dorin Hongu <dhongu@gmail.com>
+Date:   Sun Dec 22 06:03:01 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Romanian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (22 of 22 strings)
     
-    Translation: l10n-romania-17.0/l10n-romania-17.0-l10n_ro_partner_create_by_vat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-17-0/l10n-romania-17-0-l10n_ro_partner_create_by_vat/
+    Translation: l10n-romania-17.0/l10n-romania-17.0-l10n_ro_stock_picking_valued_report
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-17-0/l10n-romania-17-0-l10n_ro_stock_picking_valued_report/ro/
 
 
 ## l10n-russia
@@ -976,11 +976,16 @@ Date:   Sat Jul 6 17:36:34 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 078fe88fe7f8beeb0ad45af398a0f24179d89d7d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 13 08:45:05 2024 +0000
+commit 0e62d8ab8ceb93c4acf441b2b83fdf60a90cebfb
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Dec 23 08:06:59 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_igic
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_igic/
 
 
 ## l10n-switzerland
@@ -1170,16 +1175,11 @@ Date:   Mon Oct 14 15:55:22 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 13002af3ad596b94518da8a40675f776f95e7403
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 19 07:22:26 2024 +0000
+commit c0a7fef67303df608241f00dba807150b41bb3ad
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 23 06:47:02 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (6 of 6 strings)
-    
-    Translation: manufacture-17.0/manufacture-17.0-mrp_production_back_to_draft
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-17-0/manufacture-17-0-mrp_production_back_to_draft/it/
+    [BOT] post-merge updates
 
 
 ## manufacture-reporting
@@ -1211,11 +1211,16 @@ Date:   Wed May 1 17:04:04 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit e2299c1349a499733a7ac86cf1721f2e4ccecc4e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 18 12:19:13 2024 +0000
+commit 037a5b48b1961178a55147ec7d2880fe99f359b8
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Dec 24 09:04:55 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_deposit
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_deposit/
 
 
 ## purchase-reporting
@@ -1307,16 +1312,11 @@ Date:   Wed May 1 17:08:06 2024 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit ec9271669142bd4b741f76681114340a76333af7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 6 17:11:47 2024 +0000
+commit cc279a6f8158c35fc0894d2bf052d67a261bc157
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 24 13:04:46 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (329 of 329 strings)
-    
-    Translation: contract-17.0/contract-17.0-contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-17-0/contract-17-0-contract/it/
+    [BOT] post-merge updates
 
 
 ## program

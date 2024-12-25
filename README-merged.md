@@ -1047,7 +1047,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[component](component/) | 17.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Add capabilities to register and use decoupled components, as an alternative to model classes
+[component](component/) | 17.0.1.0.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Add capabilities to register and use decoupled components, as an alternative to model classes
 [component_event](component_event/) | 17.0.1.0.0 |  | Components Events
 [connector](connector/) | 17.0.1.0.1 |  | Connector
 [connector_base_product](connector_base_product/) | 17.0.1.0.0 |  | Connector Base Product
@@ -1837,6 +1837,7 @@ addon | version | maintainers | summary
 [partner_deduplicate_acl](partner_deduplicate_acl/) | 17.0.1.0.0 |  | Contact deduplication with fine-grained permission control
 [partner_deduplicate_by_website](partner_deduplicate_by_website/) | 17.0.1.0.0 |  | Deduplicate Contacts by Website
 [partner_deduplicate_filter](partner_deduplicate_filter/) | 17.0.1.0.0 |  | Exclude records from the deduplication
+[partner_disable_gravatar](partner_disable_gravatar/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Disable automatic connection to gravatar.com
 [partner_display_name_line_break](partner_display_name_line_break/) | 17.0.1.0.1 |  | Split the company and the partner name on two different lines
 [partner_email_check](partner_email_check/) | 17.0.1.0.0 |  | Validate email address field
 [partner_email_duplicate_warn](partner_email_duplicate_warn/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Warning banner on partner form if another partner has the same email
@@ -2347,11 +2348,12 @@ addon | version | maintainers | summary
 [base_business_document_import](base_business_document_import/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides technical tools to import sale orders or supplier invoices
 [base_edi](base_edi/) | 17.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Factur-X/ZUGFeRD
-[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.2.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
+[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.2.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
+[base_import_pdf_by_template_account](base_import_pdf_by_template_account/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template Account
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 17.0.1.0.0 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 17.0.1.0.1 |  | Base module for connecting with Voxel
 [pdf_helper](pdf_helper/) | 17.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
-[test_base_import_pdf_by_template](test_base_import_pdf_by_template/) | 17.0.1.1.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Test Base Import Pdf by Template
+[test_base_import_pdf_by_template](test_base_import_pdf_by_template/) | 17.0.1.1.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Test Base Import Pdf by Template
 
 [//]: # (end addons)
 
@@ -3185,6 +3187,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_statement_import_coda](account_statement_import_coda/) | 17.0.1.0.0 |  | Import CODA Bank Statement
 [companyweb_base](companyweb_base/) | 17.0.1.0.0 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
 [companyweb_payment_info](companyweb_payment_info/) | 17.0.1.0.1 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Send your customer payment information to Companyweb
 [l10n_be_partner_kbo_bce](l10n_be_partner_kbo_bce/) | 17.0.1.0.0 |  | Belgium - KBO/BCE numbers
@@ -4643,7 +4646,7 @@ addon | version | maintainers | summary
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.1.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
-[l10n_es_igic](l10n_es_igic/) | 17.0.1.1.0 |  | IGIC (Impuesto General Indirecto Canario)
+[l10n_es_igic](l10n_es_igic/) | 17.0.2.0.0 |  | IGIC (Impuesto General Indirecto Canario)
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 17.0.1.0.0 |  | Spanish Intrastat Product Declaration
 [l10n_es_location_nuts](l10n_es_location_nuts/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | NUTS specific options for Spain
 [l10n_es_mis_report](l10n_es_mis_report/) | 17.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
@@ -5590,6 +5593,7 @@ addon | version | maintainers | summary
 [mrp_mass_production_order](mrp_mass_production_order/) | 17.0.1.0.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create multiple manufacturing orders in one step
 [mrp_multi_level](mrp_multi_level/) | 17.0.1.2.5 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
+[mrp_planned_order_matrix](mrp_planned_order_matrix/) | 17.0.1.0.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_back_to_draft](mrp_production_back_to_draft/) | 17.0.1.0.0 |  | Allows to return to draft a confirmed or cancelled MO.
 [mrp_production_note](mrp_production_note/) | 17.0.1.0.0 |  | Notes in production orders
 [mrp_repair_order](mrp_repair_order/) | 17.0.1.0.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create repair order from manufacturing order
@@ -5805,7 +5809,7 @@ addon | version | maintainers | summary
 [purchase_commercial_partner](purchase_commercial_partner/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Supplier' on POs
 [purchase_default_terms_conditions](purchase_default_terms_conditions/) | 17.0.1.0.0 |  | This module allows purchase default terms & conditions
 [purchase_delivery_split_date](purchase_delivery_split_date/) | 17.0.1.0.2 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
-[purchase_deposit](purchase_deposit/) | 17.0.1.0.0 |  | Option to create deposit from purchase order
+[purchase_deposit](purchase_deposit/) | 17.0.1.1.0 |  | Option to create deposit from purchase order
 [purchase_exception](purchase_exception/) | 17.0.1.0.0 |  | Custom exceptions on purchase order
 [purchase_force_invoiced](purchase_force_invoiced/) | 17.0.1.0.0 |  | Allows to force the billing status of the purchase order to "Invoiced"
 [purchase_invoice_method](purchase_invoice_method/) | 17.0.1.0.0 |  | Allow to force the invoice method of a purchase
@@ -6271,7 +6275,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[contract](contract/) | 17.0.1.2.0 |  | Recurring - Contracts Management
+[contract](contract/) | 17.0.1.2.1 |  | Recurring - Contracts Management
 [contract_payment_mode](contract_payment_mode/) | 17.0.1.0.0 |  | Payment mode in contracts and their invoices
 [contract_price_revision](contract_price_revision/) | 17.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Easy revision of contract prices
 [contract_sale](contract_sale/) | 17.0.1.0.0 |  | Contract from Sale
