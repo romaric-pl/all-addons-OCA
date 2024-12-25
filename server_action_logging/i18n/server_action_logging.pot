@@ -16,12 +16,14 @@ msgstr ""
 #. module: server_action_logging
 #: model:ir.model.fields,field_description:server_action_logging.field_ir_actions_server__enable_sql_debug
 #: model:ir.model.fields,field_description:server_action_logging.field_ir_cron__enable_sql_debug
+#: model:ir.model.fields,field_description:server_action_logging.field_nsca_check__enable_sql_debug
 msgid "Enable SQL Debug"
 msgstr ""
 
 #. module: server_action_logging
 #: model:ir.model.fields,help:server_action_logging.field_ir_actions_server__enable_sql_debug
 #: model:ir.model.fields,help:server_action_logging.field_ir_cron__enable_sql_debug
+#: model:ir.model.fields,help:server_action_logging.field_nsca_check__enable_sql_debug
 msgid "Enable SQL Debug for this action"
 msgstr ""
 

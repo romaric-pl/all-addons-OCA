@@ -79,6 +79,7 @@ class TestAccountInvoiceInterCompanyBase(TransactionCase):
                             cls.env.ref("base.group_partner_manager").id,
                             cls.env.ref("account.group_account_manager").id,
                             cls.env.ref("account.group_account_readonly").id,
+                            cls.env.ref("base.group_multi_currency").id,
                         ],
                     )
                 ],

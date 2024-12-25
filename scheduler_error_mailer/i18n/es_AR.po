@@ -41,8 +41,8 @@ msgid ""
 "<ul>\n"
 "<li>Model : <t t-out=\"object.model_id.name or ''\"/></li>\n"
 "<li>Python code : <code><t t-out=\"object.code or ''\"/></code></li>\n"
-"<li>Interval : <t t-out=\"object.interval_number or '0'\"/> <t t-out="
-"\"object.interval_type or ''\"/></li>\n"
+"<li>Interval : <t t-out=\"object.interval_number or '0'\"/> <t t-"
+"out=\"object.interval_type or ''\"/></li>\n"
 "<li>Number of calls : <t t-out=\"object.numbercall or '0'\"/></li>\n"
 "<li>Repeat missed : <t t-out=\"object.doall\"/></li>\n"
 "<li>User : <t t-out=\"object.user_id.name or ''\"/></li>\n"
@@ -79,8 +79,8 @@ msgstr ""
 "<ul>\n"
 "<li>Modelo : <t t-out=\"object.model_id.name or ''\"/></li>\n"
 "<li>Código Python : <code><t t-out=\"object.code or ''\"/></code></li>\n"
-"<li>Intervalo : <t t-out=\"object.interval_number or '0'\"/> <t t-out="
-"\"object.interval_type or ''\"/></li>\n"
+"<li>Intervalo : <t t-out=\"object.interval_number or '0'\"/> <t t-"
+"out=\"object.interval_type or ''\"/></li>\n"
 "<li>Número de ejecuciones : <t t-out=\"object.numbercall or '0'\"/></li>\n"
 "<li>Repetir perdidos : <t t-out=\"object.doall\"/></li>\n"
 "<li>Usuario : <t t-out=\"object.user_id.name or ''\"/></li>\n"
@@ -127,6 +127,7 @@ msgstr "Cuenta Pendiente del Conjunto de Cambios"
 
 #. module: scheduler_error_mailer
 #: model:ir.model.fields,field_description:scheduler_error_mailer.field_ir_cron__email_template_id
+#: model:ir.model.fields,field_description:scheduler_error_mailer.field_nsca_check__email_template_id
 msgid "Error E-mail Template"
 msgstr "Plantilla de correo electrónico del error"
 
@@ -142,6 +143,7 @@ msgstr "Error del Planificador"
 
 #. module: scheduler_error_mailer
 #: model:ir.model.fields,help:scheduler_error_mailer.field_ir_cron__email_template_id
+#: model:ir.model.fields,help:scheduler_error_mailer.field_nsca_check__email_template_id
 msgid "Select the email template that will be sent when this scheduler fails."
 msgstr ""
 "Seleccione la plantilla de correo electrónico que se enviará cuando falla "
