@@ -1,0 +1,137 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_production_operation_injection
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-12-24 23:06+0000\n"
+"Last-Translator: Isneyler Mosquera Preciado <isneyler@gmail.com>\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: mrp_production_operation_injection
+#: model_terms:ir.ui.view,arch_db:mrp_production_operation_injection.mrp_workorder_injector_view_form
+msgid "Add"
+msgstr "Añadir"
+
+#. module: mrp_production_operation_injection
+#: model_terms:ir.ui.view,arch_db:mrp_production_operation_injection.mrp_workorder_injector_view_form
+msgid "Add operation to workorders"
+msgstr "Añadir operación a ordenes de trabajo"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__allowed_bom_operation_ids
+msgid "Allowed Bom Operation"
+msgstr "Permitida operación Bom"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__bom_id
+msgid "Bill of Material"
+msgstr "Lista de material"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,help:mrp_production_operation_injection.field_mrp_workorder_injector__bom_id
+msgid ""
+"Bill of Materials allow you to define the list of required components to "
+"make a finished product."
+msgstr ""
+"La lista de materiales le permite definir la lista de componentes necesarios "
+"para fabricar un producto terminado."
+
+#. module: mrp_production_operation_injection
+#: model_terms:ir.ui.view,arch_db:mrp_production_operation_injection.mrp_workorder_injector_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_production__display_inject_workorder
+msgid "Display Inject Workorder"
+msgstr ""
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_production_operation_injection
+#: model:ir.actions.act_window,name:mrp_production_operation_injection.mrp_workorder_injector_action
+#: model_terms:ir.ui.view,arch_db:mrp_production_operation_injection.mrp_production_form_view_inherit
+msgid "Inject operation"
+msgstr "Operación de inyección"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model,name:mrp_production_operation_injection.model_mrp_workorder_injector
+msgid "Inject operation from BOM into workorders"
+msgstr ""
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__operation_id
+msgid "New operation"
+msgstr "Nueva operación"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__workorder_id
+msgid "Previous workorder"
+msgstr "Orden de trabajo anterior"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__production_id
+msgid "Production"
+msgstr "Producción"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model,name:mrp_production_operation_injection.model_mrp_production
+msgid "Production Order"
+msgstr "Orden de producción"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder_injector__production_workorder_ids
+msgid "Production Workorder"
+msgstr "Orden de trabajo de producción"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model.fields,field_description:mrp_production_operation_injection.field_mrp_workorder__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: mrp_production_operation_injection
+#: model:ir.model,name:mrp_production_operation_injection.model_mrp_workorder
+msgid "Work Order"
+msgstr "Orden de trabajo"

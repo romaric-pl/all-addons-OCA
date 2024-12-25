@@ -24,16 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 4adaa9943d88596d63a8f7c4b48a1cca6abf4bc4
-Author: Jaume Planas <jaumeplan@gmail.com>
-Date:   Wed Sep 11 16:02:42 2024 +0000
+commit 1ed3deb430962c37f1d370acbe306b8d3c9443bd
+Author: Isneyler Mosquera Preciado <isneyler@gmail.com>
+Date:   Tue Dec 24 20:30:19 2024 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: account-analytic-15.0/account-analytic-15.0-procurement_mto_analytic
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-15-0/account-analytic-15-0-procurement_mto_analytic/ca/
+    Added translation using Weblate (Spanish (Colombia))
 
 
 ## account-budgeting
@@ -513,9 +508,9 @@ Date:   Mon Sep 16 23:33:10 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit d7bc3053021993e3cbd9f9630c7140dcf81af1e2
+commit d9e8f0f68725c0dfd398b0a960f6f772b675e098
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 5 15:05:18 2024 +0000
+Date:   Sun Dec 22 13:19:31 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1193,11 +1188,16 @@ Date:   Wed Dec 6 16:10:13 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit c3188e4f4d133e46d1264d19828dde7e4030580f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 3 08:58:38 2024 +0000
+commit 8bc5f0efe5d2ba405921a07fb35d130dceca28bf
+Author: Isneyler Mosquera Preciado <isneyler@gmail.com>
+Date:   Tue Dec 24 20:41:52 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 91.3% (21 of 23 strings)
+    
+    Translation: manufacture-15.0/manufacture-15.0-mrp_production_operation_injection
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_production_operation_injection/es/
 
 
 ## manufacture-reporting
