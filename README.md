@@ -47,11 +47,16 @@ Date:   Wed Sep 11 06:37:33 2024 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 604ffcd44dc17fbba4f60f289ab9e5082c511696
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 10 13:34:49 2024 +0000
+commit f51838b9de74cb239c43035eaa881f8a73414d15
+Author: Ben Brich <b.brich@humanilog.org>
+Date:   Sun Dec 22 10:54:50 2024 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (German)
+    
+    Currently translated at 100.0% (111 of 111 strings)
+    
+    Translation: account-closing-14.0/account-closing-14.0-account_fiscal_year_closing
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-14-0/account-closing-14-0-account_fiscal_year_closing/de/
 
 
 ## account-consolidation
@@ -88,27 +93,27 @@ Date:   Tue Dec 10 13:48:42 2024 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit ffeb2f25efbbbff2996a974a9378327d32eb081d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 20 14:38:04 2024 +0000
+commit 31db7d19bc2b9c183d370995828abecb4d05f133
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 24 17:48:03 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 025efeea636795d0961d04a1da991505e11090fb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 19 18:28:20 2024 +0000
+commit 17ae1830fe9b3d360e02368d75ee79b067ccb3c4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 25 14:13:21 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 342fdaf656dc9b80e6fcb5182278c75f019c7a2a
+commit 3d6941d4257040346424292f3003e19621829160
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 12 14:15:32 2024 +0000
+Date:   Tue Dec 24 17:00:11 2024 +0000
 
     Added translation using Weblate (Italian)
 
@@ -371,11 +376,16 @@ Date:   Wed May 1 18:02:11 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit d3418798e426daa8e5c3fb3e32bd82eef4778e1e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 18 10:40:03 2024 +0000
+commit f3d1eda73cde4dc1b205b83060b7c385889a9d62
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Dec 24 11:07:25 2024 +0000
 
-    Added translation using Weblate (Italian)
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-14.0/sale-workflow-14.0-product_supplierinfo_for_customer_sale
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-product_supplierinfo_for_customer_sale/
 
 
 ## crm
@@ -1177,16 +1187,16 @@ Date:   Mon Nov 18 15:07:59 2024 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit e3f0711e44fd741cc9c9d40a20c993053c8091f8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 18 07:14:12 2024 +0000
+commit e2641b8c81b7917f77ffa29e34609dbbe9550e0d
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Dec 24 14:09:12 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (93 of 93 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: management-system-14.0/management-system-14.0-mgmtsystem_evaluation
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-14-0/management-system-14-0-mgmtsystem_evaluation/it/
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-14-0/management-system-14-0-mgmtsystem_evaluation/
 
 
 ## pms
@@ -1196,15 +1206,6 @@ Author: OCA-git-bot <oca-git-bot@odoo-community.org>
 Date:   Tue Dec 17 19:14:11 2024 +0000
 
     [BOT] post-merge updates
-
-
-## purchase-workflow
-From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 471f8b5c5b38b54041e32be6a0b783fe6363dcd6
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 20 16:09:31 2024 +0000
-
-    Added translation using Weblate (Italian)
 
 
 ## purchase-reporting
@@ -1372,11 +1373,11 @@ Date:   Thu Dec 19 15:50:34 2024 +0000
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit 100ee6eb765310fa9ecc49dc02e9fcd00a3b7c8e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 17 09:09:27 2024 +0000
+commit bd52394737358a4af40a3051a76d69e723bbd2d8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 23 13:26:50 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## webkit-tools

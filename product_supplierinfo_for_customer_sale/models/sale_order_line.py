@@ -12,20 +12,53 @@ class SaleOrderLine(models.Model):
     product_customer_code = fields.Char(
         compute="_compute_product_customer_code",
         string="Product Customer Code",
+        search="_search_product_customer_code",
+    )
+    product_customer_name = fields.Char(
+        compute="_compute_product_customer_code",
+        string="Product Customer Name",
+        search="_search_product_customer_name",
     )
 
-    @api.depends("product_id")
+    @api.depends("order_id.partner_id", "product_id", "company_id")
     def _compute_product_customer_code(self):
         for line in self:
-            if line.product_id:
-                supplierinfo = line.product_id._select_customerinfo(
+            product_customer_name = product_customer_code = False
+
+            if line.product_id and line.order_id and line.order_id.partner_id:
+                customerinfo = line.product_id._select_customerinfo(
                     partner=line.order_partner_id,
                     quantity=None,
                 )
-                code = supplierinfo.product_code
-            else:
-                code = ""
-            line.product_customer_code = code
+                product_customer_code = customerinfo.product_code
+                product_customer_name = customerinfo.product_name
+
+            line.product_customer_code = product_customer_code
+            line.product_customer_name = product_customer_name
+
+    def _search_product_customer_code(self, operator, value):
+        return [
+            ("product_id.customer_ids.product_code", operator, value),
+            (
+                "order_id.partner_id",
+                "=",
+                self.env["product.customerinfo"]
+                .search([("product_code", operator, value)])
+                .name.id,
+            ),
+        ]
+
+    def _search_product_customer_name(self, operator, value):
+        return [
+            ("product_id.customer_ids.product_name", operator, value),
+            (
+                "order_id.partner_id",
+                "=",
+                self.env["product.customerinfo"]
+                .search([("product_name", operator, value)])
+                .name.id,
+            ),
+        ]
 
     @api.onchange("product_id")
     def product_id_change(self):

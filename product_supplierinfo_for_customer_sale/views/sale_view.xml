@@ -23,6 +23,26 @@
         </field>
     </record>
 
+    <record id="sale_order_customerinfo_view_search" model="ir.ui.view">
+        <field name="name">sale.order.customerinfo.view.search</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']" position="after">
+                <field
+                    name="order_line"
+                    string="Product Customer Info"
+                    filter_domain="[
+                        '|',
+                        ('order_line.product_customer_code', 'ilike', self),
+                        ('order_line.product_customer_name', 'ilike', self),
+
+                    ]"
+                />
+            </xpath>
+        </field>
+    </record>
+
     <record id="product_customerinfo_tree_view" model="ir.ui.view">
         <field name="name">product.customerinfo.tree.view</field>
         <field name="model">product.customerinfo</field>

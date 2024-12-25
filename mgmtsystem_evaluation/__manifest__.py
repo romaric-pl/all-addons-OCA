@@ -5,7 +5,7 @@
     "name": "Mgmtsystem Evaluation",
     "summary": """
         Evaluate records within your management system""",
-    "version": "14.0.1.0.2",
+    "version": "14.0.1.0.3",
     "license": "AGPL-3",
     "author": "CreuBlanca,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/management-system",
@@ -18,6 +18,7 @@
         "views/mgmtsystem_evaluation.xml",
         "templates/asset_backend.xml",
         "views/res_partner.xml",
+        "data/cron.xml",
     ],
     "demo": ["demo/demo.xml"],
 }
