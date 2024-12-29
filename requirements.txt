@@ -261,6 +261,7 @@ pandas>=0.25.3
 bs4
 pycountry
 xlrd
+# From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
 # From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
 # From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
 # generated from manifests external_dependencies

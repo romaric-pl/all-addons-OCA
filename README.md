@@ -102,9 +102,9 @@ Date:   Tue Dec 24 17:48:03 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 17ae1830fe9b3d360e02368d75ee79b067ccb3c4
+commit a8c70203b456180db792980f8628ab2aed122b53
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 25 14:13:21 2024 +0000
+Date:   Sat Dec 28 22:06:38 2024 +0000
 
     Added translation using Weblate (Italian)
 
@@ -120,11 +120,11 @@ Date:   Tue Dec 24 17:00:11 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 021d5bb4d208a8830ebc0016845605a3a2113e24
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 12 14:36:29 2024 +0000
+commit 5c132afc03247800e5cae460d49043520f17e583
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 29 18:00:36 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## intrastat
@@ -404,9 +404,9 @@ Date:   Tue Jul 16 14:42:10 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit c443c1e1d520f6103af8dd56947c24a5d7bf693b
+commit d45a00e8064515f210deac67df3770190311be81
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 15 18:45:57 2024 +0000
+Date:   Sun Dec 29 16:35:30 2024 +0000
 
     Added translation using Weblate (Italian)
 
@@ -938,16 +938,16 @@ Date:   Wed May 1 18:31:50 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 740c5a31094ee2546ceebe6f24c8e52c760f57c0
+commit af2254728f3391ef1766a25b3396c97044454ec0
 Author: Weblate <noreply@weblate.org>
-Date:   Wed Oct 16 15:54:55 2024 +0000
+Date:   Fri Dec 27 11:29:43 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-romania-14.0/l10n-romania-14.0-l10n_ro_etransport
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-14-0/l10n-romania-14-0-l10n_ro_etransport/
+    Translation: l10n-romania-14.0/l10n-romania-14.0-l10n_ro_account_edi_ubl
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-14-0/l10n-romania-14-0-l10n_ro_account_edi_ubl/
 
 
 ## l10n-russia
@@ -1201,11 +1201,25 @@ Date:   Tue Dec 24 14:09:12 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 5d1e2a5335ccf4dbc5d57dc0ddda86db063a8871
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 17 19:14:11 2024 +0000
+commit 1113c09672134ee9175108afab69e6d3eb6c953c
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Dec 26 10:25:35 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: pms-14.0/pms-14.0-pms_l10n_es
+    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms_l10n_es/
+
+
+## purchase-workflow
+From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
+commit bddea266a12ca81997886f694b402de8f87e4b55
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 29 09:19:31 2024 +0000
+
+    Added translation using Weblate (Italian)
 
 
 ## purchase-reporting
@@ -1373,9 +1387,9 @@ Date:   Thu Dec 19 15:50:34 2024 +0000
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit bd52394737358a4af40a3051a76d69e723bbd2d8
+commit 2989b7744e29d84f7782d095678c4fa786062d99
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 23 13:26:50 2024 +0000
+Date:   Sat Dec 28 12:34:34 2024 +0000
 
     Added translation using Weblate (Italian)
 
@@ -1391,11 +1405,11 @@ Date:   Fri Oct 27 21:08:37 2023 +0200
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 181651fa0cb9c6802f1d0c53d5f6f6fc627cb00d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 4 15:54:37 2024 +0000
+commit bfad01bc0c6c29497db326f15d088f63d15550c0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 27 09:28:38 2024 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## server-auth

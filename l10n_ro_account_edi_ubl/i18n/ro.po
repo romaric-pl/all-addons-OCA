@@ -63,14 +63,10 @@ msgid "CIUS RO"
 msgstr "CIUS RO"
 
 #. module: l10n_ro_account_edi_ubl
-#: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_is_government_institution
-#: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_users__l10n_ro_is_government_institution
-msgid ""
-"Check this if the partner is a government institution.Will be used to "
-"calculate the sending of the invoice to the e-invoice system."
+#: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_edi_ubl_no_send_cnp
+#: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_users__l10n_ro_edi_ubl_no_send_cnp
+msgid "Check this if the partner should not receive UBL invoices on their CNP."
 msgstr ""
-"Bifa dacă partenerul este o instituție guvernamentală. Va fi folosit pentru "
-"a calcula trimiterea facturii către sistemul de facturi electronice."
 
 #. module: l10n_ro_account_edi_ubl
 #: model:ir.model,name:l10n_ro_account_edi_ubl.model_res_company
@@ -103,21 +99,6 @@ msgstr "Creat de"
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_account_edi_xml_cius_ro__create_date
 msgid "Created on"
 msgstr "Creat in"
-
-#. module: l10n_ro_account_edi_ubl
-#: model_terms:ir.ui.view,arch_db:l10n_ro_account_edi_ubl.res_config_settings_view_form
-msgid "Credit Note on e-Invoice."
-msgstr ""
-
-#. module: l10n_ro_account_edi_ubl
-#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_company__l10n_ro_credit_note_einvoice
-msgid "Credit Note on e-invoice"
-msgstr ""
-
-#. module: l10n_ro_account_edi_ubl
-#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_config_settings__l10n_ro_credit_note_einvoice
-msgid "Credit Note on e-invoice."
-msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_company__l10n_ro_default_cius_pdf_report
@@ -331,16 +312,16 @@ msgid "Residence"
 msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
-#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_is_government_institution
-#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_users__l10n_ro_is_government_institution
-msgid "Romania - Is government institution"
-msgstr "Este o instituție guvernamentală"
-
-#. module: l10n_ro_account_edi_ubl
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_product_product__l10n_ro_nc_code
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_product_template__l10n_ro_nc_code
 msgid "Romania - NC Code"
 msgstr "Cod NC"
+
+#. module: l10n_ro_account_edi_ubl
+#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_edi_ubl_no_send_cnp
+#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_users__l10n_ro_edi_ubl_no_send_cnp
+msgid "Romania - No send CNP UBL"
+msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
 #: model:ir.actions.server,name:l10n_ro_account_edi_ubl.ir_cron_res_company_einvoice_download_every_day_ir_actions_server
@@ -525,6 +506,17 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_ro_account_edi_ubl.view_move_form
 msgid "eFactura"
 msgstr ""
+
+#~ msgid ""
+#~ "Check this if the partner is a government institution.Will be used to "
+#~ "calculate the sending of the invoice to the e-invoice system."
+#~ msgstr ""
+#~ "Bifa dacă partenerul este o instituție guvernamentală. Va fi folosit "
+#~ "pentru a calcula trimiterea facturii către sistemul de facturi "
+#~ "electronice."
+
+#~ msgid "Romania - Is government institution"
+#~ msgstr "Este o instituție guvernamentală"
 
 #~ msgid ""
 #~ "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are "

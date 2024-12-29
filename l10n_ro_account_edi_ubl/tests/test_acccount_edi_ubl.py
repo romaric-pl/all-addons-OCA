@@ -79,14 +79,11 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
                 "zip": "307175",
                 "phone": "0256413409",
                 "l10n_ro_e_invoice": True,
-                "l10n_ro_is_government_institution": False,
                 "is_company": True,
             }
         )
         if "street_name" in cls.partner._fields:
             cls.partner.write({"street_name": "Nr. 383", "street": "Foeni Nr. 383"})
-
-        cls.partner.l10n_ro_is_government_institution = True
 
         uom_id = cls.env.ref("uom.product_uom_unit").id
         cls.product_a = cls.env["product.product"].create(
@@ -250,19 +247,6 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
 
         current_etree = self.get_xml_tree_from_string(xml_content)
         expected_etree = self.get_xml_tree_from_string(self.get_file("credit_note.xml"))
-        self.assertXmlTreeEqual(current_etree, expected_etree)
-
-    def test_account_credit_note_with_option_edi_ubl(self):
-        self.credit_note.action_post()
-        self.env.company.l10n_ro_credit_note_einvoice = True
-        invoice_xml = self.credit_note.attach_ubl_xml_file_button()
-        att = self.env["ir.attachment"].browse(invoice_xml["res_id"])
-        xml_content = base64.b64decode(att.with_context(bin_size=False).datas)
-
-        current_etree = self.get_xml_tree_from_string(xml_content)
-        expected_etree = self.get_xml_tree_from_string(
-            self.get_file("credit_note_option.xml")
-        )
         self.assertXmlTreeEqual(current_etree, expected_etree)
 
     def prepare_invoice_sent_step1(self):
@@ -477,7 +461,7 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
         cius_format = self.env.ref("l10n_ro_account_edi_ubl.edi_ubl_cius_ro")
         self.assertTrue(cius_format._is_required_for_invoice(self.invoice))
         self.invoice.partner_id.is_company = False
-        self.assertFalse(cius_format._is_required_for_invoice(self.invoice))
+        self.assertTrue(cius_format._is_required_for_invoice(self.invoice))
         self.invoice.partner_id.is_company = True
         self.invoice.partner_id.country_id = False
         self.assertFalse(cius_format._is_required_for_invoice(self.invoice))

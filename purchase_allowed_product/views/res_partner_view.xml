@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_partner_form_supplied_product">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <group name="purchase" position="inside">
+                <field name="force_only_supplied_product" invisible="1" />
+                <field
+                    name="use_only_supplied_product"
+                    attrs="{'invisible': [('force_only_supplied_product', '=', True)]}"
+                />
+            </group>
+        </field>
+    </record>
+</odoo>
