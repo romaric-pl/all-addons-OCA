@@ -134,22 +134,6 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div
-                    class="col-12 col-lg-6 o_setting_box"
-                    id="l10n_ro_credit_note_einvoice"
-                >
-                    <div class="o_setting_left_pane">
-                        <field name="l10n_ro_credit_note_einvoice" />
-                    </div>
-                    <div class="o_setting_right_pane">
-                            <label for="l10n_ro_credit_note_einvoice" />
-                        <div class="text-muted">
-                            Credit Note on e-Invoice.
-                        </div>
-                    </div>
-                </div>
             </div>
         </field>
     </record>

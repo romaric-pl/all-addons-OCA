@@ -69,6 +69,12 @@ msgid "CIUS RO"
 msgstr "CIUS RO"
 
 #. module: l10n_ro_account_edi_ubl
+#: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_edi_ubl_no_send_cnp
+#: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_users__l10n_ro_edi_ubl_no_send_cnp
+msgid "Check this if the partner should not receive UBL invoices on their CNP."
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
 #: model:ir.model,name:l10n_ro_account_edi_ubl.model_res_company
 msgid "Companies"
 msgstr "Companii"
@@ -88,6 +94,11 @@ msgid "Config Settings"
 msgstr "Setări de configurare"
 
 #. module: l10n_ro_account_edi_ubl
+#: model:ir.model,name:l10n_ro_account_edi_ubl.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
 #: code:addons/l10n_ro_account_edi_ubl/models/account_edi_xml_cius_ro.py:0
 #, python-format
 msgid "Could not retrieve the tax: %(tax_percent)s %% for line '%(name)s'."
@@ -103,21 +114,6 @@ msgstr "Creat de"
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_account_edi_xml_cius_ro__create_date
 msgid "Created on"
 msgstr "Creat in"
-
-#. module: l10n_ro_account_edi_ubl
-#: model_terms:ir.ui.view,arch_db:l10n_ro_account_edi_ubl.res_config_settings_view_form
-msgid "Credit Note on e-Invoice."
-msgstr "Notă de credit pe e-factură."
-
-#. module: l10n_ro_account_edi_ubl
-#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_company__l10n_ro_credit_note_einvoice
-msgid "Credit Note on e-invoice"
-msgstr "Notă de credit pe e-factură"
-
-#. module: l10n_ro_account_edi_ubl
-#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_config_settings__l10n_ro_credit_note_einvoice
-msgid "Credit Note on e-invoice."
-msgstr "Notă de credit pe e-factură."
 
 #. module: l10n_ro_account_edi_ubl
 #: model_terms:ir.ui.view,arch_db:l10n_ro_account_edi_ubl.res_config_settings_view_form
@@ -329,6 +325,12 @@ msgid "Romania - NC Code"
 msgstr "Cod NC"
 
 #. module: l10n_ro_account_edi_ubl
+#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_edi_ubl_no_send_cnp
+#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_users__l10n_ro_edi_ubl_no_send_cnp
+msgid "Romania - No send CNP UBL"
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
 #: model:ir.actions.server,name:l10n_ro_account_edi_ubl.ir_cron_res_company_einvoice_download_every_day_ir_actions_server
 #: model:ir.cron,cron_name:l10n_ro_account_edi_ubl.ir_cron_res_company_einvoice_download_every_day
 #: model:ir.cron,name:l10n_ro_account_edi_ubl.ir_cron_res_company_einvoice_download_every_day
@@ -532,6 +534,15 @@ msgstr ""
 "electronic a fost deja trimis către ANAF. Pentru a edita această intrare, "
 "trebuie să creați o notă de credit pentru factură și să creați o nouă "
 "factură."
+
+#~ msgid "Credit Note on e-Invoice."
+#~ msgstr "Notă de credit pe e-factură."
+
+#~ msgid "Credit Note on e-invoice"
+#~ msgstr "Notă de credit pe e-factură"
+
+#~ msgid "Credit Note on e-invoice."
+#~ msgstr "Notă de credit pe e-factură."
 
 #~ msgid "L10N Ro Vendor Code"
 #~ msgstr "Cod furnizor"

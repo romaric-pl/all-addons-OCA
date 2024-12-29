@@ -32,10 +32,18 @@ class AccountEdiXmlCIUSRO(models.Model):
             vals["city_name"] = partner.city.upper().replace(" ", "")
         return vals
 
+    def _get_partner_party_vals(self, partner, role):
+        # EXTENDS account.edi.xml.ubl_21
+        vals = super()._get_partner_party_vals(partner, role)
+        partner = partner.commercial_partner_id
+        if not partner.is_company and partner.l10n_ro_edi_ubl_no_send_cnp:
+            vals["endpoint_id"] = "0000000000000"
+        return vals
+
     def _get_partner_party_tax_scheme_vals_list(self, partner, role):
         # EXTENDS account.edi.xml.ubl_21
         vals_list = super()._get_partner_party_tax_scheme_vals_list(partner, role)
-
+        partner = partner.commercial_partner_id
         for vals in vals_list:
             # /!\ For Romanian companies, the company_id can be with or without country code.
             if (
@@ -44,7 +52,18 @@ class AccountEdiXmlCIUSRO(models.Model):
                 and not partner.vat.upper().startswith("RO")
             ):
                 vals["tax_scheme_id"] = "!= VAT"
+            if not partner.is_company and partner.l10n_ro_edi_ubl_no_send_cnp:
+                vals["company_id"] = "0000000000000"
         return vals_list
+
+    def _get_partner_party_legal_entity_vals_list(self, partner):
+        val_list = super()._get_partner_party_legal_entity_vals_list(partner)
+        partner = partner.commercial_partner_id
+        if not partner.is_company and partner.l10n_ro_edi_ubl_no_send_cnp:
+            for vals in val_list:
+                if vals.get("commercial_partner") == partner:
+                    vals["company_id"] = "0000000000000"
+        return val_list
 
     def _get_tax_category_list(self, invoice, taxes):
         partner = invoice.company_id.partner_id
@@ -81,12 +100,6 @@ class AccountEdiXmlCIUSRO(models.Model):
 
     def _get_invoice_tax_totals_vals_list(self, invoice, taxes_vals):
         balance_sign = -1 if invoice.is_inbound() else 1
-        if (
-            invoice.move_type in ["out_refund", "in_refund"]
-            and invoice.company_id.l10n_ro_credit_note_einvoice
-        ):
-            balance_sign = -balance_sign
-
         return [
             {
                 "currency": invoice.currency_id,
@@ -136,20 +149,6 @@ class AccountEdiXmlCIUSRO(models.Model):
                 res["line_extension_amount"] = (
                     discount_amount + res["line_extension_amount"]
                 )
-        if (
-            line.move_id.move_type in ["out_refund", "in_refund"]
-            and line.company_id.l10n_ro_credit_note_einvoice
-        ):
-            if res.get("invoiced_quantity", 0):
-                res["invoiced_quantity"] = (-1) * res["invoiced_quantity"]
-            if res.get("line_extension_amount", 0):
-                res["line_extension_amount"] = (-1) * res["line_extension_amount"]
-            if res.get("tax_total_vals"):
-                for tax in res["tax_total_vals"]:
-                    if tax["tax_amount"]:
-                        tax["tax_amount"] = (-1) * tax["tax_amount"]
-                    if tax["taxable_amount"]:
-                        tax["taxable_amount"] = (-1) * tax["taxable_amount"]
         return res
 
     def _get_invoice_line_item_vals(self, line, taxes_vals):
@@ -176,30 +175,6 @@ class AccountEdiXmlCIUSRO(models.Model):
 
     def split_string(self, string):
         return [string[i : i + 100] for i in range(0, len(string), 100)]
-
-    def _export_vals_einvoice_options(self, invoice, vals_list):
-        if (
-            invoice.move_type in ["out_refund", "in_refund"]
-            and invoice.company_id.l10n_ro_credit_note_einvoice
-        ):
-            if vals_list["vals"].get("legal_monetary_total_vals"):
-                vals_list["vals"]["legal_monetary_total_vals"][
-                    "tax_exclusive_amount"
-                ] = (-1) * vals_list["vals"]["legal_monetary_total_vals"][
-                    "tax_exclusive_amount"
-                ]
-                vals_list["vals"]["legal_monetary_total_vals"][
-                    "tax_inclusive_amount"
-                ] = (-1) * vals_list["vals"]["legal_monetary_total_vals"][
-                    "tax_inclusive_amount"
-                ]
-                vals_list["vals"]["legal_monetary_total_vals"]["prepaid_amount"] = (
-                    -1
-                ) * vals_list["vals"]["legal_monetary_total_vals"]["prepaid_amount"]
-                vals_list["vals"]["legal_monetary_total_vals"]["payable_amount"] = (
-                    -1
-                ) * vals_list["vals"]["legal_monetary_total_vals"]["payable_amount"]
-        return vals_list
 
     def _export_vals_einvoice_autoinvoice(self, invoice, vals_list):
         if (
@@ -267,65 +242,57 @@ class AccountEdiXmlCIUSRO(models.Model):
         return vals_list
 
     def _export_invoice_vals(self, invoice):
-        vals_list = super()._export_invoice_vals(invoice)
-        vals_list["vals"]["buyer_reference"] = (
+        vals = super()._export_invoice_vals(invoice)
+        vals["vals"]["buyer_reference"] = (
             invoice.commercial_partner_id.ref or invoice.commercial_partner_id.name
         )
-        vals_list["vals"]["order_reference"] = (invoice.ref or invoice.name)[:30]
-        vals_list[
-            "TaxTotalType_template"
-        ] = "l10n_ro_account_edi_ubl.ubl_20_TaxTotalType"
-        vals_list["vals"][
+        vals["vals"]["order_reference"] = (invoice.ref or invoice.name)[:30]
+        vals["TaxTotalType_template"] = "l10n_ro_account_edi_ubl.ubl_20_TaxTotalType"
+        vals["vals"][
             "customization_id"
         ] = "urn:cen.eu:en16931:2017#compliant#urn:efactura.mfinante.ro:CIUS-RO:1.0.1"
         index = 1
-        for val in vals_list["vals"]["invoice_line_vals"]:
+        for val in vals["vals"]["invoice_line_vals"]:
             val["id"] = index
             index += 1
-
-        if invoice.move_type in (
-            "out_invoice",
-            "in_invoice",
-            "out_refund",
-            "in_refund",
+        if (
+            invoice.journal_id.type == "sale"
+            and invoice.journal_id.l10n_ro_sequence_type == "autoinv1"
         ):
-            vals_list["main_template"] = "account_edi_ubl_cii.ubl_20_Invoice"
-            vals_list["vals"]["invoice_type_code"] = 380
-            if (
-                invoice.move_type in ("in_invoice", "in_refund")
-                and invoice.journal_id.l10n_ro_sequence_type == "autoinv2"
-            ) or (
-                invoice.journal_id.type == "sale"
-                and invoice.journal_id.l10n_ro_sequence_type == "autoinv1"
-            ):
-                vals_list["vals"]["invoice_type_code"] = 389
-            point_of_sale = (
-                self.env["ir.module.module"]
-                .sudo()
-                .search(
-                    [("name", "=", "point_of_sale"), ("state", "=", "installed")],
-                    limit=1,
-                )
+            if invoice.move_type == "out_invoice":
+                vals["vals"]["invoice_type_code"] = 389
+            elif invoice.move_type == "out_refund":
+                vals["vals"]["credit_note_type_code"] = 389
+        if invoice.journal_id.l10n_ro_sequence_type == "autoinv2":
+            if invoice.move_type == "in_invoice":
+                vals["main_template"] = "account_edi_ubl_cii.ubl_20_Invoice"
+                vals["vals"]["invoice_type_code"] = 389
+            elif invoice.move_type == "in_refund":
+                vals["main_template"] = "account_edi_ubl_cii.ubl_20_CreditNote"
+                vals["vals"]["credit_note_type_code"] = 389
+        point_of_sale = (
+            self.env["ir.module.module"]
+            .sudo()
+            .search(
+                [("name", "=", "point_of_sale"), ("state", "=", "installed")],
+                limit=1,
             )
-            if point_of_sale:
-                if invoice.pos_order_ids:
-                    vals_list["vals"]["invoice_type_code"] = 751
-        if vals_list["vals"].get("credit_note_type_code"):
-            vals_list["vals"].pop("credit_note_type_code")
+        )
+        if point_of_sale:
+            if invoice.pos_order_ids:
+                vals["vals"]["invoice_type_code"] = 751
         result_list = []
-        if vals_list["vals"].get("note_vals"):
-            if len(vals_list["vals"]["note_vals"][0]) > 100:
-                split_strings = self.split_string(vals_list["vals"]["note_vals"][0])
+        if vals["vals"].get("note_vals"):
+            if len(vals["vals"]["note_vals"][0]) > 100:
+                split_strings = self.split_string(vals["vals"]["note_vals"][0])
                 for _index, split_str in enumerate(split_strings):
                     result_list.append(split_str)
         if result_list:
-            vals_list["vals"]["note_vals"] = result_list
+            vals["vals"]["note_vals"] = result_list
 
-        vals_list = self._export_vals_einvoice_options(invoice, vals_list)
-        vals_list = self._export_vals_einvoice_autoinvoice(invoice, vals_list)
-        vals_list = self._export_vals_einvoice_partner_vat_subjected(invoice, vals_list)
-
-        return vals_list
+        vals = self._export_vals_einvoice_autoinvoice(invoice, vals)
+        vals = self._export_vals_einvoice_partner_vat_subjected(invoice, vals)
+        return vals
 
     def _export_invoice_constraints(self, invoice, vals):
         # EXTENDS 'account_edi_ubl_cii' preluate din Odoo 17.0
@@ -615,12 +582,6 @@ class AccountEdiXmlCIUSRO(models.Model):
                 grouping_key["tax_name"] = tax.name
             return grouping_key
 
-        balance_sign = (
-            -1
-            if invoice.company_id.l10n_ro_credit_note_einvoice
-            and invoice.move_type == "out_refund"
-            else 1
-        )
         taxes_vals = invoice._prepare_edi_tax_details(
             grouping_key_generator=grouping_key_generator,
             filter_to_apply=self._apply_invoice_tax_filter,
@@ -651,7 +612,7 @@ class AccountEdiXmlCIUSRO(models.Model):
                 "charge_indicator": "false",
                 "allowance_charge_reason_code": 95,
                 "allowance_charge_reason": "Scont",
-                "amount": balance_sign * round(discount_amount, 2),
+                "amount": round(discount_amount, 2),
                 "tax_category_vals": tax_category_vals,
             }
         ]

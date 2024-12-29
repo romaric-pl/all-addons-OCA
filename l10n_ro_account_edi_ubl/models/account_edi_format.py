@@ -96,7 +96,6 @@ class AccountEdiXmlCIUSRO(models.Model):
         is_required = (
             invoice.move_type in ("out_invoice", "out_refund")
             and invoice.commercial_partner_id.country_id.code == "RO"
-            and invoice.commercial_partner_id.is_company
         )
         if not is_required:
             is_required = (

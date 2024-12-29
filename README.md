@@ -952,9 +952,9 @@ Date:   Wed May 1 18:31:59 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 734df58737632874190be5a80736ee9bbbe3ab04
+commit ad18a322286c5755a13b146c6913b8e616193701
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 6 09:23:07 2024 +0000
+Date:   Fri Dec 27 11:28:09 2024 +0000
 
     [BOT] post-merge updates
 
