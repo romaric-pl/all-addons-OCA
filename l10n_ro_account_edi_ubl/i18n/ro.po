@@ -84,6 +84,12 @@ msgstr ""
 "pentru a calcula trimiterea facturii către sistemul de facturi electronice."
 
 #. module: l10n_ro_account_edi_ubl
+#: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_edi_ubl_no_send_cnp
+#: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_users__l10n_ro_edi_ubl_no_send_cnp
+msgid "Check this if the partner should not receive UBL invoices on their CNP."
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
 #: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_edi_ubl_no_send
 #: model:ir.model.fields,help:l10n_ro_account_edi_ubl.field_res_users__l10n_ro_edi_ubl_no_send
 msgid "Check this if the partner should not receive UBL invoices."
@@ -368,6 +374,12 @@ msgstr "Este o instituție guvernamentală"
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_product_template__l10n_ro_nc_code
 msgid "Romania - NC Code"
 msgstr "Cod NC"
+
+#. module: l10n_ro_account_edi_ubl
+#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_edi_ubl_no_send_cnp
+#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_users__l10n_ro_edi_ubl_no_send_cnp
+msgid "Romania - No send CNP UBL"
+msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_partner__l10n_ro_edi_ubl_no_send

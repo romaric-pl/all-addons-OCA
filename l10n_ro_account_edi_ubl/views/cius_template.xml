@@ -3,14 +3,6 @@
 
     <template id="cius_InvoiceType" inherit_id="account_edi_ubl_cii.ubl_20_InvoiceType">
         <xpath expr="//*[local-name()='IssueDate']" position="after">
-            <cbc:TaxCurrencyCode
-                t-if="tax_currency_code"
-                xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
-                xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-                xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-                t-att="vals.get('tax_currency_code_attrs', {})"
-                t-out="vals.get('tax_currency_code')"
-            />
             <cbc:InvoiceTypeCode
                 xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
                 xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -26,6 +18,16 @@
                 t-if="invoice.move_type == 'in_refund'"
                 t-att="vals.get('invoice_type_code_attrs', {})"
                 t-out="vals.get('credit_note_type_code')"
+            />
+        </xpath>
+        <xpath expr="//*[local-name()='DocumentCurrencyCode']" position="after">
+            <cbc:TaxCurrencyCode
+                t-if="tax_currency_code"
+                xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+                xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                t-att="vals.get('tax_currency_code_attrs', {})"
+                t-out="vals.get('tax_currency_code')"
             />
         </xpath>
         <xpath

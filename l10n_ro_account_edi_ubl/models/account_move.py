@@ -251,11 +251,11 @@ class AccountMove(models.Model):
                 "/descarcare", params, method="GET"
             )
             eroare = ""
-            if type(response) == dict:
+            if isinstance(response, dict):
                 eroare = response.get("eroare", "")
             if status_code == "400":
                 eroare = response.get("message")
-            elif status_code == 200 and type(response) == dict:
+            elif status_code == 200 and isinstance(response, dict):
                 eroare = response.get("eroare")
             cius_ro = self.env.ref("l10n_ro_account_edi_ubl.edi_ubl_cius_ro")
             edi_doc = invoice._get_edi_document(cius_ro)
@@ -456,8 +456,8 @@ class AccountMoveLine(models.Model):
     @api.depends("product_id")
     def _compute_name(self):
         lines = self.filtered(
-            lambda l: l.move_id.move_type in ["in_invoice", "in_refund"]
-            and l.move_id.l10n_ro_edi_download
+            lambda line: line.move_id.move_type in ["in_invoice", "in_refund"]
+            and line.move_id.l10n_ro_edi_download
         )
 
         return super(AccountMoveLine, self - lines)._compute_name()
@@ -465,8 +465,8 @@ class AccountMoveLine(models.Model):
     @api.depends("product_id", "product_uom_id")
     def _compute_price_unit(self):
         lines = self.filtered(
-            lambda l: l.move_id.move_type in ["in_invoice", "in_refund"]
-            and l.move_id.l10n_ro_edi_download
+            lambda line: line.move_id.move_type in ["in_invoice", "in_refund"]
+            and line.move_id.l10n_ro_edi_download
         )
 
         return super(AccountMoveLine, self - lines)._compute_price_unit()

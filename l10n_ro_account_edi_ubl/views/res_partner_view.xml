@@ -13,6 +13,10 @@
                         name="l10n_ro_edi_ubl_no_send"
                         attrs="{'invisible': ['|',('is_company','=', False),('is_l10n_ro_record','=',False)]}"
                     />
+                <field
+                        name="l10n_ro_edi_ubl_no_send_cnp"
+                        attrs="{'invisible': ['|',('is_company','!=', False),('is_l10n_ro_record','=',False)]}"
+                    />
             </xpath>
         </data>
         </field>

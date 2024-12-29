@@ -947,7 +947,7 @@ addon | version | maintainers | summary
 [account_banking_mandate_contact](account_banking_mandate_contact/) | 16.0.1.0.3 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds mandates on sale orders
 [account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 16.0.1.0.1 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Add a specific contact mandate to sale orders
-[account_banking_pain_base](account_banking_pain_base/) | 16.0.1.2.1 |  | Base module for PAIN file generation
+[account_banking_pain_base](account_banking_pain_base/) | 16.0.1.2.2 |  | Base module for PAIN file generation
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 16.0.1.1.5 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 16.0.1.4.4 |  | Create SEPA files for Direct Debit
 [account_payment_method_fs_storage](account_payment_method_fs_storage/) | 16.0.1.0.2 |  | Add the possibility to specify on the payment method, a storage where files generated will be pushed to upon payment
@@ -2499,7 +2499,7 @@ addon | version | maintainers | summary
 [document_page_partner](document_page_partner/) | 16.0.1.0.0 |  | Allows to link doucment pages to a partner
 [document_page_project](document_page_project/) | 16.0.1.0.0 |  | This module links document pages to projects
 [document_page_reference](document_page_reference/) | 16.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Include references on document pages
-[document_page_tag](document_page_tag/) | 16.0.1.0.0 |  | Allows you to assign tags or keywords to pages and search for them afterwards
+[document_page_tag](document_page_tag/) | 16.0.1.0.1 |  | Allows you to assign tags or keywords to pages and search for them afterwards
 [document_url](document_url/) | 16.0.1.0.4 |  | URL attachment
 [document_url_google_drive](document_url_google_drive/) | 16.0.1.0.1 |  | Attach Google Drive link to Odoo document using Google Drive Picker
 
@@ -2682,7 +2682,7 @@ addon | version | maintainers | summary
 [account_invoice_edifact](account_invoice_edifact/) | 16.0.1.0.0 |  | Generate customer invoices with EDIFACT/D96A format
 [account_invoice_export](account_invoice_export/) | 16.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Account Invoice Export
 [account_invoice_export_job](account_invoice_export_job/) | 16.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Account Invoice Export Job
-[account_invoice_facturx](account_invoice_facturx/) | 16.0.1.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Factur-X/ZUGFeRD customer invoices
+[account_invoice_facturx](account_invoice_facturx/) | 16.0.1.5.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Factur-X/ZUGFeRD customer invoices
 [account_invoice_facturx_py3o](account_invoice_facturx_py3o/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Factur-X invoices with Py3o reporting engine
 [base_business_document_import](base_business_document_import/) | 16.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides technical tools to import sale orders or supplier invoices
 [base_business_document_import_phone](base_business_document_import_phone/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Use phone numbers to match partners upon import of business documents
@@ -5021,7 +5021,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 16.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 16.0.1.79.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 16.0.1.81.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 16.0.1.2.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 16.0.3.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 16.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -7321,7 +7321,7 @@ addon | version | maintainers | summary
 [contract_update_last_date_invoiced](contract_update_last_date_invoiced/) | 16.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | This module allows to update the last date invoiced if invoices are deleted.
 [contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 16.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![danypr92](https://github.com/danypr92.png?size=30px)](https://github.com/danypr92) | Add formula to invoice
 [contract_variable_quantity](contract_variable_quantity/) | 16.0.1.1.0 |  | Variable quantity in contract recurrent invoicing
-[product_contract](product_contract/) | 16.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
+[product_contract](product_contract/) | 16.0.1.0.1 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
 [subscription_oca](subscription_oca/) | 16.0.1.0.0 |  | Generate recurring invoices.
 
 [//]: # (end addons)
@@ -7968,6 +7968,7 @@ addon | version | maintainers | summary
 [module_auto_update](module_auto_update/) | 16.0.1.0.2 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 16.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
 [nsca_client](nsca_client/) | 16.0.1.0.0 |  | Send passive alerts to monitor your Odoo application.
+[odoo_test_xmlrunner](odoo_test_xmlrunner/) | 16.0.1.0.0 |  | This module override Odoo testing method to run them with xmlrunner tool.
 [onchange_helper](onchange_helper/) | 16.0.1.0.0 |  | Technical module that ease execution of onchange in Python code
 [rpc_helper](rpc_helper/) | 16.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
 [scheduler_error_mailer](scheduler_error_mailer/) | 16.0.1.0.0 |  | Scheduler Error Mailer

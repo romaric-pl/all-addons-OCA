@@ -4,7 +4,7 @@
 
 {
     "name": "Recurring - Product Contract",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Contract Management",
     "license": "AGPL-3",
     "author": "LasLabs, " "ACSONE SA/NV, " "Odoo Community Association (OCA)",
@@ -18,6 +18,6 @@
     ],
     "installable": True,
     "application": False,
-    "external_dependencies": {"python": ["dateutil"]},
+    "external_dependencies": {"python": ["python-dateutil"]},
     "maintainers": ["sbejaoui"],
 }

@@ -27,7 +27,6 @@ python-stdnum>=1.16
 # From [https://github.com/OCA/data-protection.git](https://github.com/OCA/data-protection.git)
 # From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
 # generated from manifests external_dependencies
-lxml
 unidecode
 # From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
 # generated from manifests external_dependencies
@@ -318,6 +317,7 @@ pygount
 pysftp
 sentry_sdk<=1.9.0
 unidecode
+unittest-xml-reporting
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
 cryptography

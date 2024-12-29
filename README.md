@@ -107,11 +107,16 @@ Date:   Sat Dec 7 08:24:05 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 871a3434253a99810079db1c533f9285590dccb8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 24 16:23:59 2024 +0000
+commit 24d24412794f3e0348a898278278dc9bff6e0e1e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Dec 27 09:14:17 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: account-invoicing-16.0/account-invoicing-16.0-account_invoice_refund_reinvoice
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-16-0/account-invoicing-16-0-account_invoice_refund_reinvoice/it/
 
 
 ## account-fiscal-rule
@@ -204,9 +209,9 @@ Date:   Thu Oct 3 08:17:08 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 6bf9fd4bdeeba636ab2c4bcf2e645520cbe35ce7
+commit a6a196b0dc9ceb7b434fa0fe320202ab070f7942
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 5 07:13:27 2024 +0000
+Date:   Thu Dec 26 19:22:32 2024 +0000
 
     [BOT] post-merge updates
 
@@ -502,9 +507,9 @@ Date:   Mon Nov 18 07:59:26 2024 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 1fe0cc05d1bdc0977bd3757d4ae4a18560f42016
+commit 6bece12e6fda375b44e30cec0a79f11b02f68008
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 18 15:14:49 2024 +0000
+Date:   Fri Dec 27 22:53:42 2024 +0000
 
     [BOT] post-merge updates
 
@@ -534,9 +539,9 @@ Date:   Sat Dec 21 11:29:48 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit d5ec973502ec2acee42a61c3572dba43638f9369
+commit acb5645b8602a1d5e569a5384b042cc017d7d508
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 24 13:18:19 2024 +0000
+Date:   Fri Dec 27 09:14:47 2024 +0000
 
     [BOT] post-merge updates
 
@@ -996,9 +1001,9 @@ Date:   Wed May 1 16:49:49 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 2ef053302bc9368d22f31fe0a9631aee6facd096
+commit 256ee5d18e572ac9cb6cf323ace26279fd67621c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 25 06:48:19 2024 +0000
+Date:   Fri Dec 27 11:31:28 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1369,16 +1374,11 @@ Date:   Wed May 1 17:07:57 2024 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit fcf3779264fb31bc78e93644f68e08dcac0a51cf
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Dec 21 12:06:03 2024 +0000
+commit 09f9bde02bef2da77db217c42f951512707827e0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Dec 29 18:04:38 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (14 of 14 strings)
-    
-    Translation: contract-16.0/contract-16.0-contract_update_last_date_invoiced
-    Translate-URL: https://translation.odoo-community.org/projects/contract-16-0/contract-16-0-contract_update_last_date_invoiced/it/
+    [BOT] post-merge updates
 
 
 ## program
@@ -1488,16 +1488,11 @@ Date:   Wed May 1 17:38:37 2024 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 63b6c0d1052d7a5c8afddbb6f782c60956dc3bdf
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Dec 24 19:51:08 2024 +0000
+commit eaae0d738d8f1f9b70e5c6b35bd5b6f369ed5201
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 27 09:30:37 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: server-tools-16.0/server-tools-16.0-nsca_client
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-16-0/server-tools-16-0-nsca_client/
+    [BOT] post-merge updates
 
 
 ## server-auth

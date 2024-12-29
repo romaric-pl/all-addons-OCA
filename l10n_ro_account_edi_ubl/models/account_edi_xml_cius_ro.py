@@ -32,10 +32,20 @@ class AccountEdiXmlCIUSRO(models.Model):
             vals["city_name"] = partner.city.upper().replace(" ", "")
         return vals
 
+    def _get_partner_party_vals(self, partner, role):
+        # EXTENDS account.edi.xml.ubl_21
+        vals = super()._get_partner_party_vals(partner, role)
+
+        partner = partner.commercial_partner_id
+
+        if not partner.is_company and partner.l10n_ro_edi_ubl_no_send_cnp:
+            vals["endpoint_id"] = "0000000000000"
+        return vals
+
     def _get_partner_party_tax_scheme_vals_list(self, partner, role):
         # EXTENDS account.edi.xml.ubl_21
         vals_list = super()._get_partner_party_tax_scheme_vals_list(partner, role)
-
+        partner = partner.commercial_partner_id
         for vals in vals_list:
             # /!\ For Romanian companies, the company_id can be with or without country code.
             if (
@@ -44,7 +54,18 @@ class AccountEdiXmlCIUSRO(models.Model):
                 and not partner.vat.upper().startswith("RO")
             ):
                 vals["tax_scheme_id"] = "!= VAT"
+            if not partner.is_company and partner.l10n_ro_edi_ubl_no_send_cnp:
+                vals["company_id"] = "0000000000000"
         return vals_list
+
+    def _get_partner_party_legal_entity_vals_list(self, partner):
+        val_list = super()._get_partner_party_legal_entity_vals_list(partner)
+        partner = partner.commercial_partner_id
+        if not partner.is_company and partner.l10n_ro_edi_ubl_no_send_cnp:
+            for vals in val_list:
+                if vals.get("commercial_partner") == partner:
+                    vals["company_id"] = "0000000000000"
+        return val_list
 
     def _get_tax_category_list(self, invoice, taxes):
         # EXTENDS account.edi.xml.ubl_21
@@ -110,13 +131,19 @@ class AccountEdiXmlCIUSRO(models.Model):
         vals["base_quantity"] = 1.0
         return vals
 
+    def split_string(self, string):
+        return [string[i : i + 100] for i in range(0, len(string), 100)]
+
     def _export_invoice_vals(self, invoice):
         vals_list = super()._export_invoice_vals(invoice)
         vals_list["vals"]["buyer_reference"] = (
             invoice.commercial_partner_id.ref or invoice.commercial_partner_id.name
         )
         vals_list["vals"]["order_reference"] = (invoice.ref or invoice.name)[:30]
-        if "sales_order_id" in vals_list["vals"]:
+        if (
+            "sales_order_id" in vals_list["vals"]
+            and vals_list["vals"]["sales_order_id"]
+        ):
             vals_list["vals"]["sales_order_id"] = vals_list["vals"]["sales_order_id"][
                 :200
             ]
@@ -129,7 +156,7 @@ class AccountEdiXmlCIUSRO(models.Model):
                 "customization_id": "urn:cen.eu:en16931:2017#compliant#urn:efactura.mfinante.ro:CIUS-RO:1.0.1",  # noqa
             }
         )
-        if invoice.move_type == "out_invoice" and invoice.currency_id.name != "RON":
+        if invoice.currency_id.name != "RON":
             vals_list["vals"]["tax_currency_code"] = invoice.currency_id.name
 
         index = 1
@@ -175,6 +202,15 @@ class AccountEdiXmlCIUSRO(models.Model):
         if point_of_sale:
             if invoice.pos_order_ids:
                 vals_list["vals"]["invoice_type_code"] = 751
+
+        result_list = []
+        if vals_list["vals"].get("note_vals"):
+            if len(vals_list["vals"]["note_vals"][0]) > 100:
+                split_strings = self.split_string(vals_list["vals"]["note_vals"][0])
+                for _index, split_str in enumerate(split_strings):
+                    result_list.append(split_str)
+        if result_list:
+            vals_list["vals"]["note_vals"] = result_list
         return vals_list
 
     def _export_invoice_constraints(self, invoice, vals):

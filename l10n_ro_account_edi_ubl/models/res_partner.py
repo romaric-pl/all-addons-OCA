@@ -18,3 +18,7 @@ class ResPartner(models.Model):
         "Romania - No send UBL",
         help="Check this if the partner should not receive UBL invoices.",
     )
+    l10n_ro_edi_ubl_no_send_cnp = fields.Boolean(
+        "Romania - No send CNP UBL",
+        help="Check this if the partner should not receive UBL invoices on their CNP.",
+    )

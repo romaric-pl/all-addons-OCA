@@ -21,7 +21,7 @@ class AccountEdiXmlCIUSRO(models.Model):
         res = self.env["ir.attachment"]
         if not invoice.l10n_ro_edi_transaction:
             edi_document = invoice.edi_document_ids.filtered(
-                lambda l: l.edi_format_id.code == "cius_ro"
+                lambda edi_doc: edi_doc.edi_format_id.code == "cius_ro"
             )
             if edi_document:
                 builder = self._get_xml_builder(invoice.company_id)
@@ -117,7 +117,6 @@ class AccountEdiXmlCIUSRO(models.Model):
         is_required = (
             invoice.move_type in ("out_invoice", "out_refund")
             and invoice.commercial_partner_id.country_id.code == "RO"
-            and invoice.commercial_partner_id.is_company
             and not invoice.commercial_partner_id.l10n_ro_edi_ubl_no_send
         )
         if not is_required:
