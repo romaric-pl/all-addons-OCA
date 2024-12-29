@@ -25,5 +25,6 @@
             name="users"
             eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
         />
+        <field name="implied_ids" eval="[(4, ref('bookstore_user'))]" />
         </record>
 </odoo>

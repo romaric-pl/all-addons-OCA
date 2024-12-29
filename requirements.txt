@@ -231,6 +231,7 @@ email_validator
 lxml
 pysaml2
 python-jose
+python-ldap
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
 # generated from manifests external_dependencies
 cryptography

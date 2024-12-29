@@ -48,7 +48,7 @@ class TestStockLocationSoruceFromRoute(StockHelperCommonCase):
         if hasattr(self.wh, "manufacture_to_resupply") or hasattr(
             self.wh, "buy_to_resupply"
         ):
-            expected_location = False
+            expected_location = self.env["stock.location"].browse()
         else:  # only `stock` installed.
             expected_location = self.supplier_loc
         self.assertEqual(source_location, expected_location)

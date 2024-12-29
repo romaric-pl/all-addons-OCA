@@ -9,7 +9,7 @@
     "category": "Product",
     "license": "AGPL-3",
     "maintainers": ["peluko00", "miquelalzanillas"],
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "depends": ["product"],
     "data": [
         "security/bookstore_security.xml",
