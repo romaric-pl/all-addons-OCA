@@ -6821,12 +6821,6 @@ msgid "Max Amount Simplified Invoice"
 msgstr ""
 
 #. module: pms
-#: model:ir.model.fields,field_description:pms.field_pms_folio__max_reservation_priority
-#: model:ir.model.fields,help:pms.field_pms_folio__max_reservation_priority
-msgid "Max reservation priority on the entire folio"
-msgstr ""
-
-#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_availability_plan_rule__max_avail
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__max_avail
 msgid "Max. Availability"
@@ -8546,15 +8540,9 @@ msgid "Print in cardex"
 msgstr ""
 
 #. module: pms
-#: model:ir.model.fields,field_description:pms.field_pms_reservation__priority
 #: model:ir.model.fields,field_description:pms.field_res_country__priority
 #: model:ir.model.fields,field_description:pms.field_res_partner_id_category__priority
 msgid "Priority"
-msgstr ""
-
-#. module: pms
-#: model:ir.model.fields,help:pms.field_pms_reservation__priority
-msgid "Priority of a reservation"
 msgstr ""
 
 #. module: pms
@@ -9109,13 +9097,6 @@ msgstr ""
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Recompute all prices based on this pricelist"
-msgstr ""
-
-#. module: pms
-#: model:ir.actions.server,name:pms.priority_reservations_ir_actions_server
-#: model:ir.cron,cron_name:pms.priority_reservations
-#: model:ir.cron,name:pms.priority_reservations
-msgid "Recompute priority on reservations"
 msgstr ""
 
 #. module: pms

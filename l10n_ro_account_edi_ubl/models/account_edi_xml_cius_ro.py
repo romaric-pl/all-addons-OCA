@@ -172,6 +172,22 @@ class AccountEdiXmlCIUSRO(models.Model):
                 vals_list["vals"]["invoice_type_code"] = 751
         return vals_list
 
+    def _check_required_fields(self, record, field_names, custom_warning_message=""):
+        """
+        For fizical persons if they have the l10n_ro_edi_ubl_no_send_cnp
+        checked, we don't need to check the VAT field"""
+        if isinstance(record, models.Model) and record._name == "res.partner":
+            if not record.is_company and record.l10n_ro_edi_ubl_no_send_cnp:
+                if not isinstance(field_names, list):
+                    field_names = [field_names]
+                if "vat" in field_names:
+                    field_names = [field for field in field_names if field != "vat"]
+        if not field_names:
+            return
+        return super()._check_required_fields(
+            record, field_names, custom_warning_message
+        )
+
     def _export_invoice_constraints(self, invoice, vals):
         # EXTENDS 'account_edi_ubl_cii' preluate din Odoo 17.0
         constraints = super()._export_invoice_constraints(invoice, vals)

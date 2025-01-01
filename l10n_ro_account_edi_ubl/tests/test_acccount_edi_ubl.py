@@ -313,6 +313,38 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
             "warning",
         )
 
+    def test_process_documents_web_services_step1_constraint_no_cnp(self):
+        self.invoice.partner_id.is_company = False
+        self.invoice.partner_id.l10n_ro_edi_ubl_no_send_cnp = False
+        self.invoice.partner_id.vat = False
+        self.invoice.action_post()
+
+        # procesare step 1 - eroare
+        self.invoice.action_process_edi_web_services()
+        self.check_invoice_documents(
+            self.invoice,
+            "to_send",
+            "<p>{\"The field 'Tax ID' is required on SCOALA GIMNAZIALA COMUNA FOENI.\"}</p>",
+            "warning",
+        )
+
+    def test_process_documents_web_services_step1_constraint_no_cnp_pass(self):
+        self.invoice.partner_id.is_company = False
+        self.invoice.partner_id.l10n_ro_edi_ubl_no_send_cnp = True
+        self.invoice.partner_id.vat = False
+        self.invoice.action_post()
+
+        # procesare step 1 - fara eroare
+        self.invoice.with_context(
+            test_data=self.get_file("upload_success.xml")
+        ).action_process_edi_web_services()
+        self.check_invoice_documents(
+            self.invoice,
+            "to_send",
+            "<p>The invoice was sent to ANAF, awaiting validation.</p>",
+            "info",
+        )
+
     def test_print_pdf_error(self):
         self.env.company.l10n_ro_edi_cius_embed_pdf = True
         self.invoice.action_post()

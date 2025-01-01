@@ -7590,12 +7590,6 @@ msgid "Max Amount Simplified Invoice"
 msgstr "Importe Máximo Factura Simplificada"
 
 #. module: pms
-#: model:ir.model.fields,field_description:pms.field_pms_folio__max_reservation_priority
-#: model:ir.model.fields,help:pms.field_pms_folio__max_reservation_priority
-msgid "Max reservation priority on the entire folio"
-msgstr "Máxima prioridad de reserva en toda la ficha"
-
-#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_availability_plan_rule__max_avail
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__max_avail
 msgid "Max. Availability"
@@ -9343,16 +9337,10 @@ msgid "Print in cardex"
 msgstr "Imprimir en cardex"
 
 #. module: pms
-#: model:ir.model.fields,field_description:pms.field_pms_reservation__priority
 #: model:ir.model.fields,field_description:pms.field_res_country__priority
 #: model:ir.model.fields,field_description:pms.field_res_partner_id_category__priority
 msgid "Priority"
 msgstr "Prioridad"
-
-#. module: pms
-#: model:ir.model.fields,help:pms.field_pms_reservation__priority
-msgid "Priority of a reservation"
-msgstr "Unificar la reserva"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__privacy_policy
@@ -9918,13 +9906,6 @@ msgstr "Recalcular el Precio"
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Recompute all prices based on this pricelist"
 msgstr "Recalcular precios basados en la tarifa"
-
-#. module: pms
-#: model:ir.actions.server,name:pms.priority_reservations_ir_actions_server
-#: model:ir.cron,cron_name:pms.priority_reservations
-#: model:ir.cron,name:pms.priority_reservations
-msgid "Recompute priority on reservations"
-msgstr "Recalcular prioridad en reservas"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_ir_pms_property__record
@@ -13854,6 +13835,15 @@ msgstr ""
 "independiente,\n"
 "                                puede seleccionarlo en el asistente de "
 "facturación"
+
+#~ msgid "Max reservation priority on the entire folio"
+#~ msgstr "Máxima prioridad de reserva en toda la ficha"
+
+#~ msgid "Priority of a reservation"
+#~ msgstr "Unificar la reserva"
+
+#~ msgid "Recompute priority on reservations"
+#~ msgstr "Recalcular prioridad en reservas"
 
 #~ msgid "Family relationship between travelers"
 #~ msgstr "Relación familiar entre viajeros"

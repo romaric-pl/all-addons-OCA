@@ -120,9 +120,9 @@ Date:   Tue Dec 24 17:00:11 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 5c132afc03247800e5cae460d49043520f17e583
+commit 1e3c64324fb7be8be10937a4d6350bad152a6265
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 29 18:00:36 2024 +0000
+Date:   Tue Dec 31 14:24:46 2024 +0000
 
     Added translation using Weblate (Italian)
 
@@ -326,16 +326,11 @@ Date:   Wed May 1 17:59:15 2024 +0000
 
 ## connector-prestashop
 From [https://github.com/OCA/connector-prestashop.git](https://github.com/OCA/connector-prestashop.git)
-commit 39816fe133788525259b3792d3818d3db2ad5ac5
-Author: Weblate <noreply@weblate.org>
-Date:   Wed May 1 18:58:57 2024 +0000
+commit 7516735e0c3cd203d7b3d3680f8570c8c3e15377
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 31 14:33:19 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: connector-prestashop-14.0/connector-prestashop-14.0-connector_prestashop
-    Translate-URL: https://translation.odoo-community.org/projects/connector-prestashop-14-0/connector-prestashop-14-0-connector_prestashop/
+    Added translation using Weblate (Italian)
 
 
 ## connector-sage
@@ -938,16 +933,11 @@ Date:   Wed May 1 18:31:50 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit af2254728f3391ef1766a25b3396c97044454ec0
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Dec 27 11:29:43 2024 +0000
+commit 08ca81efb3c3b9156002bb14db521fadeb64bac7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jan 1 09:18:53 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-romania-14.0/l10n-romania-14.0-l10n_ro_account_edi_ubl
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-14-0/l10n-romania-14-0-l10n_ro_account_edi_ubl/
+    [UPD] README.rst
 
 
 ## l10n-russia
@@ -1201,16 +1191,16 @@ Date:   Tue Dec 24 14:09:12 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 1113c09672134ee9175108afab69e6d3eb6c953c
+commit 7666e47c567bef43fb4111172bb6f2f117529bd2
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Dec 26 10:25:35 2024 +0000
+Date:   Mon Dec 30 08:10:36 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: pms-14.0/pms-14.0-pms_l10n_es
-    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms_l10n_es/
+    Translation: pms-14.0/pms-14.0-pms
+    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms/
 
 
 ## purchase-workflow
@@ -1319,16 +1309,11 @@ Date:   Wed May 1 18:53:18 2024 +0000
 
 ## business-requirement
 From [https://github.com/OCA/business-requirement.git](https://github.com/OCA/business-requirement.git)
-commit 1cf05353a5224fab34d896cdc64dc13fc21477a5
-Author: Rodrigo Macedo <sottomaiormacedotec@users.noreply.translation.odoo-community.org>
-Date:   Mon May 20 14:10:20 2024 +0000
+commit 4ab7c097cdca49b9763aa5af383c4f32bb145694
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 31 17:47:32 2024 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
-    
-    Currently translated at 100.0% (131 of 131 strings)
-    
-    Translation: business-requirement-14.0/business-requirement-14.0-business_requirement
-    Translate-URL: https://translation.odoo-community.org/projects/business-requirement-14-0/business-requirement-14-0-business_requirement/pt_BR/
+    Added translation using Weblate (Italian)
 
 
 ## connector-redmine
@@ -1464,9 +1449,9 @@ Date:   Mon Dec 2 14:58:15 2024 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit c3556c299362be650df276de9ce833760b49121d
+commit 9d32e4f46b97ab269b47734b4198d5e110a09a01
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 10 13:35:21 2024 +0000
+Date:   Tue Dec 31 17:47:26 2024 +0000
 
     Added translation using Weblate (Italian)
 
