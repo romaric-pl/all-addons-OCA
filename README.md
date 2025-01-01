@@ -193,16 +193,16 @@ Date:   Fri Dec 20 10:45:41 2024 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 77b3d199162a1c6d677747e2993d932cd6fa6009
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 18 10:03:16 2024 +0000
+commit b92378f8786055b27c05256408d6901401e7dee8
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Dec 31 15:52:32 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (29 of 29 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: bank-statement-import-17.0/bank-statement-import-17.0-account_statement_import_camt
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-17-0/bank-statement-import-17-0-account_statement_import_camt/it/
+    Translation: bank-statement-import-17.0/bank-statement-import-17.0-account_statement_import_ofx
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-17-0/bank-statement-import-17-0-account_statement_import_ofx/
 
 
 ## account-payment
@@ -356,11 +356,16 @@ Date:   Tue Dec 24 09:55:38 2024 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 0a0a5ecfec19322bcac3a3f06015c278ac4f49e1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 10 07:48:54 2024 +0000
+commit 05c7d54da3bf639a28c1703423497613cfb97683
+Author: Ömer KÜLAK <omer.kulak@kitayazilim.com>
+Date:   Tue Dec 31 10:59:19 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 100.0% (153 of 153 strings)
+    
+    Translation: crm-17.0/crm-17.0-crm_phonecall
+    Translate-URL: https://translation.odoo-community.org/projects/crm-17-0/crm-17-0-crm_phonecall/tr/
 
 
 ## partner-contact
@@ -781,16 +786,11 @@ Date:   Thu Jul 18 10:36:18 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit c976a9fb49130aedea656094b9fd32314107f2c1
-Author: epanisset <emeric.panisset@camptocamp.com>
-Date:   Fri Nov 8 17:08:16 2024 +0000
+commit ac50318516157d268adcb0f102b8eae75f118d5b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 31 14:23:37 2024 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 100.0% (63 of 63 strings)
-    
-    Translation: l10n-france-17.0/l10n-france-17.0-l10n_fr_intrastat_product
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-17-0/l10n-france-17-0-l10n_fr_intrastat_product/fr/
+    [BOT] post-merge updates
 
 
 ## l10n-germany
@@ -944,16 +944,11 @@ Date:   Sat Jul 6 17:35:13 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit d264d1b9ea384c5185b459a828b74c8cd5f7fba1
-Author: Dorin Hongu <dhongu@gmail.com>
-Date:   Sun Dec 22 06:03:01 2024 +0000
+commit ef2e21363470463a2073a151a2768fd41ec4aaed
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 31 00:28:42 2024 +0000
 
-    Translated using Weblate (Romanian)
-    
-    Currently translated at 100.0% (22 of 22 strings)
-    
-    Translation: l10n-romania-17.0/l10n-romania-17.0-l10n_ro_stock_picking_valued_report
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-17-0/l10n-romania-17-0-l10n_ro_stock_picking_valued_report/ro/
+    [BOT] post-merge updates
 
 
 ## l10n-russia
@@ -976,9 +971,9 @@ Date:   Sat Jul 6 17:36:34 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 661ede8ef08ce9076ab66afe78baa06e39f9bc4c
+commit 1eb6686594fafbfff8944a3ae9ac0c7b1ff90629
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 27 08:33:11 2024 +0000
+Date:   Tue Dec 31 10:55:58 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1211,16 +1206,16 @@ Date:   Wed May 1 17:04:04 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit b2c881d13903bac903e6b6b4d67178411f601452
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 27 08:45:47 2024 +0000
+commit 128afecabd602dc9f8625571235d287c1b0e0179
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Dec 30 19:51:00 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (44 of 44 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_deposit
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_deposit/it/
+    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_allowed_product
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_allowed_product/
 
 
 ## purchase-reporting
@@ -1421,16 +1416,11 @@ Date:   Wed May 1 17:38:46 2024 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit caf59b113bcaeb94d85882f0f7f4d52357cb202b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Dec 28 11:47:30 2024 +0000
+commit 9ecb5cd95c877db9b1df601a11d2b74962a0ee31
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 31 20:25:56 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (7 of 7 strings)
-    
-    Translation: server-tools-17.0/server-tools-17.0-fetchmail_notify_error_to_sender
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-17-0/server-tools-17-0-fetchmail_notify_error_to_sender/it/
+    [BOT] post-merge updates
 
 
 ## server-auth
@@ -1563,11 +1553,16 @@ Date:   Thu Nov 28 08:38:17 2024 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit f916e4f37a2dbaea27b1a4d2fef003c7c974ba8f
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 17:34:24 2024 +0000
+commit 92aad73ef9fa521e930b607d04926d10afab5b95
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Dec 30 15:52:17 2024 +0000
 
-    [IMP] update dotfiles
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: vertical-hotel-17.0/vertical-hotel-17.0-hotel_reservation
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-17-0/vertical-hotel-17-0-hotel_reservation/
 
 
 ## vertical-isp

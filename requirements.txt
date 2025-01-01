@@ -30,6 +30,7 @@ unidecode
 # From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
 # generated from manifests external_dependencies
 chardet
+ofxparse
 xlrd
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
 # From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
@@ -150,6 +151,7 @@ cryptography
 cryptography==3.4.8
 pycountry
 pycryptodome
+suds-py3
 unidecode
 xmlsig
 zeep
@@ -268,6 +270,8 @@ ujson
 # From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
 # From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
 # From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
+# generated from manifests external_dependencies
+python-dateutil
 # From [https://github.com/OCA/vertical-isp.git](https://github.com/OCA/vertical-isp.git)
 # From [https://github.com/OCA/vertical-edition.git](https://github.com/OCA/vertical-edition.git)
 # generated from manifests external_dependencies
