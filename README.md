@@ -584,16 +584,16 @@ Date:   Wed Oct 9 08:31:22 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 42c495b2c10c18245a7449ec071bc7c6bbc92fac
+commit dc494a265c58f8e139a84b130fed9a8721314b96
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 11 08:07:01 2024 +0000
+Date:   Tue Dec 31 13:59:31 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (36 of 36 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_isp_account
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_isp_account/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_agreement
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_agreement/it/
 
 
 ## margin-analysis
@@ -1229,16 +1229,16 @@ Date:   Sun Oct 29 15:18:49 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 2bf8ed5608bc1ce4655afd0cdc4adbcbf95521d0
+commit eaac48f651114dadaad3f9c6ac8dc82fe66bb030
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jun 14 14:57:09 2024 +0000
+Date:   Tue Dec 31 13:53:43 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (172 of 172 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: management-system-12.0/management-system-12.0-mgmtsystem_nonconformity
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_nonconformity/it/
+    Translation: management-system-12.0/management-system-12.0-mgmtsystem_nonconformity_maintenance
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_nonconformity_maintenance/it/
 
 
 ## purchase-workflow
