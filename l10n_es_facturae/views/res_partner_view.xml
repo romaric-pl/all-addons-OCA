@@ -45,27 +45,33 @@
                 </group>
             </group>
             <page name="accounting_disabled" position="inside">
-                <group
-                    name="group_facturae"
-                    string="Facturae"
-                    attrs="{'invisible': ['|', ('type', '!=', 'invoice'), ('parent_facturae', '=', False)]}"
-                >
-                <field name="facturae_version" />
-                <field
+                <group name="group_facturae_wo_accounting" string="Facturae">
+                    <field name="facturae" />
+                    <field
+                        name="facturae_version"
+                        attrs="{'invisible': [('facturae', '=', False)]}"
+                    />
+                    <field
                         name="organo_gestor"
-                        attrs="{'required': [('facturae', '=', True)]}"
+                        attrs="{'invisible': [('facturae', '=', False)]}"
                     />
-                <field
+                    <field
                         name="unidad_tramitadora"
-                        attrs="{'required': [('facturae', '=', True)]}"
+                        attrs="{'invisible': [('facturae', '=', False)]}"
                     />
-                <field
+                    <field
                         name="oficina_contable"
-                        attrs="{'required': [('facturae', '=', True)]}"
+                        attrs="{'invisible': [('facturae', '=', False)]}"
                     />
-                <field name="organo_proponente" />
-                <field name="attach_invoice_as_annex" />
-            </group>
+                    <field
+                        name="organo_proponente"
+                        attrs="{'invisible': [('facturae', '=', False)]}"
+                    />
+                    <field
+                        name="attach_invoice_as_annex"
+                        attrs="{'invisible': [('facturae', '=', False)]}"
+                    />
+                </group>
             </page>
         </field>
     </record>

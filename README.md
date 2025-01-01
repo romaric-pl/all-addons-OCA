@@ -952,9 +952,9 @@ Date:   Wed May 1 18:31:59 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit ad18a322286c5755a13b146c6913b8e616193701
+commit 9059ad4128672876ec32ae5af2e370d084032536
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 27 11:28:09 2024 +0000
+Date:   Wed Jan 1 10:12:51 2025 +0000
 
     [BOT] post-merge updates
 
@@ -979,9 +979,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 912e1dc27f704d33e4d607cc0b8e5a3ce2a8fd65
+commit 69794bc4c5aa2571f57fbc7b49f588842c4c5230
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 20 17:12:53 2024 +0000
+Date:   Tue Dec 31 14:44:17 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1444,9 +1444,9 @@ Date:   Fri Oct 27 22:55:14 2023 +0200
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 0ef9d4d50bcd2ad554c140ae61ea8b81998f1513
+commit a7bcff775b429da279ead6168043542f2c0a094c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 13 15:45:38 2024 +0000
+Date:   Tue Dec 31 20:28:56 2024 +0000
 
     [BOT] post-merge updates
 

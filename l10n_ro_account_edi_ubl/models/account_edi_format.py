@@ -242,7 +242,7 @@ class AccountEdiXmlCIUSRO(models.Model):
 
     def _l10n_ro_post_invoice_step_1(self, invoice, attachment):
         anaf_config = invoice.company_id._l10n_ro_get_anaf_sync(scope="e-factura")
-        standard = "UBL"
+        standard = "CN" if "refund" in invoice.move_type else "UBL"
         params = {
             "standard": standard,
             "cif": invoice.company_id.partner_id.vat.replace("RO", ""),
