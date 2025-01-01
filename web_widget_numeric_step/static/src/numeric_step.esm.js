@@ -22,10 +22,19 @@ export class NumericStep extends FloatField {
     }
     _onWheel(ev) {
         ev.preventDefault();
-        if (ev.deltaY > 0) {
-            this._doStep("minus");
-        } else {
-            this._doStep("plus");
+        if (!this._lastWheelTime) {
+            this._lastWheelTime = 0;
+        }
+        const now = Date.now();
+        const throttleLimit = 100;
+        if (now - this._lastWheelTime >= throttleLimit) {
+            this._lastWheelTime = now;
+
+            if (ev.deltaY > 0) {
+                this._doStep("minus");
+            } else {
+                this._doStep("plus");
+            }
         }
     }
     updateField(val) {

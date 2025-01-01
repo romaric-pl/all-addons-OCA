@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: server-tools (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-27 01:37+0000\n"
-"PO-Revision-Date: 2020-12-13 18:56+0000\n"
-"Last-Translator: Stéphane Bidoul (ACSONE) <stephane.bidoul@acsone.eu>\n"
+"PO-Revision-Date: 2024-12-31 16:06+0000\n"
+"Last-Translator: samibc2c <sami.bouzidi@camptocamp.com>\n"
 "Language-Team: French (http://www.transifex.com/oca/OCA-server-tools-9-0/"
 "language/fr/)\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__config
@@ -42,7 +42,7 @@ msgstr "Nom d'affichage"
 #. module: server_environment
 #: model:ir.model,name:server_environment.model_server_config
 msgid "Display server configuration"
-msgstr ""
+msgstr "Afficher la configuration du serveur"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__id

@@ -16,6 +16,14 @@ class TestUI(HttpCase):
                 "type": "consu",
             }
         )
+        self.product2 = self.env["product.template"].create(
+            {
+                "name": "Test Product 2",
+                "is_published": True,
+                "website_sequence": 2,
+                "type": "consu",
+            }
+        )
 
     def test_01_ui_no_restriction(self):
         self.env["ir.filters"].create(
@@ -26,6 +34,7 @@ class TestUI(HttpCase):
                 "domain": [("id", "!=", self.product.product_variant_id.id)],
                 "partner_domain": "[('id', '=', %s)]"
                 % self.env.ref("base.partner_admin").id,
+                "website_availability": "no_restriction",
             }
         )
         self.start_tour("/shop", "test_assortment_with_no_restriction", login="admin")
@@ -62,3 +71,30 @@ class TestUI(HttpCase):
             }
         )
         self.start_tour("/shop", "test_assortment_with_no_purchase", login="admin")
+
+    def test_04_ui_no_restriction_no_show(self):
+        self.env["ir.filters"].create(
+            {
+                "name": "Test Assortment",
+                "model_id": "product.product",
+                "is_assortment": True,
+                "domain": [("id", "!=", self.product.product_variant_id.id)],
+                "partner_domain": "[('id', '=', %s)]"
+                % self.env.ref("base.partner_admin").id,
+                "website_availability": "no_show",
+            }
+        )
+        self.env["ir.filters"].create(
+            {
+                "name": "Test Assortment 2",
+                "model_id": "product.product",
+                "is_assortment": True,
+                "domain": [("id", "!=", self.product2.product_variant_id.id)],
+                "partner_domain": "[('id', '=', %s)]"
+                % self.env.ref("base.partner_admin").id,
+                "website_availability": "no_restriction",
+            }
+        )
+        self.start_tour(
+            "/shop", "test_assortment_with_no_restriction_no_show", login="admin"
+        )

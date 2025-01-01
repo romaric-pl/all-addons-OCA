@@ -73,8 +73,8 @@ msgstr ""
 #: code:addons/stock_location_product_restriction/models/stock_quant.py:0
 #, python-format
 msgid ""
-"The location {location} can only contain items of the same product. You plan"
-" to put different products into this location. ({products})"
+"The location %(location)s can only contain items of the same product. You "
+"plan to put different products into this location. (%(products)s)"
 msgstr ""
 
 #. module: stock_location_product_restriction
@@ -83,7 +83,7 @@ msgstr ""
 #, python-format
 msgid ""
 "This location should only contain items of the same product but it contains "
-"items of products {products}"
+"items of products %(products)s"
 msgstr ""
 
 #. module: stock_location_product_restriction
@@ -96,7 +96,7 @@ msgstr ""
 #: code:addons/stock_location_product_restriction/models/stock_quant.py:0
 #, python-format
 msgid ""
-"You plan to add the product {product} into the location {location} but the "
-"location must only contain items of same product and already contains items "
-"of other product(s) ({existing_products})."
+"You plan to add the product %(product)s into the location %(location)s but "
+"the location must only contain items of same product and already contains "
+"items of other product(s) (%(existing_products)s)."
 msgstr ""

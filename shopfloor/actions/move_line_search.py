@@ -161,7 +161,7 @@ class MoveLineSearch(Component):
         # make prority negative to keep sorting ascending
         return self._sort_key_assigned_to_current_user(line) + (
             -int(line.move_id.priority or "0"),
-            line.move_id.date,
+            line.move_id.date if line.move_id else line.create_date,
             line.move_id.id,
         )
 
@@ -169,7 +169,7 @@ class MoveLineSearch(Component):
         return self._sort_key_assigned_to_current_user(line) + (
             line.location_id.shopfloor_picking_sequence or "",
             line.location_id.name,
-            line.move_id.date,
+            line.move_id.date if line.move_id else line.create_date,
             line.move_id.id,
         )
 

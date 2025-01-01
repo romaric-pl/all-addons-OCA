@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-09-27 15:06+0000\n"
+"PO-Revision-Date: 2024-12-31 16:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -103,6 +103,16 @@ msgid "Configuration"
 msgstr "Configurazione"
 
 #. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_statement
+msgid "Create Statement"
+msgstr "Crea estratto conto"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__create_statement
+msgid "Create statements for the downloaded transactions automatically or not."
+msgstr "Crea estratto conto automaticamente o meno dalle transizioni scaricate."
+
+#. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_uid
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__create_uid
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__create_uid
@@ -123,8 +133,8 @@ msgstr "Valuta"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__daily
-msgid "Daily statements"
-msgstr "Estratti conto giornalieri"
+msgid "Day"
+msgstr "Giorno"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__days
@@ -284,8 +294,8 @@ msgstr "Minuto(i)"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__monthly
-msgid "Monthly statements"
-msgstr "Estratti conto mensili"
+msgid "Month"
+msgstr "Mese"
 
 #. module: account_statement_import_online
 #. odoo-python
@@ -502,11 +512,6 @@ msgid "Show Transaction Data"
 msgstr "Visualizza dati transizione"
 
 #. module: account_statement_import_online
-#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__statement_creation_mode
-msgid "Statement Creation Mode"
-msgstr "Modo creazione estratto conto"
-
-#. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_account_journal__online_bank_statement_provider_id
 msgid "Statement Provider"
 msgstr "Fornitore estratto conto"
@@ -536,6 +541,11 @@ msgid "To"
 msgstr "A"
 
 #. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__statement_creation_mode
+msgid "Transactions interval to obtain"
+msgstr "Intervallo transizioni da estrarre"
+
+#. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__update_schedule
 msgid "Update Schedule"
 msgstr "Aggiorna schedulazione"
@@ -556,11 +566,23 @@ msgid "Website communication history"
 msgstr "Cronologia comunicazioni sito web"
 
 #. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__weekly
+msgid "Week"
+msgstr "Settimana"
+
+#. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__weeks
 msgid "Week(s)"
 msgstr "Settimana(e)"
 
-#. module: account_statement_import_online
-#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__weekly
-msgid "Weekly statements"
-msgstr "Estratti conto settimanali"
+#~ msgid "Daily statements"
+#~ msgstr "Estratti conto giornalieri"
+
+#~ msgid "Monthly statements"
+#~ msgstr "Estratti conto mensili"
+
+#~ msgid "Statement Creation Mode"
+#~ msgstr "Modo creazione estratto conto"
+
+#~ msgid "Weekly statements"
+#~ msgstr "Estratti conto settimanali"

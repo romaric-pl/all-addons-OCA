@@ -103,6 +103,16 @@ msgid "Configuration"
 msgstr "Yapılandırma"
 
 #. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_statement
+msgid "Create Statement"
+msgstr ""
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__create_statement
+msgid "Create statements for the downloaded transactions automatically or not."
+msgstr ""
+
+#. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_uid
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__create_uid
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__create_uid
@@ -123,8 +133,8 @@ msgstr "Para Birimi"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__daily
-msgid "Daily statements"
-msgstr "Günlük ekstreler"
+msgid "Day"
+msgstr ""
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__days
@@ -284,8 +294,8 @@ msgstr "Dakika"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__monthly
-msgid "Monthly statements"
-msgstr "Aylık ekstreler"
+msgid "Month"
+msgstr ""
 
 #. module: account_statement_import_online
 #. odoo-python
@@ -503,11 +513,6 @@ msgid "Show Transaction Data"
 msgstr "İşlem Verilerini Göster"
 
 #. module: account_statement_import_online
-#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__statement_creation_mode
-msgid "Statement Creation Mode"
-msgstr "Ekstre Oluşturma Modu"
-
-#. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_account_journal__online_bank_statement_provider_id
 msgid "Statement Provider"
 msgstr "Ekstre Sağlayıcı"
@@ -537,6 +542,11 @@ msgid "To"
 msgstr "Bitiş"
 
 #. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__statement_creation_mode
+msgid "Transactions interval to obtain"
+msgstr ""
+
+#. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__update_schedule
 msgid "Update Schedule"
 msgstr "Görevi Güncelle"
@@ -557,11 +567,23 @@ msgid "Website communication history"
 msgstr "Web sitesi iletişim geçmişi"
 
 #. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__weekly
+msgid "Week"
+msgstr ""
+
+#. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__weeks
 msgid "Week(s)"
 msgstr "Hafta"
 
-#. module: account_statement_import_online
-#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__weekly
-msgid "Weekly statements"
-msgstr "Haftalık ekstreler"
+#~ msgid "Daily statements"
+#~ msgstr "Günlük ekstreler"
+
+#~ msgid "Monthly statements"
+#~ msgstr "Aylık ekstreler"
+
+#~ msgid "Statement Creation Mode"
+#~ msgstr "Ekstre Oluşturma Modu"
+
+#~ msgid "Weekly statements"
+#~ msgstr "Haftalık ekstreler"

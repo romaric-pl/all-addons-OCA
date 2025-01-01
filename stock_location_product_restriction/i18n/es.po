@@ -80,8 +80,8 @@ msgstr "Restricción específica de producto"
 #: code:addons/stock_location_product_restriction/models/stock_quant.py:0
 #, python-format
 msgid ""
-"The location {location} can only contain items of the same product. You plan "
-"to put different products into this location. ({products})"
+"The location %(location)s can only contain items of the same product. You "
+"plan to put different products into this location. (%(products)s)"
 msgstr ""
 
 #. module: stock_location_product_restriction
@@ -90,10 +90,8 @@ msgstr ""
 #, python-format
 msgid ""
 "This location should only contain items of the same product but it contains "
-"items of products {products}"
+"items of products %(products)s"
 msgstr ""
-"Esta ubicación sólo debería contener artículos del mismo producto, pero "
-"contiene artículos de productos {products}"
 
 #. module: stock_location_product_restriction
 #: model_terms:ir.ui.view,arch_db:stock_location_product_restriction.stock_location_search_view
@@ -105,10 +103,18 @@ msgstr "Con violación de restricción"
 #: code:addons/stock_location_product_restriction/models/stock_quant.py:0
 #, python-format
 msgid ""
-"You plan to add the product {product} into the location {location} but the "
-"location must only contain items of same product and already contains items "
-"of other product(s) ({existing_products})."
+"You plan to add the product %(product)s into the location %(location)s but "
+"the location must only contain items of same product and already contains "
+"items of other product(s) (%(existing_products)s)."
 msgstr ""
+
+#, python-format
+#~ msgid ""
+#~ "This location should only contain items of the same product but it "
+#~ "contains items of products {products}"
+#~ msgstr ""
+#~ "Esta ubicación sólo debería contener artículos del mismo producto, pero "
+#~ "contiene artículos de productos {products}"
 
 #~ msgid "Stock Move"
 #~ msgstr "Movimiento de existencias"

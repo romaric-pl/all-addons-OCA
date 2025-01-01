@@ -103,6 +103,16 @@ msgid "Configuration"
 msgstr "Configuratie"
 
 #. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_statement
+msgid "Create Statement"
+msgstr ""
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__create_statement
+msgid "Create statements for the downloaded transactions automatically or not."
+msgstr ""
+
+#. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_uid
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__create_uid
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__create_uid
@@ -123,8 +133,8 @@ msgstr "Valuta"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__daily
-msgid "Daily statements"
-msgstr "Dagelijks afschrift"
+msgid "Day"
+msgstr ""
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__days
@@ -282,8 +292,8 @@ msgstr "Minuut/Minuten"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__monthly
-msgid "Monthly statements"
-msgstr "Maandelijkse afschriften"
+msgid "Month"
+msgstr ""
 
 #. module: account_statement_import_online
 #. odoo-python
@@ -496,11 +506,6 @@ msgid "Show Transaction Data"
 msgstr ""
 
 #. module: account_statement_import_online
-#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__statement_creation_mode
-msgid "Statement Creation Mode"
-msgstr "Bankafschrift creatie modus"
-
-#. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_account_journal__online_bank_statement_provider_id
 msgid "Statement Provider"
 msgstr "Afschrift leverancier"
@@ -528,6 +533,11 @@ msgid "To"
 msgstr ""
 
 #. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__statement_creation_mode
+msgid "Transactions interval to obtain"
+msgstr ""
+
+#. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__update_schedule
 msgid "Update Schedule"
 msgstr "Update planning"
@@ -548,14 +558,26 @@ msgid "Website communication history"
 msgstr "Website berichten geschiedenis"
 
 #. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__weekly
+msgid "Week"
+msgstr ""
+
+#. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__weeks
 msgid "Week(s)"
 msgstr "Weken"
 
-#. module: account_statement_import_online
-#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__weekly
-msgid "Weekly statements"
-msgstr "Weekelijkse afschriften"
+#~ msgid "Daily statements"
+#~ msgstr "Dagelijks afschrift"
+
+#~ msgid "Monthly statements"
+#~ msgstr "Maandelijkse afschriften"
+
+#~ msgid "Statement Creation Mode"
+#~ msgstr "Bankafschrift creatie modus"
+
+#~ msgid "Weekly statements"
+#~ msgstr "Weekelijkse afschriften"
 
 #~ msgid "Pull"
 #~ msgstr "Opvragen"

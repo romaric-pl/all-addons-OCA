@@ -18,7 +18,7 @@ class StockAction(Component):
     def _create_return_move__get_max_qty(self, origin_move):
         """Returns the max returneable qty."""
         # The max returnable qty is the sent qty minus the already returned qties
-        quantity = origin_move.reserved_qty
+        quantity = origin_move.product_uom_qty
         for move in origin_move.move_dest_ids:
             if (
                 move.origin_returned_move_id
@@ -28,7 +28,7 @@ class StockAction(Component):
             if move.state in ("partially_available", "assigned"):
                 quantity -= sum(move.move_line_ids.mapped("reserved_qty"))
             elif move.state in ("done"):
-                quantity -= move.reserved_qty
+                quantity -= move.product_uom_qty
         return float_round(
             quantity, precision_rounding=origin_move.product_id.uom_id.rounding
         )
@@ -92,7 +92,7 @@ class StockAction(Component):
     def _create_return_picking__get_vals(self, return_types, origin):
         return_type = fields.first(return_types)
         return {
-            "move_lines": [],
+            "move_ids": [],
             "picking_type_id": return_type.id,
             "state": "draft",
             "origin": origin,

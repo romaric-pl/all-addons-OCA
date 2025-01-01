@@ -5,7 +5,7 @@
 {
     "name": "Web Widget Numeric Step",
     "category": "web",
-    "version": "16.0.1.1.4",
+    "version": "16.0.1.1.5",
     "author": "GRAP, Tecnativa, " "Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/web",

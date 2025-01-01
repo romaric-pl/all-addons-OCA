@@ -3,7 +3,7 @@
 {
     "name": "eCommerce product assortment",
     "summary": "Use product assortments to display products available on e-commerce.",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.1.1",
     "development_status": "Beta",
     "license": "AGPL-3",
     "category": "Website",
@@ -23,6 +23,7 @@
             "website_sale_product_assortment/static/src/js/no_purchase_tour.js",
             "website_sale_product_assortment/static/src/js/no_restriction_tour.js",
             "website_sale_product_assortment/static/src/js/no_show_tour.js",
+            "website_sale_product_assortment/static/src/js/no_restriction_no_show_tour.js",
         ],
     },
 }
