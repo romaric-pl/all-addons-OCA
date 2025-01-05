@@ -342,16 +342,16 @@ Date:   Sat Jul 6 17:23:31 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 2fa67fe1928408dbc306944c9a5c015bdd2221bf
-Author: Ömer KÜLAK <omer.kulak@kitayazilim.com>
-Date:   Tue Dec 24 09:55:38 2024 +0000
+commit ed805e65e811d77478827b8892e9d7d92a81f429
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jan 4 13:05:28 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
     Currently translated at 100.0% (18 of 18 strings)
     
-    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_order_line_input
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_order_line_input/tr/
+    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_order_secondary_unit
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_order_secondary_unit/it/
 
 
 ## crm
@@ -499,16 +499,16 @@ Date:   Fri Dec 27 08:46:26 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 7f4f9f26d58cedd2845c65ca3a2931a59fb09869
-Author: SMNDVC <simon.dovicovic@gmail.com>
-Date:   Fri Dec 27 17:54:32 2024 +0000
+commit 2b8e51afacbffbed361cc92e1fb2fb5a513f57f0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jan 3 17:28:46 2025 +0000
 
-    Translated using Weblate (Slovak)
+    Translated using Weblate (Italian)
     
-    Currently translated at 4.7% (28 of 589 strings)
+    Currently translated at 100.0% (589 of 589 strings)
     
     Translation: field-service-17.0/field-service-17.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice/sk/
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -786,9 +786,9 @@ Date:   Thu Jul 18 10:36:18 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit ac50318516157d268adcb0f102b8eae75f118d5b
+commit 7e39a8a99c31da6b01f744f9e6d497a1c38a3b95
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 31 14:23:37 2024 +0000
+Date:   Thu Jan 2 22:49:53 2025 +0000
 
     [BOT] post-merge updates
 
@@ -885,9 +885,9 @@ Date:   Sat Jul 6 17:34:10 2024 +0000
 
 ## l10n-mexico
 From [https://github.com/OCA/l10n-mexico.git](https://github.com/OCA/l10n-mexico.git)
-commit 1e9ab4da0bcdf6d3de92a662d8a734f42b904162
+commit 913819b8b971d9a068c0e9608a84079255383b10
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Oct 12 17:46:01 2024 +0000
+Date:   Thu Jan 2 15:55:14 2025 +0000
 
     [BOT] post-merge updates
 
@@ -944,9 +944,9 @@ Date:   Sat Jul 6 17:35:13 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit ef2e21363470463a2073a151a2768fd41ec4aaed
+commit 93fd8c46c1e4bcd1e60bbd3723d66006e40e44a5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 31 00:28:42 2024 +0000
+Date:   Sun Jan 5 19:54:11 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1252,9 +1252,9 @@ Date:   Wed May 1 17:06:08 2024 +0000
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit a1b76f5318b4a385776c1464a9de524b81a2b667
+commit 46b532cb8bcf9554df53d9bf214efd4aec28f7e4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 15 07:28:25 2024 +0000
+Date:   Thu Jan 2 16:18:22 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1266,9 +1266,9 @@ Date:   Mon Jul 15 07:28:25 2024 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit 211134691d338885354ec80af761e64240a316d0
+commit 8d73597012d49daa457371e54b8a093fefb47904
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 22 08:16:00 2024 +0000
+Date:   Fri Jan 3 15:09:11 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1553,16 +1553,16 @@ Date:   Thu Nov 28 08:38:17 2024 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 92aad73ef9fa521e930b607d04926d10afab5b95
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Dec 30 15:52:17 2024 +0000
+commit ff14c8de605e3c96a99884990f94da937aed6532
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 2 16:13:19 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (521 of 521 strings)
     
-    Translation: vertical-hotel-17.0/vertical-hotel-17.0-hotel_reservation
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-17-0/vertical-hotel-17-0-hotel_reservation/
+    Translation: vertical-hotel-17.0/vertical-hotel-17.0-hotel
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-17-0/vertical-hotel-17-0-hotel/it/
 
 
 ## vertical-isp
