@@ -120,25 +120,20 @@ Date:   Tue Dec 24 17:00:11 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 1e3c64324fb7be8be10937a4d6350bad152a6265
+commit fb2c81d795a86bcccf5913e8d17273ce2e860880
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 31 14:24:46 2024 +0000
+Date:   Thu Jan 2 17:59:56 2025 +0000
 
     Added translation using Weblate (Italian)
 
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit 92e50791fc27fc7287adeb8c149630a5085d269c
-Author: Weblate <noreply@weblate.org>
-Date:   Wed May 1 19:29:16 2024 +0000
+commit e6405c85ef7016050dc9031b69e91d942313c544
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jan 3 15:56:56 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: intrastat-extrastat-14.0/intrastat-extrastat-14.0-intrastat_product
-    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-14-0/intrastat-extrastat-14-0-intrastat_product/
+    Added translation using Weblate (Italian)
 
 
 ## mis-builder
@@ -194,25 +189,20 @@ Date:   Sat Dec 21 14:44:23 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 0373fb35039aca29a849f4d8391dfdefb23c62c1
-Author: Douglas Custódio <douglascstd@yahoo.com>
-Date:   Thu Nov 28 18:41:59 2024 +0000
+commit c5ab641db9d0e38cf27326c7f4cd126cd463de9c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jan 3 13:20:28 2025 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
-    
-    Currently translated at 100.0% (21 of 21 strings)
-    
-    Translation: bank-payment-14.0/bank-payment-14.0-account_payment_order_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_payment_order_tier_validation/pt_BR/
+    Added translation using Weblate (Italian)
 
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit a077fadfb38a8c7c1bf13d7e20ac8dd2f07604d3
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 5 15:02:58 2024 +0000
+commit ced943c2173f9e5872c59938b893dc1296b15bb2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jan 3 12:52:55 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## bank-statement-import
@@ -231,16 +221,11 @@ Date:   Thu Aug 29 13:59:03 2024 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit aef5a7de5691d2c515bd627caff2a8830e10e4ae
+commit 36512a2e6efef450fcaa06195bc1ce1a4b887a28
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 19 11:08:36 2024 +0000
+Date:   Fri Jan 3 10:56:26 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (52 of 52 strings)
-    
-    Translation: account-payment-14.0/account-payment-14.0-account_payment_batch_process
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_payment_batch_process/it/
+    Added translation using Weblate (Italian)
 
 
 ## connector
@@ -549,11 +534,11 @@ Date:   Wed May 1 18:15:51 2024 +0000
 
 ## geospatial
 From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
-commit af3e5711e75ee2e9cc3b8af562c5ca9fe9903576
-Author: Mostafa Barmshory <mostafa.barmshory@gmail.com>
-Date:   Tue Nov 19 05:13:01 2024 +0000
+commit 3ca4c9dd1497de62ef3e5f25de35f80952f7e4a0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Jan 5 18:51:40 2025 +0000
 
-    Added translation using Weblate (Persian (fa_IR))
+    Added translation using Weblate (Italian)
 
 
 ## timesheet
@@ -626,11 +611,11 @@ Date:   Wed May 1 17:59:33 2024 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit ea642946ac6d2b42ca7fde561d94cab66cb26f10
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 28 11:42:35 2024 +0000
+commit bf084e4b59df5788d0c2b18b12b06ebc44758633
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Jan 5 19:11:59 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## l10n-argentina
@@ -1191,16 +1176,11 @@ Date:   Tue Dec 24 14:09:12 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 7666e47c567bef43fb4111172bb6f2f117529bd2
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Dec 30 08:10:36 2024 +0000
+commit 66772d8389f82e0f64e69ee822316d835fa4a6ad
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jan 3 17:33:39 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: pms-14.0/pms-14.0-pms
-    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms/
+    [BOT] post-merge updates
 
 
 ## purchase-workflow
