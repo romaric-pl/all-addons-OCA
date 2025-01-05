@@ -2777,6 +2777,7 @@ addon | version | maintainers | summary
 [fieldservice_location_builder](fieldservice_location_builder/) | 15.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Adds a tool to help build out Location Hierarchies
 [fieldservice_logbook](fieldservice_logbook/) | 15.0.1.0.0 | [![yankinmax](https://github.com/yankinmax.png?size=30px)](https://github.com/yankinmax) | Manage Field Service equipment logbooks
 [fieldservice_partner_multi_relation](fieldservice_partner_multi_relation/) | 15.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage relations between contacts, companies and locations
+[fieldservice_portal](fieldservice_portal/) | 15.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between fieldservice and portal.
 [fieldservice_project](fieldservice_project/) | 15.0.1.0.0 |  | Create field service orders from a project or project task
 [fieldservice_purchase](fieldservice_purchase/) | 15.0.1.0.1 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Manage FSM Purchases
 [fieldservice_recurring](fieldservice_recurring/) | 15.0.2.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
@@ -3181,7 +3182,7 @@ addon | version | maintainers | summary
 [hr_attendance_missing_days](hr_attendance_missing_days/) | 15.0.1.0.0 |  | This modules generates attendances for working days without attendance
 [hr_attendance_modification_tracking](hr_attendance_modification_tracking/) | 15.0.1.0.0 |  | Attendance changes will now be registered in the chatter.
 [hr_attendance_overtime_manual](hr_attendance_overtime_manual/) | 15.0.1.0.0 |  | Allows adding manual overtime records
-[hr_attendance_reason](hr_attendance_reason/) | 15.0.1.2.1 |  | HR Attendance Reason
+[hr_attendance_reason](hr_attendance_reason/) | 15.0.1.3.0 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 15.0.1.3.0 |  | Theoretical vs Attended Time Analysis
 [hr_attendance_rfid](hr_attendance_rfid/) | 15.0.1.0.3 |  | HR Attendance RFID
 
@@ -4926,7 +4927,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.78.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.79.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 15.0.2.0.1 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 15.0.3.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -5108,7 +5109,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 15.0.1.0.0 | [![nicolasramos](https://github.com/nicolasramos.png?size=30px)](https://github.com/nicolasramos) | AEAT modelo 347 IGIC
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
-[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
+[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.5.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 15.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 15.0.1.0.0 |  | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 15.0.1.2.0 |  | AEAT - Comprobación de Calidad de datos identificativos

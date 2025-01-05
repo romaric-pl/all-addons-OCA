@@ -517,16 +517,11 @@ Date:   Sun Dec 22 13:19:31 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 46c8e2715ceeae07c10b71eca8a18e6d89b27f22
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Dec 20 11:11:33 2024 +0000
+commit d832a09a6788ca2b29864c537315dece1f361d01
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jan 3 23:16:22 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: field-service-15.0/field-service-15.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -600,9 +595,9 @@ Date:   Mon Sep 23 14:43:08 2024 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit f380a816a3f068b9cc9bcd847e6ff943c3199390
+commit 26534a86ac8a17e6db08c78760f7bb40d90a7c73
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 20 18:28:54 2024 +0000
+Date:   Fri Jan 3 10:59:06 2025 +0000
 
     [BOT] post-merge updates
 
@@ -952,9 +947,9 @@ Date:   Wed May 1 18:31:59 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 9059ad4128672876ec32ae5af2e370d084032536
+commit 3ba3f4dfd733ab7acc006a3594459b1d3af4a08c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 1 10:12:51 2025 +0000
+Date:   Thu Jan 2 18:23:36 2025 +0000
 
     [BOT] post-merge updates
 
@@ -979,11 +974,16 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 69794bc4c5aa2571f57fbc7b49f588842c4c5230
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 31 14:44:17 2024 +0000
+commit aaab2706b96a81a63dd6e84a9b5184161147c6a6
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Jan 3 12:02:46 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod390
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod390/
 
 
 ## l10n-switzerland
@@ -1009,11 +1009,14 @@ Date:   Wed May 1 18:38:24 2024 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit bfdfb30b0d7dcbbfad0d3231f34f168cefbb8b02
+commit 6aacf7aa514d730a09b5a064a1b5318f9cbb7f4e
+Merge: bfdfb30 c28be59
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 21 07:14:42 2024 +0000
+Date:   Fri Jan 3 07:15:54 2025 +0000
 
-    [BOT] post-merge updates
+    Merge PR #496 into 15.0
+    
+    Signed-off-by Saran440
 
 
 ## l10n-turkey

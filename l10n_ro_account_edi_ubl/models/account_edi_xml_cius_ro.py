@@ -262,14 +262,14 @@ class AccountEdiXmlCIUSRO(models.Model):
             if invoice.move_type == "out_invoice":
                 vals["vals"]["invoice_type_code"] = 389
             elif invoice.move_type == "out_refund":
-                vals["vals"]["credit_note_type_code"] = 389
+                vals["vals"]["credit_note_type_code"] = 381
         if invoice.journal_id.l10n_ro_sequence_type == "autoinv2":
             if invoice.move_type == "in_invoice":
                 vals["main_template"] = "account_edi_ubl_cii.ubl_20_Invoice"
                 vals["vals"]["invoice_type_code"] = 389
             elif invoice.move_type == "in_refund":
                 vals["main_template"] = "account_edi_ubl_cii.ubl_20_CreditNote"
-                vals["vals"]["credit_note_type_code"] = 389
+                vals["vals"]["credit_note_type_code"] = 381
         point_of_sale = (
             self.env["ir.module.module"]
             .sudo()
