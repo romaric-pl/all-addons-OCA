@@ -28,7 +28,7 @@ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
                         name="general"
                         attrs="{'invisible':[('price_method', '!=', 'base_on_rule')]}"
                     >
-                        <field name="price_rule_ids" nolabel="1" />
+                        <field name="price_rule_ids" nolabel="1" colspan="2" />
                     </group>
                 </page>
             </xpath>

@@ -184,14 +184,20 @@ class AccountEdiXmlCIUSRO(models.Model):
             vals_list["main_template"] = "account_edi_ubl_cii.ubl_20_CreditNote"
             vals_list["vals"]["credit_note_type_code"] = 381
         if (
-            invoice.move_type in ("in_invoice", "in_refund")
-            and invoice.journal_id.l10n_ro_sequence_type == "autoinv2"
-        ) or (
             invoice.journal_id.type == "sale"
             and invoice.journal_id.l10n_ro_sequence_type == "autoinv1"
         ):
-            vals_list["vals"]["invoice_type_code"] = 389
-            vals_list["vals"]["credit_note_type_code"] = 389
+            if invoice.move_type == "out_invoice":
+                vals_list["vals"]["invoice_type_code"] = 389
+            elif invoice.move_type == "out_refund":
+                vals_list["vals"]["credit_note_type_code"] = 381
+        if invoice.journal_id.l10n_ro_sequence_type == "autoinv2":
+            if invoice.move_type == "in_invoice":
+                vals_list["main_template"] = "account_edi_ubl_cii.ubl_20_Invoice"
+                vals_list["vals"]["invoice_type_code"] = 389
+            elif invoice.move_type == "in_refund":
+                vals_list["main_template"] = "account_edi_ubl_cii.ubl_20_CreditNote"
+                vals_list["vals"]["credit_note_type_code"] = 381
         point_of_sale = (
             self.env["ir.module.module"]
             .sudo()

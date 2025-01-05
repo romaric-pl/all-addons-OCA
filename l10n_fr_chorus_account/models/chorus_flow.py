@@ -45,6 +45,7 @@ class ChorusFlow(models.Model):
         "chorus_flow_id",
         "move_id",
         string="Initial Invoices",
+        readonly=True,
         help="Invoices in the flow before potential rejections",
     )
     invoice_ids = fields.One2many(

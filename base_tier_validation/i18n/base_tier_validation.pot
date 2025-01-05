@@ -364,6 +364,11 @@ msgid ""
 msgstr ""
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__is_reevaluation_required
+msgid "Is Reevaluation Required"
+msgstr ""
+
+#. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_validation_exception_action
 msgid "It's fully validated"
 msgstr ""
@@ -521,6 +526,11 @@ msgstr ""
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__pending
 #, python-format
 msgid "Pending"
+msgstr ""
+
+#. module: base_tier_validation
+#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_buttons
+msgid "Reevaluate Reviews"
 msgstr ""
 
 #. module: base_tier_validation
