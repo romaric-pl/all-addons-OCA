@@ -27,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-07 08:56+0000\n"
-"PO-Revision-Date: 2024-12-19 10:06+0000\n"
-"Last-Translator: ahmedtrigui <trigui43@gmail.com>\n"
+"PO-Revision-Date: 2025-01-06 16:06+0000\n"
+"Last-Translator: hugues de keyzer <odoo@hugues.info>\n"
 "Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -1042,7 +1042,7 @@ msgstr "Semaine"
 #: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
 #, python-format
 msgid "Week %(end)s"
-msgstr "Fin de semaine"
+msgstr "Semaine %(end)s"
 
 #. module: hr_timesheet_sheet
 #: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_config_settings__timesheet_week_start
@@ -1059,7 +1059,7 @@ msgstr "Jour de début de la semaine"
 #: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:0
 #, python-format
 msgid "Weeks %(start)s - %(end)s"
-msgstr "Début-Fin semaine"
+msgstr "Semaines %(start)s - %(end)s"
 
 #. module: hr_timesheet_sheet
 #. odoo-python
@@ -1071,8 +1071,9 @@ msgid ""
 "You cannot change the company, as this %(rec_name)s (%(rec_display_name)s) "
 "is assigned to %(current_name)s (%(current_display_name)s)."
 msgstr ""
-"Vous ne pouvez pas modifier la compagnie tant que %(rec_name) "
-"(%(rec_display_name) est assigné à %(current_name) (%(current_display_name)"
+"Vous ne pouvez pas modifier la société tant que %(rec_name)s "
+"(%(rec_display_name)s) est assigné à %(current_name)s "
+"(%(current_display_name)s)."
 
 #. module: hr_timesheet_sheet
 #. odoo-python
@@ -1084,10 +1085,10 @@ msgid ""
 " - %(sheet_name)s of %(sheet_company)s\n"
 " - %(name)s of %(company)s"
 msgstr ""
-"Vous ne pouvez pas créer une feuille de temps d'une compagnie  différente à "
-"celle de la feuille de temps :\n"
-"-(sheet_name)s of %(sheet_company)\n"
-" - %(name)s of %(company)"
+"Vous ne pouvez pas créer une feuille de temps d'une société différente à "
+"celle de la feuille de temps :\n"
+" - %(sheet_name)s de %(sheet_company)s\n"
+" - %(name)s de %(company)s"
 
 #. module: hr_timesheet_sheet
 #. odoo-python
@@ -1117,10 +1118,10 @@ msgid ""
 "Conflicting sheets:\n"
 " - %(names)s"
 msgstr ""
-"Vous ne pouvez pas avoir 2 feuilles ou plus qui se chevauchent !\n"
-"Veuillez utiliser le menu « Feuille de temps » pour éviter ce problème.\n"
-"Feuilles contradictoires :\n"
-"-  %(names)"
+"Vous ne pouvez pas avoir 2 feuilles ou plus qui se chevauchent !\n"
+"Veuillez utiliser le menu « Feuille de temps » pour éviter ce problème.\n"
+"Feuilles en conflit :\n"
+" - %(names)s"
 
 #. module: hr_timesheet_sheet
 #. odoo-python
@@ -1128,8 +1129,8 @@ msgstr ""
 #, python-format
 msgid "You cannot modify an entry in a confirmed timesheet sheet: %(names)s"
 msgstr ""
-"Vous ne pouvez pas modifier une entrée dans une feuille de temps confirmée: "
-"%(names)"
+"Vous ne pouvez pas modifier une entrée dans une feuille de temps confirmée : "
+"%(names)s"
 
 #. module: hr_timesheet_sheet
 #: model_terms:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_line_to_submit_my

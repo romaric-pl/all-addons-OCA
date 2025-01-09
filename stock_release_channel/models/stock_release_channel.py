@@ -6,11 +6,13 @@
 import logging
 from collections import defaultdict
 from copy import deepcopy
+from operator import itemgetter
 
 from pytz import timezone
 
 from odoo import _, api, exceptions, fields, models
 from odoo.osv.expression import NEGATIVE_TERM_OPERATORS
+from odoo.tools import groupby
 from odoo.tools.safe_eval import (
     datetime as safe_datetime,
     dateutil as safe_dateutil,
@@ -448,7 +450,7 @@ class StockReleaseChannel(models.Model):
                     + values[f"{prefix}_picking_released"]
                     + values[f"{prefix}_picking_done"]
                 )
-            record.write(values)
+            record.update(values)
 
     def _query_get_chain(self, pickings):
         """Get all stock.picking before an outgoing one
@@ -460,15 +462,18 @@ class StockReleaseChannel(models.Model):
         WITH RECURSIVE
         pickings AS (
             SELECT move.picking_id,
+                   stock_picking.release_channel_id,
                    true as outgoing,
                    ''::varchar as state,  -- no need it, we exclude outgoing
                    move.id as move_orig_id
             FROM stock_move move
+            INNER JOIN stock_picking ON move.picking_id = stock_picking.id
             WHERE move.picking_id in %s
 
             UNION
 
             SELECT move.picking_id,
+                   pickings.release_channel_id,
                    false as outgoing,
                    picking.state,
                    rel.move_orig_id
@@ -480,7 +485,7 @@ class StockReleaseChannel(models.Model):
             INNER JOIN stock_picking picking
             ON picking.id = move.picking_id
         )
-        SELECT DISTINCT picking_id, state FROM pickings
+        SELECT DISTINCT release_channel_id, picking_id, state FROM pickings
         WHERE outgoing is false;
         """
         return (query, (tuple(pickings.ids),))
@@ -490,20 +495,24 @@ class StockReleaseChannel(models.Model):
             ["move_dest_ids", "move_orig_ids", "picking_id"]
         )
         self.env["stock.picking"].flush_model(["state"])
-        for channel in self:
-            domain = self._field_picking_domains()["released"]
-            domain += [("release_channel_id", "=", channel.id)]
-            released = self.env["stock.picking"].search(domain)
 
-            if not released:
+        domain = self._field_picking_domains()["released"]
+        domain += [("release_channel_id", "in", self.ids)]
+        released = self.env["stock.picking"].search(domain)
+
+        if not released:
+            for channel in self:
                 channel.picking_chain_ids = False
                 channel.count_picking_chain = 0
                 channel.count_picking_chain_in_progress = 0
                 channel.count_picking_chain_done = 0
-                continue
+            return
 
-            self.env.cr.execute(*self._query_get_chain(released))
-            rows = self.env.cr.dictfetchall()
+        self.env.cr.execute(*self._query_get_chain(released))
+        rows = self.env.cr.dictfetchall()
+        rows_by_channel = dict(groupby(rows, key=itemgetter("release_channel_id")))
+        for channel in self:
+            rows = rows_by_channel.get(channel.id, [])
             channel.picking_chain_ids = [row["picking_id"] for row in rows]
             channel.count_picking_chain_in_progress = sum(
                 [1 for row in rows if row["state"] not in ("cancel", "done")]
@@ -751,7 +760,12 @@ class StockReleaseChannel(models.Model):
 
     @staticmethod
     def _pickings_sort_key(picking):
-        return (-int(picking.priority or 1), picking.date_priority, picking.id)
+        return (
+            -int(picking.priority or 1),
+            picking.scheduled_date,
+            picking.date_priority or picking.create_date,
+            picking.id,
+        )
 
     def _get_next_pickings(self):
         return getattr(self, "_get_next_pickings_{}".format(self.batch_mode))()

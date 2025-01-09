@@ -2,32 +2,42 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 import unittest
-from pprint import pformat
+
+from freezegun import freeze_time
 
 from ..utils import file_open, file_path
-from ..wamas2ubl import wamas2dict
+from ..wamas2ubl import wamas2ubl
 
 
-class TestWamas2dict(unittest.TestCase):
-    def _test(self, filename):
-        with file_open(
-            file_path("tests/samples/%s.wamas" % filename)
-        ) as infile, file_open(
-            file_path("tests/samples/%s.dict" % filename)
-        ) as outfile:
-            str_input = infile.read()
-            expected_output = outfile.read()
-            output_prettified = pformat(wamas2dict(str_input))
-            self.assertEqual(output_prettified, expected_output)
+class TestWamas2ubl(unittest.TestCase):
 
-    def test_normal(self):
-        self._test("line_WATEPQ_-_normal")
+    maxDiff = None
 
-    def test_non_ascii(self):
-        self._test("line_WATEPQ_-_non_ascii")
+    @freeze_time("2023-05-01")
+    def _convert_wamas2ubl(self, input_filename, expected_output_filename):
+        path = file_path("tests/samples/")
+        with file_open(path + input_filename) as inputfile, file_open(
+            path + expected_output_filename
+        ) as outputfile:
+            str_input = inputfile.read()
+            output = "\n".join(wamas2ubl(str_input))
+            expected_output = outputfile.read()
+            self.assertEqual(output, expected_output)
 
-    def test_length_off(self):
-        self._test("line_WATEKQ_-_length_off_by_one_01")
+    def test_convert_wamas2ubl_picking(self):
+        input_file = "WAMAS2UBL-SAMPLE_AUSKQ_WATEKQ_WATEPQ.wamas"
+        lst_expected_output = "WAMAS2UBL-SAMPLE_AUSKQ_WATEKQ_WATEPQ-DESPATCH_ADVICE.xml"
+        self._convert_wamas2ubl(input_file, lst_expected_output)
+
+    def test_convert_wamas2ubl_reception(self):
+        input_file = "WAMAS2UBL-SAMPLE_WEAKQ_WEAPQ.wamas"
+        lst_expected_output = "WAMAS2UBL-SAMPLE_WEAKQ_WEAPQ-DESPATCH_ADVICE.xml"
+        self._convert_wamas2ubl(input_file, lst_expected_output)
+
+    def test_convert_wamas2ubl_return(self):
+        input_file = "WAMAS2UBL-SAMPLE_KRETKQ_KRETPQ.wamas"
+        lst_expected_output = "WAMAS2UBL-SAMPLE_KRETKQ_KRETPQ-DESPATCH_ADVICE.xml"
+        self._convert_wamas2ubl(input_file, lst_expected_output)
 
 
 if __name__ == "__main__":

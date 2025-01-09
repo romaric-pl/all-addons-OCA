@@ -79,6 +79,10 @@ def get_current_datetime(val=0):
     return datetime.utcnow()
 
 
+def get_quantity_done(quantity, partial=False):
+    return quantity if not partial else 1
+
+
 def _set_string(val, length, dp, **kwargs):
     return str(val or "").ljust(length)[:length]
 
@@ -299,9 +303,9 @@ def generate_wamas_dict(dict_item, grammar, **kwargs):  # noqa: C901
             if isinstance(ubl_path, list):
                 lst_val = []
                 for _item in ubl_path:
-                    lst_val.append(dict_item.get(_item, ""))
+                    lst_val.append(dict_item.get(_item) or "")
                 if lst_val:
-                    val = " ".join(lst_val)
+                    val = " ".join(lst_val).strip()
             elif isinstance(ubl_path, dict):
                 for _key in ubl_path:
                     if dict_item.get(_key, False):
@@ -327,6 +331,9 @@ def generate_wamas_dict(dict_item, grammar, **kwargs):  # noqa: C901
                 args = (kwargs.get("idx_loop", 0),)
             elif df_func == "get_random_str_num":
                 args = (length,)
+            elif df_func == "get_quantity_done":
+                quantity = dict_item.get("BestMng", 0)
+                args = (quantity, kwargs.get("partial_qty"))
             elif "get_date_from_field" in df_func:
                 args = (dict_wamas_out,)
                 args += ast.literal_eval(re.search(r"\((.*?)\)", df_func).group(0))
@@ -408,7 +415,7 @@ def fw2dict(line, grammar, telegram_type):
             dp = fdef["dp"]
             val = float(b[:-dp] + "." + b[-dp:])
         else:
-            val = escape(b.rstrip())
+            val = str(escape(b.rstrip()))
         res[fname] = val
     _logger.debug(pformat(res))
     return res

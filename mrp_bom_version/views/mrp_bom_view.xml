@@ -71,7 +71,7 @@
                         string="Activate"
                         attrs="{'invisible':[('state','not in',(False, 'draft'))]}"
                         class="oe_highlight"
-                        confirm="YYou will activate the BoM, then you won't be able to edit it after this. Are you sure you want to proceed?"
+                        confirm="You will activate the BoM, then you won't be able to edit it after this. Are you sure you want to proceed?"
                     />
                     <button
                         name="button_new_version"

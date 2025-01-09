@@ -273,15 +273,6 @@ msgstr ""
 
 #. module: mrp_bom_version
 #: model_terms:ir.ui.view,arch_db:mrp_bom_version.mrp_bom_version_form_view
-msgid ""
-"YYou will activate the BoM, then you won't be able to edit it after this. "
-"Are you sure you want to proceed?"
-msgstr ""
-"Si sta attivando la DiBa, dopo non la si potrà più modificare. Si è sicuri "
-"di procedere?"
-
-#. module: mrp_bom_version
-#: model_terms:ir.ui.view,arch_db:mrp_bom_version.mrp_bom_version_form_view
 #: model_terms:ir.ui.view,arch_db:mrp_bom_version.mrp_bom_version_tree_view
 msgid "You are going to create a new version of this BoM. Are you sure?"
 msgstr "Stai creando una nuova versione di questa BoM. Sei sicuro?"
@@ -297,6 +288,7 @@ msgstr ""
 "sbloccarela a meno che non crei una copia. Sei sicuro di voler procedere?"
 
 #. module: mrp_bom_version
+#: model_terms:ir.ui.view,arch_db:mrp_bom_version.mrp_bom_version_form_view
 #: model_terms:ir.ui.view,arch_db:mrp_bom_version.mrp_bom_version_tree_view
 msgid ""
 "You will activate the BoM, then you won't be able to edit it after this. Are "
@@ -304,6 +296,13 @@ msgid ""
 msgstr ""
 "Si sta attivando la DiBa, dopo non la si potrà più modificare. Si è sicuri "
 "di procedere?"
+
+#~ msgid ""
+#~ "YYou will activate the BoM, then you won't be able to edit it after this. "
+#~ "Are you sure you want to proceed?"
+#~ msgstr ""
+#~ "Si sta attivando la DiBa, dopo non la si potrà più modificare. Si è "
+#~ "sicuri di procedere?"
 
 #~ msgid "Group By..."
 #~ msgstr "Raggruppa per..."

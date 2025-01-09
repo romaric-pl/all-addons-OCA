@@ -2,6 +2,7 @@
 # Copyright 2023 Camptocamp SA
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+from ast import literal_eval
 from base64 import b64decode, b64encode
 
 from freezegun import freeze_time
@@ -153,3 +154,17 @@ class TestBaseWamas(TransactionCase):
             "base_wamas_ubl/tests/samples/SIMULATEWAMAS-SAMPLE_OUTPUT-EXCEPTION.txt",
             "fail",
         )
+
+    @freeze_time("2023-12-21 04:12:51")
+    def test_get_wamas_type(self):
+        input_filename = "CHECKWAMAS-SAMPLE_INPUT.wamas"
+        expected_output_filename = "CHECKWAMAS-SAMPLE_OUTPUT.dict"
+        path = "base_wamas_ubl/tests/samples/"
+        with file_open(path + input_filename) as inputfile, file_open(
+            path + expected_output_filename
+        ) as outputfile:
+            str_input = inputfile.read()
+            dict_expected_output = literal_eval(outputfile.read())
+            wamas_type = self.base_wamas_ubl.get_wamas_type(str_input)
+            # Wamas Type
+            self.assertEqual(wamas_type, dict_expected_output["wamas_type"])

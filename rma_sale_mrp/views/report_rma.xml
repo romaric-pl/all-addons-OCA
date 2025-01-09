@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <template id="report_rma_document" inherit_id="rma_sale.report_rma_document">
-        <xpath expr="//div[@id='product_information']" position="after">
+        <xpath expr="//table" position="after">
             <t t-if="doc.sudo().phantom_bom_product">
                 <strong class="d-block mt32 mb-1">Kit information</strong>
                 <div class="row mb32" id="kit_information">

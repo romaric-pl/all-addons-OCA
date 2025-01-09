@@ -1,6 +1,6 @@
 {
     "name": "Unittest xUnit reports",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "depends": ["base"],
     "author": "Smile, Odoo Community Association (OCA)",
     "license": "AGPL-3",
@@ -10,7 +10,6 @@
     "website": "https://github.com/OCA/server-tools",
     "category": "Tools",
     "sequence": 20,
-    "auto_install": True,
     "installable": True,
     "application": False,
     "external_dependencies": {

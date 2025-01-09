@@ -107,6 +107,7 @@ msgstr ""
 #. module: fetchmail_attach_from_folder
 #. odoo-python
 #: code:addons/fetchmail_attach_from_folder/models/fetchmail_server.py:0
+#: code:addons/fetchmail_attach_from_folder/models/fetchmail_server.py:0
 #, python-format
 msgid "Confirm connection first."
 msgstr ""

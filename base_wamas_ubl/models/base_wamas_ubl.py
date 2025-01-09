@@ -44,8 +44,8 @@ class BaseWamasUbl(models.AbstractModel):
         return detect_wamas_type(str_file)
 
     @api.model
-    def wamas2wamas(self, str_file):
-        return wamas2wamas(str_file)
+    def wamas2wamas(self, str_file, partial_qty=False):
+        return wamas2wamas(str_file, partial_qty=partial_qty)
 
     @api.model
     def record_data_to_wamas(self, data, msg_type):

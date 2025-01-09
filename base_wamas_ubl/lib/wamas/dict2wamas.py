@@ -6,6 +6,8 @@ import logging
 from ast import literal_eval
 from pprint import pformat
 
+from freezegun import freeze_time
+
 from . import const, utils
 
 _logger = logging.getLogger("json2wamas")
@@ -60,6 +62,7 @@ def dict2wamas(dict_input, msg_type):
     return wamas
 
 
+@freeze_time("2024-02-11 22:14:22")
 def main():
     parser = argparse.ArgumentParser(
         description="Converts JSON document into message.",

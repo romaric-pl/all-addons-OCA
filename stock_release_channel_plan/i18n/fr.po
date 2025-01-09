@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-28 16:02+0000\n"
-"PO-Revision-Date: 2024-03-28 13:07+0000\n"
-"Last-Translator: Bejaoui Souheil <souheil_bejaoui@hotmail.fr>\n"
+"PO-Revision-Date: 2025-01-06 15:06+0000\n"
+"Last-Translator: samibc2c <sami.bouzidi@camptocamp.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_preparation_plan__active
@@ -41,49 +41,49 @@ msgstr "Confirmer"
 #. module: stock_release_channel_plan
 #: model:ir.model,name:stock_release_channel_plan.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_plan_wizard_launch__create_uid
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_preparation_plan__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Créé par"
 
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_plan_wizard_launch__create_date
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_preparation_plan__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Créé le"
 
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_plan_wizard_launch__display_name
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_preparation_plan__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nom affiché"
 
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_plan_wizard_launch__id
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_preparation_plan__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_plan_wizard_launch____last_update
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_preparation_plan____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Dernière modification le"
 
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_plan_wizard_launch__write_uid
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_preparation_plan__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Dernière mise à jour par"
 
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_plan_wizard_launch__write_date
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_preparation_plan__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Dernière mise à jour le"
 
 #. module: stock_release_channel_plan
 #: model_terms:ir.ui.view,arch_db:stock_release_channel_plan.stock_release_channel_preparation_plan_form_view
@@ -127,23 +127,23 @@ msgstr "Canaux de livraisons"
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_stock_release_channel_preparation_plan__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Séquence"
 
 #. module: stock_release_channel_plan
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_res_partner__stock_release_channel_delivery_weekday_ids
 #: model:ir.model.fields,field_description:stock_release_channel_plan.field_res_users__stock_release_channel_delivery_weekday_ids
 msgid "Stock Release Channel Delivery Weekday"
-msgstr ""
+msgstr "Jours ouvrables du canal de livraison"
 
 #. module: stock_release_channel_plan
 #: model:ir.model,name:stock_release_channel_plan.model_stock_release_channel_plan_wizard_launch
 msgid "Stock Release Channel Plan Launch Wizard"
-msgstr ""
+msgstr "Assistant du plan de lancement du canal de livraison"
 
 #. module: stock_release_channel_plan
 #: model:ir.model,name:stock_release_channel_plan.model_stock_release_channel_preparation_plan
 msgid "Stock Release Channel Preparation Plan"
-msgstr ""
+msgstr "Plan de préparation du canal de livraison"
 
 #. module: stock_release_channel_plan
 #: model:ir.model,name:stock_release_channel_plan.model_stock_release_channel
