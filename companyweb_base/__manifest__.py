@@ -8,7 +8,7 @@
     ),
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-belgium",
-    "version": "15.0.1.0.5",
+    "version": "15.0.1.0.6",
     "development_status": "Production/Stable",
     "license": "AGPL-3",
     "installable": True,
@@ -24,6 +24,8 @@
     "external_dependencies": {
         "python": [
             "zeep",
+            "freezegun",
+            "vcrpy-unittest",
         ],
     },
     # Wait for meb-notify to be migrated in 15

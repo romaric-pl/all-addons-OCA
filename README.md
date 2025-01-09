@@ -164,14 +164,11 @@ Date:   Wed May 1 19:37:21 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit eda53b2b22da501ceadfdc3c47e40af0497ed160
-Merge: b2b813ef 56a968c2
+commit 1862fc0101652e35a1ced00adf0cd521c9878fcd
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 29 14:16:15 2024 +0000
+Date:   Thu Jan 9 08:32:31 2025 +0000
 
-    Merge PR #405 into 15.0
-    
-    Signed-off-by Shide
+    [BOT] post-merge updates
 
 
 ## data-protection
@@ -681,11 +678,11 @@ Date:   Wed May 1 18:19:06 2024 +0000
 
 ## l10n-belgium
 From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
-commit 3ea4a4992917d80b59720c6661c09efd88e0921d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:19:36 2024 +0000
+commit 8b752a02d213bb70eed8cabbb68ec5fd770ce80b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 6 13:43:58 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-cambodia
@@ -974,16 +971,11 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit aaab2706b96a81a63dd6e84a9b5184161147c6a6
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jan 3 12:02:46 2025 +0000
+commit c1687375f65ad39fa8c4f4503795c59216f05495
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jan 8 21:36:42 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod390
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod390/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1242,9 +1234,9 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 3013566e9efa697fa8f1a6140e839d733e8281d9
+commit b292a8785a910fa03bf718cfa190f91870de5f3f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 17 22:21:56 2024 +0000
+Date:   Wed Jan 8 22:14:27 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1338,11 +1330,16 @@ Date:   Wed May 1 18:54:33 2024 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 30042d55b245efed62a640f0a045e2b8583026f8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 20 16:41:32 2024 +0000
+commit 5bc0c40205919a7aed902830a9a0a11a219936c5
+Author: Víctor Martínez <victor.martinez@tecnativa.com>
+Date:   Thu Jan 9 11:13:40 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (334 of 334 strings)
+    
+    Translation: contract-15.0/contract-15.0-contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-15-0/contract-15-0-contract/es/
 
 
 ## program
