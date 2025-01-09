@@ -385,6 +385,20 @@ class OverdueReminderStep(models.TransientModel):
     def _reminder_type_selection(self):
         return self.env["overdue.reminder.action"]._reminder_type_selection()
 
+    # Fix bug:
+    # When removing a invoice in the interface the field "mail_body" is recomputed in
+    # "onchange mode". This mean that the field "invoice_ids" have New Record (NewId)
+    # instead of real record. The issue is that the field "amount_residual" do
+    # not work with New Record due to "if line.id" here:
+    # https://github.com/odoo/odoo/blob/cc0060e889603eb2e47fa44a8a22a70d7d784185
+    # /addons/account/models/account_move.py#L4029
+    # And so the amount_residual will be always be recomputed by the onchange to 0
+
+    # To avoid this issue we force in the template to use real invoices(get_invoices())
+
+    def get_invoices(self):
+        return self.env["account.move"].browse(self.invoice_ids.ids)
+
     @api.depends("invoice_ids", "user_id", "partner_id")
     def _compute_counter_and_mail(self):
         xmlid = self._get_overdue_invoice_reminder_template()

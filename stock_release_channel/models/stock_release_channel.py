@@ -386,7 +386,7 @@ class StockReleaseChannel(models.Model):
                     + values[f"{prefix}_picking_released"]
                     + values[f"{prefix}_picking_done"]
                 )
-            record.write(values)
+            record.update(values)
 
     def _query_get_chain(self, pickings):
         """Get all stock.picking before an outgoing one

@@ -900,7 +900,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_credit_control](account_credit_control/) | 14.0.1.5.0 |  | Account Credit Control
 [account_financial_risk](account_financial_risk/) | 14.0.2.2.1 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Manage customer risk
-[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 14.0.1.5.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simple mail/letter/phone overdue customer invoice reminder
+[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 14.0.1.5.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simple mail/letter/phone overdue customer invoice reminder
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show warning on customer form view if it has overdue invoices
 [account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show overdue warning on sale order form view
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 14.0.1.0.0 |  | Partner Payment Return Risk
@@ -6671,7 +6671,7 @@ addon | version | maintainers | summary
 [stock_reception_screen](stock_reception_screen/) | 14.0.1.1.0 |  | Dedicated screen to receive/scan goods.
 [stock_reception_screen_measuring_device](stock_reception_screen_measuring_device/) | 14.0.1.0.0 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) | Allow to use a measuring device from a reception screen.for packaging measurement
 [stock_reception_screen_qty_by_packaging](stock_reception_screen_qty_by_packaging/) | 14.0.1.1.0 |  | Glue module for `stock_product_qty_by_packaging` and `stock_vertical_lift`.
-[stock_release_channel](stock_release_channel/) | 14.0.2.3.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
+[stock_release_channel](stock_release_channel/) | 14.0.2.3.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
 [stock_service_level](stock_service_level/) | 14.0.1.0.1 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Manage stock route by service level
 [stock_service_level_route](stock_service_level_route/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Manage stock rules/routes by service level
 [stock_storage_type](stock_storage_type/) | 14.0.1.12.2 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Manage packages and locations storage types
@@ -8148,7 +8148,7 @@ addon | version | maintainers | summary
 [kpi_dashboard_bokeh](kpi_dashboard_bokeh/) | 14.0.1.0.0 |  | Create dashboards using bokeh
 [report_async](report_async/) | 14.0.1.1.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Central place to run reports live or async
 [report_context](report_context/) | 14.0.1.0.3 |  | Adding context to reports
-[report_csv](report_csv/) | 14.0.1.0.0 |  | Base module to create csv report
+[report_csv](report_csv/) | 14.0.1.1.0 |  | Base module to create csv report
 [report_fillpdf](report_fillpdf/) | 14.0.1.0.1 |  | Base module that fills PDFs
 [report_label](report_label/) | 14.0.1.0.3 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Print configurable self-adhesive labels reports
 [report_layout_config](report_layout_config/) | 14.0.1.0.1 |  | Add possibility to easily modify the global report layout

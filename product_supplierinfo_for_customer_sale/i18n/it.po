@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-15 14:31+0000\n"
-"PO-Revision-Date: 2024-05-15 10:38+0000\n"
+"PO-Revision-Date: 2025-01-07 12:06+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2014-05-28 05:52+0000\n"
 
 #. module: product_supplierinfo_for_customer_sale
@@ -67,12 +67,12 @@ msgstr "Codice prodotto cliente"
 #. module: product_supplierinfo_for_customer_sale
 #: model_terms:ir.ui.view,arch_db:product_supplierinfo_for_customer_sale.sale_order_customerinfo_view_search
 msgid "Product Customer Info"
-msgstr ""
+msgstr "Info prodotto cliente"
 
 #. module: product_supplierinfo_for_customer_sale
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_sale_order_line__product_customer_name
 msgid "Product Customer Name"
-msgstr ""
+msgstr "Nome prodotto cliente"
 
 #. module: product_supplierinfo_for_customer_sale
 #: model:ir.ui.menu,name:product_supplierinfo_for_customer_sale.menu_product_customerinfo

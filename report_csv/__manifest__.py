@@ -6,10 +6,10 @@
     "author": "Creu Blanca, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/reporting-engine",
     "category": "Reporting",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.1.0",
     "license": "AGPL-3",
     "depends": ["base", "web"],
-    "data": ["views/webclient_templates.xml"],
+    "data": ["views/webclient_templates.xml", "views/ir_actions_views.xml"],
     "demo": ["demo/report.xml"],
     "installable": True,
 }

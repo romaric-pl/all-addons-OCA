@@ -41,7 +41,7 @@
         <th style="padding: 5px; border: 1px solid black;">Residual</th>
         <th style="padding: 5px; border: 1px solid black;">Past Reminders</th>
     </tr>
-% for inv in object.invoice_ids.sorted(key='invoice_date'):
+% for inv in object.get_invoices().sorted(key='invoice_date'):
     <tr style="background-color:
         % if inv.move_type == 'out_refund':
             LightGray

@@ -166,11 +166,16 @@ Date:   Fri Aug 30 07:38:30 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit b82d2029f54252023ba01937105181ae45e24bdb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 10 10:38:22 2024 +0000
+commit 3ac084ffd9336307b2553e989d737c1834571299
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Jan 6 09:11:00 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: credit-control-14.0/credit-control-14.0-account_invoice_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-14-0/credit-control-14-0-account_invoice_overdue_reminder/
 
 
 ## data-protection
@@ -356,16 +361,16 @@ Date:   Wed May 1 18:02:11 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit f3d1eda73cde4dc1b205b83060b7c385889a9d62
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Dec 24 11:07:25 2024 +0000
+commit 17886145c5cd593f7608a93ec214e9ec3dcd72db
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Tue Jan 7 09:35:42 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (18 of 18 strings)
     
     Translation: sale-workflow-14.0/sale-workflow-14.0-product_supplierinfo_for_customer_sale
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-product_supplierinfo_for_customer_sale/
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-product_supplierinfo_for_customer_sale/it/
 
 
 ## crm
@@ -475,25 +480,20 @@ Date:   Tue Aug 6 18:47:04 2024 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit b5f3bc27c223b639028887647553b9232c1df803
+commit 1af041a9fe9b28cdd3a58aabb816366b9264cb63
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 19 07:32:54 2024 +0000
+Date:   Wed Jan 8 11:56:13 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (2 of 2 strings)
-    
-    Translation: e-commerce-14.0/e-commerce-14.0-website_sale_product_item_cart_custom_qty
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_product_item_cart_custom_qty/it/
+    Added translation using Weblate (Italian)
 
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 04ee2bac5d9c06808221174db3999e843366acc4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 5 06:04:22 2024 +0000
+commit e49e3e5357171bae412054457b82d48b367186d4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jan 8 08:07:30 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## field-service
@@ -611,9 +611,9 @@ Date:   Wed May 1 17:59:33 2024 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit bf084e4b59df5788d0c2b18b12b06ebc44758633
+commit 6873881d2f2b54b2b7deb25df022fce917485294
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Jan 5 19:11:59 2025 +0000
+Date:   Mon Jan 6 09:41:30 2025 +0000
 
     Added translation using Weblate (Italian)
 
@@ -1040,11 +1040,11 @@ Date:   Wed May 1 18:41:29 2024 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 85abe2ce944dcebb7e14843e0540b18dbd627026
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 11 08:38:10 2024 +0000
+commit ec38bc73a9197311c8d02986a9b1d10e8cefa6e2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 9 14:39:12 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## stock-logistics-barcode
@@ -1127,9 +1127,9 @@ Date:   Tue Dec 3 08:19:04 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit cd821819a8b450e9819ef17b23b4460b47b0b122
+commit 1c6f6a8670f4fa49261a467f360556de47d8f110
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 18 13:24:44 2024 +0000
+Date:   Thu Jan 9 11:46:37 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1266,16 +1266,11 @@ Date:   Wed May 1 18:54:23 2024 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit c94cd2770fdc711568ccfa299aa17c3c54976cd5
+commit d84c6102125b80f67ca3a91dfcc901f98b31606b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 10 15:19:30 2024 +0000
+Date:   Thu Jan 9 16:33:02 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (200 of 200 strings)
-    
-    Translation: contract-14.0/contract-14.0-subscription_oca
-    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-subscription_oca/it/
+    Added translation using Weblate (Italian)
 
 
 ## program
@@ -1343,11 +1338,16 @@ Date:   Wed May 1 19:03:38 2024 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 87490a2b6482bebcd66a0bfe3f5fdd8370d0ae7e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 19 15:50:34 2024 +0000
+commit 74203c8c81eeb81ba4713ad2c8c3c3d467463d8e
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Jan 6 12:27:48 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: reporting-engine-14.0/reporting-engine-14.0-report_csv
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-14-0/reporting-engine-14-0-report_csv/
 
 
 ## report-print-send
