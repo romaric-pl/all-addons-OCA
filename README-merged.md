@@ -2647,7 +2647,7 @@ addon | version | maintainers | summary
 [l10n_be_mis_reports_xml](l10n_be_mis_reports_xml/) | 12.0.1.0.1 |  | Exports MIS Builder templates VAT Declaration as XML to load on the administration websites.
 [l10n_be_national_number](l10n_be_national_number/) | 12.0.1.0.0 | [![victor-champonnois](https://github.com/victor-champonnois.png?size=30px)](https://github.com/victor-champonnois) | Belgian National Number
 [l10n_be_partner_kbo_bce](l10n_be_partner_kbo_bce/) | 12.0.1.0.1 |  | Belgium - KBO/BCE numbers
-[l10n_be_vat_reports](l10n_be_vat_reports/) | 12.0.2.0.2 |  | Belgium VAT Reports
+[l10n_be_vat_reports](l10n_be_vat_reports/) | 12.0.2.0.3 |  | Belgium VAT Reports
 
 [//]: # (end addons)
 
@@ -5363,6 +5363,7 @@ addon | version | maintainers | summary
 [report_context](report_context/) | 12.0.1.0.0 |  | Adding context to reports
 [report_csv](report_csv/) | 12.0.1.0.1 |  | Base module to create csv report
 [report_label](report_label/) | 12.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Print configurable self-adhesive labels reports
+[report_pdf_zip_download](report_pdf_zip_download/) | 12.0.1.0.0 |  | Report PDF ZIP Download
 [report_py3o](report_py3o/) | 12.0.2.1.2 |  | Reporting engine based on Libreoffice (ODT -> ODT, ODT -> PDF, ODT -> DOC, ODT -> DOCX, ODS -> ODS, etc.)
 [report_py3o_fusion_server](report_py3o_fusion_server/) | 12.0.1.0.2 |  | Let the fusion server handle format conversion.
 [report_qr](report_qr/) | 12.0.1.1.0 |  | Web QR Manager

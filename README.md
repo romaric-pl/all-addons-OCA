@@ -421,16 +421,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit b99a29f6cb5050d0f6bdca87feb95f6e96857e8e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jan 4 13:06:39 2025 +0000
+commit 32ca9879e1154eb470ef85a1097f1ecc78ce4bb5
+Author: Sergio Corato <sergiocorato@gmail.com>
+Date:   Wed Jan 8 14:09:43 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (14 of 14 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_secondary_unit
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_secondary_unit/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_revision
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_revision/it/
 
 
 ## crm
@@ -542,16 +542,11 @@ Date:   Wed Dec 4 08:46:18 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit af2ab354e354cf403340e929772ba2d3d5a721c0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 29 08:13:04 2024 +0000
+commit 688eb9542f66f6f3060b4b833fee46237c95a888
+Author: Eugeni Chafer <eugeni@chafer.cat>
+Date:   Thu Jan 9 08:47:48 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (334 of 334 strings)
-    
-    Translation: dms-12.0/dms-12.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-12-0/dms-12-0-dms/it/
+    Added translation using Weblate (Catalan)
 
 
 ## e-commerce
@@ -722,11 +717,11 @@ Date:   Tue Nov 19 21:02:16 2019 +0100
 
 ## l10n-belgium
 From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
-commit 3f31bab4d4f2611ba15cfa348a22fba5f34b19ee
+commit dd7d85144c6fdbde0cebef286733e4592ec462c9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 3 13:22:07 2023 +0000
+Date:   Mon Jan 6 15:00:00 2025 +0000
 
-    [UPD] README.rst
+    [BOT] post-merge updates
 
 
 ## l10n-canada
@@ -1432,16 +1427,11 @@ Date:   Sun Sep 3 16:31:08 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit e685488476fa6248b43d6151b8df29bce9875b64
-Author: Weblate <noreply@weblate.org>
-Date:   Sun Jul 7 08:57:16 2024 +0000
+commit 4590a3f50c92001c919890782741aea01163bf41
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 6 12:14:32 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: reporting-engine-12.0/reporting-engine-12.0-report_async
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-12-0/reporting-engine-12-0-report_async/
+    [BOT] post-merge updates
 
 
 ## report-print-send

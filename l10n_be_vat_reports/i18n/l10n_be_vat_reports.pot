@@ -74,7 +74,7 @@ msgstr ""
 #. module: l10n_be_vat_reports
 #: code:addons/l10n_be_vat_reports/wizard/partner_vat_list_client.py:32
 #, python-format
-msgid "Belgian Intervat platform only accepts VAT numbers matching this pattern: 0[1-9]{1}[0-9]{8} (number part). Check vat number %s for client %s"
+msgid "Belgian Intervat platform only accepts VAT numbers matching this pattern: [0-1][0-9]{9} (number part). Check vat number %s for client %s"
 msgstr ""
 
 #. module: l10n_be_vat_reports
@@ -265,20 +265,20 @@ msgid "No VAT number associated with your company."
 msgstr ""
 
 #. module: l10n_be_vat_reports
-#: code:addons/l10n_be_vat_reports/wizard/partner_vat_list.py:74
+#: code:addons/l10n_be_vat_reports/wizard/partner_vat_list.py:76
 #, python-format
 msgid "No belgium contact with a VAT number in your database."
 msgstr ""
 
 #. module: l10n_be_vat_reports
-#: code:addons/l10n_be_vat_reports/wizard/partner_vat_list.py:150
+#: code:addons/l10n_be_vat_reports/wizard/partner_vat_list.py:154
 #, python-format
 msgid "No data found for the selected year."
 msgstr ""
 
 #. module: l10n_be_vat_reports
 #: code:addons/l10n_be_vat_reports/wizard/l10n_be_vat_intra.py:442
-#: code:addons/l10n_be_vat_reports/wizard/partner_vat_list.py:184
+#: code:addons/l10n_be_vat_reports/wizard/partner_vat_list.py:188
 #, python-format
 msgid "No record to print."
 msgstr ""
@@ -507,7 +507,7 @@ msgid "Vat Intra Client"
 msgstr ""
 
 #. module: l10n_be_vat_reports
-#: code:addons/l10n_be_vat_reports/wizard/partner_vat_list.py:162
+#: code:addons/l10n_be_vat_reports/wizard/partner_vat_list.py:166
 #, python-format
 msgid "Vat Listing"
 msgstr ""
