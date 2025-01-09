@@ -9,11 +9,10 @@
         <field name="arch" type="xml">
 
             <xpath expr="//form[hasclass('oe_form_configuration')]" position="inside">
-                <div
-                    class="app_settings_block"
+                <app
                     data-string="Management System"
                     string="Management System"
-                    data-key="mgmtsystem"
+                    name="mgmtsystem"
                     groups="mgmtsystem.group_mgmtsystem_user_manager"
                 >
 
@@ -319,7 +318,7 @@
 
                     </div>
 
-                </div>
+                </app>
             </xpath>
         </field>
     </record>

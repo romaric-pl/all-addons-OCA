@@ -55,6 +55,14 @@ class TestAEP(common.TransactionCase):
                 "account_type": "income",
             }
         )
+        self.account_in_no_data = self.account_model.create(
+            {
+                "company_id": self.company.id,
+                "code": "700INNODATA",
+                "name": "Income (no data)",
+                "account_type": "income",
+            }
+        )
         # create journal
         self.journal = self.journal_model.create(
             {
@@ -103,6 +111,7 @@ class TestAEP(common.TransactionCase):
         self.aep.parse_expr("crdp[700I%]")
         self.aep.parse_expr("bali[400%]")
         self.aep.parse_expr("bale[700%]")
+        self.aep.parse_expr("balp[700I%]")
         self.aep.parse_expr("fldp.quantity[700%]")
         self.aep.parse_expr("balp[]" "[('account_id.code', '=', '400AR')]")
         self.aep.parse_expr(
@@ -306,6 +315,17 @@ class TestAEP(common.TransactionCase):
         end = self._eval_by_account_id("bale[]")
         self.assertEqual(end, {self.account_ar.id: 900, self.account_in.id: -800})
 
+    def test_aep_by_account_no_data(self):
+        """Test that accounts with no data are not returned."""
+        self.aep.done_parsing()
+        self._do_queries(
+            datetime.date(self.curr_year, 3, 1), datetime.date(self.curr_year, 3, 31)
+        )
+        variation = self._eval("balp[700I%]")
+        self.assertEqual(variation, -500)
+        variation_by_account = self._eval_by_account_id("balp[700I%]")
+        self.assertEqual(variation_by_account, {self.account_in.id: -500})
+
     def test_aep_convenience_methods(self):
         initial = AEP.get_balances_initial(self.company, time.strftime("%Y") + "-03-01")
         self.assertEqual(
@@ -358,10 +378,13 @@ class TestAEP(common.TransactionCase):
         self.assertEqual(account_ids, {self.account_in.id})
         expr = "balp[700%]"
         account_ids = self.aep.get_account_ids_for_expr(expr)
-        self.assertEqual(account_ids, {self.account_in.id})
+        self.assertEqual(account_ids, {self.account_in.id, self.account_in_no_data.id})
         expr = "bali[400%], bale[700%]"  # subkpis combined expression
         account_ids = self.aep.get_account_ids_for_expr(expr)
-        self.assertEqual(account_ids, {self.account_in.id, self.account_ar.id})
+        self.assertEqual(
+            account_ids,
+            {self.account_in.id, self.account_ar.id, self.account_in_no_data.id},
+        )
 
     def test_get_aml_domain_for_expr(self):
         self.aep.done_parsing()

@@ -56,6 +56,13 @@ class Accumulator:
             custom_field: AccountingNone for custom_field in custom_field_names
         }
 
+    def has_data(self):
+        return (
+            self.debit is not AccountingNone
+            or self.credit is not AccountingNone
+            or any(v is not AccountingNone for v in self.custom_fields.values())
+        )
+
     def add_debit_credit(self, debit, credit):
         self.debit += debit
         self.credit += credit
@@ -579,7 +586,7 @@ class AccountingExpressionProcessor:
                 key = (ml_domain, mode)
                 account_ids_data = self._data[key]
                 for account_id in self._account_ids_by_acc_domain[acc_domain]:
-                    if account_id in account_ids_data:
+                    if account_ids_data[account_id].has_data():
                         account_ids.add(account_id)
 
         for account_id in account_ids:

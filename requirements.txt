@@ -93,7 +93,9 @@ python-dateutil
 # From [https://github.com/OCA/l10n-belarus.git](https://github.com/OCA/l10n-belarus.git)
 # From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
 # generated from manifests external_dependencies
+freezegun
 pycoda
+vcrpy-unittest
 zeep
 # From [https://github.com/OCA/l10n-cambodia.git](https://github.com/OCA/l10n-cambodia.git)
 # From [https://github.com/OCA/l10n-canada.git](https://github.com/OCA/l10n-canada.git)

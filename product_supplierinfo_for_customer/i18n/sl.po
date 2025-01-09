@@ -273,7 +273,7 @@ msgstr ""
 
 #. module: product_supplierinfo_for_customer
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer.field_product_customerinfo__sale_margin
-msgid "Sale Margin"
+msgid "Sale Margin (%)"
 msgstr ""
 
 #. module: product_supplierinfo_for_customer
