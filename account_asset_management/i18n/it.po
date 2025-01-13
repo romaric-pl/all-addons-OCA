@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: account-financial-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-10 23:23+0000\n"
-"PO-Revision-Date: 2024-11-18 22:06+0000\n"
+"PO-Revision-Date: 2025-01-12 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/"
 "OCA-account-financial-tools-8-0/language/it/)\n"
@@ -335,7 +335,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__days_calc
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset_profile__days_calc
 msgid "Calculate by days"
-msgstr "Calcolo per giorni"
+msgstr "Calcola per giorni"
 
 #. module: account_asset_management
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_compute_view_form
@@ -1672,7 +1672,7 @@ msgstr "Vedi registrazioni cespiti"
 #. module: account_asset_management
 #: model_terms:ir.ui.view,arch_db:account_asset_management.account_asset_view_form
 msgid "View Move"
-msgstr "Vedi movimenti"
+msgstr "Vedi movimento"
 
 #. module: account_asset_management
 #: model:ir.model.fields,field_description:account_asset_management.field_account_asset__website_message_ids

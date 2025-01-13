@@ -1,0 +1,81 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_product_characterisation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-01-11 13:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: mrp_product_characterisation
+#: model_terms:ir.ui.view,arch_db:mrp_product_characterisation.view_mrp_bom_search
+msgid "BoM for finished product"
+msgstr "DiBa per prodotto finito"
+
+#. module: mrp_product_characterisation
+#: model_terms:ir.ui.view,arch_db:mrp_product_characterisation.view_mrp_bom_search
+msgid "BoM for intermediate product"
+msgstr "DiBa per propdotto intermedio"
+
+#. module: mrp_product_characterisation
+#: model_terms:ir.ui.view,arch_db:mrp_product_characterisation.view_mrp_product_product_search
+#: model_terms:ir.ui.view,arch_db:mrp_product_characterisation.view_mrp_product_template_search
+msgid "Components Products"
+msgstr "Prodotti componenti"
+
+#. module: mrp_product_characterisation
+#: model_terms:ir.ui.view,arch_db:mrp_product_characterisation.view_mrp_product_product_search
+#: model_terms:ir.ui.view,arch_db:mrp_product_characterisation.view_mrp_product_template_search
+msgid "Intermediates Products"
+msgstr "Prodotti intermedi"
+
+#. module: mrp_product_characterisation
+#: model:ir.model.fields,field_description:mrp_product_characterisation.field_product_product__is_component
+#: model:ir.model.fields,field_description:mrp_product_characterisation.field_product_template__is_component
+msgid "Is Component"
+msgstr "È componente"
+
+#. module: mrp_product_characterisation
+#: model:ir.model.fields,field_description:mrp_product_characterisation.field_product_product__is_intermediate
+#: model:ir.model.fields,field_description:mrp_product_characterisation.field_product_template__is_intermediate
+msgid "Is Intermediate"
+msgstr "È intermedio"
+
+#. module: mrp_product_characterisation
+#: model:ir.model.fields,help:mrp_product_characterisation.field_product_product__is_component
+#: model:ir.model.fields,help:mrp_product_characterisation.field_product_template__is_component
+msgid ""
+"Is component a product which has no BoM based on it +              is used "
+"in a BoM line"
+msgstr ""
+"È componente di un prodotto che non ha DiBa basata su esso +              è "
+"utilizzato un una riga DiBa"
+
+#. module: mrp_product_characterisation
+#: model:ir.model.fields,help:mrp_product_characterisation.field_product_product__is_intermediate
+#: model:ir.model.fields,help:mrp_product_characterisation.field_product_template__is_intermediate
+msgid ""
+"Is intermediate a product which has a BoM based on it +              is used"
+" in a BoM line"
+msgstr ""
+"È intermedio di un prodotto che non ha DiBa basata su esso +              è "
+"utilizzato un una riga DiBa"
+
+#. module: mrp_product_characterisation
+#: model:ir.model,name:mrp_product_characterisation.model_product_template
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: mrp_product_characterisation
+#: model:ir.model,name:mrp_product_characterisation.model_product_product
+msgid "Product Variant"
+msgstr "Variante prodotto"

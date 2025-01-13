@@ -65,6 +65,11 @@ msgid "Invoices where validation has not started"
 msgstr ""
 
 #. module: account_move_tier_validation
+#: model:ir.model.fields,field_description:account_move_tier_validation.field_account_move__is_reevaluation_required
+msgid "Is Reevaluation Required"
+msgstr ""
+
+#. module: account_move_tier_validation
 #: model:ir.model,name:account_move_tier_validation.model_account_move
 msgid "Journal Entry"
 msgstr ""

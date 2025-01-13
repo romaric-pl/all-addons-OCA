@@ -44,6 +44,7 @@
                             <div
                                 class="alert alert-warning"
                                 role="alert"
+                                colspan="2"
                                 attrs="{'invisible': [('no_header', '=', False)]}"
                             >
                                 <span

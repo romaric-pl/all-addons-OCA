@@ -54,3 +54,20 @@ class TestAccountChartUpdate(TestAccountChartUpdateCommon):
         lang_model = self.env["res.lang"]
         lang_model.search([("code", "=", "en_US")]).write({"active": False})
         self.test_update_taxes()
+
+    def test_update_fiscal_position(self):
+        """Fiscal position without translations should not be taking into
+        account of being translated."""
+        self.fp_template.note = ""
+        wizard = self.wizard_obj.create(self.wizard_vals)
+        wizard.action_find_records()
+        wizard.action_update_records()
+        new_fp = self.env["account.fiscal.position"].search(
+            [
+                ("name", "=", self.fp_template.name),
+                ("company_id", "=", self.company.id),
+            ]
+        )
+        self.assertEqual(new_fp.with_context(lang="en_US").note, self.fp_template.note)
+        self.assertEqual(new_fp.with_context(lang="es_ES").note, self.fp_template.note)
+        self.assertEqual(new_fp.with_context(lang="fr_FR").note, self.fp_template.note)

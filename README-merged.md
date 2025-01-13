@@ -252,7 +252,7 @@ addon | version | maintainers | summary
 [account_cash_deposit](account_cash_deposit/) | 16.0.1.2.0 |  | Manage cash deposits and cash orders
 [account_chart_update](account_chart_update/) | 16.0.2.0.8 |  | Wizard to update a company's account chart from a template
 [account_chart_update_l10n_eu_oss_oca](account_chart_update_l10n_eu_oss_oca/) | 16.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Account Chart update OSS OCA
-[account_chart_update_multilang](account_chart_update_multilang/) | 16.0.1.0.2 | [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Update tax and fiscal position templates with multilang
+[account_chart_update_multilang](account_chart_update_multilang/) | 16.0.1.0.3 | [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Update tax and fiscal position templates with multilang
 [account_fiscal_month](account_fiscal_month/) | 16.0.1.1.0 |  | Provide a fiscal month date range type
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 16.0.1.1.0 |  | Check VAT on invoice validation
 [account_fiscal_year](account_fiscal_year/) | 16.0.1.2.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Create Account Fiscal Year
@@ -444,6 +444,7 @@ addon | version | maintainers | summary
 [account_invoice_blocking](account_invoice_blocking/) | 16.0.1.0.1 |  | Set a blocking (No Follow-up) flag on invoices
 [account_invoice_change_currency](account_invoice_change_currency/) | 16.0.1.0.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![rolandojduartem](https://github.com/rolandojduartem.png?size=30px)](https://github.com/rolandojduartem) | Allows to change currency of Invoice by wizard
 [account_invoice_check_total](account_invoice_check_total/) | 16.0.1.0.0 |  | Check if the verification total is equal to the bill's total
+[account_invoice_clearing](account_invoice_clearing/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Account invoice clearing wizard
 [account_invoice_crm_tag](account_invoice_crm_tag/) | 16.0.1.0.0 |  | Account Invoice CRM Tag
 [account_invoice_currency_taxes](account_invoice_currency_taxes/) | 16.0.1.0.2 |  | Taxes in company currency in invoice report
 [account_invoice_default_code_column](account_invoice_default_code_column/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Display Default code product in a dedicated column on invoice reports
@@ -1009,7 +1010,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_in_payment](account_in_payment/) | 16.0.1.0.0 |  | This module enables in-payment mode for your accounting
-[account_mass_reconcile](account_mass_reconcile/) | 16.0.1.1.2 |  | Account Mass Reconcile
+[account_mass_reconcile](account_mass_reconcile/) | 16.0.1.1.3 |  | Account Mass Reconcile
 [account_move_base_import](account_move_base_import/) | 16.0.1.0.1 |  | Journal Entry base import
 [account_move_line_reconcile_manual](account_move_line_reconcile_manual/) | 16.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Manually reconcile Journal Items
 [account_move_reconcile_forbid_cancel](account_move_reconcile_forbid_cancel/) | 16.0.1.0.1 |  | Account Move Reconcile Forbid Cancel
@@ -1076,7 +1077,7 @@ addon | version | maintainers | summary
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 16.0.1.1.1 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_qonto](account_statement_import_online_qonto/) | 16.0.1.0.1 |  | Online Bank Statements: Qonto
 [account_statement_import_qif](account_statement_import_qif/) | 16.0.1.0.0 |  | Import QIF Bank Statements
-[account_statement_import_sheet_file](account_statement_import_sheet_file/) | 16.0.1.2.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
+[account_statement_import_sheet_file](account_statement_import_sheet_file/) | 16.0.1.2.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
 
 [//]: # (end addons)
 
@@ -3430,6 +3431,7 @@ addon | version | maintainers | summary
 [account_reconcile_model_multicompany_propagate](account_reconcile_model_multicompany_propagate/) | 16.0.1.2.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Propagate account reconcile model in companies with same chart template
 [base_multi_company](base_multi_company/) | 16.0.1.0.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Provides a base for adding multi-company support to models.
 [company_dependent_flag](company_dependent_flag/) | 16.0.1.0.2 |  | Apply css style to company dependent fields
+[ir_config_parameter_multi_company](ir_config_parameter_multi_company/) | 16.0.1.0.0 | [![deniscraciungabriel](https://github.com/deniscraciungabriel.png?size=30px)](https://github.com/deniscraciungabriel) [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add res company field in ir config parameter
 [mail_multicompany](mail_multicompany/) | 16.0.2.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Email Gateway Multi company
 [mail_template_multi_company](mail_template_multi_company/) | 16.0.1.0.0 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
 [partner_account_multicompany_default](partner_account_multicompany_default/) | 16.0.0.1.0 | [![camptocamp](https://github.com/camptocamp.png?size=30px)](https://github.com/camptocamp) | Set a default account for all companies of a partners
@@ -4526,7 +4528,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_out_sp](l10n_it_fatturapa_out_sp/) | 16.0.1.0.0 |  | Scissione pagamenti in fatturapa
 [l10n_it_fatturapa_out_stamp](l10n_it_fatturapa_out_stamp/) | 16.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Modulo ponte tra emissione fatture elettroniche e imposta di bollo
 [l10n_it_fatturapa_out_wt](l10n_it_fatturapa_out_wt/) | 16.0.1.0.1 |  | Modulo ponte tra emissione fatture elettroniche e ritenute.
-[l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 16.0.1.2.0 |  | Invio fatture elettroniche tramite PEC
+[l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 16.0.1.2.1 |  | Invio fatture elettroniche tramite PEC
 [l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 16.0.1.0.1 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
 [l10n_it_fatturapa_sdicoop](l10n_it_fatturapa_sdicoop/) | 16.0.1.1.0 |  | Invio fatture elettroniche tramite SDICoop
 [l10n_it_financial_statement_eu](l10n_it_financial_statement_eu/) | 16.0.1.0.1 | [![mktsrl](https://github.com/mktsrl.png?size=30px)](https://github.com/mktsrl) | ITA - Bilancio UE con XBRL
@@ -5189,15 +5191,15 @@ addon | version | maintainers | summary
 [l10n_es_account_asset](l10n_es_account_asset/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 16.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 16.0.1.0.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
-[l10n_es_aeat](l10n_es_aeat/) | 16.0.3.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
+[l10n_es_aeat](l10n_es_aeat/) | 16.0.3.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 16.0.1.1.0 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 16.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 16.0.2.2.0 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 16.0.1.0.0 |  | AEAT modelo 130
-[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.0.0 |  | AEAT modelo 190
+[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.0.1 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.1.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 16.0.1.1.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.9.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.10.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 16.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.8.0 |  | AEAT modelo 347
@@ -5209,7 +5211,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.2.0.0 |  | Force SII communication type on invoices
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 16.0.2.0.0 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 16.0.2.0.0 | [![Abranes](https://github.com/Abranes.png?size=30px)](https://github.com/Abranes) [![Reyes4711-S73](https://github.com/Reyes4711-S73.png?size=30px)](https://github.com/Reyes4711-S73) | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 16.0.2.4.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 16.0.2.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 16.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_aeat_sii_taxfree](l10n_es_aeat_sii_taxfree/) | 16.0.2.0.1 |  | Régimen Especial de Viajeros - SII
 [l10n_es_atc](l10n_es_atc/) | 16.0.1.0.1 |  | Modulo 'glue' de la AEAT para el menú de la ATC
@@ -6442,7 +6444,7 @@ addon | version | maintainers | summary
 [mrp_default_workorder_time](mrp_default_workorder_time/) | 16.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP default workorder time
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 16.0.1.0.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a serial number from a component to a finished product
 [mrp_lot_production_date](mrp_lot_production_date/) | 16.0.1.0.0 |  | MRP Lot Production Date
-[mrp_multi_level](mrp_multi_level/) | 16.0.1.5.5 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 16.0.1.5.7 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 16.0.1.1.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_packaging_default](mrp_packaging_default/) | 16.0.1.0.2 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Include packaging info in MRP by default
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 16.0.1.0.0 |  | Allows to create fixed planned orders on a grid view.
@@ -6714,7 +6716,7 @@ addon | version | maintainers | summary
 [purchase_line_procurement_group](purchase_line_procurement_group/) | 16.0.1.0.0 |  | Group purchase order line according to procurement group
 [purchase_location_by_line](purchase_location_by_line/) | 16.0.1.0.0 |  | Allows to define a specific destination location on each PO line
 [purchase_lot](purchase_lot/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Purchase Lot
-[purchase_manual_delivery](purchase_manual_delivery/) | 16.0.1.1.5 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
+[purchase_manual_delivery](purchase_manual_delivery/) | 16.0.2.0.1 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
 [purchase_merge](purchase_merge/) | 16.0.1.0.3 |  | Wizard to merge purchase with required conditions
 [purchase_no_rfq](purchase_no_rfq/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Purchase Order - No Request For Quotation
 [purchase_only_by_packaging](purchase_only_by_packaging/) | 16.0.1.0.1 |  | Manage purchase of packaging
@@ -6747,6 +6749,7 @@ addon | version | maintainers | summary
 [purchase_partner_incoterm](purchase_partner_incoterm/) | 16.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add a an incoterm field for supplier and use it on purchase order
 [purchase_partner_selectable_option](purchase_partner_selectable_option/) | 16.0.1.0.3 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Purchase Partner Selectable Option
 [purchase_product_packaging_container_deposit](purchase_product_packaging_container_deposit/) | 16.0.1.0.0 |  | Purchase Product Packaging Container Deposit
+[purchase_quick](purchase_quick/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Quick Purchase order
 [purchase_reception_status](purchase_reception_status/) | 16.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add reception status on purchase orders
 [purchase_reorder_control](purchase_reorder_control/) | 16.0.1.0.0 |  | Restrict reordering unpurchaseable product
 [purchase_request](purchase_request/) | 16.0.2.0.2 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
@@ -6765,7 +6768,7 @@ addon | version | maintainers | summary
 [purchase_tier_validation](purchase_tier_validation/) | 16.0.1.1.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_transport_mode](purchase_transport_mode/) | 16.0.1.1.0 |  | Purchase expection based on constraints
 [purchase_triple_discount](purchase_triple_discount/) | 16.0.2.0.0 |  | Manage triple discount on purchase order lines
-[purchase_vendor_promotion](purchase_vendor_promotion/) | 16.0.1.0.0 |  | Purchase Vendor Promotion
+[purchase_vendor_promotion](purchase_vendor_promotion/) | 16.0.1.0.1 |  | Purchase Vendor Promotion
 [purchase_warn_message](purchase_warn_message/) | 16.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
 [purchase_work_acceptance](purchase_work_acceptance/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Purchase Work Acceptance
 [sale_purchase_force_vendor](sale_purchase_force_vendor/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
@@ -8159,7 +8162,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_external_dbsource](base_external_dbsource/) | 16.0.1.0.1 |  | External Database Sources
-[base_external_dbsource_mssql](base_external_dbsource_mssql/) | 16.0.1.0.1 | [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | External Database Source - MSSQL
+[base_external_dbsource_mssql](base_external_dbsource_mssql/) | 16.0.1.1.0 | [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | External Database Source - MSSQL
 [base_external_dbsource_mysql](base_external_dbsource_mysql/) | 16.0.1.0.0 |  | External Database Source - MySQL
 [base_external_dbsource_sqlite](base_external_dbsource_sqlite/) | 16.0.1.0.2 | [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | External Database Source - SQLite
 [base_external_system](base_external_system/) | 16.0.1.0.0 |  | Data models allowing for connection to external systems.

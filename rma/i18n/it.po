@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-17 15:06+0000\n"
+"PO-Revision-Date: 2025-01-10 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -797,7 +797,7 @@ msgstr "Quantità consegnata fatta"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
 msgid "Delivered Quantity"
-msgstr ""
+msgstr "Quantità consegnata"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -1297,7 +1297,7 @@ msgstr "Origine consegna"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
 msgid "Origin delivery"
-msgstr ""
+msgstr "Origine consegna"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__move_id
