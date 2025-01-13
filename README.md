@@ -78,16 +78,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 57aecfe590a4ff65fcbeff9a6ed5606a9c5a08ae
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Nov 14 11:50:57 2024 +0000
+commit b0ac4d45deef7f135f544115a790fff37513e59a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Jan 12 12:34:03 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 27.4% (73 of 266 strings)
     
-    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_journal_restrict_mode
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_journal_restrict_mode/
+    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/it/
 
 
 ## account-financial-reporting
