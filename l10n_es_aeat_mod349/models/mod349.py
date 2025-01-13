@@ -229,6 +229,24 @@ class Mod349(models.Model):
                 origin_amount = sum(original_details.mapped("amount_untaxed"))
                 period_type = report.period_type
                 year = str(report.year)
+                # If there are intermediate periods between the original period
+                # and the period where the rectification is taking place, it's
+                # necessary to check if there is any rectification of the
+                # original period in between these periods. This happens in
+                # this way because the right original_amount will be the value
+                # of the total_operation_amount corresponding to the last
+                # period found in between the periods.
+                last_refund_detail = refund_detail_obj.search(
+                    [
+                        ("report_id.date_start", ">", report.date_end),
+                        ("report_id.date_end", "<", self.date_start),
+                        ("move_id", "in", origin_invoice.reversal_move_id.ids),
+                    ],
+                    order="date desc",
+                    limit=1,
+                )
+                if last_refund_detail:
+                    origin_amount = last_refund_detail.refund_id.total_operation_amount
             else:
                 # There's no previous 349 declaration report in Odoo
                 original_amls = move_line_obj.search(

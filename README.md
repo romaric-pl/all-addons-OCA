@@ -65,11 +65,16 @@ Date:   Wed May 1 17:43:19 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 522abe1aab318c37b6f3f6d5b82c90a0233e1284
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 15 11:54:24 2024 +0000
+commit 4547cc69694ad1b7675cd186aff50e662772d559
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Jan 12 12:34:04 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 26.7% (71 of 265 strings)
+    
+    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -971,9 +976,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit c1687375f65ad39fa8c4f4503795c59216f05495
+commit 9385edb45c13a22f8aeb45849bc5ba808dac334e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 8 21:36:42 2025 +0000
+Date:   Mon Jan 13 12:22:02 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1076,23 +1081,23 @@ Date:   Wed Dec 4 11:17:13 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 53850a5b582ffc28e14b4f3af0c9291b6cefa89c
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Dec 4 07:30:25 2024 +0000
+commit d24f2047804469b4b67cca472843516c3c4f2231
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jan 10 12:18:34 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 80.7% (248 of 307 strings)
     
     Translation: stock-logistics-barcode-15.0/stock-logistics-barcode-15.0-stock_barcodes
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-15-0/stock-logistics-barcode-15-0-stock_barcodes/
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-15-0/stock-logistics-barcode-15-0-stock_barcodes/it/
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 56a321f5b453367a5cd83ea13ce5f1a00a8c35a1
+commit 73336de80ab4b8a8a54e7c2566ab2747b9375faf
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 17 12:43:12 2024 +0000
+Date:   Fri Jan 10 12:27:43 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1113,16 +1118,11 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit aa506fef86b457bfc9d4677dec8c7e4c6f566f2d
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Dec 3 09:13:23 2024 +0000
+commit fed9a5418ad8b0fa30b20fbcd8f2d4fc2f6d36fb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 13 11:11:48 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1183,16 +1183,11 @@ Date:   Wed Dec 6 16:10:13 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 8bc5f0efe5d2ba405921a07fb35d130dceca28bf
-Author: Isneyler Mosquera Preciado <isneyler@gmail.com>
-Date:   Tue Dec 24 20:41:52 2024 +0000
+commit ed8a0f984e84cb905763cd14de27f71e691726bf
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 13 12:40:59 2025 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 91.3% (21 of 23 strings)
-    
-    Translation: manufacture-15.0/manufacture-15.0-mrp_production_operation_injection
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_production_operation_injection/es/
+    [BOT] post-merge updates
 
 
 ## manufacture-reporting
