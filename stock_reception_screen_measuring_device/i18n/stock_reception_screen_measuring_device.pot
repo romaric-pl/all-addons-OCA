@@ -51,6 +51,11 @@ msgid "ID"
 msgstr ""
 
 #. module: stock_reception_screen_measuring_device
+#: model:ir.model.fields,help:stock_reception_screen_measuring_device.field_stock_reception_screen__smaller_package_has_missing_dimensions
+msgid "Indicates if any smaller package have any measurement missing."
+msgstr ""
+
+#. module: stock_reception_screen_measuring_device
 #: model:ir.model.fields,help:stock_reception_screen_measuring_device.field_stock_reception_screen__package_has_missing_dimensions
 msgid "Indicates if the package have any measurement missing."
 msgstr ""
@@ -67,6 +72,11 @@ msgid "Measure Current Packaging"
 msgstr ""
 
 #. module: stock_reception_screen_measuring_device
+#: model_terms:ir.ui.view,arch_db:stock_reception_screen_measuring_device.stock_reception_screen_view_form
+msgid "Measure Smaller Packaging"
+msgstr ""
+
+#. module: stock_reception_screen_measuring_device
 #: code:addons/stock_reception_screen_measuring_device/models/stock_reception_screen.py:0
 #, python-format
 msgid "Measurement machine already in use."
@@ -75,6 +85,12 @@ msgstr ""
 #. module: stock_reception_screen_measuring_device
 #: model:ir.model,name:stock_reception_screen_measuring_device.model_measuring_device
 msgid "Measuring and Weighing Device"
+msgstr ""
+
+#. module: stock_reception_screen_measuring_device
+#: code:addons/stock_reception_screen_measuring_device/models/stock_reception_screen.py:0
+#, python-format
+msgid "No available packaging without measurements."
 msgstr ""
 
 #. module: stock_reception_screen_measuring_device
@@ -102,6 +118,11 @@ msgstr ""
 #. module: stock_reception_screen_measuring_device
 #: model:ir.model.fields,field_description:stock_reception_screen_measuring_device.field_stock_reception_screen__scan_requested
 msgid "Scan Requested"
+msgstr ""
+
+#. module: stock_reception_screen_measuring_device
+#: model:ir.model.fields,field_description:stock_reception_screen_measuring_device.field_stock_reception_screen__smaller_package_has_missing_dimensions
+msgid "Smaller Package Requires Measures?"
 msgstr ""
 
 #. module: stock_reception_screen_measuring_device

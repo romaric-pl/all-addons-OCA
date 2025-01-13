@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-02-13 12:34+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2025-01-10 15:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_candidate_picking_batch__product_ref_done
@@ -57,12 +57,12 @@ msgid ""
 msgstr ""
 "<span> | </span>\n"
 "                                                <span for=\"product_ref_done"
-"\">#Letto: </span>"
+"\">#Leggi: </span>"
 
 #. module: stock_barcodes_picking_batch
 #: model_terms:ir.ui.view,arch_db:stock_barcodes_picking_batch.view_stock_barcodes_read_picking_batch_form
 msgid "Are you sure to validate the picking batch?"
-msgstr "Sei sicuro di validare il prelievo raggruppato?"
+msgstr "Sei sicuro di validare il lotto di prelievo?"
 
 #. module: stock_barcodes_picking_batch
 #: code:addons/stock_barcodes_picking_batch/wizard/stock_barcodes_read_picking_batch.py:0
@@ -83,24 +83,24 @@ msgstr "Trasferimento raggruppato"
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_candidate_picking_batch__name
 msgid "Candidate Picking Batch"
-msgstr "Trasferimento raggruppato candidato"
+msgstr "Loddo di prelievo candidato"
 
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_stock_barcodes_read_picking__candidate_picking_batch_ids
 msgid "Candidate picking batch"
-msgstr "Trasferimento raggruppato candidato"
+msgstr "Lotto di prelievo candidato"
 
 #. module: stock_barcodes_picking_batch
 #: model:ir.model,name:stock_barcodes_picking_batch.model_wiz_candidate_picking_batch
 msgid "Candidate picking batchs for barcode interface"
-msgstr "Trasferimenti raggruppati candidati per interfaccia codice a barre"
+msgstr "Lotti di prelievo candidati per interfaccia codice a barre"
 
 #. module: stock_barcodes_picking_batch
 #: code:addons/stock_barcodes_picking_batch/wizard/stock_barcodes_read_picking_batch.py:0
 #: code:addons/stock_barcodes_picking_batch/wizard/stock_barcodes_read_picking_batch.py:0
 #, python-format
 msgid "Click on picking batch pushpin to lock it"
-msgstr "Fare clic sulla puntina del prelievo raggruppato per bloccarlo"
+msgstr "Fare clic sulla puntina del lotto di prelievo per bloccarlo"
 
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_stock_barcodes_read_picking__confirmed_moves
@@ -154,7 +154,7 @@ msgstr "Interno"
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_candidate_picking_batch__is_pending
 msgid "Is Pending"
-msgstr "E' in attesa"
+msgstr "È in sospeso"
 
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,help:stock_barcodes_picking_batch.field_wiz_stock_barcodes_read_picking__confirmed_moves
@@ -215,7 +215,7 @@ msgstr "Movimenti in sospeso"
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_stock_barcodes_read_picking__picking_batch_id
 msgid "Picking Batch"
-msgstr "Trasferimento raggruppato"
+msgstr "Lotto di prelievo"
 
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_stock_barcodes_read_picking__picking_mode
@@ -226,17 +226,17 @@ msgstr "Modo prelievo"
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_candidate_picking_batch__picking_batch_id
 #: model:stock.barcodes.action,name:stock_barcodes_picking_batch.stock_barcodes_action_picking_batch
 msgid "Picking batch"
-msgstr "Trasferimento raggruppato"
+msgstr "Lotto di prelievo"
 
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields.selection,name:stock_barcodes_picking_batch.selection__wiz_stock_barcodes_read_picking__picking_mode__picking_batch
 msgid "Picking batch mode"
-msgstr "Modo trasferimento raggruppato"
+msgstr "Modo lotto di prelievo"
 
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_stock_barcodes_read_picking__picking_batch_product_qty
 msgid "Picking batch quantities"
-msgstr "Quantità prelievo raggruppato"
+msgstr "Quantità lotto di prelievo"
 
 #. module: stock_barcodes_picking_batch
 #: model_terms:ir.ui.view,arch_db:stock_barcodes_picking_batch.stock_batch_picking_form
@@ -287,9 +287,9 @@ msgstr "Procedura guidata codice a barre"
 #. module: stock_barcodes_picking_batch
 #: model:ir.model.fields,field_description:stock_barcodes_picking_batch.field_wiz_candidate_picking_batch__wiz_picking_batch_id
 msgid "Wizard Picking Batch"
-msgstr "Procedura guidata trasferimento raggruppato"
+msgstr "Procedura guidata lotto di prelievo"
 
 #. module: stock_barcodes_picking_batch
 #: model:ir.model,name:stock_barcodes_picking_batch.model_wiz_stock_barcodes_read_picking
 msgid "Wizard to read barcode on picking batch"
-msgstr "Procedura guidata per leggere il codice a barre sul prelievo"
+msgstr "Procedura guidata per leggere il codice a barre sul lotto di prelievo"
