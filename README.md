@@ -80,16 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit e466b10ca4a11b537ae968ce8144f511b2cc8289
+commit d6afdcfe0901b8f7ec171a49835ed2ec82371cd8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 17 12:40:34 2024 +0000
+Date:   Sun Jan 12 12:34:03 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 29.9% (82 of 274 strings)
     
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_menu
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_menu/it/
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -579,16 +579,16 @@ Date:   Wed Oct 9 08:31:22 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit dc494a265c58f8e139a84b130fed9a8721314b96
+commit 4a211bc0f1f55d84d1b4118f08657b8c1741de01
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 31 13:59:31 2024 +0000
+Date:   Sat Jan 11 10:48:47 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 100.0% (138 of 138 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_agreement
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_agreement/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_recurring
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_recurring/it/
 
 
 ## margin-analysis
@@ -1099,9 +1099,9 @@ Date:   Thu Aug 22 07:26:23 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 6cd99f888b4af3da2377d97d754fb5b9fe06b627
+commit 35cc5919dfba1a8e2bddf4cdeed24871ac37f254
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 28 20:07:57 2024 +0000
+Date:   Fri Jan 10 12:11:24 2025 +0000
 
     Translated using Weblate (Italian)
     
