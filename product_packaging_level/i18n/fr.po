@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-11-07 15:06+0000\n"
+"PO-Revision-Date: 2025-01-16 16:06+0000\n"
 "Last-Translator: samibc2c <sami.bouzidi@camptocamp.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -24,7 +24,7 @@ msgstr "Actif"
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging__barcode_required_for_gtin
 msgid "Barcode Required For Gtin"
-msgstr ""
+msgstr "Code-barres requis pour Gtin"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__code
@@ -49,27 +49,27 @@ msgstr "Langue par défaut"
 #. module: product_packaging_level
 #: model:product.packaging.level,name:product_packaging_level.product_packaging_level_default
 msgid "Default Level"
-msgstr ""
+msgstr "Niveau par défaut"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nom affiché"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__has_gtin
 msgid "Has Gtin"
-msgstr ""
+msgstr "A Gtin"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__is_default
 msgid "Is Default"
-msgstr ""
+msgstr "Par défaut"
 
 #. module: product_packaging_level
 #. odoo-python
@@ -79,6 +79,8 @@ msgid ""
 "It is forbidden to have different packagings with the same level for a given"
 " product ({})."
 msgstr ""
+"Il est interdit d'avoir différents conditionnements avec le même niveau pour "
+"un produit donné ({})."
 
 #. module: product_packaging_level
 #: model_terms:ir.ui.view,arch_db:product_packaging_level.view_product_packaging_level_form
@@ -90,27 +92,27 @@ msgstr ""
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Dernière modification le"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Dernière mise à jour par"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Dernière mise à jour le"
 
 #. module: product_packaging_level
 #: model:ir.model,name:product_packaging_level.model_product_packaging_level
 msgid "Level management for product.packaging"
-msgstr ""
+msgstr "Gestion des niveaux pour product.packaging"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__name
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging__name_policy

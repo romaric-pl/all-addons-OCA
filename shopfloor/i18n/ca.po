@@ -103,6 +103,16 @@ msgstr ""
 #: code:addons/shopfloor/models/shopfloor_menu.py:0
 #, python-format
 msgid ""
+"'No destination package required' is incompatible with 'Pick and pack at the "
+"same time','Unload package at destination' and 'Multiple moves same "
+"destination package'."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/models/shopfloor_menu.py:0
+#, python-format
+msgid ""
 "'Pick and pack at the same time' is incompatible with 'Multiple moves same "
 "destination package'."
 msgstr ""
@@ -417,6 +427,11 @@ msgid "Destination Package"
 msgstr ""
 
 #. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__require_destination_package
+msgid "Destination package required"
+msgstr ""
+
+#. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__disable_full_bin_action_is_possible
 msgid "Disable Full Bin Action Is Possible"
 msgstr ""
@@ -464,6 +479,13 @@ msgstr ""
 #. module: shopfloor
 #: model:ir.model.fields,help:shopfloor.field_stock_move_line__result_package_id
 msgid "If set, the operations are packed into this package"
+msgstr ""
+
+#. module: shopfloor
+#: model:ir.model.fields,help:shopfloor.field_shopfloor_menu__require_destination_package
+msgid ""
+"If set, the user will have to scan only the source location and the "
+"destination location to process a line. The unload step will be skipped."
 msgstr ""
 
 #. module: shopfloor
@@ -1261,6 +1283,11 @@ msgstr ""
 #: code:addons/shopfloor/services/checkout.py:0
 #, python-format
 msgid "Remaining raw product not packed, proceed anyway?"
+msgstr ""
+
+#. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__require_destination_package_is_possible
+msgid "Require Destination Package Is Possible"
 msgstr ""
 
 #. module: shopfloor

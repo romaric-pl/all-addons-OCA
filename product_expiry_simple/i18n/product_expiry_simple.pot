@@ -36,7 +36,9 @@ msgid "Expired"
 msgstr ""
 
 #. module: product_expiry_simple
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_assign_serial__serial_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_lot__expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move__serial_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move_line__expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_quant__expiry_date
 #: model_terms:ir.ui.view,arch_db:product_expiry_simple.quant_search_view
@@ -99,6 +101,16 @@ msgid "Show Expiry Warning"
 msgstr ""
 
 #. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_assign_serial
+msgid "Stock Assign Serial Numbers"
+msgstr ""
+
+#. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_move
+msgid "Stock Move"
+msgstr ""
+
+#. module: product_expiry_simple
 #: model:ir.model,name:product_expiry_simple.model_stock_picking
 msgid "Transfer"
 msgstr ""
@@ -106,7 +118,9 @@ msgstr ""
 #. module: product_expiry_simple
 #: model:ir.model.fields,field_description:product_expiry_simple.field_product_product__use_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_product_template__use_expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_assign_serial__product_use_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_lot__use_expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move__product_use_expiry_date
 msgid "Use Expiry Date"
 msgstr ""
 

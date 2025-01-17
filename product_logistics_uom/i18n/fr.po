@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-11-06 18:06+0000\n"
+"PO-Revision-Date: 2025-01-16 13:39+0000\n"
 "Last-Translator: samibc2c <sami.bouzidi@camptocamp.com>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -71,17 +71,17 @@ msgstr "Unité de mesure de poids par défaut"
 #. module: product_logistics_uom
 #: model:ir.model.fields,help:product_logistics_uom.field_res_config_settings__product_default_length_uom_id
 msgid "Default unit of measure to express product length"
-msgstr ""
+msgstr "Unité de mesure par défaut pour exprimer la longueur du produit"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,help:product_logistics_uom.field_res_config_settings__product_default_volume_uom_id
 msgid "Default unit of measure to express product volume"
-msgstr ""
+msgstr "Unité de mesure par défaut pour exprimer le volume du produit"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,help:product_logistics_uom.field_res_config_settings__product_default_weight_uom_id
 msgid "Default unit of measure to express product weight"
-msgstr ""
+msgstr "Unité de mesure par défaut pour exprimer le poids du produit"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__weight
@@ -103,13 +103,13 @@ msgstr "Variante de produite"
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__show_volume_uom_warning
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__show_volume_uom_warning
 msgid "Show Volume Uom Warning"
-msgstr ""
+msgstr "Montrer l'alerte de l'udm Volume"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__show_weight_uom_warning
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__show_weight_uom_warning
 msgid "Show Weight Uom Warning"
-msgstr ""
+msgstr "Montrer l'alerte de l'udm Poids"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,help:product_logistics_uom.field_product_product__show_volume_uom_warning
@@ -118,6 +118,8 @@ msgid ""
 "Technical field used to warn the user to change the volumeuom since the "
 "value for product_volume is too small and has beenrounded."
 msgstr ""
+"Champ technique utilisé pour avertir l'utilisateur qu'il doit modifier le "
+"volume car la valeur de product_volume est trop faible et a été arrondie."
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,help:product_logistics_uom.field_product_product__show_weight_uom_warning
@@ -126,41 +128,44 @@ msgid ""
 "Technical field used to warn the user to change the weightuom since the "
 "value for product_weight is too small and has beenrounded."
 msgstr ""
+"Champ technique utilisé pour avertir l'utilisateur qu'il doit modifier l'udm "
+"poids du produit, car la valeur de product_weight est trop faible et a été "
+"arrondie."
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,help:product_logistics_uom.field_product_product__product_volume
 msgid "The volume in the product's volume UOM."
-msgstr ""
+msgstr "Le volume dans l'Uudm de Volume du produit."
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,help:product_logistics_uom.field_product_product__product_weight
 msgid "The weight in the product's weight UOM."
-msgstr ""
+msgstr "Le poids dans l'udm de Poids du produit."
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__volume
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__volume
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
 msgid "Volume"
-msgstr ""
+msgstr "Volume"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__volume_uom_id
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__volume_uom_id
 msgid "Volume Unit of Measure"
-msgstr ""
+msgstr "Unité de Mesure du Volume"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__product_volume
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__product_volume
 msgid "Volume in product UOM"
-msgstr ""
+msgstr "Volume dans l'udm du produit"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__volume_uom_name
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__volume_uom_name
 msgid "Volume unit of measure label"
-msgstr ""
+msgstr "Libellé de l'udm Volume"
 
 #. module: product_logistics_uom
 #: model_terms:ir.ui.view,arch_db:product_logistics_uom.product_template_form_view
@@ -171,16 +176,16 @@ msgstr "Poids"
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__weight_uom_id
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__weight_uom_id
 msgid "Weight Unit of Measure"
-msgstr "Unité de mesure depoids"
+msgstr "Unité de mesure de poids"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__product_weight
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__product_weight
 msgid "Weight in product UOM"
-msgstr ""
+msgstr "Poids dans l'udm du produit"
 
 #. module: product_logistics_uom
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_product__weight_uom_name
 #: model:ir.model.fields,field_description:product_logistics_uom.field_product_template__weight_uom_name
 msgid "Weight unit of measure label"
-msgstr ""
+msgstr "Libellé de l'udm poids"

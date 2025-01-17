@@ -28,8 +28,18 @@ class AccountEdiXmlCIUSRO(models.Model):
                 partner.state_id.country_id.code + "-" + partner.state_id.code
             )
         # CIUS-RO replace spaces in city -- for Sector 1 -> Sector1
-        if partner.state_id.code == "B" and "sector" in (partner.city or "").lower():
-            vals["city_name"] = partner.city.upper().replace(" ", "")
+        if partner.state_id.code == "B":
+            if "sector" in (partner.city or "").lower():
+                vals["city_name"] = partner.city.upper().replace(" ", "")
+            else:
+                postal_code = partner.zip or "01"
+                if (
+                    postal_code
+                    and postal_code[0] == "0"
+                    and postal_code[1] in ["1", "2", "3", "4", "5", "6"]
+                ):
+                    vals["city_name"] = "SECTOR" + postal_code[1]
+
         return vals
 
     def _get_partner_party_vals(self, partner, role):

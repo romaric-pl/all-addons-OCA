@@ -28,8 +28,8 @@ msgstr ""
 #. module: product_expiry_simple
 #: model_terms:ir.ui.view,arch_db:product_expiry_simple.view_production_lot_form
 msgid ""
-"<span class=\"badge text-bg-danger\" attrs=\"{'invisible': [('expired', '=',"
-" False)]}\">Expired</span>"
+"<span class=\"badge text-bg-danger\" attrs=\"{'invisible': [('expired', '=', "
+"False)]}\">Expired</span>"
 msgstr ""
 "<span class=\"badge text-bg-danger\" attrs=\"{'invisible': [('expired', '=', "
 "False)]}\">Vanhentunut</span>"
@@ -43,7 +43,9 @@ msgid "Expired"
 msgstr "Päättynyt"
 
 #. module: product_expiry_simple
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_assign_serial__serial_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_lot__expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move__serial_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move_line__expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_quant__expiry_date
 #: model_terms:ir.ui.view,arch_db:product_expiry_simple.quant_search_view
@@ -80,8 +82,8 @@ msgid ""
 "Product %(product)s doesn't use expiry dates, but an expiry date is set on "
 "lot %(lot)s."
 msgstr ""
-"Tuotteessa %(product)s ei käytetä viimeinen käyttöpäivä, mutta erälle %(lot)"
-"s on asetettu viimeinen käyttöpäivä."
+"Tuotteessa %(product)s ei käytetä viimeinen käyttöpäivä, mutta erälle "
+"%(lot)s on asetettu viimeinen käyttöpäivä."
 
 #. module: product_expiry_simple
 #. odoo-python
@@ -110,6 +112,16 @@ msgid "Show Expiry Warning"
 msgstr "Näytä vanhentumisvaroitus"
 
 #. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_assign_serial
+msgid "Stock Assign Serial Numbers"
+msgstr ""
+
+#. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_move
+msgid "Stock Move"
+msgstr ""
+
+#. module: product_expiry_simple
 #: model:ir.model,name:product_expiry_simple.model_stock_picking
 msgid "Transfer"
 msgstr "Siirto"
@@ -117,7 +129,9 @@ msgstr "Siirto"
 #. module: product_expiry_simple
 #: model:ir.model.fields,field_description:product_expiry_simple.field_product_product__use_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_product_template__use_expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_assign_serial__product_use_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_lot__use_expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move__product_use_expiry_date
 msgid "Use Expiry Date"
 msgstr "Käytä vanhentumispäivää"
 

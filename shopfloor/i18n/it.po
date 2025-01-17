@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-11-04 15:06+0000\n"
+"PO-Revision-Date: 2025-01-16 10:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -142,6 +142,19 @@ msgstr ""
 #, python-format
 msgid "%(qty)s %(product_name)s put in %(package_name)s"
 msgstr "%(qty)s %(product_name)s messo in %(package_name)s"
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/models/shopfloor_menu.py:0
+#, python-format
+msgid ""
+"'No destination package required' is incompatible with 'Pick and pack at the "
+"same time','Unload package at destination' and 'Multiple moves same "
+"destination package'."
+msgstr ""
+"'Nessun collo di destinazione richiesto' non è compatibile con 'Preleva e "
+"imballa contemporaneamente', 'Scarica il collo a destinazione' e 'Più "
+"movimenti con lo stesso collo di destinazione'."
 
 #. module: shopfloor
 #. odoo-python
@@ -482,6 +495,11 @@ msgid "Destination Package"
 msgstr "Collo destinazione"
 
 #. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__require_destination_package
+msgid "Destination package required"
+msgstr "Richiesto collo destinazione"
+
+#. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__disable_full_bin_action_is_possible
 msgid "Disable Full Bin Action Is Possible"
 msgstr "È possibile disabilitare l'azione contentore pieno"
@@ -533,6 +551,16 @@ msgstr "Merce caricata in {0.name}"
 #: model:ir.model.fields,help:shopfloor.field_stock_move_line__result_package_id
 msgid "If set, the operations are packed into this package"
 msgstr "Se impostata, le operazioni sono raggruppate in questo collo"
+
+#. module: shopfloor
+#: model:ir.model.fields,help:shopfloor.field_shopfloor_menu__require_destination_package
+msgid ""
+"If set, the user will have to scan only the source location and the "
+"destination location to process a line. The unload step will be skipped."
+msgstr ""
+"Se impostato, l'utente dovrà scansionare solo la posizione di origine e la "
+"posizione di destinazione per elaborare una riga. La fase di scarico verrà "
+"saltata."
 
 #. module: shopfloor
 #: model:ir.model.fields,help:shopfloor.field_shopfloor_menu__ignore_no_putaway_available
@@ -1363,6 +1391,11 @@ msgstr "Sessione precedente recuperata."
 #, python-format
 msgid "Remaining raw product not packed, proceed anyway?"
 msgstr "Prodotti grezzi esidui non in colli, procedere ugualmente?"
+
+#. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_shopfloor_menu__require_destination_package_is_possible
+msgid "Require Destination Package Is Possible"
+msgstr "È possibile richiedere il collo di destinazione"
 
 #. module: shopfloor
 #: model:ir.model.fields,field_description:shopfloor.field_stock_location__reserved_move_line_ids

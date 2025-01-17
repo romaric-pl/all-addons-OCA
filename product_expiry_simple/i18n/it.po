@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-03 03:55+0000\n"
-"PO-Revision-Date: 2024-12-09 10:06+0000\n"
+"PO-Revision-Date: 2025-01-16 10:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -46,7 +46,9 @@ msgid "Expired"
 msgstr "Scaduto"
 
 #. module: product_expiry_simple
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_assign_serial__serial_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_lot__expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move__serial_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move_line__expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_quant__expiry_date
 #: model_terms:ir.ui.view,arch_db:product_expiry_simple.quant_search_view
@@ -113,6 +115,16 @@ msgid "Show Expiry Warning"
 msgstr "Visualizza avviso scadenza"
 
 #. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_assign_serial
+msgid "Stock Assign Serial Numbers"
+msgstr "Assegna numeri seriali giacenza"
+
+#. module: product_expiry_simple
+#: model:ir.model,name:product_expiry_simple.model_stock_move
+msgid "Stock Move"
+msgstr "Movimento di magazzino"
+
+#. module: product_expiry_simple
 #: model:ir.model,name:product_expiry_simple.model_stock_picking
 msgid "Transfer"
 msgstr "Trasferimento"
@@ -120,7 +132,9 @@ msgstr "Trasferimento"
 #. module: product_expiry_simple
 #: model:ir.model.fields,field_description:product_expiry_simple.field_product_product__use_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_product_template__use_expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_assign_serial__product_use_expiry_date
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_lot__use_expiry_date
+#: model:ir.model.fields,field_description:product_expiry_simple.field_stock_move__product_use_expiry_date
 msgid "Use Expiry Date"
 msgstr "Utilizza data scadenza"
 

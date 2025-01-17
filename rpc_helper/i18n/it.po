@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-08-17 10:58+0000\n"
+"PO-Revision-Date: 2025-01-16 16:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -51,7 +51,7 @@ msgstr "Conteggio modifiche dell'insieme di modifiche in attesa"
 #. module: rpc_helper
 #: model:ir.model.fields,field_description:rpc_helper.field_ir_model__count_pending_changesets
 msgid "Count Pending Changesets"
-msgstr "Conta insiemi di modifiche in attesa"
+msgstr "Conteggio insieme di modifiche in attesa"
 
 #. module: rpc_helper
 #: model:ir.model,name:rpc_helper.model_ir_model

@@ -17,6 +17,9 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
 
 class TestBaseWamas(TransactionCase):
+
+    maxDiff = None
+
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
