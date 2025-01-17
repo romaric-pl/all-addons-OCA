@@ -29,6 +29,7 @@ class ViewModifierRule(models.Model):
     priority = fields.Integer(
         default=16,
         required=True,
+        group_operator=False,
         help="The priority determines which rule will be "
         "selected in case of conflicting rules. "
         "Rule conflicts may exist for users with "

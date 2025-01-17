@@ -381,6 +381,11 @@ msgid "Group"
 msgstr ""
 
 #. module: role_policy
+#: model_terms:ir.ui.view,arch_db:role_policy.view_modifier_rule_view_search
+msgid "Group By..."
+msgstr ""
+
+#. module: role_policy
 #: model:ir.model,name:role_policy.model_ir_http
 msgid "HTTP Routing"
 msgstr ""
@@ -792,6 +797,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:role_policy.res_role_acl_view_search
 #: model_terms:ir.ui.view,arch_db:role_policy.res_role_view_form
 #: model_terms:ir.ui.view,arch_db:role_policy.res_role_view_search
+#: model_terms:ir.ui.view,arch_db:role_policy.view_modifier_rule_view_search
 msgid "Role"
 msgstr ""
 

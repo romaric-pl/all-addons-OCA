@@ -594,9 +594,9 @@ Date:   Thu Jul 25 06:37:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 82198f84dffbcd9d7ee239065a506e598d2d3b5c
+commit a1d4fdbdc45f3e713d4bc448855685222627b074
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 30 07:41:53 2024 +0000
+Date:   Wed Jan 15 09:49:59 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1738,9 +1738,9 @@ Date:   Sun Sep 3 16:02:05 2023 +0000
 
 ## role-policy
 From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
-commit 8bfe1c23579535abaf4821870cf5cc6748673a8e
+commit f7ba5f494c308a24a19fa44ffd2ff66d5fe42310
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 29 09:26:25 2024 +0000
+Date:   Tue Jan 14 15:02:51 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1851,11 +1851,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 0322c81efc29a7ad083cdf855f041d40abe72e0a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Mar 9 15:32:49 2024 +0000
+commit bc0c3e983ca2abd9d680d16c00a349962f5abadd
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 16 12:45:14 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 30.7% (4 of 13 strings)
+    
+    Translation: web-13.0/web-13.0-web_m2x_options
+    Translate-URL: https://translation.odoo-community.org/projects/web-13-0/web-13-0-web_m2x_options/it/
 
 
 ## website

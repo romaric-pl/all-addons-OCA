@@ -12,6 +12,14 @@
                     name="inactive"
                     domain="[('active', '=', False)]"
                 />
+                <group expand="0" string="Group By...">
+                    <filter
+                        name="role"
+                        string="Role"
+                        domain="[]"
+                        context="{'group_by':'role_id'}"
+                    />
+                </group>
             </search>
         </field>
     </record>
