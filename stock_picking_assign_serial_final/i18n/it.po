@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-11-24 16:34+0000\n"
+"PO-Revision-Date: 2025-01-16 10:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: stock_picking_assign_serial_final
 #: model:ir.model.fields,field_description:stock_picking_assign_serial_final.field_assign_serial_final_mixin__final_serial_number
@@ -42,7 +42,7 @@ msgstr "Numero di NS"
 #. module: stock_picking_assign_serial_final
 #: model:ir.model,name:stock_picking_assign_serial_final.model_stock_assign_serial
 msgid "Stock Assign Serial Numbers"
-msgstr "Assegna numeri seriali giacrnza"
+msgstr "Assegna numeri seriali giacenza"
 
 #. module: stock_picking_assign_serial_final
 #: model:ir.model,name:stock_picking_assign_serial_final.model_stock_move

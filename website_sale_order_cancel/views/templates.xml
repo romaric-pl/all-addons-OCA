@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <template
+        id="sale_order_portal_content_inherit_cancel_order"
+        inherit_id="sale.sale_order_portal_content"
+    >
+    <xpath expr="//section[@id='details']" position="inside">
+      <div t-if="sale_order.can_cancel" class="text-right">
+        <div class="btn-group mb-1">
+          <a
+                        id="cancelOrderButton"
+                        class="btn btn-danger btn-block text-light"
+                        data-toggle="modal"
+                        data-target="#cancelOrderModal"
+                        title="Cancel the order"
+                    >
+            <i class="fa fa-times" />
+ Cancel
+          </a>
+        </div>
+      </div>
+
+      <div
+                class="modal fade"
+                id="cancelOrderModal"
+                data-backdrop="static"
+                data-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="cancelOrderLabel"
+                aria-hidden="true"
+            >
+        <div class="modal-dialog">
+          <form id="cancelOrderForm" class="cancelOrderForm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cancelOrderLabel">
+                  Confirm Cancellation: <t t-out="sale_order.name" />
+                </h5>
+              </div>
+              <div class="modal-body">
+                <input type="hidden" t-att-value="sale_order.id" id="sale_order_id" />
+                <p>Are you sure you want to cancel this order?</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-dismiss="modal"
+                                >Close</button>
+                <button
+                                    type="submit"
+                                    class="btn btn-danger"
+                                    id="submit_cancel_button"
+                                >Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </xpath>
+  </template>
+</odoo>

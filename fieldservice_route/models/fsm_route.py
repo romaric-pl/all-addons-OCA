@@ -26,3 +26,26 @@ class FSMRoute(models.Model):
             day_index = date.weekday()
             day = self.env.ref("fieldservice_route.fsm_route_day_" + str(day_index))
             return day in self.day_ids
+
+    def write(self, vals):
+        if "fsm_person_id" in vals:
+            new_person_id = vals["fsm_person_id"]
+            today = fields.Date.today()
+
+            for route in self:
+                dayroutes = self.env["fsm.route.dayroute"].search(
+                    [
+                        ("route_id", "=", route.id),
+                        ("date", ">=", today),
+                    ]
+                )
+
+                dayroutes.write({"person_id": new_person_id})
+
+                for dayroute in dayroutes:
+                    orders_to_update = dayroute.order_ids.filtered(
+                        lambda o: o.fsm_route_id == route and not o.is_closed
+                    )
+                    orders_to_update.write({"person_id": new_person_id})
+
+        return super().write(vals)

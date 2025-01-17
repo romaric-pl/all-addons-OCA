@@ -1,0 +1,1 @@
+This module allows customers to cancel confirmed sales orders directly from the Odoo portal using a simple confirmation modal. Cancellation is restricted based on a configurable period before the sale order's scheduled date.
