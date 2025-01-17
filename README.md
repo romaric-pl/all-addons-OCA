@@ -1395,16 +1395,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit a658cad097a0fd39c04b11a10787ef033e57d760
+commit 69aefefc9baff83178727d26c64c376bae568e1d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 12 17:43:53 2024 +0000
+Date:   Wed Jan 15 09:45:07 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 83.3% (95 of 114 strings)
     
-    Translation: social-12.0/social-12.0-mail_attach_existing_attachment
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_attach_existing_attachment/it/
+    Translation: social-12.0/social-12.0-mail_tracking
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_tracking/it/
 
 
 ## storage
@@ -1486,16 +1486,16 @@ Date:   Mon Dec 18 19:48:16 2023 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 683a75cdfdd98aacad60c96ed0c5b5d955d90715
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 29 13:58:48 2024 +0000
+commit 139258b170b3045b201b9614aacd7bd50d91368b
+Author: Sergio Corato <sergiocorato@gmail.com>
+Date:   Tue Jan 14 10:10:26 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 69.6% (23 of 33 strings)
+    Currently translated at 100.0% (1 of 1 strings)
     
-    Translation: server-backend-12.0/server-backend-12.0-base_external_dbsource
-    Translate-URL: https://translation.odoo-community.org/projects/server-backend-12-0/server-backend-12-0-base_external_dbsource/it/
+    Translation: server-backend-12.0/server-backend-12.0-base_external_dbsource_mssql
+    Translate-URL: https://translation.odoo-community.org/projects/server-backend-12-0/server-backend-12-0-base_external_dbsource_mssql/it/
 
 
 ## server-brand
@@ -1669,11 +1669,16 @@ Date:   Tue Nov 19 21:18:22 2019 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit a896df04a27269ab3880d71a7d63ad9668a40c3b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Oct 21 08:43:49 2024 +0000
+commit d57831e0e85fec982974f71ca7c6782f63c2e0d8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 16 12:45:16 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 33.3% (4 of 12 strings)
+    
+    Translation: web-12.0/web-12.0-web_m2x_options
+    Translate-URL: https://translation.odoo-community.org/projects/web-12-0/web-12-0-web_m2x_options/it/
 
 
 ## website

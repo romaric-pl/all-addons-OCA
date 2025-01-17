@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* base_external_dbsource_mssql
+#	* base_external_dbsource_sqlite
 #
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.6.2\n"
 
-#. module: base_external_dbsource_mssql
-#: model:ir.model,name:base_external_dbsource_mssql.model_base_external_dbsource
+#. module: base_external_dbsource_sqlite
+#: model:ir.model,name:base_external_dbsource_sqlite.model_base_external_dbsource
 msgid "External Database Sources"
 msgstr "Origini Database"
