@@ -1,10 +1,11 @@
 # Copyright 2018-22 ForgeFlow S.L.
 # Copyright 2021 Sodexis
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+
 {
     "name": "Mail Activity Team",
     "summary": "Add Teams to Activities",
-    "version": "17.0.1.1.0",
+    "version": "17.0.2.0.0",
     "development_status": "Alpha",
     "category": "Social Network",
     "website": "https://github.com/OCA/social",
@@ -15,6 +16,7 @@
     "data": [
         "security/ir.model.access.csv",
         "security/mail_activity_team_security.xml",
+        "wizard/mail_activity_schedule.xml",
         "views/ir_actions_server_views.xml",
         "views/mail_activity_type.xml",
         "views/mail_activity_team_views.xml",
@@ -24,6 +26,7 @@
     "assets": {
         "web.assets_backend": [
             "mail_activity_team/static/src/components/*/*",
+            "mail_activity_team/static/src/core/*/*",
             "mail_activity_team/static/src/models/*",
         ],
     },
