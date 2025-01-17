@@ -9,7 +9,17 @@ from ..wizard import efattura
 
 _logger = logging.getLogger(__name__)
 
-SELF_INVOICE_TYPES = ("TD16", "TD17", "TD18", "TD19", "TD20", "TD21", "TD27", "TD28")
+SELF_INVOICE_TYPES = (
+    "TD16",
+    "TD17",
+    "TD18",
+    "TD19",
+    "TD20",
+    "TD21",
+    "TD22",
+    "TD27",
+    "TD28",
+)
 
 
 class FatturaPAAttachmentIn(models.Model):

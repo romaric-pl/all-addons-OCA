@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-03 03:50+0000\n"
-"PO-Revision-Date: 2023-11-27 11:38+0000\n"
+"PO-Revision-Date: 2025-01-16 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: web_m2x_options
 #. openerp-web
@@ -27,6 +27,8 @@ msgid ""
 "!(widget.nodeOptions.no_open || widget.nodeOptions.no_open_edit || widget."
 "noOpen)"
 msgstr ""
+"!(widget.nodeOptions.no_open || widget.nodeOptions.no_open_edit || widget."
+"noOpen)"
 
 #. module: web_m2x_options
 #. openerp-web
@@ -40,7 +42,7 @@ msgstr "Annulla"
 #: code:addons/web_m2x_options/static/src/js/form.js:0
 #, python-format
 msgid "Create"
-msgstr ""
+msgstr "Crea"
 
 #. module: web_m2x_options
 #. openerp-web
@@ -54,57 +56,57 @@ msgstr "Crea \"<strong>%s</strong>\""
 #: code:addons/web_m2x_options/static/src/js/form.js:0
 #, python-format
 msgid "Create a %s"
-msgstr ""
+msgstr "Crea un %s"
 
 #. module: web_m2x_options
 #. openerp-web
 #: code:addons/web_m2x_options/static/src/js/form.js:0
 #, python-format
 msgid "Create and Edit..."
-msgstr "Crea e modifica"
+msgstr "Crea e modifica..."
 
 #. module: web_m2x_options
 #. openerp-web
 #: code:addons/web_m2x_options/static/src/js/form.js:0
 #, python-format
 msgid "Create and edit"
-msgstr ""
+msgstr "Crea e modifica"
 
 #. module: web_m2x_options
 #: model:ir.model.fields,field_description:web_m2x_options.field_ir_config_parameter__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: web_m2x_options
 #: model:ir.model.fields,field_description:web_m2x_options.field_ir_config_parameter__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: web_m2x_options
 #: model:ir.model.fields,field_description:web_m2x_options.field_ir_config_parameter____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: web_m2x_options
 #. openerp-web
 #: code:addons/web_m2x_options/static/src/js/form.js:0
 #, python-format
 msgid "No results to show..."
-msgstr ""
+msgstr "Nessun risultato da mostrare..."
 
 #. module: web_m2x_options
 #. openerp-web
 #: code:addons/web_m2x_options/static/src/js/form.js:0
 #, python-format
 msgid "Open: "
-msgstr ""
+msgstr "Apri: "
 
 #. module: web_m2x_options
 #. openerp-web
 #: code:addons/web_m2x_options/static/src/js/form.js:0
 #, python-format
 msgid "Quick search: %s"
-msgstr ""
+msgstr "Ricerca veloce: %s"
 
 #. module: web_m2x_options
 #. openerp-web
@@ -116,11 +118,11 @@ msgstr "Cerca altro..."
 #. module: web_m2x_options
 #: model:ir.model,name:web_m2x_options.model_ir_config_parameter
 msgid "System Parameter"
-msgstr ""
+msgstr "Parametro di sistema"
 
 #. module: web_m2x_options
 #. openerp-web
 #: code:addons/web_m2x_options/static/src/js/form.js:0
 #, python-format
 msgid "You are creating a new %s, are you sure it does not exist yet?"
-msgstr ""
+msgstr "Si sta creando un nuovo %s, si è sicuri che non esiste già?"

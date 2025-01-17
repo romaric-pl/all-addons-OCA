@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-07-15 12:58+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2025-01-16 16:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -124,27 +124,27 @@ msgstr "Descrizione modello"
 #: code:addons/base_export_async/static/src/js/data_export.js:0
 #, python-format
 msgid "Please select fields to export..."
-msgstr ""
+msgstr "Selezionare i campi da esportare..."
 
 #. module: base_export_async
 #: model:ir.model.fields,field_description:base_export_async.field_delay_export__url
 msgid "Url"
-msgstr ""
+msgstr "URL"
 
 #. module: base_export_async
 #: model:ir.model.fields,field_description:base_export_async.field_delay_export__user_ids
 msgid "Users"
-msgstr ""
+msgstr "Utenti"
 
 #. module: base_export_async
 #: code:addons/base_export_async/models/delay_export.py:0
 #, python-format
 msgid "You must set an email address to your user."
-msgstr ""
+msgstr "Bisogna impostare una e-mail nel proprio utente."
 
 #. module: base_export_async
 #. openerp-web
 #: code:addons/base_export_async/static/src/js/data_export.js:0
 #, python-format
 msgid "You will receive the export file by email as soon as it is finished."
-msgstr ""
+msgstr "Verrà inviato via e-mail il file esportazione appena sarà completato."

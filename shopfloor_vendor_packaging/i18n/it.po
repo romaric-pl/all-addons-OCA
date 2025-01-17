@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-01-15 15:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: shopfloor_vendor_packaging
 #: model:ir.model.fields,help:shopfloor_vendor_packaging.field_shopfloor_menu__display_vendor_packaging
@@ -21,33 +23,36 @@ msgid ""
 "    When enabled, the user will be able to see the vendor packagings\n"
 "    in the frontend, e.g. in the qty picker.\n"
 msgstr ""
+"\n"
+"    Se abilitato, l'utente potrà vedere i pacchetti del fornitore \n"
+"    nel frontend, ad esempio nel selettore di quantità.\n"
 
 #. module: shopfloor_vendor_packaging
 #: model:ir.model.fields,field_description:shopfloor_vendor_packaging.field_shopfloor_menu__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: shopfloor_vendor_packaging
 #: model:ir.model.fields,field_description:shopfloor_vendor_packaging.field_shopfloor_menu__display_vendor_packaging_is_possible
 msgid "Display Vendor Packaging Is Possible"
-msgstr ""
+msgstr "È possibile visualizzare l'imballaggio del fornitore"
 
 #. module: shopfloor_vendor_packaging
 #: model:ir.model.fields,field_description:shopfloor_vendor_packaging.field_shopfloor_menu__display_vendor_packaging
 msgid "Display vendor packagings"
-msgstr ""
+msgstr "Visualizza imballaggi fornitore"
 
 #. module: shopfloor_vendor_packaging
 #: model:ir.model.fields,field_description:shopfloor_vendor_packaging.field_shopfloor_menu__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: shopfloor_vendor_packaging
 #: model:ir.model.fields,field_description:shopfloor_vendor_packaging.field_shopfloor_menu____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: shopfloor_vendor_packaging
 #: model:ir.model,name:shopfloor_vendor_packaging.model_shopfloor_menu
 msgid "Menu displayed in the scanner application"
-msgstr ""
+msgstr "Menu visualizzato nell'applicazione di scansione"

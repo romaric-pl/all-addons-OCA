@@ -658,7 +658,7 @@ class OverdueReminderStep(models.TransientModel):
     def total_residual(self):
         self.ensure_one()
         res = defaultdict(float)
-        for inv in self.invoice_ids:
+        for inv in self.get_invoices():
             res[inv.currency_id] += inv.amount_residual * (
                 inv.move_type == "out_refund" and -1 or 1
             )

@@ -34,17 +34,21 @@ class MailThread(models.AbstractModel):
     _inherit = "mail.thread"
 
     def clean_message_dict(self, message_dict):
-        del message_dict["attachments"]
-        del message_dict["cc"]
-        del message_dict["from"]
-        del message_dict["to"]
-        del message_dict["recipients"]
-        del message_dict["references"]
-        del message_dict["in_reply_to"]
-        del message_dict["bounced_email"]
-        del message_dict["bounced_partner"]
-        del message_dict["bounced_msg_id"]
-        del message_dict["bounced_message"]
+        fields_to_clean = [
+            "attachments",
+            "cc",
+            "from",
+            "to",
+            "recipients",
+            "references",
+            "in_reply_to",
+            "bounced_email",
+            "bounced_partner",
+            "bounced_msg_id",
+            "bounced_message",
+        ]
+        for field in fields_to_clean:
+            message_dict.pop(field, None)
 
     @api.model
     def message_route(

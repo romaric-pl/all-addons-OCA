@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-06-26 12:19+0000\n"
+"PO-Revision-Date: 2025-01-16 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_definition__definition_type
@@ -26,7 +26,7 @@ msgstr "Definizione"
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_review__display_name
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_validation__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields.selection,name:base_tier_validation_formula.selection__tier_definition__definition_type__domain_formula
@@ -54,14 +54,14 @@ msgstr "Formula"
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_review__id
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_validation__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_definition____last_update
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_review____last_update
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_validation____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields.selection,name:base_tier_validation_formula.selection__tier_definition__review_type__expression
@@ -77,7 +77,7 @@ msgstr "Espressione Approvazione"
 #: code:addons/base_tier_validation_formula/models/tier_review.py:0
 #, python-format
 msgid "Reviewer python expression must return a res.users recordset."
-msgstr ""
+msgstr "L'espressione Python revisore deve restituire un recordset res.user."
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields,field_description:base_tier_validation_formula.field_tier_review__python_reviewer_ids
@@ -115,6 +115,8 @@ msgid ""
 "Write Python code that defines the reviewer. The result of executing the "
 "expression must be a res.users recordset."
 msgstr ""
+"Scrivere il codice Python che definisce il revisore. Il risultato "
+"dell'esecuzione dell'espressione deve essere un recordset res.user."
 
 #. module: base_tier_validation_formula
 #: model:ir.model.fields,help:base_tier_validation_formula.field_tier_definition__python_code
@@ -122,3 +124,5 @@ msgid ""
 "Write Python code that defines when this tier confirmation will be needed. "
 "The result of executing the expresion must be a boolean."
 msgstr ""
+"Scrivere codice Python che definisce quando questa conferma sarà necessaria. "
+"Il risultato dell'espressione deve essere un booleano."

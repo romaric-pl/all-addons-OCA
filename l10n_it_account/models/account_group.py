@@ -54,10 +54,18 @@ class AccountGroup(models.Model):
         for progenitor in self.browse(tuple(set(progenitor_ids))):
             accounts = progenitor.get_group_accounts()
             if not accounts.mapped("user_type_id").have_same_sign():
+                accounts_by_sign = accounts.get_incoherent_sign_accounts()
+                accounts_message = "".join(
+                    [
+                        _("\nSign: %s, accounts: %s\n")
+                        % (sign, ", ".join(accounts_by_sign[sign].mapped("name")[:50]))
+                        for sign in accounts_by_sign
+                    ]
+                )
                 raise ValidationError(
-                    _("Incoherent balance signs for '{}' and its subgroups.").format(
-                        progenitor.name_get()[0][-1]
-                    )
+                    _(
+                        "Incoherent balance signs for '{}' and its subgroups:\n{}"
+                    ).format(progenitor.name_get()[0][-1], accounts_message)
                 )
 
     def _compute_account_balance_sign(self):

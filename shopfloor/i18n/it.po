@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-08-22 10:06+0000\n"
+"PO-Revision-Date: 2025-01-15 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -603,7 +603,7 @@ msgstr "Ubicazione {} vuota"
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
 msgid "Lot changed"
-msgstr ""
+msgstr "Lotto modificato"
 
 #. module: shopfloor
 #: code:addons/shopfloor/actions/message.py:0
@@ -978,7 +978,7 @@ msgstr "Il collo {} è già in uso."
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
 msgid "Package {} is empty, scan a location."
-msgstr ""
+msgstr "Il collo {} è vuoto, leggere una ubicazione."
 
 #. module: shopfloor
 #: code:addons/shopfloor/actions/message.py:0
@@ -990,7 +990,7 @@ msgstr "Il collo {} non è disponibile nel trasferimento {}."
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
 msgid "Package {} is not empty anmyore."
-msgstr ""
+msgstr "Il collo {} non è più vuoto."
 
 #. module: shopfloor
 #: code:addons/shopfloor/actions/message.py:0
@@ -1278,7 +1278,7 @@ msgstr "Scansionare il collo"
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
 msgid "Scanned lot differs from the previous scan: %(lot)s."
-msgstr ""
+msgstr "Il lotto letto è diverso da quello letto in precedenza: %(lot)s."
 
 #. module: shopfloor
 #: code:addons/shopfloor/models/shopfloor_menu.py:0
@@ -1698,7 +1698,7 @@ msgstr "Questa ubicazione richiede colli. Scansionare un collo destinazione."
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
 msgid "This lot does not exist anymore."
-msgstr ""
+msgstr "Questo loto non esiste più."
 
 #. module: shopfloor
 #: code:addons/shopfloor/actions/message.py:0
@@ -1812,6 +1812,7 @@ msgstr ""
 #, python-format
 msgid "Unable to find a line with the same product but different lot."
 msgstr ""
+"Impossibile trovare una riga con lo stesso prodotto ma un lotto diverso."
 
 #. module: shopfloor
 #: code:addons/shopfloor/actions/message.py:0
@@ -2012,6 +2013,9 @@ msgid ""
 "lot? Scan it again to confirm. The first line matching this product will be "
 "updated. "
 msgstr ""
+"Si è scansionato un lotto diverso con lo stesso prodotto, si vuole cambiare "
+"lotto? Scansionarlo di nuovo per confermare. La prima riga corrispondente a "
+"questo prodotto verrà aggiornata. "
 
 #. module: shopfloor
 #: code:addons/shopfloor/actions/message.py:0

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-28 02:58+0000\n"
-"PO-Revision-Date: 2024-07-01 10:47+0000\n"
+"PO-Revision-Date: 2025-01-16 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: stock_mts_mto_rule
 #: model:ir.model.fields,field_description:stock_mts_mto_rule.field_stock_rule__action
@@ -27,7 +27,7 @@ msgstr "Azione"
 #. module: stock_mts_mto_rule
 #: model:ir.model.fields.selection,name:stock_mts_mto_rule.selection__stock_rule__mts_quantity_rule__available
 msgid "Available"
-msgstr ""
+msgstr "Disponibile"
 
 #. module: stock_mts_mto_rule
 #: model:ir.model.fields.selection,name:stock_mts_mto_rule.selection__stock_rule__action__split_procurement
@@ -81,7 +81,7 @@ msgstr "Regola MTS"
 #. module: stock_mts_mto_rule
 #: model:ir.model.fields,field_description:stock_mts_mto_rule.field_stock_rule__mts_quantity_rule
 msgid "MTS quantity rule"
-msgstr ""
+msgstr "Regola quantità MTS"
 
 #. module: stock_mts_mto_rule
 #: code:addons/stock_mts_mto_rule/models/stock_warehouse.py:0
@@ -106,7 +106,7 @@ msgstr ""
 #. module: stock_mts_mto_rule
 #: model:ir.model.fields.selection,name:stock_mts_mto_rule.selection__stock_rule__mts_quantity_rule__full
 msgid "No Split"
-msgstr ""
+msgstr "Non dividere"
 
 #. module: stock_mts_mto_rule
 #: model:ir.model,name:stock_mts_mto_rule.model_stock_rule
@@ -130,6 +130,10 @@ msgid ""
 "With`No Split` the MTS rule is only used, if the full requested quantity is "
 "available."
 msgstr ""
+"Con `Disponibile` la regola MTS verrà utilizzata per qualsiasi quantità "
+"disponibile. \n"
+"Con `Non dividere` la regola MTS viene utilizzata solo se è disponibile "
+"l'intera quantità richiesta."
 
 #, python-format
 #~ msgid ""

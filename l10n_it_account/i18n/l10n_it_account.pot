@@ -14,6 +14,14 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: l10n_it_account
+#: code:addons/l10n_it_account/models/account_group.py:0
+#, python-format
+msgid ""
+"\n"
+"Sign: %s, accounts: %s\n"
+msgstr ""
+
+#. module: l10n_it_account
 #: model_terms:ir.ui.view,arch_db:l10n_it_account.internal_layout
 msgid ""
 "<br/>\n"
@@ -111,7 +119,9 @@ msgstr ""
 #. module: l10n_it_account
 #: code:addons/l10n_it_account/models/account_group.py:0
 #, python-format
-msgid "Incoherent balance signs for '{}' and its subgroups."
+msgid ""
+"Incoherent balance signs for '{}' and its subgroups:\n"
+"{}"
 msgstr ""
 
 #. module: l10n_it_account

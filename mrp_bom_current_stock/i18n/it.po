@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-10-29 17:41+0000\n"
+"PO-Revision-Date: 2025-01-15 11:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
@@ -24,6 +24,10 @@ msgid ""
 "                    be manufactured if all the existing material in the "
 "specified locations were used."
 msgstr ""
+"- Tutti i livelli: consente di valutare qual è la quantità potenziale totale "
+"che potrebbe\n"
+"                    essere prodotta se venisse utilizzato tutto il materiale "
+"esistente nelle posizioni specificate."
 
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
@@ -34,11 +38,16 @@ msgid ""
 "manufactured. In other\n"
 "                    words, it emulates a manufacturing order."
 msgstr ""
+"- Un livello: consente di valutare qual è la quantità potenziale nel caso in "
+"cui \n"
+"                    solo il prodotto selezionato in particolare debba essere "
+"prodotto. \n"
+"                    In altre parole, emula un ordine di produzione."
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock__explosion_type__all
 msgid "All Levels"
-msgstr ""
+msgstr "Tutti i livelli"
 
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
@@ -51,18 +60,25 @@ msgid ""
 "that if it is being used by\n"
 "                    a BoM, it cannot be used by another."
 msgstr ""
+"Come commento finale, è necessario indicare che nel caso in cui un "
+"componente\n"
+"                    venga ripetuto in diverse DiBa, è possibile che la "
+"quantità potenziale non\n"
+"                    venga calcolata correttamente poiché non si tiene conto "
+"che se viene utilizzato da\n"
+"                    una DiBa, non può essere utilizzato da un'altra."
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__availability
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__availability
 msgid "Availability"
-msgstr ""
+msgstr "Disponibilità"
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock__availability__available
 #: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock_line__availability__available
 msgid "Available"
-msgstr ""
+msgstr "Disponibile"
 
 #. module: mrp_bom_current_stock
 #: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
@@ -74,7 +90,7 @@ msgstr "Resoconto giacenza attuale DiBa"
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_id
 msgid "BoM"
-msgstr ""
+msgstr "DiBa"
 
 #. module: mrp_bom_current_stock
 #: model:ir.actions.act_window,name:mrp_bom_current_stock.mrp_bom_current_stock_action
@@ -96,7 +112,7 @@ msgstr "Riferimento DiBa"
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_type
 msgid "BoM Type"
-msgstr ""
+msgstr "Tipo DiBa"
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_line_id
@@ -138,7 +154,7 @@ msgstr "Creato il"
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__desired_qty
 msgid "Desired Quantity"
-msgstr ""
+msgstr "Quantità desiderata"
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__display_name
@@ -150,7 +166,7 @@ msgstr "Nome visualizzato"
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__exclude_location_ids
 msgid "Exclude locations"
-msgstr ""
+msgstr "Esclude ubicazioni"
 
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
@@ -161,7 +177,7 @@ msgstr "Espandi"
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__explosion_type
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__explosion_type
 msgid "Explosion Type"
-msgstr ""
+msgstr "Tipo esplosione"
 
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
@@ -176,7 +192,7 @@ msgstr "Esporta XLSX"
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
 msgid "Go Back"
-msgstr ""
+msgstr "Indietro"
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__id
@@ -188,7 +204,7 @@ msgstr "ID"
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
 msgid "It is necessary to differentiate between the two types of explosion."
-msgstr ""
+msgstr "È necessario distinguere tra i due tipi di esplosione."
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock____last_update
@@ -252,12 +268,12 @@ msgstr "Riga giacenza attuale rotta DiBa MRP"
 #: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock__availability__not_available
 #: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock_line__availability__not_available
 msgid "Not Available"
-msgstr ""
+msgstr "Non disponibile"
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock__explosion_type__one
 msgid "One Level"
-msgstr ""
+msgstr "Un livello"
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__parent_bom_id
@@ -282,13 +298,13 @@ msgstr "Riferimento prodotto padre"
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
 #, python-format
 msgid "Potential Qty"
-msgstr ""
+msgstr "Q.tà potenziale"
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__potential_qty_rounded
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__potential_qty
 msgid "Potential Quantity"
-msgstr ""
+msgstr "Quantità potenziale"
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock__potential_qty_rounded
@@ -297,6 +313,8 @@ msgid ""
 "Potential quantity that could be manufactured given all current on-hand "
 "stock at the specified locations."
 msgstr ""
+"Quantità potenziale che potrebbe essere prodotta tenendo conto di tutte le "
+"scorte attualmente disponibili nelle ubicazioni indicate."
 
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
@@ -359,7 +377,7 @@ msgstr "Quantità"
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock__exclude_location_ids
 msgid "Select only the parent location you want to exclude."
-msgstr ""
+msgstr "Selezionare solo l'ubicazione padre che si vuole escludere."
 
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
@@ -388,6 +406,8 @@ msgid ""
 "The field shows the availability that you have taking into account the "
 "available quantity that could end up being manufactured."
 msgstr ""
+"Il campo mostra la disponibilità tenendo conto della quantità disponibile "
+"che potrebbe essere prodotta."
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock__availability
@@ -395,6 +415,8 @@ msgid ""
 "The field shows the availability that you have taking into account the "
 "potential quantity that could end up being manufactured."
 msgstr ""
+"Il campo mostra la disponibilità di cui si dispone tenendo conto della "
+"potenziale quantità che potrebbe essere prodotta."
 
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__product_uom_id
@@ -420,7 +442,7 @@ msgstr "UdM"
 #. module: mrp_bom_current_stock
 #: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__wizard_id
 msgid "Wizard"
-msgstr ""
+msgstr "Procedura guidata"
 
 #. module: mrp_bom_current_stock
 #: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2

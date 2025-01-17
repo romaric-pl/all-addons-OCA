@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-10-29 16:42+0000\n"
+"PO-Revision-Date: 2025-01-16 16:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,17 +14,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: sale_by_packaging
 #: model:ir.model.fields,field_description:sale_by_packaging.field_product_packaging__active
 msgid "Active"
-msgstr ""
+msgstr "Attivo"
 
 #. module: sale_by_packaging
 #: model_terms:ir.ui.view,arch_db:sale_by_packaging.product_packaging_form_view_inherit
 msgid "Archived"
-msgstr ""
+msgstr "In archivio"
 
 #. module: sale_by_packaging
 #: model:ir.model.fields,field_description:sale_by_packaging.field_product_packaging__can_be_sold
@@ -106,7 +106,7 @@ msgstr "Vendi solo per imballaggio"
 #. module: sale_by_packaging
 #: model:ir.model.fields,field_description:sale_by_packaging.field_sale_order_line__product_packaging
 msgid "Package"
-msgstr ""
+msgstr "Collo"
 
 #. module: sale_by_packaging
 #: model:ir.model.fields,field_description:sale_by_packaging.field_product_packaging_type__packaging_ids

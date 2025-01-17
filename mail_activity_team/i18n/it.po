@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-04-03 12:38+0000\n"
+"PO-Revision-Date: 2025-01-16 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__active
@@ -29,7 +29,7 @@ msgstr "Attività"
 #. module: mail_activity_team
 #: model:ir.model,name:mail_activity_team.model_mail_activity_mixin
 msgid "Activity Mixin"
-msgstr ""
+msgstr "Mixin attività"
 
 #. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_team_view_form
@@ -46,12 +46,12 @@ msgstr "Team Attività"
 #. module: mail_activity_team
 #: model:ir.model,name:mail_activity_team.model_mail_activity_type
 msgid "Activity Type"
-msgstr ""
+msgstr "Tipo attività"
 
 #. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_team_view_form
 msgid "Archived"
-msgstr ""
+msgstr "In archivio"
 
 #. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_team_view_form
@@ -62,7 +62,7 @@ msgstr "Assegna ad attività mancanti"
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__team_user_id
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__user_id
 msgid "Assigned to"
-msgstr ""
+msgstr "Assegnato a"
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__create_uid
@@ -77,7 +77,7 @@ msgstr "Creato il"
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_type__default_team_id
 msgid "Default Team"
-msgstr ""
+msgstr "Team predefinito"
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__display_name
@@ -136,7 +136,7 @@ msgstr "Attività Mancanti"
 #: code:addons/mail_activity_team/static/src/xml/systray.xml:0
 #, python-format
 msgid "My Activities"
-msgstr ""
+msgstr "Le mie attività"
 
 #. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_view_search
@@ -159,7 +159,7 @@ msgstr "Team"
 #: code:addons/mail_activity_team/static/src/xml/systray.xml:0
 #, python-format
 msgid "Team Activities"
-msgstr ""
+msgstr "Attività del Team"
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__user_id
@@ -207,4 +207,4 @@ msgstr "Utenti"
 #: model:ir.model.fields,field_description:mail_activity_team.field_res_users__activity_team_user_ids
 #: model:ir.model.fields,field_description:mail_activity_team.field_sale_order__activity_team_user_ids
 msgid "test field"
-msgstr ""
+msgstr "campo test"

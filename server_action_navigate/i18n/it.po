@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-15 17:06+0000\n"
-"PO-Revision-Date: 2024-11-07 15:06+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2025-01-16 16:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -94,14 +94,14 @@ msgstr "Ultimo aggiornamento il"
 #: model:ir.model.fields,field_description:server_action_navigate.field_ir_actions_server__max_navigate_line_model
 #: model:ir.model.fields,field_description:server_action_navigate.field_ir_cron__max_navigate_line_model
 msgid "Max Navigate Model in lines"
-msgstr ""
+msgstr "Massimo navigazione modello in righe"
 
 #. module: server_action_navigate
 #: model:ir.model.fields,field_description:server_action_navigate.field_base_automation__max_navigate_line_sequence
 #: model:ir.model.fields,field_description:server_action_navigate.field_ir_actions_server__max_navigate_line_sequence
 #: model:ir.model.fields,field_description:server_action_navigate.field_ir_cron__max_navigate_line_sequence
 msgid "Max Navigate sequence in lines"
-msgstr ""
+msgstr "Massimo navigazione sequenza in righe"
 
 #. module: server_action_navigate
 #: model:ir.model.fields,field_description:server_action_navigate.field_ir_actions_server_navigate_line__field_model
@@ -135,7 +135,7 @@ msgstr "Opzioni navigazione"
 #. module: server_action_navigate
 #: model:ir.actions.server,name:server_action_navigate.navigate_partner_2_tags
 msgid "See tags of Partners"
-msgstr ""
+msgstr "Visualizza etichette dei partner"
 
 #. module: server_action_navigate
 #: model:ir.model.fields,field_description:server_action_navigate.field_ir_actions_server_navigate_line__sequence

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-30 10:06+0000\n"
+"PO-Revision-Date: 2025-01-15 12:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -911,7 +911,7 @@ msgstr "Località cliente"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_payment_term_id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__property_payment_term_id
 msgid "Customer Payment Terms"
-msgstr "Temini pagamento cliente"
+msgstr "Termini pagamento cliente"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__customer_rank
@@ -2582,7 +2582,7 @@ msgstr "Il partner è attivo"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__same_vat_partner_id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__same_vat_partner_id
 msgid "Partner with same Tax ID"
-msgstr "Fornitori con la stessa partita IVA"
+msgstr "Fornitore con la stessa partita IVA"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__debit_limit
@@ -3284,7 +3284,7 @@ msgstr ""
 msgid ""
 "The stock location used as source when receiving goods from this contact."
 msgstr ""
-"L'ubicazione di magazzino utlizzata quando si riceve merce da questo "
+"L'ubicazione di magazzino utilizzata quando si riceve merce da questo "
 "contatto."
 
 #. module: fieldservice
@@ -3320,7 +3320,7 @@ msgid ""
 "the current partner"
 msgstr ""
 "Questa valuta verrà utilizzata, al posto della predefinita, per gli acquisti "
-"dal fonritore corrente"
+"dal fornitore corrente"
 
 #. module: fieldservice
 #: model:ir.model.fields,help:fieldservice.field_fsm_location__email_normalized

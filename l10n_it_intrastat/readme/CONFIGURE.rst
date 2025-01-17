@@ -54,9 +54,9 @@ N.B.: Il sottomenù "Intrastat" è visibile solo se vengono abilitate le funzion
 
 **Posizione fiscale**
 
-L'assoggettamento ad Intrastat può essere gestito anche a livello generale di singolo partner, associandogli una posizione fiscale che abbia l'apposita casella "Soggetta a Intrastat" selezionata.
+L'assoggettamento ad Intrastat può essere gestito anche a livello generale di singolo partner, associandogli una posizione fiscale che abbia una o entrambe le caselle: "Soggetta a Intrastat Acquisti" o "Soggetta a Intrastat Vendite" selezionate.
 
-Tutte le fatture create per il partner che ha una posizione fiscale marcata come soggetta ad Intrastat avranno l’apposito campo "Soggetta a Intrastat" selezionato automaticamente.
+Tutte le fatture/note di credito, del tipo Acquisti per fornitori e Vendite per clienti, create per il partner che ha una posizione fiscale marcata come soggetta ad Intrastat avranno l’apposito campo "Soggetta a Intrastat" selezionato automaticamente.
 
 
 **Prodotti e categorie**

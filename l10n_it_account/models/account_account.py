@@ -1,5 +1,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
+from collections import defaultdict
+
 from odoo import api, models
 
 
@@ -16,3 +18,9 @@ class Account(models.Model):
         # Avoid check upon empty recordset to make it faster
         if groups:
             groups.check_balance_sign_coherence()
+
+    def get_incoherent_sign_accounts(self):
+        accounts_by_sign = defaultdict(lambda: self.env["account.account"])
+        for account in self:
+            accounts_by_sign[account.user_type_id.account_balance_sign] |= account
+        return accounts_by_sign
